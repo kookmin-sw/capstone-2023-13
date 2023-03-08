@@ -21,4 +21,15 @@ public class UserService {
         User findUser = userRepository.findByEmail(email);
         return findUser != null;
     }
+
+    public boolean comparePassword(String email,String password) {
+        User findUser = userRepository.findByEmail(email);
+        if(findUser.getPassword().equals(password)) {
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
 }

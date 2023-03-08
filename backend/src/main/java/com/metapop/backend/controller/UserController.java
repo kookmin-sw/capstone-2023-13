@@ -1,5 +1,6 @@
 package com.metapop.backend.controller;
 
+import com.metapop.backend.dto.LoginDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -27,5 +28,16 @@ public class UserController {
 
         userService.join(user);
         return ResponseEntity.ok("Join Success!");
+    }
+
+    @Operation(summary = "", description = "로그인 API")
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginDTO loginDto) {
+        if(userService.isEmailDuplicate(loginDto.getEmail())) {
+            if(userService.comparePassword(loginDto.getEmail(),loginDto.getPassword())) {
+                return ResponseEntity.ok("Login Success!");
+            }
+        }
+        return ResponseEntity.badRequest().body("Login Fail!");
     }
 }
