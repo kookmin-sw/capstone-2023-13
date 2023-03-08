@@ -15,3 +15,27 @@ async def test_running_server(app, client):
     res = await client.get('/')
     data = await res.json()
     assert data == {"rsp": "success"} and res.status == 200
+
+@open_server_client
+async def test_socket(app, client):
+    async with client.ws_connect('/ws') as ws:
+        await ws.send_json({"user": "test", "room": "main"})
+        res = await ws.receive_json()
+        assert res["status"] == 200 and res["user"] == "test"
+        count = 0
+        mq = list()
+        rq = list()
+        async for msg in ws:
+            if msg.type == web.WSMsgType.text:
+                res = msg.json()
+                rq.append(res)
+                if count == 5:
+                    print(f'rq: {mq}')
+                    rq.pop(0)
+                    print(f'mq: {rq}')
+                    assert mq == rq
+                    break
+                test_msg = {'test': 'test'}
+                mq.append(test_msg)
+                await ws.send_json(test_msg)
+                count += 1
