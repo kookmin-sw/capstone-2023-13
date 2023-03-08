@@ -3,6 +3,7 @@ package com.metapop.backend.service;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -15,6 +16,12 @@ public class UserService {
 
     public void join(User user) {
         userRepository.save(user);
+
+        String password = user.getPassword();
+
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String encodedPassword = passwordEncoder.encode(password);
+        user.setPassword(encodedPassword);
     }
 
     public boolean isEmailDuplicate(String email) {
@@ -24,7 +31,11 @@ public class UserService {
 
     public boolean comparePassword(String email,String password) {
         User findUser = userRepository.findByEmail(email);
-        if(findUser.getPassword().equals(password)) {
+
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        boolean isMatched = passwordEncoder.matches(password, findUser.getPassword());
+
+        if(isMatched) {
             return true;
         }
         else{
