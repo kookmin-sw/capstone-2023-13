@@ -30,9 +30,7 @@ async def test_socket(app, client):
                 res = msg.json()
                 rq.append(res)
                 if count == 5:
-                    print(f'rq: {mq}')
                     rq.pop(0)
-                    print(f'mq: {rq}')
                     assert mq == rq
                     break
                 test_msg = {'test': 'test'}
