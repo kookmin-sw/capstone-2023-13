@@ -6,7 +6,6 @@ import aiohttp
 def welcome(user):
     return {"user": "SERVER", "message": f"[{user}] enter chat room"}
 
-
 def open_server_client(test_func):
     async def wrapper(aiohttp_client, event_loop):
         app = await web_server()
