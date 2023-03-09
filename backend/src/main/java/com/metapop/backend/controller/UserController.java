@@ -55,13 +55,22 @@ public class UserController {
                         .compact();
 
                 Cookie cookie = new Cookie("Token", jwt);
-
                 response.addCookie(cookie);
 
                 return jwt;
             }
         }
         return "Wrong Email or Password";
+    }
+
+    @Operation(summary = "", description = "로그아웃 API")
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(HttpServletResponse response) {
+        Cookie cookie = new Cookie("Token", "");
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
+
+        return ResponseEntity.ok("Logout Success!");
     }
 
     @Operation(summary = "", description = "유저 정보 조회 API")
