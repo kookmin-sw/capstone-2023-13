@@ -2,17 +2,21 @@ package com.metapop.backend.service;
 
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.Optional;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class UserService {
-    @Autowired
-    private UserRepository userRepository;
+
+    private BCryptPasswordEncoder encoder;
+    private final UserRepository userRepository;
 
     public void join(User user) {
         userRepository.save(user);
@@ -29,6 +33,15 @@ public class UserService {
         return findUser != null;
     }
 
+    public User findByEmail(String email) {
+        User findUser = userRepository.findByEmail(email);
+        return findUser;
+    }
+
+    public Optional<User> getById(Long id) {
+        return userRepository.findById(id);
+    }
+
     public boolean comparePassword(String email,String password) {
         User findUser = userRepository.findByEmail(email);
 
@@ -41,6 +54,5 @@ public class UserService {
         else{
             return false;
         }
-
     }
 }
