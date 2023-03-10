@@ -1,4 +1,13 @@
 import styled from "styled-components";
+import smile from '../../assets/img/smile.png'
+
+
+export const SmileIcon = styled.img.attrs({
+    src: smile,
+})`
+    width: 20px;
+    height: 20px;
+`;
 
 // export const Container = styled.div`
 //     background-color: #E3ECF1;

@@ -43,14 +43,15 @@ const Sidebar = ({ width=280, children }) => {
   return (
     <div className={styles.container}>
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '100%',  transform: `translatex(${-xPosition}px)`}}>
-          <button onClick={() => toggleMenu()}
+        <button onClick={() => toggleMenu()}
           className={styles.button} >
-            {isOpen ? 
-            <span>X</span> : <img src="../../assets/img/smile.png" alt="contact open button" className={styles.openBtn}/>
-            }
-          </button>
+          {isOpen ?
+            <span>X</span> : <></>
+            // <styled.SmileIcon onClick={() => toggleMenu()}/>
+          }
+        </button>
         <div className={styles.content}>{children}</div> 
-        <div>hello world</div>
+        <div className={styles.innerContent}>hello world</div>
       </div>
     </div>
   );
