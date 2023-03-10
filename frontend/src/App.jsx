@@ -1,20 +1,22 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LoginPage from './login';
 import Sidebar from './components/sidebar';
 
-// import G from './game/G';
+
 
 
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<LoginPage />} />
-    //   </Routes>
-    // </BrowserRouter>
     <>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/loginbox" element={<LoginBox />} />
+
+          <Route path="/mainpage" element={<G />} />
+        </Routes>
+      </BrowserRouter> */}
+
       <div>
         <iframe
           title="GDevelop Game"
