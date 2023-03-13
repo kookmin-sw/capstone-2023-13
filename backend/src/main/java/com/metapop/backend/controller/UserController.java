@@ -2,19 +2,16 @@ package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.LoginDTO;
 import com.metapop.backend.dto.TokenDTO;
+import com.metapop.backend.dto.UserUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import com.metapop.backend.service.UserService;
 import io.jsonwebtoken.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.hibernate.mapping.Any;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -78,16 +75,23 @@ public class UserController {
     public ResponseEntity<?> info(@RequestBody TokenDTO tokenDTO) {
         try {
             if(tokenDTO == null) {
-                return ResponseEntity.status(401).body("토큰이 없습니다.");
-
+                return ResponseEntity.status(400).body("토큰이 없습니다.");
             }
+
             Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
-            System.out.println(this.userService.getById(Long.valueOf(token.getIssuer())));
+
             return ResponseEntity.ok(this.userService.getById(Long.valueOf(token.getIssuer())));
         } catch (ExpiredJwtException e) {
-            return ResponseEntity.status(401).body("토큰이 만료 되었습니다.");
+            return ResponseEntity.status(400).body("토큰이 만료 되었습니다.");
         } catch (JwtException e) {
-            return ResponseEntity.status(401).body("토큰이 다릅니다.");
+            return ResponseEntity.status(400).body("토큰이 다릅니다.");
         }
+    }
+
+    @Operation(summary = "", description = "유저 정보 수정 API")
+    @PutMapping("/update/{user_id}")
+    public ResponseEntity<?> updateInfo(@PathVariable Long user_id, @RequestBody UserUpdateDTO userUpdateDTO) {
+        User user = userService.updateUserInfo(user_id, userUpdateDTO);
+        return ResponseEntity.ok(user);
     }
 }

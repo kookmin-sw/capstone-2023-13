@@ -1,7 +1,9 @@
 package com.metapop.backend.entity;
 
+import com.metapop.backend.dto.UserUpdateDTO;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.*;
 
@@ -31,4 +33,19 @@ public class User {
 
     @Column(nullable = false)
     private String address;
+
+    public void update(UserUpdateDTO userUpdateDTO) {
+        this.email = userUpdateDTO.getEmail();
+        this.password = cryptopassword(userUpdateDTO.getPassword());
+        this.name = userUpdateDTO.getName();
+        this.bank = userUpdateDTO.getBank();
+        this.account = userUpdateDTO.getAccount();
+        this.address = userUpdateDTO.getAddress();
+    }
+
+    public String cryptopassword(String password) {
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String encodedPassword = passwordEncoder.encode(password);
+        return encodedPassword;
+    }
 }

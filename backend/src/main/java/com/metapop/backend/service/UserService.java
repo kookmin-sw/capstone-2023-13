@@ -1,9 +1,9 @@
 package com.metapop.backend.service;
 
+import com.metapop.backend.dto.UserUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -54,5 +54,11 @@ public class UserService {
         else{
             return false;
         }
+    }
+
+    public User updateUserInfo(Long id, UserUpdateDTO userUpdateDTO) {
+        User user = userRepository.findById(id).orElseThrow();
+        user.update(userUpdateDTO);
+        return user;
     }
 }
