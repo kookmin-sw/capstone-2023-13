@@ -1,6 +1,7 @@
 package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.LoginDTO;
+import com.metapop.backend.dto.MailDTO;
 import com.metapop.backend.dto.TokenDTO;
 import com.metapop.backend.dto.UserUpdateDTO;
 import com.metapop.backend.entity.User;
@@ -15,12 +16,13 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+import javax.transaction.Transactional;
 import java.util.Date;
 
 @Tag(name = "user", description = "유저 API")
 @RestController
 @RequestMapping("users")
-public class UserController {
+    public class UserController {
 
     @Autowired
     private UserService userService;
@@ -93,5 +95,15 @@ public class UserController {
     public ResponseEntity<?> updateInfo(@PathVariable Long user_id, @RequestBody UserUpdateDTO userUpdateDTO) {
         User user = userService.updateUserInfo(user_id, userUpdateDTO);
         return ResponseEntity.ok(user);
+    }
+
+    @Operation(summary = "", description = "임시 비밀번호 이메일 전송 API")
+    @Transactional
+    @PostMapping("/findpw")
+    public ResponseEntity<String> findPw(@RequestParam("userEmail") String userEmail){
+        MailDTO mailDTO = userService.createMailAndChangePassword(userEmail);
+        userService.mailSend(mailDTO);
+
+        return ResponseEntity.ok("임시 비밀번호 변경 완료");
     }
 }

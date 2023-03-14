@@ -43,6 +43,10 @@ public class User {
         this.address = userUpdateDTO.getAddress();
     }
 
+    public void updatePw(String password) {
+        this.password = cryptopassword(password);
+    }
+
     public String cryptopassword(String password) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String encodedPassword = passwordEncoder.encode(password);
