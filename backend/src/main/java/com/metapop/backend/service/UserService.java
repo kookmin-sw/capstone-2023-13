@@ -104,8 +104,8 @@ public class UserService {
         message.setTo(mailDTO.getAddress());
         message.setSubject(mailDTO.getTitle());
         message.setText(mailDTO.getMessage());
-        message.setFrom("@naver.com");
-        message.setReplyTo("@naver.com");
+        message.setFrom("metapop13@gmail.com");
+        message.setReplyTo("metapop13@gmail.com");
         mailSender.send(message);
     }
 }
