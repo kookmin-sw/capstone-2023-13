@@ -22,6 +22,7 @@ import java.util.Date;
 @Tag(name = "user", description = "유저 API")
 @RestController
 @RequestMapping("users")
+@CrossOrigin(origins = "*")
     public class UserController {
 
     @Autowired
