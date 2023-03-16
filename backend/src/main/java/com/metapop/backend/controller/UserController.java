@@ -27,8 +27,6 @@ import java.util.Date;
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private UserRepository userRepository;
 
     @Operation(summary = "", description = "회원가입 API")
     @PostMapping("/signup")
