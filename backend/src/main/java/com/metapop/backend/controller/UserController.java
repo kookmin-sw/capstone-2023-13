@@ -23,7 +23,7 @@ import java.util.Date;
 @RestController
 @RequestMapping("users")
 @CrossOrigin(origins = "*")
-    public class UserController {
+public class UserController {
 
     @Autowired
     private UserService userService;
