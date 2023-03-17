@@ -4,6 +4,8 @@ import GDevelopTest from '../components/GDevelopTest';
 import LoginBox from "../components/LoginBox";
 import SignupBox from "../components/SignupBox";
 import CustomizingBox from "../components/CustomizingBox";
+import FindPassword from "../components/FindPassword/FindPassword";
+import PasswordSent from "../components/PasswordSent/PasswordSent";
 
 function StartPage() {
   const [page_state, setPage] = useState("login");
@@ -12,10 +14,16 @@ function StartPage() {
   
   const handlePage = (page) => {
     if (page === "login"){
-      
+      setPage("login");
     } 
     else if (page === "signup"){
       setPage("signup");
+    }
+    else if (page === "find"){
+      setPage("find");
+    }
+    else if (page === "passwordsent"){
+      setPage("passwordsent");
     }
     else{
       setPage("custom");
@@ -30,14 +38,28 @@ function StartPage() {
   else if(page_state === "custom"){
     content = <CustomizingBox onPage={handlePage} />
   }
+  else if(page_state === "find"){
+    content = <FindPassword onPage={handlePage} />
+  }
+  else if(page_state === "passwordsent"){
+    content = <PasswordSent onPage={handlePage} />
+  }
   else if(page_state === "test"){
     content=<GDevelopTest></GDevelopTest>
   }
   
   const boxSlide ={
     width:page_state==="custom"?'1500px':'none',
-    transition: 'transform 1s ease, width 1s',
+    width:page_state==="find"?'500px':'none',
+    height:page_state === "find" ? '550px' : 'none',
+    width:page_state==="passwordsent" ? '600px' : 'none',
+    height:page_state === "passwordsent" ? '550px' : 'none',
+    // width:page_state==="login" ? '550px' : 'none',
+    // height:page_state === "login" ? '800px' : 'none',
+    transition: 'transform 1s ease, width 1s, height 1s',
   }
+
+
   return (
     <div className="Background">
       <div className="WhiteBox" style={boxSlide}>
