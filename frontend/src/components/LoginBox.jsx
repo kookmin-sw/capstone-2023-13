@@ -6,6 +6,11 @@ function LoginBox({ onPage }) {
   const signupClick = () => {
     onPage("signup")
   }
+
+  const findClick = () => {
+    onPage("find")
+  }
+
   return (
     <div>
         <div className="TitleDiv">
@@ -25,7 +30,7 @@ function LoginBox({ onPage }) {
         <div className="maintainDiv">
           <input className="checkStyle" type="checkbox"></input>
           <label className="checkLabel">로그인 유지</label>
-          <a className="aDiv" href="http://localhost:3000/">Forgot password?</a>
+          <a className="aDiv" onClick={findClick}>Forgot password?</a>
         </div>
         
         <button className="lastBtn">로그인</button>
