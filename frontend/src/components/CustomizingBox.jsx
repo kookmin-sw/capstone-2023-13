@@ -10,9 +10,9 @@ function CustomizingBox() {
             <div className="custom-MetaIcon"></div>
             <div className="CustomText">캐릭터 커스터마이징</div>
         </div>
-        <div className="characterBox">
+        {/* <div className="characterBox">
             캐릭터박스
-        </div>
+        </div> */}
         <div className="customBox">
             <GDevelopTest/>
         </div>
