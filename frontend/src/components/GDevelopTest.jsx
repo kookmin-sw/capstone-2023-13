@@ -8,7 +8,7 @@ class GDevelopTest extends React.Component {
           title="GDevelop Test"
           src="../gdeveloptest/index.html"
           width="100%"
-          height="400px"
+          height="500px"
         />
       </div>
     );
