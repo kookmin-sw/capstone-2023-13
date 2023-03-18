@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import StartPage from './pages/StartPage';
+import StartPage from './pages/StartPage/StartPage';
 import Sidebar from './components/Sidebar';
 import FindPassword from "./pages/FindPassword/FindPassword";
 

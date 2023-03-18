@@ -1,5 +1,5 @@
 import React from "react";
-import "../pages/StartPage.css";
+import "../../pages/Startpage/StartPage.css"
 import "./LoginBox.css";
 
 function LoginBox({ onPage }) {
@@ -30,7 +30,7 @@ function LoginBox({ onPage }) {
         <div className="maintainDiv">
           <input className="checkStyle" type="checkbox"></input>
           <label className="checkLabel">로그인 유지</label>
-          <a className="aDiv" onClick={findClick}>Forgot password?</a>
+          <a className="findDiv" onClick={findClick}>비밀번호 찾기</a>
         </div>
         
         <button className="lastBtn">로그인</button>

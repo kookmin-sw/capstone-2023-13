@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import smile from '../../assets/img/smile.png';
-import metaicon from '../../images/meta-icon.png';
-import myinfo from '../../images/myinfo.png';
-import history from '../../images/history.png';
-import logout from '../../images/logout.png';
-import myshop from '../../images/myshop.png'
-import schedule from '../../images/schedule.png';
-import profileimg from '../../images/profileimg.png'
+import metaicon from '../../images/icons/meta-icon.png';
+import myinfo from '../../images/icons/myinfo.png';
+import history from '../../images/icons/history.png';
+import logout from '../../images/icons/logout.png';
+import myshop from '../../images/icons/myshop.png'
+import schedule from '../../images/icons/schedule.png';
+import profileimg from '../../images/etc/profileimg.png'
 
 export const SmileIcon = styled.img.attrs({
     src: smile,
