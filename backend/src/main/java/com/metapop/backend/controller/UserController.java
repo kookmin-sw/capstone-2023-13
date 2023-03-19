@@ -1,9 +1,6 @@
 package com.metapop.backend.controller;
 
-import com.metapop.backend.dto.LoginDTO;
-import com.metapop.backend.dto.MailDTO;
-import com.metapop.backend.dto.TokenDTO;
-import com.metapop.backend.dto.UserUpdateDTO;
+import com.metapop.backend.dto.*;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import com.metapop.backend.service.UserService;
@@ -27,6 +24,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Operation(summary = "", description = "회원가입 API")
     @PostMapping("/signup")
@@ -96,13 +96,26 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
-    @Operation(summary = "", description = "임시 비밀번호 이메일 전송 API")
+    @Operation(summary = "", description = "비밀번호 찾기 API")
     @Transactional
     @PostMapping("/findpw")
-    public ResponseEntity<String> findPw(@RequestParam("userEmail") String userEmail){
+    public ResponseEntity<?> findPw(@RequestBody FindPWDTO findPWDTO){
+        User user = userRepository.findByEmail(findPWDTO.getEmail());
+        if(userService.findPassword(findPWDTO)) {
+            return ResponseEntity.ok(user.getNickname());
+        }
+        else{
+            return ResponseEntity.ok("이메일과 이름이 일치하지 않습니다.");
+        }
+    }
+
+    @Operation(summary = "", description = "임시 비밀번호 이메일 전송 API")
+    @Transactional
+    @PostMapping("/sendEmail")
+    public ResponseEntity<String> sendEmail(@RequestParam("userEmail") String userEmail){
         MailDTO mailDTO = userService.createMailAndChangePassword(userEmail);
         userService.mailSend(mailDTO);
 
-        return ResponseEntity.ok("임시 비밀번호 변경 완료");
+        return ResponseEntity.ok("임시 비밀번호 메일 전송, 변경 완료");
     }
 }

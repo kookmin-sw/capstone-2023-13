@@ -9,6 +9,7 @@ public class UserUpdateDTO {
     private String email;
     private String password;
     private String name;
+    private String nickname;
     private String bank;
     private String account;
     private String address;

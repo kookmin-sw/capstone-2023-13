@@ -1,5 +1,6 @@
 package com.metapop.backend.service;
 
+import com.metapop.backend.dto.FindPWDTO;
 import com.metapop.backend.dto.MailDTO;
 import com.metapop.backend.dto.UserUpdateDTO;
 import com.metapop.backend.entity.User;
@@ -62,6 +63,16 @@ public class UserService {
         User user = userRepository.findById(id).orElseThrow();
         user.update(userUpdateDTO);
         return user;
+    }
+
+    public boolean findPassword(FindPWDTO findPWDTO) {
+        User user = userRepository.findByEmail(findPWDTO.getEmail());
+        if(user.getName().equals(findPWDTO.getName())) {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     // 메일 내용을 생성하고 임시 비밀번호로 회원 비밀번호를 변경
