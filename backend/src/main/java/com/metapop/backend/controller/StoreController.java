@@ -22,8 +22,7 @@ public class StoreController {
 
     @Operation(summary = "", description = "상점 등록 API")
     @PostMapping("/register")
-    public ResponseEntity<String> registration(@RequestBody StoreSaveDTO storeSaveDTO) {
-        storeService.registration(storeSaveDTO);
-        return ResponseEntity.ok("Registration Success!");
+    public String registration(@RequestBody StoreSaveDTO storeSaveDTO) {
+        return storeService.registration(storeSaveDTO);
     }
 }

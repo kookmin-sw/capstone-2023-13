@@ -19,9 +19,15 @@ public class StoreService {
     private final StoreRepository storeRepository;
     private final UserRepository userRepository;
 
-    public void registration(StoreSaveDTO storeSaveDTO){
-        User user = userRepository.findById(storeSaveDTO.getUserId())
-                .orElseThrow(() -> new IllegalArgumentException("해당 유저가 존재하지 않습니다."));
-        storeRepository.save(storeSaveDTO.toEntity(user));
+    public String registration(StoreSaveDTO storeSaveDTO){
+        User user = userRepository.findById(storeSaveDTO.getUserId()).orElseThrow();
+        Store Exist = storeRepository.findByOwner(user);
+        if(Exist != null) {
+            return "해당 아이디는 이미 상점이 존재합니다.";
+        }
+        else{
+            storeRepository.save(storeSaveDTO.toEntity(user));
+            return "상점 등록 완료";
+        }
     }
 }
