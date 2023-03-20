@@ -1,6 +1,7 @@
 package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.StoreSaveDTO;
+import com.metapop.backend.dto.TokenDTO;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.repository.UserRepository;
 import com.metapop.backend.service.StoreService;
@@ -24,5 +25,11 @@ public class StoreController {
     @PostMapping("/register")
     public String registration(@RequestBody StoreSaveDTO storeSaveDTO) {
         return storeService.registration(storeSaveDTO);
+    }
+
+    @Operation(summary = "", description = "상점 삭제 API")
+    @DeleteMapping("/remove/{user_id}")
+    public String delete(@PathVariable Long user_id, @RequestBody TokenDTO tokenDTO) {
+        return storeService.delete(user_id, tokenDTO);
     }
 }
