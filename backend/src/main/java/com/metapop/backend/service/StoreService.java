@@ -35,6 +35,16 @@ public class StoreService {
         }
     }
 
+    public String update(Long user_id, TokenDTO tokenDTO) {
+        Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
+        if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()){
+            return "수정 완료";
+        }
+        else {
+            return "수정 실패";
+        }
+    }
+
     public String delete(Long user_id, TokenDTO tokenDTO) {
         Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
         if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()){
