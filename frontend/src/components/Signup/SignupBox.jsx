@@ -13,6 +13,7 @@ function SignupBox({ onPage }) {
   const backClick = () => {
     onPage("login");
   }
+  //입력 값 저장
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [password_check, setPasswordCheck] = useState('');
@@ -20,6 +21,10 @@ function SignupBox({ onPage }) {
   const [bank, setBank] = useState('');
   const [address, setAddress] = useState('');
   const [account, setAccount] = useState('');
+
+  //오류 메시지 저장
+  const [passwordCheckMessage, setPasswordCheckMessage] = useState('');
+  const [emailMessage, setEmailMessage] = useState('');
 
   //유효성검사
   const [isName, setIsName] = useState(false)
@@ -39,9 +44,11 @@ function SignupBox({ onPage }) {
     if (!emailRegex.test(emailCurrent)) {
       console.log('nono')
       setIsEmail(false)
+      setEmailMessage('이메일 형식이 올바르지 않습니다.')
     } else {
       console.log('good')
       setIsEmail(true)
+      setEmailMessage('이메일 확인')      
     }
   }
   // const onChangeName = (e) => {
@@ -74,10 +81,12 @@ function SignupBox({ onPage }) {
   }, [isEmail]);
   useEffect(() => {
     if (password === password_check){
+      setPasswordCheckMessage('비밀번호 같음')
       setIsPassword(true)
-    }else(
+    }else{
+      setPasswordCheckMessage('비밀번호 다름')
       setIsPassword(false)
-    )
+    }
   }, [password, password_check, isPassword]);
   useEffect(() => {
     if (name !==''){
@@ -152,6 +161,11 @@ function SignupBox({ onPage }) {
             <div className="inputDiv">
               <div className="labelDiv">이메일 주소</div>
               <input className="inputBox" type="text" value={email} onChange={(e) => onChangeEmail(e)}></input>
+              {/* <div>올바른 이메일 형식이 아닙니다.</div> */}
+              {email.length > 0 && (
+              <div className={`message ${isEmail ? 'success' : 'error'}`}>{emailMessage}</div>
+          )}
+
             </div>
             <div className="inputDiv">
               <div className="labelDiv">비밀번호</div>
@@ -160,6 +174,9 @@ function SignupBox({ onPage }) {
             <div className="inputDiv">
               <div className="labelDiv">비밀번호 확인</div>
               <input className="inputBox" type="password" value={password_check} onChange={(e) => setPasswordCheck(e.target.value)}></input>
+              {password_check.length > 0 && (
+              <div className={`message ${isPassword ? 'success' : 'error'}`}>{passwordCheckMessage}</div>
+          )}
             </div>
             <div className="inputDiv">
               <div className="labelDiv">이름</div>

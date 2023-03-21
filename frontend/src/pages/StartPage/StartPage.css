@@ -1,15 +1,31 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .Background{
     background-image: url(../../images/backgrounds/startbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: rgb(255, 226, 226); */
     width:100%;
-    height: 100vh;
+    /* background-position: left top; */
+    /* height: 100%; */
     margin:0;
     padding-top:104px;
     text-align: center;
     overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+    width: 100vw;
+        height: 100%;
+        /* background-image: url('이미지 주소'); */
+        background-size: cover;
+        background-position: center;
 }
+
 
 .WhiteBox{
     /* position:fixed; */

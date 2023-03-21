@@ -81,3 +81,11 @@ font-weight: bold;
   border-radius: 10px;
   box-shadow: inset 0px 0px 5px white;
 }
+.message {
+  font-weight: 500;}
+  .message.success {
+    color: green;
+  }
+  .message.error {
+    color: rgb(222, 4, 4);
+  }
