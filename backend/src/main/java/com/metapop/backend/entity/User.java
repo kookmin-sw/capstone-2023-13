@@ -26,6 +26,9 @@ public class User {
     private String name;
 
     @Column(nullable = false)
+    private String nickname;
+
+    @Column(nullable = false)
     private String bank;
 
     @Column(nullable = false)
@@ -38,6 +41,7 @@ public class User {
         this.email = userUpdateDTO.getEmail();
         this.password = cryptopassword(userUpdateDTO.getPassword());
         this.name = userUpdateDTO.getName();
+        this.nickname = userUpdateDTO.getNickname();
         this.bank = userUpdateDTO.getBank();
         this.account = userUpdateDTO.getAccount();
         this.address = userUpdateDTO.getAddress();
