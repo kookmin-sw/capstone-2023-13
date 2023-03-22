@@ -9,10 +9,24 @@ async def websocket_handler(request):
     await ws.prepare(request)
     
     req = await ws.receive_json()
-    user = req['user_id']
-    channel = req['channel_id']
+    user = req.get('user_id')
+    channel = req.get('channel_id')
+    X = req.get('X')
+    Y = req.get('Y')
 
-    await ws.send_json({"status": 200, "user": user})
+    await broadcast(request.app,
+                    channel,
+                    {   
+                        "type": "action",
+                        "user_id": user,
+                        "X": X,
+                        "Y": Y
+                    })
+    await ws.send_json({
+                            "type": "connect",
+                            "user_id": user,
+                            "status": 200
+                        })
 
     if request.app['websockets'][channel].get(user):
         await ws.close(message=b'Aready User')
@@ -21,11 +35,34 @@ async def websocket_handler(request):
         request.app['websockets'][channel][user] = ws
         await broadcast(request.app,
                         channel,
-                        message={"user": "SERVER", "message": f"[{user}] enter chat room"})
+                        message={
+                            "type": "chat",
+                            "user_id": "SERVER", 
+                            "msg": f"[{user}] enter chat room"
+                        })
 
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
-            await broadcast(request.app, channel, msg.json())
+            req = msg.json()
+            if req.get('type') == 'action':
+                X = req.get('X')
+                Y = req.get('Y')
+                await broadcast(request.app,
+                                channel,
+                                message={   
+                                    "type": "action",
+                                    "user_id": user,
+                                    "X": X,
+                                    "Y": Y
+                                })
+            elif req.get('type') == 'chat':
+                await broadcast(request.app,
+                                channel,
+                                message={
+                                    "type": "chat",
+                                    "user_id": user, 
+                                    "msg": req.get('msg')
+                                })
 
     del request.app['websockets'][channel][user]
     return ws
