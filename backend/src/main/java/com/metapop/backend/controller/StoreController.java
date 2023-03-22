@@ -1,6 +1,7 @@
 package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.StoreSaveDTO;
+import com.metapop.backend.dto.StoreUpdateDTO;
 import com.metapop.backend.dto.TokenDTO;
 import com.metapop.backend.service.StoreService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -25,8 +26,8 @@ public class StoreController {
 
     @Operation(summary = "", description = "상점 수정 API")
     @PutMapping("/update/{user_id}")
-    public String update(@PathVariable Long user_id, @RequestBody TokenDTO tokenDTO) {
-        return storeService.update(user_id, tokenDTO);
+    public String update(@PathVariable Long user_id, @RequestBody StoreUpdateDTO storeUpdateDTO) {
+        return storeService.update(user_id, storeUpdateDTO);
     }
 
     @Operation(summary = "", description = "상점 삭제 API")

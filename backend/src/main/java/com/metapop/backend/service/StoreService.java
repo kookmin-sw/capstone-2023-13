@@ -1,6 +1,7 @@
 package com.metapop.backend.service;
 
 import com.metapop.backend.dto.StoreSaveDTO;
+import com.metapop.backend.dto.StoreUpdateDTO;
 import com.metapop.backend.dto.TokenDTO;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.User;
@@ -34,9 +35,12 @@ public class StoreService {
         }
     }
 
-    public String update(Long user_id, TokenDTO tokenDTO) {
-        Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
+    public String update(Long user_id, StoreUpdateDTO storeUpdateDTO) {
+        Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(storeUpdateDTO.getToken()).getBody();
+        User user = userRepository.findById(user_id).orElseThrow();
+        Store store = storeRepository.findByOwner(user);
         if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()){
+            store.update(storeUpdateDTO);
             return "수정 완료";
         }
         else {
