@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.Optional;
 
 @Service
 @Transactional
@@ -47,7 +46,10 @@ public class StoreService {
 
     public String delete(Long user_id, TokenDTO tokenDTO) {
         Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
-        if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()){
+        User user = userRepository.findById(user_id).orElseThrow();
+        Store store = storeRepository.findByOwner(user);
+        if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()) {
+            storeRepository.delete(store);
             return "삭제 완료";
         }
         else {
