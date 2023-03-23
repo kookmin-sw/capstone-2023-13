@@ -14,13 +14,13 @@ function SignupBox({ onPage }) {
     onPage("login");
   }
   //입력 값 저장
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [password_check, setPasswordCheck] = useState('');
-  const [name, setName] = useState('');
-  const [bank, setBank] = useState('');
-  const [address, setAddress] = useState('');
-  const [account, setAccount] = useState('');
+  const [email, setEmail] = useState('test@test.com');
+  const [password, setPassword] = useState('12');
+  const [password_check, setPasswordCheck] = useState('12');
+  const [name, setName] = useState('test');
+  const [bank, setBank] = useState('test');
+  const [address, setAddress] = useState('test');
+  const [account, setAccount] = useState('123');
 
   //오류 메시지 저장
   const [passwordCheckMessage, setPasswordCheckMessage] = useState('');
@@ -196,7 +196,13 @@ function SignupBox({ onPage }) {
             </div>
             <div className="inputDiv">
               <div className="labelDiv">은행</div>
-              <input className="inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input>
+              {/* <input className="inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input> */}
+              <select className="selectBox" name="bank">
+                <option value="giup">기업은행</option>
+                <option value="kookmin">국민은행</option>
+                <option value="wooli">우리은행</option>
+                <option value="giup">토스뱅크</option>
+              </select>
             </div>
             <div className="inputDiv">
               <div className="labelDiv">계좌</div>
@@ -205,7 +211,7 @@ function SignupBox({ onPage }) {
         </div>
         <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isAddress && isBank && isAccount)}>완료</button>
         {/* <button className="finishBtn" onClick={finishClick} disabled={true}>완료</button> */}
-        <button className="lastBtn signupBtn" onClick={backClick}>뒤로</button>
+        <button className="whiteBtn" onClick={backClick}>뒤로</button>
     </div>
   );
 }

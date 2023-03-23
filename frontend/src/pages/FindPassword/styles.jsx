@@ -120,19 +120,37 @@ export const EmailInputBox = styled.input`
     box-sizing: border-box;
 `;
 
-export const SendPasswordBtn = styled.button`
-    width: 405px;
-    height: 50px;
-    background: #141060;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+// export const SendPasswordBtn = styled.button`
+//     width: 405px;
+//     height: 50px;
+//     background: #141060;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     border-radius: 5px;    
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 60px;
 
-    > span {
-        color: white;
-        font-size: 16px;
-    }
+//     > span {
+//         color: white;
+//         font-size: 16px;
+//     }
+// `;
+export const SendPasswordBtn = styled.button`
+/* display: flex; */
+/* float: left; */
+/* margin-left:85px; */
+/* margin-right:85px; */
+cursor: pointer;
+/* width: 180px; */
+width: 380px;
+height: 40px;
+background: #141060;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border:none;
+border-radius: 10px;
+color:white;
+text-align: center;
+margin-top:20px;
+font-weight: bold;
 `;

@@ -1,7 +1,8 @@
 import React, {useEffect, useRef, useState } from "react";
 import * as styled from "./styles";
 import styles from "./sidebar.module.css";
-import smile from '../../assets/img/smile.png'
+import smile from '../../assets/img/smile.png';
+// import { useNavigate } from "react-router-dom";
 
 
 const Sidebar = ({ width=280, children }) => {
@@ -9,6 +10,11 @@ const Sidebar = ({ width=280, children }) => {
   const [xPosition, setX] = useState(-width);
   const side = useRef();
 
+  // const movePage = useNavigate();
+
+  // const transHistoryClick = () => {
+  //   movePage('/trans');
+  // }
   
   
   // button 클릭 시 토글
@@ -62,7 +68,7 @@ const Sidebar = ({ width=280, children }) => {
           </styled.MyInfo>
           <styled.History>
             <styled.HistoryIcon />
-            <span>거래 내역</span>
+            {/* <span onClick={() => transHistoryClick()}>거래 내역</span> */}
           </styled.History>
           <styled.MyShop>
             <styled.MyShopIcon />
