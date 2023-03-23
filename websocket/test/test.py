@@ -4,7 +4,11 @@ import aiohttp
 
 
 def welcome(user):
-    return {"user": "SERVER", "message": f"[{user}] enter chat room"}
+    return {
+                "type": "chat",
+                "user_id": "SERVER",
+                "msg": f"[{user}] enter chat room"
+            }
 
 def open_server_client(test_func):
     async def wrapper(aiohttp_client, event_loop):
@@ -22,9 +26,14 @@ async def test_running_server(app, client):
 @open_server_client
 async def test_single_socket(app, client):
     async with client.ws_connect('/ws') as ws:
-        await ws.send_json({"user_id": "test", "channel_id": "test"})
+        await ws.send_json({
+                                "user_id": "test", 
+                                "channel_id": "test",
+                                "X": 0,
+                                "Y": 0
+                            })
         res = await ws.receive_json()
-        assert res["status"] == 200 and res["user"] == "test"
+        assert res.get("type") == "connect" and res.get("user_id") == "test" and res.get("status") == 200
         count = 0
         mq = list()
         rq = list()
@@ -38,7 +47,11 @@ async def test_single_socket(app, client):
                     rq.pop(0)
                     assert mq == rq
                     break
-                test_msg = {'test': 'test'}
+                test_msg = {
+                                "type": "chat",
+                                "user_id": "test",
+                                "msg": "Hello World!"
+                            }
                 mq.append(test_msg)
                 await ws.send_json(test_msg)
                 count += 1
@@ -46,7 +59,18 @@ async def test_single_socket(app, client):
 
 @open_server_client
 async def test_multi_socket(app, client):
-    user_list = [{"user_id": "test1", "channel_id": "test"}, {"user_id": "test2", "channel_id": "test"}]
+    user_list = [{
+                    "user_id": "test1",
+                    "channel_id": "test",
+                    "X": 0,
+                    "Y": 1
+                },
+                {
+                    "user_id": "test2",
+                    "channel_id": "test",
+                    "X": 1,
+                    "Y": 0
+                }]
     mq = list()
     rq = list()
     for user in range(6):
@@ -55,7 +79,7 @@ async def test_multi_socket(app, client):
             user_id = user_list[user_idx]["user_id"]
             await ws.send_json(user_list[user_idx])
             res = await ws.receive_json()
-            assert res["status"] == 200 and res["user"] == user_id
+            assert res.get("type") == "connect" and res.get("user_id") == user_id and res.get("status") == 200
             flag = 0
             async for msg in ws:
                 if msg.type == web.WSMsgType.text:
@@ -64,7 +88,11 @@ async def test_multi_socket(app, client):
                         rq.append(res)
                         break
                     assert res == welcome(user_id)
-                    test_msg = {"user_id": user_id, "msg": f"{user_id}'s message {user}"}
+                    test_msg = {
+                                    "type": "chat",
+                                    "user_id": user_id,
+                                    "msg": f"{user_id}'s message {user}"
+                                }
                     await ws.send_json(test_msg)
                     mq.append(test_msg)
                     flag = 1
