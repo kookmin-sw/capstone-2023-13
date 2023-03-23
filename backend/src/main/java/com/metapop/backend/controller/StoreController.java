@@ -3,6 +3,7 @@ package com.metapop.backend.controller;
 import com.metapop.backend.dto.StoreSaveDTO;
 import com.metapop.backend.dto.StoreUpdateDTO;
 import com.metapop.backend.dto.TokenDTO;
+import com.metapop.backend.entity.Store;
 import com.metapop.backend.service.StoreService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,6 +23,12 @@ public class StoreController {
     @PostMapping("/register")
     public String registration(@RequestBody StoreSaveDTO storeSaveDTO) {
         return storeService.registration(storeSaveDTO);
+    }
+
+    @Operation(summary = "", description = "상점 정보 조회 API")
+    @GetMapping("/info/{user_id}")
+    public Store info(@PathVariable Long user_id) {
+        return storeService.info(user_id);
     }
 
     @Operation(summary = "", description = "상점 수정 API")

@@ -35,6 +35,12 @@ public class StoreService {
         }
     }
 
+    public Store info(Long user_id) {
+        User user = userRepository.findById(user_id).orElseThrow();
+        Store store = storeRepository.findByOwner(user);
+        return store;
+    }
+
     public String update(Long user_id, StoreUpdateDTO storeUpdateDTO) {
         Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(storeUpdateDTO.getToken()).getBody();
         User user = userRepository.findById(user_id).orElseThrow();
