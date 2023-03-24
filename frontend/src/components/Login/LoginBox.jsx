@@ -1,8 +1,16 @@
 import React from "react";
 import "../../pages/Startpage/StartPage.css"
 import "./LoginBox.css";
+import { useNavigate } from "react-router-dom";
 
 function LoginBox({ onPage }) {
+
+  const movePage = useNavigate();
+
+  function loginClick(){
+    movePage('/main');
+  }
+
   const signupClick = () => {
     onPage("signup")
   }
@@ -13,7 +21,7 @@ function LoginBox({ onPage }) {
 
   return (
     <div>
-        <div className="TitleDiv">
+        <div className="mainTitleDiv">
             <div className="login-MetaIcon"></div>
             <div className="TitleText">Meta-Pop</div>
         </div>
@@ -33,8 +41,8 @@ function LoginBox({ onPage }) {
           <a className="findDiv" onClick={findClick}>비밀번호 찾기</a>
         </div>
         
-        <button className="lastBtn">로그인</button>
-        <button className="lastBtn signupBtn" onClick={signupClick}>회원가입</button>
+        <button className="blueBtn" onClick={loginClick}>로그인</button>
+        <button className="whiteBtn" onClick={signupClick}>회원가입</button>
         
         <div className="hrLine">or</div>
         <button className="googleBtn">

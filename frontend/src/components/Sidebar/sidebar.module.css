@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    z-index:1000;
 }
 .sidebar {
     background-color: #E3ECF1;
@@ -15,7 +15,7 @@
     transition: 0.4s ease;
     color: #202020;
     height: 100%;
-    z-index: 99;
+    z-index: 1000;
     border: none;
     border-radius: 30px 0 0 30px;
 }
@@ -25,7 +25,7 @@
     top: 10px;
     width: 40px;
     height: 40px;
-    z-index: 99;
+    z-index: 1000;
     transition: 0.8s ease;
     border: 1px solid #202020;
     border-radius: 40px;

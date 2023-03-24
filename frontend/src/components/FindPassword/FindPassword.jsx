@@ -8,7 +8,9 @@ const FindPassword = ({onPage}) => {
     const passwordSentClick = () => {
         onPage("passwordsent")
     }
-
+    const backClick = () => {
+        onPage("login")
+    }
 
     return (
         <div className="findWhiteBox"
@@ -37,6 +39,9 @@ const FindPassword = ({onPage}) => {
             <styled.SendPasswordBtn onClick={passwordSentClick}>
                 <span>임시 비밀번호 전송</span>
             </styled.SendPasswordBtn>
+            <styled.BackBtn onClick={backClick}>
+                <span>뒤로가기</span>
+            </styled.BackBtn>
         </div>
     )
 }
