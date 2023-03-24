@@ -5,70 +5,31 @@ html {
     height: 100%;
 }
 
-.trans-Background{
-    /* background-image: url(../../images/backgrounds/startbackground.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
-
-    /* background-color: rgb(255, 226, 226); */
+.fakeBackground {
+    z-index:999;
+    position: fixed;
     width:100%;
-    /* background-position: left top; */
-    /* height: 100%; */
-    position:relative;
-    margin:0;
-    /* padding-top:104px; */
-    text-align: center;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
-        height: 100%;
-        /* background-image: url('이미지 주소'); */
-        background-size: cover;
-        background-position: center;
-    background-color: #70558E;
-    
-}
-.trans-MainBackground{
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
+    height:100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    background-color: transparent;
 }
 
-.trans-WhiteBox{
-    /* position:fixed; */
-    /* top:40px;
-    left: 30px; */
-    /* display: inline-block;
-    position:static;
-    margin-top:26px; */
-    /* position:static;
-    margin :auto;
-    margin-top:0px; */
-    /* display:flex; */
-    /* align-items: center;
-    justify-content: center;
-    text-align: center; */
-    margin :0px auto;
-    width: 550px;
-    height: 800px;
-    left: 130px;
-    top: 130px;
-    background: rgba(255, 255, 255, 0.68);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;  
-}
-.trans-WhiteBox2{
+.trans-WhiteBox3{
+    z-index: 3;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 가운데 정렬 */
-  padding: 20px;
-  background-color: white;
-  z-index: 1;
-  width: 1500px;
-    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 가운데 정렬 */
+    padding: 20px;
+    background-color: white;
+    z-index: 1;
+    width: 70%px;
+    height: 50%px;
     background: rgba(255, 255, 255, 0.68);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;

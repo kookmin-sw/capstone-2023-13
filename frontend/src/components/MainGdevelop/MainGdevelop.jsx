@@ -8,7 +8,7 @@ class mainGdevelop extends React.Component {
           src="../../maingdevelop/index.html"
           className="hi"
           width="100%"
-          height="1100px"
+          height="1080px"
           position= "absolute"
           top="0"
           left="0"

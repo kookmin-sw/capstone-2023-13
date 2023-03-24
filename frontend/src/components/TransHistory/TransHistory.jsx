@@ -1,13 +1,18 @@
 import React, {useState} from "react";
 import "./TransHistory.css";
-import MainGdevelop from "../MainGdevelop/MainGdevelop";
+// import MainGdevelop from "../MainGdevelop/MainGdevelop";
 import PurchaseBox from "./PurchaseBox";
 import SaleBox from "./SaleBox";
 
-function TransHistory() {
+function TransHistory({onPopup}) {
   const [page_state, setPage] = useState("purchase");
 
   let content;
+  function closeClick(){
+    console.log('hi');
+    onPopup("close");
+    // movePage('/main');
+  }
   
   const handlePage = (page) => {
     if (page === "purchase"){
@@ -24,12 +29,15 @@ function TransHistory() {
     content = <SaleBox onPage={handlePage} />
   }
   return (
-    <div className="trans-Background">
-      <MainGdevelop className = "trans-MainBackground"/>
-      <div className="trans-WhiteBox2">
+    // <div className="trans-Background">
+      // <MainGdevelop className = "trans-MainBackground"/>
+      // <div className="fakeBackground">
+      <div className="trans-WhiteBox3">
         {content}
+       <button className="customBtn" onClick={closeClick}>닫기</button>
       </div>
-    </div>
+      // </div>
+    // </div>
   );
 }
 

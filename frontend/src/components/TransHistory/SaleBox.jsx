@@ -1,22 +1,24 @@
 import React from "react";
 import "./SalePurchaseBox.css";
 // import MainGdevelop from '../MainGdevelop/MainGdevelop';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
-function SaleBox({onPage}) {
-  const movePage = useNavigate();
+function SaleBox({onPage, onPopup}) {
+  // const movePage = useNavigate();
 
-  function finishClick(){
-    movePage('/main');
-  }
+  // function closeClick(){
+  //   console.log('hi');
+  //   onPopup("close");
+  //   // movePage('/main');
+  // }
   function arrowClick(){
     onPage("purchase")
   }
   return (
     <div>
-        <div className="TitleDiv">
-            <div className="custom-MetaIcon"></div>
-            <div className="CustomText">판매 내역</div>
+        <div className="trans-TitleDiv">
+            <div className="trans-MetaIcon"></div>
+            <div className="trans-Text">판매 내역</div>
         </div>
         {/* <div className="characterBox">
             캐릭터박스
@@ -26,7 +28,7 @@ function SaleBox({onPage}) {
             {/* <GDevelopTest/> */}
         </div>
         <button className="LeftArrowBtn" onClick={arrowClick}>&lt;</button>
-        <button className="customBtn" onClick={finishClick}>닫기</button>
+        {/* <button className="customBtn" onClick={closeClick}>닫기</button> */}
     </div>
   );
 }
