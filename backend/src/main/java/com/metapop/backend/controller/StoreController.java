@@ -39,7 +39,7 @@ public class StoreController {
 
     @Operation(summary = "", description = "상점 삭제 API")
     @DeleteMapping("/remove/{user_id}")
-    public String delete(@PathVariable Long user_id, @RequestBody TokenDTO tokenDTO) {
+    public String remove(@PathVariable Long user_id, @RequestBody TokenDTO tokenDTO) {
         return storeService.delete(user_id, tokenDTO);
     }
 }
