@@ -1,6 +1,6 @@
 from collections import defaultdict
 from aiohttp import web
-from .socket import socket_routes
+from .my_socket import socket_routes
 from .api import api_routes
 
 

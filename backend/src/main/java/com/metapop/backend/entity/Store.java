@@ -1,5 +1,7 @@
 package com.metapop.backend.entity;
 
+import com.metapop.backend.dto.StoreUpdateDTO;
+import com.metapop.backend.dto.UserUpdateDTO;
 import lombok.*;
 
 import javax.persistence.*;
@@ -25,6 +27,10 @@ public class Store {
     public Store(User user, String name){
         this.owner = user;
         this.name = name;
+    }
+
+    public void update(StoreUpdateDTO storeUpdateDTO) {
+        this.name = storeUpdateDTO.getName();
     }
 
 }
