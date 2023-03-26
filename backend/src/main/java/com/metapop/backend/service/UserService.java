@@ -1,8 +1,8 @@
 package com.metapop.backend.service;
 
-import com.metapop.backend.dto.FindPWDTO;
-import com.metapop.backend.dto.MailDTO;
-import com.metapop.backend.dto.UserUpdateDTO;
+import com.metapop.backend.dto.UserDTO.FindPWDTO;
+import com.metapop.backend.dto.UserDTO.MailDTO;
+import com.metapop.backend.dto.UserDTO.UserUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

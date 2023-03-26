@@ -1,4 +1,4 @@
-package com.metapop.backend.dto;
+package com.metapop.backend.dto.StoreDTO;
 
 import lombok.Getter;
 import lombok.Setter;

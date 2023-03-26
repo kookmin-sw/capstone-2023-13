@@ -1,4 +1,4 @@
-package com.metapop.backend.dto;
+package com.metapop.backend.dto.ProductDTO;
 
 import com.metapop.backend.entity.Product;
 import com.metapop.backend.entity.Store;

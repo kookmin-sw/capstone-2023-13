@@ -1,6 +1,6 @@
 package com.metapop.backend.controller;
 
-import com.metapop.backend.dto.*;
+import com.metapop.backend.dto.UserDTO.*;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import com.metapop.backend.service.UserService;

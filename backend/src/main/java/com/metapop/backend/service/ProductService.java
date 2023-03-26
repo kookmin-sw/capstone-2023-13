@@ -1,6 +1,6 @@
 package com.metapop.backend.service;
 
-import com.metapop.backend.dto.ProductSaveDTO;
+import com.metapop.backend.dto.ProductDTO.ProductSaveDTO;
 import com.metapop.backend.entity.Product;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.repository.ProductRepository;
