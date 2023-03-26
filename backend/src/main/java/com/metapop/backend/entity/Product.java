@@ -19,7 +19,7 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "store_id", nullable = false)
-    private Store store_id;
+    private Store storeId;
 
     @Column(nullable = false)
     private String name;
@@ -32,7 +32,7 @@ public class Product {
 
     @Builder
     public Product(Store store, String name, Long price, String info){
-        this.store_id = store;
+        this.storeId = store;
         this.name = name;
         this.price = price;
         this.info = info;
