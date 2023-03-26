@@ -1,5 +1,6 @@
 package com.metapop.backend.entity;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,4 +29,12 @@ public class Product {
 
     @Column(nullable = false)
     private String info;
+
+    @Builder
+    public Product(Store store, String name, Long price, String info){
+        this.store_id = store;
+        this.name = name;
+        this.price = price;
+        this.info = info;
+    }
 }
