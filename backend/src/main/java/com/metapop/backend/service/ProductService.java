@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -29,5 +30,9 @@ public class ProductService {
         Store store = storeRepository.findById(store_id).orElseThrow();
         List<Product> product = productRepository.findByStoreId(store);
         return product;
+    }
+
+    public Optional<Product> infodetail(Long product_id) {
+        return productRepository.findById(product_id);
     }
 }

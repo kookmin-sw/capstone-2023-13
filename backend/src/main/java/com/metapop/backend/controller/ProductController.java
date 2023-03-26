@@ -2,7 +2,6 @@ package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.ProductSaveDTO;
 import com.metapop.backend.entity.Product;
-import com.metapop.backend.entity.Store;
 import com.metapop.backend.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -10,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @Tag(name = "product", description = "상품 API")
 @RestController
@@ -30,5 +30,11 @@ public class ProductController {
     @GetMapping("/info/{store_id}")
     public List<Product> info(@PathVariable Long store_id) {
         return productService.info(store_id);
+    }
+
+    @Operation(summary = "", description = "상품 상세 정보 조회 API")
+    @GetMapping("/info/detail/{product_id}")
+    public Optional<Product> infodetail(@PathVariable Long product_id) {
+        return productService.infodetail(product_id);
     }
 }
