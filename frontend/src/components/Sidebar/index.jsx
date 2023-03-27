@@ -12,6 +12,7 @@ const Sidebar = ({ width=280, children }) => {
   const [xPosition, setX] = useState(-width);
   const side = useRef();
 
+
   //사이드바 팝업 상태 관리
   const [showPopup, setShowPopup] = useState('close');
 
@@ -31,6 +32,7 @@ const Sidebar = ({ width=280, children }) => {
   }
   
   
+
   // button 클릭 시 토글
   const toggleMenu = () => {
     if (xPosition < 0) {
@@ -41,7 +43,7 @@ const Sidebar = ({ width=280, children }) => {
       setOpen(false);
     }
   };
-  
+
   // 사이드바 외부 클릭시 닫히는 함수
   const handleClose = async e => {
     let sideArea = side.current;
@@ -58,6 +60,8 @@ const Sidebar = ({ width=280, children }) => {
       window.removeEventListener('click', handleClose);
     };
   })
+
+  
 
 
   return (
