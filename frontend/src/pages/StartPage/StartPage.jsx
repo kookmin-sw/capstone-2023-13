@@ -6,7 +6,7 @@ import SignupBox from "../../components/Signup/SignupBox";
 import CustomizingBox from "../../components/Customizing/CustomizingBox";
 import FindPassword from "../../components/FindPassword/FindPassword";
 import PasswordSent from "../../components/PasswordSent/PasswordSent";
-
+import MainGdevelop from "../../components/MainGDevelop/MainGDevelop";
 function StartPage() {
   const [page_state, setPage] = useState("login");
 
@@ -65,7 +65,8 @@ function StartPage() {
 
   return (
     <div className="Background">
-      <div className="WhiteBox" style={boxSlide}>
+      <MainGdevelop className = "MainBackground"/>
+      <div className="WhiteBox2" style={boxSlide}>
         {content}
       </div>
     </div>

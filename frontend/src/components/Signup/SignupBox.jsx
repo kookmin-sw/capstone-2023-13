@@ -13,13 +13,18 @@ function SignupBox({ onPage }) {
   const backClick = () => {
     onPage("login");
   }
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [password_check, setPasswordCheck] = useState('');
-  const [name, setName] = useState('');
-  const [bank, setBank] = useState('');
-  const [address, setAddress] = useState('');
-  const [account, setAccount] = useState('');
+  //입력 값 저장
+  const [email, setEmail] = useState('test@test.com');
+  const [password, setPassword] = useState('12');
+  const [password_check, setPasswordCheck] = useState('12');
+  const [name, setName] = useState('test');
+  const [bank, setBank] = useState('test');
+  const [address, setAddress] = useState('test');
+  const [account, setAccount] = useState('123');
+
+  //오류 메시지 저장
+  const [passwordCheckMessage, setPasswordCheckMessage] = useState('');
+  const [emailMessage, setEmailMessage] = useState('');
 
   //유효성검사
   const [isName, setIsName] = useState(false)
@@ -39,9 +44,11 @@ function SignupBox({ onPage }) {
     if (!emailRegex.test(emailCurrent)) {
       console.log('nono')
       setIsEmail(false)
+      setEmailMessage('이메일 형식이 올바르지 않습니다.')
     } else {
       console.log('good')
       setIsEmail(true)
+      setEmailMessage('이메일 확인')      
     }
   }
   // const onChangeName = (e) => {
@@ -74,10 +81,12 @@ function SignupBox({ onPage }) {
   }, [isEmail]);
   useEffect(() => {
     if (password === password_check){
+      setPasswordCheckMessage('비밀번호 같음')
       setIsPassword(true)
-    }else(
+    }else{
+      setPasswordCheckMessage('비밀번호 다름')
       setIsPassword(false)
-    )
+    }
   }, [password, password_check, isPassword]);
   useEffect(() => {
     if (name !==''){
@@ -152,6 +161,11 @@ function SignupBox({ onPage }) {
             <div className="inputDiv">
               <div className="labelDiv">이메일 주소</div>
               <input className="inputBox" type="text" value={email} onChange={(e) => onChangeEmail(e)}></input>
+              {/* <div>올바른 이메일 형식이 아닙니다.</div> */}
+              {email.length > 0 && (
+              <div className={`message ${isEmail ? 'success' : 'error'}`}>{emailMessage}</div>
+          )}
+
             </div>
             <div className="inputDiv">
               <div className="labelDiv">비밀번호</div>
@@ -160,6 +174,9 @@ function SignupBox({ onPage }) {
             <div className="inputDiv">
               <div className="labelDiv">비밀번호 확인</div>
               <input className="inputBox" type="password" value={password_check} onChange={(e) => setPasswordCheck(e.target.value)}></input>
+              {password_check.length > 0 && (
+              <div className={`message ${isPassword ? 'success' : 'error'}`}>{passwordCheckMessage}</div>
+          )}
             </div>
             <div className="inputDiv">
               <div className="labelDiv">이름</div>
@@ -179,7 +196,13 @@ function SignupBox({ onPage }) {
             </div>
             <div className="inputDiv">
               <div className="labelDiv">은행</div>
-              <input className="inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input>
+              {/* <input className="inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input> */}
+              <select className="selectBox" name="bank">
+                <option value="giup">기업은행</option>
+                <option value="kookmin">국민은행</option>
+                <option value="wooli">우리은행</option>
+                <option value="giup">토스뱅크</option>
+              </select>
             </div>
             <div className="inputDiv">
               <div className="labelDiv">계좌</div>
@@ -188,7 +211,7 @@ function SignupBox({ onPage }) {
         </div>
         <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isAddress && isBank && isAccount)}>완료</button>
         {/* <button className="finishBtn" onClick={finishClick} disabled={true}>완료</button> */}
-        <button className="lastBtn signupBtn" onClick={backClick}>뒤로</button>
+        <button className="whiteBtn" onClick={backClick}>뒤로</button>
     </div>
   );
 }

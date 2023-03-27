@@ -1,7 +1,10 @@
 import React, {useEffect, useRef, useState } from "react";
 import * as styled from "./styles";
 import styles from "./sidebar.module.css";
-import smile from '../../assets/img/smile.png'
+import smile from '../../assets/img/smile.png';
+import TransHistory from '../TransHistory/TransHistory';
+import "../TransHistory/TransHistory.css";
+// import { useNavigate } from "react-router-dom";
 
 
 const Sidebar = ({ width=280, children }) => {
@@ -9,6 +12,26 @@ const Sidebar = ({ width=280, children }) => {
   const [xPosition, setX] = useState(-width);
   const side = useRef();
 
+
+  //사이드바 팝업 상태 관리
+  const [showPopup, setShowPopup] = useState('close');
+
+  // const movePage = useNavigate();
+  const handlePopup = (popup) => {
+    if(popup === "close"){
+      setShowPopup('close');
+      setX(-width);
+      setOpen(false);
+    }
+  }
+  const transHistoryClick = () => {
+    setShowPopup('trans');
+    setX(-width);
+    setOpen(false);
+    // handleClose();
+  }
+  
+  
 
   // button 클릭 시 토글
   const toggleMenu = () => {
@@ -43,6 +66,8 @@ const Sidebar = ({ width=280, children }) => {
 
   return (
     <div className={styles.container}>
+      {showPopup == "trans" && (
+      <div className = "fakeBackground"><TransHistory onPopup={handlePopup}></TransHistory></div>)}
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '80%',  transform: `translatex(${-xPosition}px)`}}>
         <button onClick={() => toggleMenu()}
           className={styles.button} >
@@ -63,7 +88,7 @@ const Sidebar = ({ width=280, children }) => {
           </styled.MyInfo>
           <styled.History>
             <styled.HistoryIcon />
-            <span>거래 내역</span>
+            <span onClick={() => transHistoryClick()}>거래 내역</span>
           </styled.History>
           <styled.MyShop>
             <styled.MyShopIcon />
