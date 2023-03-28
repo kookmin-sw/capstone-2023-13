@@ -1,6 +1,7 @@
 package com.metapop.backend.service;
 
 import com.metapop.backend.dto.ProductDTO.ProductSaveDTO;
+import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
 import com.metapop.backend.entity.Product;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.repository.ProductRepository;
@@ -34,5 +35,11 @@ public class ProductService {
 
     public Optional<Product> infodetail(Long product_id) {
         return productRepository.findById(product_id);
+    }
+
+    public Product update(Long product_id, ProductUpdateDTO productUpdateDTO) {
+        Product product = productRepository.findById(product_id).orElseThrow();
+        product.update(productUpdateDTO);
+        return product;
     }
 }

@@ -1,5 +1,6 @@
 package com.metapop.backend.entity;
 
+import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -36,5 +37,11 @@ public class Product {
         this.name = name;
         this.price = price;
         this.info = info;
+    }
+
+    public void update(ProductUpdateDTO productUpdateDTO) {
+        this.name = productUpdateDTO.getName();
+        this.price = productUpdateDTO.getPrice();
+        this.info = productUpdateDTO.getInfo();
     }
 }
