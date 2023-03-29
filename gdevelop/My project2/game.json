@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "/Users/choeboseog/Downloads",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -776,6 +776,19 @@
         "name": "White Button With Shadow_Hovered.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blank Emote Mid.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blank Emote Mid.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Emotes by Tomcat94/20225066f8511c5d25cfb094a03fc68c3ad67cb0a0522c7eefe55e1a3d5209a6_Blank Emote Mid.png",
+          "name": "Blank Emote Mid.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -1112,6 +1125,93 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "TextInput",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "\b클릭하여 채팅을 시작해주세요.",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "text",
+        "textColor": "155;155;155",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "255;255;255",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "a00e23f3f8e3b747b48c98ef3d30a47d0aab6c1533ed9975ea30ea88be812733",
+      "name": "BlankEmoteMid",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Blank Emote Mid.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ChatText",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "dfd",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "objectsGroups": [],
@@ -1153,7 +1253,7 @@
           "width": 1934,
           "x": -300,
           "y": -258,
-          "zOrder": 3,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1167,8 +1267,8 @@
           "persistentUuid": "5e251e23-ec45-4995-ad62-2c6d7d33c3b4",
           "width": 90,
           "x": 540,
-          "y": 262,
-          "zOrder": 4,
+          "y": 260,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1181,9 +1281,39 @@
           "name": "WhiteDoor",
           "persistentUuid": "f513f024-ad44-4d41-9957-de575621f004",
           "width": 100,
-          "x": 532,
-          "y": 37,
-          "zOrder": 3,
+          "x": 551,
+          "y": -149,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI Layer",
+          "name": "TextInput",
+          "persistentUuid": "ce59d317-699b-4f7e-abc6-c9e6594f29c7",
+          "width": 0,
+          "x": 0,
+          "y": 560,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 208,
+          "layer": "",
+          "name": "ChatText",
+          "persistentUuid": "105169df-7cd2-4b3d-8dca-3a49da2dc144",
+          "width": 346,
+          "x": 3,
+          "y": 352,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1311,6 +1441,13 @@
           "target": "Player move"
         },
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Player chat"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1382,6 +1519,17 @@
             }
           ],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 134217728,
+          "ambientLightColorG": 6063568,
+          "ambientLightColorR": 10250160,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI Layer",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -1439,7 +1587,7 @@
           "width": 1688,
           "x": -186,
           "y": -127,
-          "zOrder": 1,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1469,7 +1617,7 @@
           "width": 100,
           "x": 581,
           "y": -255,
-          "zOrder": 1,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1484,7 +1632,7 @@
           "width": 200,
           "x": 1,
           "y": 617,
-          "zOrder": 3,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1499,7 +1647,7 @@
           "width": 200,
           "x": 216,
           "y": 618,
-          "zOrder": 3,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1514,7 +1662,7 @@
           "width": 200,
           "x": 429,
           "y": 619,
-          "zOrder": 3,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1529,7 +1677,7 @@
           "width": 200,
           "x": 641,
           "y": 618,
-          "zOrder": 3,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1544,7 +1692,7 @@
           "width": 200,
           "x": 855,
           "y": 619,
-          "zOrder": 3,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1559,7 +1707,7 @@
           "width": 200,
           "x": 1067,
           "y": 618,
-          "zOrder": 3,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1653,6 +1801,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 37,
+          "layer": "UI Layer",
+          "name": "TextInput",
+          "persistentUuid": "d3525314-f02c-4324-b911-bcb1d693c08b",
+          "width": 331,
+          "x": 0,
+          "y": 560,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1676,7 +1839,31 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
           "animations": [
             {
               "name": "Close Lined",
@@ -1746,7 +1933,37 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
+            },
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 200,
+              "shapeDimensionB": 100,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
           "animations": [
             {
               "name": "Decorated",
@@ -2157,6 +2374,17 @@
           "effects": []
         },
         {
+          "ambientLightColorB": 9949344,
+          "ambientLightColorG": 6063568,
+          "ambientLightColorR": 10269912,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI Layer",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
           "ambientLightColorB": -2147483600,
           "ambientLightColorG": 6063568,
           "ambientLightColorR": 9773280,
@@ -2169,6 +2397,18 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
+        },
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera"
@@ -3125,6 +3365,330 @@
               },
               "parameters": [
                 "MaleCharacter10"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Store scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Player chat",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "runtimeScene.ws = new WebSocket(\"ws://localhost:8080/ws\");",
+                "",
+                "runtimeScene.ws.onopen = function(event) {",
+                "",
+                "    const data = {",
+                "        user_id: \"001\", ",
+                "        channel_id : \"Square1\",",
+                "        X : 0,",
+                "        Y : 0",
+                "    }",
+                "    setTimeout(() => {",
+                "        runtimeScene.ws.send(JSON.stringify(data))",
+                "    }, 500);",
+                "",
+                "}",
+                "",
+                "runtimeScene.ws.onmessage = function(event) {",
+                "  const e = JSON.parse(event.data);",
+                "  ",
+                "  if (e.type == \"chat\" && e.user_id != \"SERVER\") {",
+                "      const textOutputObjectName = \"ChatText\";",
+                "      const textOutputInstances = runtimeScene.getObjects(textOutputObjectName);",
+                "      const textOutputInstance = textOutputInstances[0];",
+                "      const message = e.msg;",
+                "      console.log(\"user_id : \", e.user_id, \" 메시지 내용 : \", message);",
+                "      textOutputInstance.setString(message);",
+                "  }",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TextInput::TextInputObject::Focused"
+              },
+              "parameters": [
+                "TextInput"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// 메시지 전송 함수",
+                "function sendMessage(message) {",
+                "  const data = { type : \"chat\", user_id : \"001\", msg : message };",
+                "  // runtimeScene.ws.send(JSON.stringify(data));",
+                "  setTimeout(() => {",
+                "    runtimeScene.ws.send(JSON.stringify(data))",
+                "  }, 500);",
+                "}",
+                "// TextInput 오브젝트 이름 (실제 사용하는 오브젝트 이름으로 변경해야 함)",
+                "const textInputObjectName = \"TextInput\";",
+                "// TextInput 오브젝트 인스턴스 가져오기",
+                "const textInputInstance = runtimeScene.getObjects(textInputObjectName);",
+                "const text = textInputInstance[0];",
+                "",
+                "// 입력된 텍스트 가져오기",
+                "const inputText = text.getString();",
+                "",
+                "// console.log(chatContent);",
+                "sendMessage(inputText);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Square scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Player chat local",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "BlankEmoteMid"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ChatText"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "BlankEmoteMid",
+                "=",
+                "MaleCharacter10.X()",
+                "=",
+                "MaleCharacter10.Y() - 115"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "ChatText",
+                "=",
+                "MaleCharacter10.X()",
+                "=",
+                "MaleCharacter10.Y() - 85"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "TextInput::TextInputObject::Focused"
+              },
+              "parameters": [
+                "TextInput"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "BlankEmoteMid",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ChatText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ChatText",
+                "=",
+                "TextInput.Text()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "BlankEmoteMid",
+                "\"ChatTime\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "ChatText",
+                "\"ChatTime\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "BlankEmoteMid",
+                "\"ChatTime\"",
+                ">=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "ChatText",
+                "\"ChatTime\"",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "BlankEmoteMid"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ChatText"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ChatText",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "BlankEmoteMid",
+                "\"ChatTime\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "ChatText",
+                "\"ChatTime\""
               ]
             }
           ]
