@@ -42,4 +42,10 @@ public class ProductService {
         product.update(productUpdateDTO);
         return product;
     }
+
+    public String delete(Long product_id) {
+        Product product = productRepository.findById(product_id).orElseThrow();
+        productRepository.delete(product);
+        return "삭제 완료";
+    }
 }

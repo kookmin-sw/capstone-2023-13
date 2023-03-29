@@ -2,6 +2,7 @@ package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.ProductDTO.ProductSaveDTO;
 import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
+import com.metapop.backend.dto.UserDTO.TokenDTO;
 import com.metapop.backend.entity.Product;
 import com.metapop.backend.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -43,5 +44,11 @@ public class ProductController {
     @PutMapping("/update/{product_id}")
     public Product update(@PathVariable Long product_id, @RequestBody ProductUpdateDTO productUpdateDTO) {
         return productService.update(product_id, productUpdateDTO);
+    }
+
+    @Operation(summary = "", description = "상품 삭제 API")
+    @DeleteMapping("/remove/{product_id}")
+    public String remove(@PathVariable Long product_id) {
+        return productService.delete(product_id);
     }
 }
