@@ -1,4 +1,4 @@
-package com.metapop.backend.dto;
+package com.metapop.backend.dto.StoreDTO;
 
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.User;
