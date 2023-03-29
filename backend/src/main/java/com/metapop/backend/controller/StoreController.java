@@ -1,8 +1,8 @@
 package com.metapop.backend.controller;
 
-import com.metapop.backend.dto.StoreSaveDTO;
-import com.metapop.backend.dto.StoreUpdateDTO;
-import com.metapop.backend.dto.TokenDTO;
+import com.metapop.backend.dto.StoreDTO.StoreSaveDTO;
+import com.metapop.backend.dto.StoreDTO.StoreUpdateDTO;
+import com.metapop.backend.dto.UserDTO.TokenDTO;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.service.StoreService;
 import io.swagger.v3.oas.annotations.Operation;
