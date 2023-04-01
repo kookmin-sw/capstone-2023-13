@@ -3424,62 +3424,39 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TextInput::TextInputObject::Focused"
-              },
-              "parameters": [
-                "TextInput"
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Return"
-              ]
-            }
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// 메시지 전송 함수",
+            "function sendMessage(message) {",
+            "  const data = { type : \"chat\", user_id : \"001\", msg : message };",
+            "  // runtimeScene.ws.send(JSON.stringify(data));",
+            "  setTimeout(() => {",
+            "    runtimeScene.ws.send(JSON.stringify(data))",
+            "  }, 500);",
+            "}",
+            "",
+            "const isEnterPressed = runtimeScene.getGame().getInputManager().isKeyPressed(\"Return\");",
+            "const textInputObjectName = \"TextInput\";",
+            "  // TextInput 오브젝트 인스턴스 가져오기",
+            "  const textInputInstances = runtimeScene.getObjects(textInputObjectName);",
+            "",
+            "if (isEnterPressed && textInputInstances.length > 0) {",
+            "",
+            "  const textInputInstance = textInputInstances[0];",
+            "  // 입력된 텍스트 가져오기",
+            "  const inputText = textInputInstance.getString();",
+            "",
+            "  sendMessage(inputText);",
+            "}"
           ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "// 메시지 전송 함수",
-                "function sendMessage(message) {",
-                "  const data = { type : \"chat\", user_id : \"001\", msg : message };",
-                "  // runtimeScene.ws.send(JSON.stringify(data));",
-                "  setTimeout(() => {",
-                "    runtimeScene.ws.send(JSON.stringify(data))",
-                "  }, 500);",
-                "}",
-                "// TextInput 오브젝트 이름 (실제 사용하는 오브젝트 이름으로 변경해야 함)",
-                "const textInputObjectName = \"TextInput\";",
-                "// TextInput 오브젝트 인스턴스 가져오기",
-                "const textInputInstance = runtimeScene.getObjects(textInputObjectName);",
-                "const text = textInputInstance[0];",
-                "",
-                "// 입력된 텍스트 가져오기",
-                "const inputText = text.getString();",
-                "",
-                "// console.log(chatContent);",
-                "sendMessage(inputText);"
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": false
-            }
-          ]
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ]
     },
