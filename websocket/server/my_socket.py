@@ -1,7 +1,14 @@
 from aiohttp import web
+from collections import defaultdict
 
 
 routes = web.RouteTableDef()
+
+
+@routes.get('/')
+async def return_success(request):
+    return web.json_response({'rsp': 'success'})
+
 
 @routes.get('/ws')
 async def websocket_handler(request):
@@ -71,5 +78,9 @@ async def broadcast(app, channel, message):
     for user, ws in app['websockets'][channel].items():
         await ws.send_json(message)
 
-async def socket_routes():
-    return routes
+
+async def web_server():
+    app = web.Application()
+    app.add_routes(routes)
+    app['websockets'] = defaultdict(dict)
+    return app
