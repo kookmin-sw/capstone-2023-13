@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+# Meta-Pop
 
-You can use the [editor on GitHub](https://github.com/kookmin-sw/cap-template/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## 1. 프로젝트 소개
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+오프라인의 팝업 스토어를 메타버스 상에서 론칭이 가능하도록 하여 판매자는 팝업스토어를 다양한 형태로 표현할 수 있고 구매자는 장소에 구애받지 않고 쉽게 판매자가 론칭한 팝업스토어에 참여할 수 있도록 하는 프로젝트입니다.
 
-### Markdown
+### 구매자
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 회원 가입 및 로그인을 통해 MetaPop 내 광장으로 이동
+- 광장에서 열린 여러 팝업스토어 중 원하는 곳의 팝업스토어로 입장
+- 팝업 스토어 내부 이용자간 채팅 기능 구현
+- 팝업 스토어 내에 진열된 여러 물품들을 보고 구매
 
-```markdown
-Syntax highlighted code block
+### 판매자
 
-# Header 1
-## Header 2
-### Header 3
+- 회원 가입 및 로그인을 통해 MetaPop 내 광장으로 이동
+- 광장에서 론칭할 팝업스토어 등록 및 장소 배정
+- 판매하고자 하는 물품들 등록 및 진열
+- 구매자가 물품을 구매하면 해당 구매자의 주소지로 택배 배송
 
-- Bulleted
-- List
+<img src="https://user-images.githubusercontent.com/39540790/229363453-670c4fcf-49a0-440b-85c3-0d636d88a3bc.png">
 
-1. Numbered
-2. List
+<img src="https://user-images.githubusercontent.com/39540790/229363871-3d4e3b37-242d-4360-b349-d2d23973dad0.png">
 
-**Bold** and _Italic_ and `Code` text
+</br>
 
-[Link](url) and ![Image](src)
-```
+## 2. 기대 효과
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- 오프라인에서 유행하는 팝업스토어를 메타버스 상으로 끌어와서 장소 대여 및 공사 설비 비용 감소
+- 오프라인의 한정적인 형태의 팝업스토어를 메타버스의 높은 자유도로 인한 다양한 형태로 제작 가능
+- 오프라인보다 더 참여하기 쉬운 메타버스 상의 팝업스토어를 통해 직접 찾아가지 않고 다양한 장소에서 참가할 수 있게 하여 더 높은 참여율 유도
 
-### Jekyll Themes
+</br>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kookmin-sw/cap-template/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 3. 팀 소개
 
-### Support or Contact
+|                최보석                |                     강주성                     |                    최혁태                    |                 표상우                 |                 박채연                 |
+| :----------------------------------: | :--------------------------------------------: | :------------------------------------------: | :------------------------------------: | :------------------------------------: |
+|               XXXX1698               |                    XXXX1569                    |                   XXXX1702                   |                XXXX1704                |                XXXX1601                |
+|               FrontEnd               |                    BackEnd                     |                   FrontEnd                   |                BackEnd                 |                FrontEnd                |
+|      chlqhtjr752@kookmin.ac.kr       |               kjs@kookmin.ac.kr                |           htchoi1006@kookmin.ac.kr           |         psw3619@kookmin.ac.kr          |         muy5310@kookmin.ac.kr          |
+| [@YEONOC](https://github.com/YEONOC) | [@KangJuSeong](https://github.com/KangJuSeong) | [@htchoi1006](https://github.com/htchoi1006) | [@okpyo12](https://github.com/okpyo12) | [@muy5310](https://github.com/muy5310) |
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</br>
+
+## 4. 사용법
+
+추후 추가 예정
+
+</br>
+
+## 5. 기타
+
+추후 추가 예정
