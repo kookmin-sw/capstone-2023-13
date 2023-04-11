@@ -5,6 +5,7 @@ import smile from '../../assets/img/smile.png';
 import PurchaseHistory from '../TransHistory/PurchaseHistory/PurchaseHistory';
 import SaleHistory from '../TransHistory/SaleHistory/SaleHistory';
 import "../TransHistory/TransHistory.css";
+import MyPage from "../MyPage/MyPage";
 // import { useNavigate } from "react-router-dom";
 
 
@@ -89,7 +90,7 @@ const Sidebar = ({ width=280, children }) => {
             <styled.MetaIcon />
             <span>Meta-PoP</span>
           </styled.SidebarTitle>
-          <styled.MyInfo>
+          <styled.MyInfo onClick={() => myInfoClick()}>
             <styled.MyInfoIcon />
             <span>내 정보</span>
           </styled.MyInfo>

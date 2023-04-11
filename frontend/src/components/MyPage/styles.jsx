@@ -10,7 +10,7 @@ export const Container = styled.div`
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(${background});
+    /* background-image: url(${background}); */
 `;
 
 export const Backgroud = styled.img.attrs({
@@ -160,7 +160,7 @@ export const PasswordInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 26px; 
+    margin-top: 100px; 
 
     > span {
         &:nth-child(1) {
