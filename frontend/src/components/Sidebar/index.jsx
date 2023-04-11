@@ -4,6 +4,7 @@ import styles from "./sidebar.module.css";
 import smile from '../../assets/img/smile.png';
 import TransHistory from '../TransHistory/TransHistory';
 import "../TransHistory/TransHistory.css";
+import MyPage from "../MyPage/MyPage";
 // import { useNavigate } from "react-router-dom";
 
 
@@ -30,6 +31,13 @@ const Sidebar = ({ width=280, children }) => {
     setOpen(false);
     // handleClose();
   }
+  const myInfoClick = () => {
+    setShowPopup('myinfo');
+    setX(-width);
+    setOpen(false);
+    // handleClose();
+  }
+
   
   
 
@@ -68,6 +76,8 @@ const Sidebar = ({ width=280, children }) => {
     <div className={styles.container}>
       {showPopup == "trans" && (
       <div className = "fakeBackground"><TransHistory onPopup={handlePopup}></TransHistory></div>)}
+      {showPopup == "myinfo" && (
+      <div className = "fakeBackground"><MyPage onPopup={handlePopup}></MyPage></div>)}
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '80%',  transform: `translatex(${-xPosition}px)`}}>
         <button onClick={() => toggleMenu()}
           className={styles.button} >
@@ -82,7 +92,7 @@ const Sidebar = ({ width=280, children }) => {
             <styled.MetaIcon />
             <span>Meta-PoP</span>
           </styled.SidebarTitle>
-          <styled.MyInfo>
+          <styled.MyInfo onClick={() => myInfoClick()}>
             <styled.MyInfoIcon />
             <span>내 정보</span>
           </styled.MyInfo>
