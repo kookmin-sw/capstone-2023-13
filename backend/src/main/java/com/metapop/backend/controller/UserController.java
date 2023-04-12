@@ -109,6 +109,19 @@ public class UserController {
         }
     }
 
+    @Operation(summary = "", description = "내 정보 진입 API")
+    @Transactional
+    @PostMapping("/myinfo")
+    public ResponseEntity<?> myInfo(@RequestBody LoginDTO loginDTO){
+        if(userService.isEmailDuplicate(loginDTO.getEmail())) {
+            if(userService.comparePassword(loginDTO.getEmail(),loginDTO.getPassword())) {
+                return ResponseEntity.ok("내 정보 진입에 성공했습니다.");
+            }
+            return ResponseEntity.badRequest().body("비밀번호가 틀렸습니다.");
+        }
+        return ResponseEntity.badRequest().body("존재하지 않는 이메일입니다.");
+    }
+
     @Operation(summary = "", description = "임시 비밀번호 이메일 전송 API")
     @Transactional
     @PostMapping("/sendEmail")
