@@ -1,0 +1,106 @@
+.TitleDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* margin-top: 30px; */
+  /* margin-top: 10px;
+  margin-left: 10px; */
+  justify-content: center;
+  
+}
+.finishBtn{
+/* display: flex; */
+/* float: left; */
+/* margin-left:85px; */
+/* margin-right:85px; */
+cursor: pointer;
+/* width: 180px; */
+width: 385px;
+height: 45px;
+background: #141060;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border:none;
+border-radius: 10px;
+color:white;
+text-align: center;
+margin-top:20px;
+font-weight: bold;
+}
+.finishBtn:disabled{
+/* display: flex; */
+  /* float: left; */
+  /* margin-left:85px; */
+  /* margin-right:85px; */
+  cursor: pointer;
+  /* width: 180px; */
+  width: 385px;
+  height: 45px;
+  background: #b0b0b0;
+  /* box-shadow: none; */
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.signup-MetaIcon{
+  float: left;
+  margin-top: 15px;
+  margin-right:15px;
+  width:80px;
+  height: 80px;
+  background-image: url('../../images/icons/meta-icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.SignupText{
+  float: left;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-right:150px;
+}
+.inputForm{
+  /* border:3px solid black; */
+  width: 100%;
+  height:400px;
+  overflow:auto;
+  margin-bottom: 40px;
+}
+.inputForm::-webkit-scrollbar {
+  width: 10px;
+}
+.inputForm::-webkit-scrollbar-thumb {
+  background-color: #141060;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.inputForm::-webkit-scrollbar-track {
+  /* background-color: grey; */
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+.selectBox{
+  /* white-space: pre; */
+  margin:10px 0;
+  border:none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 375px;
+  height: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.selectBox:focus{
+  outline: 2px solid #70558E;
+}
+.message {
+  font-weight: 500;}
+  .message.success {
+    color: green;
+  }
+  .message.error {
+    color: rgb(222, 4, 4);
+  }
