@@ -1,6 +1,6 @@
 package com.metapop.backend.entity;
 
-import com.metapop.backend.dto.UserUpdateDTO;
+import com.metapop.backend.dto.UserDTO.UserUpdateDTO;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

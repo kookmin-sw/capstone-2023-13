@@ -1,4 +1,4 @@
-from server.server import web_server
+from server.my_socket import web_server
 from aiohttp import web
 import aiohttp
 
