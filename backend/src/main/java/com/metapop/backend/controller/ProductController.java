@@ -2,7 +2,6 @@ package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.ProductDTO.ProductSaveDTO;
 import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
-import com.metapop.backend.dto.UserDTO.TokenDTO;
 import com.metapop.backend.entity.Product;
 import com.metapop.backend.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;

@@ -1,5 +1,6 @@
 package com.metapop.backend.entity;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -30,10 +31,19 @@ public class Orders {
     @Column(nullable = false)
     private Long state;
 
-    @ElementCollection
-    private List<Long> productList;
-
     @Column(nullable = false)
     private Long totalPrice;
 
+    @PrePersist
+    public void prePersist() {
+        this.orderDate = LocalDateTime.now();
+    }
+
+    @Builder
+    public Orders(Long buyerId, Long sellerId, Long state, Long totalPrice){
+        this.buyerId = buyerId;
+        this.sellerId = sellerId;
+        this.state = state;
+        this.totalPrice = totalPrice;
+    }
 }
