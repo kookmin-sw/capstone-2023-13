@@ -332,3 +332,28 @@ export const ConfirmBtn = styled.button`
         font-size: 20px;
     }
 `;
+
+export const CloseBtn = styled.button`
+    width: 216px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    cursor: pointer;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > span {
+        color: #141060;
+        font-weight: 600;
+        font-size: 20px;
+    }
+`;

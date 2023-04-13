@@ -183,6 +183,36 @@ export const HrLine = styled.div`
     margin-bottom: 23px;
 `;
 
+export const BackBtn = styled.button`
+    width: 195px;
+    height: 73px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 63px;
+    margin-left: 873px;
+    margin-right: 26px;
+    
+    cursor: pointer;
+
+    > span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        color: #141060;
+    }
+`;
+
+export const BackAndCloseBtn = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
 export const CloseBtn = styled.button`
     width: 195px;
     height: 73px;
@@ -194,7 +224,6 @@ export const CloseBtn = styled.button`
     align-items: center;
     justify-content: center;
     margin-top: 63px;
-    margin-left: 1094px;
     
     cursor: pointer;
 
