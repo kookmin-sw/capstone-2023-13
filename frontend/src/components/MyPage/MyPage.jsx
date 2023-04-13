@@ -69,7 +69,10 @@ const MyPage = ({onPopup}) => {
                     </styled.AccountInfo>
                 </styled.MiddleDiv>
                 <styled.RightDiv>
-                    <styled.ConfirmBtn onClick={closeClick}>
+                    <styled.CloseBtn onClick={closeClick}>
+                        <span>닫기</span>
+                    </styled.CloseBtn>
+                    <styled.ConfirmBtn>
                         <span>회원 정보 수정</span>
                     </styled.ConfirmBtn>
                 </styled.RightDiv>

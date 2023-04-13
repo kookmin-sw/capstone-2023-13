@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import * as styled from './styles';
 
-const PurchaseDetail = ({onPage, onClose}) => {
-    function closeClick(){
+const PurchaseDetail = ({ onPage, onClose }) => {
+    function closeClick() {
         console.log("close")
         onClose("true")
     }
@@ -32,37 +32,43 @@ const PurchaseDetail = ({onPage, onClose}) => {
     return (
         // <styled.Container>
         //     <styled.FindWhiteBox>
-                <div>
-                <styled.HeaderBox>
-                    <styled.MetaIcon />
-                    <span>주문 정보</span>
-                </styled.HeaderBox>
-                <styled.AboutOrder>
-                    <styled.OrderNo>
-                        <span>주문 번호 : 8783927023970</span>
-                        <span>스토어 이름 : 메종 마르지엘라</span>
-                        <span>주문 날짜 : 2023.03.20 (월)</span>
-                        <span>총 주문 금액 : 120,000 원</span>
-                    </styled.OrderNo>
-                    <styled.CancelOrderBtn>
-                        <span>구매</span>
-                        <span>취소</span>
-                    </styled.CancelOrderBtn>
-                </styled.AboutOrder>
-                <styled.ItemBox>
-                    <styled.PurchasedItemList>
-                        <PurchasedItem />
-                        <PurchasedItem />
-                    </styled.PurchasedItemList>
-                    <styled.HrLine />
-                    <styled.PurchasedItemList>
-                        <PurchasedItem />
-                        <PurchasedItem />
-                    </styled.PurchasedItemList>
-                </styled.ItemBox>
+        <div>
+            <styled.HeaderBox>
+                <styled.MetaIcon />
+                <span>주문 정보</span>
+            </styled.HeaderBox>
+            <styled.AboutOrder>
+                <styled.OrderNo>
+                    <span>주문 번호 : 8783927023970</span>
+                    <span>스토어 이름 : 메종 마르지엘라</span>
+                    <span>주문 날짜 : 2023.03.20 (월)</span>
+                    <span>총 주문 금액 : 120,000 원</span>
+                </styled.OrderNo>
+                <styled.CancelOrderBtn>
+                    <span>구매</span>
+                    <span>취소</span>
+                </styled.CancelOrderBtn>
+            </styled.AboutOrder>
+            <styled.ItemBox>
+                <styled.PurchasedItemList>
+                    <PurchasedItem />
+                    <PurchasedItem />
+                </styled.PurchasedItemList>
+                <styled.HrLine />
+                <styled.PurchasedItemList>
+                    <PurchasedItem />
+                    <PurchasedItem />
+                </styled.PurchasedItemList>
+            </styled.ItemBox>
+            <styled.BackAndCloseBtn>
+                <styled.BackBtn>
+                    <span>이전</span>
+                </styled.BackBtn>
                 <styled.CloseBtn>
                     <span onClick={closeClick}>닫기</span>
-                </styled.CloseBtn></div>
+                </styled.CloseBtn>
+            </styled.BackAndCloseBtn>
+        </div>
         //     </styled.FindWhiteBox>
         // </styled.Container>
     )

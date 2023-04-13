@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import background from '../../../images/backgrounds/startbackground.png';
-import metaicon from '../../../images/icons/meta-icon.png';
-import productimg from '../../../images/etc/Rectangle.png';
+import background from '../../images/backgrounds/startbackground.png';
+import metaicon from '../../images/icons/meta-icon.png';
+import productimg from '../../images/etc/Rectangle.png';
 
 
 export const Container = styled.div`
@@ -43,12 +43,12 @@ export const FindWhiteBox = styled.div`
 `;
 
 export const HeaderBox = styled.div`
-    width: 100%;
-    height: 120px;
+    width: 1435px;
+    height: 130px;
     display: flex;
     align-items: center;
     background: #8398D1;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 32px 32px 0px 0px;
 
     > span {
         font-size: 48px;
@@ -183,35 +183,7 @@ export const HrLine = styled.div`
     margin-bottom: 23px;
 `;
 
-export const BackBtn = styled.button`
-    width: 195px;
-    height: 73px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 63px;
-    margin-left: 873px;
-    margin-right: 26px;
-    
-    cursor: pointer;
-
-    > span {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        color: #141060;
-    }
-`;
-
-export const BackAndCloseBtn = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
 
 export const CloseBtn = styled.button`
     width: 195px;
@@ -224,6 +196,7 @@ export const CloseBtn = styled.button`
     align-items: center;
     justify-content: center;
     margin-top: 63px;
+    margin-left: 1094px;
     
     cursor: pointer;
 
