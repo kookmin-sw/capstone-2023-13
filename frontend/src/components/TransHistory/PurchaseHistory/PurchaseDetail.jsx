@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import * as styled from './styles';
 
-const OrderInfo = () => {
+const PurchaseDetail = ({onPage, onClose}) => {
+    function closeClick(){
+        console.log("close")
+        onClose("true")
+    }
     const PurchasedItem = () => {
         return (
             <styled.PurchasedItem>
@@ -26,8 +30,9 @@ const OrderInfo = () => {
 
 
     return (
-        <styled.Container>
-            <styled.FindWhiteBox>
+        // <styled.Container>
+        //     <styled.FindWhiteBox>
+                <div>
                 <styled.HeaderBox>
                     <styled.MetaIcon />
                     <span>주문 정보</span>
@@ -56,11 +61,11 @@ const OrderInfo = () => {
                     </styled.PurchasedItemList>
                 </styled.ItemBox>
                 <styled.CloseBtn>
-                    <span>닫기</span>
-                </styled.CloseBtn>
-            </styled.FindWhiteBox>
-        </styled.Container>
+                    <span onClick={closeClick}>닫기</span>
+                </styled.CloseBtn></div>
+        //     </styled.FindWhiteBox>
+        // </styled.Container>
     )
 }
 
-export default OrderInfo;
+export default PurchaseDetail;

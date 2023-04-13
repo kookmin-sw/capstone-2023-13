@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import background from '../../images/backgrounds/startbackground.png';
-import metaicon from '../../images/icons/meta-icon.png';
-import productimg from '../../images/etc/Rectangle.png';
+import background from '../../../images/backgrounds/startbackground.png';
+import metaicon from '../../../images/icons/meta-icon.png';
+import productimg from '../../../images/etc/Rectangle.png';
 
 
 export const Container = styled.div`
@@ -43,12 +43,12 @@ export const FindWhiteBox = styled.div`
 `;
 
 export const HeaderBox = styled.div`
-    width: 1435px;
-    height: 130px;
+    width: 100%;
+    height: 120px;
     display: flex;
     align-items: center;
     background: #8398D1;
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 
     > span {
         font-size: 48px;

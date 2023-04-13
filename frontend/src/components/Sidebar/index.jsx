@@ -26,6 +26,12 @@ const Sidebar = ({ width=280, children }) => {
       setOpen(false);
     }
   }
+  const myInfoClick = () => {
+    setShowPopup('myinfo');
+    setX(-width);
+    setOpen(false);
+    // handleClose();
+  }
   const purchaseHistoryClick = () => {
     setShowPopup('purchase');
     setX(-width);
@@ -72,10 +78,13 @@ const Sidebar = ({ width=280, children }) => {
 
   return (
     <div className={styles.container}>
+      {showPopup == "myinfo" && (
+      <div className = "fakeBackground"><MyPage onPopup={handlePopup}></MyPage></div>)}
       {showPopup == "purchase" && (
       <div className = "fakeBackground"><PurchaseHistory onPopup={handlePopup}></PurchaseHistory></div>)}
       {showPopup == "sale" && (
       <div className = "fakeBackground"><SaleHistory onPopup={handlePopup}></SaleHistory></div>)}
+      
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '80%',  transform: `translatex(${-xPosition}px)`}}>
         <button onClick={() => toggleMenu()}
           className={styles.button} >
@@ -102,25 +111,10 @@ const Sidebar = ({ width=280, children }) => {
             <styled.HistoryIcon />
             <span onClick={() => saleHistoryClick()}>판매 내역</span>
           </styled.History>
-          <styled.MyShop>
-            <styled.MyShopIcon />
-            <span>내 상점</span>
-          </styled.MyShop>
-          <styled.Schedule>
-            <styled.ScheduleIcon />
-            <span>일정 관리</span>
-          </styled.Schedule>
           <styled.Logout>
             <styled.LogoutIcon />
             <span>로그아웃</span>
           </styled.Logout>
-          <styled.SidebarProfile>
-            <styled.ProfileImg />
-            <styled.SidebarProfileText>
-              <span>Ted</span>
-              <span>htchoi1006@kookmin.ac.kr</span>
-            </styled.SidebarProfileText>
-          </styled.SidebarProfile>
         </div>
       </div>
     </div>

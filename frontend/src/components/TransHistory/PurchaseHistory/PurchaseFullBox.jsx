@@ -10,7 +10,7 @@ function PurchaseFullBox({onPage, onClose}) {
     console.log("close")
     onClose("true")
   }
-  function arrowClick(){
+  function detailClick(){
     onPage("detail")
   }
   return (
@@ -23,7 +23,7 @@ function PurchaseFullBox({onPage, onClose}) {
             캐릭터박스
         </div> */}
         <div className="listBox">
-          <div className="listLine">
+          <div className="listLine" onClick={detailClick}>
             <div className="listImg">
               <img src="../../assets/img/smile.png" alt="임시이미지"></img>
             </div>

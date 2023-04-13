@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../TransHistory.css";
 import PurchaseFullBox from "./PurchaseFullBox";
-import SaleBox from "../SaleBox";
+import PurchaseDetail from "./PurchaseDetail";
 
 function PurchaseHistory({onPopup}) {
   const [page_state, setPage] = useState("full");
@@ -28,7 +28,7 @@ function PurchaseHistory({onPopup}) {
     content = <PurchaseFullBox onPage={handlePage} onClose={closePage}/>
   }
   else if (page_state === "detail"){
-    content = <SaleBox onPage={handlePage} />
+    content = <PurchaseDetail onPage={handlePage} onClose={closePage}/>
   }
   return (
     // <div className="trans-Background">
