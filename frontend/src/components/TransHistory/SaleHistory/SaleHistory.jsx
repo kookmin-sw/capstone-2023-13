@@ -29,7 +29,7 @@ function SaleHistory({onPopup}) {
     content = <SaleFullBox onPage={handlePage} onClose={closePage}/>
   }
   else if (page_state === "detail"){
-    content = <SaleDetail onPage={handlePage} />
+    content = <SaleDetail onPage={handlePage} onClose={closePage}/>
   }
   return (
     // <div className="trans-Background">

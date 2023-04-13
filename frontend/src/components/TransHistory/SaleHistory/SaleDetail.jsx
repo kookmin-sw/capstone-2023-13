@@ -12,7 +12,7 @@ const SaleDetail = ({onPage, onClose}) => {
                 <styled.ProductImg />
                 <styled.ProductInfo>
                     <styled.ProductName>
-                        <span>구매한 상품 이름</span>
+                        <span>판매한 상품 이름</span>
                     </styled.ProductName>
                     <styled.ProductPriceAndNumber>
                         <styled.ProductPrice>
@@ -45,7 +45,7 @@ const SaleDetail = ({onPage, onClose}) => {
                         <span>총 주문 금액 : 120,000 원</span>
                     </styled.OrderNo>
                     <styled.CancelOrderBtn>
-                        <span>구매</span>
+                        <span>판매</span>
                         <span>취소</span>
                     </styled.CancelOrderBtn>
                 </styled.AboutOrder>
@@ -62,7 +62,8 @@ const SaleDetail = ({onPage, onClose}) => {
                 </styled.ItemBox>
                 <styled.CloseBtn>
                     <span onClick={closeClick}>닫기</span>
-                </styled.CloseBtn></div>
+                </styled.CloseBtn>
+                </div>
         //     </styled.FindWhiteBox>
         // </styled.Container>
     )

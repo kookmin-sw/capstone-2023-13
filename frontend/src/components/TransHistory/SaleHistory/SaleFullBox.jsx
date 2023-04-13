@@ -29,7 +29,7 @@ function SaleFullBox({onPage, onClose}) {
             </div>
             <div className="listInfo" onClick={detailClick}>
               <div className="orderNum">주문번호</div>
-              <div className="productName">구매한 상품 이름 외 n개</div>
+              <div className="productName">판매한 상품 이름 외 n개</div>
               <div className="transDate">2023.03.10 월</div>
             </div>
             <div className="listStatus">배송중</div>
@@ -40,7 +40,7 @@ function SaleFullBox({onPage, onClose}) {
             </div>
             <div className="listInfo">
               <div className="orderNum">주문번호</div>
-              <div className="productName">구매한 상품 이름 외 n개</div>
+              <div className="productName">판매한 상품 이름 외 n개</div>
               <div className="transDate">2023.03.10 월</div>
             </div>
             <div className="listStatus">배송중</div>
@@ -51,7 +51,7 @@ function SaleFullBox({onPage, onClose}) {
             </div>
             <div className="listInfo">
               <div className="orderNum">주문번호</div>
-              <div className="productName">구매한 상품 이름 외 n개</div>
+              <div className="productName">판매한 상품 이름 외 n개</div>
               <div className="transDate">2023.03.10 월</div>
             </div>
             <div className="listStatus">배송중</div>
@@ -62,7 +62,7 @@ function SaleFullBox({onPage, onClose}) {
             </div>
             <div className="listInfo">
               <div className="orderNum">주문번호</div>
-              <div className="productName">구매한 상품 이름 외 n개</div>
+              <div className="productName">판매한 상품 이름 외 n개</div>
               <div className="transDate">2023.03.10 월</div>
             </div>
             <div className="listStatus">배송중</div>
