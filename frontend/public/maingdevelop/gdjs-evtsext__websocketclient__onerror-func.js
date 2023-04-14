@@ -7,11 +7,8 @@ if (typeof gdjs.evtsExt__WebSocketClient__OnError !== "undefined") {
 
 gdjs.evtsExt__WebSocketClient__OnError = {};
 
-gdjs.evtsExt__WebSocketClient__OnError.conditionTrue_0 = {val:false};
-gdjs.evtsExt__WebSocketClient__OnError.condition0IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__WebSocketClient__OnError.userFunc0xa5d078 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__WebSocketClient__OnError.userFunc0xa62d50 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = !!gdjs.evtTools.wsClient.lastError;
 
@@ -21,7 +18,7 @@ gdjs.evtsExt__WebSocketClient__OnError.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__WebSocketClient__OnError.userFunc0xa5d078(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__WebSocketClient__OnError.userFunc0xa62d50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

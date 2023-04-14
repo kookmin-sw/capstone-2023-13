@@ -7,12 +7,8 @@ if (typeof gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown !== "u
 
 gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown = {};
 
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.condition1IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.userFunc0xa63b88 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.userFunc0xa91da8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.__pixelPerfectExtension = gdjs.__pixelPerfectExtension || {};
 
@@ -463,7 +459,7 @@ gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.eventsList0 = fun
 {
 
 
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.userFunc0xa63b88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.userFunc0xa91da8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -473,10 +469,10 @@ gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.userFunc0xa63b88(
 {
 
 
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.condition0IsTrue_0.val = false;
-{
-gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().get("__pixelPerfect").getChild("TopDownClassesDefined"), false);
-}if (gdjs.evtsExt__PixelPerfectMovement__DefineJavaScriptForTopDown.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().get("__pixelPerfect").getChild("TopDownClassesDefined"), false);
+if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().get("__pixelPerfect").getChild("TopDownClassesDefined"), true);
 }
 { //Subevents

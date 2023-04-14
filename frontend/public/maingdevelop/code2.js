@@ -1,6 +1,12 @@
 gdjs.Untitled_32sceneCode = {};
 gdjs.Untitled_32sceneCode.GDMaleCharacter10Objects1= [];
 gdjs.Untitled_32sceneCode.GDMaleCharacter10Objects2= [];
+gdjs.Untitled_32sceneCode.GDTextInputObjects1= [];
+gdjs.Untitled_32sceneCode.GDTextInputObjects2= [];
+gdjs.Untitled_32sceneCode.GDBlankEmoteMidObjects1= [];
+gdjs.Untitled_32sceneCode.GDBlankEmoteMidObjects2= [];
+gdjs.Untitled_32sceneCode.GDChatTextObjects1= [];
+gdjs.Untitled_32sceneCode.GDChatTextObjects2= [];
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects1= [];
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects2= [];
 gdjs.Untitled_32sceneCode.GDDevout8Objects1= [];
@@ -10,12 +16,8 @@ gdjs.Untitled_32sceneCode.GDFemaleCharacter3Objects2= [];
 gdjs.Untitled_32sceneCode.GDServerConnectedObjects1= [];
 gdjs.Untitled_32sceneCode.GDServerConnectedObjects2= [];
 
-gdjs.Untitled_32sceneCode.conditionTrue_0 = {val:false};
-gdjs.Untitled_32sceneCode.condition0IsTrue_0 = {val:false};
-gdjs.Untitled_32sceneCode.condition1IsTrue_0 = {val:false};
 
-
-gdjs.Untitled_32sceneCode.userFunc0x85d7b8 = function(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0x7fc760 = function(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // WebSocket 객체 생성
@@ -75,10 +77,10 @@ gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
-{
-gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = gdjs.evtsExt__WebSocketClient__IsConnected.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__WebSocketClient__IsConnected.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("ServerConnected"), gdjs.Untitled_32sceneCode.GDServerConnectedObjects1);
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDServerConnectedObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDServerConnectedObjects1[i].setString("Connect");
@@ -91,6 +93,7 @@ gdjs.copyArray(runtimeScene.getObjects("ServerConnected"), gdjs.Untitled_32scene
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -100,7 +103,7 @@ gdjs.copyArray(runtimeScene.getObjects("ServerConnected"), gdjs.Untitled_32scene
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x85d7b8(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x7fc760(runtimeScene);
 
 }
 
@@ -112,6 +115,12 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.Untitled_32sceneCode.GDMaleCharacter10Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GDMaleCharacter10Objects2.length = 0;
+gdjs.Untitled_32sceneCode.GDTextInputObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDTextInputObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDBlankEmoteMidObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDBlankEmoteMidObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDChatTextObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDChatTextObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDDevout8Objects1.length = 0;
