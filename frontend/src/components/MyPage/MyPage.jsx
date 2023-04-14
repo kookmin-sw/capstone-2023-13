@@ -4,14 +4,19 @@ import * as styled from './styles';
 
 
 
-const MyPage = ({onPage}) => {
-    // const passwordSentClick = () => {
-    //     onPage("passwordsent")
-    // }
-
+const MyPage = ({onPopup}) => {
     const [nickname, setnickname] = useState("hht.outfits");
     const [email, setemail] = useState("hht@example.com");
     const [account, setaccount] = useState("0000-000-000000");
+
+
+    function closeClick() {
+        console.log('hi');
+        onPopup("close");
+        // movePage('/main');
+    }
+
+    
 
 
     return (
@@ -22,21 +27,21 @@ const MyPage = ({onPage}) => {
                         <styled.MetaIcon />
                         <span>내 정보</span>
                     </styled.TitleDiv>
-                    <styled.ProfileImgDiv>
+                    {/* <styled.ProfileImgDiv>
                         <styled.ProfileImg />
                         <styled.ChangeImg>
                             <span>이미지 변경</span>
                         </styled.ChangeImg>
-                    </styled.ProfileImgDiv>
+                    </styled.ProfileImgDiv> */}
                 </styled.LeftDiv>
                 <styled.MiddleDiv>
-                    <styled.IdInfo>
+                    {/* <styled.IdInfo>
                         <span>아이디 *</span>
                         <styled.IdInfoInnerDiv>
                             <span>user01</span>
                         </styled.IdInfoInnerDiv>
                         <span>아이디는 변경이 불가능합니다.</span>
-                    </styled.IdInfo>
+                    </styled.IdInfo> */}
                     <styled.PasswordInfo>
                         <span>비밀번호 *</span>
                         <styled.PasswordInputBox placeholder="숫자, 영문, 특수문자 조합 최소 8자 "/>
@@ -64,6 +69,9 @@ const MyPage = ({onPage}) => {
                     </styled.AccountInfo>
                 </styled.MiddleDiv>
                 <styled.RightDiv>
+                    <styled.CloseBtn onClick={closeClick}>
+                        <span>닫기</span>
+                    </styled.CloseBtn>
                     <styled.ConfirmBtn>
                         <span>회원 정보 수정</span>
                     </styled.ConfirmBtn>
