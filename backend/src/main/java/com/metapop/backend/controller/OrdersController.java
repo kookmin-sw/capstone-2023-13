@@ -1,8 +1,8 @@
 package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.OrdersDTO.OrdersSaveDTO;
+import com.metapop.backend.dto.OrdersDTO.OrdersUpdateDTO;
 import com.metapop.backend.entity.Orders;
-import com.metapop.backend.entity.Product;
 import com.metapop.backend.service.OrdersService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -30,5 +30,11 @@ public class OrdersController {
     @GetMapping("/info/detail/{orders_id}")
     public Optional<Orders> infodetail(@PathVariable Long orders_id) {
         return ordersService.infodetail(orders_id);
+    }
+
+    @Operation(summary = "", description = "주문 정보 수정 API")
+    @PutMapping("/update/{orders_id}")
+    public Orders update(@PathVariable Long orders_id, @RequestBody OrdersUpdateDTO ordersUpdateDTO) {
+        return ordersService.update(orders_id, ordersUpdateDTO);
     }
 }

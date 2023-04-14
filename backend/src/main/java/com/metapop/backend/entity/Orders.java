@@ -1,5 +1,7 @@
 package com.metapop.backend.entity;
 
+import com.metapop.backend.dto.OrdersDTO.OrdersUpdateDTO;
+import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -45,5 +47,12 @@ public class Orders {
         this.sellerId = sellerId;
         this.state = state;
         this.totalPrice = totalPrice;
+    }
+
+    public void update(OrdersUpdateDTO ordersUpdateDTO) {
+        this.buyerId = ordersUpdateDTO.getBuyerId();
+        this.sellerId = ordersUpdateDTO.getSellerId();
+        this.state = ordersUpdateDTO.getState();
+        this.totalPrice = ordersUpdateDTO.getTotalPrice();
     }
 }
