@@ -17,7 +17,7 @@ function LoginBox({ onPage }) {
 
   const isLogin = () => {
     const response = axios.post(
-      'http://localhost:8080/users/login',
+      'http://43.201.210.173:9000/users/login',
       {
         "email": email,
         "password": password
