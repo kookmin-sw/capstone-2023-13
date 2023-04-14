@@ -23,11 +23,11 @@ function SaleFullBox({onPage, onClose}) {
             캐릭터박스
         </div> */}
         <div className="listBox">
-          <div className="listLine">
+          <div className="listLine" onClick={detailClick}>
             <div className="listImg">
               <img src="../../assets/img/smile.png" alt="임시이미지"></img>
             </div>
-            <div className="listInfo" onClick={detailClick}>
+            <div className="listInfo">
               <div className="orderNum">주문번호</div>
               <div className="productName">판매한 상품 이름 외 n개</div>
               <div className="transDate">2023.03.10 월</div>

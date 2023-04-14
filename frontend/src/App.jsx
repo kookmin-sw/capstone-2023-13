@@ -5,7 +5,6 @@ import MainPage from './pages/MainPage/MainPage';
 import Sidebar from './components/Sidebar';
 import FindPassword from "./pages/FindPassword/FindPassword";
 import EnterPassword from './components/EnterPassword/EnterPassword';
-import MyPage from './components/MyPage/MyPage';
 
 
 // import './App.css'
@@ -21,7 +20,6 @@ function App() {
         <Routes>
           <Route path='/' element={<StartPage />} />
           <Route path='/enterpassword' element={<EnterPassword />} />
-          <Route path='/mypage' element={<MyPage />} />
           <Route path='/main' element={<MainPage/>} />
           {/* <Route path='/orderinfo' element={<OrderInfo/>} /> */}
           {/* <Route path='/findpassword' element={<FindPassword />} /> */}

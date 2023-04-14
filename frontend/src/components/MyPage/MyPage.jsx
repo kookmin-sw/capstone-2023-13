@@ -27,12 +27,12 @@ const MyPage = ({onPopup}) => {
                         <styled.MetaIcon />
                         <span>내 정보</span>
                     </styled.TitleDiv>
-                    <styled.ProfileImgDiv>
+                    {/* <styled.ProfileImgDiv>
                         <styled.ProfileImg />
                         <styled.ChangeImg>
                             <span>이미지 변경</span>
                         </styled.ChangeImg>
-                    </styled.ProfileImgDiv>
+                    </styled.ProfileImgDiv> */}
                 </styled.LeftDiv>
                 <styled.MiddleDiv>
                     {/* <styled.IdInfo>
