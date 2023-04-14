@@ -7,11 +7,8 @@ if (typeof gdjs.evtsExt__WebSocketClient__Data !== "undefined") {
 
 gdjs.evtsExt__WebSocketClient__Data = {};
 
-gdjs.evtsExt__WebSocketClient__Data.conditionTrue_0 = {val:false};
-gdjs.evtsExt__WebSocketClient__Data.condition0IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__WebSocketClient__Data.userFunc0xa93208 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__WebSocketClient__Data.userFunc0xa6d808 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue =
     gdjs.evtTools.wsClient.events[gdjs.evtTools.wsClient.events.length - 1] || "";
@@ -22,7 +19,7 @@ gdjs.evtsExt__WebSocketClient__Data.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__WebSocketClient__Data.userFunc0xa93208(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__WebSocketClient__Data.userFunc0xa6d808(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

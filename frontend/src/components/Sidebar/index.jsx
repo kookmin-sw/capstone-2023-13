@@ -2,8 +2,10 @@ import React, {useEffect, useRef, useState } from "react";
 import * as styled from "./styles";
 import styles from "./sidebar.module.css";
 import smile from '../../assets/img/smile.png';
-import TransHistory from '../TransHistory/TransHistory';
+import PurchaseHistory from '../TransHistory/PurchaseHistory/PurchaseHistory';
+import SaleHistory from '../TransHistory/SaleHistory/SaleHistory';
 import "../TransHistory/TransHistory.css";
+import MyPage from "../MyPage/MyPage";
 // import { useNavigate } from "react-router-dom";
 
 
@@ -24,14 +26,24 @@ const Sidebar = ({ width=280, children }) => {
       setOpen(false);
     }
   }
-  const transHistoryClick = () => {
-    setShowPopup('trans');
+  const myInfoClick = () => {
+    setShowPopup('myinfo');
     setX(-width);
     setOpen(false);
     // handleClose();
   }
-  
-  
+  const purchaseHistoryClick = () => {
+    setShowPopup('purchase');
+    setX(-width);
+    setOpen(false);
+    // handleClose();
+  }
+  const saleHistoryClick = () => {
+    setShowPopup('sale');
+    setX(-width);
+    setOpen(false);
+    // handleClose();
+  }
 
   // button 클릭 시 토글
   const toggleMenu = () => {
@@ -66,8 +78,13 @@ const Sidebar = ({ width=280, children }) => {
 
   return (
     <div className={styles.container}>
-      {showPopup == "trans" && (
-      <div className = "fakeBackground"><TransHistory onPopup={handlePopup}></TransHistory></div>)}
+      {showPopup == "myinfo" && (
+      <div className = "fakeBackground"><MyPage onPopup={handlePopup}></MyPage></div>)}
+      {showPopup == "purchase" && (
+      <div className = "fakeBackground"><PurchaseHistory onPopup={handlePopup}></PurchaseHistory></div>)}
+      {showPopup == "sale" && (
+      <div className = "fakeBackground"><SaleHistory onPopup={handlePopup}></SaleHistory></div>)}
+      
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '80%',  transform: `translatex(${-xPosition}px)`}}>
         <button onClick={() => toggleMenu()}
           className={styles.button} >
@@ -82,33 +99,22 @@ const Sidebar = ({ width=280, children }) => {
             <styled.MetaIcon />
             <span>Meta-PoP</span>
           </styled.SidebarTitle>
-          <styled.MyInfo>
+          <styled.MyInfo onClick={() => myInfoClick()}>
             <styled.MyInfoIcon />
             <span>내 정보</span>
           </styled.MyInfo>
           <styled.History>
             <styled.HistoryIcon />
-            <span onClick={() => transHistoryClick()}>거래 내역</span>
+            <span onClick={() => purchaseHistoryClick()}>구매 내역</span>
           </styled.History>
-          <styled.MyShop>
-            <styled.MyShopIcon />
-            <span>내 상점</span>
-          </styled.MyShop>
-          <styled.Schedule>
-            <styled.ScheduleIcon />
-            <span>일정 관리</span>
-          </styled.Schedule>
+          <styled.History>
+            <styled.HistoryIcon />
+            <span onClick={() => saleHistoryClick()}>판매 내역</span>
+          </styled.History>
           <styled.Logout>
             <styled.LogoutIcon />
             <span>로그아웃</span>
           </styled.Logout>
-          <styled.SidebarProfile>
-            <styled.ProfileImg />
-            <styled.SidebarProfileText>
-              <span>Ted</span>
-              <span>htchoi1006@kookmin.ac.kr</span>
-            </styled.SidebarProfileText>
-          </styled.SidebarProfile>
         </div>
       </div>
     </div>

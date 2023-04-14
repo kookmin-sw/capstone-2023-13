@@ -7,15 +7,13 @@ if (typeof gdjs.evtsExt__PixelPerfectMovement__BrakingDistance !== "undefined") 
 
 gdjs.evtsExt__PixelPerfectMovement__BrakingDistance = {};
 
-gdjs.evtsExt__PixelPerfectMovement__BrakingDistance.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__BrakingDistance.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PixelPerfectMovement__BrakingDistance.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0) * (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0) / (2 * (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Deceleration")) || 0 : 0)); }}}
 

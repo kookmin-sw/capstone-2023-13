@@ -7,25 +7,17 @@ if (typeof gdjs.evtsExt__PixelPerfectMovement__SpeedToReach !== "undefined") {
 
 gdjs.evtsExt__PixelPerfectMovement__SpeedToReach = {};
 
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_1 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_1 = gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0;
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_1.val = ((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Distance")) || 0 : 0) >= 0);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Distance")) || 0 : 0) >= 0);
 }
-}if (gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = Math.sqrt(2 * (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Distance")) || 0 : 0) * (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Deceleration")) || 0 : 0)); }}}
 
 }
@@ -34,12 +26,11 @@ gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_1.val = ((typeof 
 {
 
 
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_1 = gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0;
-gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.conditionTrue_1.val = ((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Distance")) || 0 : 0) < 0);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Distance")) || 0 : 0) < 0);
 }
-}if (gdjs.evtsExt__PixelPerfectMovement__SpeedToReach.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = -(Math.sqrt(-(2) * (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Distance")) || 0 : 0) * (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Deceleration")) || 0 : 0))); }}}
 
 }
