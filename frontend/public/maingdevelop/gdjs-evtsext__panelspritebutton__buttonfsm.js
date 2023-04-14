@@ -120,24 +120,11 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.getSharedData = function(in
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext = {};
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final = [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatCount3 = 0;
-
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatIndex3 = 0;
-
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5= [];
-
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition2IsTrue_1 = {val:false};
 
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -152,6 +139,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
@@ -166,27 +154,28 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSp
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShouldCheckHovering() ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].isCollidingWithPoint(gdjs.evtTools.input.getMouseOnlyCursorX(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getLayer()), 0), gdjs.evtTools.input.getMouseOnlyCursorY(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getLayer()), 0)) ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMouseIsInside(true);
@@ -206,6 +195,7 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
@@ -220,27 +210,28 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSp
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId() != 0 ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].isCollidingWithPoint(gdjs.evtTools.input.getTouchX(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId()), (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getLayer()), 0), gdjs.evtTools.input.getTouchY(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId()), (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getLayer()), 0)) ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchIsInside(true);
@@ -256,24 +247,25 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4 */
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.conditionTrue_1 = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final.length = 0;gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_1.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_1.val = false;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4, gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5);
 
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length;i<l;++i) {
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Hovered" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_1.val = true;
+        isConditionTrue_1 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length = k;if( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_1.val ) {
-    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length;j<jLen;++j) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final.indexOf(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[j]) === -1 )
             gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final.push(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[j]);
     }
@@ -282,16 +274,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 {
 gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4, gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5);
 
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length;i<l;++i) {
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Idle" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_1.val = true;
+        isConditionTrue_1 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length = k;if( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_1.val ) {
-    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length;j<jLen;++j) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final.indexOf(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[j]) === -1 )
             gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final.push(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects5[j]);
     }
@@ -301,7 +294,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4_1final, gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4);
 }
 }
-}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("PressedInside");
@@ -318,16 +311,17 @@ gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.do
 gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4);
 
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].isCollidingWithPoint(gdjs.evtTools.input.getTouchX(runtimeScene, gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())), (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getLayer()), 0), gdjs.evtTools.input.getTouchY(runtimeScene, gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())), (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getLayer()), 0)) ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchId(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())));
@@ -346,6 +340,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects4);
 
@@ -362,9 +357,10 @@ gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.do
 {
 
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatCount3 = gdjs.evtTools.input.getStartedTouchOrMouseCount(runtimeScene);
-for(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatIndex3 = 0;gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatIndex3 < gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatCount3;++gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.repeatIndex3) {
+const repeatCount3 = gdjs.evtTools.input.getStartedTouchOrMouseCount(runtimeScene);
+for (let repeatIndex3 = 0;repeatIndex3 < repeatCount3;++repeatIndex3) {
 
+let isConditionTrue_0 = false;
 if (true)
 {
 
@@ -381,10 +377,10 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 {
 
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
-}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0);
@@ -403,27 +399,28 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( !(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMouseIsInside()) ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Hovered" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle");
@@ -437,27 +434,28 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMouseIsInside() ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Idle" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Hovered");
@@ -471,27 +469,28 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( !(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchIsInside()) ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedInside" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("PressedOutside");
@@ -505,27 +504,28 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchIsInside() ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedOutside" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("PressedInside");
@@ -542,16 +542,17 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedInside" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Validated");
@@ -565,27 +566,28 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1 */
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedInside") ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Validated") ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}}
-if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle");
@@ -601,10 +603,10 @@ if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEve
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = gdjs.evtTools.input.hasTouchEnded(runtimeScene, (( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId()));
-}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasTouchEnded(runtimeScene, (( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId()));
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchId(0);
@@ -630,16 +632,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Validated" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle");
@@ -761,15 +764,13 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateConte
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1.length ;i < len;++i) {
@@ -855,10 +856,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext = {
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -866,16 +863,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.eve
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Idle" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsIdleContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -953,10 +951,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -964,16 +958,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Validated" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsClickedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -1051,10 +1046,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1062,16 +1053,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Hovered" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsHoveredContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -1149,10 +1141,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1160,16 +1148,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "Hovered" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -1179,16 +1168,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedOutside" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsFocusedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -1266,10 +1256,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1277,16 +1263,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedInside" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -1364,10 +1351,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideC
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1375,16 +1358,17 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideC
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1);
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getState() == "PressedOutside" ) {
-        gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1[k] = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.IsPressedOutsideContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -1462,15 +1446,13 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext = 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId()); }}}

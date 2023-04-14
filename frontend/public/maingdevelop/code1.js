@@ -1,6 +1,12 @@
 gdjs.Store_32sceneCode = {};
 gdjs.Store_32sceneCode.GDMaleCharacter10Objects1= [];
 gdjs.Store_32sceneCode.GDMaleCharacter10Objects2= [];
+gdjs.Store_32sceneCode.GDTextInputObjects1= [];
+gdjs.Store_32sceneCode.GDTextInputObjects2= [];
+gdjs.Store_32sceneCode.GDBlankEmoteMidObjects1= [];
+gdjs.Store_32sceneCode.GDBlankEmoteMidObjects2= [];
+gdjs.Store_32sceneCode.GDChatTextObjects1= [];
+gdjs.Store_32sceneCode.GDChatTextObjects2= [];
 gdjs.Store_32sceneCode.GDGraniteMarbleFloorTilesObjects1= [];
 gdjs.Store_32sceneCode.GDGraniteMarbleFloorTilesObjects2= [];
 gdjs.Store_32sceneCode.GDWhiteDoorObjects1= [];
@@ -20,11 +26,6 @@ gdjs.Store_32sceneCode.GDPerchaseButtonObjects2= [];
 gdjs.Store_32sceneCode.GDCancelButtonObjects1= [];
 gdjs.Store_32sceneCode.GDCancelButtonObjects2= [];
 
-gdjs.Store_32sceneCode.conditionTrue_0 = {val:false};
-gdjs.Store_32sceneCode.condition0IsTrue_0 = {val:false};
-gdjs.Store_32sceneCode.condition1IsTrue_0 = {val:false};
-gdjs.Store_32sceneCode.condition2IsTrue_0 = {val:false};
-
 
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDMaleCharacter10Objects1Objects = Hashtable.newFrom({"MaleCharacter10": gdjs.Store_32sceneCode.GDMaleCharacter10Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Store_32sceneCode.GDWhiteDoorObjects1});
@@ -43,16 +44,17 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
     if ( gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isMoving() ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.Store_32sceneCode.GDMaleCharacter10Objects1 */
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].playAnimation();
@@ -66,16 +68,17 @@ gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sc
 
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
     if ( gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Up") ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.Store_32sceneCode.GDMaleCharacter10Objects1 */
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Up");
@@ -89,16 +92,17 @@ gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sc
 
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
     if ( gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Left") ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.Store_32sceneCode.GDMaleCharacter10Objects1 */
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Left");
@@ -112,16 +116,17 @@ gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sc
 
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
     if ( gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Right") ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.Store_32sceneCode.GDMaleCharacter10Objects1 */
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Right");
@@ -135,16 +140,17 @@ gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sc
 
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
     if ( gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Down") ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.Store_32sceneCode.GDMaleCharacter10Objects1 */
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Down");
@@ -158,16 +164,17 @@ gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sc
 
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
     if ( !(gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isMoving()) ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.Store_32sceneCode.GDMaleCharacter10Objects1 */
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDMaleCharacter10Objects1[i].pauseAnimation();
@@ -182,15 +189,14 @@ gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = k;}if (gdjs.Store_32sc
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteDoor"), gdjs.Store_32sceneCode.GDWhiteDoorObjects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-gdjs.Store_32sceneCode.condition1IsTrue_0.val = false;
-{
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects, false, runtimeScene, false);
-}if ( gdjs.Store_32sceneCode.condition0IsTrue_0.val ) {
-{
-gdjs.Store_32sceneCode.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-}}
-if (gdjs.Store_32sceneCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", true);
 }}
 
@@ -202,15 +208,14 @@ if (gdjs.Store_32sceneCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("GreyTable"), gdjs.Store_32sceneCode.GDGreyTableObjects1);
 gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Store_32sceneCode.GDMaleCharacter10Objects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-gdjs.Store_32sceneCode.condition1IsTrue_0.val = false;
-{
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects, false, runtimeScene, false);
-}if ( gdjs.Store_32sceneCode.condition0IsTrue_0.val ) {
-{
-gdjs.Store_32sceneCode.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-}}
-if (gdjs.Store_32sceneCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.camera.showLayer(runtimeScene, "Popup Layer");
 }}
 
@@ -221,16 +226,17 @@ if (gdjs.Store_32sceneCode.condition1IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("CancelButton"), gdjs.Store_32sceneCode.GDCancelButtonObjects1);
 
-gdjs.Store_32sceneCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDCancelButtonObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDCancelButtonObjects1.length;i<l;++i) {
     if ( gdjs.Store_32sceneCode.GDCancelButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        gdjs.Store_32sceneCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.Store_32sceneCode.GDCancelButtonObjects1[k] = gdjs.Store_32sceneCode.GDCancelButtonObjects1[i];
         ++k;
     }
 }
-gdjs.Store_32sceneCode.GDCancelButtonObjects1.length = k;}if (gdjs.Store_32sceneCode.condition0IsTrue_0.val) {
+gdjs.Store_32sceneCode.GDCancelButtonObjects1.length = k;
+if (isConditionTrue_0) {
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "Popup Layer");
 }}
 
@@ -244,6 +250,12 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.Store_32sceneCode.GDMaleCharacter10Objects1.length = 0;
 gdjs.Store_32sceneCode.GDMaleCharacter10Objects2.length = 0;
+gdjs.Store_32sceneCode.GDTextInputObjects1.length = 0;
+gdjs.Store_32sceneCode.GDTextInputObjects2.length = 0;
+gdjs.Store_32sceneCode.GDBlankEmoteMidObjects1.length = 0;
+gdjs.Store_32sceneCode.GDBlankEmoteMidObjects2.length = 0;
+gdjs.Store_32sceneCode.GDChatTextObjects1.length = 0;
+gdjs.Store_32sceneCode.GDChatTextObjects2.length = 0;
 gdjs.Store_32sceneCode.GDGraniteMarbleFloorTilesObjects1.length = 0;
 gdjs.Store_32sceneCode.GDGraniteMarbleFloorTilesObjects2.length = 0;
 gdjs.Store_32sceneCode.GDWhiteDoorObjects1.length = 0;
