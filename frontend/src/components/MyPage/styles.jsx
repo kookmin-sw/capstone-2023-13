@@ -31,7 +31,7 @@ export const FindWhiteBox = styled.div`
     margin :0px auto;
     width: 1294px;
     height: 930px;
-    background: rgba(255, 255, 255, 0.68);
+    background: rgba(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px; 
     box-sizing: border-box;
@@ -338,14 +338,13 @@ export const CloseBtn = styled.button`
     height: 50px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:1px solid #141060; 
     border-radius: 5px;    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 13px;
     cursor: pointer;
-
-    border: none;
 
     display: flex;
     align-items: center;

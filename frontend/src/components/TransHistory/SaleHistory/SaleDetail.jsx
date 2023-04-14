@@ -6,6 +6,9 @@ const SaleDetail = ({ onPage, onClose }) => {
         console.log("close")
         onClose("true")
     }
+    function backClick(){ //이전버튼 클릭 시
+        onPage("full")
+    }
     const PurchasedItem = () => {
         return (
             <styled.PurchasedItem>
@@ -61,11 +64,11 @@ const SaleDetail = ({ onPage, onClose }) => {
                 </styled.PurchasedItemList>
             </styled.ItemBox>
             <styled.BackAndCloseBtn>
-                <styled.BackBtn>
+                <styled.BackBtn onClick={backClick}>
                     <span>이전</span>
                 </styled.BackBtn>
-                <styled.CloseBtn>
-                    <span onClick={closeClick}>닫기</span>
+                <styled.CloseBtn onClick={closeClick}>
+                    <span >닫기</span>
                 </styled.CloseBtn>
             </styled.BackAndCloseBtn>
         </div>
