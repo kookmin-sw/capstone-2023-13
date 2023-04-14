@@ -3,6 +3,7 @@ package com.metapop.backend.service;
 import com.metapop.backend.dto.OrdersDTO.OrdersSaveDTO;
 import com.metapop.backend.dto.OrdersDTO.OrdersUpdateDTO;
 import com.metapop.backend.entity.Orders;
+import com.metapop.backend.entity.Product;
 import com.metapop.backend.repository.OrdersRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,5 +31,11 @@ public class OrdersService {
         Orders orders = ordersRepository.findById(orders_id).orElseThrow();
         orders.update(ordersUpdateDTO);
         return orders;
+    }
+
+    public String delete(Long orders_id) {
+        Orders orders = ordersRepository.findById(orders_id).orElseThrow();
+        ordersRepository.delete(orders);
+        return "삭제 완료";
     }
 }

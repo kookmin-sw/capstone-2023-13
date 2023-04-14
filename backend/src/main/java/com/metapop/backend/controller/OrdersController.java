@@ -37,4 +37,10 @@ public class OrdersController {
     public Orders update(@PathVariable Long orders_id, @RequestBody OrdersUpdateDTO ordersUpdateDTO) {
         return ordersService.update(orders_id, ordersUpdateDTO);
     }
+
+    @Operation(summary = "", description = "주문 삭제 API")
+    @DeleteMapping("/remove/{orders_id}")
+    public String remove(@PathVariable Long orders_id) {
+        return ordersService.delete(orders_id);
+    }
 }
