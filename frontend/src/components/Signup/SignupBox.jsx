@@ -6,7 +6,7 @@ import axiosInstance from "@/js/axiosInstance";
 
 function SignupBox({ onPage }) {
   const finishClick = () => {
-    // loginPost();
+    loginPost();
     onPage("custom");
     
   }
