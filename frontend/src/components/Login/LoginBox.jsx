@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "../../pages/Startpage/StartPage.css"
+import "@pages/Startpage/StartPage.css"
 import "./LoginBox.css";
 import { useNavigate } from "react-router-dom";
 
@@ -31,9 +31,12 @@ function LoginBox({ onPage }) {
     )
       .then(function (response) {
         console.log(JSON.stringify(response.data));
+        console.log("login success");
         if (response.data) {
           localStorage.setItem('login-token', response.data);
         }
+        loginClick();
+
       })
       .catch(function (error) {
         console.log(error);
@@ -77,7 +80,7 @@ function LoginBox({ onPage }) {
           <a className="findDiv" onClick={findClick}>비밀번호 찾기</a>
         </div>
         
-        <button className="blueBtn" onClick={loginClick}>로그인</button>
+        <button className="blueBtn" onClick={isLogin}>로그인</button>
         <button className="whiteBtn" onClick={signupClick}>회원가입</button>
 
         
