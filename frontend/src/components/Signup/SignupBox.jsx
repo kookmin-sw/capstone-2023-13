@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import "../../pages/Startpage/StartPage.css"
+import "@pages/Startpage/StartPage.css"
 import "./SignupBox.css";
 import axios from 'axios';
-import axiosInstance from "../../js/axiosInstance";
+import axiosInstance from "@/js/axiosInstance";
 
 function SignupBox({ onPage }) {
   const finishClick = () => {
@@ -130,9 +130,25 @@ function SignupBox({ onPage }) {
   //   console.log('3',account)
   //   console.log(isAccount)
   // }
-  const loginPost = async (e) => {
+  const loginPost = async () => {
     console.log('hi');
-    e.preventDefault();
+    try {
+    const response = await axiosInstance.post("/users/signup", {
+      id: 0,
+      email: email,
+      password: password,
+      name: name,
+      bank: bank,
+      nickname:name,
+      account: account,
+      address: address,
+    });
+    console.log(response.data);
+    console.log('success');
+  } catch (error) {
+    console.log(error);
+  }
+    // e.preventDefault();
     // axiosInstance
     //   .post("/users/signup", {id : 0 ,email : 'test@test.com', password : 1234, name : 'tt', bank : 'bb', account : 123, address : 'gg' })
     //   // .post("/users/signup", {id : 0 ,email : email, password : password, name : name, bank : bank, account : account, address : address })
@@ -143,13 +159,13 @@ function SignupBox({ onPage }) {
     //   .catch((error) => {
     //     console.log(error);
     //   })
-    try{
-      const response = await axios.post('/users/signup', {id : id, email : email, password : password, name : name, bank : bank, account : account, address : address });
-      console.log(response.data);
-      console.log('login success');
-    } catch(error){
-      console.log(error);
-    }
+    // try{
+    //   const response = await axios.post('/users/signup', {id : id, email : email, password : password, name : name, bank : bank, account : account, address : address });
+    //   console.log(response.data);
+    //   console.log('login success');
+    // } catch(error){
+    //   console.log(error);
+    // }
   };
   return (
     <div>

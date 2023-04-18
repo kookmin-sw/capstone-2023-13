@@ -50,7 +50,7 @@ font-weight: bold;
   margin-right:15px;
   width:80px;
   height: 80px;
-  background-image: url('../../images/icons/meta-icon.png');
+  background-image: url('@/images/icons/meta-icon.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }

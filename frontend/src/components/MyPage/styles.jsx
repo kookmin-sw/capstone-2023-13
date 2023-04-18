@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import background from '../../images/backgrounds/startbackground.png';
-import metaicon from '../../images/icons/meta-icon.png';
-import profileimg from '../../images/icons/mypageprofileimg.png';
+import background from '@/images/backgrounds/startbackground.png';
+import metaicon from '@/images/icons/meta-icon.png';
+import profileimg from '@/images/icons/mypageprofileimg.png';
 
 
 export const Container = styled.div`
