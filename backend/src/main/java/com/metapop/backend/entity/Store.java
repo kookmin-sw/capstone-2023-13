@@ -1,7 +1,6 @@
 package com.metapop.backend.entity;
 
-import com.metapop.backend.dto.StoreUpdateDTO;
-import com.metapop.backend.dto.UserUpdateDTO;
+import com.metapop.backend.dto.StoreDTO.StoreUpdateDTO;
 import lombok.*;
 
 import javax.persistence.*;

@@ -634,7 +634,7 @@
         "alwaysLoaded": false,
         "file": "assets/White_Background.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/White_Background.png\"}",
         "name": "White_Background",
         "smoothed": true,
         "userAdded": true
@@ -789,6 +789,210 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Emotes by Tomcat94/20225066f8511c5d25cfb094a03fc68c3ad67cb0a0522c7eefe55e1a3d5209a6_Blank Emote Mid.png",
           "name": "Blank Emote Mid.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wide side rectangle wood_Broken.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wide side rectangle wood_Broken.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Breakable Physics/Obstacle/Wood/5566bd74167746b0a39e481667f4e97142c2b2e6fa915d6a4fa48c99ad641210_Wide side rectangle wood_Broken.png",
+          "name": "Wide side rectangle wood_Broken.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wide side rectangle wood_Damaged.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wide side rectangle wood_Damaged.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Breakable Physics/Obstacle/Wood/620029f7ce617524239e1f0475d49f715135091e54ad04bf742cf9ddb9573276_Wide side rectangle wood_Damaged.png",
+          "name": "Wide side rectangle wood_Damaged.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wide side rectangle wood_Perfect.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wide side rectangle wood_Perfect.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Breakable Physics/Obstacle/Wood/781b792300104835ba3bb43c20ef4aacc1de994d9ef8d663e22243be29833e66_Wide side rectangle wood_Perfect.png",
+          "name": "Wide side rectangle wood_Perfect.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Blue Bordered with White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Blue Bordered with White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/c6aafabcee7775724150205315f8655043be58d2526aa7b97bad2e51fa36a5fd_Icon Background_Blue Bordered with White Border.png",
+          "name": "Icon Background_Blue Bordered with White Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Brown.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Brown.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/7939ba85fba14815cef5709f093ca958c9399b7c4cf5b3dfd884c039f61e9932_Icon Background_Brown.png",
+          "name": "Icon Background_Brown.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Circle White.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Circle White.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/4b7f93237faf966acde30ad6e093e8eed9dd0b2990d95936dfc5451427d07bea_Icon Background_Circle White.png",
+          "name": "Icon Background_Circle White.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Dark Wood.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Dark Wood.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/74288ffdafa8785eae1d2f9aea454acea55352176be25ffc927d5d6eee31972f_Icon Background_Dark Wood.png",
+          "name": "Icon Background_Dark Wood.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Green.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/3df6ed53ffcc6c8366cfaf47de5b8b902690ecc38c43c952ddc864654f6a5224_Icon Background_Green.png",
+          "name": "Icon Background_Green.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Purple Angled Corner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Purple Angled Corner.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/3ebd5b354f3b00ce2204ae21dabe31a597ccb77ac5829f19245409be9f5d105d_Icon Background_Purple Angled Corner.png",
+          "name": "Icon Background_Purple Angled Corner.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Stone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Stone.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/1e854416e1ae7956f9fc68fba46f488b28081586a4a4185d407ccfcba814b39a_Icon Background_Stone.png",
+          "name": "Icon Background_Stone.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_White Angled Corner.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_White Angled Corner.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/c0f4d32632e30451af5cb7a00843e02f1d6118e54e1d97319a811f5cee29d5cb_Icon Background_White Angled Corner.png",
+          "name": "Icon Background_White Angled Corner.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_White With Blue Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_White With Blue Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/6554ad52c2adb7c7cbf5683e6dcfd2647b89e6749c48689f79748a4200005fc6_Icon Background_White With Blue Border.png",
+          "name": "Icon Background_White With Blue Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_White With Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_White With Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/37ba67f6b8f684fe33685a38374640cc43984d8b41fa8c0cd407df543c023464_Icon Background_White With Border.png",
+          "name": "Icon Background_White With Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_White.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_White.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/435079c9f089c9e1d6ebffaaf912afd4089735ece823c2a0ce79ae5b56a31725_Icon Background_White.png",
+          "name": "Icon Background_White.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Wood.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon Background_Wood.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icon Background/70d79b102342faacf75e05d9e47d317522e070b5d55b0be8ccf90ee3ff5e09b4_Icon Background_Wood.png",
+          "name": "Icon Background_Wood.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1139,7 +1343,7 @@
         "placeholder": "\b클릭하여 채팅을 시작해주세요.",
         "fontResourceName": "",
         "fontSize": 20,
-        "inputType": "text",
+        "inputType": "text area",
         "textColor": "155;155;155",
         "fillColor": "255;255;255",
         "fillOpacity": 255,
@@ -1193,7 +1397,7 @@
     },
     {
       "assetStoreId": "",
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "ChatText",
       "smoothed": true,
@@ -1201,11 +1405,22 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Night",
+          "name": "Effect",
+          "doubleParameters": {
+            "intensity": 0.5,
+            "opacity": 0.5
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
-      "string": "dfd",
+      "string": "",
       "font": "",
-      "textAlignment": "center",
+      "textAlignment": "left",
       "characterSize": 40,
       "color": {
         "b": 0,
@@ -1215,7 +1430,14 @@
     }
   ],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "WebSocketMessage",
+      "type": "string",
+      "value": "\"\""
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -1237,7 +1459,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 1.0973679695629512,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1306,14 +1528,329 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 208,
-          "layer": "",
+          "height": 51,
+          "layer": "UI Layer",
           "name": "ChatText",
-          "persistentUuid": "105169df-7cd2-4b3d-8dca-3a49da2dc144",
-          "width": 346,
-          "x": 3,
-          "y": 352,
+          "persistentUuid": "79025d40-2000-46f5-80dd-8b2878515da2",
+          "width": 127,
+          "x": 260,
+          "y": 197,
           "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 102,
+          "layer": "",
+          "name": "WideSideRectangleWood",
+          "persistentUuid": "6768e2ee-ac51-4251-955b-2ce71675bdc6",
+          "width": 160,
+          "x": 725,
+          "y": 255,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 397,
+          "layer": "pop up layer",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "3c6b8f2b-2475-400a-945e-b66646fe3945",
+          "width": 709,
+          "x": 276,
+          "y": 150,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 59,
+          "layer": "pop up layer",
+          "name": "popup1_cancel_btn",
+          "persistentUuid": "474bbb43-b24f-4ba0-a05b-231b97a1bc35",
+          "width": 163,
+          "x": 462,
+          "y": 464,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 59,
+          "layer": "pop up layer",
+          "name": "popup1_ok_btn",
+          "persistentUuid": "1cd029f1-9a8a-43bf-98fb-b9958d5b05ac",
+          "width": 165,
+          "x": 660,
+          "y": 463,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer",
+          "name": "popup1_inner_text",
+          "persistentUuid": "257094c3-41b2-48bd-abe4-8ad96bb527aa",
+          "width": 0,
+          "x": 365,
+          "y": 271,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 578,
+          "layer": "pop up layer 2",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "d2c9ba52-eaf1-4ccf-b7ee-c64216204037",
+          "width": 885,
+          "x": 175,
+          "y": 81,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 66,
+          "layer": "pop up layer 2",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "06376c67-575b-4031-b2e7-8b8b6f9f9c3a",
+          "width": 884,
+          "x": 175,
+          "y": 81,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2",
+          "name": "popup2_inner_text",
+          "persistentUuid": "8ac30455-8417-4483-b355-443bd691fe1f",
+          "width": 0,
+          "x": 205,
+          "y": 96,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2",
+          "name": "storename",
+          "persistentUuid": "0030194b-2537-4593-baa5-e0c8faefc8f4",
+          "width": 0,
+          "x": 242,
+          "y": 203,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2",
+          "name": "period",
+          "persistentUuid": "b36346fd-d50f-4b6c-94fb-56cceb6fbb95",
+          "width": 0,
+          "x": 300,
+          "y": 263,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2",
+          "name": "storeinfo",
+          "persistentUuid": "7cfdf883-0d0a-4589-8bf2-7b4b311adc09",
+          "width": 0,
+          "x": 299,
+          "y": 322,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2",
+          "name": "input_store_name",
+          "persistentUuid": "40120d0b-e12c-4f97-b9ff-135cedf49e83",
+          "width": 0,
+          "x": 364,
+          "y": 198,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2",
+          "name": "input_period",
+          "persistentUuid": "e2473034-396f-49f8-bebc-7a20f0e6516f",
+          "width": 0,
+          "x": 363,
+          "y": 259,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 242,
+          "layer": "pop up layer 2",
+          "name": "input_store_info",
+          "persistentUuid": "f8849890-88ea-40b7-bf74-db5abf2c0862",
+          "width": 631,
+          "x": 364,
+          "y": 323,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 49,
+          "layer": "pop up layer 2",
+          "name": "popup2_ok_btn",
+          "persistentUuid": "adb24b11-6046-46b7-b75c-88825597a934",
+          "width": 129,
+          "x": 864,
+          "y": 595,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "pop up layer 2",
+          "name": "popup2_cancel_btn",
+          "persistentUuid": "42bc0605-a22b-41e6-9f82-aaa7ea83a96c",
+          "width": 139,
+          "x": 703,
+          "y": 595,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "add_store",
+          "persistentUuid": "d728f4a5-b64b-49ec-8ae7-1023e6920590",
+          "width": 0,
+          "x": 769,
+          "y": 294,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 249,
+          "layer": "pop up layer 2-1",
+          "name": "popup2_1_white_background",
+          "persistentUuid": "c09c4461-84fb-49ab-87c2-6c09ce56fbe2",
+          "width": 486,
+          "x": 370,
+          "y": 266,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2-1",
+          "name": "popup2_1_inner_text",
+          "persistentUuid": "7cee99b1-8e05-4ed3-9661-fe7258eb6abf",
+          "width": 0,
+          "x": 435,
+          "y": 312,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2-1",
+          "name": "popup2_1_ok_btn",
+          "persistentUuid": "50f1ffec-86a5-4ff5-a444-704a28f9e025",
+          "width": 0,
+          "x": 634,
+          "y": 428,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "pop up layer 2-1",
+          "name": "popup2_1_cancel_btn",
+          "persistentUuid": "765d5c24-2218-404a-8ce7-05d812b4ac94",
+          "width": 0,
+          "x": 409,
+          "y": 427,
+          "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1430,6 +1967,1111 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "9edee25f20b8eadf1d21519c6bf3cd593c6f6d7662343d818366be1accf01fec",
+          "name": "WideSideRectangleWood",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Broken",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Broken.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Damaged",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Perfect",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Perfect.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "f45a772721983f5112520e17c61aa7493f258080d0a91f6ecf5dcf530583982a",
+          "name": "IconBackground",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Blue Bordered with White Border",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Blue Bordered with White Border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Brown",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Brown.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Circle White",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Circle White.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Dark Wood",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Dark Wood.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Purple Angled Corner",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Purple Angled Corner.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Stone",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Stone.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "White Angled Corner",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_White Angled Corner.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "White With Blue Border",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_White With Blue Border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "White With Border",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_White With Border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "White",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_White.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Wood",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Icon Background_Wood.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "WhiteBackgroundPopup",
+          "tags": "",
+          "texture": "White_Background",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "BlueTitlePopup",
+          "tags": "",
+          "texture": "Title_color",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "popup1_inner_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 35,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "popup2_inner_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "스토어 등록",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 35,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "popup2_1_inner_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "지금 나가면 내용이 저장되지 않습니다. \n창을 닫으시겠습니까?",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 25,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup1_ok_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "확인",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 30,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup1_cancel_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 30,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup2_ok_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "완료",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup2_cancel_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "add_store",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "상점 등록",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "storename",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "스토어 이름",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "period",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "기간",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "storeinfo",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "소개",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "input_store_name",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "input_period",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "input_store_info",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup2_1_ok_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup2_1_cancel_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "취소",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "popup2_1_white_background",
+          "tags": "",
+          "texture": "New image2",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -1484,6 +3126,195 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MaleCharacter10",
+                "WideSideRectangleWood",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup1_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup1_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer 2-1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_1_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer 2-1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_1_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer 2-1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"pop up layer 2\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1527,6 +3358,39 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "UI Layer",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 9260344,
+          "ambientLightColorG": 6069792,
+          "ambientLightColorR": 11137944,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "pop up layer",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 9290496,
+          "ambientLightColorG": 6069792,
+          "ambientLightColorR": 9277568,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "pop up layer 2",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 10007960,
+          "ambientLightColorG": 6069792,
+          "ambientLightColorR": 8916984,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "pop up layer 2-1",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -3393,12 +5257,12 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "runtimeScene.ws = new WebSocket(\"ws://localhost:8080/ws\");",
+                "runtimeScene.ws = new WebSocket(\"ws://43.201.210.173:9001/ws\");",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
                 "    const data = {",
-                "        user_id: \"001\", ",
+                "        user_id: \"002\", ",
                 "        channel_id : \"Square1\",",
                 "        X : 0,",
                 "        Y : 0",
@@ -3409,22 +5273,111 @@
                 "",
                 "}",
                 "",
-                "runtimeScene.ws.onmessage = function(event) {",
-                "  const e = JSON.parse(event.data);",
-                "  ",
-                "  if (e.type == \"chat\" && e.user_id != \"SERVER\") {",
-                "      const textOutputObjectName = \"ChatText\";",
-                "      const textOutputInstances = runtimeScene.getObjects(textOutputObjectName);",
-                "      const textOutputInstance = textOutputInstances[0];",
-                "      const message = e.msg;",
-                "      console.log(\"user_id : \", e.user_id, \" 메시지 내용 : \", message);",
-                "      textOutputInstance.setString(message);",
+                "function disconnectWebSocket(runtimeScene) {",
+                "  if (runtimeScene.ws) {",
+                "    console.log('Disconnecting WebSocket...');",
+                "    runtimeScene.ws.close();",
+                "  } else {",
+                "    console.log('WebSocket is not connected.');",
                 "  }",
-                "}"
+                "}",
+                "",
+                "function createChat(e) {",
+                "    const newTextObjects = new gdjs.TextRuntimeObject(runtimeScene, {",
+                "        characterSize: 28,",
+                "        name: \"newTextObjects\",",
+                "        effects: {},",
+                "        behaviors: {},",
+                "        variables: {},",
+                "        color: {r: 0, g: 0, b: 0},",
+                "        string: e.msg,",
+                "        fontFamily: \"Arial\",",
+                "        fontStyle: {",
+                "            bold: false,",
+                "            italic: false,                ",
+                "            underline: false",
+                "        },",
+                "        alignment: \"left\",",
+                "    });",
+                "    const newTextIdObjects = new gdjs.TextRuntimeObject(runtimeScene, {",
+                "        characterSize: 20,",
+                "        name: \"newTextIdObjects\",",
+                "        effects: {},",
+                "        behaviors: {},",
+                "        variables: {},",
+                "        color: {r: 0, g: 0, b: 0},",
+                "        string: e.user_id,",
+                "        fontFamily: \"Arial\",",
+                "        fontStyle: {",
+                "            bold: false,",
+                "            italic: false,",
+                "            underline: false",
+                "        },",
+                "        alignment: \"left\",",
+                "    });",
+                "    console.log(newTextObjects);",
+                "    // 새로운 텍스트 객체를 씬에 추가합니다.",
+                "    runtimeScene.addObject(newTextIdObjects);",
+                "    runtimeScene.addObject(newTextObjects);",
+                "    newTextIdObjects.setX(10);",
+                "    newTextIdObjects.setY(490);",
+                "    newTextIdObjects.setZOrder(6);",
+                "    newTextIdObjects.setLayer(\"UI Layer\");",
+                "    newTextObjects.setX(10);",
+                "    newTextObjects.setY(510);",
+                "    newTextObjects.setZOrder(6);",
+                "    newTextObjects.setLayer(\"UI Layer\");",
+                "}",
+                "",
+                "function manageChat(e) {",
+                "    const chatNum = runtimeScene.getObjects(\"newTextObjects\");",
+                "    const idNum = runtimeScene.getObjects(\"newTextIdObjects\");",
+                "",
+                "    if (chatNum.length >= 1) {",
+                "        for (let i = 0; i < chatNum.length; i++) {",
+                "            const cY = chatNum[i].getY();",
+                "            const iY = idNum[i].getY();",
+                "            console.log(cY, iY);",
+                "            chatNum[i].setY(cY - 60);",
+                "            idNum[i].setY(iY - 60);",
+                "        }",
+                "    }",
+                "    createChat(e);",
+                "}",
+                "",
+                "",
+                "",
+                "// 1번 단계: 메시지를 받았을 때 처리하는 코드",
+                "runtimeScene.ws.onmessage = function(event) {",
+                "    const e = JSON.parse(event.data);",
+                "    console.log(e.status);",
+                "    if (e.type === \"chat\") {",
+                "        manageChat(e);",
+                "    }",
+                "}",
+                "",
+                "runtimeScene.onSceneUnloaded = function() {",
+                "    // 게임이 종료되거나 창이 닫히는 경우 웹소켓 연결을 종료합니다.",
+                "    disconnectWebSocket(runtimeScene);",
+                "};",
+                "",
+                "window.onerror = function(message, source, lineno, colno, error) {",
+                "    // 에러 메시지를 콘솔에 출력합니다.",
+                "    console.error('An error occurred:', message, source, lineno, colno, error);",
+                "",
+                "    // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.",
+                "    // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');",
+                "",
+                "    // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.",
+                "    disconnectWebSocket(runtimeScene);",
+                "    // 에러가 처리되었음을 나타내려면 true를 반환합니다.",
+                "    return true;",
+                "};",
+                ""
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -3440,23 +5393,35 @@
             "  }, 500);",
             "}",
             "",
-            "const isEnterPressed = runtimeScene.getGame().getInputManager().isKeyPressed(\"Return\");",
-            "const textInputObjectName = \"TextInput\";",
-            "  // TextInput 오브젝트 인스턴스 가져오기",
-            "  const textInputInstances = runtimeScene.getObjects(textInputObjectName);",
+            "// 입력된 텍스트 가져오기",
+            "const myText = runtimeScene.getObjects(\"TextInput\")[0];",
+            "const inputText = myText.getString();",
             "",
-            "if (isEnterPressed && textInputInstances.length > 0) {",
+            "// const inputManager = runtimeScene.getGame().getInputManager();",
+            "// const RETURN_KEY_CODE = 13; // Return 키의 키 코드는 13입니다.",
             "",
-            "  const textInputInstance = textInputInstances[0];",
-            "  // 입력된 텍스트 가져오기",
-            "  const inputText = textInputInstance.getString();",
+            "const currentValue = myText.getString();",
+            "// 이전 값과 현재 값이 다른지 확인하고 엔터 키를 눌렀는지 확인합니다.",
+            "const isEnterPressed = currentValue.endsWith(\"\\n\") && currentValue !== runtimeScene.textInputLastValue;",
             "",
+            "//console.log(isEnterPressed);",
+            "// TextInput의 값을 업데이트합니다.",
+            "runtimeScene.textInputLastValue = currentValue;",
+            "",
+            "if (isEnterPressed) {",
+            "  //console.log(inputManager.getLastPressedKey() === RETURN_KEY_CODE);",
             "  sendMessage(inputText);",
+            "  myText.setString(\"\");",
             "}"
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     },

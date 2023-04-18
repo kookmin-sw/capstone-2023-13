@@ -6,7 +6,7 @@ import axiosInstance from "../../js/axiosInstance";
 
 function SignupBox({ onPage }) {
   const finishClick = () => {
-    // loginPost();
+    loginPost();
     onPage("custom");
     
   }
@@ -133,23 +133,23 @@ function SignupBox({ onPage }) {
   const loginPost = async (e) => {
     console.log('hi');
     e.preventDefault();
-    axiosInstance
-      .post("/users/signup", {id : 0 ,email : 'test@test.com', password : 1234, name : 'tt', bank : 'bb', account : 123, address : 'gg' })
-      // .post("/users/signup", {id : 0 ,email : email, password : password, name : name, bank : bank, account : account, address : address })
-      .then((response) => {
-        console.log(response.data);
-        console.log('success');
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-    // try{
-    //   const response = await axios.post('/users/signup', {id : id, email : email, password : password, name : name, bank : bank, account : account, address : address });
-    //   console.log(response.data);
-    //   console.log('login success');
-    // } catch(error){
-    //   console.log(error);
-    // }
+    // axiosInstance
+    //   .post("/users/signup", {id : 0 ,email : 'test@test.com', password : 1234, name : 'tt', bank : 'bb', account : 123, address : 'gg' })
+    //   // .post("/users/signup", {id : 0 ,email : email, password : password, name : name, bank : bank, account : account, address : address })
+    //   .then((response) => {
+    //     console.log(response.data);
+    //     console.log('success');
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   })
+    try{
+      const response = await axios.post('/users/signup', {id : id, email : email, password : password, name : name, bank : bank, account : account, address : address });
+      console.log(response.data);
+      console.log('login success');
+    } catch(error){
+      console.log(error);
+    }
   };
   return (
     <div>
