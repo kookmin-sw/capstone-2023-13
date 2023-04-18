@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../TransHistory.css";
+import "@components/TransHistory/TransHistory.css";
 import PurchaseFullBox from "./PurchaseFullBox";
 import PurchaseDetail from "./PurchaseDetail";
 

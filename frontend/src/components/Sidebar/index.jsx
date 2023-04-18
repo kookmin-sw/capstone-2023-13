@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState } from "react";
 import * as styled from "./styles";
 import styles from "./sidebar.module.css";
-import smile from '../../assets/img/smile.png';
-import PurchaseHistory from '../TransHistory/PurchaseHistory/PurchaseHistory';
-import SaleHistory from '../TransHistory/SaleHistory/SaleHistory';
-import "../TransHistory/TransHistory.css";
-import MyPage from "../MyPage/MyPage";
+import smile from '@/assets/img/smile.png';
+import PurchaseHistory from '@components/TransHistory/PurchaseHistory/PurchaseHistory';
+import SaleHistory from '@components/TransHistory/SaleHistory/SaleHistory';
+import "@components/TransHistory/TransHistory.css";
+import MyPage from "@components/MyPage/MyPage";
 // import { useNavigate } from "react-router-dom";
 
 

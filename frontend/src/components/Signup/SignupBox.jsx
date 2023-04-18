@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
-import "../../pages/Startpage/StartPage.css"
+import "@pages/Startpage/StartPage.css"
 import "./SignupBox.css";
 import axios from 'axios';
-import axiosInstance from "../../js/axiosInstance";
+import axiosInstance from "@/js/axiosInstance";
 
 function SignupBox({ onPage }) {
   const finishClick = () => {
-    loginPost();
-    // onPage("custom");
+    // loginPost();
+    onPage("custom");
     
   }
   const backClick = () => {

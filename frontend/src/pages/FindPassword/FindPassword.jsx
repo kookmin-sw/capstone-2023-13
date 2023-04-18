@@ -1,6 +1,6 @@
 import React from "react";
 import * as styled from './styles';
-import '../../pages/Startpage/StartPage.css'
+import '@pages/Startpage/StartPage.css'
 
 
 

@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import "./StartPage.css";
-import GDevelopTest from '../../components/GDevelopTest';
-import LoginBox from "../../components/Login/LoginBox";
-import SignupBox from "../../components/Signup/SignupBox";
-import CustomizingBox from "../../components/Customizing/CustomizingBox";
-import FindPassword from "../../components/FindPassword/FindPassword";
-import PasswordSent from "../../components/PasswordSent/PasswordSent";
-import MainGdevelop from "../../components/MainGDevelop/MainGDevelop";
+import GDevelopTest from '@components/GDevelopTest';
+import LoginBox from "@components/Login/LoginBox";
+import SignupBox from "@components/Signup/SignupBox";
+import CustomizingBox from "@components/Customizing/CustomizingBox";
+import FindPassword from "@components/FindPassword/FindPassword";
+import PasswordSent from "@components/PasswordSent/PasswordSent";
+import MainGdevelop from "@components/MainGDevelop/MainGDevelop";
 function StartPage() {
   const [page_state, setPage] = useState("login");
 

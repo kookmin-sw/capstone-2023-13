@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../TransHistory.css";
+import "@components/TransHistory/TransHistory.css";
 // import MainGdevelop from "../MainGdevelop/MainGdevelop";
 import SaleFullBox from "./SaleFullBox";
 import SaleDetail from "./SaleDetail";

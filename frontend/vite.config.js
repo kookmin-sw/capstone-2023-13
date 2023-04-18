@@ -6,6 +6,13 @@ import axios from 'axios';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: [
+      { find: "@components", replacement: "/src/components" },
+      { find: "@pages", replacement: "/src/pages"},
+      { find: "@", replacement: "/src" }
+    ],
+  },
    server: {
     host: '0.0.0.0',
     port: 5173,

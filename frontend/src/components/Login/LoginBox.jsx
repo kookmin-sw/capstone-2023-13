@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "../../pages/Startpage/StartPage.css"
+import "@pages/Startpage/StartPage.css"
 import "./LoginBox.css";
 import { useNavigate } from "react-router-dom";
 

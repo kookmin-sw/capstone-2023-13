@@ -19,7 +19,7 @@
     margin-left:40px;
     width:130px;
     height: 130px;
-    background-image: url('../../images/icons/meta-icon.png');
+    background-image: url('@/images/icons/meta-icon.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
