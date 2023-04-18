@@ -1,77 +1,54 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10030794&assignment_repo_type=AssignmentRepo)
-# Welcome to GitHub
+# Meta-Pop
 
-캡스톤 팀 생성을 축하합니다.
+## 1. 프로젝트 소개
 
-## 팀소개 및 페이지를 꾸며주세요.
+오프라인의 팝업 스토어를 메타버스 상에서 론칭이 가능하도록 하여 판매자는 팝업스토어를 다양한 형태로 표현할 수 있고 구매자는 장소에 구애받지 않고 쉽게 판매자가 론칭한 팝업스토어에 참여할 수 있도록 하는 프로젝트입니다.
 
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
+### 구매자
 
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
+- 회원 가입 및 로그인을 통해 MetaPop 내 광장으로 이동
+- 광장에서 열린 여러 팝업스토어 중 원하는 곳의 팝업스토어로 입장
+- 팝업 스토어 내부 이용자간 채팅 기능 구현
+- 팝업 스토어 내에 진열된 여러 물품들을 보고 구매
 
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
+### 판매자
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
+- 회원 가입 및 로그인을 통해 MetaPop 내 광장으로 이동
+- 광장에서 론칭할 팝업스토어 등록 및 장소 배정
+- 판매하고자 하는 물품들 등록 및 진열
+- 구매자가 물품을 구매하면 해당 구매자의 주소지로 택배 배송
 
-**예시)** 2023년 0조  https://kookmin-sw.github.io/capstone-2023-00/
+<img src="https://user-images.githubusercontent.com/39540790/229363453-670c4fcf-49a0-440b-85c3-0d636d88a3bc.png">
 
+<img src="https://user-images.githubusercontent.com/39540790/229363871-3d4e3b37-242d-4360-b349-d2d23973dad0.png">
 
-## 내용에 아래와 같은 내용들을 추가하세요.
+</br>
 
-### 1. 프로잭트 소개
+## 2. 기대 효과
 
-프로젝트
+- 오프라인에서 유행하는 팝업스토어를 메타버스 상으로 끌어와서 장소 대여 및 공사 설비 비용 감소
+- 오프라인의 한정적인 형태의 팝업스토어를 메타버스의 높은 자유도로 인한 다양한 형태로 제작 가능
+- 오프라인보다 더 참여하기 쉬운 메타버스 상의 팝업스토어를 통해 직접 찾아가지 않고 다양한 장소에서 참가할 수 있게 하여 더 높은 참여율 유도
 
-### 2. 소개 영상
+</br>
 
-프로젝트 소개하는 영상을 추가하세요
+## 3. 팀 소개
 
-### 3. 팀 소개
+|                최보석                |                     강주성                     |                    최혁태                    |                 표상우                 |                 박채연                 |
+| :----------------------------------: | :--------------------------------------------: | :------------------------------------------: | :------------------------------------: | :------------------------------------: |
+|               XXXX1698               |                    XXXX1569                    |                   XXXX1702                   |                XXXX1704                |                XXXX1601                |
+|               FrontEnd               |                    BackEnd                     |                   FrontEnd                   |                BackEnd                 |                FrontEnd                |
+|      chlqhtjr752@kookmin.ac.kr       |               kjs@kookmin.ac.kr                |           htchoi1006@kookmin.ac.kr           |         psw3619@kookmin.ac.kr          |         muy5310@kookmin.ac.kr          |
+| [@YEONOC](https://github.com/YEONOC) | [@KangJuSeong](https://github.com/KangJuSeong) | [@htchoi1006](https://github.com/htchoi1006) | [@okpyo12](https://github.com/okpyo12) | [@muy5310](https://github.com/muy5310) |
 
-팀을 소개하세요.
+</br>
 
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
+## 4. 사용법
 
-### 4. 사용법
+추후 추가 예정
 
-소스코드제출시 설치법이나 사용법을 작성하세요.
+</br>
 
-### 5. 기타
+## 5. 기타
 
-추가적인 내용은 자유롭게 작성하세요.
-
-
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Support or Contact
-
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+추후 추가 예정
