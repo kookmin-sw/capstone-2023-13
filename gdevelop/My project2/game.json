@@ -1328,6 +1328,15 @@
         "name": "assets\\Blue Button_Hovered.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player/Body/char1_walk/sprite_09.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player\\Body\\char1_walk\\sprite_09.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5755,7 +5764,7 @@
           "name": "ItemBox",
           "persistentUuid": "84ad3b3d-b784-46b9-befb-b1a0d0afc6ef",
           "width": 581,
-          "x": 529,
+          "x": 530,
           "y": 244,
           "zOrder": 14,
           "numberProperties": [],
@@ -7926,12 +7935,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ]
@@ -7980,12 +7989,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "TopColor",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ]
@@ -8064,12 +8073,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ]
@@ -8118,12 +8127,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "TopColor",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ]
@@ -8202,12 +8211,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -8256,12 +8265,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "TopColor",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -8346,24 +8355,24 @@
                 },
                 {
                   "type": {
-                    "value": "VarGlobal"
+                    "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "PlayerHairStyle",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 },
                 {
@@ -8481,24 +8490,24 @@
                 },
                 {
                   "type": {
-                    "value": "VarGlobal"
+                    "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "PlayerHairStyle",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 },
                 {
@@ -8629,24 +8638,24 @@
                 },
                 {
                   "type": {
-                    "value": "VarGlobal"
+                    "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "PlayerHairStyle",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 },
                 {
@@ -8764,24 +8773,24 @@
                 },
                 {
                   "type": {
-                    "value": "VarGlobal"
+                    "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "HairColor",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "PlayerHairStyle",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 },
                 {
@@ -8925,24 +8934,24 @@
                 },
                 {
                   "type": {
-                    "value": "VarGlobal"
+                    "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "TopColor",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "PlayerTopStyle",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 },
                 {
@@ -9225,7 +9234,7 @@
                   "parameters": [
                     "PlayerTopStyle",
                     "=",
-                    "1"
+                    "2"
                   ]
                 },
                 {
@@ -9360,7 +9369,7 @@
                   "parameters": [
                     "PlayerTopStyle",
                     "=",
-                    "1"
+                    "2"
                   ]
                 },
                 {
