@@ -5,7 +5,7 @@ class mainGdevelop extends React.Component {
       <div>
         <iframe
           title="mainGDevelop"
-          src="../../maingdevelop/index.html"
+          src="../maingdevelop/index.html"
           className="hi"
           width="100%"
           height="1080px"

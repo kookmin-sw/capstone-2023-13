@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import background from '../../images/backgrounds/startbackground.png';
-import metaicon from '../../images/icons/meta-icon.png';
+import background from '@/images/backgrounds/startbackground.png';
+import metaicon from '@/images/icons/meta-icon.png';
 
 export const Container = styled.div`
     display: flex;
