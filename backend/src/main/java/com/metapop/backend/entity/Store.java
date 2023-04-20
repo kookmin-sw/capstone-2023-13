@@ -30,9 +30,11 @@ public class Store {
     private String info;
 
     @Builder
-    public Store(User user, String name){
+    public Store(User user, String name, LocalDateTime period, String info){
         this.owner = user;
         this.name = name;
+        this.period = period;
+        this.info = info;
     }
 
     public void update(StoreUpdateDTO storeUpdateDTO) {
