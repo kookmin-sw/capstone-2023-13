@@ -19,7 +19,7 @@ import java.util.Date;
 @Tag(name = "user", description = "유저 API")
 @RestController
 @RequestMapping("users")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "X-AUTH-TOKEN", maxAge = 3600)
 public class UserController {
 
     @Autowired
