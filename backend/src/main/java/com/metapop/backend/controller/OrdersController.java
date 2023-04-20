@@ -14,7 +14,7 @@ import java.util.Optional;
 @Tag(name = "order", description = "주문 API")
 @RestController
 @RequestMapping("orders")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://43.201.210.173:80")
 public class OrdersController {
 
     @Autowired
