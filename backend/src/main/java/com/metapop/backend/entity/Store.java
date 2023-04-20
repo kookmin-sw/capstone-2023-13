@@ -4,6 +4,8 @@ import com.metapop.backend.dto.StoreDTO.StoreUpdateDTO;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "store")
@@ -22,10 +24,18 @@ public class Store {
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
+    private LocalDate period;
+
+    @Column(nullable = false)
+    private String info;
+
     @Builder
-    public Store(User user, String name){
+    public Store(User user, String name, LocalDate period, String info){
         this.owner = user;
         this.name = name;
+        this.period = period;
+        this.info = info;
     }
 
     public void update(StoreUpdateDTO storeUpdateDTO) {
