@@ -4,13 +4,14 @@ import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.User;
 import lombok.Getter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
 public class StoreSaveDTO {
     private Long userId;
     private String name;
-    private LocalDateTime period;
+    private LocalDate period;
     private String info;
 
     public Store toEntity(User user) {
