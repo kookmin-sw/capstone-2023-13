@@ -1,6 +1,6 @@
 import React from "react";
-import "../../../pages/Startpage/StartPage.css"
-import "../TransFullBox.css";
+import "@pages/Startpage/StartPage.css"
+import "@components/TransHistory/TransFullBox.css";
 // import { useNavigate } from "react-router-dom";
 
 function PurchaseFullBox({onPage, onClose}) {

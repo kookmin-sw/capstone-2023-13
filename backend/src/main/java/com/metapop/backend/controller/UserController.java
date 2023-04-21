@@ -19,7 +19,7 @@ import java.util.Date;
 @Tag(name = "user", description = "유저 API")
 @RestController
 @RequestMapping("users")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://43.201.210.173:80")
 public class UserController {
 
     @Autowired
