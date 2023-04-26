@@ -1,5 +1,6 @@
 from aiohttp import web
 from collections import defaultdict
+from message import Message as M
 
 
 routes = web.RouteTableDef()
@@ -20,34 +21,20 @@ async def websocket_handler(request):
     channel = req.get('channel_id')
     X = req.get('X')
     Y = req.get('Y')
-
+    
+    for user_id, socket in request.app['websockets'][channel].items():
+        if user_id == user:
+            print("Aready Exist User")
+            await ws.close()
+            return ws
+    await ws.send_json(M.connect(user, 200))
     await broadcast(request.app,
                     channel,
-                    {   
-                        "type": "action",
-                        "user_id": user,
-                        "X": X,
-                        "Y": Y
-                    })
-    await ws.send_json({
-                            "type": "connect",
-                            "user_id": user,
-                            "status": 200
-                        })
-
-    if request.app['websockets'][channel].get(user):
-        await ws.close(message=b'Aready User')
-        return ws
-    else:
-        request.app['websockets'][channel][user] = ws
-        await broadcast(request.app,
-                        channel,
-                        message={
-                            "type": "chat",
-                            "user_id": "SERVER", 
-                            "msg": f"[{user}] enter chat room"
-                        })
-
+                    M.action(user, X, Y))
+    request.app['websockets'][channel][user] = ws
+    await broadcast(request.app,
+                    channel,
+                    M.chat("SERVER", f"[{user}] enter chat room"))
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
             req = msg.json()
@@ -56,22 +43,14 @@ async def websocket_handler(request):
                 Y = req.get('Y')
                 await broadcast(request.app,
                                 channel,
-                                message={   
-                                    "type": "action",
-                                    "user_id": user,
-                                    "X": X,
-                                    "Y": Y
-                                })
+                                M.action(user, X, Y))
             elif req.get('type') == 'chat':
                 await broadcast(request.app,
                                 channel,
-                                message={
-                                    "type": "chat",
-                                    "user_id": user, 
-                                    "msg": req.get('msg')
-                                })
+                                M.chat(user, req.get('msg')))
 
     del request.app['websockets'][channel][user]
+    print(f"Disconnect {user}")
     return ws
 
 async def broadcast(app, channel, message):
