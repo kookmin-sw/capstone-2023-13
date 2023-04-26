@@ -51,11 +51,6 @@ async def websocket_handler(request):
     print(f"Disconnect {user}")
     return ws
 
-# async def broadcast(app, channel, message):
-#     for user, ws in app['websockets'][channel].items():
-#         await ws.send_json(message)
-
-
 async def web_server():
     app = web.Application()
     app.add_routes(routes)
