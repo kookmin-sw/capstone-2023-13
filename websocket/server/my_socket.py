@@ -25,6 +25,7 @@ async def websocket_handler(request):
     for user_id, socket in request.app['websockets'][channel].items():
         if user_id == user:
             print("Aready Exist User")
+            await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
     await ws.send_json(M.connect(user, 200))
