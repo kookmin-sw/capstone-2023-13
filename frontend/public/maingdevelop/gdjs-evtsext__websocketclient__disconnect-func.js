@@ -7,11 +7,8 @@ if (typeof gdjs.evtsExt__WebSocketClient__Disconnect !== "undefined") {
 
 gdjs.evtsExt__WebSocketClient__Disconnect = {};
 
-gdjs.evtsExt__WebSocketClient__Disconnect.conditionTrue_0 = {val:false};
-gdjs.evtsExt__WebSocketClient__Disconnect.condition0IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__WebSocketClient__Disconnect.userFunc0xa1be60 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__WebSocketClient__Disconnect.userFunc0xa5c318 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.evtTools.wsClient.connection
     && gdjs.evtTools.wsClient.connection.close(1000, eventsFunctionContext.getArgument("reason"));
@@ -22,7 +19,7 @@ gdjs.evtsExt__WebSocketClient__Disconnect.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__WebSocketClient__Disconnect.userFunc0xa1be60(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__WebSocketClient__Disconnect.userFunc0xa5c318(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

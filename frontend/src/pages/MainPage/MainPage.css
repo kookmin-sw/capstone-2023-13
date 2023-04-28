@@ -6,7 +6,7 @@ html {
 }
 
 .Background{
-    /* background-image: url(../../images/backgrounds/startbackground.png);
+    /* background-image: url(@/images/backgrounds/startbackground.png);
     background-repeat: no-repeat;
     background-size: cover; */
 
