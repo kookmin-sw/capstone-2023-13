@@ -1,5 +1,6 @@
 from aiohttp import web
 from .message import Message as M
+from .my_logging import Logging
 
 
 routes = web.RouteTableDef()
@@ -17,14 +18,16 @@ async def websocket_handler(request):
     
     data = await ws.receive_json()
     user, channel, X, Y = M.get_init_data(data)
+    log = Logging(user, channel)
     
     for user_id, socket in request.app['websockets'][channel].items():
         if user_id == user:
-            print("Aready Exist User")
+            log.connect_logging(400)
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
     await ws.send_json(M.connect(user, 200))
+    log.connect_logging(200)
     await M.broadcast(request.app,
                       channel,
                       M.action(user, X, Y))
@@ -47,7 +50,7 @@ async def websocket_handler(request):
                                   M.chat(user, req.get('msg')))
 
     del request.app['websockets'][channel][user]
-    print(f"Disconnect {user}")
+    log.disconnect_logging()
     return ws
 
 def router():
