@@ -7,11 +7,8 @@ if (typeof gdjs.evtsExt__WebSocketClient__Connect !== "undefined") {
 
 gdjs.evtsExt__WebSocketClient__Connect = {};
 
-gdjs.evtsExt__WebSocketClient__Connect.conditionTrue_0 = {val:false};
-gdjs.evtsExt__WebSocketClient__Connect.condition0IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__WebSocketClient__Connect.userFunc0xa93208 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__WebSocketClient__Connect.userFunc0xa5c318 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.evtTools.wsClient.connection = new WebSocket(eventsFunctionContext.getArgument("host"));
 
@@ -31,7 +28,7 @@ gdjs.evtsExt__WebSocketClient__Connect.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__WebSocketClient__Connect.userFunc0xa93208(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__WebSocketClient__Connect.userFunc0xa5c318(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

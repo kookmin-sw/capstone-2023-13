@@ -1,5 +1,5 @@
 import React from "react";
-import "./SalePurchaseBox.css";
+import "./TransFullBox.css";
 // import MainGdevelop from '../MainGdevelop/MainGdevelop';
 // import { useNavigate } from "react-router-dom";
 

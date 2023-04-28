@@ -1,7 +1,7 @@
 import React from "react";
-import "../../pages/Startpage/StartPage.css"
+import "@pages/Startpage/StartPage.css"
 import "./CustomizingBox.css";
-import GDevelopTest from '../GDevelopTest';
+import GDevelopTest from '@components/GDevelopTest';
 // import MainGdevelop from '../MainGdevelop/MainGdevelop';
 import { useNavigate } from "react-router-dom";
 

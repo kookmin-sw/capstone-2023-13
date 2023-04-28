@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import background from '../../images/backgrounds/startbackground.png';
-import metaicon from '../../images/icons/meta-icon.png';
-import profileimg from '../../images/icons/mypageprofileimg.png';
+import background from '@/images/backgrounds/startbackground.png';
+import metaicon from '@/images/icons/meta-icon.png';
+import profileimg from '@/images/icons/mypageprofileimg.png';
 
 
 export const Container = styled.div`
@@ -10,7 +10,7 @@ export const Container = styled.div`
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(${background});
+    /* background-image: url(${background}); */
 `;
 
 export const Backgroud = styled.img.attrs({
@@ -31,7 +31,7 @@ export const FindWhiteBox = styled.div`
     margin :0px auto;
     width: 1294px;
     height: 930px;
-    background: rgba(255, 255, 255, 0.68);
+    background: rgba(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px; 
     box-sizing: border-box;
@@ -160,7 +160,7 @@ export const PasswordInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 26px; 
+    margin-top: 100px; 
 
     > span {
         &:nth-child(1) {
@@ -328,6 +328,30 @@ export const ConfirmBtn = styled.button`
 
     > span {
         color: white;
+        font-weight: 600;
+        font-size: 20px;
+    }
+`;
+
+export const CloseBtn = styled.button`
+    width: 216px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:1px solid #141060; 
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > span {
+        color: #141060;
         font-weight: 600;
         font-size: 20px;
     }
