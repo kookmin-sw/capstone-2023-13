@@ -1,6 +1,5 @@
 from aiohttp import web
-from collections import defaultdict
-from message import Message as M
+from .message import Message as M
 
 
 routes = web.RouteTableDef()
@@ -51,8 +50,5 @@ async def websocket_handler(request):
     print(f"Disconnect {user}")
     return ws
 
-async def web_server():
-    app = web.Application()
-    app.add_routes(routes)
-    app['websockets'] = defaultdict(dict)
-    return app
+def router():
+    return routes

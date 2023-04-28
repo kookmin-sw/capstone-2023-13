@@ -1,4 +1,4 @@
-from server.my_socket import web_server
+from server.main import web_server
 from server.message import Message as M
 from aiohttp import web
 
