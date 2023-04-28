@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "store", description = "상점 API")
 @RestController
 @RequestMapping("stores")
-@CrossOrigin(origins = "http://43.201.210.173")
+@CrossOrigin(origins = "*")
 public class StoreController {
 
     @Autowired
