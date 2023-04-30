@@ -1,5 +1,6 @@
 package com.metapop.backend.controller;
 
+import com.metapop.backend.Provider.JwtTokenProvider;
 import com.metapop.backend.dto.UserDTO.*;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
@@ -28,37 +29,33 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private JwtTokenProvider jwtTokenProvider;
+
     @Operation(summary = "", description = "회원가입 API")
     @PostMapping("/signup")
     public ResponseEntity<String> join(@RequestBody User user) {
         if(userService.isEmailDuplicate(user.getEmail())) {
-            return ResponseEntity.badRequest().body("Email already exists");
+            return ResponseEntity.status(400).body("Email already exists");
         }
-
         userService.join(user);
         return ResponseEntity.ok("Join Success!");
     }
 
     @Operation(summary = "", description = "로그인 API")
     @PostMapping("/login")
-    public String login(@RequestBody LoginDTO loginDTO, HttpServletResponse response) {
+    public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO) {
         if(userService.isEmailDuplicate(loginDTO.getEmail())) {
             if(userService.comparePassword(loginDTO.getEmail(),loginDTO.getPassword())) {
-                User user = userService.findByEmail(loginDTO.getEmail());
-                String issuer = user.getId().toString();
-                String jwt = Jwts.builder()
-                        .setIssuer(issuer)
-                        .setExpiration(new Date(System.currentTimeMillis() + 60 * 24 * 1000))
-                        .signWith(SignatureAlgorithm.HS512, "metapop")
-                        .compact();
-
-                Cookie cookie = new Cookie("Token", jwt);
-                response.addCookie(cookie);
-
-                return jwt;
+                User user = userRepository.findByEmail(loginDTO.getEmail());
+                if(user != null) {
+                    return ResponseEntity.ok(jwtTokenProvider.createToken(user.getEmail(), user.getPassword()));
+                }
+                return ResponseEntity.status(400).body("사용자를 찾을 수 없습니다.");
             }
+            return ResponseEntity.status(400).body("비밀번호가 틀렸습니다.");
         }
-        return "Wrong Email or Password";
+        return ResponseEntity.status(400).body("사용자를 찾을 수 없습니다.");
     }
 
     @Operation(summary = "", description = "로그아웃 API")
