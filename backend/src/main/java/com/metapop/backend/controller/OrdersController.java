@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @Tag(name = "order", description = "주문 API")
@@ -30,6 +31,16 @@ public class OrdersController {
     @GetMapping("/info/detail/{orders_id}")
     public Optional<Orders> infodetail(@PathVariable Long orders_id) {
         return ordersService.infodetail(orders_id);
+    }
+
+    @GetMapping("/info/sell/{user_id}")
+    public List<Orders> sellList(@PathVariable Long user_id) {
+        return ordersService.sellList(user_id);
+    }
+
+    @GetMapping("/info/buy/{user_id}")
+    public List<Orders> buyList(@PathVariable Long user_id) {
+        return ordersService.buyList(user_id);
     }
 
     @Operation(summary = "", description = "주문 정보 수정 API")
