@@ -33,11 +33,13 @@ public class OrdersController {
         return ordersService.infodetail(orders_id);
     }
 
+    @Operation(summary = "", description = "내 판매 주문 전체 정보 조회 API")
     @GetMapping("/info/sell/{user_id}")
     public List<Orders> sellList(@PathVariable Long user_id) {
         return ordersService.sellList(user_id);
     }
 
+    @Operation(summary = "", description = "내 구매 주문 전체 정보 조회 API")
     @GetMapping("/info/buy/{user_id}")
     public List<Orders> buyList(@PathVariable Long user_id) {
         return ordersService.buyList(user_id);
