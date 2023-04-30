@@ -16,6 +16,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 import java.util.Date;
+import java.util.Optional;
 
 @Tag(name = "user", description = "유저 API")
 @RestController
@@ -69,21 +70,10 @@ public class UserController {
     }
 
     @Operation(summary = "", description = "유저 정보 조회 API")
-    @PostMapping("/info")
-    public ResponseEntity<?> info(@RequestBody TokenDTO tokenDTO) {
-        try {
-            if(tokenDTO == null) {
-                return ResponseEntity.status(400).body("토큰이 없습니다.");
-            }
-
-            Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
-
-            return ResponseEntity.ok(this.userService.getById(Long.valueOf(token.getIssuer())));
-        } catch (ExpiredJwtException e) {
-            return ResponseEntity.status(400).body("토큰이 만료 되었습니다.");
-        } catch (JwtException e) {
-            return ResponseEntity.status(400).body("토큰이 다릅니다.");
-        }
+    @GetMapping("/info/{user_id}")
+    public Optional<User> info(@PathVariable Long user_id) {
+        Optional<User> user = userRepository.findById(user_id);
+        return user;
     }
 
     @Operation(summary = "", description = "유저 정보 수정 API")
@@ -121,7 +111,7 @@ public class UserController {
 
     @Operation(summary = "", description = "임시 비밀번호 이메일 전송 API")
     @Transactional
-    @PostMapping("/sendEmail")
+    @PostMapping("/send/Email")
     public ResponseEntity<String> sendEmail(@RequestParam("userEmail") String userEmail){
         MailDTO mailDTO = userService.createMailAndChangePassword(userEmail);
         userService.mailSend(mailDTO);
