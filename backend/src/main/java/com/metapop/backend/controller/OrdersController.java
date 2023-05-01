@@ -9,12 +9,13 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @Tag(name = "order", description = "주문 API")
 @RestController
 @RequestMapping("orders")
-@CrossOrigin(origins = "http://43.201.210.173:80")
+@CrossOrigin(origins = "*")
 public class OrdersController {
 
     @Autowired
@@ -30,6 +31,18 @@ public class OrdersController {
     @GetMapping("/info/detail/{orders_id}")
     public Optional<Orders> infodetail(@PathVariable Long orders_id) {
         return ordersService.infodetail(orders_id);
+    }
+
+    @Operation(summary = "", description = "내 판매 주문 전체 정보 조회 API")
+    @GetMapping("/info/sell/{user_id}")
+    public List<Orders> sellList(@PathVariable Long user_id) {
+        return ordersService.sellList(user_id);
+    }
+
+    @Operation(summary = "", description = "내 구매 주문 전체 정보 조회 API")
+    @GetMapping("/info/buy/{user_id}")
+    public List<Orders> buyList(@PathVariable Long user_id) {
+        return ordersService.buyList(user_id);
     }
 
     @Operation(summary = "", description = "주문 정보 수정 API")
