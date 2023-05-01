@@ -14,7 +14,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.CorsUtils;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,44 +34,51 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.cors().configurationSource(request -> {
-            var cors = new CorsConfiguration();
-            cors.setAllowedOrigins(List.of("*"));
-            cors.setAllowedMethods(List.of("GET","POST", "PUT", "DELETE", "OPTIONS"));
-            cors.setAllowedHeaders(List.of("*"));
-            return cors;
-        });
+//        http.cors().configurationSource(request -> {
+//            var cors = new CorsConfiguration();
+//            cors.setAllowedOrigins(List.of("*"));
+//            cors.setAllowedMethods(List.of("GET","POST", "PUT", "DELETE", "OPTIONS"));
+//            cors.setAllowedHeaders(List.of("*"));
+//            return cors;
+//        });
+//
+//        http
+//            .authorizeRequests()// 요청에 대한 사용권한 체크
+//            .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
+//            .antMatchers("/users/logout").authenticated()
+//            .antMatchers("/users/info/**").authenticated()
+//            .antMatchers("/users/update/**").authenticated()
+//            .antMatchers("/users/findpw").authenticated()
+//            .antMatchers("/users/myinfo").authenticated()
+//            .antMatchers("/users/myinfo").authenticated()
+//            .antMatchers("/users/send/**").authenticated()
+//            .antMatchers("/**").permitAll()
+//            .and()
+//            .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
+//                    UsernamePasswordAuthenticationFilter.class);
+//    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
-        http.csrf().disable();
         http
-            .authorizeRequests()// 요청에 대한 사용권한 체크
-            .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
-            .antMatchers("/users/logout").authenticated()
-            .antMatchers("/users/info/**").authenticated()
-            .antMatchers("/users/update/**").authenticated()
-            .antMatchers("/users/findpw").authenticated()
-            .antMatchers("/users/myinfo").authenticated()
-            .antMatchers("/users/myinfo").authenticated()
-            .antMatchers("/users/send/**").authenticated()
-            .antMatchers("/**").permitAll()
-            .and()
-            .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
-                    UsernamePasswordAuthenticationFilter.class);
-    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
-    http.cors();
+                .authorizeRequests()
+                .antMatchers("/**").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .cors().configurationSource(corsConfigurationSource())
+                .and()
+                .headers().cacheControl().disable().and()
+                .csrf().disable();
     }
 
     @Bean
-    CorsConfigurationSource corsConfigurationSource() {
+    public CorsConfigurationSource corsConfigurationSource(){
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("*"));
-        configuration.setAllowedMethods(Arrays.asList("HEAD", "GET", "POST", "PUT", "DELETE"));
-        configuration.setAllowedHeaders(Arrays.asList("*"));
-        configuration.setAllowCredentials(true);
+        configuration.addAllowedOrigin("*");
+        configuration.addAllowedHeader("*");
+        configuration.addAllowedMethod("*");
+        configuration.addExposedHeader("*"); // 모든걸 허용함
+
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
 }
