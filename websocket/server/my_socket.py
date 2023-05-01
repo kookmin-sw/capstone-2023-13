@@ -1,6 +1,5 @@
 from aiohttp import web
 from .message import Message as M
-from .my_logging import Logging
 
 
 routes = web.RouteTableDef()
@@ -17,7 +16,7 @@ async def websocket_handler(request):
     await ws.prepare(request)
     
     data = await ws.receive_json()
-    user, channel, X, Y = M.get_init_data(data)
+    user, nickname, channel, X, Y = M.get_init_data(data)
     log = request.app['logging']
     
     for user_id, socket in request.app['websockets'][channel].items():
@@ -34,7 +33,7 @@ async def websocket_handler(request):
     request.app['websockets'][channel][user] = ws
     await M.broadcast(request.app,
                       channel,
-                      M.chat("SERVER", f"[{user}] enter chat room"))
+                      M.chat("SERVER", "SERVER", f"[{user}] enter chat room"))
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
             req = msg.json()
@@ -47,7 +46,7 @@ async def websocket_handler(request):
             elif req.get('type') == 'chat':
                 await M.broadcast(request.app,
                                   channel,
-                                  M.chat(user, req.get('msg')))
+                                  M.chat(user, nickname, req.get('msg')))
             else:
                 await ws.send_json(M.connect(user, 200))
     del request.app['websockets'][channel][user]
