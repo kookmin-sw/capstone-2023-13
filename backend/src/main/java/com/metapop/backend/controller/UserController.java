@@ -5,15 +5,15 @@ import com.metapop.backend.dto.UserDTO.*;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
 import com.metapop.backend.service.UserService;
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import io.jsonwebtoken.Jwts;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.Optional;
@@ -23,6 +23,8 @@ import java.util.Optional;
 @RequestMapping("users")
 @CrossOrigin(origins = "*")
 public class UserController {
+
+    private String secretKey = "MetaPop";
 
     @Autowired
     private UserService userService;
@@ -61,12 +63,12 @@ public class UserController {
 
     @Operation(summary = "", description = "로그아웃 API")
     @PostMapping("/logout")
-    public ResponseEntity<String> logout(HttpServletResponse response) {
-        Cookie cookie = new Cookie("Token", "");
-        cookie.setMaxAge(0);
-        response.addCookie(cookie);
-
-        return ResponseEntity.ok("Logout Success!");
+    public ResponseEntity<String> logout(@RequestHeader("Authorization") String jwtToken) {
+        Date now = new Date();
+        Jws<Claims> claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken);
+        claims.getBody().setExpiration(new Date(0));
+        System.out.printf(claims.getBody().toString());
+        return ResponseEntity.ok().body("로그아웃이 완료되었습니다.");
     }
 
     @Operation(summary = "", description = "유저 정보 조회 API")
