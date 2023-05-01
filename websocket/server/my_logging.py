@@ -2,24 +2,22 @@ import logging
 
 
 class Logging:
-    def __init__(self, user_id, channel_id):
-        self.user_id = user_id
-        self.channel_id = channel_id
+    def __init__(self):
         self.logger = logging.getLogger()
-        self.logger.setLevel(logging.INFO)
+        self.logger.setLevel(logging.DEBUG)
         self.file_handler = logging.FileHandler('access.log')
-        formatter = logging.Formatter('%(asctime)s-%(levelname)s-%(message)s')
+        formatter = logging.Formatter('%(asctime)s - %(message)s')
         self.file_handler.setFormatter(formatter)
         self.logger.addHandler(self.file_handler)
     
-    def format(self, msg):
-        return f"[{self.channel_id}]{self.user_id} : {msg}"
+    def format(self, user_id, channel_id, msg):
+        return f"[{channel_id}]{user_id} : {msg}"
 
-    def connect_logging(self, status):
+    def connect_logging(self, status, user_id, channel_id):
         if status == 200:
-            self.logger.info(self.format('Connect Success'))
+            self.logger.debug(self.format(user_id, channel_id, 'Connect Success'))
         else:
-            self.logger.info(self.format('Connect Fail'))
+            self.logger.debug(self.format(user_id, channel_id, 'Connect Fail'))
     
-    def disconnect_logging(self):
-        self.logger.info(self.format('Disconnect Success'))
+    def disconnect_logging(self, user_id, channel_id):
+        self.logger.debug(self.format(user_id, channel_id, 'Disconnect Success'))

@@ -18,16 +18,16 @@ async def websocket_handler(request):
     
     data = await ws.receive_json()
     user, channel, X, Y = M.get_init_data(data)
-    log = Logging(user, channel)
+    log = request.app['logging']
     
     for user_id, socket in request.app['websockets'][channel].items():
         if user_id == user:
-            log.connect_logging(400)
+            log.connect_logging(400, user, channel)
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
     await ws.send_json(M.connect(user, 200))
-    log.connect_logging(200)
+    log.connect_logging(200, user, channel)
     await M.broadcast(request.app,
                       channel,
                       M.action(user, X, Y))
@@ -48,9 +48,11 @@ async def websocket_handler(request):
                 await M.broadcast(request.app,
                                   channel,
                                   M.chat(user, req.get('msg')))
-
+            else:
+                await ws.send_json(M.connect(user, 200))
     del request.app['websockets'][channel][user]
-    log.disconnect_logging()
+    log.disconnect_logging(user, channel)
+    await ws.close()
     return ws
 
 def router():
