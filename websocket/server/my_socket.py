@@ -16,7 +16,7 @@ async def websocket_handler(request):
     await ws.prepare(request)
     
     data = await ws.receive_json()
-    user, nickname, channel, X, Y = M.get_init_data(data)
+    user, nickname, channel, X, Y, Z = M.get_init_data(data)
     log = request.app['logging']
     
     for user_id, socket in request.app['websockets'][channel].items():
@@ -25,11 +25,11 @@ async def websocket_handler(request):
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
-    await ws.send_json(M.connect(user, 200, X, Y))
+    await ws.send_json(M.connect(user, 200, X, Y, Z))
     log.connect_logging(200, user, nickname, channel)
     await M.broadcast(request.app,
                       channel,
-                      M.action(user, X, Y))
+                      M.action(user, X, Y, Z))
     request.app['websockets'][channel][user] = ws
     await M.broadcast(request.app,
                       channel,
@@ -41,10 +41,11 @@ async def websocket_handler(request):
             if type == 'action':
                 X = req.get('X')
                 Y = req.get('Y')
+                Z = req.get('Z')
                 await M.broadcast(request.app,
                                   channel,
-                                  M.action(user, X, Y))
-                log.action_logging(user, nickname, channel, X, Y)
+                                  M.action(user, X, Y, Z))
+                log.action_logging(user, nickname, channel, X, Y, Z)
             elif type == 'chat':
                 msg = req.get('msg')
                 await M.broadcast(request.app,
