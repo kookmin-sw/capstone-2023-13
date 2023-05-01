@@ -7,14 +7,16 @@ class Message:
     def get_init_data(cls, data):
         user = data.get('user_id')
         channel = data.get('channel_id')
+        nickname = data.get('nickname')
         X = data.get('X')
         Y = data.get('Y')
-        return user, channel, X, Y
+        return user, nickname, channel, X, Y
     
     @classmethod
-    def set_init_data(cls, user_id, channel_id, X, Y):
+    def set_init_data(cls, user_id, nickname, channel_id, X, Y):
         return {
             "user_id": user_id,
+            "nickname": nickname,
             "channel_id": channel_id,
             "X": X,
             "Y": Y
@@ -29,10 +31,11 @@ class Message:
         }
     
     @classmethod
-    def chat(cls, user_id, msg):
+    def chat(cls, user_id, nickname, msg):
         return {
             "type": cls.CHAT,
             "user_id": user_id,
+            "nickname": nickname,
             "msg": msg
         }
     

@@ -19,7 +19,7 @@ async def test_running_server(app, client):
 @open_server_client
 async def test_single_socket(app, client):
     async with client.ws_connect('/ws') as ws:
-        await ws.send_json(M.set_init_data("test", "test", 0, 0))
+        await ws.send_json(M.set_init_data("test", "test", "test", 0, 0))
         res = await ws.receive_json()
         assert res.get("type") == "connect" and res.get("user_id") == "test" and res.get("status") == 200
         count = 0
@@ -30,12 +30,12 @@ async def test_single_socket(app, client):
                 res = msg.json()
                 rq.append(res)
                 if not count:
-                    assert res == M.chat("SERVER", f"[test] enter chat room")
+                    assert res == M.chat("SERVER", "SERVER", f"[test] enter chat room")
                 if count == 3:
                     rq.pop(0)
                     assert mq == rq
                     break
-                test_msg = M.chat("test", "Hello World!")
+                test_msg = M.chat("test", "test", "Hello World!")
                 mq.append(test_msg)
                 await ws.send_json(test_msg)
                 count += 1
@@ -43,8 +43,8 @@ async def test_single_socket(app, client):
 
 @open_server_client
 async def test_multi_socket(app, client):
-    user_list = [M.set_init_data("test1", "test", 0, 1),
-                 M.set_init_data("test2", "test", 1, 0)]
+    user_list = [M.set_init_data("test1", "test1", "test", 0, 1),
+                 M.set_init_data("test2", "test2", "test", 1, 0)]
     mq = list()
     rq = list()
     for user in range(6):
@@ -61,8 +61,8 @@ async def test_multi_socket(app, client):
                     if flag:
                         rq.append(res)
                         break
-                    assert res == M.chat("SERVER", f"[{user_id}] enter chat room")
-                    test_msg = M.chat(user_id, f"{user_id}'s message {user}")
+                    assert res == M.chat("SERVER", "SERVER", f"[{user_id}] enter chat room")
+                    test_msg = M.chat(user_id, user_id, f"{user_id}'s message {user}")
                     await ws.send_json(test_msg)
                     mq.append(test_msg)
                     flag = 1
