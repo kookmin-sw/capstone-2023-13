@@ -25,7 +25,7 @@ async def websocket_handler(request):
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
-    await ws.send_json(M.connect(user, 200))
+    await ws.send_json(M.connect(user, 200, X, Y))
     log.connect_logging(200, user, nickname, channel)
     await M.broadcast(request.app,
                       channel,
@@ -52,7 +52,7 @@ async def websocket_handler(request):
                                   M.chat(user, nickname, msg))
                 log.chat_logging(user, nickname, channel, msg)
             else:
-                await ws.send_json(M.connect(user, 200))
+                await ws.send_json(M.connect(user, 400))
     del request.app['websockets'][channel][user]
     log.disconnect_logging(user, nickname, channel)
     await ws.close()
