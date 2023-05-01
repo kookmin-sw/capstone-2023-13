@@ -34,8 +34,9 @@ function LoginBox({ onPage }) {
         console.log("login success");
         if (response.data) {
           localStorage.setItem('login-token', response.data);
+          loginClick();
         }
-        loginClick();
+
 
       })
       .catch(function (error) {
