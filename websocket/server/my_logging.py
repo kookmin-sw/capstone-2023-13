@@ -25,5 +25,5 @@ class Logging:
     def chat_logging(self, user_id, nickname, channel_id, msg):
         self.logger.debug(self.format('chat', user_id, nickname, channel_id, msg))
 
-    def action_logging(self, user_id, nickname, channel_id, X, Y):
-        self.logger.debug(self.format('action', user_id, nickname, channel_id, f"{X}, {Y}"))
+    def action_logging(self, user_id, nickname, channel_id, X, Y, Z):
+        self.logger.debug(self.format('action', user_id, nickname, channel_id, f"{X}, {Y}, {Z}"))
