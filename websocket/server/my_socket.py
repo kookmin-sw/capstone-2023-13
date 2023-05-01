@@ -37,13 +37,14 @@ async def websocket_handler(request):
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
             req = msg.json()
-            if req.get('type') == 'action':
+            type = req.get('type')
+            if type == 'action':
                 X = req.get('X')
                 Y = req.get('Y')
                 await M.broadcast(request.app,
                                   channel,
                                   M.action(user, X, Y))
-            elif req.get('type') == 'chat':
+            elif type == 'chat':
                 await M.broadcast(request.app,
                                   channel,
                                   M.chat(user, nickname, req.get('msg')))
