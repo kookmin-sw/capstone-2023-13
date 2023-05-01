@@ -16,6 +16,7 @@ import org.springframework.web.cors.CorsUtils;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -43,32 +44,32 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         });
 
         http.csrf().disable();
-        http.httpBasic().disable()
-                .authorizeRequests()// 요청에 대한 사용권한 체크
-                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
-                .antMatchers("/users/logout").authenticated()
-                .antMatchers("/users/info/**").authenticated()
-                .antMatchers("/users/update/**").authenticated()
-                .antMatchers("/users/findpw").authenticated()
-                .antMatchers("/users/myinfo").authenticated()
-                .antMatchers("/users/myinfo").authenticated()
-                .antMatchers("/users/send/**").authenticated()
-                .antMatchers("/**").permitAll()
-                .and()
-                .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
-                        UsernamePasswordAuthenticationFilter.class);
-        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http
+            .authorizeRequests()// 요청에 대한 사용권한 체크
+            .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
+            .antMatchers("/users/logout").authenticated()
+            .antMatchers("/users/info/**").authenticated()
+            .antMatchers("/users/update/**").authenticated()
+            .antMatchers("/users/findpw").authenticated()
+            .antMatchers("/users/myinfo").authenticated()
+            .antMatchers("/users/myinfo").authenticated()
+            .antMatchers("/users/send/**").authenticated()
+            .antMatchers("/**").permitAll()
+            .and()
+            .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
+                    UsernamePasswordAuthenticationFilter.class);
+    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+    http.cors();
     }
 
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
+    CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-
-        configuration.addAllowedOrigin("*");
-        configuration.addAllowedHeader("*");
-        configuration.addAllowedMethod("*");
+        configuration.setAllowedOrigins(Arrays.asList("*"));
+        configuration.setAllowedMethods(Arrays.asList("HEAD", "GET", "POST", "PUT", "DELETE"));
+        configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);
-
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
