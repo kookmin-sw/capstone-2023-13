@@ -21,6 +21,7 @@ import java.util.Optional;
 @Tag(name = "user", description = "유저 API")
 @RestController
 @RequestMapping("users")
+@CrossOrigin(origins = "*")
 public class UserController {
 
     private String secretKey = "MetaPop";
