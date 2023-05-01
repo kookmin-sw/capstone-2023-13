@@ -21,12 +21,12 @@ async def websocket_handler(request):
     
     for user_id, socket in request.app['websockets'][channel].items():
         if user_id == user:
-            log.connect_logging(400, user, channel)
+            log.connect_logging(400, user, nickname, channel)
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
     await ws.send_json(M.connect(user, 200))
-    log.connect_logging(200, user, channel)
+    log.connect_logging(200, user, nickname, channel)
     await M.broadcast(request.app,
                       channel,
                       M.action(user, X, Y))
@@ -44,14 +44,17 @@ async def websocket_handler(request):
                 await M.broadcast(request.app,
                                   channel,
                                   M.action(user, X, Y))
+                log.action_logging(user, nickname, channel, X, Y)
             elif type == 'chat':
+                msg = req.get('msg')
                 await M.broadcast(request.app,
                                   channel,
-                                  M.chat(user, nickname, req.get('msg')))
+                                  M.chat(user, nickname, msg))
+                log.chat_logging(user, nickname, channel, msg)
             else:
                 await ws.send_json(M.connect(user, 200))
     del request.app['websockets'][channel][user]
-    log.disconnect_logging(user, channel)
+    log.disconnect_logging(user, nickname, channel)
     await ws.close()
     return ws
 
