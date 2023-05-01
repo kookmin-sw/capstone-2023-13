@@ -1,3 +1,5 @@
+package com.metapop.backend.config;
+
 import com.metapop.backend.Filter.JwtAuthenticationFilter;
 import com.metapop.backend.Provider.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
