@@ -15,7 +15,6 @@ import java.util.Optional;
 @Tag(name = "order", description = "주문 API")
 @RestController
 @RequestMapping("orders")
-@CrossOrigin(origins = "*")
 public class OrdersController {
 
     @Autowired
