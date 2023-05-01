@@ -1,24 +1,35 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import "@pages/Startpage/StartPage.css"
 import "./SignupBox.css";
 import axios from 'axios';
 import axiosInstance from "@/js/axiosInstance";
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.minimal.css';
 
 function SignupBox({ onPage }) {
+  const notify = () => toast("이미 존재하는 이메일입니다.", {
+    transition:Slide
+  });
   const finishClick = () => {
-    loginPost();
-    onPage("custom");
-    
+    signupPost();
+    // onPage("custom");
   }
+  // const dupClick = () => {
+  //   console.log('중복검사');
+  //   // dupCheck();
+  // }
   const backClick = () => {
     onPage("login");
   }
+  const emailInputRef = useRef(null);
   //입력 값 저장
   const [email, setEmail] = useState('test@test.com');
   const [password, setPassword] = useState('12');
   const [password_check, setPasswordCheck] = useState('12');
-  const [name, setName] = useState('test');
-  const [bank, setBank] = useState('test');
+  const [name, setName] = useState('nametest');
+  const [nickname, setNickname] = useState('nicktest');
+  const [bank, setBank] = useState('기업은행');
   const [address, setAddress] = useState('test');
   const [account, setAccount] = useState('123');
 
@@ -27,49 +38,38 @@ function SignupBox({ onPage }) {
   const [emailMessage, setEmailMessage] = useState('');
 
   //유효성검사
-  const [isName, setIsName] = useState(false)
+  
   const [isEmail, setIsEmail] = useState(false)
+  // const [isDup, setIsDup] = useState(false)
   const [isPassword, setIsPassword] = useState(false)
+  const [isName, setIsName] = useState(false)
+  const [isNickname, setIsNickname] = useState(false)
   const [isBank, setIsBank] = useState(false)
   const [isAccount, setIsAccount] = useState(false)
   const [isAddress, setIsAddress] = useState(false)
   
   const onChangeEmail = (e) => {
-    console.log('유효성검사');
+    // console.log('유효성검사');
     const emailRegex =
       /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
     const emailCurrent = e.target.value
     setEmail(emailCurrent)
 
     if (!emailRegex.test(emailCurrent)) {
-      console.log('nono')
+      // console.log('nono')
       setIsEmail(false)
+      // setIsDup(false)
       setEmailMessage('이메일 형식이 올바르지 않습니다.')
     } else {
-      console.log('good')
+      // console.log('good')
       setIsEmail(true)
-      setEmailMessage('이메일 확인')      
+      // setIsDup(true)
+      setEmailMessage('')      
     }
   }
-  // const onChangeName = (e) => {
-  //   setName(e.target.value);
-  //   if (name != ''){
-  //     setIsName(true)
-  //   }
-  //   console.log('dd',name)
-  //   console.log('hhh',isName)
-  // }
-  // const onChangeAddress = (e) => {
-  //   setAddress(e.target.value);
-  //   if (address != ''){
-  //     setIsAddress(true)
-  //   }
-  //   console.log(address)
-  //   console.log(isAddress)
-  // }
-  // const onChangeBank = (e) => {
-  //   setBank(e.target.value);
-  // }
+  function onChangeBank(e){
+    setBank(e.target.value);
+  }
   //동기적 처리 
   useEffect(() => {
     if (isEmail){
@@ -81,10 +81,10 @@ function SignupBox({ onPage }) {
   }, [isEmail]);
   useEffect(() => {
     if (password === password_check){
-      setPasswordCheckMessage('비밀번호 같음')
+      setPasswordCheckMessage('비밀번호가 일치합니다.')
       setIsPassword(true)
     }else{
-      setPasswordCheckMessage('비밀번호 다름')
+      setPasswordCheckMessage('비밀번호가 일치하지 않습니다.')
       setIsPassword(false)
     }
   }, [password, password_check, isPassword]);
@@ -96,6 +96,14 @@ function SignupBox({ onPage }) {
       setIsName(false);
     }
   }, [name, isName]);
+  useEffect(() => {
+    if (nickname !==''){
+      setIsNickname(true);
+    }
+    else if (name === ''){
+      setIsNickname(false);
+    }
+  }, [nickname, isNickname]);
   useEffect(() => {
     if (bank !== '') {
       setIsBank(true);
@@ -120,34 +128,34 @@ function SignupBox({ onPage }) {
       setIsAddress(false);
     }
   }, [address, isAddress]);
-  // const onChangeAccount = (e) => {
-  //   setAccount(e.target.value);
-  //   console.log('1',account)
-  //   if (account != ''){
-  //     console.log('2',account)
-  //     setIsAccount(true)
-  //   }
-  //   console.log('3',account)
-  //   console.log(isAccount)
+  // const dupCheck = async() => {
   // }
-  const loginPost = async () => {
-    console.log('hi');
+  const signupPost = async () => {
     try {
     const response = await axiosInstance.post("/users/signup", {
       id: 0,
       email: email,
       password: password,
       name: name,
+      nickname:nickname,
       bank: bank,
-      nickname:name,
       account: account,
-      address: address,
+      address: address
     });
     console.log(response.data);
     console.log('success');
+    onPage('custom');
   } catch (error) {
     console.log(error);
-  }
+      // if (error.response.status === 409) { // 409: Conflict (이미 등록된 이메일)
+      //   notify();
+      //   setIsEmail(false);
+      //   emailInputRef.current.focus();
+      // }
+      // else {
+      //   console.log(error);
+      // }
+    }
     // e.preventDefault();
     // axiosInstance
     //   .post("/users/signup", {id : 0 ,email : 'test@test.com', password : 1234, name : 'tt', bank : 'bb', account : 123, address : 'gg' })
@@ -174,58 +182,62 @@ function SignupBox({ onPage }) {
             <div className="SignupText">회원가입</div>
         </div>
         <div className="inputForm">
+        {/* <button onClick={notify}>Notify !</button> */}
+        <ToastContainer
+        position="bottom-center"
+        limit={1}
+        closeButton={false}
+        autoClose={700}
+        hideProgressBar
+        transition={Slide}
+      />
             <div className="inputDiv">
-              <div className="labelDiv">이메일 주소</div>
-              <input className="inputBox" type="text" value={email} onChange={(e) => onChangeEmail(e)}></input>
+              {/* <div className="labelDiv">이메일 주소</div> */}
+              <input className="emailBox" type="text" value={email} onChange={(e) => onChangeEmail(e)} ref={emailInputRef}></input>
+              {/* <button className="dupBtn" onClick={dupClick} disabled={!(isDup)}>중복확인</button> */}
               {/* <div>올바른 이메일 형식이 아닙니다.</div> */}
               {email.length > 0 && (
               <div className={`message ${isEmail ? 'success' : 'error'}`}>{emailMessage}</div>
           )}
-
             </div>
             <div className="inputDiv">
-              <div className="labelDiv">비밀번호</div>
-              <input className="inputBox" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+              {/* <div className="labelDiv">비밀번호</div> */}
+              <input className="signup-inputBox passwordBox" placeholder="비밀번호" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
             </div>
             <div className="inputDiv">
-              <div className="labelDiv">비밀번호 확인</div>
-              <input className="inputBox" type="password" value={password_check} onChange={(e) => setPasswordCheck(e.target.value)}></input>
+              <input className="signup-inputBox passwordBox" placeholder="비밀번호 확인" type="password" value={password_check} onChange={(e) => setPasswordCheck(e.target.value)}></input>
               {password_check.length > 0 && (
               <div className={`message ${isPassword ? 'success' : 'error'}`}>{passwordCheckMessage}</div>
           )}
             </div>
             <div className="inputDiv">
-              <div className="labelDiv">이름</div>
-              <input className="inputBox" type="test" value={name} onChange={(e) => setName(e.target.value)}></input>
+              <input className="signup-inputBox nameBox" placeholder="이름" type="text" value={name} onChange={(e) => setName(e.target.value)}></input>
             </div>
             {/* <div className="inputDiv">
               <div className="labelDiv">생년월일</div>
-              <input className="inputBox" type="password"></input>
+              <input className="signup-inputBox" type="password"></input>
             </div> */}
             <div className="inputDiv">
-              <div className="labelDiv">닉네임</div>
-              <input className="inputBox" type="text"></input>
+              <input className="signup-inputBox nicknameBox" placeholder="닉네임" type="text" value={nickname} onChange={(e) => setNickname(e.target.value)}></input>
             </div>
             <div className="inputDiv">
-              <div className="labelDiv">주소</div>
-              <input className="inputBox" type="text" value={address} onChange={(e) => setAddress(e.target.value)}></input>
+              <input className="signup-inputBox addressBox" placeholder="주소" type="text" value={address} onChange={(e) => setAddress(e.target.value)}></input>
             </div>
             <div className="inputDiv">
-              <div className="labelDiv">은행</div>
-              {/* <input className="inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input> */}
-              <select className="selectBox" name="bank">
-                <option value="giup">기업은행</option>
-                <option value="kookmin">국민은행</option>
-                <option value="wooli">우리은행</option>
-                <option value="giup">토스뱅크</option>
+              {/* <input className="signup-inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input> */}
+              <select className="selectBox" name="bank" onChange={onChangeBank}>
+                <option value="">은행선택</option>
+                <option value="기업은행">기업은행</option>
+                <option value="국민은행">국민은행</option>
+                <option value="우리은행">우리은행</option>
+                <option value="토스뱅크">토스뱅크</option>
               </select>
             </div>
             <div className="inputDiv">
-              <div className="labelDiv">계좌</div>
-              <input className="inputBox" type="text" value={account} onChange={(e) => setAccount(e.target.value)}></input>
+              <input className="signup-inputBox accountBox" placeholder="계좌" type="text" value={account} onChange={(e) => setAccount(e.target.value)}></input>
             </div>
         </div>
-        <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isAddress && isBank && isAccount)}>완료</button>
+        <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isNickname && isAddress && isBank && isAccount)}>가입하기</button>
         {/* <button className="finishBtn" onClick={finishClick} disabled={true}>완료</button> */}
         <button className="whiteBtn" onClick={backClick}>뒤로</button>
     </div>
