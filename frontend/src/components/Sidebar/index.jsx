@@ -6,6 +6,7 @@ import PurchaseHistory from '@components/TransHistory/PurchaseHistory/PurchaseHi
 import SaleHistory from '@components/TransHistory/SaleHistory/SaleHistory';
 import "@components/TransHistory/TransHistory.css";
 import MyPage from "@components/MyPage/MyPage";
+import Logout from "../Logout/Logout";
 // import { useNavigate } from "react-router-dom";
 
 
@@ -44,6 +45,12 @@ const Sidebar = ({ width=280, children }) => {
     setOpen(false);
     // handleClose();
   }
+  const logoutClick = () => {
+    setShowPopup('logout');
+    setX(-width);
+    setOpen(false);
+    // handleClose();
+  }
 
   // button 클릭 시 토글
   const toggleMenu = () => {
@@ -73,7 +80,7 @@ const Sidebar = ({ width=280, children }) => {
     };
   })
 
-  
+
 
 
   return (
@@ -84,6 +91,8 @@ const Sidebar = ({ width=280, children }) => {
       <div className = "fakeBackground"><PurchaseHistory onPopup={handlePopup}></PurchaseHistory></div>)}
       {showPopup == "sale" && (
       <div className = "fakeBackground"><SaleHistory onPopup={handlePopup}></SaleHistory></div>)}
+      {showPopup == "logout" && (
+      <div className = "fakeBackground"><Logout onPopup={handlePopup}></Logout></div>)}
       
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '80%',  transform: `translatex(${-xPosition}px)`}}>
         <button onClick={() => toggleMenu()}
@@ -113,7 +122,7 @@ const Sidebar = ({ width=280, children }) => {
           </styled.History>
           <styled.Logout>
             <styled.LogoutIcon />
-            <span>로그아웃</span>
+            <span onClick={() => logoutClick()}>로그아웃</span>
           </styled.Logout>
         </div>
       </div>
