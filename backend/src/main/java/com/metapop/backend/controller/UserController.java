@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.Optional;
@@ -47,7 +48,9 @@ public class UserController {
 
     @Operation(summary = "", description = "이메일 중복 확인 API")
     @PostMapping("/emailDup")
-    public ResponseEntity<String> emailDup(@RequestBody User email) {
+    public ResponseEntity<String> emailDup(@RequestBody User email, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         User user = userService.findByEmail(email.getEmail());
         if (user != null) {
             return ResponseEntity.ok("Email already exists");
