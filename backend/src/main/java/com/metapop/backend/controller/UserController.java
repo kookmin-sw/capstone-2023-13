@@ -49,8 +49,6 @@ public class UserController {
     @Operation(summary = "", description = "이메일 중복 확인 API")
     @PostMapping("/emailDup")
     public ResponseEntity<String> emailDup(@RequestBody User email, HttpServletResponse response) {
-        response.setHeader("Access-Controll-Allow-Origin", "*");
-        response.setHeader("Access-Controll-Allow-Headers", "*");
         User user = userService.findByEmail(email.getEmail());
         if (user != null) {
             return ResponseEntity.ok("Email already exists");
@@ -87,7 +85,9 @@ public class UserController {
 
     @Operation(summary = "", description = "유저 정보 조회 API")
     @GetMapping("/info/{user_id}")
-    public Optional<User> info(@PathVariable Long user_id) {
+    public Optional<User> info(@PathVariable Long user_id, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         Optional<User> user = userRepository.findById(user_id);
         return user;
     }
@@ -115,7 +115,9 @@ public class UserController {
     @Operation(summary = "", description = "내 정보 진입 API")
     @Transactional
     @PostMapping("/myinfo")
-    public ResponseEntity<?> myInfo(@RequestBody LoginDTO loginDTO){
+    public ResponseEntity<?> myInfo(@RequestBody LoginDTO loginDTO, HttpServletResponse response){
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         if(userService.isEmailDuplicate(loginDTO.getEmail())) {
             if(userService.comparePassword(loginDTO.getEmail(),loginDTO.getPassword())) {
                 return ResponseEntity.ok("내 정보 진입에 성공했습니다.");
