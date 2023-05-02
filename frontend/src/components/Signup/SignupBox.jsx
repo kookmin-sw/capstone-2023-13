@@ -17,7 +17,7 @@ function SignupBox({ onPage }) {
   }
   const dupClick = () => {
     console.log('중복검사');
-    // dupCheck();
+    dupCheck();
   }
   const backClick = () => {
     onPage("login");
@@ -63,8 +63,8 @@ function SignupBox({ onPage }) {
     } else {
       // console.log('good')
       setIsEmail(true)
-      setIsDup(true)
-      setEmailMessage('')      
+      setIsDup(false)
+      setEmailMessage('이메일 중복검사를 해주세요')      
     }
   }
   function onChangeBank(e){
@@ -128,8 +128,25 @@ function SignupBox({ onPage }) {
       setIsAddress(false);
     }
   }, [address, isAddress]);
-  // const dupCheck = async() => {
-  // }
+  const dupCheck = async() => {
+    try {
+      const response = await axiosInstance.post("/users/emailDup", {
+        email: email
+      });
+      console.log(response.data);
+      setIsDup(false);
+      setEmailMessage('이미 존재하는 이메일입니다.');
+    } catch (error) {
+        if (error.response.status === 400) { // 400: Conflict (이미 등록된 이메일)
+          console.log('success');
+          setIsDup(true);
+          setEmailMessage('가입할 수 있는 이메일입니다.');
+        }
+        else {
+          console.log(error);
+        }
+      }
+  }
   const signupPost = async () => {
     try {
     const response = await axiosInstance.post("/users/signup", {
@@ -147,7 +164,7 @@ function SignupBox({ onPage }) {
     onPage('custom');
   } catch (error) {
     console.log(error);
-      // if (error.response.status === 409) { // 409: Conflict (이미 등록된 이메일)
+      // if (error.response.status === 400) { // 400: Conflict (이미 등록된 이메일)
       //   notify();
       //   setIsEmail(false);
       //   emailInputRef.current.focus();
@@ -156,24 +173,6 @@ function SignupBox({ onPage }) {
       //   console.log(error);
       // }
     }
-    // e.preventDefault();
-    // axiosInstance
-    //   .post("/users/signup", {id : 0 ,email : 'test@test.com', password : 1234, name : 'tt', bank : 'bb', account : 123, address : 'gg' })
-    //   // .post("/users/signup", {id : 0 ,email : email, password : password, name : name, bank : bank, account : account, address : address })
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     console.log('success');
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   })
-    // try{
-    //   const response = await axios.post('/users/signup', {id : id, email : email, password : password, name : name, bank : bank, account : account, address : address });
-    //   console.log(response.data);
-    //   console.log('login success');
-    // } catch(error){
-    //   console.log(error);
-    // }
   };
   return (
     <div>
@@ -194,10 +193,10 @@ function SignupBox({ onPage }) {
             <div className="inputDiv">
               {/* <div className="labelDiv">이메일 주소</div> */}
               <input className="emailBox" type="text" value={email} onChange={(e) => onChangeEmail(e)} ref={emailInputRef}></input>
-              <button className="dupBtn" onClick={dupClick} disabled={!(isDup)}>중복확인</button>
+              <button className="dupBtn" onClick={dupClick} disabled={!(isEmail)}>중복확인</button>
               {/* <div>올바른 이메일 형식이 아닙니다.</div> */}
               {email.length > 0 && (
-              <div className={`message ${isEmail ? 'success' : 'error'}`}>{emailMessage}</div>
+              <div className={`message ${isDup ? 'success' : 'error'}`}>{emailMessage}</div>
           )}
             </div>
             <div className="inputDiv">
