@@ -38,7 +38,9 @@ public class UserController {
 
     @Operation(summary = "", description = "회원가입 API")
     @PostMapping("/signup")
-    public ResponseEntity<String> join(@RequestBody User user) {
+    public ResponseEntity<String> join(@RequestBody User user, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         if(userService.isEmailDuplicate(user.getEmail())) {
             return ResponseEntity.status(400).body("Email already exists");
         }
@@ -49,6 +51,8 @@ public class UserController {
     @Operation(summary = "", description = "이메일 중복 확인 API")
     @PostMapping("/emailDup")
     public ResponseEntity<String> emailDup(@RequestBody User email, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         User user = userService.findByEmail(email.getEmail());
         if (user != null) {
             return ResponseEntity.ok("Email already exists");
@@ -60,7 +64,9 @@ public class UserController {
 
     @Operation(summary = "", description = "로그인 API")
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO) {
+    public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         if(userService.isEmailDuplicate(loginDTO.getEmail())) {
             if(userService.comparePassword(loginDTO.getEmail(),loginDTO.getPassword())) {
                 User user = userRepository.findByEmail(loginDTO.getEmail());
@@ -76,7 +82,9 @@ public class UserController {
 
     @Operation(summary = "", description = "로그아웃 API")
     @PostMapping("/logout")
-    public ResponseEntity<String> logout(@RequestHeader("Authorization") String jwtToken) {
+    public ResponseEntity<String> logout(@RequestHeader("Authorization") String jwtToken, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         Date now = new Date();
         Jws<Claims> claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken);
         claims.getBody().setExpiration(now);
@@ -94,7 +102,9 @@ public class UserController {
 
     @Operation(summary = "", description = "유저 정보 수정 API")
     @PutMapping("/update/{user_id}")
-    public ResponseEntity<?> updateInfo(@PathVariable Long user_id, @RequestBody UserUpdateDTO userUpdateDTO) {
+    public ResponseEntity<?> updateInfo(@PathVariable Long user_id, @RequestBody UserUpdateDTO userUpdateDTO, HttpServletResponse response) {
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         User user = userService.updateUserInfo(user_id, userUpdateDTO);
         return ResponseEntity.ok(user);
     }
@@ -102,7 +112,9 @@ public class UserController {
     @Operation(summary = "", description = "비밀번호 찾기 API")
     @Transactional
     @PostMapping("/findpw")
-    public ResponseEntity<?> findPw(@RequestBody FindPWDTO findPWDTO){
+    public ResponseEntity<?> findPw(@RequestBody FindPWDTO findPWDTO, HttpServletResponse response){
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         User user = userRepository.findByEmail(findPWDTO.getEmail());
         if(userService.findPassword(findPWDTO)) {
             return ResponseEntity.ok(user.getNickname());
@@ -130,7 +142,9 @@ public class UserController {
     @Operation(summary = "", description = "임시 비밀번호 이메일 전송 API")
     @Transactional
     @PostMapping("/send/Email")
-    public ResponseEntity<String> sendEmail(@RequestParam("userEmail") String userEmail){
+    public ResponseEntity<String> sendEmail(@RequestParam("userEmail") String userEmail, HttpServletResponse response){
+        response.setHeader("Access-Controll-Allow-Origin", "*");
+        response.setHeader("Access-Controll-Allow-Headers", "*");
         MailDTO mailDTO = userService.createMailAndChangePassword(userEmail);
         userService.mailSend(mailDTO);
 
