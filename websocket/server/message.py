@@ -52,10 +52,11 @@ class Message:
         }
     
     @classmethod
-    def action(cls, user_id, X, Y, Z):
+    def action(cls, user_id, direction, X, Y, Z):
         return {
             "type": cls.ACTION,
             "user_id": user_id,
+            "dir": direction,
             "X": X,
             "Y": Y,
             "Z": Z
