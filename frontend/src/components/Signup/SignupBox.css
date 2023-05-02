@@ -98,7 +98,7 @@ font-weight: bold;
 .signup-inputBox:focus{
   outline: 2px solid #70558E;
 }
-.emailBox{
+/* .emailBox{
   margin: 0;
   margin-bottom:10px;
   border:none;
@@ -109,8 +109,8 @@ font-weight: bold;
   height: 40px;
   padding-left: 40px;
   background: white url(@/images/icons/user-line.png) no-repeat scroll 7px 7px;
-}
-/* .emailBox{
+} */
+.emailBox{
   margin: 0;
   margin-bottom:10px;
   border:none;
@@ -121,7 +121,7 @@ font-weight: bold;
   height: 40px;
   padding-left: 40px;
   background: white url(@/images/icons/user-line.png) no-repeat scroll 7px 7px;
-} */
+}
 .emailBox:focus{
   outline: 2px solid #70558E;
 }

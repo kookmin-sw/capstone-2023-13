@@ -15,10 +15,10 @@ function SignupBox({ onPage }) {
     signupPost();
     // onPage("custom");
   }
-  // const dupClick = () => {
-  //   console.log('중복검사');
-  //   // dupCheck();
-  // }
+  const dupClick = () => {
+    console.log('중복검사');
+    // dupCheck();
+  }
   const backClick = () => {
     onPage("login");
   }
@@ -40,7 +40,7 @@ function SignupBox({ onPage }) {
   //유효성검사
   
   const [isEmail, setIsEmail] = useState(false)
-  // const [isDup, setIsDup] = useState(false)
+  const [isDup, setIsDup] = useState(false)
   const [isPassword, setIsPassword] = useState(false)
   const [isName, setIsName] = useState(false)
   const [isNickname, setIsNickname] = useState(false)
@@ -58,12 +58,12 @@ function SignupBox({ onPage }) {
     if (!emailRegex.test(emailCurrent)) {
       // console.log('nono')
       setIsEmail(false)
-      // setIsDup(false)
+      setIsDup(false)
       setEmailMessage('이메일 형식이 올바르지 않습니다.')
     } else {
       // console.log('good')
       setIsEmail(true)
-      // setIsDup(true)
+      setIsDup(true)
       setEmailMessage('')      
     }
   }
@@ -194,7 +194,7 @@ function SignupBox({ onPage }) {
             <div className="inputDiv">
               {/* <div className="labelDiv">이메일 주소</div> */}
               <input className="emailBox" type="text" value={email} onChange={(e) => onChangeEmail(e)} ref={emailInputRef}></input>
-              {/* <button className="dupBtn" onClick={dupClick} disabled={!(isDup)}>중복확인</button> */}
+              <button className="dupBtn" onClick={dupClick} disabled={!(isDup)}>중복확인</button>
               {/* <div>올바른 이메일 형식이 아닙니다.</div> */}
               {email.length > 0 && (
               <div className={`message ${isEmail ? 'success' : 'error'}`}>{emailMessage}</div>
@@ -237,7 +237,7 @@ function SignupBox({ onPage }) {
               <input className="signup-inputBox accountBox" placeholder="계좌" type="text" value={account} onChange={(e) => setAccount(e.target.value)}></input>
             </div>
         </div>
-        <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isNickname && isAddress && isBank && isAccount)}>가입하기</button>
+        <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isNickname && isAddress && isBank && isAccount && isDup)}>가입하기</button>
         {/* <button className="finishBtn" onClick={finishClick} disabled={true}>완료</button> */}
         <button className="whiteBtn" onClick={backClick}>뒤로</button>
     </div>
