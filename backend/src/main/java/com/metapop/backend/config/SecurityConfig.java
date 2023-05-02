@@ -43,18 +43,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.httpBasic().disable()
                 .authorizeRequests()// 요청에 대한 사용권한 체크
+                .antMatchers("/**").permitAll()
                 .antMatchers("/users/logout").authenticated()
-                .antMatchers("/users/emailDup").authenticated()
                 .antMatchers("/users/info/**").authenticated()
                 .antMatchers("/users/update/**").authenticated()
                 .antMatchers("/users/findpw").authenticated()
-                .antMatchers("/users/myinfo").authenticated()
                 .antMatchers("/users/myinfo").authenticated()
                 .antMatchers("/users/send/**").authenticated()
                 .antMatchers("/stores/**").authenticated()
                 .antMatchers("/products/**").authenticated()
                 .antMatchers("/orders/**").authenticated()
-                .antMatchers("/**").permitAll()
                 .and()
                 .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
                         UsernamePasswordAuthenticationFilter.class);
@@ -73,5 +71,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
 }
