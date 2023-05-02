@@ -40,8 +40,7 @@ public class UserService implements UserDetailsService {
     }
 
     public User findByEmail(String email) {
-        User findUser = userRepository.findByEmail(email);
-        return findUser;
+        return userRepository.findByEmail(email);
     }
 
     public Optional<User> getById(Long id) {

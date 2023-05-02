@@ -45,6 +45,18 @@ public class UserController {
         return ResponseEntity.ok("Join Success!");
     }
 
+    @Operation(summary = "", description = "이메일 중복 확인 API")
+    @PostMapping("/emailDup")
+    public ResponseEntity<String> emailDup(@RequestBody User email) {
+        User user = userService.findByEmail(email.getEmail());
+        if (user != null) {
+            return ResponseEntity.ok("Email already exists");
+        }
+        else {
+            return ResponseEntity.status(400).body("Email not exists");
+        }
+    }
+
     @Operation(summary = "", description = "로그인 API")
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO) {
@@ -66,8 +78,7 @@ public class UserController {
     public ResponseEntity<String> logout(@RequestHeader("Authorization") String jwtToken) {
         Date now = new Date();
         Jws<Claims> claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken);
-        claims.getBody().setExpiration(new Date(0));
-        System.out.printf(claims.getBody().toString());
+        claims.getBody().setExpiration(now);
         return ResponseEntity.ok().body("로그아웃이 완료되었습니다.");
     }
 
