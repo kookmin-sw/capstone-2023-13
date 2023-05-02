@@ -31,6 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic().disable()
                 .authorizeRequests()// 요청에 대한 사용권한 체크
                 .antMatchers("/users/logout").authenticated()
+                .antMatchers("/users/emailDup").authenticated()
                 .antMatchers("/users/info/**").authenticated()
                 .antMatchers("/users/update/**").authenticated()
                 .antMatchers("/users/findpw").authenticated()
