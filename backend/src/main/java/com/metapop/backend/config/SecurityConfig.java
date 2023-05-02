@@ -37,10 +37,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/users/myinfo").authenticated()
                 .antMatchers("/users/myinfo").authenticated()
                 .antMatchers("/users/send/**").authenticated()
+                .antMatchers("/stores/**").authenticated()
+                .antMatchers("/products/**").authenticated()
+                .antMatchers("/orders/**").authenticated()
                 .antMatchers("/**").permitAll()
                 .and()
                 .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
                         UsernamePasswordAuthenticationFilter.class);
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
+
+
 }
