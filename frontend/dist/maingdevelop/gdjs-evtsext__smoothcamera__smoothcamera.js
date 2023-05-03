@@ -2904,6 +2904,182 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedCo
 
 return;
 }
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext = {};
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects1= [];
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects1);
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraOffsetX()); }}}
+
+}
+
+
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetX = function(parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetXContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return Number(eventsFunctionContext.returnValue) || 0;
+}
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext = {};
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1= [];
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetX((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Value")) || 0 : 0));
+}
+}}
+
+}
+
+
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOp = function(Value, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "Value") return Value;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return;
+}
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext = {};
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects2= [];
@@ -2914,11 +3090,18 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContex
 {
 
 
+
+}
+
+
+{
+
+
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetX((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("CameraOffsetX")) || 0 : 0));
+    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetOffsetXOp((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("CameraOffsetX")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -2994,6 +3177,189 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContex
 
 return;
 }
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext = {};
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects1= [];
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects1);
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraOffsetY()); }}}
+
+}
+
+
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetY = function(parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.OffsetYContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return Number(eventsFunctionContext.returnValue) || 0;
+}
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext = {};
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1= [];
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetY((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Value")) || 0 : 0));
+}
+}}
+
+}
+
+
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOp = function(Value, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "Value") return Value;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return;
+}
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext = {};
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.GDObjectObjects1= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.GDObjectObjects2= [];
@@ -3008,7 +3374,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetY((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("CameraOffsetY")) || 0 : 0));
+    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetOffsetYOp((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("CameraOffsetY")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -4033,7 +4399,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(10270452);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(10786668);
 }
 }
 if (isConditionTrue_0) {
