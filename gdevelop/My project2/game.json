@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/Downloads",
+    "latestCompilationDirectory": "C:\\Users\\82109\\Desktop\\4-1학기\\캡스톤\\gdevelop-export",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1459,7 +1459,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9296875000000014,
+        "zoomFactor": 0.2636457673770807,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1555,186 +1555,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 397,
-          "layer": "pop up layer",
-          "name": "WhiteBackgroundPopup",
-          "persistentUuid": "3c6b8f2b-2475-400a-945e-b66646fe3945",
-          "width": 709,
-          "x": 276,
-          "y": 150,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 59,
-          "layer": "pop up layer",
-          "name": "popup1_cancel_btn",
-          "persistentUuid": "474bbb43-b24f-4ba0-a05b-231b97a1bc35",
-          "width": 163,
-          "x": 462,
-          "y": 464,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 59,
-          "layer": "pop up layer",
-          "name": "popup1_ok_btn",
-          "persistentUuid": "1cd029f1-9a8a-43bf-98fb-b9958d5b05ac",
-          "width": 165,
-          "x": 660,
-          "y": 463,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer",
-          "name": "popup1_inner_text",
-          "persistentUuid": "257094c3-41b2-48bd-abe4-8ad96bb527aa",
-          "width": 0,
-          "x": 365,
-          "y": 271,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 578,
-          "layer": "pop up layer 2",
-          "name": "WhiteBackgroundPopup",
-          "persistentUuid": "d2c9ba52-eaf1-4ccf-b7ee-c64216204037",
-          "width": 885,
-          "x": 175,
-          "y": 81,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 66,
-          "layer": "pop up layer 2",
-          "name": "BlueTitlePopup",
-          "persistentUuid": "06376c67-575b-4031-b2e7-8b8b6f9f9c3a",
-          "width": 884,
-          "x": 175,
-          "y": 81,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "popup2_inner_text",
-          "persistentUuid": "8ac30455-8417-4483-b355-443bd691fe1f",
-          "width": 0,
-          "x": 205,
-          "y": 96,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "storename",
-          "persistentUuid": "0030194b-2537-4593-baa5-e0c8faefc8f4",
-          "width": 0,
-          "x": 242,
-          "y": 203,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "period",
-          "persistentUuid": "b36346fd-d50f-4b6c-94fb-56cceb6fbb95",
-          "width": 0,
-          "x": 300,
-          "y": 263,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "storeinfo",
-          "persistentUuid": "7cfdf883-0d0a-4589-8bf2-7b4b311adc09",
-          "width": 0,
-          "x": 299,
-          "y": 322,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 49,
-          "layer": "pop up layer 2",
-          "name": "popup2_ok_btn",
-          "persistentUuid": "adb24b11-6046-46b7-b75c-88825597a934",
-          "width": 129,
-          "x": 864,
-          "y": 595,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "pop up layer 2",
-          "name": "popup2_cancel_btn",
-          "persistentUuid": "42bc0605-a22b-41e6-9f82-aaa7ea83a96c",
-          "width": 139,
-          "x": 703,
-          "y": 595,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -1750,66 +1570,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 249,
-          "layer": "pop up layer 2-1",
-          "name": "popup2_1_white_background",
-          "persistentUuid": "c09c4461-84fb-49ab-87c2-6c09ce56fbe2",
-          "width": 486,
-          "x": 370,
-          "y": 266,
-          "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2-1",
-          "name": "popup2_1_inner_text",
-          "persistentUuid": "7cee99b1-8e05-4ed3-9661-fe7258eb6abf",
-          "width": 0,
-          "x": 435,
-          "y": 312,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 69,
-          "layer": "pop up layer 2-1",
-          "name": "popup2_1_ok_btn",
-          "persistentUuid": "50f1ffec-86a5-4ff5-a444-704a28f9e025",
-          "width": 171,
-          "x": 655,
-          "y": 428,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 69,
-          "layer": "pop up layer 2-1",
-          "name": "popup2_1_cancel_btn",
-          "persistentUuid": "765d5c24-2218-404a-8ce7-05d812b4ac94",
-          "width": 177,
-          "x": 409,
-          "y": 427,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -1818,127 +1578,7 @@
           "width": 0,
           "x": 525,
           "y": 451,
-          "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 485,
-          "layer": "pop up layer 3",
-          "name": "popup3_white_background",
-          "persistentUuid": "5e381f02-f301-4cfd-b913-34f39f17fecd",
-          "width": 694,
-          "x": 270,
-          "y": 129,
-          "zOrder": 32,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 61,
-          "layer": "pop up layer 3",
-          "name": "BlueTitlePopup",
-          "persistentUuid": "37b9bad4-8bbd-412c-b5a5-8e9be11f37ff",
-          "width": 693,
-          "x": 271,
-          "y": 129,
-          "zOrder": 33,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 3",
-          "name": "popup3_title_text",
-          "persistentUuid": "4065c207-3967-40a3-a93d-38edbe2a986d",
-          "width": 0,
-          "x": 313,
-          "y": 151,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 3",
-          "name": "popup3_store_name",
-          "persistentUuid": "94380ba3-a532-49aa-8002-dd49613f4d0c",
-          "width": 0,
-          "x": 449,
-          "y": 220,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 3",
-          "name": "popup3_period_text",
-          "persistentUuid": "5e01b26f-3500-43bc-aa0a-867a972b26b4",
-          "width": 0,
-          "x": 498,
-          "y": 269,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 3",
-          "name": "popup3_nickname",
-          "persistentUuid": "a5edbb70-5f00-4f09-9bb0-14bc050aef75",
-          "width": 0,
-          "x": 545,
-          "y": 304,
-          "zOrder": 37,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 52,
-          "layer": "pop up layer 3",
-          "name": "popup3_ok_btn",
-          "persistentUuid": "c2e28b1d-7556-4ddc-8a90-9be4cc336a86",
-          "width": 146,
-          "x": 796,
-          "y": 551,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 52,
-          "layer": "pop up layer 3",
-          "name": "popup3_cancel_btn",
-          "persistentUuid": "2de70d72-bd4c-495b-bdaa-a69ee81fe338",
-          "width": 144,
-          "x": 638,
-          "y": 551,
-          "zOrder": 40,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1953,112 +1593,7 @@
           "width": 164,
           "x": 511,
           "y": 411,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_store_name",
-          "persistentUuid": "fba69d74-cf09-47a6-9340-ca5c6b5908ad",
-          "width": 0,
-          "x": 365,
-          "y": 199,
-          "zOrder": 41,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_period_year",
-          "persistentUuid": "6b4c91f9-4bb4-401d-b815-ae168d96dbe0",
-          "width": 88,
-          "x": 365,
-          "y": 260,
-          "zOrder": 42,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 223,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_store_info",
-          "persistentUuid": "08f49ca0-0144-46f3-888b-1a8ed7f9ac40",
-          "width": 627,
-          "x": 366,
-          "y": 321,
-          "zOrder": 43,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_between",
-          "persistentUuid": "1f9720f9-b6ab-4787-84c8-12e73594c74f",
-          "width": 0,
-          "x": 469,
-          "y": 259,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_period_month",
-          "persistentUuid": "56af74a6-88f7-4083-8639-df21b66b7e7d",
-          "width": 39,
-          "x": 485,
-          "y": 260,
-          "zOrder": 45,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_between",
-          "persistentUuid": "6826db0e-3134-4fb2-a8e2-1d3899c0ab35",
-          "width": 0,
-          "x": 538,
-          "y": 259,
-          "zOrder": 46,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "pop up layer 2",
-          "name": "popup2_input_period_day",
-          "persistentUuid": "5dd879f5-d1be-4943-aaee-e46ab3457cfd",
-          "width": 41,
-          "x": 555,
-          "y": 260,
-          "zOrder": 47,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3898,50 +3433,6 @@
           "isLightingLayer": false,
           "name": "UI Layer",
           "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "ambientLightColorB": 9260344,
-          "ambientLightColorG": 6069792,
-          "ambientLightColorR": 11137944,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "pop up layer",
-          "visibility": false,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "ambientLightColorB": 9290496,
-          "ambientLightColorG": 6069792,
-          "ambientLightColorR": 9277568,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "pop up layer 2",
-          "visibility": false,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "ambientLightColorB": 10007960,
-          "ambientLightColorG": 6069792,
-          "ambientLightColorR": 8916984,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "pop up layer 2-1",
-          "visibility": false,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "ambientLightColorB": 10776288,
-          "ambientLightColorG": 6069792,
-          "ambientLightColorR": 9504704,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "pop up layer 3",
-          "visibility": false,
           "cameras": [],
           "effects": []
         }
@@ -6188,6 +5679,729 @@
     {
       "associatedLayout": "Square scene",
       "lastChangeTimeStamp": 0,
+      "name": "Add store",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MaleCharacter10",
+                "WideSideRectangleWood",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup layer1\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup1_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup layer2\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup1_inner_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup1_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup1_cancel_btn",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup1_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup1_inner_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup1_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup1_cancel_btn",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const storeName = runtimeScene.getObjects(\"popup2_input_store_name\")[0];",
+                "const inputStoreName = storeName.getString();",
+                "",
+                "const storePeriodYear = runtimeScene.getObjects(\"popup2_input_period_year\")[0];",
+                "const inputStorePeriodYear = storePeriodYear.getString();",
+                "",
+                "const storePeriodMonth = runtimeScene.getObjects(\"popup2_input_period_month\")[0];",
+                "const inputStorePeriodMonth = storePeriodMonth.getString();",
+                "",
+                "const storePeriodDay = runtimeScene.getObjects(\"popup2_input_period_day\")[0];",
+                "const inputStorePeriodDay = storePeriodDay.getString();",
+                "",
+                "const storeInfo = runtimeScene.getObjects(\"popup2_input_store_info\")[0];",
+                "const inputStoreInfo = storeInfo.getString();",
+                "",
+                "console.log(\"storename:\", inputStoreName);",
+                "console.log(\"storeperiodyear:\", inputStorePeriodYear);",
+                "console.log(\"storeperiodmonth:\", inputStorePeriodMonth);",
+                "console.log(\"storeperiodday:\", inputStorePeriodDay);",
+                "console.log(\"period\", inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
+                "console.log(\"storeinfo:\", inputStoreInfo);",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SendAsyncRequest"
+                  },
+                  "parameters": [
+                    "\"http://43.201.210.173:9000/stores/register\"",
+                    "\"'{' + \n'userid:' + 3, \n'name:' + inputStoreName, \n'period:' + inputStorePeriodYear + '-' + inputStorePeriodMonth + '-' + inputStorePeriodDay, 'info:' + inputStoreInfo +\n'}'\"",
+                    "\"POST\"",
+                    "\"application/json\"",
+                    "response",
+                    "errormsg"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup layer2-1\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_store_name"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_year"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_month"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_day"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_store_info"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_1_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_inner_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_cancel_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_white_background",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_store_name",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_period_year",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_period_month",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_period_day",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_store_info",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_1_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_inner_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_cancel_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_1_white_background",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_cancel_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_inner_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_input_store_name",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_input_period_year",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_input_period_month",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_input_period_day",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_input_between",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup2_input_store_info",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "period",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "storename",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "storeinfo",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup3_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Store scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "MaleCharacter10",
+                "WideSideRectangleWood_added_store",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup layer3\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup3_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_white_background",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_cancel_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_title_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_store_name",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_period_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_nickname",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Square scene",
+      "lastChangeTimeStamp": 0,
       "name": "Player chat local",
       "events": [
         {
@@ -6391,433 +6605,6 @@
               "parameters": [
                 "ChatText",
                 "\"ChatTime\""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "associatedLayout": "Square scene",
-      "lastChangeTimeStamp": 0,
-      "name": "Add store",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "MaleCharacter10",
-                "WideSideRectangleWood",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "e"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup1_ok_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 2\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup1_cancel_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup2_ok_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "const storeName = runtimeScene.getObjects(\"popup2_input_store_name\")[0];",
-                "const inputStoreName = storeName.getString();",
-                "",
-                "const storePeriodYear = runtimeScene.getObjects(\"popup2_input_period_year\")[0];",
-                "const inputStorePeriodYear = storePeriodYear.getString();",
-                "",
-                "const storePeriodMonth = runtimeScene.getObjects(\"popup2_input_period_month\")[0];",
-                "const inputStorePeriodMonth = storePeriodMonth.getString();",
-                "",
-                "const storePeriodDay = runtimeScene.getObjects(\"popup2_input_period_day\")[0];",
-                "const inputStorePeriodDay = storePeriodDay.getString();",
-                "",
-                "const storeInfo = runtimeScene.getObjects(\"popup2_input_store_info\")[0];",
-                "const inputStoreInfo = storeInfo.getString();",
-                "",
-                "console.log(\"storename:\", inputStoreName);",
-                "console.log(\"storeperiodyear:\", inputStorePeriodYear);",
-                "console.log(\"storeperiodmonth:\", inputStorePeriodMonth);",
-                "console.log(\"storeperiodday:\", inputStorePeriodDay);",
-                "console.log(\"period\", inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
-                "console.log(\"storeinfo:\", inputStoreInfo);",
-                "",
-                ""
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": false
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SendAsyncRequest"
-                  },
-                  "parameters": [
-                    "\"http://43.201.210.173:9000/stores/register\"",
-                    "\"'{' + \n'userid:' + 3, \n'name:' + inputStoreName, \n'period:' + inputStorePeriodYear + '-' + inputStorePeriodMonth + '-' + inputStorePeriodDay, 'info:' + inputStoreInfo +\n'}'\"",
-                    "\"POST\"",
-                    "\"application/json\"",
-                    "response",
-                    "errormsg"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup2_cancel_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 2-1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_store_name"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_period_year"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_period_month"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_period_day"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_store_info"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup2_1_cancel_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 2-1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "popup2_input_store_name",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "popup2_input_period_year",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "popup2_input_period_month",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "popup2_input_period_day",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "popup2_input_store_info",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup2_1_ok_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 2-1\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 2\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup3_ok_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Store scene\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "MaleCharacter10",
-                "WideSideRectangleWood_added_store",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "e"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 3\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup3_cancel_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"pop up layer 3\""
               ]
             }
           ]
@@ -17424,8 +17211,129 @@
   "externalLayouts": [
     {
       "associatedLayout": "Square scene",
-      "name": "add store",
-      "instances": [],
+      "name": "Popup layer3",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 485,
+          "layer": "",
+          "name": "popup3_white_background",
+          "persistentUuid": "a5837d32-1682-4b25-92af-feeddc797bba",
+          "width": 694,
+          "x": 323,
+          "y": 105,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 61,
+          "layer": "",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "13142494-80fd-4654-8142-8ae92ad1209c",
+          "width": 693,
+          "x": 324,
+          "y": 105,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup3_title_text",
+          "persistentUuid": "8921b96e-798f-4dab-80ec-176eddde4b15",
+          "width": 0,
+          "x": 366,
+          "y": 127,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup3_store_name",
+          "persistentUuid": "a6ee248d-6c95-4c0c-893c-a2b3207f4c13",
+          "width": 0,
+          "x": 502,
+          "y": 196,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup3_period_text",
+          "persistentUuid": "f3b64499-e5b5-40ff-bfb7-2e8b97b3bf8d",
+          "width": 0,
+          "x": 551,
+          "y": 245,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup3_nickname",
+          "persistentUuid": "5f79ae8e-877a-4493-a17e-35604a282f7c",
+          "width": 0,
+          "x": 598,
+          "y": 280,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 52,
+          "layer": "",
+          "name": "popup3_ok_btn",
+          "persistentUuid": "80e32829-62aa-4032-94c9-187ee8b0b7a1",
+          "width": 146,
+          "x": 849,
+          "y": 527,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 52,
+          "layer": "",
+          "name": "popup3_cancel_btn",
+          "persistentUuid": "3bfa17c3-688d-4726-a11f-1334f07f315a",
+          "width": 144,
+          "x": 691,
+          "y": 527,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "editionSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -17436,7 +17344,409 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.41943397827590634,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Square scene",
+      "name": "Popup layer2-1",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 249,
+          "layer": "",
+          "name": "popup2_1_white_background",
+          "persistentUuid": "e98588f4-767c-4306-8378-d8aad903a0cd",
+          "width": 486,
+          "x": 375,
+          "y": 207,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup2_1_inner_text",
+          "persistentUuid": "45b35b90-38c0-4c82-a419-527c483269dc",
+          "width": 0,
+          "x": 402,
+          "y": 255,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 69,
+          "layer": "",
+          "name": "popup2_1_ok_btn",
+          "persistentUuid": "ceb80c03-7bdb-4cef-8868-5d8be54b9b5e",
+          "width": 171,
+          "x": 660,
+          "y": 369,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 69,
+          "layer": "",
+          "name": "popup2_1_cancel_btn",
+          "persistentUuid": "1f361ffe-cef7-4379-8d05-a7921dd6d9c9",
+          "width": 177,
+          "x": 414,
+          "y": 368,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.25504554733543416,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Square scene",
+      "name": "Popup layer2",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 578,
+          "layer": "",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "caad53c1-d297-444c-8321-8d85e43f9ef7",
+          "width": 885,
+          "x": 182,
+          "y": 76,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 66,
+          "layer": "",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "69c5e967-7553-4d6a-b98b-269304973d19",
+          "width": 884,
+          "x": 182,
+          "y": 76,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup2_inner_text",
+          "persistentUuid": "4262ba6b-14e1-4d6e-94ea-515c4945d806",
+          "width": 0,
+          "x": 212,
+          "y": 91,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storename",
+          "persistentUuid": "9db6dcf7-5cca-4f56-9f8a-9837c2d3c3f4",
+          "width": 0,
+          "x": 249,
+          "y": 198,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "period",
+          "persistentUuid": "c809fc7b-1d13-4858-a13f-c0aff3e01f85",
+          "width": 0,
+          "x": 307,
+          "y": 258,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeinfo",
+          "persistentUuid": "e720139c-fe8b-4cf6-a5a1-0eff271f8ab1",
+          "width": 0,
+          "x": 306,
+          "y": 317,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 49,
+          "layer": "",
+          "name": "popup2_ok_btn",
+          "persistentUuid": "ddfae757-0dfb-491e-882a-ebb631aa6a9b",
+          "width": 129,
+          "x": 871,
+          "y": 590,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "name": "popup2_cancel_btn",
+          "persistentUuid": "e5fc7224-766f-4f19-aea6-3595e57f6499",
+          "width": 139,
+          "x": 710,
+          "y": 590,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup2_input_store_name",
+          "persistentUuid": "09dbcdbb-4d54-46bf-b257-388f7a38243d",
+          "width": 0,
+          "x": 372,
+          "y": 194,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "popup2_input_period_year",
+          "persistentUuid": "f2975f87-ea0f-4dcc-84aa-5d467181697c",
+          "width": 88,
+          "x": 372,
+          "y": 255,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 223,
+          "layer": "",
+          "name": "popup2_input_store_info",
+          "persistentUuid": "c95c98f5-53a7-4948-8453-6f47f0dcd9c1",
+          "width": 627,
+          "x": 373,
+          "y": 316,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup2_input_between",
+          "persistentUuid": "785df42d-cffa-487f-88f2-edafcb1061a5",
+          "width": 0,
+          "x": 476,
+          "y": 254,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "popup2_input_period_month",
+          "persistentUuid": "5de9cc1f-c070-4b8a-af17-e42d2a78384f",
+          "width": 39,
+          "x": 492,
+          "y": 255,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup2_input_between",
+          "persistentUuid": "38b43b4e-dc70-42f8-992d-34f7d31cbe9a",
+          "width": 0,
+          "x": 545,
+          "y": 254,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "popup2_input_period_day",
+          "persistentUuid": "2d071d33-c16f-48b9-8960-01133fabad91",
+          "width": 41,
+          "x": 562,
+          "y": 255,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.29122588669111166,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Square scene",
+      "name": "Popup layer1",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 397,
+          "layer": "",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "5d18b7ea-0ceb-4d2e-a85d-6b65d0bb4ade",
+          "width": 709,
+          "x": 292,
+          "y": 133,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 59,
+          "layer": "",
+          "name": "popup1_cancel_btn",
+          "persistentUuid": "472dd374-444a-43b0-94ad-c3d2c56fa834",
+          "width": 163,
+          "x": 478,
+          "y": 447,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 59,
+          "layer": "",
+          "name": "popup1_ok_btn",
+          "persistentUuid": "f07429b8-1bc5-4046-aed6-e8f9b1f01248",
+          "width": 165,
+          "x": 676,
+          "y": 446,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup1_inner_text",
+          "persistentUuid": "71a36e02-600b-4308-a7e5-c1ede2528b67",
+          "width": 0,
+          "x": 340,
+          "y": 235,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.26364576737708023,
         "windowMask": false
       }
     }
