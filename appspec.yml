@@ -7,11 +7,7 @@ files:
     overwrite: yes
 
 hooks:
-  BeforeInstall:
-    - location: start.sh
-      timeout: 60
-      runas: root
   AfterInstall:
-    - location: end.sh
+    - location: build.sh
       timeout: 60
       runas: root
