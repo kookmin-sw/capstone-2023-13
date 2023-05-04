@@ -10,8 +10,8 @@ hooks:
   BeforeInstall:
     - location: start.sh
       timeout: 60
-      runas: ec2-user
+      runas: root
   AfterInstall:
     - location: end.sh
       timeout: 60
-      runas: ec2-user
+      runas: root
