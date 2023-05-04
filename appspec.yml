@@ -8,6 +8,6 @@ files:
 
 hooks:
   AfterInstall:
-    - location: /home/ec2-user/test.sh
+    - location: build.sh
       timeout: 60
-      runas: ec2-user
+      runas: root
