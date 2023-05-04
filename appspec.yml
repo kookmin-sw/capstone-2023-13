@@ -6,7 +6,11 @@ files:
     destination: /home/ec2-user/capstone-2023-13
 
 hooks:
+  BeforeInstall:
+    - location: /home/ec2-user/start.sh
+      timeout: 60
+      runas: ec2-user
   AfterInstall:
-    - location: /home/ec2-user/test.sh
+    - location: /home/ec2-user/end.sh
       timeout: 60
       runas: ec2-user
