@@ -1436,6 +1436,12 @@
       "name": "WebSocketMessage",
       "type": "string",
       "value": "\"\""
+    },
+    {
+      "folded": true,
+      "name": "userToken",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -1459,7 +1465,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2636457673770807,
+        "zoomFactor": 0.39251611754882343,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3351,6 +3357,13 @@
             "includeConfig": 0
           },
           "target": "Add store"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Receive Token"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -5875,30 +5888,60 @@
                 "console.log(\"period\", inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
                 "console.log(\"storeinfo:\", inputStoreInfo);",
                 "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "// fetch(\"http://43.201.210.173:9000/users/login\", {",
+                "//   method: \"POST\",",
+                "//   headers: {",
+                "//     \"Content-Type\": \"application/json\",",
+                "//   },",
+                "//   body: JSON.stringify({",
+                "//     email: \"admin@admin.com\",",
+                "//     password: \"1234\"",
+                "//   }),",
+                "// })",
+                "//   .then((response) => console.log(response))",
+                "",
+                "",
+                "",
+                "// var logintoken = localStorage.getItem('login-token');",
+                "// console.log(logintoken);",
+                "",
+                "",
+                "",
+                "// global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
+                "",
+                "",
+                "// 스토어 등록 호출 보내기",
+                "fetch(\"http://43.201.210.173:9000/stores/register\", {",
+                "  method: \"POST\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    \"Content-Type\": \"application/json\",",
+                "  },",
+                "  body: JSON.stringify({",
+                "    userId : 4,",
+                "    name : inputStoreName,",
+                "    period : inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay,",
+                "    info : inputStoreInfo,",
+                "  }),",
+                "})",
+                "  .then((response) => console.log(response))",
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SendAsyncRequest"
-                  },
-                  "parameters": [
-                    "\"http://43.201.210.173:9000/stores/register\"",
-                    "\"'{' + \n'userid:' + 3, \n'name:' + inputStoreName, \n'period:' + inputStorePeriodYear + '-' + inputStorePeriodMonth + '-' + inputStorePeriodDay, 'info:' + inputStoreInfo +\n'}'\"",
-                    "\"POST\"",
-                    "\"application/json\"",
-                    "response",
-                    "errormsg"
-                  ]
-                }
-              ]
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -6608,6 +6651,49 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Square scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Receive Token",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "var logintoken = localStorage.getItem('login-token');",
+            "var userToken = runtimeScene.getVariables().get(\"userToken\");",
+            "",
+            "",
+            "if(logintoken){",
+            "    runtimeScene.getVariables().get(\"userToken\").setString(logintoken);",
+            "}",
+            "",
+            "",
+            "console.log(\"변수 값 : \", userToken._str);",
+            "// console.log(\"Gdevelop received token from react: \", logintoken);",
+            "",
+            "",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
         }
       ]
     }
