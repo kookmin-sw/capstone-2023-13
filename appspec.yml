@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+files:
+  - source:  /
+    destination: /home/ec2-user/capsotone-2023-13
+
+hooks:
+  AfterInstall:
+    - location: test.sh
+      timeout: 60
+      runas: ec2-user
