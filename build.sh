@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# move project directory
 cd /home/ec2-user/capstone-2023-13
 
 # Front Update
