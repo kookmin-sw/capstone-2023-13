@@ -4,6 +4,7 @@ os: linux
 files:
   - source:  /
     destination: /home/ec2-user/capstone-2023-13
+    overwrite: yes
 
 hooks:
   BeforeInstall:
