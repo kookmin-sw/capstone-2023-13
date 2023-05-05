@@ -42,16 +42,10 @@ public class StoreService {
     }
 
     public String update(Long user_id, StoreUpdateDTO storeUpdateDTO) {
-        Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(storeUpdateDTO.getToken()).getBody();
         User user = userRepository.findById(user_id).orElseThrow();
         Store store = storeRepository.findByOwner(user);
-        if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()){
-            store.update(storeUpdateDTO);
-            return "수정 완료";
-        }
-        else {
-            return "수정 실패";
-        }
+        store.update(storeUpdateDTO);
+        return "수정 완료";
     }
 
     public String delete(Long user_id, TokenDTO tokenDTO) {
