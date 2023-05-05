@@ -39,9 +39,11 @@ public class StoreController {
     }
 
     @Operation(summary = "", description = "상점 정보 조회 API")
-    @GetMapping("/info/{user_id}")
-    public Store info(@PathVariable Long user_id) {
-        return storeService.info(user_id);
+    @GetMapping("/info")
+    public Store info(@RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return storeService.info(user.getId());
     }
 
     @Operation(summary = "", description = "상점 수정 API")
