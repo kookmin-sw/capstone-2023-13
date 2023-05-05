@@ -12,6 +12,7 @@ import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 
 @Service
@@ -48,16 +49,16 @@ public class StoreService {
         return "수정 완료";
     }
 
-    public String delete(Long user_id, TokenDTO tokenDTO) {
-        Claims token = Jwts.parser().setSigningKey("metapop").parseClaimsJws(tokenDTO.getToken()).getBody();
+    public String delete(Long user_id) {
         User user = userRepository.findById(user_id).orElseThrow();
         Store store = storeRepository.findByOwner(user);
-        if (user_id == this.userService.getById(Long.valueOf(token.getIssuer())).get().getId()) {
+        if (store == null){
+            return "등록되어 있는 상점이 존재하지 않습니다.";
+        }
+        else{
             storeRepository.delete(store);
             return "삭제 완료";
         }
-        else {
-            return "삭제 실패";
-        }
+
     }
 }
