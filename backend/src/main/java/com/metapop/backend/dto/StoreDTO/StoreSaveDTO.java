@@ -8,7 +8,6 @@ import java.time.LocalDate;
 
 @Getter
 public class StoreSaveDTO {
-    private Long userId;
     private String name;
     private LocalDate period;
     private String info;
