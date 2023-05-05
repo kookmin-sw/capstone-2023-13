@@ -32,8 +32,10 @@ public class StoreController {
 
     @Operation(summary = "", description = "상점 등록 API")
     @PostMapping("/register")
-    public String registration(@RequestBody StoreSaveDTO storeSaveDTO) {
-        return storeService.registration(storeSaveDTO);
+    public String registration(@RequestBody StoreSaveDTO storeSaveDTO, @RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return storeService.registration(user.getId(), storeSaveDTO);
     }
 
     @Operation(summary = "", description = "상점 정보 조회 API")
