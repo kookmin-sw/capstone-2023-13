@@ -19,7 +19,12 @@ async def test_running_server(app, client):
 @open_server_client
 async def test_single_socket(app, client):
     async with client.ws_connect('/ws') as ws:
-        await ws.send_json(M.set_init_data("test", "test", "test", 0, 0, 0))
+        cusmtom = { "hair" : "hair1", "body": "body1", "eye": "eye1", "outfit": "outfit1" }
+        await ws.send_json(M.set_init_data(user_id="test",
+                                           nickname="test",
+                                           custom=cusmtom,
+                                           channel_id="test",
+                                           X=0, Y=0, Z=0))
         res = await ws.receive_json()
         assert res.get("type") == "connect" and res.get("user_id") == "test" and res.get("status") == 200
         count = 0
@@ -43,8 +48,18 @@ async def test_single_socket(app, client):
 
 @open_server_client
 async def test_multi_socket(app, client):
-    user_list = [M.set_init_data("test1", "test1", "test", 0, 1, 0),
-                 M.set_init_data("test2", "test2", "test", 1, 0, 1)]
+    custom1 = { "hair" : "hair1", "body": "body1", "eye": "eye1", "outfit": "outfit1" }
+    custom2 = { "hair" : "hair2", "body2": "body2", "eye": "eye2", "outfit": "outfit2" }
+    user_list = [M.set_init_data(user_id="test1", 
+                                 nickname="test1", 
+                                 custom=custom1,
+                                 channel_id="test", 
+                                 X=0, Y=1, Z=0),
+                 M.set_init_data(user_id="test2", 
+                                 nickname="test2", 
+                                 custom=custom2,
+                                 channel_id="test", 
+                                 X=1, Y=0, Z=1)]
     mq = list()
     rq = list()
     for user in range(6):
