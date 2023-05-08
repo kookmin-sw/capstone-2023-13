@@ -27,23 +27,12 @@ class Message:
         }
     
     @classmethod
-    def connect(cls, user_id, status, custom=None, X=None, Y=None, Z=None):
-        if status == 200:
-            return {
-                "type": cls.CONNECT,
-                "user_id": user_id,
-                "status": status,
-                "custom": custom,
-                "X": X,
-                "Y": Y,
-                "Z": Z
-            }
-        else:
-            return {
-                "type": cls.CONNECT,
-                "user_id": user_id,
-                "status": status
-            }
+    def connect(cls, user_id, status):
+        return {
+            "type": cls.CONNECT,
+            "user_id": user_id,
+            "status": status,
+        }
     
     @classmethod
     def chat(cls, user_id, nickname, msg):
