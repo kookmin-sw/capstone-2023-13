@@ -15,11 +15,12 @@ class Message:
         return user, nickname, channel, custom, X, Y, Z
     
     @classmethod
-    def set_init_data(cls, user_id, nickname, channel_id, X, Y, Z):
+    def set_init_data(cls, user_id, nickname, custom, channel_id, X, Y, Z):
         return {
             "user_id": user_id,
             "nickname": nickname,
             "channel_id": channel_id,
+            "custom": custom,
             "X": X,
             "Y": Y,
             "Z": Z
