@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class Orders {
     private Long sellerId;
 
     @Column(nullable = false)
-    private LocalDateTime orderDate;
+    private LocalDate orderDate;
 
     @Column(nullable = false)
     private Long state;
@@ -38,7 +39,7 @@ public class Orders {
 
     @PrePersist
     public void prePersist() {
-        this.orderDate = LocalDateTime.now();
+        this.orderDate = LocalDate.now();
     }
 
     @Builder

@@ -5,11 +5,9 @@ import com.metapop.backend.entity.User;
 import lombok.Getter;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Getter
 public class StoreSaveDTO {
-    private Long userId;
     private String name;
     private LocalDate period;
     private String info;

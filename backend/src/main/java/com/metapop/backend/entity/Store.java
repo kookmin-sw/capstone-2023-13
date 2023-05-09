@@ -39,6 +39,8 @@ public class Store {
 
     public void update(StoreUpdateDTO storeUpdateDTO) {
         this.name = storeUpdateDTO.getName();
+        this.period = storeUpdateDTO.getPeriod();
+        this.info = storeUpdateDTO.getInfo();
     }
 
 }

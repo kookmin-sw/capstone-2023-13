@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+
+files:
+  - source:  /
+    destination: /home/ec2-user/capstone-2023-13
+    overwrite: yes
+
+hooks:
+  ApllicationStart:
+    - location: build.sh
+      timeout: 60
+      runas: root

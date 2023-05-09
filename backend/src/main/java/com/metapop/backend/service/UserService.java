@@ -8,6 +8,9 @@ import com.metapop.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +20,7 @@ import java.util.Optional;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class UserService {
+public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final JavaMailSender mailSender;
 
@@ -37,8 +40,7 @@ public class UserService {
     }
 
     public User findByEmail(String email) {
-        User findUser = userRepository.findByEmail(email);
-        return findUser;
+        return userRepository.findByEmail(email);
     }
 
     public Optional<User> getById(Long id) {
@@ -118,5 +120,10 @@ public class UserService {
         message.setFrom("metapop13@gmail.com");
         message.setReplyTo("metapop13@gmail.com");
         mailSender.send(message);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String userEmail) throws UsernameNotFoundException {
+        return userRepository.findByEmail(userEmail);
     }
 }
