@@ -3,7 +3,7 @@ name: Deploy to Amazon EC2
 on:
   push:
     branches:
-      - main
+      - master
 env:
   AWS_REGION: ap-northeast-2
   CODE_DEPLOY_APPLICATION_NAME: metapop-codedeploy-app
@@ -28,6 +28,6 @@ jobs:
         run: |
           aws deploy create-deployment \
             --application-name ${{ env.CODE_DEPLOY_APPLICATION_NAME }} \
-            --deployment-group-name ${{ env.CODE_DEPLOY_GROUP_NAME }} \
+            --deployment-group-name ${{ env.CODE_DEPLOY_DEPLOYMENT_GROUP_NAME }} \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}

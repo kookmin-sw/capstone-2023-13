@@ -3,10 +3,11 @@ os: linux
 
 files:
   - source:  /
-    destination: /home/ec2-user/capsotone-2023-13
+    destination: /home/ec2-user/capstone-2023-13
+    overwrite: yes
 
 hooks:
-  AfterInstall:
-    - location: test.sh
+  ApllicationStart:
+    - location: build.sh
       timeout: 60
-      runas: ec2-user
+      runas: root

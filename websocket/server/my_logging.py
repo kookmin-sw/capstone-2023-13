@@ -13,9 +13,9 @@ class Logging:
     def format(self, type, user_id, nickname, channel_id, msg):
         return f"[{channel_id}]{nickname}({user_id}) : {msg}({type})"
 
-    def connect_logging(self, status, user_id, nickname, channel_id):
+    def connect_logging(self, status, user_id, nickname, channel_id, custom=None):
         if status == 200:
-            self.logger.debug(self.format('connect', user_id, nickname, channel_id, 'Connect Success'))
+            self.logger.debug(self.format('connect', user_id, nickname, channel_id, f'custom: {custom} - Connect Success'))
         else:
             self.logger.debug(self.format('connect', user_id, nickname, channel_id, 'Connect Fail'))
     
