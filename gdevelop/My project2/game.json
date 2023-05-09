@@ -8103,6 +8103,11 @@
           ]
         },
         {
+          "name": "ProductList_Title",
+          "useMultipleDirections": false,
+          "directions": []
+        },
+        {
           "name": "Walking Left",
           "useMultipleDirections": false,
           "directions": [
@@ -21530,25 +21535,25 @@
       "folded": true,
       "name": "UserBody",
       "type": "string",
-      "value": "2"
+      "value": "1"
     },
     {
       "folded": true,
       "name": "UserHair",
       "type": "string",
-      "value": "2"
+      "value": "1"
     },
     {
       "folded": true,
       "name": "UserEye",
       "type": "string",
-      "value": "2"
+      "value": "1"
     },
     {
       "folded": true,
       "name": "UserOutfit",
       "type": "string",
-      "value": "2"
+      "value": "1"
     },
     {
       "folded": true,
@@ -21578,7 +21583,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.33253870912507866,
+        "zoomFactor": 0.5117784035210194,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -26171,7 +26176,7 @@
                 "",
                 "    const data = { ",
                 "        user_id : runtimeScene.user_id, ",
-                "        nickname: \"최보석\", ",
+                "        nickname: \"최혁태\", ",
                 "        channel_id : channel,",
                 "        custom : {",
                 "            body : Body,",
