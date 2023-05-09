@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded !== "undefined") {
 gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded.userFunc0xa9f748 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded.userFunc0xc69e78 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.evtTools.wsClient = {
     /** The current connection to the WebSockets server. */
@@ -24,7 +24,7 @@ gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded.userFunc0xa9f748(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__WebSocketClient__onFirstSceneLoaded.userFunc0xc69e78(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

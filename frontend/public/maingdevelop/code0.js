@@ -1,12 +1,114 @@
 gdjs.Square_32sceneCode = {};
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1= [];
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects2= [];
 gdjs.Square_32sceneCode.GDTextInputObjects1= [];
 gdjs.Square_32sceneCode.GDTextInputObjects2= [];
 gdjs.Square_32sceneCode.GDBlankEmoteMidObjects1= [];
 gdjs.Square_32sceneCode.GDBlankEmoteMidObjects2= [];
 gdjs.Square_32sceneCode.GDChatTextObjects1= [];
 gdjs.Square_32sceneCode.GDChatTextObjects2= [];
+gdjs.Square_32sceneCode.GDbody1Objects1= [];
+gdjs.Square_32sceneCode.GDbody1Objects2= [];
+gdjs.Square_32sceneCode.GDhair1Objects1= [];
+gdjs.Square_32sceneCode.GDhair1Objects2= [];
+gdjs.Square_32sceneCode.GDhair2Objects1= [];
+gdjs.Square_32sceneCode.GDhair2Objects2= [];
+gdjs.Square_32sceneCode.GDhair3Objects1= [];
+gdjs.Square_32sceneCode.GDhair3Objects2= [];
+gdjs.Square_32sceneCode.GDhair4Objects1= [];
+gdjs.Square_32sceneCode.GDhair4Objects2= [];
+gdjs.Square_32sceneCode.GDhair5Objects1= [];
+gdjs.Square_32sceneCode.GDhair5Objects2= [];
+gdjs.Square_32sceneCode.GDhair6Objects1= [];
+gdjs.Square_32sceneCode.GDhair6Objects2= [];
+gdjs.Square_32sceneCode.GDhair7Objects1= [];
+gdjs.Square_32sceneCode.GDhair7Objects2= [];
+gdjs.Square_32sceneCode.GDhair8Objects1= [];
+gdjs.Square_32sceneCode.GDhair8Objects2= [];
+gdjs.Square_32sceneCode.GDhair9Objects1= [];
+gdjs.Square_32sceneCode.GDhair9Objects2= [];
+gdjs.Square_32sceneCode.GDhair10Objects1= [];
+gdjs.Square_32sceneCode.GDhair10Objects2= [];
+gdjs.Square_32sceneCode.GDhair11Objects1= [];
+gdjs.Square_32sceneCode.GDhair11Objects2= [];
+gdjs.Square_32sceneCode.GDhair12Objects1= [];
+gdjs.Square_32sceneCode.GDhair12Objects2= [];
+gdjs.Square_32sceneCode.GDhair13Objects1= [];
+gdjs.Square_32sceneCode.GDhair13Objects2= [];
+gdjs.Square_32sceneCode.GDhair14Objects1= [];
+gdjs.Square_32sceneCode.GDhair14Objects2= [];
+gdjs.Square_32sceneCode.GDhair15Objects1= [];
+gdjs.Square_32sceneCode.GDhair15Objects2= [];
+gdjs.Square_32sceneCode.GDhair16Objects1= [];
+gdjs.Square_32sceneCode.GDhair16Objects2= [];
+gdjs.Square_32sceneCode.GDhair17Objects1= [];
+gdjs.Square_32sceneCode.GDhair17Objects2= [];
+gdjs.Square_32sceneCode.GDhair18Objects1= [];
+gdjs.Square_32sceneCode.GDhair18Objects2= [];
+gdjs.Square_32sceneCode.GDhair19Objects1= [];
+gdjs.Square_32sceneCode.GDhair19Objects2= [];
+gdjs.Square_32sceneCode.GDhair20Objects1= [];
+gdjs.Square_32sceneCode.GDhair20Objects2= [];
+gdjs.Square_32sceneCode.GDhair21Objects1= [];
+gdjs.Square_32sceneCode.GDhair21Objects2= [];
+gdjs.Square_32sceneCode.GDhair22Objects1= [];
+gdjs.Square_32sceneCode.GDhair22Objects2= [];
+gdjs.Square_32sceneCode.GDhair23Objects1= [];
+gdjs.Square_32sceneCode.GDhair23Objects2= [];
+gdjs.Square_32sceneCode.GDhair25Objects1= [];
+gdjs.Square_32sceneCode.GDhair25Objects2= [];
+gdjs.Square_32sceneCode.GDhair24Objects1= [];
+gdjs.Square_32sceneCode.GDhair24Objects2= [];
+gdjs.Square_32sceneCode.GDhair26Objects1= [];
+gdjs.Square_32sceneCode.GDhair26Objects2= [];
+gdjs.Square_32sceneCode.GDhair27Objects1= [];
+gdjs.Square_32sceneCode.GDhair27Objects2= [];
+gdjs.Square_32sceneCode.GDhair28Objects1= [];
+gdjs.Square_32sceneCode.GDhair28Objects2= [];
+gdjs.Square_32sceneCode.GDhair29Objects1= [];
+gdjs.Square_32sceneCode.GDhair29Objects2= [];
+gdjs.Square_32sceneCode.GDhair30Objects1= [];
+gdjs.Square_32sceneCode.GDhair30Objects2= [];
+gdjs.Square_32sceneCode.GDhair31Objects1= [];
+gdjs.Square_32sceneCode.GDhair31Objects2= [];
+gdjs.Square_32sceneCode.GDeye2Objects1= [];
+gdjs.Square_32sceneCode.GDeye2Objects2= [];
+gdjs.Square_32sceneCode.GDhair32Objects1= [];
+gdjs.Square_32sceneCode.GDhair32Objects2= [];
+gdjs.Square_32sceneCode.GDeye1Objects1= [];
+gdjs.Square_32sceneCode.GDeye1Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit2Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit2Objects2= [];
+gdjs.Square_32sceneCode.GDbody2Objects1= [];
+gdjs.Square_32sceneCode.GDbody2Objects2= [];
+gdjs.Square_32sceneCode.GDbody3Objects1= [];
+gdjs.Square_32sceneCode.GDbody3Objects2= [];
+gdjs.Square_32sceneCode.GDbody4Objects1= [];
+gdjs.Square_32sceneCode.GDbody4Objects2= [];
+gdjs.Square_32sceneCode.GDeye3Objects1= [];
+gdjs.Square_32sceneCode.GDeye3Objects2= [];
+gdjs.Square_32sceneCode.GDeye4Objects1= [];
+gdjs.Square_32sceneCode.GDeye4Objects2= [];
+gdjs.Square_32sceneCode.GDeye5Objects1= [];
+gdjs.Square_32sceneCode.GDeye5Objects2= [];
+gdjs.Square_32sceneCode.GDeye6Objects1= [];
+gdjs.Square_32sceneCode.GDeye6Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit1Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit1Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit3Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit3Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit4Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit4Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit5Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit5Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit6Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit6Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit7Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit7Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit9Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit9Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit8Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit8Objects2= [];
+gdjs.Square_32sceneCode.GDoutfit10Objects1= [];
+gdjs.Square_32sceneCode.GDoutfit10Objects2= [];
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects1= [];
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects2= [];
 gdjs.Square_32sceneCode.GDWhiteDoorObjects1= [];
@@ -87,21 +189,85 @@ gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1= [];
 gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects2= [];
 gdjs.Square_32sceneCode.GDNewTextInput2Objects1= [];
 gdjs.Square_32sceneCode.GDNewTextInput2Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile1Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile1Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile2Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile2Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile3Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile3Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile4Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile4Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile5Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile5Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTileObjects1= [];
+gdjs.Square_32sceneCode.GDGrassTileObjects2= [];
+gdjs.Square_32sceneCode.GDGrassTile22Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile22Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile21Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile21Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile20Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile20Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile19Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile19Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile18Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile18Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile17Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile17Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile16Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile16Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile15Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile15Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile14Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile14Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile13Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile13Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile12Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile12Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile11Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile11Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile10Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile10Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile9Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile9Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile8Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile8Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile7Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile7Objects2= [];
+gdjs.Square_32sceneCode.GDGrassTile6Objects1= [];
+gdjs.Square_32sceneCode.GDGrassTile6Objects2= [];
 
 
-gdjs.Square_32sceneCode.userFunc0x97f1e8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xbad640 = function(runtimeScene) {
 "use strict";
 runtimeScene.ws = new WebSocket("ws://43.201.210.173:9001/ws");
 const id = Math.floor(Math.random() * Math.floor(100000));
-const channel = "Square4";
+const channel = "Square1";
 runtimeScene.user_id = id;
+runtimeScene.isCreated = false;
 runtimeScene.delayedEvents = [];
 
-const TestObject = "MaleCharacter10";
-
 runtimeScene.ws.onopen = function(event) {
-    
-    const data = { user_id : runtimeScene.user_id, nickname: "최보석", channel_id : channel, X : 480, Y : 300, Z : 10 };
+
+    const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
+    const Eye = runtimeScene.getGame().getVariables().get("UserEye")._str;
+    const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str
+    const Outfit = runtimeScene.getGame().getVariables().get("UserOutfit")._str;
+
+    const data = { 
+        user_id : runtimeScene.user_id, 
+        nickname: "최혁태", 
+        channel_id : channel,
+        custom : {
+            body : Body,
+            eye : Eye,
+            hair : Hair,
+            outfit : Outfit,
+        }, 
+        X : 480, 
+        Y : 300, 
+        Z : 10,
+    };
+
     setTimeout(() => {
         runtimeScene.ws.send(JSON.stringify(data))
     }, 500);
@@ -115,14 +281,19 @@ runtimeScene.ws.onmessage = function (event) {
     }
     switch(e.type) {
         case "connect":
-            newPlayer(e);
+            console.log(e.status);
             break;
         case "action":
             if (e.dir === "up") {
                 upMovement(e);
             }
             else if (e.dir === "down") {
-                downMovement(e);
+                if (runtimeScene.isCreated === false) {
+                    newUser(e);
+                }
+                else {
+                    downMovement(e);
+                }
             }
             else if (e.dir === "right") {
                 rightMovement(e);
@@ -137,101 +308,196 @@ runtimeScene.ws.onmessage = function (event) {
     }
 }
 
-function newPlayer(e) {
-    const p = createPlayer(e)
+function newUser(e) {
+    const p = createUser(e);
+
+    const Body = e.custom.body;
+    const Eye = e.custom.eye;
+    const Hair = e.custom.hair;
+    const Outfit = e.custom.outfit;
+
     if(runtimeScene.user_id !== p.user_id){
         // create that player
-        const o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === runtimeScene.user_id);
-        const update = { user_id : p.user_id, nickname: p.nickname, channel_id : channel, X: 480, Y: 300, Z : 10};
+        const o = runtimeScene.getObjects("body" + Body).find((o) => o.user_id === runtimeScene.user_id);
+        const update = { 
+            user_id : p.user_id, 
+            nickname: p.nickname, 
+            channel_id : channel,
+            custom : {
+                body : Body,
+                eye : Eye,
+                hair : Hair,
+                outfit : Outfit,
+            },
+            X: 480, 
+            Y: 300, 
+            Z : 10,
+        };
         runtimeScene.ws.send(JSON.stringify(update));
     }
+    else {
+        runtimeScene.isCreated = true;
+    }
 }
 
-function refreshPlayers(e) {
+function refreshUsers(e) {
     const o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === e.user_id)
     if(typeof o === "undefined") {
-        const p = createPlayer(event)
+        const p = createUser(event)
     }
 }
 
 
-function createPlayer(e) {
-    // BODY
-    var player;
-    player = runtimeScene.createObject(TestObject)
-    console.log("Create Player : ",e);
+function createUser(e) {
+    const Body = e.custom.body;
+    const Eye = e.custom.eye;
+    const Hair = e.custom.hair;
+    const Outfit = e.custom.outfit;
+
+    var user;
+    user = runtimeScene.createObject("body" + Body);
+    console.log("Create User : ",e);
     
-    player.setX(e.X);
-    player.setY(e.Y);
-    player.setZOrder(e.Z);
-    player.setHeight(64);
-    player.setWidth(64);
-    player.user_id = e.user_id;
-    player.nickname = e.nickname;
-    player.positions = [];
+    user.setX(e.X);
+    user.setY(e.Y);
+    user.setZOrder(e.Z);
+    user.setHeight(96);
+    user.setWidth(46);
+    user.user_id = e.user_id;
+    user.nickname = e.nickname;
     
-    return player
+    var eye;
+    eye = runtimeScene.createObject("eye" + Eye);
+
+    eye.setX(user.getX());
+    eye.setY(user.getY());
+    eye.setZOrder(e.Z + 1);
+    eye.setHeight(96);
+    eye.setWidth(46);
+    eye.user_id = e.user_id;
+
+    var hair;
+    hair = runtimeScene.createObject("hair" + Hair);
+
+    hair.setX(user.getX());
+    hair.setY(user.getY());
+    hair.setZOrder(e.Z + 1);
+    hair.setHeight(96);
+    hair.setWidth(46);
+    hair.user_id = e.user_id;    
+    
+    var outfit;
+    outfit = runtimeScene.createObject("outfit" + Outfit);
+
+    outfit.setX(user.getX());
+    outfit.setY(user.getY());
+    outfit.setZOrder(e.Z + 1);
+    outfit.setHeight(96);
+    outfit.setWidth(46);
+    outfit.user_id = e.user_id;
+
+    return user
 }
 
 
 function leftMovement(event){
-    //body
-    var o;
-    o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === event.user_id);
-    if (typeof o === "undefined") {
-        createPlayer(event);
+    const Body = event.custom.body;
+    const Eye = event.custom.eye;
+    const Hair = event.custom.hair;
+    const Outfit = event.custom.outfit;
+
+    var body, eye, hair, outfit;
+    body = runtimeScene.getObjects("body" + Body).find((o) => o.user_id === event.user_id);
+    eye = runtimeScene.getObjects("eye" + Eye).find((o) => o.user_id === event.user_id);
+    hair = runtimeScene.getObjects("hair" + Hair).find((o) => o.user_id === event.user_id);
+    outfit = runtimeScene.getObjects("outfit" + Outfit).find((o) => o.user_id === event.user_id);
+
+    if (typeof body === "undefined") {
+        createUser(event);
         return
     }
-    o.setAnimationName("Walking Left");
+
+    body.setAnimationName("Walking Left");
+    eye.setAnimationName("Walking Left");
+    hair.setAnimationName("Walking Left");
+    outfit.setAnimationName("Walking Left");
+
     movement(event);
 }
 
 function rightMovement(event){
+    const Body = event.custom.body;
+    const Eye = event.custom.eye;
+    const Hair = event.custom.hair;
+    const Outfit = event.custom.outfit;
 
-    //body
-    var o;
-    o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === event.user_id)
+    var body, eye, hair, outfit;
+    body = runtimeScene.getObjects("body" + Body).find((o) => o.user_id === event.user_id);
+    eye = runtimeScene.getObjects("eye" + Eye).find((o) => o.user_id === event.user_id);
+    hair = runtimeScene.getObjects("hair" + Hair).find((o) => o.user_id === event.user_id);
+    outfit = runtimeScene.getObjects("outfit" + Outfit).find((o) => o.user_id === event.user_id);
 
-    if (typeof o === "undefined") {
-        createPlayer(event);
+    if (typeof body === "undefined") {
+        createUser(event);
         return
     }
-    o.setAnimationName("Walking Right")
 
-    movement(event)
+    body.setAnimationName("Walking Right");
+    eye.setAnimationName("Walking Right");
+    hair.setAnimationName("Walking Right");
+    outfit.setAnimationName("Walking Right");
+    
+    movement(event);
 }
 
 function upMovement(event){
+    const Body = event.custom.body;
+    const Eye = event.custom.eye;
+    const Hair = event.custom.hair;
+    const Outfit = event.custom.outfit;
 
-    //body
-    var o;
-    o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === event.user_id)
+    var body, eye, hair, outfit;
+    body = runtimeScene.getObjects("body" + Body).find((o) => o.user_id === event.user_id);
+    eye = runtimeScene.getObjects("eye" + Eye).find((o) => o.user_id === event.user_id);
+    hair = runtimeScene.getObjects("hair" + Hair).find((o) => o.user_id === event.user_id);
+    outfit = runtimeScene.getObjects("outfit" + Outfit).find((o) => o.user_id === event.user_id);
 
-    if (typeof o === "undefined") {
-        createPlayer(event);
+    if (typeof body === "undefined") {
+        createUser(event);
         return
     }
 
-    o.setAnimationName("Walking Up")
-
-    movement(event)
+    body.setAnimationName("Walking Up");
+    eye.setAnimationName("Walking Up");
+    hair.setAnimationName("Walking Up");
+    outfit.setAnimationName("Walking Up");
+    console.log("Up");
+    movement(event);
 }
 
 function downMovement(event){
+    const Body = event.custom.body;
+    const Eye = event.custom.eye;
+    const Hair = event.custom.hair;
+    const Outfit = event.custom.outfit;
 
-    //body
-    var o;
-    o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === event.user_id)
-    
-    if (typeof o === "undefined") {
-        console.log("hi");
-        createPlayer(event);
+    var body, eye, hair, outfit;
+    body = runtimeScene.getObjects("body" + Body).find((o) => o.user_id === event.user_id);
+    eye = runtimeScene.getObjects("eye" + Eye).find((o) => o.user_id === event.user_id);
+    hair = runtimeScene.getObjects("hair" + Hair).find((o) => o.user_id === event.user_id);
+    outfit = runtimeScene.getObjects("outfit" + Outfit).find((o) => o.user_id === event.user_id);
+
+    if (typeof body === "undefined") {
+        createUser(event);
         return
     }
-    o.setAnimationName("Walking Down")
 
-    movement(event)
+    body.setAnimationName("Walking Down");
+    eye.setAnimationName("Walking Down");
+    hair.setAnimationName("Walking Down");
+    outfit.setAnimationName("Walking Down");
     
+    movement(event);
 }
 
 function lerp(a,b,c){
@@ -239,17 +505,34 @@ function lerp(a,b,c){
 }
 
 function movement(event) {
+    const Body = event.custom.body;
+    const Eye = event.custom.eye;
+    const Hair = event.custom.hair;
+    const Outfit = event.custom.outfit;
 
-    //body
-    var o;
-    o = runtimeScene.getObjects(TestObject).find((o) => o.user_id === event.user_id)
-    // console.log("o : ", o);
-    // console.log("event : ", event);
-    o.setX(event.X)
-    o.setY(event.Y)
-    o.setZOrder(event.Z)
-    // console.log("적용 후 : ", o);
-    if(o.user_id === id){
+    var o, eye, hair, outfit;
+    o = runtimeScene.getObjects("body" + Body).find((o) => o.user_id === event.user_id);
+    eye = runtimeScene.getObjects("eye" + Eye).find((o) => o.user_id === event.user_id);
+    hair = runtimeScene.getObjects("hair" + Hair).find((o) => o.user_id === event.user_id);
+    outfit = runtimeScene.getObjects("outfit" + Outfit).find((o) => o.user_id === event.user_id);
+
+    o.setX(event.X);
+    o.setY(event.Y);
+    o.setZOrder(event.Z);
+
+    eye.setX(o.getX())
+    eye.setY(o.getY())
+    eye.setZOrder(o.getZOrder()+1)
+
+    hair.setX(o.getX())
+    hair.setY(o.getY())
+    hair.setZOrder(o.getZOrder()+1)
+
+    outfit.setX(o.getX())
+    outfit.setY(o.getY())
+    outfit.setZOrder(o.getZOrder()+1)
+
+    if(o.user_id === runtimeScene.user_id){
         var camX = runtimeScene.getLayer("").getCameraX(o.user_id)
         var camY = runtimeScene.getLayer("").getCameraY(o.user_id)
         console.log(camX, " ", camY);
@@ -364,12 +647,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x97f1e8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xbad640(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x97f2a8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xbad700 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -401,14 +684,17 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0x9bcdf0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xdfab58 = function(runtimeScene) {
 "use strict";
 const channel = "Square1";
 
-const TestObject = "MaleCharacter10";
+const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
+const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
+const Eye = runtimeScene.getGame().getVariables().get("UserEye")._str;
+const Outfit = runtimeScene.getGame().getVariables().get("UserOutfit")._str;
 
 const input = runtimeScene._runtimeGame.getInputManager()
-const user = runtimeScene.getObjects(TestObject).find((user) => user.user_id === runtimeScene.user_id);
+const user = runtimeScene.getObjects("body" + Body).find((user) => user.user_id === runtimeScene.user_id);
 const LEFTKEY = 37;
 const UPKEY = 38;
 const RIGHTKEY = 39;
@@ -418,52 +704,61 @@ if(typeof user === "undefined") {
     return;
 }
 
-const movementSpeed = 5;// 0.33 * runtimeScene.getTimeManager().getElapsedTime()
+const movementSpeed = 0.66 * runtimeScene.getTimeManager().getElapsedTime();
 let id = runtimeScene.user_id;
-let x = user.getX()
-let y = user.getY()
-let z = user.getZOrder()
+let x = user.getX();
+let y = user.getY();
+let z = user.getZOrder();
 let moved = false;
+let dir = "down";
 var update;
 
 
-if(input.isKeyPressed(LEFTKEY)) {
+if (input.isKeyPressed(LEFTKEY)) {
     moved = true;
     x -= movementSpeed;
-
-    update = { type : "action", dir : "left", X: x, Y: y, Z : z}
+    dir = "left";
 }
 
-if(input.isKeyPressed(RIGHTKEY)) {
+else if (input.isKeyPressed(RIGHTKEY)) {
     moved = true;
     x += movementSpeed
-
-    update = { type : "action", dir : "right", X: x, Y: y, Z : z}
+    dir = "right";
 }
 
-if(input.isKeyPressed(UPKEY)) {
+else if (input.isKeyPressed(UPKEY)) {
     moved = true
-    y -= movementSpeed
-
-    update = { type : "action", dir : "up", X: x, Y: y, Z : z}
+    y -= movementSpeed;
+    dir = "up";
 }
 
-if(input.isKeyPressed(DOWNKEY)) {
+else if (input.isKeyPressed(DOWNKEY)) {
     moved = true;
-    y += movementSpeed
-
-    update = { type : "action", dir : "down", X: x, Y: y, Z : z}
+    y += movementSpeed;
+    dir = "down";
 }
 
-if(moved === false) {
+else if (moved === false) {
     return;
+}
+
+update = { 
+    type : "action",
+    custom : {
+        hair : Hair,
+        body : Body,
+        eye : Eye,
+        outfit : Outfit,
+    },
+    dir : dir, 
+    X: x, 
+    Y: y, 
+    Z: z
 }
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDMaleCharacter10Objects1Objects = Hashtable.newFrom({"MaleCharacter10": gdjs.Square_32sceneCode.GDMaleCharacter10Objects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWoodObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood": gdjs.Square_32sceneCode.GDWideSideRectangleWoodObjects1});
-gdjs.Square_32sceneCode.userFunc0x96ddc8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xbab868 = function(runtimeScene) {
 "use strict";
 const storeName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = storeName.getString();
@@ -488,184 +783,110 @@ console.log("period", inputStorePeriodYear+"-"+inputStorePeriodMonth+"-"+inputSt
 console.log("storeinfo:", inputStoreInfo);
 
 
+
+
+
+
+
+// fetch("http://43.201.210.173:9000/users/login", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     email: "admin@admin.com",
+//     password: "1234"
+//   }),
+// })
+//   .then((response) => console.log(response))
+
+
+
+// var logintoken = localStorage.getItem('login-token');
+// console.log(logintoken);
+
+
+
+// global 변수에 저장되어있는 토큰 가져오기
+var userToken = runtimeScene.getVariables().get("userToken")._str;
+
+
+// 스토어 등록 호출 보내기
+fetch("http://43.201.210.173:9000/stores/register", {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    userId : 4,
+    name : inputStoreName,
+    period : inputStorePeriodYear+"-"+inputStorePeriodMonth+"-"+inputStorePeriodDay,
+    info : inputStoreInfo,
+  }),
+})
+  .then((response) => console.log(response))
+
+
+
+
+
+
 };
 gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x96ddc8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xbab868(runtimeScene);
 
 }
 
 
-{
+};gdjs.Square_32sceneCode.userFunc0x8d9f30 = function(runtimeScene) {
+"use strict";
+var logintoken = localStorage.getItem('login-token');
+var userToken = runtimeScene.getVariables().get("userToken");
 
 
-let isConditionTrue_0 = false;
-{
-{gdjs.evtTools.network.sendAsyncRequest("http://43.201.210.173:9000/stores/register", "'{' + \n'userid:' + 3, \n'name:' + inputStoreName, \n'period:' + inputStorePeriodYear + '-' + inputStorePeriodMonth + '-' + inputStorePeriodDay, 'info:' + inputStoreInfo +\n'}'", "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(0));
-}}
-
+if(logintoken){
+    runtimeScene.getVariables().get("userToken").setString(logintoken);
 }
 
 
-};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDMaleCharacter10Objects1Objects = Hashtable.newFrom({"MaleCharacter10": gdjs.Square_32sceneCode.GDMaleCharacter10Objects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595added_9595storeObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood_added_store": gdjs.Square_32sceneCode.GDWideSideRectangleWood_95added_95storeObjects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDMaleCharacter10Objects1Objects = Hashtable.newFrom({"MaleCharacter10": gdjs.Square_32sceneCode.GDMaleCharacter10Objects1});
+//console.log("변수 값 : ", userToken._str);
+// console.log("Gdevelop received token from react: ", logintoken);
+
+
+
+};
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
+gdjs.Square_32sceneCode.userFunc0xbabb30 = function(runtimeScene) {
+"use strict";
+function disconnectWebSocket(runtimeScene) {
+    if (runtimeScene.ws) {
+        console.log('Disconnecting WebSocket...');
+        runtimeScene.ws.close();
+    } 
+    else {
+        console.log('WebSocket is not connected.');
+    }
+}
+
+disconnectWebSocket(runtimeScene);
+};
 gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 
 {
 
 
+gdjs.Square_32sceneCode.userFunc0xbabb30(runtimeScene);
 
 }
 
 
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
-    if ( gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isMoving() ) {
-        isConditionTrue_0 = true;
-        gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i];
-        ++k;
-    }
-}
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Square_32sceneCode.GDMaleCharacter10Objects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].playAnimation();
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
-    if ( gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Up") ) {
-        isConditionTrue_0 = true;
-        gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i];
-        ++k;
-    }
-}
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Square_32sceneCode.GDMaleCharacter10Objects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Up");
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
-    if ( gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Left") ) {
-        isConditionTrue_0 = true;
-        gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i];
-        ++k;
-    }
-}
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Square_32sceneCode.GDMaleCharacter10Objects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Left");
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
-    if ( gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Right") ) {
-        isConditionTrue_0 = true;
-        gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i];
-        ++k;
-    }
-}
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Square_32sceneCode.GDMaleCharacter10Objects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Right");
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
-    if ( gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isUsingControl("Down") ) {
-        isConditionTrue_0 = true;
-        gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i];
-        ++k;
-    }
-}
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Square_32sceneCode.GDMaleCharacter10Objects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].setAnimationName("Walking Down");
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length;i<l;++i) {
-    if ( !(gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].getBehavior("TopDownMovement").isMoving()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[k] = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i];
-        ++k;
-    }
-}
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Square_32sceneCode.GDMaleCharacter10Objects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDMaleCharacter10Objects1[i].pauseAnimation();
-}
-}}
-
-}
-
+};gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -692,7 +913,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x97f2a8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xbad700(runtimeScene);
 
 }
 
@@ -700,7 +921,7 @@ gdjs.Square_32sceneCode.userFunc0x97f2a8(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x9bcdf0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xdfab58(runtimeScene);
 
 }
 
@@ -714,16 +935,10 @@ gdjs.Square_32sceneCode.userFunc0x9bcdf0(runtimeScene);
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-gdjs.copyArray(runtimeScene.getObjects("WideSideRectangleWood"), gdjs.Square_32sceneCode.GDWideSideRectangleWoodObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWoodObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-}
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
@@ -1039,16 +1254,10 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-gdjs.copyArray(runtimeScene.getObjects("WideSideRectangleWood_added_store"), gdjs.Square_32sceneCode.GDWideSideRectangleWood_95added_95storeObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595added_9595storeObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-}
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }}
@@ -1110,18 +1319,64 @@ gdjs.copyArray(runtimeScene.getObjects("popup3_white_background"), gdjs.Square_3
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("MaleCharacter10"), gdjs.Square_32sceneCode.GDMaleCharacter10Objects1);
-gdjs.copyArray(runtimeScene.getObjects("WhiteDoor"), gdjs.Square_32sceneCode.GDWhiteDoorObjects1);
+
+
+}
+
+
+{
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDMaleCharacter10Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+}
+
+}
+
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x8d9f30(runtimeScene);
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("WhiteDoor"), gdjs.Square_32sceneCode.GDWhiteDoorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "q");
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", true);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Square scene", -(560), -(440));
 }}
 
 }
@@ -1132,14 +1387,116 @@ if (isConditionTrue_0) {
 gdjs.Square_32sceneCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects1.length = 0;
-gdjs.Square_32sceneCode.GDMaleCharacter10Objects2.length = 0;
 gdjs.Square_32sceneCode.GDTextInputObjects1.length = 0;
 gdjs.Square_32sceneCode.GDTextInputObjects2.length = 0;
 gdjs.Square_32sceneCode.GDBlankEmoteMidObjects1.length = 0;
 gdjs.Square_32sceneCode.GDBlankEmoteMidObjects2.length = 0;
 gdjs.Square_32sceneCode.GDChatTextObjects1.length = 0;
 gdjs.Square_32sceneCode.GDChatTextObjects2.length = 0;
+gdjs.Square_32sceneCode.GDbody1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDbody1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair13Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair13Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair14Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair14Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair15Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair15Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair16Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair16Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair17Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair17Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair18Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair18Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair19Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair19Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair20Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair20Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair21Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair21Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair22Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair22Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair23Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair23Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair25Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair25Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair24Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair24Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair26Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair26Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair27Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair27Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair28Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair28Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair29Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair29Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair30Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair30Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair31Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair31Objects2.length = 0;
+gdjs.Square_32sceneCode.GDeye2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDeye2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDhair32Objects1.length = 0;
+gdjs.Square_32sceneCode.GDhair32Objects2.length = 0;
+gdjs.Square_32sceneCode.GDeye1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDeye1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDbody2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDbody2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDbody3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDbody3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDbody4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDbody4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDeye3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDeye3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDeye4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDeye4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDeye5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDeye5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDeye6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDeye6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDoutfit10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDoutfit10Objects2.length = 0;
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects1.length = 0;
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects2.length = 0;
 gdjs.Square_32sceneCode.GDWhiteDoorObjects1.length = 0;
@@ -1220,8 +1577,54 @@ gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects2.length = 0;
 gdjs.Square_32sceneCode.GDNewTextInput2Objects1.length = 0;
 gdjs.Square_32sceneCode.GDNewTextInput2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTileObjects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTileObjects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile22Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile22Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile21Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile21Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile20Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile20Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile19Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile19Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile18Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile18Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile17Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile17Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile16Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile16Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile15Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile15Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile14Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile14Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile13Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile13Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDGrassTile6Objects2.length = 0;
 
-gdjs.Square_32sceneCode.eventsList2(runtimeScene);
+gdjs.Square_32sceneCode.eventsList3(runtimeScene);
 
 return;
 
