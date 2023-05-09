@@ -6,5 +6,6 @@ import lombok.Getter;
 public class ProductUpdateDTO {
     private String name;
     private Long price;
+    private Long amount;
     private String info;
 }

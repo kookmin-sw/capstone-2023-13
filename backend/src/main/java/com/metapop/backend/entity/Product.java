@@ -29,19 +29,24 @@ public class Product {
     private Long price;
 
     @Column(nullable = false)
+    private Long amount;
+
+    @Column(nullable = false)
     private String info;
 
     @Builder
-    public Product(Store store, String name, Long price, String info){
+    public Product(Store store, String name, Long price, Long amount, String info){
         this.storeId = store;
         this.name = name;
         this.price = price;
+        this.amount = amount;
         this.info = info;
     }
 
     public void update(ProductUpdateDTO productUpdateDTO) {
         this.name = productUpdateDTO.getName();
         this.price = productUpdateDTO.getPrice();
+        this.amount = productUpdateDTO.getAmount();
         this.info = productUpdateDTO.getInfo();
     }
 }

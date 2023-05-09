@@ -9,6 +9,7 @@ public class ProductSaveDTO {
     private Long storeId;
     private String name;
     private Long price;
+    private Long amount;
     private String info;
 
     public Product toEntity(Store store) {
@@ -16,6 +17,7 @@ public class ProductSaveDTO {
                 .store(store)
                 .name(name)
                 .price(price)
+                .amount(amount)
                 .info(info)
                 .build();
     }
