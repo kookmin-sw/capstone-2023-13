@@ -21,54 +21,79 @@ const Logout = ({ onPopup }) => {
     }
 
 
+    // const isLogout = () => {
+    //     const response = axios.post(
+    //       'http://13.209.3.116:8080/stores/info',
+    //       {
+
+    //       },
+    //       {
+    //         headers: {
+    //         }
+    //       }
+    //     )
+    //       .then(function (response) {
+    //         console.log(JSON.stringify(response.data));
+    //         if (response.data) {
+    //             // logoutClick();
+    //         }
+
+
+    //       })
+    //       .catch(function (error) {
+    //         console.log(error);
+    //       });
+    //   }
+
     const isLogout = () => {
-        const response = axios.post(
-          'http://43.201.210.173:9000/users/logout',
-          {
-            
-          },
-          {
-            headers: {
+        let token = localStorage.getItem('login-token');
+        const response = axios.get(
+            'http://13.209.3.116:8080/stores/info',
+            {
+                headers: {
+                    'Authorization': `${token}`,
+                    'accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
             }
-          }
         )
-          .then(function (response) {
-            console.log(JSON.stringify(response.data));
-            if (response.data) {
-                // logoutClick();
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                console.log(JSON.stringify(response.data.id));
+                // if (response.data) {
+                //     localStorage.setItem('login-token', response.data);
+                //     loginClick();
+                // }
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
+
+
+                return (
+                    <styled.Container>
+                        <styled.FindWhiteBox>
+                            <styled.LogoutTitle>
+                                <styled.MetaIcon />
+                                <span>로그아웃</span>
+                            </styled.LogoutTitle>
+                            <styled.TextBox>
+                                로그아웃 하시겠습니까?
+                            </styled.TextBox>
+                            <styled.ButtonsDiv>
+                                <styled.CloseBtn onClick={closeClick}>
+                                    <span>닫기</span>
+                                </styled.CloseBtn>
+                                <styled.ConfirmBtn onClick={isLogout}>
+                                    <span>확인</span>
+                                </styled.ConfirmBtn>
+                            </styled.ButtonsDiv>
+                        </styled.FindWhiteBox>
+                    </styled.Container>
+                )
             }
-    
-    
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      }
-
-    
-
-
-    return (
-        <styled.Container>
-            <styled.FindWhiteBox>
-                <styled.LogoutTitle>
-                    <styled.MetaIcon />
-                    <span>로그아웃</span>
-                </styled.LogoutTitle>
-                <styled.TextBox>
-                    로그아웃 하시겠습니까?
-                </styled.TextBox>
-                <styled.ButtonsDiv>
-                    <styled.CloseBtn onClick={closeClick}>
-                        <span>닫기</span>
-                    </styled.CloseBtn>
-                    <styled.ConfirmBtn onClick={isLogout}>
-                        <span>확인</span>
-                    </styled.ConfirmBtn>
-                </styled.ButtonsDiv>
-            </styled.FindWhiteBox>
-        </styled.Container>
-    )
-}
 
 export default Logout;

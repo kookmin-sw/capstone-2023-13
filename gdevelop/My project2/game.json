@@ -28227,7 +28227,7 @@
                 "",
                 "",
                 "// 스토어 ID 확인",
-                "fetch(\"http://43.201.210.173:9000/stores/info\", {",
+                "fetch(\"http://13.209.3.116:8080/stores/info\", {",
                 "  method: \"GET\",",
                 "  headers: {",
                 "    'Authorization': `${userToken}`,",
@@ -28235,9 +28235,7 @@
                 "  },",
                 "})",
                 "  .then((response) => ",
-                "    console.log(response),",
-                "    // runtimeScene.getVariables().get(\"storeId\").setString(response),",
-                "    // console.log(\"store id is :\", storeId)",
+                "    console.log(response)",
                 "  )",
                 "",
                 "  ",
@@ -28271,7 +28269,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         }
