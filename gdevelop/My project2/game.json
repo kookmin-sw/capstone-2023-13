@@ -25963,7 +25963,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "runtimeScene.ws = new WebSocket(\"ws://43.201.210.173:9001/ws\");",
+                "runtimeScene.ws = new WebSocket(\"ws://52.79.164.196:9001/ws\");",
                 "const id = Math.floor(Math.random() * Math.floor(100000));",
                 "const channel = \"Store2\";",
                 "runtimeScene.user_id = id;",
@@ -26512,7 +26512,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "runtimeScene.ws = new WebSocket(\"ws://43.201.210.173:9001/ws\");",
+                "runtimeScene.ws = new WebSocket(\"ws://52.79.164.196:9001/ws\");",
                 "const id = Math.floor(Math.random() * Math.floor(100000));",
                 "const channel = \"Square1\";",
                 "runtimeScene.user_id = id;",
@@ -28233,6 +28233,7 @@
                 "    'Authorization': `${userToken}`,",
                 "    \"Content-Type\": \"application/json\",",
                 "  },",
+                "  ",
                 "})",
                 "  .then((response) => ",
                 "    console.log(response)",

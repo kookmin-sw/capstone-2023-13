@@ -119,7 +119,7 @@ gdjs.Untitled_32sceneCode.GDServerConnectedObjects1= [];
 gdjs.Untitled_32sceneCode.GDServerConnectedObjects2= [];
 
 
-gdjs.Untitled_32sceneCode.userFunc0xd2ab48 = function(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0xd8ea40 = function(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // WebSocket 객체 생성
@@ -205,7 +205,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0xd2ab48(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0xd8ea40(runtimeScene);
 
 }
 
