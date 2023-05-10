@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\82109\\Desktop\\4-1학기\\캡스톤\\gdevelop-export",
+    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/무제 폴더",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -24503,6 +24503,134 @@
         },
         {
           "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "ProductList_RegisterButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "상품등록",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "ProductRegister_FinishButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "완료",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
           "name": "CancelButton",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
@@ -24564,6 +24692,274 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "ProductList_CancelButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "ProductRegister_CancelButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductList_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "상품 리스트",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 25,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductRegister_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "상품 등록",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductRegister_ProductName",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "상품명",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductRegister_ProductPrice",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "가격",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "number",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductRegister_ProductQuantity",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "수량",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "number",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductRegister_ProductInfo",
+          "tags": "",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "상세 정보를 입력해주세요.",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false
+          }
         }
       ],
       "events": [
@@ -24580,6 +24976,20 @@
             "includeConfig": 0
           },
           "target": "Player multi(Store room)"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Receive Token"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Product Register"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -24637,56 +25047,6 @@
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "e"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"Popup Layer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "CancelButton",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Popup Layer\""
-              ]
             }
           ]
         }
@@ -24749,14 +25109,6 @@
           "gravityY": 9.8,
           "scaleX": 100,
           "scaleY": 100
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     },
@@ -25613,7 +25965,7 @@
               "inlineCode": [
                 "runtimeScene.ws = new WebSocket(\"ws://43.201.210.173:9001/ws\");",
                 "const id = Math.floor(Math.random() * Math.floor(100000));",
-                "const channel = \"Store0\";",
+                "const channel = \"Store2\";",
                 "runtimeScene.user_id = id;",
                 "runtimeScene.isCreated = false;",
                 "runtimeScene.delayedEvents = [];",
@@ -25627,7 +25979,7 @@
                 "",
                 "    const data = { ",
                 "        user_id : runtimeScene.user_id, ",
-                "        nickname: \"최보석\", ",
+                "        nickname: \"최혁태\", ",
                 "        channel_id : channel,",
                 "        custom : {",
                 "            body : Body,",
@@ -27643,6 +27995,285 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": true
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Store scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Product Register",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "BuyerSellerStatus",
+                "=",
+                "\"seller\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Receive Token"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "GreyTable",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product list(ver.seller)\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "판매자 - 상품리스트 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_RegisterButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product register\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductList_RegisterButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductList_CancelButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductList_Title",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "DohEmoteMidPopup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "판매자 - 상품 등록 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegister_FinishButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const productName = runtimeScene.getObjects(\"ProductRegister_ProductName\")[0];",
+                "const inputProductName = productName.getString();",
+                "",
+                "const productPrice = runtimeScene.getObjects(\"ProductRegister_ProductPrice\")[0];",
+                "const inputProductPrice = productPrice.getString();",
+                "",
+                "const productQuantity = runtimeScene.getObjects(\"ProductRegister_ProductQuantity\")[0];",
+                "const inputProductQuantity = productQuantity.getString();",
+                "",
+                "const productInfo = runtimeScene.getObjects(\"ProductRegister_ProductInfo\")[0];",
+                "const inputProductInfo = productInfo.getString();",
+                "",
+                "console.log(\"상품명:\", inputProductName);",
+                "console.log(\"상품가격:\", inputProductPrice);",
+                "console.log(\"상품수량:\", inputProductQuantity);",
+                "console.log(\"상품정보:\", inputProductInfo);",
+                "",
+                "",
+                "",
+                "",
+                "// // global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
+                "var storeId = runtimeScene.getVariables().get(\"storeId\");",
+                "",
+                "console.log(\"유저 토큰 : \", userToken);",
+                "",
+                "",
+                "// 스토어 ID 확인",
+                "fetch(\"http://43.201.210.173:9000/stores/info\", {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    \"Content-Type\": \"application/json\",",
+                "  },",
+                "})",
+                "  .then((response) => ",
+                "    console.log(response),",
+                "    // runtimeScene.getVariables().get(\"storeId\").setString(response),",
+                "    // console.log(\"store id is :\", storeId)",
+                "  )",
+                "",
+                "  ",
+                "",
+                "",
+                "",
+                "// 스토어 등록 호출 보내기",
+                "// fetch(\"http://43.201.210.173:9000/stores/register\", {",
+                "//   method: \"POST\",",
+                "//   headers: {",
+                "//     'Authorization': `${userToken}`,",
+                "//     \"Content-Type\": \"application/json\",",
+                "//   },",
+                "//   body: JSON.stringify({",
+                "//     userId : 4,",
+                "//     name : inputStoreName,",
+                "//     period : inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay,",
+                "//     info : inputStoreInfo,",
+                "//   }),",
+                "// })",
+                "//   .then((response) => ",
+                "//     console.log(response)",
+                "//   )",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ]
     }
@@ -44936,6 +45567,299 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.22336005893811484,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Store scene",
+      "name": "Popup product register",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 585,
+          "layer": "",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "b1d79bca-8e6e-4f90-b9dd-1f11f1864913",
+          "width": 843,
+          "x": 216,
+          "y": 89,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 76,
+          "layer": "",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "c3b382c3-4882-4c5b-a56c-5641dc52b7d3",
+          "width": 843,
+          "x": 216,
+          "y": 89,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "DohEmoteMidPopup",
+          "persistentUuid": "87616d02-1db9-4799-80a8-b0d975af9f0d",
+          "width": 76,
+          "x": 244,
+          "y": 101,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 47,
+          "layer": "",
+          "name": "ProductRegister_CancelButton",
+          "persistentUuid": "e0c4ac49-c5a9-4574-a5e0-e5b08c3ab5bc",
+          "width": 132,
+          "x": 742,
+          "y": 613,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "name": "storename",
+          "persistentUuid": "6f79e5ff-ced4-4506-9fe2-866680cd52b9",
+          "width": 1,
+          "x": 391,
+          "y": 373,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 38,
+          "layer": "",
+          "name": "ProductRegister_ProductName",
+          "persistentUuid": "d5998293-6416-48a1-9008-24182e988e96",
+          "width": 188,
+          "x": 346,
+          "y": 391,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 38,
+          "layer": "",
+          "name": "ProductRegister_ProductPrice",
+          "persistentUuid": "bb4e46e3-7536-498b-8735-2c1e25d5d3c2",
+          "width": 185,
+          "x": 347,
+          "y": 456,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ProductRegister_Title",
+          "persistentUuid": "30ec0fcb-e19f-4fe5-89c9-7a3e0f78d0c1",
+          "width": 0,
+          "x": 336,
+          "y": 112,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "ProductRegister_ProductQuantity",
+          "persistentUuid": "08446427-27cb-449a-a5a5-12d9531c5d22",
+          "width": 190,
+          "x": 344,
+          "y": 521,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 171,
+          "layer": "",
+          "name": "ProductRegister_ProductInfo",
+          "persistentUuid": "266f4dde-86b1-4e37-930e-27f5f8c12873",
+          "width": 386,
+          "x": 611,
+          "y": 391,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 47,
+          "layer": "",
+          "name": "ProductRegister_FinishButton",
+          "persistentUuid": "368015d1-3ec1-4be9-859d-b6708606efbf",
+          "width": 130,
+          "x": 887,
+          "y": 613,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.8141881203709918,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Store scene",
+      "name": "Popup product list(ver.seller)",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 543,
+          "layer": "",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "7723b443-01c3-4707-a97a-26e5a9ed1fa4",
+          "width": 888,
+          "x": 202,
+          "y": 94,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "f34d851b-b90e-401f-a5e9-a6a4319b6b2a",
+          "width": 888,
+          "x": 202,
+          "y": 95,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 62,
+          "layer": "",
+          "name": "DohEmoteMidPopup",
+          "persistentUuid": "5873cebf-cf33-48d0-a720-e276829a1c16",
+          "width": 59,
+          "x": 219,
+          "y": 108,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ProductList_Title",
+          "persistentUuid": "587e6785-f58d-4692-bb13-2fc924625d0a",
+          "width": 0,
+          "x": 294,
+          "y": 119,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 52,
+          "layer": "",
+          "name": "ProductList_RegisterButton",
+          "persistentUuid": "3e84b777-dba5-495f-b088-3b7f024fd00d",
+          "width": 147,
+          "x": 905,
+          "y": 554,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 51,
+          "layer": "",
+          "name": "ProductList_CancelButton",
+          "persistentUuid": "0670e85a-9d20-41fc-9181-8da92d50fc8b",
+          "width": 141,
+          "x": 745,
+          "y": 555,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.7370816317994034,
         "windowMask": false
       }
     }
