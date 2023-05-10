@@ -42,5 +42,4 @@ public class Store {
         this.period = storeUpdateDTO.getPeriod();
         this.info = storeUpdateDTO.getInfo();
     }
-
 }

@@ -22,7 +22,6 @@ import java.util.Date;
 public class StoreController {
 
     private String secretKey = "MetaPop";
-    Date now = new Date();
 
     @Autowired
     private StoreService storeService;
@@ -34,7 +33,7 @@ public class StoreController {
     public String registration(@RequestBody StoreSaveDTO storeSaveDTO, @RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.registration(user.getId(), storeSaveDTO);
+        return storeService.registration(user, storeSaveDTO);
     }
 
     @Operation(summary = "", description = "상점 정보 조회 API")

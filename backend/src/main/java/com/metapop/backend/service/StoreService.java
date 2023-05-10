@@ -18,10 +18,8 @@ public class StoreService {
 
     private final StoreRepository storeRepository;
     private final UserRepository userRepository;
-    private final UserService userService;
 
-    public String registration(Long user_id, StoreSaveDTO storeSaveDTO){
-        User user = userRepository.findById(user_id).orElseThrow();
+    public String registration(User user, StoreSaveDTO storeSaveDTO){
         Store Exist = storeRepository.findByOwner(user);
         if(Exist != null) {
             return "해당 아이디는 이미 상점이 존재합니다.";
