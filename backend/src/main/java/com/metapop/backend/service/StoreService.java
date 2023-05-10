@@ -2,17 +2,13 @@ package com.metapop.backend.service;
 
 import com.metapop.backend.dto.StoreDTO.StoreSaveDTO;
 import com.metapop.backend.dto.StoreDTO.StoreUpdateDTO;
-import com.metapop.backend.dto.UserDTO.TokenDTO;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.StoreRepository;
 import com.metapop.backend.repository.UserRepository;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
 
 @Service
