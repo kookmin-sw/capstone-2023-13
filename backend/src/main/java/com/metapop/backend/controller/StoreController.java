@@ -13,8 +13,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
-
 @Tag(name = "store", description = "상점 API")
 @RestController
 @RequestMapping("stores")
@@ -41,7 +39,7 @@ public class StoreController {
     public Store info(@RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.info(user.getId());
+        return storeService.info(user);
     }
 
     @Operation(summary = "", description = "상점 수정 API")

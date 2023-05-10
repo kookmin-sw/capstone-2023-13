@@ -30,8 +30,7 @@ public class StoreService {
         }
     }
 
-    public Store info(Long user_id) {
-        User user = userRepository.findById(user_id).orElseThrow();
+    public Store info(User user) {
         Store store = storeRepository.findByOwner(user);
         return store;
     }

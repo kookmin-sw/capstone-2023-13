@@ -29,4 +29,9 @@ public class UserCustomizingService {
             return ResponseEntity.ok("유저 커스터마이징 등록 완료");
         }
     }
+
+    public UserCustomizing info(User user) {
+        UserCustomizing userCustomizing = userCustomizingRepository.findByPlayer(user);
+        return userCustomizing;
+    }
 }
