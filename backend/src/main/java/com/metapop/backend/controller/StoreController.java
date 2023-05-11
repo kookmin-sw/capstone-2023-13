@@ -2,7 +2,6 @@ package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.StoreDTO.StoreSaveDTO;
 import com.metapop.backend.dto.StoreDTO.StoreUpdateDTO;
-import com.metapop.backend.dto.UserDTO.TokenDTO;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
@@ -14,9 +13,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
-import java.util.Date;
-
 @Tag(name = "store", description = "상점 API")
 @RestController
 @RequestMapping("stores")
@@ -24,7 +20,6 @@ import java.util.Date;
 public class StoreController {
 
     private String secretKey = "MetaPop";
-    Date now = new Date();
 
     @Autowired
     private StoreService storeService;
@@ -33,41 +28,33 @@ public class StoreController {
 
     @Operation(summary = "", description = "상점 등록 API")
     @PostMapping("/register")
-    public String registration(@RequestBody StoreSaveDTO storeSaveDTO, @RequestHeader("Authorization") String jwtToken, HttpServletResponse response) {
-        response.setHeader("Access-Controll-Allow-Origin", "*");
-        response.setHeader("Access-Controll-Allow-Headers", "*");
+    public String registration(@RequestBody StoreSaveDTO storeSaveDTO, @RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.registration(user.getId(), storeSaveDTO);
+        return storeService.registration(user, storeSaveDTO);
     }
 
     @Operation(summary = "", description = "상점 정보 조회 API")
     @GetMapping("/info")
-    public Store info(@RequestHeader("Authorization") String jwtToken, HttpServletResponse response) {
-        response.setHeader("Access-Controll-Allow-Origin", "*");
-        response.setHeader("Access-Controll-Allow-Headers", "*");
+    public Store info(@RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.info(user.getId());
+        return storeService.info(user);
     }
 
     @Operation(summary = "", description = "상점 수정 API")
     @PutMapping("/update")
-    public String update(@RequestBody StoreUpdateDTO storeUpdateDTO, @RequestHeader("Authorization") String jwtToken, HttpServletResponse response) {
-        response.setHeader("Access-Controll-Allow-Origin", "*");
-        response.setHeader("Access-Controll-Allow-Headers", "*");
+    public String update(@RequestBody StoreUpdateDTO storeUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.update(user.getId(), storeUpdateDTO);
+        return storeService.update(user, storeUpdateDTO);
     }
 
     @Operation(summary = "", description = "상점 삭제 API")
     @DeleteMapping("/remove")
-    public String remove(@RequestHeader("Authorization") String jwtToken, HttpServletResponse response) {
-        response.setHeader("Access-Controll-Allow-Origin", "*");
-        response.setHeader("Access-Controll-Allow-Headers", "*");
+    public String remove(@RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.delete(user.getId());
+        return storeService.delete(user);
     }
 }
