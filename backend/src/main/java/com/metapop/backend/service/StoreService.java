@@ -35,8 +35,7 @@ public class StoreService {
         return store;
     }
 
-    public String update(Long user_id, StoreUpdateDTO storeUpdateDTO) {
-        User user = userRepository.findById(user_id).orElseThrow();
+    public String update(User user, StoreUpdateDTO storeUpdateDTO) {
         Store store = storeRepository.findByOwner(user);
         store.update(storeUpdateDTO);
         return "수정 완료";

@@ -1,6 +1,7 @@
 package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.UserCustomizingDTO.UserCustomizingSaveDTO;
+import com.metapop.backend.dto.UserCustomizingDTO.UserCustomizingUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.entity.UserCustomizing;
 import com.metapop.backend.repository.UserRepository;
@@ -41,5 +42,13 @@ public class UserCustomizingController {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
         return userCustomizingService.info(user);
+    }
+
+    @Operation(summary = "", description = "유저 커스터마이징 수정 API")
+    @PutMapping("/update")
+    public ResponseEntity<String> update(@RequestBody UserCustomizingUpdateDTO userCustomizingUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return userCustomizingService.update(user, userCustomizingUpdateDTO);
     }
 }

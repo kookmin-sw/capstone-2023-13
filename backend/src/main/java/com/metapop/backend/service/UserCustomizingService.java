@@ -1,6 +1,7 @@
 package com.metapop.backend.service;
 
 import com.metapop.backend.dto.UserCustomizingDTO.UserCustomizingSaveDTO;
+import com.metapop.backend.dto.UserCustomizingDTO.UserCustomizingUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.entity.UserCustomizing;
 import com.metapop.backend.repository.UserCustomizingRepository;
@@ -18,8 +19,6 @@ public class UserCustomizingService {
 
     private final UserCustomizingRepository userCustomizingRepository;
 
-    private final UserRepository userRepository;
-
     public ResponseEntity<String> registration(User user, UserCustomizingSaveDTO userCustomizingSaveDTO){
         UserCustomizing Exist = userCustomizingRepository.findByPlayer(user);
         if(Exist != null) {
@@ -33,5 +32,11 @@ public class UserCustomizingService {
     public UserCustomizing info(User user) {
         UserCustomizing userCustomizing = userCustomizingRepository.findByPlayer(user);
         return userCustomizing;
+    }
+
+    public ResponseEntity<String> update(User user, UserCustomizingUpdateDTO userCustomizingUpdateDTO) {
+        UserCustomizing userCustomizing = userCustomizingRepository.findByPlayer(user);
+        userCustomizing.update(userCustomizingUpdateDTO);
+        return ResponseEntity.ok("수정 완료");
     }
 }

@@ -1,5 +1,6 @@
 package com.metapop.backend.entity;
 
+import com.metapop.backend.dto.UserCustomizingDTO.UserCustomizingUpdateDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -36,5 +37,11 @@ public class UserCustomizing {
         this.custombody = custombody;
         this.customhair = customhair;
         this.customeye = customeye;
+    }
+
+    public void update(UserCustomizingUpdateDTO userCustomizingUpdateDTO) {
+        this.custombody = userCustomizingUpdateDTO.getCustombody();
+        this.customhair = userCustomizingUpdateDTO.getCustomhair();
+        this.customeye = userCustomizingUpdateDTO.getCustomeye();
     }
 }

@@ -47,7 +47,7 @@ public class StoreController {
     public String update(@RequestBody StoreUpdateDTO storeUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.update(user.getId(), storeUpdateDTO);
+        return storeService.update(user, storeUpdateDTO);
     }
 
     @Operation(summary = "", description = "상점 삭제 API")
