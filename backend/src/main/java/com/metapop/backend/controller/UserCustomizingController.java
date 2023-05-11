@@ -51,4 +51,12 @@ public class UserCustomizingController {
         User user = userRepository.findByEmail(claims.getSubject());
         return userCustomizingService.update(user, userCustomizingUpdateDTO);
     }
+
+    @Operation(summary = "", description = "유저 커스터마이징 삭제 API")
+    @DeleteMapping("/remove")
+    public ResponseEntity<String> remove(@RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return userCustomizingService.delete(user);
+    }
 }

@@ -17,7 +17,6 @@ import javax.transaction.Transactional;
 public class StoreService {
 
     private final StoreRepository storeRepository;
-    private final UserRepository userRepository;
 
     public String registration(User user, StoreSaveDTO storeSaveDTO){
         Store Exist = storeRepository.findByOwner(user);
@@ -41,8 +40,7 @@ public class StoreService {
         return "수정 완료";
     }
 
-    public String delete(Long user_id) {
-        User user = userRepository.findById(user_id).orElseThrow();
+    public String delete(User user) {
         Store store = storeRepository.findByOwner(user);
         if (store == null){
             return "등록되어 있는 상점이 존재하지 않습니다.";
@@ -51,6 +49,5 @@ public class StoreService {
             storeRepository.delete(store);
             return "삭제 완료";
         }
-
     }
 }

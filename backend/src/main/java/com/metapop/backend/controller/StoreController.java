@@ -55,6 +55,6 @@ public class StoreController {
     public String remove(@RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return storeService.delete(user.getId());
+        return storeService.delete(user);
     }
 }

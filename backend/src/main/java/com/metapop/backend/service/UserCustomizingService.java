@@ -5,7 +5,6 @@ import com.metapop.backend.dto.UserCustomizingDTO.UserCustomizingUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.entity.UserCustomizing;
 import com.metapop.backend.repository.UserCustomizingRepository;
-import com.metapop.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -38,5 +37,16 @@ public class UserCustomizingService {
         UserCustomizing userCustomizing = userCustomizingRepository.findByPlayer(user);
         userCustomizing.update(userCustomizingUpdateDTO);
         return ResponseEntity.ok("수정 완료");
+    }
+
+    public ResponseEntity<String> delete(User user) {
+        UserCustomizing userCustomizing = userCustomizingRepository.findByPlayer(user);
+        if (userCustomizing == null){
+            return ResponseEntity.status(400).body("등록되어 있는 상점이 존재하지 않습니다.");
+        }
+        else{
+            userCustomizingRepository.delete(userCustomizing);
+            return ResponseEntity.ok("삭제 완료");
+        }
     }
 }
