@@ -7,6 +7,6 @@ files:
     overwrite: yes
 
 hooks:
-  ApllicationStart:
-    - location: /home/ec2-user/build.sh
+  ApplicationStart:
+    - location: build.sh
       runas: root
