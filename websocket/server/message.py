@@ -56,6 +56,13 @@ class Message:
         }
     @classmethod
     async def broadcast(cls, app, channel, message):
+        disconnet_user = list()
         for user, ws in app['websockets'][channel].items():
-            await ws.send_json(message)
+            try:
+                await ws.send_json(message)
+            except ConnectionResetError:
+                app['logging'].disconnect_logging(user, "UNKOWN", channel)
+                disconnet_user.append(user)
+        for user in disconnet_user:
+            del app['websockets'][channel][user]
     
