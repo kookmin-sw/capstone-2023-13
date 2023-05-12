@@ -25,9 +25,9 @@ async def websocket_handler(request):
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
-    await ws.send_json(M.connect(user, 200))
-    log.connect_logging(200, user, nickname, channel, custom)
     request.app['websockets'][channel][user] = ws
+    await ws.send_json(M.connect(user, 200, custom))
+    log.connect_logging(200, user, nickname, channel, custom)
     await M.broadcast(request.app,
                       channel,
                       M.action(user, custom, "down", X, Y, Z))
@@ -52,8 +52,25 @@ async def websocket_handler(request):
                 await M.broadcast(request.app,
                                   channel,
                                   M.chat(user, nickname, msg))
+            elif type == 'connect':
+                del request.app['websockets'][channel][user]
+                req = msg.json()
+                channel = req.get('channel_id')
+                X = req.get('X')
+                Y = req.get('Y')
+                Z = req.get('Z')
+                request.app['websockets'][channel][user] = ws
+                await ws.send_json(M.connect(user, 200, custom))
+                log.connect_logging(200, user, nickname, channel, custom)
+                await M.broadcast(request.app,
+                                  channel,
+                                  M.action(user, custom, "down", X, Y, Z))
+                await M.broadcast(request.app,
+                                  channel,
+                                  M.chat("SERVER", "SERVER", f"[{user}] enter chat room"))
             else:
                 await ws.send_json(M.connect(user, 400))
+
     del request.app['websockets'][channel][user]
     log.disconnect_logging(user, nickname, channel)
     return ws
