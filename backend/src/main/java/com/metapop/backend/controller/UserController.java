@@ -99,13 +99,14 @@ public class UserController {
     @Operation(summary = "", description = "비밀번호 찾기 API")
     @Transactional
     @PostMapping("/findpw")
-    public ResponseEntity<?> findPw(@RequestBody FindPWDTO findPWDTO){
-        User user = userRepository.findByEmail(findPWDTO.getEmail());
+    public ResponseEntity<String> findPw(@RequestBody FindPWDTO findPWDTO){
         if(userService.findPassword(findPWDTO)) {
-            return ResponseEntity.ok(user.getNickname());
+            MailDTO mailDTO = userService.createMailAndChangePassword(findPWDTO.getEmail());
+            userService.mailSend(mailDTO);
+            return ResponseEntity.ok("임시 비밀번호 메일 전송, 변경 완료");
         }
         else{
-            return ResponseEntity.ok("이메일과 이름이 일치하지 않습니다.");
+            return ResponseEntity.status(400).body("이메일과 이름이 일치하지 않습니다.");
         }
     }
 
