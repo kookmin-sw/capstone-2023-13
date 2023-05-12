@@ -90,22 +90,25 @@ public class UserController {
     }
 
     @Operation(summary = "", description = "유저 정보 수정 API")
-    @PutMapping("/update/{user_id}")
-    public ResponseEntity<?> updateInfo(@PathVariable Long user_id, @RequestBody UserUpdateDTO userUpdateDTO) {
-        User user = userService.updateUserInfo(user_id, userUpdateDTO);
+    @PutMapping("/update")
+    public ResponseEntity<?> updateInfo(@RequestBody UserUpdateDTO userUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        userService.updateUserInfo(user, userUpdateDTO);
         return ResponseEntity.ok(user);
     }
 
     @Operation(summary = "", description = "비밀번호 찾기 API")
     @Transactional
     @PostMapping("/findpw")
-    public ResponseEntity<?> findPw(@RequestBody FindPWDTO findPWDTO){
-        User user = userRepository.findByEmail(findPWDTO.getEmail());
+    public ResponseEntity<String> findPw(@RequestBody FindPWDTO findPWDTO){
         if(userService.findPassword(findPWDTO)) {
-            return ResponseEntity.ok(user.getNickname());
+            MailDTO mailDTO = userService.createMailAndChangePassword(findPWDTO.getEmail());
+            userService.mailSend(mailDTO);
+            return ResponseEntity.ok("임시 비밀번호 메일 전송, 변경 완료");
         }
         else{
-            return ResponseEntity.ok("이메일과 이름이 일치하지 않습니다.");
+            return ResponseEntity.status(400).body("이메일과 이름이 일치하지 않습니다.");
         }
     }
 
