@@ -56,8 +56,7 @@ public class UserService implements UserDetailsService {
         }
     }
 
-    public User updateUserInfo(Long id, UserUpdateDTO userUpdateDTO) {
-        User user = userRepository.findById(id).orElseThrow();
+    public User updateUserInfo(User user, UserUpdateDTO userUpdateDTO) {
         user.update(userUpdateDTO);
         return user;
     }
