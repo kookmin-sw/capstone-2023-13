@@ -47,18 +47,15 @@ async def websocket_handler(request):
                 await M.broadcast(request.app,
                                   channel,
                                   M.action(user, custom, direction, X, Y, Z))
-                log.action_logging(user, nickname, channel, direction, X, Y, Z)
             elif type == 'chat':
                 msg = req.get('msg')
                 await M.broadcast(request.app,
                                   channel,
                                   M.chat(user, nickname, msg))
-                log.chat_logging(user, nickname, channel, msg)
             else:
                 await ws.send_json(M.connect(user, 400))
     del request.app['websockets'][channel][user]
     log.disconnect_logging(user, nickname, channel)
-    await ws.close()
     return ws
 
 def router():

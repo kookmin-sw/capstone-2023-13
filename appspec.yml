@@ -8,6 +8,5 @@ files:
 
 hooks:
   ApllicationStart:
-    - location: build.sh
-      timeout: 60
+    - location: /home/ec2-user/build.sh
       runas: root
