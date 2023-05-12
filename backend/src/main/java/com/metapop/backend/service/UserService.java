@@ -2,6 +2,7 @@ package com.metapop.backend.service;
 
 import com.metapop.backend.dto.UserDTO.FindPWDTO;
 import com.metapop.backend.dto.UserDTO.MailDTO;
+import com.metapop.backend.dto.UserDTO.SignUpDTO;
 import com.metapop.backend.dto.UserDTO.UserUpdateDTO;
 import com.metapop.backend.entity.User;
 import com.metapop.backend.repository.UserRepository;
@@ -24,14 +25,8 @@ public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final JavaMailSender mailSender;
 
-    public void join(User user) {
-        userRepository.save(user);
-
-        String password = user.getPassword();
-
-        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        String encodedPassword = passwordEncoder.encode(password);
-        user.setPassword(encodedPassword);
+    public void join(SignUpDTO signUpDTO) {
+        userRepository.save(signUpDTO.toEntity());
     }
 
     public boolean isEmailDuplicate(String email) {
