@@ -27,3 +27,6 @@ class Logging:
 
     def action_logging(self, user_id, nickname, channel_id, direction, X, Y, Z):
         self.logger.debug(self.format('action', user_id, nickname, channel_id, f"{direction}, {X}, {Y}, {Z}"))
+
+    def basic_logging(self, msg):
+        self.logger.debug(msg + "\n")
