@@ -83,9 +83,10 @@ public class UserController {
     }
 
     @Operation(summary = "", description = "유저 정보 조회 API")
-    @GetMapping("/info/{user_id}")
-    public Optional<User> info(@PathVariable Long user_id) {
-        Optional<User> user = userRepository.findById(user_id);
+    @GetMapping("/info")
+    public User info(@RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
         return user;
     }
 
