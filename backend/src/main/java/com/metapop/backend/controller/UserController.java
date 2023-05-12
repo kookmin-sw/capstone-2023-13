@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
 import java.util.Date;
-import java.util.Optional;
 
 @Tag(name = "user", description = "유저 API")
 @RestController
@@ -37,11 +36,11 @@ public class UserController {
 
     @Operation(summary = "", description = "회원가입 API")
     @PostMapping("/signup")
-    public ResponseEntity<String> join(@RequestBody User user) {
-        if(userService.isEmailDuplicate(user.getEmail())) {
+    public ResponseEntity<String> join(@RequestBody SignUpDTO signUpDTO) {
+        if(userService.isEmailDuplicate(signUpDTO.getEmail())) {
             return ResponseEntity.status(400).body("Email already exists");
         }
-        userService.join(user);
+        userService.join(signUpDTO);
         return ResponseEntity.ok("Join Success!");
     }
 
