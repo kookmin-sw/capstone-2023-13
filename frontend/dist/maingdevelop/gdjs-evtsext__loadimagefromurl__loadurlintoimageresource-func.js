@@ -1,31 +1,35 @@
 
-if (typeof gdjs.evtsExt__WebSocketClient__FinalizeEvent !== "undefined") {
-  gdjs.evtsExt__WebSocketClient__FinalizeEvent.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource !== "undefined") {
+  gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__WebSocketClient__FinalizeEvent = {};
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource = {};
 
 
-gdjs.evtsExt__WebSocketClient__FinalizeEvent.userFunc0x105ac88 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0x10a9b78 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-gdjs.evtTools.wsClient.events.pop();
+runtimeScene
+    .getGame()
+    .getImageManager()
+    .getPIXITexture(eventsFunctionContext.getArgument("Resource"))
+    .baseTexture = PIXI.BaseTexture.from(eventsFunctionContext.getArgument("URL"));
 
 };
-gdjs.evtsExt__WebSocketClient__FinalizeEvent.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__WebSocketClient__FinalizeEvent.userFunc0x105ac88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0x10a9b78(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__WebSocketClient__FinalizeEvent.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.func = function(runtimeScene, URL, Resource, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -70,15 +74,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
+if (argName === "URL") return URL;
+if (argName === "Resource") return Resource;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__WebSocketClient__FinalizeEvent.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.eventsList0(runtimeScene, eventsFunctionContext);
 
 return;
 }
 
-gdjs.evtsExt__WebSocketClient__FinalizeEvent.registeredGdjsCallbacks = [];
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.registeredGdjsCallbacks = [];

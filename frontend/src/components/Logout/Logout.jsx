@@ -21,55 +21,55 @@ const Logout = ({ onPopup }) => {
     }
 
 
-    // const isLogout = () => {
-    //     const response = axios.post(
-    //       'http://13.209.3.116:8080/stores/info',
-    //       {
-
-    //       },
-    //       {
-    //         headers: {
-    //         }
-    //       }
-    //     )
-    //       .then(function (response) {
-    //         console.log(JSON.stringify(response.data));
-    //         if (response.data) {
-    //             // logoutClick();
-    //         }
-
-
-    //       })
-    //       .catch(function (error) {
-    //         console.log(error);
-    //       });
-    //   }
-
     const isLogout = () => {
-        let token = localStorage.getItem('login-token');
-        const response = axios.get(
-            'http://13.209.3.116:8080/stores/info',
-            {
-                headers: {
-                    'Authorization': `${token}`,
-                    'accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            }
-        )
-            .then(function (response) {
-                console.log(JSON.stringify(response.data));
-                console.log(JSON.stringify(response.data.id));
-                // if (response.data) {
-                //     localStorage.setItem('login-token', response.data);
-                //     loginClick();
-                // }
+        const response = axios.post(
+          'http://13.209.3.116:8080/stores/info',
+          {
 
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
+          },
+          {
+            headers: {
+            }
+          }
+        )
+          .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            if (response.data) {
+                // logoutClick();
+            }
+
+
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+
+    // const isLogout = () => {
+    //     let token = localStorage.getItem('login-token');
+    //     const response = axios.get(
+    //         'http://43.201.210.173:8080/stores/info',
+    //         {
+    //             headers: {
+    //                 'Authorization': `${token}`,
+    //                 'accept': 'application/json',
+    //                 'Content-Type': 'application/json'
+    //             }
+    //         }
+    //     )
+    //         .then(function (response) {
+    //             console.log(JSON.stringify(response.data));
+    //             console.log(JSON.stringify(response.data.id));
+    //             // if (response.data) {
+    //             //     localStorage.setItem('login-token', response.data);
+    //             //     loginClick();
+    //             // }
+
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         });
+    // }
 
 
 
