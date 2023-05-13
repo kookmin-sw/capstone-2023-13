@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 function LoginBox({ onPage }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loginError, setLoginError] = useState(false);
 
   const onEmailHandler = (e) => {
     setEmail(e.target.value);
@@ -36,10 +37,12 @@ function LoginBox({ onPage }) {
         console.log("window: ", window.reactUserToken);
 
         loginClick();
+        setLoginError(false);
       }
     }
     catch (error) {
       console.log(error);
+      setLoginError(true);
     }
   }
 
@@ -73,10 +76,15 @@ function LoginBox({ onPage }) {
       <div className="inputDiv">
         <div className="labelDiv">비밀번호</div>
         <input className="inputBox" type="password" value={password} onChange={onPasswordHandler} />
+        {loginError && (
+          <div style={{ color: "red", marginTop: "5px", textAlign: "left", marginLeft: "90px"}}>
+            비밀번호가 틀렸습니다.
+          </div>
+        )}
       </div>
       <div className="maintainDiv">
-        <input className="checkStyle" type="checkbox"></input>
-        <label className="checkLabel">로그인 유지</label>
+        {/* <input className="checkStyle" type="checkbox"></input>
+        <label className="checkLabel">로그인 유지</label> */}
         <a className="findDiv" onClick={findClick}>비밀번호 찾기</a>
       </div>
 
