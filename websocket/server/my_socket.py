@@ -33,7 +33,7 @@ async def websocket_handler(request):
                       M.action(user, custom, "down", X, Y, Z))
     await M.broadcast(request.app,
                       channel,
-                      M.chat("SERVER", "SERVER", f"[{user}] enter chat room"))
+                      M.chat("SERVER", "SERVER", f"[{nickname}] enter chat room"))
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
             req = msg.json()
