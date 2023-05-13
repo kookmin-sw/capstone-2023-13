@@ -774,10 +774,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle");
-}
-}{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchId(0);
+    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ResetState((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -849,6 +846,98 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateConte
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return;
+}
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext = {};
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1= [];
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle");
+}
+}{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchId(0);
+}
+}}
+
+}
+
+
+};
+
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetState = function(parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.ResetStateContext.eventsList0(runtimeScene, eventsFunctionContext);
 
 return;
 }

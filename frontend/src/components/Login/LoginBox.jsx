@@ -16,34 +16,6 @@ function LoginBox({ onPage }) {
     setPassword(e.target.value);
   }
 
-  // const isLogin = () => {
-  //   const response = axios.post(
-  //     'http://43.201.210.173:9000/users/login',
-  //     {
-  //       "email": email,
-  //       "password": password
-  //     },
-  //     {
-  //       headers: {
-  //         'accept': 'application/json',
-  //         'Content-Type': 'application/json'
-  //       }
-  //     }
-  //   )
-  //     .then(function (response) {
-  //       console.log(JSON.stringify(response.data));
-  //       console.log("login success");
-  //       if (response.data) {
-  //         localStorage.setItem('login-token', response.data);
-  //         loginClick();
-  //       }
-
-
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // }
 
   function handleLogin(token) {
     window.reactUserToken = token;
@@ -91,7 +63,7 @@ function LoginBox({ onPage }) {
     <div>
       <div className="mainTitleDiv">
         <div className="login-MetaIcon"></div>
-        <div className="TitleText">Meta-Pop</div>
+        <div className="TitleText">MetaPop</div>
       </div>
 
       <div className="inputDiv">

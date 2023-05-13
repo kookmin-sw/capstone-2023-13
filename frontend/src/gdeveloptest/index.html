@@ -12,6 +12,8 @@
 
 	<style>
 		body {
+			width: 100vw;
+			height: 100vh;
 			margin: 0;
 			padding: 0;
 			background-color: #000000;
@@ -108,21 +110,21 @@
     
 	<script>
 
-    (function() {
-        //Initialization
-        var game = new gdjs.RuntimeGame(gdjs.projectData, {});
+    // (function() {
+    //     //Initialization
+    //     var game = new gdjs.RuntimeGame(gdjs.projectData, {});
 
-        //Create a renderer
-        game.getRenderer().createStandardCanvas(document.body);
+    //     //Create a renderer
+    //     game.getRenderer().createStandardCanvas(document.body);
 
-        //Bind keyboards/mouse/touch events
-        game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+    //     //Bind keyboards/mouse/touch events
+    //     game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
 
-        //Load all assets and start the game
-        game.loadAllAssets(function() {
-            game.startGameLoop();
-        });
-    })();
+    //     //Load all assets and start the game
+    //     game.loadAllAssets(function() {
+    //         game.startGameLoop();
+    //     });
+    // })();
 
 	</script>
 </body>

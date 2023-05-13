@@ -237,11 +237,11 @@ gdjs.Square_32sceneCode.GDGrassTile6Objects1= [];
 gdjs.Square_32sceneCode.GDGrassTile6Objects2= [];
 
 
-gdjs.Square_32sceneCode.userFunc0xeb29e8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x10178b0 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://43.201.210.173:9001/ws");
+runtimeScene.ws = new WebSocket("ws://52.79.164.196:9001/ws");
 const id = Math.floor(Math.random() * Math.floor(100000));
-const channel = "Square1";
+const channel = "Square43";
 runtimeScene.user_id = id;
 runtimeScene.isCreated = false;
 runtimeScene.delayedEvents = [];
@@ -647,12 +647,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xeb29e8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x10178b0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xeb31d8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x1017970 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -684,7 +684,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0xeb3280 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1017a00 = function(runtimeScene) {
 "use strict";
 const channel = "Square1";
 
@@ -758,7 +758,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Square_32sceneCode.userFunc0x94bc50 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x100f110 = function(runtimeScene) {
 "use strict";
 const storeName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = storeName.getString();
@@ -838,15 +838,15 @@ gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x94bc50(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x100f110(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xeb2e50 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xd815b8 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
-var userToken = runtimeScene.getVariables().get("userToken");
+// var userToken = runtimeScene.getVariables().get("userToken");
 
 
 if(logintoken){
@@ -862,7 +862,7 @@ if(logintoken){
 };
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0x10bd940 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x115f668 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -881,7 +881,7 @@ gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x10bd940(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x115f668(runtimeScene);
 
 }
 
@@ -913,7 +913,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xeb31d8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1017970(runtimeScene);
 
 }
 
@@ -921,7 +921,7 @@ gdjs.Square_32sceneCode.userFunc0xeb31d8(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xeb3280(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1017a00(runtimeScene);
 
 }
 
@@ -1339,7 +1339,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xeb2e50(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd815b8(runtimeScene);
 
 }
 

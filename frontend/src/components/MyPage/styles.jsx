@@ -160,7 +160,7 @@ export const PasswordInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 100px; 
+    margin-top: 20px; 
 
     > span {
         &:nth-child(1) {
@@ -215,7 +215,7 @@ export const NameInfoInnerDiv = styled.div`
 
     > span {
         font-weight: 400;
-        font-size: 24px;
+        font-size: 20px;
     }
 `;
 
@@ -233,6 +233,33 @@ export const NicknameInfo = styled.div`
 `;
 
 export const NicknameInputBox = styled.input`
+    width: 372px;
+    height: 48px;
+    margin-top: 4px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+`;
+
+export const AddressInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 26px; 
+
+    > span:nth-child(1) {
+        font-weight: 600;
+        font-size: 24px;
+    }
+`;
+
+export const AddressInputBox = styled.input`
     width: 372px;
     height: 48px;
     margin-top: 4px;
@@ -352,6 +379,73 @@ export const CloseBtn = styled.button`
 
     > span {
         color: #141060;
+        font-weight: 600;
+        font-size: 20px;
+    }
+`;
+
+
+
+
+
+
+
+// --------------------모달창 코드 ---------------------
+export const Modal = styled.div`
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);;
+`;
+
+export const ModalContainer = styled.div`
+    width: 600px;
+    height: 366px;
+
+    background: rgba(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    opacity: 1;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ModalText = styled.div`
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 100px;
+`;
+
+export const ModalOkButton = styled.button`
+    width: 156px;
+    height: 50px;
+    background: #141060;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 93px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > span {
+        color: white;
         font-weight: 600;
         font-size: 20px;
     }
