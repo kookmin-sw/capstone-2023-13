@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import StartPage from './pages/StartPage/StartPage';
 import MainPage from './pages/MainPage/MainPage';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar/Sidebar';
 import FindPassword from "./pages/FindPassword/FindPassword";
 import EnterPassword from './components/EnterPassword/EnterPassword';
 import Logout from './components/Logout/Logout';
