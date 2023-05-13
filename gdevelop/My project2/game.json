@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\User\\Desktop\\4-1학기\\캡스톤\\메타팝 클론\\직통저장소\\capstone-2023-13\\frontend\\public\\sub",
+    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13 복사본 2/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -22444,9 +22444,9 @@
     },
     {
       "folded": true,
-      "name": "WebSocket",
+      "name": "WebSocketUrl",
       "type": "string",
-      "value": ""
+      "value": "ws://43.201.210.173:9001/ws"
     },
     {
       "folded": true,
@@ -22459,6 +22459,18 @@
       "name": "BuyerSellerStatus",
       "type": "string",
       "value": "\"seller\""
+    },
+    {
+      "folded": true,
+      "name": "UserId",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "UserNickname",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -22482,7 +22494,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690411,
+        "zoomFactor": 0.5468750000000014,
         "windowMask": false
       },
       "objectsGroups": [
@@ -25651,6 +25663,27 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Receive token event"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Character custom server"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Character custom event"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -25684,20 +25717,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Character custom event"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Character custom server"
         }
       ],
       "layers": [
@@ -28112,13 +28131,6 @@
           "target": "Store add go event"
         },
         {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Receive token event"
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -30530,12 +30542,12 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "runtimeScene.ws = new WebSocket(\"ws://43.201.210.173:9001/ws\");",
-                "const id = Math.floor(Math.random() * Math.floor(100000));",
-                "const channel = \"Store58\";",
-                "runtimeScene.user_id = id;",
-                "runtimeScene.isCreated = false;",
-                "runtimeScene.delayedEvents = [];",
+                "const url = runtimeScene.getGame().getVariables().get(\"WebSocketUrl\")._str;",
+                "runtimeScene.ws = new WebSocket(url);",
+                "",
+                "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
+                "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
+                "runtimeScene.channel_id = \"Store1\";",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
@@ -30546,8 +30558,8 @@
                 "",
                 "    const data = { ",
                 "        user_id : runtimeScene.user_id, ",
-                "        nickname: \"최혁태\", ",
-                "        channel_id : channel,",
+                "        nickname: runtimeScene.nickname, ",
+                "        channel_id : runtimeScene.channel_id,",
                 "        custom : {",
                 "            body : Body,",
                 "            eye : Eye,",
@@ -30562,6 +30574,7 @@
                 "    setTimeout(() => {",
                 "        runtimeScene.ws.send(JSON.stringify(data))",
                 "    }, 500);",
+                "",
                 "};",
                 "",
                 "runtimeScene.ws.onmessage = function (event) {",
@@ -30572,19 +30585,14 @@
                 "    }",
                 "    switch(e.type) {",
                 "        case \"connect\":",
-                "            console.log(e.status);",
+                "            newUser(e);",
                 "            break;",
                 "        case \"action\":",
                 "            if (e.dir === \"up\") {",
                 "                upMovement(e);",
                 "            }",
                 "            else if (e.dir === \"down\") {",
-                "                if (runtimeScene.isCreated === false) {",
-                "                    newUser(e);",
-                "                }",
-                "                else {",
-                "                    downMovement(e);",
-                "                }",
+                "                downMovement(e);",
                 "            }",
                 "            else if (e.dir === \"right\") {",
                 "                rightMovement(e);",
@@ -30625,9 +30633,6 @@
                 "            Z : 10,",
                 "        };",
                 "        runtimeScene.ws.send(JSON.stringify(update));",
-                "    }",
-                "    else {",
-                "        runtimeScene.isCreated = true;",
                 "    }",
                 "}",
                 "",
@@ -31079,12 +31084,12 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "runtimeScene.ws = new WebSocket(\"ws://43.201.210.173:9001/ws\");",
-                "const id = Math.floor(Math.random() * Math.floor(100000));",
-                "const channel = \"Square43\";",
-                "runtimeScene.user_id = id;",
-                "runtimeScene.isCreated = false;",
-                "runtimeScene.delayedEvents = [];",
+                "const url = runtimeScene.getGame().getVariables().get(\"WebSocketUrl\")._str;",
+                "runtimeScene.ws = new WebSocket(url);",
+                "",
+                "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
+                "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
+                "runtimeScene.channel_id = \"Square\";",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
@@ -31095,8 +31100,8 @@
                 "",
                 "    const data = { ",
                 "        user_id : runtimeScene.user_id, ",
-                "        nickname: \"최혁태\", ",
-                "        channel_id : channel,",
+                "        nickname: runtimeScene.nickname, ",
+                "        channel_id : runtimeScene.channel_id,",
                 "        custom : {",
                 "            body : Body,",
                 "            eye : Eye,",
@@ -31111,6 +31116,7 @@
                 "    setTimeout(() => {",
                 "        runtimeScene.ws.send(JSON.stringify(data))",
                 "    }, 500);",
+                "",
                 "};",
                 "",
                 "runtimeScene.ws.onmessage = function (event) {",
@@ -31121,19 +31127,14 @@
                 "    }",
                 "    switch(e.type) {",
                 "        case \"connect\":",
-                "            console.log(e.status);",
+                "            newUser(e);",
                 "            break;",
                 "        case \"action\":",
                 "            if (e.dir === \"up\") {",
                 "                upMovement(e);",
                 "            }",
                 "            else if (e.dir === \"down\") {",
-                "                if (runtimeScene.isCreated === false) {",
-                "                    newUser(e);",
-                "                }",
-                "                else {",
-                "                    downMovement(e);",
-                "                }",
+                "                downMovement(e);",
                 "            }",
                 "            else if (e.dir === \"right\") {",
                 "                rightMovement(e);",
@@ -31174,9 +31175,6 @@
                 "            Z : 10,",
                 "        };",
                 "        runtimeScene.ws.send(JSON.stringify(update));",
-                "    }",
-                "    else {",
-                "        runtimeScene.isCreated = true;",
                 "    }",
                 "}",
                 "",
@@ -31311,7 +31309,6 @@
                 "    eye.setAnimationName(\"Walking Up\");",
                 "    hair.setAnimationName(\"Walking Up\");",
                 "    outfit.setAnimationName(\"Walking Up\");",
-                "    console.log(\"Up\");",
                 "    movement(event);",
                 "}",
                 "",
@@ -31480,7 +31477,8 @@
                 "    else {",
                 "        console.log('WebSocket is not connected.');",
                 "    }",
-                "}"
+                "}",
+                ""
               ],
               "parameterObjects": "",
               "useStrict": true,
@@ -32289,23 +32287,52 @@
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
                 "var logintoken = localStorage.getItem('login-token');",
-                "// var userToken = runtimeScene.getVariables().get(\"userToken\");",
-                "",
                 "",
                 "if(logintoken){",
-                "    runtimeScene.getVariables().get(\"userToken\").setString(logintoken);",
+                "  runtimeScene.getGame().getVariables().get(\"userToken\").setString(logintoken);",
                 "}",
                 "",
+                "console.log(\"token : \", runtimeScene.getGame().getVariables().get(\"userToken\")._str);",
                 "",
-                "//console.log(\"변수 값 : \", userToken._str);",
-                "// console.log(\"Gdevelop received token from react: \", logintoken);",
+                "//global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                 "",
+                "//유저 정보 확인",
+                "var userInfoRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
                 "",
+                "async function getUserInfo(userInfoRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/users/info\", userInfoRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      runtimeScene.getGame().getVariables().get(\"UserId\").setString(data.email);",
+                "      runtimeScene.getGame().getVariables().get(\"UserNickname\").setString(data.nickname);",
+                "      console.log(runtimeScene.getGame().getVariables().get(\"UserId\")._str);",
+                "      console.log(runtimeScene.getGame().getVariables().get(\"UserNickname\")._str);",
+                "",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getUserInfo(userInfoRequest);",
                 ""
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         }
@@ -38990,41 +39017,46 @@
                 "console.log(\"userEye\", userEye);",
                 "console.log(\"userHair\", userHair);",
                 "console.log(\"userOutfit\", userOutfit);",
-                "",
-                "",
                 "    ",
-                "  // // global 변수에 저장되어있는 토큰 가져오기",
-                "  var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
-                "  var storeId = runtimeScene.getVariables().get(\"storeId\");",
+                "// // global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
+                "var storeId = runtimeScene.getVariables().get(\"storeId\")._value;",
                 "",
-                "  // console.log(\"유저 토큰 : \", userToken);",
-                "",
-                "  fetch(\"http://43.201.210.173:8080/usercustomizings/register\", {",
+                "// console.log(\"유저 토큰 : \", userToken);",
+                "async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/usercustomizings/register\", {",
                 "      method: \"POST\",",
                 "      headers: {",
-                "        'Authorization': `${userToken}`,",
+                "        'Authorization': userToken,",
                 "        \"Content-Type\": \"application/json\",",
                 "      },",
                 "      body: JSON.stringify({",
-                "        custombody : userBody,",
-                "        customeye : userEye,",
-                "        customhair : userHair,",
-                "        customoutfit : userOutfit,",
+                "        custombody: userBody,",
+                "        customeye: userEye,",
+                "        customhair: userHair,",
+                "        customoutfit: userOutfit,",
                 "      }),",
-                "    })",
-                "    .then((response) => {",
-                "    console.log(response);",
-                "    runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(1);",
-                "  })",
-                "  .catch((error) => {",
-                "    console.log('에러 발생', error);",
-                "    const success = runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(0);",
-                "  });",
-                "// }"
+                "    });",
+                "    if (response.ok) {",
+                "      console.log(response);",
+                "      runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(1);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "      runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(0);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "    runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(0);",
+                "  }",
+                "}",
+                "",
+                "updateCustom(userToken, userBody, userEye, userHair, userOutfit);",
+                ""
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
