@@ -51,7 +51,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/stores/**").authenticated()
                 .antMatchers("/products/**").authenticated()
                 .antMatchers("/orders/**").authenticated()
-                .antMatchers("/usercustomizings/**").authenticated()
                 .antMatchers("/**").permitAll()
                 .and()
                 .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
