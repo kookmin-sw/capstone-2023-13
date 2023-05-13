@@ -30579,7 +30579,7 @@
                 "",
                 "runtimeScene.ws.onmessage = function (event) {",
                 "    const e = JSON.parse(event.data);",
-                "    console.log(\"Full : \",e);",
+                "    //console.log(\"Full : \",e);",
                 "    if (e.msg === \"exit\\n\") {",
                 "        disconnectWebSocket(runtimeScene);",
                 "    }",
@@ -30652,7 +30652,7 @@
                 "",
                 "    var user;",
                 "    user = runtimeScene.createObject(\"body\" + Body);",
-                "    console.log(\"Create User : \",e);",
+                "    //console.log(\"Create User : \",e);",
                 "    ",
                 "    user.setX(e.X);",
                 "    user.setY(e.Y);",
@@ -30767,7 +30767,6 @@
                 "    eye.setAnimationName(\"Walking Up\");",
                 "    hair.setAnimationName(\"Walking Up\");",
                 "    outfit.setAnimationName(\"Walking Up\");",
-                "    console.log(\"Up\");",
                 "    movement(event);",
                 "}",
                 "",
@@ -31121,7 +31120,7 @@
                 "",
                 "runtimeScene.ws.onmessage = function (event) {",
                 "    const e = JSON.parse(event.data);",
-                "    console.log(\"Full : \",e);",
+                "    //console.log(\"Full : \",e);",
                 "    if (e.msg === \"exit\\n\") {",
                 "        disconnectWebSocket(runtimeScene);",
                 "    }",
@@ -31194,7 +31193,7 @@
                 "",
                 "    var user;",
                 "    user = runtimeScene.createObject(\"body\" + Body);",
-                "    console.log(\"Create User : \",e);",
+                "    //console.log(\"Create User : \",e);",
                 "    ",
                 "    user.setX(e.X);",
                 "    user.setY(e.Y);",
@@ -31742,12 +31741,12 @@
                 "const storeInfo = runtimeScene.getObjects(\"popup2_input_store_info\")[0];",
                 "const inputStoreInfo = storeInfo.getString();",
                 "",
-                "console.log(\"storename:\", inputStoreName);",
-                "console.log(\"storeperiodyear:\", inputStorePeriodYear);",
-                "console.log(\"storeperiodmonth:\", inputStorePeriodMonth);",
-                "console.log(\"storeperiodday:\", inputStorePeriodDay);",
-                "console.log(\"period\", inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
-                "console.log(\"storeinfo:\", inputStoreInfo);",
+                "// console.log(\"storename:\", inputStoreName);",
+                "// console.log(\"storeperiodyear:\", inputStorePeriodYear);",
+                "// console.log(\"storeperiodmonth:\", inputStorePeriodMonth);",
+                "// console.log(\"storeperiodday:\", inputStorePeriodDay);",
+                "// console.log(\"period\", inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
+                "// console.log(\"storeinfo:\", inputStoreInfo);",
                 "",
                 "",
                 "",
@@ -32080,193 +32079,6 @@
     {
       "associatedLayout": "Square scene",
       "lastChangeTimeStamp": 0,
-      "name": "Player chat local event",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "BlankEmoteMid"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "ChatText"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Return"
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "TextInput::TextInputObject::Focused"
-              },
-              "parameters": [
-                "TextInput"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "BlankEmoteMid",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "ChatText",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "ChatText",
-                "=",
-                "TextInput.Text()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "BlankEmoteMid",
-                "\"ChatTime\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "ChatText",
-                "\"ChatTime\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "BlankEmoteMid",
-                "\"ChatTime\"",
-                ">=",
-                "4"
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "ChatText",
-                "\"ChatTime\"",
-                ">=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "BlankEmoteMid"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "ChatText"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "ChatText",
-                "=",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "BlankEmoteMid",
-                "\"ChatTime\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "ChatText",
-                "\"ChatTime\""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "associatedLayout": "Square scene",
-      "lastChangeTimeStamp": 0,
       "name": "Receive token event",
       "events": [
         {
@@ -32292,7 +32104,7 @@
                 "  runtimeScene.getGame().getVariables().get(\"userToken\").setString(logintoken);",
                 "}",
                 "",
-                "console.log(\"token : \", runtimeScene.getGame().getVariables().get(\"userToken\")._str);",
+                "// console.log(\"token : \", runtimeScene.getGame().getVariables().get(\"userToken\")._str);",
                 "",
                 "//global 변수에 저장되어있는 토큰 가져오기",
                 "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
@@ -32316,9 +32128,6 @@
                 "      const data = await response.json();",
                 "      runtimeScene.getGame().getVariables().get(\"UserId\").setString(data.email);",
                 "      runtimeScene.getGame().getVariables().get(\"UserNickname\").setString(data.nickname);",
-                "      console.log(runtimeScene.getGame().getVariables().get(\"UserId\")._str);",
-                "      console.log(runtimeScene.getGame().getVariables().get(\"UserNickname\")._str);",
-                "",
                 "    } else {",
                 "      console.error(\"Request failed with status:\", response.status);",
                 "    }",
@@ -32443,8 +32252,8 @@
                 "  },",
                 "  // 필요한 만큼 더 추가하세요.",
                 "];",
-                "console.log('Runtime Scene:', runtimeScene);",
-                "console.log('길이:', products.length);",
+                "// console.log('Runtime Scene:', runtimeScene);",
+                "// console.log('길이:', products.length);",
                 "for(let i = 0; i < products.length; i++) {",
                 "  let product = products[i];",
                 "",
@@ -32465,7 +32274,7 @@
                 "    },",
                 "    alignment: \"left\"",
                 "  });",
-                "  console.log(\"확인\");",
+                "  //console.log(\"확인\");",
                 "  // 생성한 텍스트 객체를 씬에 추가합니다.",
                 "  runtimeScene.addObject(textObject);",
                 "  textObject.setX(100)",
@@ -32514,7 +32323,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -33224,7 +33033,7 @@
                 "const userAddress = runtimeScene.getObjects(\"Buy_Address\")[0];",
                 "const inputUserAddress = userAddress.getString();",
                 "",
-                "console.log(\"배송지:\", inputUserAddress);",
+                "//console.log(\"배송지:\", inputUserAddress);",
                 "",
                 "// global 변수에 저장되어있는 토큰 가져오기",
                 "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
@@ -39013,10 +38822,10 @@
                 "const userHair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
                 "const userOutfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
                 "",
-                "console.log(\"userBody\", userBody);",
-                "console.log(\"userEye\", userEye);",
-                "console.log(\"userHair\", userHair);",
-                "console.log(\"userOutfit\", userOutfit);",
+                "// console.log(\"userBody\", userBody);",
+                "// console.log(\"userEye\", userEye);",
+                "// console.log(\"userHair\", userHair);",
+                "// console.log(\"userOutfit\", userOutfit);",
                 "    ",
                 "// // global 변수에 저장되어있는 토큰 가져오기",
                 "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",

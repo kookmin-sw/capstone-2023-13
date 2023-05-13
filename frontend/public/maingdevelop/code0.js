@@ -203,7 +203,7 @@ gdjs.Character_32custom_32sceneCode.GDBlueBarObjects1= [];
 gdjs.Character_32custom_32sceneCode.GDBlueBarObjects2= [];
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xebee68 = function(runtimeScene) {
+gdjs.Character_32custom_32sceneCode.userFunc0xfd0b48 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -211,7 +211,7 @@ if(logintoken){
   runtimeScene.getGame().getVariables().get("userToken").setString(logintoken);
 }
 
-console.log("token : ", runtimeScene.getGame().getVariables().get("userToken")._str);
+// console.log("token : ", runtimeScene.getGame().getVariables().get("userToken")._str);
 
 //global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
@@ -235,9 +235,6 @@ async function getUserInfo(userInfoRequest) {
       const data = await response.json();
       runtimeScene.getGame().getVariables().get("UserId").setString(data.email);
       runtimeScene.getGame().getVariables().get("UserNickname").setString(data.nickname);
-      console.log(runtimeScene.getGame().getVariables().get("UserId")._str);
-      console.log(runtimeScene.getGame().getVariables().get("UserNickname")._str);
-
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -254,22 +251,22 @@ gdjs.Character_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xebee68(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0xfd0b48(runtimeScene);
 
 }
 
 
-};gdjs.Character_32custom_32sceneCode.userFunc0x1027340 = function(runtimeScene) {
+};gdjs.Character_32custom_32sceneCode.userFunc0xd8dc28 = function(runtimeScene) {
 "use strict";
 const userBody = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const userEye = runtimeScene.getGame().getVariables().get("UserEye")._str;
 const userHair = runtimeScene.getGame().getVariables().get("UserHair")._str;
 const userOutfit = runtimeScene.getGame().getVariables().get("UserOutfit")._str;
 
-console.log("userBody", userBody);
-console.log("userEye", userEye);
-console.log("userHair", userHair);
-console.log("userOutfit", userOutfit);
+// console.log("userBody", userBody);
+// console.log("userEye", userEye);
+// console.log("userHair", userHair);
+// console.log("userOutfit", userOutfit);
     
 // // global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getVariables().get("userToken")._str;
@@ -312,7 +309,7 @@ gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x1027340(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0xd8dc28(runtimeScene);
 
 }
 
