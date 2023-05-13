@@ -1,51 +1,25 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
 import * as styled from './styles';
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const Logout = ({ onPopup }) => {
-    // const movePage = useNavigate();
-
-    // function logoutClick(){
-    //     movePage('/');
-    // }
-
+    const navigate = useNavigate();
 
     function closeClick() {
-        console.log('hi');
         onPopup("close");
         // movePage('/main');
     }
 
+    const confirmClick = () => {
+        onPopup("close");
+        navigate('/');
+        localStorage.removeItem('login-token');
+    };
 
-    const isLogout = () => {
-        const response = axios.post(
-          'http://43.201.210.173:9000/users/logout',
-          {
-            
-          },
-          {
-            headers: {
-            }
-          }
-        )
-          .then(function (response) {
-            console.log(JSON.stringify(response.data));
-            if (response.data) {
-                // logoutClick();
-            }
-    
-    
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      }
-
-    
 
 
     return (
@@ -62,7 +36,7 @@ const Logout = ({ onPopup }) => {
                     <styled.CloseBtn onClick={closeClick}>
                         <span>닫기</span>
                     </styled.CloseBtn>
-                    <styled.ConfirmBtn onClick={isLogout}>
+                    <styled.ConfirmBtn onClick={confirmClick}>
                         <span>확인</span>
                     </styled.ConfirmBtn>
                 </styled.ButtonsDiv>

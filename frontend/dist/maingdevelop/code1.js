@@ -147,13 +147,17 @@ gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1= [];
 gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects2= [];
 gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1= [];
 gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects2= [];
+gdjs.Store_32sceneCode.GDImage_95SpriteObjects1= [];
+gdjs.Store_32sceneCode.GDImage_95SpriteObjects2= [];
+gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1= [];
+gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects2= [];
 
 
-gdjs.Store_32sceneCode.userFunc0x94b5f8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd326a8 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://43.201.210.173:9001/ws");
+runtimeScene.ws = new WebSocket("ws://52.79.164.196:9001/ws");
 const id = Math.floor(Math.random() * Math.floor(100000));
-const channel = "Store2";
+const channel = "Store58";
 runtimeScene.user_id = id;
 runtimeScene.isCreated = false;
 runtimeScene.delayedEvents = [];
@@ -559,12 +563,12 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x94b5f8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd326a8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x94b6b8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd81010 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -596,7 +600,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0xeb2908 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd810a0 = function(runtimeScene) {
 "use strict";
 const channel = "Square1";
 
@@ -670,10 +674,10 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0x96fc58 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x97e9c0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
-var userToken = runtimeScene.getVariables().get("userToken");
+// var userToken = runtimeScene.getVariables().get("userToken");
 
 
 if(logintoken){
@@ -687,10 +691,10 @@ if(logintoken){
 
 
 };
-gdjs.Store_32sceneCode.userFunc0x96fe30 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd80cf8 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
-var userToken = runtimeScene.getVariables().get("userToken");
+// var userToken = runtimeScene.getVariables().get("userToken");
 
 
 if(logintoken){
@@ -706,7 +710,7 @@ if(logintoken){
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x91c9a0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd814a8 = function(runtimeScene) {
 "use strict";
 const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
 const inputProductName = productName.getString();
@@ -730,26 +734,67 @@ console.log("상품정보:", inputProductInfo);
 
 // // global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getVariables().get("userToken")._str;
-var storeId = runtimeScene.getVariables().get("storeId");
-
 console.log("유저 토큰 : ", userToken);
 
 
+
+
 // 스토어 ID 확인
-fetch("http://43.201.210.173:9000/stores/info", {
+var checkStoreIdRequest = {
   method: "GET",
   headers: {
     'Authorization': `${userToken}`,
+    'accept': 'application/json',
     "Content-Type": "application/json",
-  },
-})
-  .then((response) => 
-    console.log(response),
-    // runtimeScene.getVariables().get("storeId").setString(response),
-    // console.log("store id is :", storeId)
-  )
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+fetch("http://43.201.210.173:8080/stores/info", checkStoreIdRequest)
+  .then((res) => res.json())
+  .then((data) => {
+    // console.log(data.id);
+    runtimeScene.getVariables().get("storeId").setString(data.id);
+    var storeId = runtimeScene.getVariables().get("storeId")._str;
+    // console.log("스토어 아이디 : ", storeId);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
 
-  
+
+
+
+// 상품 등록 호출 보내기
+var addProductRequest = {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+  body: JSON.stringify({
+    // storeId : runtimeScene.getVariables().get("storeId")._str,
+    storeId : 4,
+    name : inputProductName,
+    price : inputProductPrice,
+    amount : inputProductQuantity,
+    info : inputProductInfo,
+  }),
+}
+fetch("http://43.201.210.173:8080/products/register", addProductRequest)
+  .then((res) => res.text())
+  .then((data) => {
+    console.log(data);
+    console.log("store id :", runtimeScene.getVariables().get("storeId")._str);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+
 
 
 
@@ -783,14 +828,14 @@ gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x91c9a0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd814a8(runtimeScene);
 
 }
 
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Store_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Store_32sceneCode.userFunc0x103ae78 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x115f680 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -809,7 +854,7 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x103ae78(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x115f680(runtimeScene);
 
 }
 
@@ -908,7 +953,7 @@ gdjs.Store_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x94b6b8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd81010(runtimeScene);
 
 }
 
@@ -916,7 +961,7 @@ gdjs.Store_32sceneCode.userFunc0x94b6b8(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xeb2908(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd810a0(runtimeScene);
 
 }
 
@@ -943,7 +988,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x96fc58(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x97e9c0(runtimeScene);
 
 }
 
@@ -990,7 +1035,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x96fe30(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd80cf8(runtimeScene);
 
 }
 
@@ -1095,6 +1140,27 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Add_New_Product_Button"), gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1[k] = gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.func(runtimeScene, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU", "assets/Add_Image.png", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
 
 }
 
@@ -1277,6 +1343,10 @@ gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1.length = 0;
 gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects2.length = 0;
 gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1.length = 0;
 gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects2.length = 0;
+gdjs.Store_32sceneCode.GDImage_95SpriteObjects1.length = 0;
+gdjs.Store_32sceneCode.GDImage_95SpriteObjects2.length = 0;
+gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects1.length = 0;
+gdjs.Store_32sceneCode.GDAdd_95New_95Product_95ButtonObjects2.length = 0;
 
 gdjs.Store_32sceneCode.eventsList3(runtimeScene);
 

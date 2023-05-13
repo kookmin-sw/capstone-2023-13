@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./StartPage.css";
 import GDevelopTest from '@components/GDevelopTest';
 import LoginBox from "@components/Login/LoginBox";
@@ -11,43 +11,43 @@ function StartPage() {
   const [page_state, setPage] = useState("login");
 
   let content;
-  
+
   const handlePage = (page) => {
-    if (page === "login"){
+    if (page === "login") {
       setPage("login");
-    } 
-    else if (page === "signup"){
+    }
+    else if (page === "signup") {
       setPage("signup");
     }
-    else if (page === "find"){
+    else if (page === "find") {
       setPage("find");
     }
-    else if (page === "passwordsent"){
+    else if (page === "passwordsent") {
       setPage("passwordsent");
     }
-    else{
+    else {
       setPage("custom");
     }
   }
-  if (page_state === "login"){
+  if (page_state === "login") {
     content = <LoginBox onPage={handlePage} />
   }
-  else if (page_state === "signup"){
+  else if (page_state === "signup") {
     content = <SignupBox onPage={handlePage} />
   }
-  else if(page_state === "custom"){
+  else if (page_state === "custom") {
     content = <CustomizingBox onPage={handlePage} />
   }
-  else if(page_state === "find"){
+  else if (page_state === "find") {
     content = <FindPassword onPage={handlePage} />
   }
-  else if(page_state === "passwordsent"){
+  else if (page_state === "passwordsent") {
     content = <PasswordSent onPage={handlePage} />
   }
-  else if(page_state === "test"){
-    content=<GDevelopTest></GDevelopTest>
+  else if (page_state === "test") {
+    content = <GDevelopTest></GDevelopTest>
   }
-  
+
   // const boxSlide ={
   //   width:page_state==="custom"?'1500px':'none',
   //   width:page_state==="find"?'500px':'none',
@@ -58,14 +58,19 @@ function StartPage() {
   //   // height:page_state === "login" ? '800px' : 'none',
   //   transition: 'transform 1s ease, width 1s, height 1s',
   // }
-  const boxSlide ={
-    width:page_state==="custom"?'1500px':'none',
+  const boxSlide = {
+    width: page_state === "custom" ? '1500px' : 'none',
     transition: 'transform 1s ease, width 1s',
   }
 
   return (
-    <div className="Background">
-      <MainGdevelop className = "MainBackground"/>
+    // <div className="Background">
+    //   <MainGdevelop className = "MainBackground"/>
+    //   <div className="WhiteBox2" style={boxSlide}>
+    //     {content}
+    //   </div>
+    // </div>
+    <div className="Background2" >
       <div className="WhiteBox2" style={boxSlide}>
         {content}
       </div>

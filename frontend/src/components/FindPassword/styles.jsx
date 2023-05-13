@@ -29,7 +29,7 @@ export const Backgroud = styled.img.attrs({
 export const FindWhiteBox = styled.div`
     margin :0px auto;
     width: 550px;
-    height: 600px;
+    height: 400px;
     left: 130px;
     top: 130px;
     background: rgba(255, 255, 255, 0.68);
@@ -62,31 +62,13 @@ export const MetaIcon = styled.img.attrs({
     height: 80px;
 `;
 
-export const IdDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-`;
-
-export const IdInputBox = styled.input`
-    margin:10px 0;
-    border:none;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    width: 405px;
-    height: 40px;
-    padding-left: 10px;
-    box-sizing: border-box;
-`;
 
 export const NameDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 100px;
 `;
 
 export const NameInputBox = styled.input`
@@ -152,7 +134,7 @@ border:none;
 border-radius: 10px;
 color:white;
 text-align: center;
-margin-top:20px;
+margin-top:170px;
 font-weight: bold;
 `;
 export const BackBtn = styled.button`
