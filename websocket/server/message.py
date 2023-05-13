@@ -27,13 +27,16 @@ class Message:
         }
     
     @classmethod
-    def connect(cls, user_id, status):
-        return {
+    def connect(cls, user_id, status, custom=None):
+        data = {
             "type": cls.CONNECT,
             "user_id": user_id,
             "status": status,
         }
-    
+        if status == 200:
+            data["custom"] = custom
+        return data
+
     @classmethod
     def chat(cls, user_id, nickname, msg):
         return {
@@ -56,6 +59,13 @@ class Message:
         }
     @classmethod
     async def broadcast(cls, app, channel, message):
+        disconnet_user = list()
         for user, ws in app['websockets'][channel].items():
-            await ws.send_json(message)
+            try:
+                await ws.send_json(message)
+            except ConnectionResetError:
+                app['logging'].disconnect_logging(user, user, channel)
+                disconnet_user.append(user)
+        for user in disconnet_user:
+            del app['websockets'][channel][user]
     
