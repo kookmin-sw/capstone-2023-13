@@ -53,7 +53,7 @@
 }
 .findDiv{
     cursor: pointer;
-    color:rgb(109, 29, 109);
+    color:rgb(0, 0, 0);
     position: absolute;
     top:-1px;
     right:90px;
@@ -96,4 +96,8 @@
 }
 .checkLabel{
     /* cursor: pointer; */
+}
+
+.blueBtn {
+    margin-top: 30px;
 }
