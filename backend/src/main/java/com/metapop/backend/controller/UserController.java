@@ -91,11 +91,11 @@ public class UserController {
 
     @Operation(summary = "", description = "유저 정보 수정 API")
     @PutMapping("/update")
-    public ResponseEntity<?> updateInfo(@RequestBody UserUpdateDTO userUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
+    public User updateInfo(@RequestBody UserUpdateDTO userUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
         userService.updateUserInfo(user, userUpdateDTO);
-        return ResponseEntity.ok(user);
+        return user;
     }
 
     @Operation(summary = "", description = "비밀번호 찾기 API")
