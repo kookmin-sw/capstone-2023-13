@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13 복사본 2/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -32011,6 +32011,27 @@
                 "",
                 ""
               ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "function disconnectWebSocket(runtimeScene) {",
+                "    if (runtimeScene.ws) {",
+                "        console.log('Disconnecting WebSocket...');",
+                "        runtimeScene.ws.close();",
+                "    } ",
+                "    else {",
+                "        console.log('WebSocket is not connected.');",
+                "    }",
+                "}",
+                "",
+                "disconnectWebSocket(runtimeScene);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         },
