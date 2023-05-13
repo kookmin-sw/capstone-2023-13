@@ -24,14 +24,14 @@ function SignupBox({ onPage }) {
   }
   const emailInputRef = useRef(null);
   //입력 값 저장
-  const [email, setEmail] = useState('test@test.com');
-  const [password, setPassword] = useState('12');
-  const [password_check, setPasswordCheck] = useState('12');
-  const [name, setName] = useState('nametest');
-  const [nickname, setNickname] = useState('nicktest');
-  const [bank, setBank] = useState('기업은행');
-  const [address, setAddress] = useState('test');
-  const [account, setAccount] = useState('123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [password_check, setPasswordCheck] = useState('');
+  const [name, setName] = useState('');
+  const [nickname, setNickname] = useState('');
+  const [bank, setBank] = useState('');
+  const [address, setAddress] = useState('');
+  const [account, setAccount] = useState('');
 
   //오류 메시지 저장
   const [passwordCheckMessage, setPasswordCheckMessage] = useState('');
@@ -128,15 +128,44 @@ function SignupBox({ onPage }) {
       setIsAddress(false);
     }
   }, [address, isAddress]);
-  const dupCheck = async() => {
-    try {
-      const response = await axiosInstance.post("/users/emailDup", {
-        email: email
-      });
-      console.log(response.data);
-      setIsDup(false);
-      setEmailMessage('이미 존재하는 이메일입니다.');
-    } catch (error) {
+  // const dupCheck = async() => {
+  //   try {
+  //     const response = await axiosInstance.post("/users/emailDup", {
+  //       email: email
+  //     });
+  //     console.log(response.data);
+  //     setIsDup(false);
+  //     setEmailMessage('이미 존재하는 이메일입니다.');
+  //   } catch (error) {
+  //       if (error.response.status === 400) { // 400: Conflict (이미 등록된 이메일)
+  //         console.log('success');
+  //         setIsDup(true);
+  //         setEmailMessage('가입할 수 있는 이메일입니다.');
+  //       }
+  //       else {
+  //         console.log(error);
+  //       }
+  //     }
+  // }
+  const dupCheck = () => {
+    const response = axios.post(
+      'http://43.201.210.173:8080/users/emailDup',
+      {
+        "email": email
+      },
+      {
+        headers: {
+          'accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+      .then(function (response) {
+        console.log(response.data);
+        setIsDup(false);
+        setEmailMessage('이미 존재하는 이메일입니다.');
+      })
+      .catch(function (error) {
         if (error.response.status === 400) { // 400: Conflict (이미 등록된 이메일)
           console.log('success');
           setIsDup(true);
@@ -145,7 +174,7 @@ function SignupBox({ onPage }) {
         else {
           console.log(error);
         }
-      }
+      });
   }
   const signupPost = async () => {
     try {
@@ -192,7 +221,7 @@ function SignupBox({ onPage }) {
       />
             <div className="inputDiv">
               {/* <div className="labelDiv">이메일 주소</div> */}
-              <input className="emailBox" type="text" value={email} onChange={(e) => onChangeEmail(e)} ref={emailInputRef}></input>
+              <input className="emailBox" type="text" placeholder="이메일" value={email} onChange={(e) => onChangeEmail(e)} ref={emailInputRef}></input>
               <button className="dupBtn" onClick={dupClick} disabled={!(isEmail)}>중복확인</button>
               {/* <div>올바른 이메일 형식이 아닙니다.</div> */}
               {email.length > 0 && (
