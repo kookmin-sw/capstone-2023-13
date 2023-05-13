@@ -5,6 +5,7 @@ import MainPage from './pages/MainPage/MainPage';
 import Sidebar from './components/Sidebar';
 import FindPassword from "./pages/FindPassword/FindPassword";
 import EnterPassword from './components/EnterPassword/EnterPassword';
+import Logout from './components/Logout/Logout';
 
 
 // import './App.css'
@@ -14,9 +15,10 @@ function App() {
   return (
     <div className="App">
       {/* <StartPage/> */}
-      <Sidebar />
+      
 
       <BrowserRouter>
+      <Sidebar />
         <Routes>
           <Route path='/' element={<StartPage />} />
           <Route path='/enterpassword' element={<EnterPassword />} />

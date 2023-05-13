@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState } from "react";
 import * as styled from "./styles";
 import styles from "./sidebar.module.css";
-import smile from '@/assets/img/smile.png';
 import PurchaseHistory from '@components/TransHistory/PurchaseHistory/PurchaseHistory';
 import SaleHistory from '@components/TransHistory/SaleHistory/SaleHistory';
 import "@components/TransHistory/TransHistory.css";
 import MyPage from "@components/MyPage/MyPage";
+import CheckPassword from "../CheckPassword/CheckPassword";
 import Logout from "../Logout/Logout";
 // import { useNavigate } from "react-router-dom";
 
@@ -27,11 +27,17 @@ const Sidebar = ({ width=280, children }) => {
       setOpen(false);
     }
   }
-  const myInfoClick = () => {
-    setShowPopup('myinfo');
-    setX(-width);
-    setOpen(false);
-    // handleClose();
+  const checkPasswordClick = (popup) => {
+    // if(popup === "checkpassword"){
+      setShowPopup('checkpassword');
+      setX(-width);
+      setOpen(false);
+    // }
+    if(popup === "myinfo"){
+      setShowPopup('myinfo');
+      setX(-width);
+      setOpen(false);
+    }
   }
   const purchaseHistoryClick = () => {
     setShowPopup('purchase');
@@ -45,11 +51,10 @@ const Sidebar = ({ width=280, children }) => {
     setOpen(false);
     // handleClose();
   }
-  const logoutClick = () => {
+  const logoutClick = (popup) => {
     setShowPopup('logout');
     setX(-width);
     setOpen(false);
-    // handleClose();
   }
 
   // button 클릭 시 토글
@@ -81,10 +86,12 @@ const Sidebar = ({ width=280, children }) => {
   })
 
 
-
+  console.log(showPopup);
 
   return (
     <div className={styles.container}>
+      {showPopup == "checkpassword" && (
+      <div className = "fakeBackground"><CheckPassword onPopup={handlePopup} onPasswordCheckSuccess={checkPasswordClick}></CheckPassword></div>)}
       {showPopup == "myinfo" && (
       <div className = "fakeBackground"><MyPage onPopup={handlePopup}></MyPage></div>)}
       {showPopup == "purchase" && (
@@ -106,9 +113,9 @@ const Sidebar = ({ width=280, children }) => {
         <div className={styles.innerContent}>
           <styled.SidebarTitle>
             <styled.MetaIcon />
-            <span>Meta-PoP</span>
+            <span>MetaPop</span>
           </styled.SidebarTitle>
-          <styled.MyInfo onClick={() => myInfoClick()}>
+          <styled.MyInfo onClick={() => checkPasswordClick()}>
             <styled.MyInfoIcon />
             <span>내 정보</span>
           </styled.MyInfo>
