@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__WebSocketClient__IsClosed !== "undefined") {
 gdjs.evtsExt__WebSocketClient__IsClosed = {};
 
 
-gdjs.evtsExt__WebSocketClient__IsClosed.userFunc0x105ac88 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__WebSocketClient__IsClosed.userFunc0x94a8d8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue =
     gdjs.evtTools.wsClient.connection &&
@@ -20,7 +20,7 @@ gdjs.evtsExt__WebSocketClient__IsClosed.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__WebSocketClient__IsClosed.userFunc0x105ac88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__WebSocketClient__IsClosed.userFunc0x94a8d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

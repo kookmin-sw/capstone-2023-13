@@ -109,6 +109,10 @@ gdjs.Untitled_32sceneCode.GDoutfit8Objects1= [];
 gdjs.Untitled_32sceneCode.GDoutfit8Objects2= [];
 gdjs.Untitled_32sceneCode.GDoutfit10Objects1= [];
 gdjs.Untitled_32sceneCode.GDoutfit10Objects2= [];
+gdjs.Untitled_32sceneCode.GDTransparentBackgroundObjects1= [];
+gdjs.Untitled_32sceneCode.GDTransparentBackgroundObjects2= [];
+gdjs.Untitled_32sceneCode.GDMeta_95IconObjects1= [];
+gdjs.Untitled_32sceneCode.GDMeta_95IconObjects2= [];
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects1= [];
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects2= [];
 gdjs.Untitled_32sceneCode.GDDevout8Objects1= [];
@@ -119,7 +123,7 @@ gdjs.Untitled_32sceneCode.GDServerConnectedObjects1= [];
 gdjs.Untitled_32sceneCode.GDServerConnectedObjects2= [];
 
 
-gdjs.Untitled_32sceneCode.userFunc0xed12b8 = function(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0x77ba08 = function(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 // WebSocket 객체 생성
@@ -205,7 +209,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0xed12b8(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x77ba08(runtimeScene);
 
 }
 
@@ -325,6 +329,10 @@ gdjs.Untitled_32sceneCode.GDoutfit8Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GDoutfit8Objects2.length = 0;
 gdjs.Untitled_32sceneCode.GDoutfit10Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GDoutfit10Objects2.length = 0;
+gdjs.Untitled_32sceneCode.GDTransparentBackgroundObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDTransparentBackgroundObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDMeta_95IconObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDMeta_95IconObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDSmallCheckeredFloorTilesObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDDevout8Objects1.length = 0;

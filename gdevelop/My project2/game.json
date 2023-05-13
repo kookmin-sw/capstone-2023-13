@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "C:\\Users\\User\\Desktop\\4-1학기\\캡스톤\\메타팝 클론\\직통저장소\\capstone-2023-13\\frontend\\public\\sub",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -8003,6 +8003,63 @@
         "name": "Sprite 2429.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Title_color.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Title_color.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "meta-icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "meta-icon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Yellow Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Yellow Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c1e14acb64b9963341656c997853154dc4c86cd1c46fb12bfbe012d99712ef61_Yellow Button_Hovered.png",
+          "name": "Yellow Button_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Yellow Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Yellow Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1cacfd123a1eb708837337c27982f6871f5127c5890dbf0775e0f411958fcbf1_Yellow Button_Idle.png",
+          "name": "Yellow Button_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Yellow Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Yellow Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/928c3ea4db1da835c9f8cc5b7089a47228350209d2ff489e1484c31e5ce41b3d_Yellow Button_Pressed.png",
+          "name": "Yellow Button_Pressed.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -22286,6 +22343,47 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Meta_Icon",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "meta-icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [
@@ -22621,6 +22719,21 @@
           "x": 873,
           "y": 180,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 76,
+          "layer": "",
+          "name": "CustomTestButton",
+          "persistentUuid": "6aa33053-af6b-4be7-a315-51a738969d09",
+          "width": 115,
+          "x": 887,
+          "y": 504,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -24631,6 +24744,70 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "615de0316452630b9f4f6a39decc82e2449b82c1afd1ff24d6470dad2922177b",
+          "name": "CustomTestButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Yellow Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Yellow Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "임시 커스텀 버튼",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 42,
+                "g": 87,
+                "r": 139
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Yellow Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
         }
       ],
       "events": [
@@ -24736,6 +24913,32 @@
                 "\"Square scene\"",
                 "-560",
                 "-440"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "CustomTestButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Character custom scene\"",
+                "yes"
               ]
             }
           ]
@@ -27771,15 +27974,15 @@
       ]
     },
     {
-      "b": 163,
+      "b": 255,
       "disableInputWhenNotFocused": true,
       "mangledName": "Character_32custom_32scene",
       "name": "Character custom scene",
-      "r": 163,
+      "r": 255,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 163,
+      "v": 255,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -28110,13 +28313,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 106,
+          "height": 65,
           "layer": "",
           "name": "BodyButton",
           "persistentUuid": "9710c8b8-723e-4de6-ac3c-b5f8bb9f9823",
-          "width": 158,
-          "x": 381,
-          "y": 88,
+          "width": 152,
+          "x": 387,
+          "y": 129,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -28125,13 +28328,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 106,
+          "height": 65,
           "layer": "",
           "name": "EyeButton",
           "persistentUuid": "fa6cf48e-2032-4ad3-b01a-7603373930e7",
           "width": 174,
           "x": 581,
-          "y": 86,
+          "y": 129,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -28140,13 +28343,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 106,
+          "height": 65,
           "layer": "",
           "name": "HairButton",
           "persistentUuid": "ee3d5715-cd80-4987-8d3f-d0cc8dd43bc7",
           "width": 174,
           "x": 794,
-          "y": 88,
+          "y": 129,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -28155,13 +28358,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 106,
+          "height": 65,
           "layer": "",
           "name": "OutfitButton",
           "persistentUuid": "706bc08f-914d-4c70-a463-d664072bb089",
           "width": 174,
           "x": 1014,
-          "y": 88,
+          "y": 129,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -28241,6 +28444,66 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Custom_Title",
+          "persistentUuid": "d84e1884-080c-42f8-a017-828d43e4410e",
+          "width": 0,
+          "x": 148,
+          "y": 18,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 82,
+          "layer": "",
+          "name": "BlueBar",
+          "persistentUuid": "1eb960a7-142e-47d8-b88b-365cca3900ab",
+          "width": 1287,
+          "x": -7,
+          "y": -6,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 68,
+          "layer": "",
+          "name": "Meta_Icon",
+          "persistentUuid": "ae14d360-9569-49eb-ab02-d0e884cdc361",
+          "width": 81,
+          "x": 65,
+          "y": -8,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 69,
+          "layer": "",
+          "name": "Custom_BackButton",
+          "persistentUuid": "1d735af0-7d9d-457a-a8d1-d9077ddf73b8",
+          "width": 153,
+          "x": 858,
+          "y": 603,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -28282,14 +28545,14 @@
               "width": 192
             },
             "Label": {
-              "bold": false,
+              "bold": true,
               "italic": false,
               "smoothed": true,
               "underlined": false,
               "string": "완료",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 30,
+              "characterSize": 25,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -28302,6 +28565,70 @@
               "leftMargin": 16,
               "rightMargin": 16,
               "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "Custom_BackButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
               "tiled": true,
               "topMargin": 16,
               "width": 192
@@ -30768,6 +31095,69 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Custom_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "캐릭터 커스터마이징",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "BlueBar",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Title_color.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -30842,6 +31232,17 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 28,
+          "ambientLightColorG": 6069792,
+          "ambientLightColorR": 20040976,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Body Layer",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         },
         {
@@ -32170,14 +32571,13 @@
                 "",
                 "",
                 "// 스토어 등록 호출 보내기",
-                "fetch(\"http://43.201.210.173:9000/stores/register\", {",
+                "fetch(\"http://43.201.210.173:8080/stores/register\", {",
                 "  method: \"POST\",",
                 "  headers: {",
                 "    'Authorization': `${userToken}`,",
                 "    \"Content-Type\": \"application/json\",",
                 "  },",
                 "  body: JSON.stringify({",
-                "    userId : 4,",
                 "    name : inputStoreName,",
                 "    period : inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay,",
                 "    info : inputStoreInfo,",
@@ -32695,7 +33095,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         }
       ]
     },
@@ -32724,7 +33124,7 @@
               "parameters": [
                 "BuyerSellerStatus",
                 "=",
-                "\"buyer\""
+                "\"seller\""
               ]
             }
           ]
@@ -32782,6 +33182,100 @@
                 "",
                 ""
               ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// 상품 데이터의 더미 배열입니다.",
+                "let products = [",
+                "  {",
+                "    name: \"Product 1\",",
+                "    price: 10,",
+                "    amount: 5,",
+                "    info: \"This is Product 1\"",
+                "  },",
+                "  {",
+                "    name: \"Product 2\",",
+                "    price: 20,",
+                "    amount: 10,",
+                "    info: \"This is Product 2\"",
+                "  },",
+                "  // 필요한 만큼 더 추가하세요.",
+                "];",
+                "console.log('Runtime Scene:', runtimeScene);",
+                "console.log('길이:', products.length);",
+                "for(let i = 0; i < products.length; i++) {",
+                "  let product = products[i];",
+                "",
+                "  // 각 상품에 대한 텍스트 객체를 생성합니다.",
+                "  let textObject = new gdjs.TextRuntimeObject(runtimeScene, {",
+                "    characterSize:20,",
+                "    name: \"ProductText\" + i,",
+                "    effects:{},",
+                "    variables: {},",
+                "    behaviors: {},",
+                "    color:{r:0, g:0, b:0},",
+                "    string: \"Name: \" + product.name + \", Price: \" + product.price + \", Amount: \" + product.amount, // 적절한 레이어 이름으로 변경해 주세요.",
+                "    fontFamily:\"Arial\",",
+                "    fontStyle:{",
+                "      bold:false,",
+                "      italic:false,",
+                "      underline:false",
+                "    },",
+                "    alignment: \"left\"",
+                "  });",
+                "  console.log(\"확인\");",
+                "  // 생성한 텍스트 객체를 씬에 추가합니다.",
+                "  runtimeScene.addObject(textObject);",
+                "  textObject.setX(100)",
+                "  textObject.setY(400 + i * 50)",
+                "  textObject.setZOrder(40)",
+                "  textObject.setLayer(\"Popup Layer\")",
+                "  textObject.hide(true);",
+                "}",
+                "// let product=[{",
+                "//   name: \"Product 1\",",
+                "//     price: 10,",
+                "//     amount: 5,",
+                "//     info: \"This is Product 1\"",
+                "// }]",
+                "",
+                "// let i = 1;",
+                "// let textObject = new gdjs.TextRuntimeObject(runtimeScene, {",
+                "//     characterSize:20,",
+                "//     name: \"ProductText\" + i,",
+                "//     effects:{},",
+                "//     variables: {},",
+                "//     behaviors: {},",
+                "//     color:{r:0, g:0, b:0},",
+                "//     string: \"Name: \" + product[0].name + \", Price: \" + product[0].price + \", Amount: \" + product[0].amount,  ",
+                "//     fontFamily:\"Arial\",",
+                "//     fontStyle:{",
+                "//       bold:false,",
+                "//       italic:false,",
+                "//       underline:false",
+                "//     },",
+                "//     alignment: \"left\",",
+                "//     // width: 0,",
+                "//     // height: 0,",
+                "//     // wordWrap: false,",
+                "//     // opacity: 255,",
+                "//     // visible: true",
+                "// });",
+                "// console.log(\"wwwwpwwpwp\")",
+                "// runtimeScene.addObject(textObject);",
+                "// textObject.setX(100)",
+                "// textObject.setY(400)",
+                "// textObject.setZOrder(40)",
+                "// textObject.setLayer(\"Popup Layer\")",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         },
@@ -32949,109 +33443,109 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const productName = runtimeScene.getObjects(\"ProductRegister_ProductName\")[0];",
-                "const inputProductName = productName.getString();",
+                "// const productName = runtimeScene.getObjects(\"ProductRegister_ProductName\")[0];",
+                "// const inputProductName = productName.getString();",
                 "",
-                "const productPrice = runtimeScene.getObjects(\"ProductRegister_ProductPrice\")[0];",
-                "const inputProductPrice = productPrice.getString();",
+                "// const productPrice = runtimeScene.getObjects(\"ProductRegister_ProductPrice\")[0];",
+                "// const inputProductPrice = productPrice.getString();",
                 "",
-                "const productQuantity = runtimeScene.getObjects(\"ProductRegister_ProductQuantity\")[0];",
-                "const inputProductQuantity = productQuantity.getString();",
+                "// const productQuantity = runtimeScene.getObjects(\"ProductRegister_ProductQuantity\")[0];",
+                "// const inputProductQuantity = productQuantity.getString();",
                 "",
-                "const productInfo = runtimeScene.getObjects(\"ProductRegister_ProductInfo\")[0];",
-                "const inputProductInfo = productInfo.getString();",
+                "// const productInfo = runtimeScene.getObjects(\"ProductRegister_ProductInfo\")[0];",
+                "// const inputProductInfo = productInfo.getString();",
                 "",
-                "console.log(\"상품명:\", inputProductName);",
-                "console.log(\"상품가격:\", inputProductPrice);",
-                "console.log(\"상품수량:\", inputProductQuantity);",
-                "console.log(\"상품정보:\", inputProductInfo);",
-                "",
-                "",
-                "",
-                "",
-                "// // global 변수에 저장되어있는 토큰 가져오기",
-                "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
-                "console.log(\"유저 토큰 : \", userToken);",
+                "// console.log(\"상품명:\", inputProductName);",
+                "// console.log(\"상품가격:\", inputProductPrice);",
+                "// console.log(\"상품수량:\", inputProductQuantity);",
+                "// console.log(\"상품정보:\", inputProductInfo);",
                 "",
                 "",
                 "",
                 "",
-                "// 스토어 ID 확인",
-                "var checkStoreIdRequest = {",
-                "  method: \"GET\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  }",
-                "}",
-                "fetch(\"http://43.201.210.173:8080/stores/info\", checkStoreIdRequest)",
-                "  .then((res) => res.json())",
-                "  .then((data) => {",
-                "    // console.log(data.id);",
-                "    runtimeScene.getVariables().get(\"storeId\").setString(data.id);",
-                "    var storeId = runtimeScene.getVariables().get(\"storeId\")._str;",
-                "    // console.log(\"스토어 아이디 : \", storeId);",
-                "  })",
-                "  .catch((error) => {",
-                "    console.error(\"Error fetching data:\", error);",
-                "  });",
+                "// // // global 변수에 저장되어있는 토큰 가져오기",
+                "// var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
+                "// console.log(\"유저 토큰 : \", userToken);",
                 "",
                 "",
                 "",
                 "",
-                "// 상품 등록 호출 보내기",
-                "var addProductRequest = {",
-                "  method: \"POST\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'Accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  },",
-                "  body: JSON.stringify({",
-                "    // storeId : runtimeScene.getVariables().get(\"storeId\")._str,",
-                "    storeId : 4,",
-                "    name : inputProductName,",
-                "    price : inputProductPrice,",
-                "    amount : inputProductQuantity,",
-                "    info : inputProductInfo,",
-                "  }),",
-                "}",
-                "fetch(\"http://43.201.210.173:8080/products/register\", addProductRequest)",
-                "  .then((res) => res.text())",
-                "  .then((data) => {",
-                "    console.log(data);",
-                "    console.log(\"store id :\", runtimeScene.getVariables().get(\"storeId\")._str);",
-                "  })",
-                "  .catch((error) => {",
-                "    console.error(\"Error fetching data:\", error);",
-                "  });",
+                "// // 스토어 ID 확인",
+                "// var checkStoreIdRequest = {",
+                "//   method: \"GET\",",
+                "//   headers: {",
+                "//     'Authorization': `${userToken}`,",
+                "//     'accept': 'application/json',",
+                "//     \"Content-Type\": \"application/json\",",
+                "//     \"Access-Control-Allow-Origin\": \"*\",",
+                "//     \"Access-Control-Allow-Headers\": \"*\",",
+                "//   }",
+                "// }",
+                "// fetch(\"http://43.201.210.173:8080/stores/info\", checkStoreIdRequest)",
+                "//   .then((res) => res.json())",
+                "//   .then((data) => {",
+                "//     // console.log(data.id);",
+                "//     runtimeScene.getVariables().get(\"storeId\").setString(data.id);",
+                "//     var storeId = runtimeScene.getVariables().get(\"storeId\")._str;",
+                "//     // console.log(\"스토어 아이디 : \", storeId);",
+                "//   })",
+                "//   .catch((error) => {",
+                "//     console.error(\"Error fetching data:\", error);",
+                "//   });",
                 "",
                 "",
                 "",
                 "",
-                "",
-                "// 스토어 등록 호출 보내기",
-                "// fetch(\"http://43.201.210.173:9000/stores/register\", {",
+                "// // 상품 등록 호출 보내기",
+                "// var addProductRequest = {",
                 "//   method: \"POST\",",
                 "//   headers: {",
                 "//     'Authorization': `${userToken}`,",
+                "//     'Accept': 'application/json',",
                 "//     \"Content-Type\": \"application/json\",",
+                "//     \"Access-Control-Allow-Origin\": \"*\",",
+                "//     \"Access-Control-Allow-Headers\": \"*\",",
                 "//   },",
                 "//   body: JSON.stringify({",
-                "//     userId : 4,",
-                "//     name : inputStoreName,",
-                "//     period : inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay,",
-                "//     info : inputStoreInfo,",
+                "//     // storeId : runtimeScene.getVariables().get(\"storeId\")._str,",
+                "//     storeId : 4,",
+                "//     name : inputProductName,",
+                "//     price : inputProductPrice,",
+                "//     amount : inputProductQuantity,",
+                "//     info : inputProductInfo,",
                 "//   }),",
-                "// })",
-                "//   .then((response) => ",
-                "//     console.log(response)",
-                "//   )",
+                "// }",
+                "// fetch(\"http://43.201.210.173:8080/products/register\", addProductRequest)",
+                "//   .then((res) => res.text())",
+                "//   .then((data) => {",
+                "//     console.log(data);",
+                "//     console.log(\"store id :\", runtimeScene.getVariables().get(\"storeId\")._str);",
+                "//   })",
+                "//   .catch((error) => {",
+                "//     console.error(\"Error fetching data:\", error);",
+                "//   });",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "// // 스토어 등록 호출 보내기",
+                "// // fetch(\"http://43.201.210.173:9000/stores/register\", {",
+                "// //   method: \"POST\",",
+                "// //   headers: {",
+                "// //     'Authorization': `${userToken}`,",
+                "// //     \"Content-Type\": \"application/json\",",
+                "// //   },",
+                "// //   body: JSON.stringify({",
+                "// //     userId : 4,",
+                "// //     name : inputStoreName,",
+                "// //     period : inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay,",
+                "// //     info : inputStoreInfo,",
+                "// //   }),",
+                "// // })",
+                "// //   .then((response) => ",
+                "// //     console.log(response)",
+                "// //   )",
                 "",
                 "",
                 "",
@@ -33062,7 +33556,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -33810,22 +34304,22 @@
             },
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "ModVarGlobalTxt"
               },
               "parameters": [
                 "UserHair",
                 "=",
-                "11"
+                "\"11\""
               ]
             },
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "ModVarGlobalTxt"
               },
               "parameters": [
                 "UserOutfit",
                 "=",
-                "7"
+                "\"7\""
               ]
             }
           ]
@@ -33928,7 +34422,7 @@
                     "body1",
                     "197",
                     "294",
-                    "\"Base Layer\""
+                    "\"Body Layer\""
                   ]
                 },
                 {
@@ -33963,12 +34457,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserBody",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ]
@@ -34024,7 +34518,7 @@
                     "body2",
                     "197",
                     "294",
-                    "\"Base Layer\""
+                    "\"Body Layer\""
                   ]
                 },
                 {
@@ -34059,12 +34553,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserBody",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ]
@@ -34120,7 +34614,7 @@
                     "body3",
                     "197",
                     "294",
-                    "\"Base Layer\""
+                    "\"Body Layer\""
                   ]
                 },
                 {
@@ -34155,12 +34649,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserBody",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -34216,7 +34710,7 @@
                     "body4",
                     "197",
                     "294",
-                    "\"Base Layer\""
+                    "\"Body Layer\""
                   ]
                 },
                 {
@@ -34251,12 +34745,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserBody",
                     "=",
-                    "4"
+                    "\"4\""
                   ]
                 }
               ]
@@ -34477,12 +34971,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserEye",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ]
@@ -34563,12 +35057,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserEye",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -34649,12 +35143,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserEye",
                     "=",
-                    "4"
+                    "\"4\""
                   ]
                 }
               ]
@@ -34735,12 +35229,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserEye",
                     "=",
-                    "5"
+                    "\"5\""
                   ]
                 }
               ]
@@ -34821,12 +35315,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserEye",
                     "=",
-                    "6"
+                    "\"6\""
                   ]
                 }
               ]
@@ -35044,12 +35538,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ]
@@ -35140,12 +35634,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "5"
+                    "\"5\""
                   ]
                 }
               ]
@@ -35236,12 +35730,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "9"
+                    "\"9\""
                   ]
                 }
               ]
@@ -35332,12 +35826,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "13"
+                    "\"13\""
                   ]
                 }
               ]
@@ -35428,12 +35922,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "17"
+                    "\"17\""
                   ]
                 }
               ]
@@ -35524,12 +36018,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "21"
+                    "\"21\""
                   ]
                 }
               ]
@@ -35620,12 +36114,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "25"
+                    "\"25\""
                   ]
                 }
               ]
@@ -35716,12 +36210,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "29"
+                    "\"29\""
                   ]
                 }
               ]
@@ -35880,12 +36374,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ]
@@ -35976,12 +36470,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "6"
+                    "\"6\""
                   ]
                 }
               ]
@@ -36072,12 +36566,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "10"
+                    "\"10\""
                   ]
                 }
               ]
@@ -36168,12 +36662,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "14"
+                    "\"14\""
                   ]
                 }
               ]
@@ -36264,12 +36758,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "18"
+                    "\"18\""
                   ]
                 }
               ]
@@ -36360,12 +36854,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "22"
+                    "\"22\""
                   ]
                 }
               ]
@@ -36456,12 +36950,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "26"
+                    "\"26\""
                   ]
                 }
               ]
@@ -36552,12 +37046,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "30"
+                    "\"30\""
                   ]
                 }
               ]
@@ -36716,12 +37210,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -36812,12 +37306,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "7"
+                    "\"7\""
                   ]
                 }
               ]
@@ -36908,12 +37402,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "11"
+                    "\"11\""
                   ]
                 }
               ]
@@ -37004,12 +37498,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "15"
+                    "\"15\""
                   ]
                 }
               ]
@@ -37100,12 +37594,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "19"
+                    "\"19\""
                   ]
                 }
               ]
@@ -37196,12 +37690,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "23"
+                    "\"23\""
                   ]
                 }
               ]
@@ -37292,12 +37786,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "27"
+                    "\"27\""
                   ]
                 }
               ]
@@ -37388,12 +37882,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "31"
+                    "\"31\""
                   ]
                 }
               ]
@@ -37456,12 +37950,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarScene"
+                    "value": "ModVarSceneTxt"
                   },
                   "parameters": [
                     "ColorStatus",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -37552,12 +38046,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "4"
+                    "\"4\""
                   ]
                 }
               ]
@@ -37648,12 +38142,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "8"
+                    "\"8\""
                   ]
                 }
               ]
@@ -37744,12 +38238,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "12"
+                    "\"12\""
                   ]
                 }
               ]
@@ -37840,12 +38334,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "16"
+                    "\"16\""
                   ]
                 }
               ]
@@ -37936,12 +38430,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "20"
+                    "\"20\""
                   ]
                 }
               ]
@@ -38032,12 +38526,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "24"
+                    "\"24\""
                   ]
                 }
               ]
@@ -38128,12 +38622,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "28"
+                    "\"28\""
                   ]
                 }
               ]
@@ -38224,12 +38718,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserHair",
                     "=",
-                    "32"
+                    "\"32\""
                   ]
                 }
               ]
@@ -38369,12 +38863,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "1"
+                    "\"1\""
                   ]
                 }
               ]
@@ -38465,12 +38959,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "2"
+                    "\"2\""
                   ]
                 }
               ]
@@ -38561,12 +39055,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "3"
+                    "\"3\""
                   ]
                 }
               ]
@@ -38657,12 +39151,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "4"
+                    "\"4\""
                   ]
                 }
               ]
@@ -38753,12 +39247,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "5"
+                    "\"5\""
                   ]
                 }
               ]
@@ -38849,12 +39343,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "6"
+                    "\"6\""
                   ]
                 }
               ]
@@ -38945,12 +39439,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "7"
+                    "\"7\""
                   ]
                 }
               ]
@@ -39041,12 +39535,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "8"
+                    "\"8\""
                   ]
                 }
               ]
@@ -39137,12 +39631,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "9"
+                    "\"9\""
                   ]
                 }
               ]
@@ -39233,12 +39727,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarGlobal"
+                    "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "UserOutfit",
                     "=",
-                    "10"
+                    "\"10\""
                   ]
                 }
               ]
@@ -39275,27 +39769,23 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const userBody = runtimeScene.getGame().getVariables().get(\"userBody\").getAsString();",
-                "const userEye = runtimeScene.getGame().getVariables().get(\"userEye\").getAsString();",
-                "const userHair = runtimeScene.getGame().getVariables().get(\"userHair\").getAsString();",
-                "const userOutfit = runtimeScene.getGame().getVariables().get(\"userOutfit\").getAsString();",
-                "// userBody = 1;",
-                "// userEye = 1;",
-                "// userHair = 1;",
-                "// userOutfit = 1;",
+                "const userBody = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "const userEye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "const userHair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "const userOutfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "",
                 "console.log(\"userBody\", userBody);",
                 "console.log(\"userEye\", userEye);",
                 "console.log(\"userHair\", userHair);",
                 "console.log(\"userOutfit\", userOutfit);",
                 "",
-                "// if(userBody != 0 && userEye != 0 && userHair != 0 && userOutfit != 0){",
-                "   console.log('서버 저장');",
+                "",
                 "    ",
                 "  // // global 변수에 저장되어있는 토큰 가져오기",
                 "  var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
                 "  var storeId = runtimeScene.getVariables().get(\"storeId\");",
                 "",
-                "  console.log(\"유저 토큰 : \", userToken);",
+                "  // console.log(\"유저 토큰 : \", userToken);",
                 "",
                 "  fetch(\"http://43.201.210.173:8080/usercustomizings/register\", {",
                 "      method: \"POST\",",
@@ -39310,14 +39800,72 @@
                 "        customoutfit : userOutfit,",
                 "      }),",
                 "    })",
-                "    .then((response) => ",
-                "      console.log('성공',response)",
-                "    )",
+                "    .then((response) => {",
+                "    console.log(response);",
+                "    runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(1);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.log('에러 발생', error);",
+                "    const success = runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(0);",
+                "  });",
                 "// }"
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CustomSuccess",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Square scene\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Custom_BackButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Square scene\"",
+                ""
+              ]
             }
           ]
         }
