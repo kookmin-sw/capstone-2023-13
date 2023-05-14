@@ -8,6 +8,7 @@ import com.metapop.backend.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -25,8 +26,8 @@ public class ProductController {
 
     @Operation(summary = "", description = "상품 등록 API")
     @PostMapping("/register")
-    public String registration(@RequestBody ProductSaveDTO productSaveDTO, List<MultipartFile> multipartFiles) {
-        return productService.registration(productSaveDTO);
+    public ResponseEntity<String> registration(@RequestBody ProductSaveDTO productSaveDTO) {
+        return ResponseEntity.ok(productService.registration(productSaveDTO));
     }
 
     @Operation(summary = "", description = "상품 전체 정보 조회 API")
