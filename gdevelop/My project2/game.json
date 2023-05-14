@@ -32535,8 +32535,6 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "",
-                "",
                 "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                 "",
                 "",
@@ -36619,7 +36617,7 @@
                     "hair6",
                     "197",
                     "294",
-                    ""
+                    "\"Custom Layer\""
                   ]
                 },
                 {
@@ -37455,7 +37453,7 @@
                     "hair7",
                     "197",
                     "294",
-                    ""
+                    "\"Custom Layer\""
                   ]
                 },
                 {
@@ -38291,7 +38289,7 @@
                     "hair8",
                     "197",
                     "294",
-                    ""
+                    "\"Custom Layer\""
                   ]
                 },
                 {
@@ -39954,11 +39952,39 @@
                 "// console.log(\"userOutfit\", userOutfit);",
                 "    ",
                 "// // global 변수에 저장되어있는 토큰 가져오기",
-                "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
-                "var storeId = runtimeScene.getVariables().get(\"storeId\")._value;",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "console.log(\"유저토큰\", userToken);",
                 "",
-                "// console.log(\"유저 토큰 : \", userToken);",
-                "async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) {",
+                "async function getCustom(userToken, userBody, userEye, userHair, userOutfit) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/usercustomizings/info\", {",
+                "      method: \"GET\",",
+                "      headers: {",
+                "        'Authorization': userToken,",
+                "        \"Content-Type\": \"application/json\",",
+                "      },",
+                "    });",
+                "",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      if (data.custombody === \"string\"){",
+                "        registerCustom(userToken, userBody, userEye, userHair, userOutfit);",
+                "      }",
+                "      else{",
+                "        updateCustom(userToken, userBody, userEye, userHair, userOutfit);",
+                "      }",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"미등록 사용자\", error);",
+                "    registerCustom(userToken, userBody, userEye, userHair, userOutfit);",
+                "  }",
+                "}",
+                "",
+                "//처음 커스텀 저장 시 ",
+                "async function registerCustom(userToken, userBody, userEye, userHair, userOutfit) {",
+                "  console.log(\"등록\");",
                 "  try {",
                 "    const response = await fetch(\"http://43.201.210.173:8080/usercustomizings/register\", {",
                 "      method: \"POST\",",
@@ -39968,8 +39994,8 @@
                 "      },",
                 "      body: JSON.stringify({",
                 "        custombody: userBody,",
-                "        customeye: userEye,",
                 "        customhair: userHair,",
+                "        customeye: userEye,",
                 "        customoutfit: userOutfit,",
                 "      }),",
                 "    });",
@@ -39986,38 +40012,68 @@
                 "  }",
                 "}",
                 "",
-                "updateCustom(userToken, userBody, userEye, userHair, userOutfit);",
+                "//이미 커스텀정보 있는 경우",
+                "async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) {",
+                "  console.log(\"업데이트\");",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/usercustomizings/update\", {",
+                "      method: \"PUT\",",
+                "      headers: {",
+                "        'Authorization': userToken,",
+                "        \"Content-Type\": \"application/json\",",
+                "      },",
+                "      body: JSON.stringify({",
+                "        custombody: userBody,",
+                "        customhair: userHair,",
+                "        customeye: userEye,",
+                "        customoutfit: userOutfit,",
+                "      }),",
+                "    });",
+                "    if (response.ok) {",
+                "      console.log(response);",
+                "      runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(1);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "      runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(0);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "    runtimeScene.getVariables().get(\"CustomSuccess\").setNumber(0);",
+                "  }",
+                "}",
+                "",
+                "getCustom(userToken, userBody, userEye, userHair, userOutfit);",
                 ""
               ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": true
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "CustomSuccess",
-                    "=",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Square scene\"",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "CustomSuccess",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Square scene\"",
+                ""
               ]
             }
           ]

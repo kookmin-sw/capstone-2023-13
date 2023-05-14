@@ -286,7 +286,7 @@ gdjs.Store_32sceneCode.GDProductList_95ProductObjects2= [];
 gdjs.Store_32sceneCode.GDProductList_95ProductObjects3= [];
 
 
-gdjs.Store_32sceneCode.userFunc0x10c7b90 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x89c748 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -688,12 +688,12 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x10c7b90(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x89c748(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xef2668 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x8b5350 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -725,7 +725,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0xe63bf0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xfec540 = function(runtimeScene) {
 "use strict";
 const channel = "Square1";
 
@@ -799,7 +799,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0xe9ce30 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x7ccef0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -850,12 +850,12 @@ gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xe9ce30(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x7ccef0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1052258 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xfd8538 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -906,14 +906,14 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1052258(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xfd8538(runtimeScene);
 
 }
 
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x104d9c0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x8b51b8 = function(runtimeScene) {
 "use strict";
 // 상품 데이터의 더미 배열입니다.
 let products = [
@@ -1005,118 +1005,100 @@ gdjs.Store_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x104d9c0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x8b51b8(runtimeScene);
 
 }
 
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x104e7d8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xb9fd70 = function(runtimeScene) {
 "use strict";
-// const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
-// const inputProductName = productName.getString();
+const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
+const inputProductName = productName.getString();
 
-// const productPrice = runtimeScene.getObjects("ProductRegister_ProductPrice")[0];
-// const inputProductPrice = productPrice.getString();
+const productPrice = runtimeScene.getObjects("ProductRegister_ProductPrice")[0];
+const inputProductPrice = productPrice.getString();
 
-// const productQuantity = runtimeScene.getObjects("ProductRegister_ProductQuantity")[0];
-// const inputProductQuantity = productQuantity.getString();
+const productQuantity = runtimeScene.getObjects("ProductRegister_ProductQuantity")[0];
+const inputProductQuantity = productQuantity.getString();
 
-// const productInfo = runtimeScene.getObjects("ProductRegister_ProductInfo")[0];
-// const inputProductInfo = productInfo.getString();
+const productInfo = runtimeScene.getObjects("ProductRegister_ProductInfo")[0];
+const inputProductInfo = productInfo.getString();
 
-// console.log("상품명:", inputProductName);
-// console.log("상품가격:", inputProductPrice);
-// console.log("상품수량:", inputProductQuantity);
-// console.log("상품정보:", inputProductInfo);
-
-
-
-
-// // // global 변수에 저장되어있는 토큰 가져오기
-// var userToken = runtimeScene.getVariables().get("userToken")._str;
-// console.log("유저 토큰 : ", userToken);
+console.log("상품명:", inputProductName);
+console.log("상품가격:", inputProductPrice);
+console.log("상품수량:", inputProductQuantity);
+console.log("상품정보:", inputProductInfo);
 
 
 
 
-// // 스토어 ID 확인
-// var checkStoreIdRequest = {
-//   method: "GET",
-//   headers: {
-//     'Authorization': `${userToken}`,
-//     'accept': 'application/json',
-//     "Content-Type": "application/json",
-//     "Access-Control-Allow-Origin": "*",
-//     "Access-Control-Allow-Headers": "*",
-//   }
-// }
-// fetch("http://43.201.210.173:8080/stores/info", checkStoreIdRequest)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     // console.log(data.id);
-//     runtimeScene.getVariables().get("storeId").setString(data.id);
-//     var storeId = runtimeScene.getVariables().get("storeId")._str;
-//     // console.log("스토어 아이디 : ", storeId);
-//   })
-//   .catch((error) => {
-//     console.error("Error fetching data:", error);
-//   });
+// // global 변수에 저장되어있는 토큰 가져오기
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+console.log("유저 토큰 : ", userToken);
 
 
 
 
-// // 상품 등록 호출 보내기
-// var addProductRequest = {
-//   method: "POST",
-//   headers: {
-//     'Authorization': `${userToken}`,
-//     'Accept': 'application/json',
-//     "Content-Type": "application/json",
-//     "Access-Control-Allow-Origin": "*",
-//     "Access-Control-Allow-Headers": "*",
-//   },
-//   body: JSON.stringify({
-//     // storeId : runtimeScene.getVariables().get("storeId")._str,
-//     storeId : 4,
-//     name : inputProductName,
-//     price : inputProductPrice,
-//     amount : inputProductQuantity,
-//     info : inputProductInfo,
-//   }),
-// }
-// fetch("http://43.201.210.173:8080/products/register", addProductRequest)
-//   .then((res) => res.text())
-//   .then((data) => {
-//     console.log(data);
-//     console.log("store id :", runtimeScene.getVariables().get("storeId")._str);
-//   })
-//   .catch((error) => {
-//     console.error("Error fetching data:", error);
-//   });
+// 스토어 ID 확인
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+fetch("http://43.201.210.173:8080/stores/info", checkStoreIdRequest)
+  .then((res) => res.json())
+  .then((data) => {
+    // console.log(data.id);
+    runtimeScene.getGame().getVariables().get("storeId").setString(data.id);
+    var storeId = runtimeScene.getGame().getVariables().get("storeId")._str;
+    console.log("스토어 아이디 : ", storeId);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
 
 
 
 
+// 상품 등록 호출 보내기
+var addProductRequest = {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+  body: JSON.stringify({
+    storeId : runtimeScene.getGame().getVariables().get("storeId")._str,
+    // storeId : 4,
+    name : inputProductName,
+    price : inputProductPrice,
+    amount : inputProductQuantity,
+    info : inputProductInfo,
+  }),
+}
+fetch("http://43.201.210.173:8080/products/register", addProductRequest)
+  .then((res) => res.text())
+  .then((data) => {
+    console.log(data);
+    console.log("store id :", runtimeScene.getVariables().get("storeId")._str);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
 
-// // 스토어 등록 호출 보내기
-// // fetch("http://43.201.210.173:9000/stores/register", {
-// //   method: "POST",
-// //   headers: {
-// //     'Authorization': `${userToken}`,
-// //     "Content-Type": "application/json",
-// //   },
-// //   body: JSON.stringify({
-// //     userId : 4,
-// //     name : inputStoreName,
-// //     period : inputStorePeriodYear+"-"+inputStorePeriodMonth+"-"+inputStorePeriodDay,
-// //     info : inputStoreInfo,
-// //   }),
-// // })
-// //   .then((response) => 
-// //     console.log(response)
-// //   )
+
+
+
 
 
 
@@ -1130,12 +1112,12 @@ gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x104e7d8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xb9fd70(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1050c90 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x8b08b8 = function(runtimeScene) {
 "use strict";
 const userAddress = runtimeScene.getObjects("Buy_Address")[0];
 const inputUserAddress = userAddress.getString();
@@ -1173,7 +1155,7 @@ gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1050c90(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x8b08b8(runtimeScene);
 
 }
 
@@ -1256,7 +1238,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Store_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Store_32sceneCode.userFunc0x10c81a8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xad0eb0 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1275,7 +1257,7 @@ gdjs.Store_32sceneCode.eventsList8 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x10c81a8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xad0eb0(runtimeScene);
 
 }
 
@@ -1374,7 +1356,7 @@ gdjs.Store_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xef2668(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x8b5350(runtimeScene);
 
 }
 
@@ -1382,7 +1364,7 @@ gdjs.Store_32sceneCode.userFunc0xef2668(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xe63bf0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xfec540(runtimeScene);
 
 }
 

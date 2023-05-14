@@ -203,7 +203,7 @@ gdjs.Character_32custom_32sceneCode.GDBlueBarObjects1= [];
 gdjs.Character_32custom_32sceneCode.GDBlueBarObjects2= [];
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xe63bf0 = function(runtimeScene) {
+gdjs.Character_32custom_32sceneCode.userFunc0xad0fd0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -254,12 +254,12 @@ gdjs.Character_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xe63bf0(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0xad0fd0(runtimeScene);
 
 }
 
 
-};gdjs.Character_32custom_32sceneCode.userFunc0xe9ce30 = function(runtimeScene) {
+};gdjs.Character_32custom_32sceneCode.userFunc0xad0eb0 = function(runtimeScene) {
 "use strict";
 const userBody = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const userEye = runtimeScene.getGame().getVariables().get("UserEye")._str;
@@ -272,11 +272,39 @@ const userOutfit = runtimeScene.getGame().getVariables().get("UserOutfit")._str;
 // console.log("userOutfit", userOutfit);
     
 // // global 변수에 저장되어있는 토큰 가져오기
-var userToken = runtimeScene.getVariables().get("userToken")._str;
-var storeId = runtimeScene.getVariables().get("storeId")._value;
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+console.log("유저토큰", userToken);
 
-// console.log("유저 토큰 : ", userToken);
-async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) {
+async function getCustom(userToken, userBody, userEye, userHair, userOutfit) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/usercustomizings/info", {
+      method: "GET",
+      headers: {
+        'Authorization': userToken,
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      if (data.custombody === "string"){
+        registerCustom(userToken, userBody, userEye, userHair, userOutfit);
+      }
+      else{
+        updateCustom(userToken, userBody, userEye, userHair, userOutfit);
+      }
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("미등록 사용자", error);
+    registerCustom(userToken, userBody, userEye, userHair, userOutfit);
+  }
+}
+
+//처음 커스텀 저장 시 
+async function registerCustom(userToken, userBody, userEye, userHair, userOutfit) {
+  console.log("등록");
   try {
     const response = await fetch("http://43.201.210.173:8080/usercustomizings/register", {
       method: "POST",
@@ -286,8 +314,8 @@ async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) 
       },
       body: JSON.stringify({
         custombody: userBody,
-        customeye: userEye,
         customhair: userHair,
+        customeye: userEye,
         customoutfit: userOutfit,
       }),
     });
@@ -304,7 +332,37 @@ async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) 
   }
 }
 
-updateCustom(userToken, userBody, userEye, userHair, userOutfit);
+//이미 커스텀정보 있는 경우
+async function updateCustom(userToken, userBody, userEye, userHair, userOutfit) {
+  console.log("업데이트");
+  try {
+    const response = await fetch("http://43.201.210.173:8080/usercustomizings/update", {
+      method: "PUT",
+      headers: {
+        'Authorization': userToken,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        custombody: userBody,
+        customhair: userHair,
+        customeye: userEye,
+        customoutfit: userOutfit,
+      }),
+    });
+    if (response.ok) {
+      console.log(response);
+      runtimeScene.getVariables().get("CustomSuccess").setNumber(1);
+    } else {
+      console.error("Request failed with status:", response.status);
+      runtimeScene.getVariables().get("CustomSuccess").setNumber(0);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+    runtimeScene.getVariables().get("CustomSuccess").setNumber(0);
+  }
+}
+
+getCustom(userToken, userBody, userEye, userHair, userOutfit);
 
 };
 gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
@@ -312,20 +370,7 @@ gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xe9ce30(runtimeScene);
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("CustomSuccess")) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
-}}
+gdjs.Character_32custom_32sceneCode.userFunc0xad0eb0(runtimeScene);
 
 }
 
@@ -2669,7 +2714,7 @@ for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair31Objects1.length
 for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair32Objects1.length ;i < len;++i) {
     gdjs.Character_32custom_32sceneCode.GDhair32Objects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Character_32custom_32sceneCode.mapOfGDgdjs_46Character_9532custom_9532sceneCode_46GDhair6Objects1Objects, 197, 294, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Character_32custom_32sceneCode.mapOfGDgdjs_46Character_9532custom_9532sceneCode_46GDhair6Objects1Objects, 197, 294, "Custom Layer");
 }{for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair6Objects1.length ;i < len;++i) {
     gdjs.Character_32custom_32sceneCode.GDhair6Objects1[i].setWidth(105);
 }
@@ -4065,7 +4110,7 @@ for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair31Objects1.length
 for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair32Objects1.length ;i < len;++i) {
     gdjs.Character_32custom_32sceneCode.GDhair32Objects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Character_32custom_32sceneCode.mapOfGDgdjs_46Character_9532custom_9532sceneCode_46GDhair7Objects1Objects, 197, 294, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Character_32custom_32sceneCode.mapOfGDgdjs_46Character_9532custom_9532sceneCode_46GDhair7Objects1Objects, 197, 294, "Custom Layer");
 }{for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair7Objects1.length ;i < len;++i) {
     gdjs.Character_32custom_32sceneCode.GDhair7Objects1[i].setWidth(105);
 }
@@ -5461,7 +5506,7 @@ for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair31Objects1.length
 for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair32Objects1.length ;i < len;++i) {
     gdjs.Character_32custom_32sceneCode.GDhair32Objects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Character_32custom_32sceneCode.mapOfGDgdjs_46Character_9532custom_9532sceneCode_46GDhair8Objects1Objects, 197, 294, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Character_32custom_32sceneCode.mapOfGDgdjs_46Character_9532custom_9532sceneCode_46GDhair8Objects1Objects, 197, 294, "Custom Layer");
 }{for(var i = 0, len = gdjs.Character_32custom_32sceneCode.GDhair8Objects1.length ;i < len;++i) {
     gdjs.Character_32custom_32sceneCode.GDhair8Objects1[i].setWidth(105);
 }
@@ -7400,6 +7445,19 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.Character_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("CustomSuccess")) == 1;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
+}}
 
 }
 
