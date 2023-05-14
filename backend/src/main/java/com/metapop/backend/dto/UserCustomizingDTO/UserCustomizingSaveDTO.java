@@ -9,6 +9,7 @@ public class UserCustomizingSaveDTO {
     private String custombody;
     private String customhair;
     private String customeye;
+    private String customoutfit;
 
     public UserCustomizing toEntity(User user) {
         return UserCustomizing.builder()
@@ -16,6 +17,7 @@ public class UserCustomizingSaveDTO {
                 .custombody(custombody)
                 .customhair(customhair)
                 .customeye(customeye)
+                .customoutfit(customoutfit)
                 .build();
     }
 }

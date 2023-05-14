@@ -31,17 +31,22 @@ public class UserCustomizing {
     @Column(nullable = false)
     private String customeye;
 
+    @Column(nullable = false)
+    private String customoutfit;
+
     @Builder
-    public UserCustomizing(User user, String custombody, String customhair, String customeye) {
+    public UserCustomizing(User user, String custombody, String customhair, String customeye, String customoutfit) {
         this.player = user;
         this.custombody = custombody;
         this.customhair = customhair;
         this.customeye = customeye;
+        this.customoutfit = customoutfit;
     }
 
     public void update(UserCustomizingUpdateDTO userCustomizingUpdateDTO) {
         this.custombody = userCustomizingUpdateDTO.getCustombody();
         this.customhair = userCustomizingUpdateDTO.getCustomhair();
         this.customeye = userCustomizingUpdateDTO.getCustomeye();
+        this.customoutfit = userCustomizingUpdateDTO.getCustomoutfit();
     }
 }

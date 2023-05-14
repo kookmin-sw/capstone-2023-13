@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "product")
@@ -33,6 +35,9 @@ public class Product {
 
     @Column(nullable = false)
     private String info;
+
+    @Transient
+    private final List<String> imgList = new ArrayList<>();
 
     @Builder
     public Product(Store store, String name, Long price, Long amount, String info){
