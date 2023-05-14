@@ -25,25 +25,6 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @Value("${cloud.aws.credentials.accessKey}")
-    private String accessKey;
-
-    @Value("${cloud.aws.credentials.secretKey}")
-    private String secretKey;
-
-    @Operation(summary = "", description = "ㅇㅇ 등록 API")
-    @GetMapping("/accessKey")
-    public ResponseEntity<String> hi() {
-        return ResponseEntity.ok(accessKey);
-    }
-
-    @Operation(summary = "", description = "ㅇㅇs 등록 API")
-    @GetMapping("/secretKey")
-    public ResponseEntity<String> his() {
-        return ResponseEntity.ok(secretKey);
-    }
-
-
     @Operation(summary = "", description = "상품 등록 API")
     @PostMapping("/register")
     public ResponseEntity<String> registration(@RequestBody ProductSaveDTO productSaveDTO) {
