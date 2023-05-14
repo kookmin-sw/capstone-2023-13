@@ -7,8 +7,8 @@ services:
       - "8080:8080"
     container_name: backend
     environment:
-      - "cloud.aws.credentials.accessKey=${ACCESS_KEY}"
-      - "cloud.aws.credentials.secretKey=${SECRET_KEY}"
+      - "ACCESS_KEY=${ACCESS_KEY}"
+      - "SECRET_KEY=${SECRET_KEY}"
     restart: unless-stopped
   websocket:
     build:
