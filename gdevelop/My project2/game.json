@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -8059,6 +8059,19 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/928c3ea4db1da835c9f8cc5b7089a47228350209d2ff489e1484c31e5ce41b3d_Yellow Button_Pressed.png",
           "name": "Yellow Button_Pressed.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/house (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "house (2).png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Background Objects/Retina/329265dcade5ee224ead6052df1b12d2178504372a107b9fafacad651d4251de_house (2).png",
+          "name": "house (2).png"
         }
       }
     ],
@@ -22471,6 +22484,12 @@
       "name": "UserNickname",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "IsStoreAdded",
+      "type": "string",
+      "value": "0"
     }
   ],
   "layouts": [
@@ -25976,8 +25995,8 @@
           "name": "WideSideRectangleWood",
           "persistentUuid": "6768e2ee-ac51-4251-955b-2ce71675bdc6",
           "width": 160,
-          "x": 1087,
-          "y": 24,
+          "x": 866,
+          "y": 218,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -25991,9 +26010,9 @@
           "name": "add_store",
           "persistentUuid": "d728f4a5-b64b-49ec-8ae7-1023e6920590",
           "width": 0,
-          "x": 1131,
-          "y": 63,
-          "zOrder": 24,
+          "x": 908,
+          "y": 261,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -26006,8 +26025,8 @@
           "name": "added_store",
           "persistentUuid": "4795743b-3970-46c0-a919-6cc1e46d7239",
           "width": 0,
-          "x": 887,
-          "y": 220,
+          "x": 879,
+          "y": 88,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -26021,8 +26040,8 @@
           "name": "WideSideRectangleWood_added_store",
           "persistentUuid": "171c9628-97ab-477d-810a-2e29062d0d5f",
           "width": 164,
-          "x": 873,
-          "y": 180,
+          "x": 864,
+          "y": 46,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -26036,9 +26055,69 @@
           "name": "CustomTestButton",
           "persistentUuid": "6aa33053-af6b-4be7-a315-51a738969d09",
           "width": 115,
-          "x": 887,
-          "y": 504,
+          "x": 893,
+          "y": 557,
           "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 123,
+          "layer": "",
+          "name": "House2",
+          "persistentUuid": "7e30c5ec-14fc-402f-b74c-65ef7d6c6966",
+          "width": 175,
+          "x": 426,
+          "y": 30,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 101,
+          "layer": "",
+          "name": "WideSideRectangleWood_delete_store",
+          "persistentUuid": "9b93b175-ffda-48bc-a787-6f2294407f34",
+          "width": 158,
+          "x": 872,
+          "y": 393,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "delete_store",
+          "persistentUuid": "006e7827-fdee-453c-983c-9e73ccc2b63f",
+          "width": 0,
+          "x": 911,
+          "y": 431,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 99,
+          "layer": "",
+          "name": "Add_store_test",
+          "persistentUuid": "e62a84ee-4d22-4bee-9ee0-16ede22cbc03",
+          "width": 156,
+          "x": 160,
+          "y": 62,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -26159,6 +26238,204 @@
         {
           "assetStoreId": "9edee25f20b8eadf1d21519c6bf3cd593c6f6d7662343d818366be1accf01fec",
           "name": "WideSideRectangleWood",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Broken",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Broken.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Damaged",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Perfect",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Perfect.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "9edee25f20b8eadf1d21519c6bf3cd593c6f6d7662343d818366be1accf01fec",
+          "name": "Add_store_test",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Broken",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Broken.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Damaged",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Damaged.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Perfect",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Wide side rectangle wood_Perfect.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "9edee25f20b8eadf1d21519c6bf3cd593c6f6d7662343d818366be1accf01fec",
+          "name": "WideSideRectangleWood_delete_store",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -26998,7 +27275,199 @@
         },
         {
           "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup_store_delete_ok_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "확인",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup_store_delete_complete_ok_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "확인",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
           "name": "popup2_cancel_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "닫기",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 96,
+                "g": 16,
+                "r": 20
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup_store_delete_cancel_btn",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
@@ -27076,6 +27545,72 @@
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "delete_store",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "상점 삭제",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "popup_store_delete_inner_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "스토어를 정말 삭제하시겠습니까?",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "popup_store_delete_complete_inner_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "스토어 삭제가 완료되었습니다.",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -28113,6 +28648,88 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "6ebcf3016776c53730584436311656c4e0a3733c3268e723b4304d24fa16daaf",
+          "name": "House2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "house (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "6ebcf3016776c53730584436311656c4e0a3733c3268e723b4304d24fa16daaf",
+          "name": "Store_example",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "house (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -30547,7 +31164,7 @@
                 "",
                 "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
                 "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
-                "runtimeScene.channel_id = \"Store1\";",
+                "runtimeScene.channel_id = \"Store3\";",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
@@ -31088,7 +31705,7 @@
                 "",
                 "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
                 "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
-                "runtimeScene.channel_id = \"Square\";",
+                "runtimeScene.channel_id = \"Square12\";",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
@@ -31525,7 +32142,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "const channel = \"Square1\";",
+            "// const channel = \"Square1\";",
             "",
             "const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
             "const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
@@ -31609,17 +32226,15 @@
       "name": "Store add go event",
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Receive token event"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "e"
-              ]
-            },
             {
               "type": {
                 "value": "CollisionNP"
@@ -31630,6 +32245,15 @@
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
               ]
             }
           ],
@@ -31709,6 +32333,19 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "상점 등록 코드",
+          "comment2": ""
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -31749,50 +32386,63 @@
                 "// console.log(\"storeinfo:\", inputStoreInfo);",
                 "",
                 "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "// fetch(\"http://43.201.210.173:9000/users/login\", {",
-                "//   method: \"POST\",",
-                "//   headers: {",
-                "//     \"Content-Type\": \"application/json\",",
-                "//   },",
-                "//   body: JSON.stringify({",
-                "//     email: \"admin@admin.com\",",
-                "//     password: \"1234\"",
-                "//   }),",
-                "// })",
-                "//   .then((response) => console.log(response))",
-                "",
-                "",
-                "",
-                "// var logintoken = localStorage.getItem('login-token');",
-                "// console.log(logintoken);",
-                "",
-                "",
-                "",
                 "// global 변수에 저장되어있는 토큰 가져오기",
-                "var userToken = runtimeScene.getVariables().get(\"userToken\")._str;",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "console.log(\"유저 토큰 테스트 :\", userToken);",
+                "",
+                "",
+                "// Store의 x,y,z 값 가져오기",
+                "const objectName = \"Add_store_test\";",
+                "const objects = runtimeScene.getObjects(objectName);",
+                "",
+                "let x, y, z;",
+                "",
+                "if (objects.length > 0) {",
+                "  const object = objects[0]; // 첫 번째 객체 인스턴스를 가져옵니다.",
+                "",
+                "  // 객체의 X, Y 좌표를 가져옵니다.",
+                "  x = object.getX();",
+                "  y = object.getY();",
+                "",
+                "  // 객체의 Z 순서 (레이어 순서)를 가져옵니다.",
+                "  z = object.getZOrder();",
+                "",
+                "  console.log(`X: ${x}, Y: ${y}, Z: ${z}`);",
+                "}",
+                "",
+                "",
+                "var isStoreAdded = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str;",
+                "console.log(\"상점 등록 여부:\", runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str);",
                 "",
                 "",
                 "// 스토어 등록 호출 보내기",
-                "fetch(\"http://43.201.210.173:8080/stores/register\", {",
+                "var addStoreRequest = {",
                 "  method: \"POST\",",
                 "  headers: {",
                 "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
                 "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
                 "  },",
                 "  body: JSON.stringify({",
                 "    name : inputStoreName,",
                 "    period : inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay,",
                 "    info : inputStoreInfo,",
+                "    x : x,",
+                "    y : y,",
+                "    z : z,",
                 "  }),",
-                "})",
-                "  .then((response) => console.log(response))",
-                "",
-                "",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/stores/register\", addStoreRequest)",
+                "  .then((res) => res.text())",
+                "  .then((data) => {",
+                "    console.log(data);",
+                "    runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setString(1);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
                 "",
                 "",
                 "",
@@ -31800,7 +32450,123 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Popup2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "상점 등록 성공시 팻말 뒤에 건물 세우기",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// 객체 생성을 위한 함수 정의",
+                "function createObject(runtimeScene, objectName, x, y) {",
+                "  // 객체를 참조하고 새 인스턴스를 생성합니다.",
+                "  const object = runtimeScene.createObject(objectName);",
+                "",
+                "  // 객체의 위치를 설정합니다.",
+                "  object.setX(x);",
+                "  object.setY(y);",
+                "  object.setZOrder(z);",
+                "  object.setWidth(175);",
+                "  object.setHeight(130);",
+                "  ",
+                "",
+                "  // 객체를 런타임 씬에 추가합니다.",
+                "  return object",
+                "}",
+                "",
+                "// 원하는 위치에 객체를 생성합니다.",
+                "const objectName = \"Store_example\"; // 실제 객체 이름으로 변경해주세요.",
+                "const x = 160; // 원하는 x 좌표 값",
+                "const y = -90; // 원하는 y 좌표 값",
+                "const z = 6;",
+                "",
+                "",
+                "",
+                "var storeExists = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str",
+                "if(storeExists){",
+                "  createObject(runtimeScene, objectName, x, y);",
+                "}",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "등록한 상점 ID 가져와서 global variable에 저장하기",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "",
+                "",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "",
+                "",
+                "// 스토어 ID 확인",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/stores/info\", checkStoreIdRequest)",
+                "  .then((res) => res.text())",
+                "  .then((data) => {",
+                "    console.log(data);",
+                "    runtimeScene.getVariables().get(\"storeId\").setString(data.id);",
+                "    var storeId = runtimeScene.getVariables().get(\"storeId\")._str;",
+                "    console.log(\"스토어 아이디 : \", storeId);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         },
@@ -32094,6 +32860,360 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "상점 삭제 코드",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "WideSideRectangleWood_delete_store",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup store delete\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup_store_delete_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var isStoreAdded = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str;",
+                "",
+                "const objectName = \"Store_example\"; // 삭제할 객체의 이름",
+                "const objects = runtimeScene.getObjects(objectName);",
+                "",
+                "var deleteStoreRequest = {",
+                "  method: \"DELETE\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/stores/remove\", deleteStoreRequest)",
+                "  .then((res) => res.text())",
+                "  .then((data) => {",
+                "    console.log(data);",
+                "    runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setString(0);",
+                "    const object = objects[0]; // 첫 번째 객체 인스턴스 가져오기",
+                "    runtimeScene.markObjectForDeletion(object); // 객체 삭제 표시",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
+                "",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "WhiteBackgroundPopup",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BlueTitlePopup",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "popup_store_delete_ok_btn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "popup_store_delete_cancel_btn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "popup_store_delete_inner_text",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup store delete complete\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup_store_delete_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_cancel_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_inner_text",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup_store_delete_complete_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_complete_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_complete_inner_text",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "Add_store_test",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "console.log(\"tototo: \", userToken);",
+                "",
+                "",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/stores/info\", checkStoreIdRequest)",
+                "  // .then((res) => {",
+                "  //   res.text()",
+                "  //   // console.log(\"res:\", res.text());",
+                "  //   // return res.json();",
+                "  // })",
+                "  .then((data) => {",
+                "    console.log(data);",
+                "    // runtimeScene.getGame().getVariables().get(\"storeId\").setString(data.id);",
+                "    // var storeId = runtimeScene.getGame().getVariables().get(\"storeId\")._str;",
+                "    // console.log(\"스토어 아이디 : \", storeId);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
         }
       ]
     },
@@ -32125,10 +33245,13 @@
                 "  runtimeScene.getGame().getVariables().get(\"userToken\").setString(logintoken);",
                 "}",
                 "",
+                "",
                 "// console.log(\"token : \", runtimeScene.getGame().getVariables().get(\"userToken\")._str);",
                 "",
                 "//global 변수에 저장되어있는 토큰 가져오기",
                 "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "",
+                "// console.log(\"receive token event:\", userToken);",
                 "",
                 "//유저 정보 확인",
                 "var userInfoRequest = {",
@@ -58252,6 +59375,179 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.546875,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Square scene",
+      "name": "Popup store delete",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 411,
+          "layer": "",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "5a6ee4ba-4a89-42bd-814f-6dd9c969598d",
+          "width": 681,
+          "x": 309,
+          "y": 160,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 58,
+          "layer": "",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "3a5dd91f-2e64-45fb-b39f-b6175db98886",
+          "width": 681,
+          "x": 309,
+          "y": 160,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup_store_delete_inner_text",
+          "persistentUuid": "5a715d98-7e74-4e50-be22-c96baeab935d",
+          "width": 0,
+          "x": 449,
+          "y": 345,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 49,
+          "layer": "",
+          "name": "popup_store_delete_ok_btn",
+          "persistentUuid": "ee3f4fab-de4a-431a-b7ac-315fe0262fe8",
+          "width": 136,
+          "x": 659,
+          "y": 496,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 49,
+          "layer": "",
+          "name": "popup_store_delete_cancel_btn",
+          "persistentUuid": "50c7cdb5-3ad1-4920-a542-4762a6344654",
+          "width": 135,
+          "x": 512,
+          "y": 497,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.7130377630690398,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Square scene",
+      "name": "Popup store delete complete",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 411,
+          "layer": "",
+          "name": "WhiteBackgroundPopup",
+          "persistentUuid": "5a6ee4ba-4a89-42bd-814f-6dd9c969598d",
+          "width": 681,
+          "x": 309,
+          "y": 160,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 58,
+          "layer": "",
+          "name": "BlueTitlePopup",
+          "persistentUuid": "3a5dd91f-2e64-45fb-b39f-b6175db98886",
+          "width": 681,
+          "x": 309,
+          "y": 160,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "popup_store_delete_complete_inner_text",
+          "persistentUuid": "4b044fe0-1725-45cb-b71e-f51be554bdb9",
+          "width": 0,
+          "x": 468,
+          "y": 347,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 46,
+          "layer": "",
+          "name": "popup_store_delete_complete_ok_btn",
+          "persistentUuid": "5f478b6d-08ec-49cc-a805-2a51960ddfb1",
+          "width": 128,
+          "x": 589,
+          "y": 498,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.4789341884535247,
         "windowMask": false
       }
     }
