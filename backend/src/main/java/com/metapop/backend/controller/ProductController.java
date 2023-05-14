@@ -8,6 +8,7 @@ import com.metapop.backend.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,6 +24,25 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
+
+    @Value("${cloud.aws.credentials.accessKey}")
+    private String accessKey;
+
+    @Value("${cloud.aws.credentials.secretKey}")
+    private String secretKey;
+
+    @Operation(summary = "", description = "ㅇㅇ 등록 API")
+    @GetMapping("/accessKey")
+    public ResponseEntity<String> hi() {
+        return ResponseEntity.ok(accessKey);
+    }
+
+    @Operation(summary = "", description = "ㅇㅇs 등록 API")
+    @GetMapping("/secretKey")
+    public ResponseEntity<String> his() {
+        return ResponseEntity.ok(secretKey);
+    }
+
 
     @Operation(summary = "", description = "상품 등록 API")
     @PostMapping("/register")
