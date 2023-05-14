@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 @Transactional
@@ -29,8 +30,13 @@ public class StoreService {
         }
     }
 
-    public Store info(User user) {
+    public Store infodetail(User user) {
         Store store = storeRepository.findByOwner(user);
+        return store;
+    }
+
+    public List<Store> info() {
+        List<Store> store = storeRepository.findAll();
         return store;
     }
 
