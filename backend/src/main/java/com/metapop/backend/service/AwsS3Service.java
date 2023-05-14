@@ -5,9 +5,6 @@ import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.DeleteObjectRequest;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.metapop.backend.entity.Product;
-import com.metapop.backend.entity.ProductImg;
-import com.metapop.backend.repository.ProductImgRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -29,8 +26,6 @@ public class AwsS3Service {
 
     private final AmazonS3 amazonS3;
 
-    private final ProductImgRepository productImgRepository;
-
     public List<String> uploadFile(List<MultipartFile> multipartFiles){
         List<String> fileNameList = new ArrayList<>();
 
@@ -51,9 +46,6 @@ public class AwsS3Service {
 
         });
 
-        fileNameList.forEach(file -> {
-
-        });
         return fileNameList;
     }
 

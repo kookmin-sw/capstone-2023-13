@@ -23,13 +23,9 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @Autowired
-    private AwsS3Service awsS3Service;
-
     @Operation(summary = "", description = "상품 등록 API")
     @PostMapping("/register")
     public String registration(@RequestBody ProductSaveDTO productSaveDTO, List<MultipartFile> multipartFiles) {
-        awsS3Service.uploadFile(multipartFiles);
         return productService.registration(productSaveDTO);
     }
 
