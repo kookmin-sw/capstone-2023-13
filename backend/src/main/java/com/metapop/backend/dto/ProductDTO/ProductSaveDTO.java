@@ -4,7 +4,8 @@ import com.metapop.backend.entity.Product;
 import com.metapop.backend.entity.Store;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -14,7 +15,7 @@ public class ProductSaveDTO {
     private Long price;
     private Long amount;
     private String info;
-    private String imageUrl;
+    private List<String> imgList;
 
     public Product toEntity(Store store) {
         return Product.builder()
@@ -23,6 +24,7 @@ public class ProductSaveDTO {
                 .price(price)
                 .amount(amount)
                 .info(info)
+                .imgList(imgList)
                 .build();
     }
 }

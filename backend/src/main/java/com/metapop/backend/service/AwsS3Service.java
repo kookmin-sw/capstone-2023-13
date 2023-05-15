@@ -43,7 +43,6 @@ public class AwsS3Service {
                 throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "파일 업로드에 실패했습니다.");
             }
             fileNameList.add(fileName);
-
         });
 
         return fileNameList;

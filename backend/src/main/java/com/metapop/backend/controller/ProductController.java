@@ -3,15 +3,12 @@ package com.metapop.backend.controller;
 import com.metapop.backend.dto.ProductDTO.ProductSaveDTO;
 import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
 import com.metapop.backend.entity.Product;
-import com.metapop.backend.service.AwsS3Service;
 import com.metapop.backend.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 import java.util.Optional;
