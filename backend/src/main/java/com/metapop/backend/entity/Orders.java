@@ -7,7 +7,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -26,7 +28,7 @@ public class Orders {
     private Long sellerId;
 
     @Column(nullable = false)
-    private LocalDate orderDate;
+    private LocalDateTime orderDate;
 
     @Column(nullable = false)
     private Long state;
@@ -34,17 +36,22 @@ public class Orders {
     @Column(nullable = false)
     private Long totalPrice;
 
+    @ElementCollection
+    @CollectionTable(name = "orders_product_list", joinColumns = @JoinColumn(name = "orders_id", referencedColumnName = "id"))
+    private List<Long> productList = new ArrayList<>();
+
     @PrePersist
     public void prePersist() {
-        this.orderDate = LocalDate.now();
+        this.orderDate = LocalDateTime.now();
     }
 
     @Builder
-    public Orders(Long buyerId, Long sellerId, Long state, Long totalPrice){
+    public Orders(Long buyerId, Long sellerId, Long state, Long totalPrice, List<Long> productList){
         this.buyerId = buyerId;
         this.sellerId = sellerId;
         this.state = state;
         this.totalPrice = totalPrice;
+        this.productList = productList;
     }
 
     public void update(OrdersUpdateDTO ordersUpdateDTO) {
@@ -52,5 +59,6 @@ public class Orders {
         this.sellerId = ordersUpdateDTO.getSellerId();
         this.state = ordersUpdateDTO.getState();
         this.totalPrice = ordersUpdateDTO.getTotalPrice();
+        this.productList = ordersUpdateDTO.getProductListId();
     }
 }
