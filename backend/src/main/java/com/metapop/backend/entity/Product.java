@@ -36,16 +36,18 @@ public class Product {
     @Column(nullable = false)
     private String info;
 
-    @Transient
-    private final List<String> imgList = new ArrayList<>();
+    @ElementCollection
+    @CollectionTable(name = "product_img_list", joinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"))
+    private List<String> imgList = new ArrayList<>();
 
     @Builder
-    public Product(Store store, String name, Long price, Long amount, String info){
+    public Product(Store store, String name, Long price, Long amount, String info, List<String> imgList) {
         this.storeId = store;
         this.name = name;
         this.price = price;
         this.amount = amount;
         this.info = info;
+        this.imgList = imgList;
     }
 
     public void update(ProductUpdateDTO productUpdateDTO) {
