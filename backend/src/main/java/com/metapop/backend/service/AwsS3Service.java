@@ -42,7 +42,7 @@ public class AwsS3Service {
             } catch (IOException e){
                 throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "파일 업로드에 실패했습니다.");
             }
-            fileNameList.add(fileName);
+            fileNameList.add("https://metapop.s3.ap-northeast-2.amazonaws.com/" + fileName);
         });
 
         return fileNameList;
