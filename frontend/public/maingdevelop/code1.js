@@ -170,6 +170,159 @@ gdjs.Square_32sceneCode.GDTransparentBackgroundObjects3= [];
 gdjs.Square_32sceneCode.GDMeta_95IconObjects1= [];
 gdjs.Square_32sceneCode.GDMeta_95IconObjects2= [];
 gdjs.Square_32sceneCode.GDMeta_95IconObjects3= [];
+gdjs.Square_32sceneCode.GDTile1Objects1= [];
+gdjs.Square_32sceneCode.GDTile1Objects2= [];
+gdjs.Square_32sceneCode.GDTile1Objects3= [];
+gdjs.Square_32sceneCode.GDTile2Objects1= [];
+gdjs.Square_32sceneCode.GDTile2Objects2= [];
+gdjs.Square_32sceneCode.GDTile2Objects3= [];
+gdjs.Square_32sceneCode.GDTile3Objects1= [];
+gdjs.Square_32sceneCode.GDTile3Objects2= [];
+gdjs.Square_32sceneCode.GDTile3Objects3= [];
+gdjs.Square_32sceneCode.GDTile4Objects1= [];
+gdjs.Square_32sceneCode.GDTile4Objects2= [];
+gdjs.Square_32sceneCode.GDTile4Objects3= [];
+gdjs.Square_32sceneCode.GDTile5Objects1= [];
+gdjs.Square_32sceneCode.GDTile5Objects2= [];
+gdjs.Square_32sceneCode.GDTile5Objects3= [];
+gdjs.Square_32sceneCode.GDTile6Objects1= [];
+gdjs.Square_32sceneCode.GDTile6Objects2= [];
+gdjs.Square_32sceneCode.GDTile6Objects3= [];
+gdjs.Square_32sceneCode.GDTile7Objects1= [];
+gdjs.Square_32sceneCode.GDTile7Objects2= [];
+gdjs.Square_32sceneCode.GDTile7Objects3= [];
+gdjs.Square_32sceneCode.GDTile8Objects1= [];
+gdjs.Square_32sceneCode.GDTile8Objects2= [];
+gdjs.Square_32sceneCode.GDTile8Objects3= [];
+gdjs.Square_32sceneCode.GDTile9Objects1= [];
+gdjs.Square_32sceneCode.GDTile9Objects2= [];
+gdjs.Square_32sceneCode.GDTile9Objects3= [];
+gdjs.Square_32sceneCode.GDTile10Objects1= [];
+gdjs.Square_32sceneCode.GDTile10Objects2= [];
+gdjs.Square_32sceneCode.GDTile10Objects3= [];
+gdjs.Square_32sceneCode.GDTile11Objects1= [];
+gdjs.Square_32sceneCode.GDTile11Objects2= [];
+gdjs.Square_32sceneCode.GDTile11Objects3= [];
+gdjs.Square_32sceneCode.GDTile12Objects1= [];
+gdjs.Square_32sceneCode.GDTile12Objects2= [];
+gdjs.Square_32sceneCode.GDTile12Objects3= [];
+gdjs.Square_32sceneCode.GDTile13Objects1= [];
+gdjs.Square_32sceneCode.GDTile13Objects2= [];
+gdjs.Square_32sceneCode.GDTile13Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton1Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton1Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton1Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton2Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton2Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton2Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton3Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton3Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton3Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton4Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton4Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton4Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton5Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton5Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton5Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton6Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton6Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton6Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton7Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton7Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton7Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton8Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton8Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton8Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton9Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton9Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton9Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton10Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton10Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton10Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton11Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton11Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton11Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton12Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton12Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton12Objects3= [];
+gdjs.Square_32sceneCode.GDTileButton13Objects1= [];
+gdjs.Square_32sceneCode.GDTileButton13Objects2= [];
+gdjs.Square_32sceneCode.GDTileButton13Objects3= [];
+gdjs.Square_32sceneCode.GDWallSideObjects1= [];
+gdjs.Square_32sceneCode.GDWallSideObjects2= [];
+gdjs.Square_32sceneCode.GDWallSideObjects3= [];
+gdjs.Square_32sceneCode.GDWallButton1Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton1Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton1Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton2Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton2Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton2Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton3Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton3Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton3Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton4Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton4Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton4Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton5Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton5Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton5Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton6Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton6Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton6Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton7Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton7Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton7Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton8Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton8Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton8Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton9Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton9Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton9Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton10Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton10Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton10Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton11Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton11Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton11Objects3= [];
+gdjs.Square_32sceneCode.GDWallButton12Objects1= [];
+gdjs.Square_32sceneCode.GDWallButton12Objects2= [];
+gdjs.Square_32sceneCode.GDWallButton12Objects3= [];
+gdjs.Square_32sceneCode.GDWall1Objects1= [];
+gdjs.Square_32sceneCode.GDWall1Objects2= [];
+gdjs.Square_32sceneCode.GDWall1Objects3= [];
+gdjs.Square_32sceneCode.GDWall2Objects1= [];
+gdjs.Square_32sceneCode.GDWall2Objects2= [];
+gdjs.Square_32sceneCode.GDWall2Objects3= [];
+gdjs.Square_32sceneCode.GDWall3Objects1= [];
+gdjs.Square_32sceneCode.GDWall3Objects2= [];
+gdjs.Square_32sceneCode.GDWall3Objects3= [];
+gdjs.Square_32sceneCode.GDWall4Objects1= [];
+gdjs.Square_32sceneCode.GDWall4Objects2= [];
+gdjs.Square_32sceneCode.GDWall4Objects3= [];
+gdjs.Square_32sceneCode.GDWall5Objects1= [];
+gdjs.Square_32sceneCode.GDWall5Objects2= [];
+gdjs.Square_32sceneCode.GDWall5Objects3= [];
+gdjs.Square_32sceneCode.GDWall6Objects1= [];
+gdjs.Square_32sceneCode.GDWall6Objects2= [];
+gdjs.Square_32sceneCode.GDWall6Objects3= [];
+gdjs.Square_32sceneCode.GDWall7Objects1= [];
+gdjs.Square_32sceneCode.GDWall7Objects2= [];
+gdjs.Square_32sceneCode.GDWall7Objects3= [];
+gdjs.Square_32sceneCode.GDWall8Objects1= [];
+gdjs.Square_32sceneCode.GDWall8Objects2= [];
+gdjs.Square_32sceneCode.GDWall8Objects3= [];
+gdjs.Square_32sceneCode.GDWall9Objects1= [];
+gdjs.Square_32sceneCode.GDWall9Objects2= [];
+gdjs.Square_32sceneCode.GDWall9Objects3= [];
+gdjs.Square_32sceneCode.GDWall10Objects1= [];
+gdjs.Square_32sceneCode.GDWall10Objects2= [];
+gdjs.Square_32sceneCode.GDWall10Objects3= [];
+gdjs.Square_32sceneCode.GDWall11Objects1= [];
+gdjs.Square_32sceneCode.GDWall11Objects2= [];
+gdjs.Square_32sceneCode.GDWall11Objects3= [];
+gdjs.Square_32sceneCode.GDWall12Objects1= [];
+gdjs.Square_32sceneCode.GDWall12Objects2= [];
+gdjs.Square_32sceneCode.GDWall12Objects3= [];
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects1= [];
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects2= [];
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects3= [];
@@ -394,14 +547,14 @@ gdjs.Square_32sceneCode.GDStore_95exampleObjects2= [];
 gdjs.Square_32sceneCode.GDStore_95exampleObjects3= [];
 
 
-gdjs.Square_32sceneCode.userFunc0x7cd000 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xcb3cb8 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
 
 runtimeScene.user_id = runtimeScene.getGame().getVariables().get("UserId")._str;
 runtimeScene.nickname = runtimeScene.getGame().getVariables().get("UserNickname")._str;
-runtimeScene.channel_id = "Square12";
+runtimeScene.channel_id = "Square";
 
 runtimeScene.ws.onopen = function(event) {
 
@@ -797,12 +950,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x7cd000(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xcb3cb8(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x7cd058 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xca4fd8 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -834,7 +987,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0xfd99a8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xcb3b98 = function(runtimeScene) {
 "use strict";
 // const channel = "Square1";
 
@@ -908,7 +1061,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Square_32sceneCode.userFunc0x7bd798 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xaaeb70 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -959,14 +1112,14 @@ gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x7bd798(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xaaeb70(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWoodObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood": gdjs.Square_32sceneCode.GDWideSideRectangleWoodObjects1});
-gdjs.Square_32sceneCode.userFunc0x8b1fe0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xaaf6d8 = function(runtimeScene) {
 "use strict";
 const storeName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = storeName.getString();
@@ -1053,7 +1206,7 @@ fetch("http://43.201.210.173:8080/stores/register", addStoreRequest)
 
 
 };
-gdjs.Square_32sceneCode.userFunc0xfd9b40 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xaaf960 = function(runtimeScene) {
 "use strict";
 // 객체 생성을 위한 함수 정의
 function createObject(runtimeScene, objectName, x, y) {
@@ -1087,7 +1240,7 @@ if(storeExists){
 
 
 };
-gdjs.Square_32sceneCode.userFunc0x7cd818 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xaafb00 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 
@@ -1121,7 +1274,7 @@ gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x8b1fe0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xaaf6d8(runtimeScene);
 
 }
 
@@ -1203,7 +1356,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects2.length
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xfd9b40(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xaaf960(runtimeScene);
 
 }
 
@@ -1218,14 +1371,14 @@ gdjs.Square_32sceneCode.userFunc0xfd9b40(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x7cd818(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xaafb00(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595added_9595storeObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood_added_store": gdjs.Square_32sceneCode.GDWideSideRectangleWood_95added_95storeObjects1});
-gdjs.Square_32sceneCode.userFunc0xfd84c8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xab0ae8 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1244,14 +1397,14 @@ gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xfd84c8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xab0ae8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595delete_9595storeObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood_delete_store": gdjs.Square_32sceneCode.GDWideSideRectangleWood_95delete_95storeObjects1});
-gdjs.Square_32sceneCode.userFunc0x814900 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x7f1f58 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
@@ -1289,7 +1442,7 @@ gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x814900(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x7f1f58(runtimeScene);
 
 }
 
@@ -1338,7 +1491,7 @@ let isConditionTrue_0 = false;
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDAdd_9595store_9595testObjects1Objects = Hashtable.newFrom({"Add_store_test": gdjs.Square_32sceneCode.GDAdd_95store_95testObjects1});
-gdjs.Square_32sceneCode.userFunc0x7bdbf0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x7f3a38 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 console.log("tototo: ", userToken);
@@ -1375,14 +1528,14 @@ gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x7bdbf0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x7f3a38(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0xad0eb0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xcf28f8 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1401,7 +1554,7 @@ gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xad0eb0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xcf28f8(runtimeScene);
 
 }
 
@@ -1433,7 +1586,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x7cd058(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xca4fd8(runtimeScene);
 
 }
 
@@ -1441,7 +1594,7 @@ gdjs.Square_32sceneCode.userFunc0x7cd058(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xfd99a8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xcb3b98(runtimeScene);
 
 }
 
@@ -2322,6 +2475,159 @@ gdjs.Square_32sceneCode.GDTransparentBackgroundObjects3.length = 0;
 gdjs.Square_32sceneCode.GDMeta_95IconObjects1.length = 0;
 gdjs.Square_32sceneCode.GDMeta_95IconObjects2.length = 0;
 gdjs.Square_32sceneCode.GDMeta_95IconObjects3.length = 0;
+gdjs.Square_32sceneCode.GDTile1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile1Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile2Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile3Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile4Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile5Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile6Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile7Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile8Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile9Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile10Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile11Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile12Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTile13Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTile13Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTile13Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton1Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton2Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton3Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton4Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton5Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton6Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton7Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton8Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton9Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton10Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton11Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton12Objects3.length = 0;
+gdjs.Square_32sceneCode.GDTileButton13Objects1.length = 0;
+gdjs.Square_32sceneCode.GDTileButton13Objects2.length = 0;
+gdjs.Square_32sceneCode.GDTileButton13Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallSideObjects1.length = 0;
+gdjs.Square_32sceneCode.GDWallSideObjects2.length = 0;
+gdjs.Square_32sceneCode.GDWallSideObjects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton1Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton2Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton3Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton4Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton5Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton6Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton7Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton8Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton9Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton10Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton11Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWallButton12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWallButton12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWallButton12Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall1Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall2Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall3Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall4Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall5Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall6Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall7Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall8Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall9Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall10Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall11Objects3.length = 0;
+gdjs.Square_32sceneCode.GDWall12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDWall12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDWall12Objects3.length = 0;
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects1.length = 0;
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects2.length = 0;
 gdjs.Square_32sceneCode.GDWoodBackgroundObjects3.length = 0;
