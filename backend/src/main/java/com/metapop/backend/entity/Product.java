@@ -55,5 +55,6 @@ public class Product {
         this.price = productUpdateDTO.getPrice();
         this.amount = productUpdateDTO.getAmount();
         this.info = productUpdateDTO.getInfo();
+        this.imgList = productUpdateDTO.getImgList();
     }
 }
