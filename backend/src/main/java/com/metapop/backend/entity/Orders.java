@@ -59,5 +59,6 @@ public class Orders {
         this.sellerId = ordersUpdateDTO.getSellerId();
         this.state = ordersUpdateDTO.getState();
         this.totalPrice = ordersUpdateDTO.getTotalPrice();
+        this.productList = ordersUpdateDTO.getProductListId();
     }
 }
