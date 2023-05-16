@@ -639,7 +639,7 @@ gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46G
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door2": gdjs.Store_32custom_32sceneCode.GDDoor2Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor3Objects1Objects = Hashtable.newFrom({"Door3": gdjs.Store_32custom_32sceneCode.GDDoor3Objects1});
-gdjs.Store_32custom_32sceneCode.userFunc0xde66c8 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x7ed738 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
@@ -756,7 +756,7 @@ gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xde66c8(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x7ed738(runtimeScene);
 
 }
 
