@@ -949,7 +949,7 @@ gdjs.Square_32sceneCode.GDStore_95exampleObjects2= [];
 gdjs.Square_32sceneCode.GDStore_95exampleObjects3= [];
 
 
-gdjs.Square_32sceneCode.userFunc0x104d510 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd7ad08 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1369,23 +1369,40 @@ function disconnectWebSocket(runtimeScene) {
     }
 }
 
-function findDeleteUser(e) {
+function deleteUser(e) {
     if (runtimeScene.user_id !== e.user_id) {
         const Body = e.custom.body;
         const Eye = e.custom.eye;
         const Hair = e.custom.hair;
         const Outfit = e.custom.outfit;
+        const body = runtimeScene.getObjects("Body" + Body);
+        const eye = runtimeScene.getObjects("Eye" + Eye);
+        const hair = runtimeScene.getObjects("Hair" + Hair);
+        const outfit = runtimeScene.getObjects("Outfit" + Outfit)
 
-        const body = runtimeScene.getObjects("Body" + Body).find((o) => o.user_id === e.user_id);
-        const eye = runtimeScene.getObjects("Eye" + Eye).find((o) => o.user_id === e.user_id);
-        const hair = runtimeScene.getObjects("Hair" + Hair).find((o) => o.user_id === e.user_id);
-        const outfit = runtimeScene.getObjects("Outfit" + Outfit).find((o) => o.user_id === e.user_id);
+        var a, b, c, d;
 
-        body.deleteFromScene(runtimeScene);
-        eye.deleteFromScene(runtimeScene);
-        hair.deleteFromScene(runtimeScene);
-        outfit.deleteFromScene(runtimeScene);
+        a = findUser(body, e.user_id);
+        b = findUser(eye, e.user_id);
+        c = findUser(hair, e.user_id);
+        d = findUser(outfit, e.user_id);
+
+        body[a].deleteFromScene(runtimeScene);
+        eye[b].deleteFromScene(runtimeScene);
+        hair[c].deleteFromScene(runtimeScene);
+        outfit[d].deleteFromScene(runtimeScene);
     }
+}
+
+function findUser(ob, find_id) {
+    var q;
+    for (let i = 0; i < 100; i++) {
+        if (ob[i].user_id === find_id) {
+            a = i;
+            break;
+        }
+    }
+    return q;
 }
 
 };
@@ -1394,12 +1411,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x104d510(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd7ad08(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x15d6918 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x7f72a8 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1431,7 +1448,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0x7f72e8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1182948 = function(runtimeScene) {
 "use strict";
 // const channel = "Square1";
 
@@ -1505,7 +1522,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Square_32sceneCode.userFunc0x1089810 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x10cc4b0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -1556,14 +1573,14 @@ gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1089810(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x10cc4b0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWoodObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood": gdjs.Square_32sceneCode.GDWideSideRectangleWoodObjects1});
-gdjs.Square_32sceneCode.userFunc0x17c8fb8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x9728a0 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1601,12 +1618,12 @@ gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x17c8fb8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x9728a0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x1182840 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x17c9b40 = function(runtimeScene) {
 "use strict";
 const storeName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = storeName.getString();
@@ -1693,7 +1710,7 @@ fetch("http://43.201.210.173:8080/stores/register", addStoreRequest)
 
 
 };
-gdjs.Square_32sceneCode.userFunc0x159d458 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xff8c40 = function(runtimeScene) {
 "use strict";
 // 객체 생성을 위한 함수 정의
 function createObject(runtimeScene, objectName, x, y) {
@@ -1727,7 +1744,7 @@ if(storeExists){
 
 
 };
-gdjs.Square_32sceneCode.userFunc0x15a1478 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x159d390 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 
@@ -1761,7 +1778,7 @@ gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1182840(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x17c9b40(runtimeScene);
 
 }
 
@@ -1843,7 +1860,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects2.length
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x159d458(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xff8c40(runtimeScene);
 
 }
 
@@ -1858,14 +1875,14 @@ gdjs.Square_32sceneCode.userFunc0x159d458(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x15a1478(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x159d390(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595added_9595storeObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood_added_store": gdjs.Square_32sceneCode.GDWideSideRectangleWood_95added_95storeObjects1});
-gdjs.Square_32sceneCode.userFunc0x17c9b50 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1599328 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1903,14 +1920,14 @@ gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x17c9b50(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1599328(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595delete_9595storeObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood_delete_store": gdjs.Square_32sceneCode.GDWideSideRectangleWood_95delete_95storeObjects1});
-gdjs.Square_32sceneCode.userFunc0x1596e88 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1599460 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
@@ -1948,7 +1965,7 @@ gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1596e88(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1599460(runtimeScene);
 
 }
 
@@ -1997,7 +2014,7 @@ let isConditionTrue_0 = false;
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDAdd_9595store_9595testObjects1Objects = Hashtable.newFrom({"Add_store_test": gdjs.Square_32sceneCode.GDAdd_95store_95testObjects1});
-gdjs.Square_32sceneCode.userFunc0xfc05b8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xa24eb0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 console.log("tototo: ", userToken);
@@ -2034,14 +2051,14 @@ gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xfc05b8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xa24eb0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0xb245f0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x7eb420 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -2079,7 +2096,7 @@ gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xb245f0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x7eb420(runtimeScene);
 
 }
 
@@ -2111,7 +2128,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x15d6918(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x7f72a8(runtimeScene);
 
 }
 
@@ -2119,7 +2136,7 @@ gdjs.Square_32sceneCode.userFunc0x15d6918(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x7f72e8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1182948(runtimeScene);
 
 }
 
