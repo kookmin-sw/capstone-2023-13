@@ -49118,7 +49118,7 @@
                 "",
                 "runtimeScene.ws.onmessage = function (event) {",
                 "    const e = JSON.parse(event.data);",
-                "    console.log(\"Full : \",e);",
+                "    //console.log(\"Full : \",e);",
                 "    if (e.msg === \"exit\\n\") {",
                 "        disconnectWebSocket(runtimeScene);",
                 "    }",
@@ -49372,7 +49372,7 @@
                 "    if(o.user_id === runtimeScene.user_id){",
                 "        var camX = runtimeScene.getLayer(\"\").getCameraX(o.user_id)",
                 "        var camY = runtimeScene.getLayer(\"\").getCameraY(o.user_id)",
-                "        console.log(camX, \" \", camY);",
+                "        // console.log(camX, \" \", camY);",
                 "        runtimeScene.getLayer(\"\").setCameraX(lerp(camX,o.getX(),0.8), o.user_id)",
                 "        runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id)",
                 "    }",
@@ -49693,7 +49693,7 @@
                 "",
                 "runtimeScene.ws.onmessage = function (event) {",
                 "    const e = JSON.parse(event.data);",
-                "    console.log(\"Full : \",e);",
+                "    //console.log(\"Full : \",e);",
                 "    if (e.msg === \"exit\\n\") {",
                 "        disconnectWebSocket(runtimeScene);",
                 "    }",
@@ -49947,7 +49947,7 @@
                 "    if(o.user_id === runtimeScene.user_id){",
                 "        var camX = runtimeScene.getLayer(\"\").getCameraX(o.user_id)",
                 "        var camY = runtimeScene.getLayer(\"\").getCameraY(o.user_id)",
-                "        console.log(camX, \" \", camY);",
+                "        // console.log(camX, \" \", camY);",
                 "        runtimeScene.getLayer(\"\").setCameraX(lerp(camX,o.getX(),0.8), o.user_id)",
                 "        runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id)",
                 "    }",
@@ -50315,12 +50315,62 @@
           "actions": [
             {
               "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Store custom scene\"",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
                 "Popup1",
                 ""
               ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "function disconnectWebSocket(runtimeScene) {",
+                "    if (runtimeScene.ws) {",
+                "        var update;",
+                "        console.log('Disconnecting WebSocket...');",
+                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0, ",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
+                "        runtimeScene.ws.close();",
+                "    } ",
+                "    else {",
+                "        console.log('WebSocket is not connected.');",
+                "    }",
+                "}",
+                "",
+                "disconnectWebSocket(runtimeScene);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         },
@@ -58288,8 +58338,29 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "WhiteButtonWithShadow",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Square scene\"",
+                ""
+              ]
+            }
+          ]
         }
       ]
     }
