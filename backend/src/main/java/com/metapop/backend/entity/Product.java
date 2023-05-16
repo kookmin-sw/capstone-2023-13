@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "product")
@@ -34,13 +36,18 @@ public class Product {
     @Column(nullable = false)
     private String info;
 
+    @ElementCollection
+    @CollectionTable(name = "product_img_list", joinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"))
+    private List<String> imgList = new ArrayList<>();
+
     @Builder
-    public Product(Store store, String name, Long price, Long amount, String info){
+    public Product(Store store, String name, Long price, Long amount, String info, List<String> imgList) {
         this.storeId = store;
         this.name = name;
         this.price = price;
         this.amount = amount;
         this.info = info;
+        this.imgList = imgList;
     }
 
     public void update(ProductUpdateDTO productUpdateDTO) {
@@ -48,5 +55,6 @@ public class Product {
         this.price = productUpdateDTO.getPrice();
         this.amount = productUpdateDTO.getAmount();
         this.info = productUpdateDTO.getInfo();
+        this.imgList = productUpdateDTO.getImgList();
     }
 }

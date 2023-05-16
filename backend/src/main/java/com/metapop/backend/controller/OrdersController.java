@@ -7,6 +7,7 @@ import com.metapop.backend.service.OrdersService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public class OrdersController {
 
     @Operation(summary = "", description = "주문 등록 API")
     @PostMapping("/register")
-    public String registration(@RequestBody OrdersSaveDTO ordersSaveDTO) {
+    public ResponseEntity<String> registration(@RequestBody OrdersSaveDTO ordersSaveDTO) {
         return ordersService.registration(ordersSaveDTO);
     }
 
