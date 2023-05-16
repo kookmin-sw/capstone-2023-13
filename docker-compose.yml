@@ -1,0 +1,19 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    container_name: backend
+    environment:
+      - "ACCESS_KEY=${ACCESS_KEY}"
+      - "SECRET_KEY=${SECRET_KEY}"
+    restart: unless-stopped
+  websocket:
+    build:
+      context: ./websocket
+    ports:
+      - "8081:8080"
+    container_name: websocket
+    restart: unless-stopped
