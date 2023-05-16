@@ -1,6 +1,7 @@
 package com.metapop.backend.entity;
 
 import com.metapop.backend.dto.OrdersDTO.OrdersUpdateDTO;
+import com.metapop.backend.dto.ProductDTO.ProductUpdateDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,6 +9,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "orders")
