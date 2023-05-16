@@ -38,8 +38,11 @@ public class Store {
     @Column(nullable = false)
     private Float z;
 
+    @Column(nullable = false)
+    private String signName;
+
     @Builder
-    public Store(User user, String name, LocalDate period, String info, Float x,  Float y,  Float z){
+    public Store(User user, String name, LocalDate period, String info, Float x,  Float y,  Float z, String signName){
         this.owner = user;
         this.name = name;
         this.period = period;
@@ -47,6 +50,7 @@ public class Store {
         this.x = x;
         this.y = y;
         this.z = z;
+        this.signName = signName;
     }
 
     public void update(StoreUpdateDTO storeUpdateDTO) {
