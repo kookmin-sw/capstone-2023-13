@@ -18,13 +18,10 @@ async def websocket_handler(request):
     data = await ws.receive_json()
     user, nickname, channel, custom, X, Y, Z = M.get_init_data(data)
     log = request.app['logging']
-    
+    flag = False
     for user_id, socket in request.app['websockets'][channel].items():
-        if user_id == user:
-            log.connect_logging(400, user, nickname, channel)
-            await ws.send_json(M.connect(user, 400))
-            await ws.close()
-            return ws
+        if user_id == user: flag = True
+    if flag: del request.app['websockets'][channel][user]
     request.app['websockets'][channel][user] = ws
     await ws.send_json(M.connect(user, 200, custom))
     log.connect_logging(200, user, nickname, channel, custom)
