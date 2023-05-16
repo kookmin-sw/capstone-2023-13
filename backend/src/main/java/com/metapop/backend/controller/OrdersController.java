@@ -3,7 +3,11 @@ package com.metapop.backend.controller;
 import com.metapop.backend.dto.OrdersDTO.OrdersSaveDTO;
 import com.metapop.backend.dto.OrdersDTO.OrdersUpdateDTO;
 import com.metapop.backend.entity.Orders;
+import com.metapop.backend.entity.User;
+import com.metapop.backend.repository.UserRepository;
 import com.metapop.backend.service.OrdersService;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +22,11 @@ import java.util.Optional;
 @RequestMapping("orders")
 @CrossOrigin(origins = "*")
 public class OrdersController {
+
+    private String secretKey = "MetaPop";
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     private OrdersService ordersService;
@@ -35,15 +44,19 @@ public class OrdersController {
     }
 
     @Operation(summary = "", description = "내 판매 주문 전체 정보 조회 API")
-    @GetMapping("/info/sell/{user_id}")
-    public List<Orders> sellList(@PathVariable Long user_id) {
-        return ordersService.sellList(user_id);
+    @GetMapping("/info/sell")
+    public List<Orders> sellList(@RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return ordersService.sellList(user.getId());
     }
 
     @Operation(summary = "", description = "내 구매 주문 전체 정보 조회 API")
-    @GetMapping("/info/buy/{user_id}")
-    public List<Orders> buyList(@PathVariable Long user_id) {
-        return ordersService.buyList(user_id);
+    @GetMapping("/info/buy")
+    public List<Orders> buyList(@RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return ordersService.buyList(user.getId());
     }
 
     @Operation(summary = "", description = "주문 정보 수정 API")

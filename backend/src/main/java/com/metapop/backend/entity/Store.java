@@ -29,18 +29,32 @@ public class Store {
     @Column(nullable = false)
     private String info;
 
+    @Column(nullable = false)
+    private Float x;
+
+    @Column(nullable = false)
+    private Float y;
+
+    @Column(nullable = false)
+    private Float z;
+
     @Builder
-    public Store(User user, String name, LocalDate period, String info){
+    public Store(User user, String name, LocalDate period, String info, Float x,  Float y,  Float z){
         this.owner = user;
         this.name = name;
         this.period = period;
         this.info = info;
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 
     public void update(StoreUpdateDTO storeUpdateDTO) {
         this.name = storeUpdateDTO.getName();
         this.period = storeUpdateDTO.getPeriod();
         this.info = storeUpdateDTO.getInfo();
+        this.x = storeUpdateDTO.getX();
+        this.y = storeUpdateDTO.getY();
+        this.z = storeUpdateDTO.getZ();
     }
-
 }
