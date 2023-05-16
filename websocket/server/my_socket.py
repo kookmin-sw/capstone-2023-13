@@ -18,13 +18,10 @@ async def websocket_handler(request):
     data = await ws.receive_json()
     user, nickname, channel, custom, X, Y, Z = M.get_init_data(data)
     log = request.app['logging']
-    
+    flag = False
     for user_id, socket in request.app['websockets'][channel].items():
-        if user_id == user:
-            log.connect_logging(400, user, nickname, channel)
-            await ws.send_json(M.connect(user, 400))
-            await ws.close()
-            return ws
+        if user_id == user: flag = True
+    if flag: del request.app['websockets'][channel][user]
     request.app['websockets'][channel][user] = ws
     await ws.send_json(M.connect(user, 200, custom))
     log.connect_logging(200, user, nickname, channel, custom)
@@ -33,7 +30,7 @@ async def websocket_handler(request):
                       M.action(user, custom, "down", X, Y, Z))
     await M.broadcast(request.app,
                       channel,
-                      M.chat("SERVER", "SERVER", f"[{user}] enter chat room"))
+                      M.chat("SERVER", "SERVER", f"[{nickname}] enter chat room"))
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
             req = msg.json()
