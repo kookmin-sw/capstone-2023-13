@@ -34,7 +34,7 @@ function LoginBox({ onPage }) {
         localStorage.setItem('login-token', response.data);
 
         handleLogin(response.data);
-        console.log("window: ", window.reactUserToken);
+        // console.log("window: ", window.reactUserToken);
 
         loginClick();
         setLoginError(false);

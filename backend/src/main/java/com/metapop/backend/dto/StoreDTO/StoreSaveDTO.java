@@ -11,9 +11,6 @@ public class StoreSaveDTO {
     private String name;
     private LocalDate period;
     private String info;
-    private Float x;
-    private Float y;
-    private Float z;
 
     public Store toEntity(User user) {
         return Store.builder()
@@ -21,9 +18,6 @@ public class StoreSaveDTO {
                 .name(name)
                 .period(period)
                 .info(info)
-                .x(x)
-                .y(y)
-                .z(z)
                 .build();
     }
 }

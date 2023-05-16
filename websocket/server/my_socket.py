@@ -25,15 +25,15 @@ async def websocket_handler(request):
             await ws.send_json(M.connect(user, 400))
             await ws.close()
             return ws
-    request.app['websockets'][channel][user] = ws
-    await ws.send_json(M.connect(user, 200, custom))
+    await ws.send_json(M.connect(user, 200))
     log.connect_logging(200, user, nickname, channel, custom)
+    request.app['websockets'][channel][user] = ws
     await M.broadcast(request.app,
                       channel,
                       M.action(user, custom, "down", X, Y, Z))
     await M.broadcast(request.app,
                       channel,
-                      M.chat("SERVER", "SERVER", f"[{nickname}] enter chat room"))
+                      M.chat("SERVER", "SERVER", f"[{user}] enter chat room"))
     async for msg in ws:
         if msg.type == web.WSMsgType.text:
             req = msg.json()
@@ -47,32 +47,18 @@ async def websocket_handler(request):
                 await M.broadcast(request.app,
                                   channel,
                                   M.action(user, custom, direction, X, Y, Z))
+                log.action_logging(user, nickname, channel, direction, X, Y, Z)
             elif type == 'chat':
                 msg = req.get('msg')
                 await M.broadcast(request.app,
                                   channel,
                                   M.chat(user, nickname, msg))
-            elif type == 'connect':
-                del request.app['websockets'][channel][user]
-                req = msg.json()
-                channel = req.get('channel_id')
-                X = req.get('X')
-                Y = req.get('Y')
-                Z = req.get('Z')
-                request.app['websockets'][channel][user] = ws
-                await ws.send_json(M.connect(user, 200, custom))
-                log.connect_logging(200, user, nickname, channel, custom)
-                await M.broadcast(request.app,
-                                  channel,
-                                  M.action(user, custom, "down", X, Y, Z))
-                await M.broadcast(request.app,
-                                  channel,
-                                  M.chat("SERVER", "SERVER", f"[{user}] enter chat room"))
+                log.chat_logging(user, nickname, channel, msg)
             else:
                 await ws.send_json(M.connect(user, 400))
-
     del request.app['websockets'][channel][user]
     log.disconnect_logging(user, nickname, channel)
+    await ws.close()
     return ws
 
 def router():
