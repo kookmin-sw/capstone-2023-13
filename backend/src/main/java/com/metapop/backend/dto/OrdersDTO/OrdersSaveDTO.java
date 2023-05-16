@@ -12,6 +12,7 @@ public class OrdersSaveDTO {
     private Long state;
     private Long totalPrice;
     private List<Long> productListId;
+    private List<Long> productAmountList;
 
     public Orders toEntity() {
         return Orders.builder()
@@ -20,6 +21,7 @@ public class OrdersSaveDTO {
                 .state(state)
                 .totalPrice(totalPrice)
                 .productList(productListId)
+                .productAmountList(productAmountList)
                 .build();
     }
 }
