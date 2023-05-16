@@ -35089,6 +35089,14 @@
           "name": "Tile13"
         }
       ]
+    },
+    {
+      "name": "CollisionGroup",
+      "objects": [
+        {
+          "name": "WallSide"
+        }
+      ]
     }
   ],
   "variables": [
@@ -41476,7 +41484,26 @@
               "inlineCode": [
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
+                "        var update;",
                 "        console.log('Disconnecting WebSocket...');",
+                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0, ",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
                 "    } ",
                 "    else {",
@@ -43710,7 +43737,26 @@
               "inlineCode": [
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
+                "        var update;",
                 "        console.log('Disconnecting WebSocket...');",
+                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0, ",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
                 "    } ",
                 "    else {",
@@ -43722,7 +43768,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         }
@@ -44680,6 +44726,36 @@
                 "=",
                 "\"SaleTable\""
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "doorCreated",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "tileCreated",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "wallCreated",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -45486,6 +45562,32 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
+                "TileGroup2",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "tileCreated",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
                 "TileButton1",
                 ""
               ]
@@ -46255,6 +46357,32 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
+                "WallGroup2",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "wallCreated",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
                 "WallButton1",
                 ""
               ]
@@ -46941,7 +47069,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Deco Object Collision",
+          "comment": "Object Collision",
           "comment2": ""
         },
         {
@@ -46949,24 +47077,26 @@
           "conditions": [
             {
               "type": {
-                "value": "PosX"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "DecoTileGroup",
-                "<",
-                "20"
+                "WallSide",
+                "",
+                "",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "MettreX"
+                "value": "SeparateFromObjects"
               },
               "parameters": [
                 "DecoTileGroup",
-                "=",
-                "20"
+                "WallSide",
+                ""
               ]
             }
           ]
@@ -46976,78 +47106,26 @@
           "conditions": [
             {
               "type": {
-                "value": "PosX"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "DecoTileGroup",
-                ">",
-                "1260-DecoTileGroup.Width()"
+                "DecoWallGroup",
+                "WallSide",
+                "",
+                "",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "MettreX"
+                "value": "SeparateFromObjects"
               },
               "parameters": [
-                "DecoTileGroup",
-                "=",
-                "1260-DecoTileGroup.Width()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "DecoTileGroup",
-                "<",
-                "45"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreY"
-              },
-              "parameters": [
-                "DecoTileGroup",
-                "=",
-                "45"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "DecoTileGroup",
-                ">",
-                "691-DecoTileGroup.Height()"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreY"
-              },
-              "parameters": [
-                "DecoTileGroup",
-                "=",
-                "691-DecoTileGroup.Height()"
+                "DecoWallGroup",
+                "WallSide",
+                ""
               ]
             }
           ]
@@ -48695,6 +48773,32 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
+                "DoorGroup2",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "doorCreated",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
                 "DoorButton1",
                 ""
               ]
@@ -48857,6 +48961,13 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Store custom server"
         }
       ],
       "layers": [
@@ -49028,6 +49139,9 @@
                 "            else if (e.dir === \"left\") {",
                 "                leftMovement(e);",
                 "            }",
+                "            else if (e.dir == \"del\") {",
+                "                findDeleteUser(e);",
+                "            }",
                 "            break;",
                 "        case \"chat\":",
                 "            manageChat(e);",
@@ -49357,11 +49471,44 @@
                 "",
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
+                "        var update;",
                 "        console.log('Disconnecting WebSocket...');",
+                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0, ",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
                 "    } ",
                 "    else {",
                 "        console.log('WebSocket is not connected.');",
+                "    }",
+                "}",
+                "",
+                "function findDeleteUser(e) {",
+                "    if (runtimeScene.user_id !== e.user_id) {",
+                "        const o = runtimeScene.getObjects(\"Body\" + e.custom.body).find((o) => o.user_id === e.user_id);",
+                "        const e = runtimeScene.getObjects(\"Eye\" + e.custom.eye).find((o) => o.user_id === e.user_id);",
+                "        const h = runtimeScene.getObjects(\"Hair\" + e.custom.hair).find((o) => o.user_id === e.user_id);",
+                "        const f = runtimeScene.getObjects(\"Outfit\" + e.custom.outfit).find((o) => o.user_id === e.user_id);",
+                "",
+                "        o.deleteFromScene(runtimeScene);",
+                "        e.deleteFromScene(runtimeScene);",
+                "        h.deleteFromScene(runtimeScene);",
+                "        f.deleteFromScene(runtimeScene);",
                 "    }",
                 "}"
               ],
@@ -49524,7 +49671,7 @@
                 "    const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
                 "",
                 "    const data = { ",
-                "        user_id : runtimeScene.user_id, ",
+                "        user_id : 1,//runtimeScene.user_id, ",
                 "        nickname: runtimeScene.nickname, ",
                 "        channel_id : runtimeScene.channel_id,",
                 "        custom : {",
@@ -49566,6 +49713,9 @@
                 "            }",
                 "            else if (e.dir === \"left\") {",
                 "                leftMovement(e);",
+                "            }",
+                "            else if (e.dir == \"del\") {",
+                "                findDeleteUser(e);",
                 "            }",
                 "            break;",
                 "        case \"chat\":",
@@ -49897,10 +50047,43 @@
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
                 "        console.log('Disconnecting WebSocket...');",
+                "        var update;",
+                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0, ",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
                 "    } ",
                 "    else {",
                 "        console.log('WebSocket is not connected.');",
+                "    }",
+                "}",
+                "",
+                "function findDeleteUser(e) {",
+                "    if (runtimeScene.user_id !== e.user_id) {",
+                "        const o = runtimeScene.getObjects(\"Body\" + e.custom.body).find((o) => o.user_id === e.user_id);",
+                "        const e = runtimeScene.getObjects(\"Eye\" + e.custom.eye).find((o) => o.user_id === e.user_id);",
+                "        const h = runtimeScene.getObjects(\"Hair\" + e.custom.hair).find((o) => o.user_id === e.user_id);",
+                "        const f = runtimeScene.getObjects(\"Outfit\" + e.custom.outfit).find((o) => o.user_id === e.user_id);",
+                "",
+                "        o.deleteFromScene(runtimeScene);",
+                "        e.deleteFromScene(runtimeScene);",
+                "        h.deleteFromScene(runtimeScene);",
+                "        f.deleteFromScene(runtimeScene);",
                 "    }",
                 "}",
                 ""
@@ -49946,7 +50129,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": true
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -50259,7 +50442,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -50592,7 +50775,26 @@
               "inlineCode": [
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
+                "        var update;",
                 "        console.log('Disconnecting WebSocket...');",
+                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0, ",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
                 "    } ",
                 "    else {",
@@ -57912,6 +58114,182 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Store custom scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Store custom server",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BlueButtonWithShadow",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "doorCreated",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "tileCreated",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "wallCreated",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var tile, wall, door, deco, table;",
+                "var decoList = [];",
+                "var tableList = [];",
+                "",
+                "// 골라진 타일 인스턴스 정보 가져오기",
+                "for (let i = 1; i < 14; i++) {",
+                "    i = i.toString();",
+                "    const o = runtimeScene.getObjects(\"Tile\" + i)[0];",
+                "    if (o !== undefined) {",
+                "        tile = {",
+                "            objectName : \"Tile\" + i,",
+                "            x : o.getX(),",
+                "            y : o.getY(),",
+                "            z : o.getZOrder(),",
+                "            width : o.getWidth(),",
+                "            height : o.getHeight(),",
+                "            layer : o.getLayer()",
+                "        }",
+                "        console.log(tile);",
+                "    }",
+                "}",
+                "",
+                "// 골라진 벽 인스턴스 정보 가져오기",
+                "for (let i = 1; i < 13; i++) {",
+                "    i = i.toString();",
+                "    const o = runtimeScene.getObjects(\"Wall\" + i)[0];",
+                "    if (o !== undefined) {",
+                "        wall = {",
+                "            objectName : \"Wall\" + i,",
+                "            x : o.getX(),",
+                "            y : o.getY(),",
+                "            z : o.getZOrder(),",
+                "            width : o.getWidth(),",
+                "            height : o.getHeight(),",
+                "            layer : o.getLayer()",
+                "        }",
+                "        console.log(wall);",
+                "    }",
+                "}",
+                "",
+                "// 골라진 문 인스턴스 정보 가져오기",
+                "for (let i = 1; i < 4; i++) {",
+                "    i = i.toString();",
+                "    const o = runtimeScene.getObjects(\"Door\" + i)[0];",
+                "    if (o !== undefined) {",
+                "        door = {",
+                "            objectName : \"Door\" + i,",
+                "            x : o.getX(),",
+                "            y : o.getY(),",
+                "            z : o.getZOrder(),",
+                "            width : o.getWidth(),",
+                "            height : o.getHeight(),",
+                "            layer : o.getLayer()",
+                "        }",
+                "        console.log(door);",
+                "    }",
+                "}",
+                "",
+                "// 골라진 데코 인스턴스 정보 가져오기",
+                "for (let i = 1; i < 31; i++) {",
+                "    i = i.toString();",
+                "    let j = 0;",
+                "    while (true) {",
+                "        const o = runtimeScene.getObjects(\"Deco\" + i)[j];",
+                "        if (o === undefined) {",
+                "            break;",
+                "        }",
+                "        else {",
+                "            deco = {",
+                "                objectName : \"Deco\" + i,",
+                "                x : o.getX(),",
+                "                y : o.getY(),",
+                "                z : o.getZOrder(),",
+                "                width : o.getWidth(),",
+                "                height : o.getHeight(),",
+                "                layer : o.getLayer()",
+                "            }",
+                "            decoList.push(deco);",
+                "            j += 1;",
+                "        }",
+                "    }",
+                "}",
+                "console.log(decoList);",
+                "",
+                "// 골라진 갑판대 인스턴스 정보 가져오기",
+                "for (let i = 1; i < 13; i++) {",
+                "    i = i.toString();",
+                "    let j = 0;",
+                "    while (true) {",
+                "        const o = runtimeScene.getObjects(\"SalesTable\" + i)[j];",
+                "        if (o === undefined) {",
+                "            break;",
+                "        }",
+                "        else {",
+                "            table = {",
+                "                objectName : \"SalesTable\" + i,",
+                "                x : o.getX(),",
+                "                y : o.getY(),",
+                "                z : o.getZOrder(),",
+                "                width : o.getWidth(),",
+                "                height : o.getHeight(),",
+                "                layer : o.getLayer()",
+                "            }",
+                "            tableList.push(table);",
+                "            j += 1;",
+                "        }",
+                "    }",
+                "}",
+                "console.log(tableList);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     }
@@ -78435,7 +78813,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4097808498660938,
+        "zoomFactor": 0.5168601650401252,
         "windowMask": false
       }
     },
