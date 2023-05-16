@@ -40,18 +40,23 @@ public class Orders {
     @CollectionTable(name = "orders_product_list", joinColumns = @JoinColumn(name = "orders_id", referencedColumnName = "id"))
     private List<Long> productList = new ArrayList<>();
 
+    @ElementCollection
+    @CollectionTable(name = "orders_product_amount_list", joinColumns = @JoinColumn(name = "orders_id", referencedColumnName = "id"))
+    private List<Long> productAmountList = new ArrayList<>();
+
     @PrePersist
     public void prePersist() {
         this.orderDate = LocalDateTime.now();
     }
 
     @Builder
-    public Orders(Long buyerId, Long sellerId, Long state, Long totalPrice, List<Long> productList){
+    public Orders(Long buyerId, Long sellerId, Long state, Long totalPrice, List<Long> productList, List<Long> productAmountList) {
         this.buyerId = buyerId;
         this.sellerId = sellerId;
         this.state = state;
         this.totalPrice = totalPrice;
         this.productList = productList;
+        this.productAmountList = productAmountList;
     }
 
     public void update(OrdersUpdateDTO ordersUpdateDTO) {
