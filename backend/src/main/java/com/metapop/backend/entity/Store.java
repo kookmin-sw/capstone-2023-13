@@ -60,5 +60,6 @@ public class Store {
         this.x = storeUpdateDTO.getX();
         this.y = storeUpdateDTO.getY();
         this.z = storeUpdateDTO.getZ();
+        this.signName = storeUpdateDTO.getSignName();
     }
 }
