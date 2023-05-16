@@ -86,7 +86,6 @@ const Sidebar = ({ width=280, children }) => {
   })
 
 
-  console.log(showPopup);
 
   return (
     <div className={styles.container}>

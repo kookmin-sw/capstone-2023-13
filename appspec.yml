@@ -7,6 +7,7 @@ files:
     overwrite: yes
 
 hooks:
-  ApplicationStart:
+  ApllicationStart:
     - location: build.sh
+      timeout: 60
       runas: root
