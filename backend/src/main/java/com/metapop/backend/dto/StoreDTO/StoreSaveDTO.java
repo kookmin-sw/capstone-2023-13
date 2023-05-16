@@ -14,6 +14,7 @@ public class StoreSaveDTO {
     private Float x;
     private Float y;
     private Float z;
+    private String signName;
 
     public Store toEntity(User user) {
         return Store.builder()
@@ -24,6 +25,7 @@ public class StoreSaveDTO {
                 .x(x)
                 .y(y)
                 .z(z)
+                .signName(signName)
                 .build();
     }
 }

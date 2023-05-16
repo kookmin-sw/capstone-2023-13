@@ -40,6 +40,12 @@ public class StoreService {
         return store;
     }
 
+    public Store infosign(String sign_name) {
+        Store store = storeRepository.findBySignName(sign_name);
+        return store;
+    }
+
+
     public String update(User user, StoreUpdateDTO storeUpdateDTO) {
         Store store = storeRepository.findByOwner(user);
         store.update(storeUpdateDTO);

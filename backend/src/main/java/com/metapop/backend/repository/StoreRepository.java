@@ -6,4 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StoreRepository extends JpaRepository<Store, Long> {
     Store findByOwner(User owner);
+    Store findBySignName(String sign_name);
 }
