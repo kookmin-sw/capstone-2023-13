@@ -49661,7 +49661,7 @@
                 "",
                 "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
                 "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
-                "runtimeScene.channel_id = \"Square\";",
+                "runtimeScene.channel_id = \"Square2\";",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
@@ -49671,7 +49671,7 @@
                 "    const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
                 "",
                 "    const data = { ",
-                "        user_id : 1,//runtimeScene.user_id, ",
+                "        user_id : runtimeScene.user_id, ",
                 "        nickname: runtimeScene.nickname, ",
                 "        channel_id : runtimeScene.channel_id,",
                 "        custom : {",
@@ -49738,7 +49738,7 @@
                 "        const update = { ",
                 "            user_id : p.user_id, ",
                 "            nickname: p.nickname, ",
-                "            channel_id : channel,",
+                "            channel_id : e.channel_id,",
                 "            custom : {",
                 "                body : Body,",
                 "                eye : Eye,",
@@ -50768,6 +50768,41 @@
                 ""
               ]
             }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup3_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Store scene\"",
+                ""
+              ]
+            }
           ],
           "events": [
             {
@@ -50807,41 +50842,6 @@
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "popup3_ok_btn",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Popup3",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Store scene\"",
-                ""
-              ]
             }
           ]
         },
