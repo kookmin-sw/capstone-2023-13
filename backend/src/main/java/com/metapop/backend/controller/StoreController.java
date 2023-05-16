@@ -52,6 +52,12 @@ public class StoreController {
         return store;
     }
 
+    @Operation(summary = "", description = "표지만 이름 상점 정보 조회 API")
+    @GetMapping("/info/sign/{sign_name}")
+    public Store infosign(@PathVariable String sign_name) {
+        return storeService.infosign(sign_name);
+    }
+
     @Operation(summary = "", description = "상점 수정 API")
     @PutMapping("/update")
     public String update(@RequestBody StoreUpdateDTO storeUpdateDTO, @RequestHeader("Authorization") String jwtToken) {
