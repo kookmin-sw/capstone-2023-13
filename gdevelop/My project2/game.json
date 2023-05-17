@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "C:\\Users\\User\\Desktop\\4-1학기\\캡스톤\\메타팝 클론\\2\\capstone-2023-13\\frontend\\public\\maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -10531,6 +10531,56 @@
         "name": "assets/Store_Internal/Wall/general/Sprite 189_1.png42",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Floating Out Button Dark Blue_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Floating Out Button Dark Blue_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/2f8919c3cad70134ff1732dbaef5dd9babd0aed0240dd817c1db9e27aa6b205b_Floating Out Button Dark Blue_Hovered.png",
+          "name": "Floating Out Button Dark Blue_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Floating Out Button Dark Blue_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Floating Out Button Dark Blue_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d2cedf36d5812262daf2389108558a2ee0b40ca23da05f6200e1f0eee905ca11_Floating Out Button Dark Blue_Idle.png",
+          "name": "Floating Out Button Dark Blue_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Floating Out Button Dark Blue_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Floating Out Button Dark Blue_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d246e92fe474d2825e38af207a9926794d490bc052aef447688612f61ec48861_Floating Out Button Dark Blue_Pressed.png",
+          "name": "Floating Out Button Dark Blue_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/CarterOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CarterOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/44aceaa249d2ecb8bfe3eb7bedcb17aac44c0f5f13f9f58d85427a5afa7e92f0_CarterOne-Regular.ttf",
+          "name": "CarterOne-Regular.ttf"
+        }
       }
     ],
     "resourceFolders": []
@@ -28477,9 +28527,9 @@
       "effects": [],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -35191,7 +35241,7 @@
       "folded": true,
       "name": "UserId",
       "type": "string",
-      "value": ""
+      "value": "7"
     },
     {
       "folded": true,
@@ -35204,6 +35254,18 @@
       "name": "IsStoreAdded",
       "type": "string",
       "value": "0"
+    },
+    {
+      "folded": true,
+      "name": "CurrentStoreId",
+      "type": "string",
+      "value": "9"
+    },
+    {
+      "folded": true,
+      "name": "CurrentOwnerId",
+      "type": "string",
+      "value": "8"
     }
   ],
   "layouts": [
@@ -35687,8 +35749,8 @@
           "name": "Custom_Title",
           "persistentUuid": "d84e1884-080c-42f8-a017-828d43e4410e",
           "width": 0,
-          "x": 148,
-          "y": 18,
+          "x": 119,
+          "y": 23,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -35717,24 +35779,9 @@
           "name": "Meta_Icon",
           "persistentUuid": "ae14d360-9569-49eb-ab02-d0e884cdc361",
           "width": 81,
-          "x": 65,
-          "y": -8,
+          "x": 24,
+          "y": -4,
           "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 69,
-          "layer": "",
-          "name": "Custom_BackButton",
-          "persistentUuid": "1d735af0-7d9d-457a-a8d1-d9077ddf73b8",
-          "width": 153,
-          "x": 858,
-          "y": 603,
-          "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -41726,6 +41773,18 @@
             },
             {
               "name": "WhiteBackgroundPopup"
+            },
+            {
+              "name": "ProductDeposit_Message"
+            },
+            {
+              "name": "ProductDeposit_Line"
+            },
+            {
+              "name": "ProductDeposit_Info"
+            },
+            {
+              "name": "DohEmoteMidPopup"
             }
           ]
         },
@@ -41769,6 +41828,27 @@
             },
             {
               "name": "Buy_Address"
+            },
+            {
+              "name": "DohEmoteMidPopup"
+            },
+            {
+              "name": "ProductBuy_Name"
+            },
+            {
+              "name": "ProductBuy_Quantity"
+            },
+            {
+              "name": "ProductBuy_Price"
+            },
+            {
+              "name": "ProductBuy_TotalPrice"
+            },
+            {
+              "name": "ProductBuy_AdressLine"
+            },
+            {
+              "name": "ProductBuy_Address"
             }
           ]
         },
@@ -41789,6 +41869,18 @@
             },
             {
               "name": "DohEmoteMidPopup"
+            },
+            {
+              "name": "ProductDetail_Name"
+            },
+            {
+              "name": "ProductDetail_Info"
+            },
+            {
+              "name": "ProductDetail_Price"
+            },
+            {
+              "name": "ProductInfo_Image"
             }
           ]
         },
@@ -41878,7 +41970,137 @@
               "name": "ProductList_RegisterButton"
             },
             {
-              "name": "ProductList_Product"
+              "name": "ProductList_Image1"
+            },
+            {
+              "name": "ProductList_Image2"
+            },
+            {
+              "name": "ProductList_Image3"
+            },
+            {
+              "name": "ProductList_Image4"
+            },
+            {
+              "name": "ProductList_Name"
+            },
+            {
+              "name": "ProductList_Price"
+            },
+            {
+              "name": "ProductList_Quantity"
+            },
+            {
+              "name": "ProductList_DetailButton1"
+            },
+            {
+              "name": "ProductList_DetailButton2"
+            },
+            {
+              "name": "ProductList_DetailButton3"
+            },
+            {
+              "name": "ProductList_DetailButton4"
+            },
+            {
+              "name": "ProductList_Plus1"
+            },
+            {
+              "name": "ProductList_Minus1"
+            },
+            {
+              "name": "ProductList_Plus2"
+            },
+            {
+              "name": "ProductList_Minus2"
+            },
+            {
+              "name": "ProductList_Minus3"
+            },
+            {
+              "name": "ProductList_Plus3"
+            },
+            {
+              "name": "ProductList_Plus4"
+            },
+            {
+              "name": "ProductList_Minus4"
+            }
+          ]
+        },
+        {
+          "name": "ProductBox1",
+          "objects": [
+            {
+              "name": "ProductList_Image1"
+            },
+            {
+              "name": "ProductList_DetailButton1"
+            },
+            {
+              "name": "ProductList_Plus1"
+            },
+            {
+              "name": "ProductList_Plus2"
+            }
+          ]
+        },
+        {
+          "name": "ProductBox2",
+          "objects": [
+            {
+              "name": "ProductList_Image2"
+            },
+            {
+              "name": "ProductList_DetailButton2"
+            },
+            {
+              "name": "ProductList_Plus2"
+            },
+            {
+              "name": "ProductList_Minus2"
+            }
+          ]
+        },
+        {
+          "name": "ProductBox3",
+          "objects": [
+            {
+              "name": "ProductList_DetailButton3"
+            },
+            {
+              "name": "ProductList_Image3"
+            },
+            {
+              "name": "ProductList_Plus3"
+            },
+            {
+              "name": "ProductList_Minus3"
+            }
+          ]
+        },
+        {
+          "name": "ProductBox4",
+          "objects": [
+            {
+              "name": "ProductList_Image4"
+            },
+            {
+              "name": "ProductList_DetailButton4"
+            },
+            {
+              "name": "ProductList_Plus4"
+            },
+            {
+              "name": "ProductList_Minus4"
+            }
+          ]
+        },
+        {
+          "name": "ProductQuantity",
+          "objects": [
+            {
+              "name": "ProductList_Quantity"
             }
           ]
         }
@@ -41953,8 +42175,8 @@
           "name": "GreyTable",
           "persistentUuid": "1f63ef44-774a-4ad5-8741-066cab2ce26a",
           "width": 200,
-          "x": 429,
-          "y": 619,
+          "x": 530,
+          "y": 315,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -42402,7 +42624,7 @@
               "string": "확인",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 30,
+              "characterSize": 25,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -42786,7 +43008,7 @@
               "string": "구매",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 30,
+              "characterSize": 25,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -42850,7 +43072,7 @@
               "string": "구매",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 35,
+              "characterSize": 25,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -42914,7 +43136,7 @@
               "string": "뒤로",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 35,
+              "characterSize": 25,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -42931,6 +43153,270 @@
               "topMargin": 16,
               "width": 192
             }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductDetail_Name",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Name",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductDetail_Info",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보상품상세정보",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 25,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductDetail_Price",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "7000원",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 27,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductBuy_Name",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 22,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductBuy_Quantity",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 22,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductBuy_Price",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 22,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductBuy_TotalPrice",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 28,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductBuy_AdressLine",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "배송지",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 26,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductBuy_Address",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "국민대학교 미래관 424호",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 23,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductDeposit_Message",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "구매가 완료되었습니다.\n12시간 내에 입금을 하지 않으면, 거래가 취소될 수있습니다.\n바로 입금을 해주세요!",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductDeposit_Line",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "은행\n\n입금계좌\n\n예금주\n\n입금금액",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductDeposit_Info",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "우리은행\n\n123-1234-1234\n\n홍길동\n\n19,000원",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -43002,7 +43488,7 @@
               "string": "닫기",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 35,
+              "characterSize": 25,
               "color": {
                 "b": 96,
                 "g": 16,
@@ -43130,7 +43616,7 @@
               "string": "뒤로",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 30,
+              "characterSize": 25,
               "color": {
                 "b": 96,
                 "g": 16,
@@ -43336,7 +43822,7 @@
           "string": "입금하기",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 40,
+          "characterSize": 35,
           "color": {
             "b": 0,
             "g": 0,
@@ -43658,7 +44144,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "ProductList_Product",
+          "name": "ProductList_Image1",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -43676,7 +44162,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "2323eb6481fd7371249167b4b867bc886e7ea04775e5197faebb32825a7ac3df_Star Necklace.png",
+                      "image": "assets/Add_Image.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -43696,9 +44182,1045 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductList_Image2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/Add_Image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductList_Image3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/Add_Image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductList_Image4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/Add_Image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ProductInfo_Image",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/Add_Image.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "ProductList_Name",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 25,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductList_Price",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 22,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductList_Quantity",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 22,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+          "name": "ProductList_DetailButton1",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": ">",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+          "name": "ProductList_DetailButton2",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": ">",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+          "name": "ProductList_DetailButton3",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": ">",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+          "name": "ProductList_DetailButton4",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": ">",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 25,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Plus1",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "+",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Minus1",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "-",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Plus2",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "+",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Minus2",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "-",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Plus3",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "+",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Minus3",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "-",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Plus4",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "+",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "ProductList_Minus4",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "-",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "//Seller Buyer 구분",
+                "let userIdVariable = runtimeScene.getGame().getVariables().get(\"UserId\");",
+                "let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\");",
+                "",
+                "let buyerSellerVariable = runtimeScene.getGame().getVariables().get(\"BuyerSellerStatus\");",
+                "",
+                "if(currentOwnerIdVariable._str === userIdVariable._str){",
+                "    console.log(\"판매자\");",
+                "    buyerSellerVariable.setString(\"seller\");",
+                "}",
+                "else{",
+                "    console.log(\"구매자\");",
+                "    buyerSellerVariable.setString(\"buyer\");",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Link",
           "include": {
@@ -43725,7 +45247,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "Product register buy event"
+          "target": "Product buy event"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -43801,7 +45323,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
             }
           ]
         }
@@ -50686,7 +52208,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -51425,6 +52947,2267 @@
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Store scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Product buy event",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "상품리스트의 상품 보여주기",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// // 상품 데이터의 더미 배열입니다.",
+                "",
+                "// let products = [",
+                "//   {",
+                "//     \"id\": 5,",
+                "//     \"storeId\": {",
+                "//       \"id\": 9,",
+                "//       \"owner\": {",
+                "//         \"id\": 8,",
+                "//         \"email\": \"cy@cy.com\",",
+                "//         \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
+                "//         \"name\": \"채소\",",
+                "//         \"nickname\": \"채\",",
+                "//         \"bank\": \"기업은행\",",
+                "//         \"account\": \"123\",",
+                "//         \"address\": \"서울\",",
+                "//         \"enabled\": false,",
+                "//         \"authorities\": null,",
+                "//         \"username\": \"cy@cy.com\",",
+                "//         \"accountNonExpired\": false,",
+                "//         \"accountNonLocked\": false,",
+                "//         \"credentialsNonExpired\": false",
+                "//       },",
+                "//       \"name\": \"야채가게\",",
+                "//       \"period\": \"2024-05-17\",",
+                "//       \"info\": \"싱싱\",",
+                "//       \"x\": 0,",
+                "//       \"y\": 0,",
+                "//       \"z\": 0,",
+                "//       \"signName\": \"채채소\"",
+                "//     },",
+                "//     \"name\": \"샤넬파프리카\",",
+                "//     \"price\": 1000,",
+                "//     \"amount\": 6,",
+                "//     \"info\": \"맛있는 파프리카 빨강 초록\",",
+                "//     \"imgList\": [",
+                "//       \"string\"",
+                "//     ]",
+                "//   },",
+                "//   {",
+                "//     \"id\": 6,",
+                "//     \"storeId\": {",
+                "//       \"id\": 9,",
+                "//       \"owner\": {",
+                "//         \"id\": 8,",
+                "//         \"email\": \"cy@cy.com\",",
+                "//         \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
+                "//         \"name\": \"채소\",",
+                "//         \"nickname\": \"채\",",
+                "//         \"bank\": \"기업은행\",",
+                "//         \"account\": \"123\",",
+                "//         \"address\": \"서울\",",
+                "//         \"enabled\": false,",
+                "//         \"authorities\": null,",
+                "//         \"username\": \"cy@cy.com\",",
+                "//         \"accountNonExpired\": false,",
+                "//         \"accountNonLocked\": false,",
+                "//         \"credentialsNonExpired\": false",
+                "//       },",
+                "//       \"name\": \"야채가게\",",
+                "//       \"period\": \"2024-05-17\",",
+                "//       \"info\": \"싱싱\",",
+                "//       \"x\": 0,",
+                "//       \"y\": 0,",
+                "//       \"z\": 0,",
+                "//       \"signName\": \"채채소\"",
+                "//     },",
+                "//     \"name\": \"보석초콜릿\",",
+                "//     \"price\": 5000,",
+                "//     \"amount\": 15,",
+                "//     \"info\": \"구찌로 만든 초콜릿\",",
+                "//     \"imgList\": [",
+                "//       \"string\"",
+                "//     ]",
+                "//   }",
+                "// ];",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "let currentStoreIdVariable = runtimeScene.getGame().getVariables().get(\"CurrentStoreId\")._str;",
+                "let products = [];",
+                "",
+                "",
+                "// 스토어 ID 확인",
+                "var productListRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "",
+                "async function getProductList(productListRequest) {",
+                "  try {",
+                "    const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      return data;",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getProductList(productListRequest).then(data => {",
+                "  products = data; // 함수가 반환한 값을 products에 할당",
+                "",
+                "",
+                "  let availableProducts = products.filter(product => product.amount !== 0);",
+                "  availableProducts.forEach(product => {",
+                "    product.quantity = 0;",
+                "  });",
+                "  // products 배열을 JSON 문자열로 변환",
+                "  let productsString = JSON.stringify(availableProducts);",
+                "  runtimeScene.getVariables().get(\"products\").setString(productsString);",
+                "",
+                "  for(let i=0;  i < availableProducts.length; i++){",
+                "    let listNameObject = runtimeScene.getObjects(\"ProductList_Name\")[i];",
+                "    let listPriceObject = runtimeScene.getObjects(\"ProductList_Price\")[i];",
+                "    let listQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[i];",
+                "",
+                "    listNameObject.setString(availableProducts[i].name);",
+                "    let priceString = availableProducts[i].price.toLocaleString();",
+                "    listPriceObject.setString(priceString + \"원\");",
+                "    listQuantityObject.setString(0);",
+                "  }",
+                "  let productNumVariable = runtimeScene.getVariables().get(\"productNum\");",
+                "  let productFilterVariable = runtimeScene.getVariables().get(\"productFilter\");",
+                "",
+                "  productNumVariable.setNumber(availableProducts.length);",
+                "  productFilterVariable.setBoolean(true);",
+                "});",
+                "",
+                "",
+                "  // let availableProducts = products.filter(product => product.amount !== 0);",
+                "  // availableProducts.forEach(product => {",
+                "  //   product.quantity = 0;",
+                "  // });",
+                "  // // products 배열을 JSON 문자열로 변환",
+                "  // let productsString = JSON.stringify(availableProducts);",
+                "  // runtimeScene.getVariables().get(\"products\").setString(productsString);",
+                "",
+                "  // for(let i=0;  i < availableProducts.length; i++){",
+                "  //   let listNameObject = runtimeScene.getObjects(\"ProductList_Name\")[i];",
+                "  //   let listPriceObject = runtimeScene.getObjects(\"ProductList_Price\")[i];",
+                "  //   let listQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[i];",
+                "",
+                "  //   listNameObject.setString(availableProducts[i].name);",
+                "  //   let priceString = availableProducts[i].price.toLocaleString();",
+                "  //   listPriceObject.setString(priceString + \"원\");",
+                "  //   listQuantityObject.setString(0);",
+                "  // }",
+                "  // let productNumVariable = runtimeScene.getVariables().get(\"productNum\");",
+                "  // let productFilterVariable = runtimeScene.getVariables().get(\"productFilter\");",
+                "",
+                "  // productNumVariable.setNumber(availableProducts.length);",
+                "  // productFilterVariable.setBoolean(true);",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "False"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "productNum",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "productNum",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "productNum",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "productNum",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "ProductBox4",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "detailName",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "detailPrice",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "detailInfo",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "productNum",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "products",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "products_buy",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "buyStatus",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "orderList",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "totalPrice",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Receive token event"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "GreyTable",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "BuyerSellerStatus",
+                "=",
+                "\"seller\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product list(ver.seller)\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "GreyTable",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "BuyerSellerStatus",
+                "=",
+                "\"buyer\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product list(ver.buyer)\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "판매자 - 상품리스트 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_RegisterButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product register\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "let buy_status = products.some(product => product.amount !== 0);",
+                "",
+                "let product_buy = products.filter(product => product.quantity !== 0);",
+                "// products 배열을 JSON 문자열로 변환",
+                "let buyString = JSON.stringify(product_buy);",
+                "// 변환된 JSON 문자열을 Scene 변수에 저장",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_CancelButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "판매자 - 상품등록 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegister_FinishButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RegisterPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product list(ver.seller)\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const productName = runtimeScene.getObjects(\"ProductRegister_ProductName\")[0];",
+                "const inputProductName = productName.getString();",
+                "",
+                "const productPrice = runtimeScene.getObjects(\"ProductRegister_ProductPrice\")[0];",
+                "const inputProductPrice = productPrice.getString();",
+                "",
+                "const productQuantity = runtimeScene.getObjects(\"ProductRegister_ProductQuantity\")[0];",
+                "const inputProductQuantity = productQuantity.getString();",
+                "",
+                "const productInfo = runtimeScene.getObjects(\"ProductRegister_ProductInfo\")[0];",
+                "const inputProductInfo = productInfo.getString();",
+                "",
+                "console.log(\"상품명:\", inputProductName);",
+                "console.log(\"상품가격:\", inputProductPrice);",
+                "console.log(\"상품수량:\", inputProductQuantity);",
+                "console.log(\"상품정보:\", inputProductInfo);",
+                "",
+                "",
+                "",
+                "",
+                "// // global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "console.log(\"유저 토큰 : \", userToken);",
+                "",
+                "",
+                "// 스토어 ID 확인",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/stores/info\", checkStoreIdRequest)",
+                "  .then((res) => res.json())",
+                "  .then((data) => {",
+                "    // console.log(data.id);",
+                "    runtimeScene.getGame().getVariables().get(\"storeId\").setString(data.id);",
+                "    var storeId = runtimeScene.getGame().getVariables().get(\"storeId\")._str;",
+                "    console.log(\"스토어 아이디 : \", storeId);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
+                "",
+                "",
+                "",
+                "",
+                "// 상품 등록 호출 보내기",
+                "var addProductRequest = {",
+                "  method: \"POST\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "  body: JSON.stringify({",
+                "    storeId : runtimeScene.getGame().getVariables().get(\"storeId\")._str,",
+                "    // storeId : 4,",
+                "    name : inputProductName,",
+                "    price : inputProductPrice,",
+                "    amount : inputProductQuantity,",
+                "    info : inputProductInfo,",
+                "  }),",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/products/register\", addProductRequest)",
+                "  .then((res) => res.text())",
+                "  .then((data) => {",
+                "    console.log(data);",
+                "    console.log(\"store id :\", runtimeScene.getVariables().get(\"storeId\")._str);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegister_ImageButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LoadImageFromURL::LoadURLIntoImageResource"
+              },
+              "parameters": [
+                "",
+                "\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU\"",
+                "assets/Add_Image.png",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegister_CancelButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product register alert\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ProductRegister_ProductName"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ProductRegister_ProductPrice"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ProductRegister_ProductQuantity"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ProductRegister_ProductInfo"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ProductRegister_Image_Sprite"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ProductRegister_ImageButton"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "판매자 - 상품등록 경고 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegisterAlert_CloseButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RegisterPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RegisterAlertPopup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegisterAlert_CancelButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RegisterAlertPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ProductRegister_ProductName",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ProductRegister_ProductPrice",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ProductRegister_ProductQuantity",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ProductRegister_ProductInfo",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ProductRegister_ImageButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "ProductRegister_Image_Sprite",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "구매자 - 상품리스트 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_BuyButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "let products = JSON.parse(productsString);",
+                "let buyStatusVariable = runtimeScene.getVariables().get(\"buyStatus\");",
+                "let buy_status = products.some(product => product.quantity !== 0);",
+                "console.log('boolen check : ', buy_status)",
+                "buyStatusVariable.setBoolean(buy_status);",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Plus1",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "if(products[0].quantity < products[0].amount){",
+                "    products[0].quantity += 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[0];",
+                "    productQuantityObject.setString(products[0].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Minus1",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "if(products[0].quantity != 0){",
+                "    products[0].quantity -= 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[0];",
+                "    productQuantityObject.setString(products[0].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Plus2",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "",
+                "if(products[1].quantity < products[1].amount){",
+                "    products[1].quantity += 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[1];",
+                "    productQuantityObject.setString(products[1].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Minus2",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "if(products[1].quantity != 0){",
+                "    products[1].quantity -= 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[1];",
+                "    productQuantityObject.setString(products[1].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Plus3",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "",
+                "if(products[2].quantity < products[2].amount){",
+                "    products[2].quantity += 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[2];",
+                "    productQuantityObject.setString(products[2].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Minus3",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "if(products[2].quantity != 0){",
+                "    products[2].quantity -= 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[2];",
+                "    productQuantityObject.setString(products[2].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Plus4",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "",
+                "if(products[3].quantity < products[3].amount){",
+                "    products[3].quantity += 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[3];",
+                "    productQuantityObject.setString(products[3].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_Minus4",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "// JSON 문자열을 배열로 변환",
+                "let products = JSON.parse(productsString);",
+                "if(products[3].quantity != 0){",
+                "    products[3].quantity -= 1;",
+                "",
+                "    let productQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[3];",
+                "    productQuantityObject.setString(products[3].quantity);",
+                "",
+                "    let updatedProductsString = JSON.stringify(products);",
+                "    // Scene 변수에 업데이트된 products JSON 문자열 저장",
+                "    runtimeScene.getVariables().get(\"products\").setString(updatedProductsString);",
+                "}",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "구매자 - 구매 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "buyStatus",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "buyStatus",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup buy product\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "console.log(productsString);",
+                "let products = JSON.parse(productsString);",
+                "",
+                "let product_buy = products.filter(product => product.quantity !== 0);",
+                "let buyString = JSON.stringify(product_buy);",
+                "runtimeScene.getVariables().get(\"product_buy\").setString(buyString);",
+                "",
+                "let buyNameObject = runtimeScene.getObjects(\"ProductBuy_Name\")[0];",
+                "let buyPriceObject = runtimeScene.getObjects(\"ProductBuy_Price\")[0];",
+                "let buyQuantityObject = runtimeScene.getObjects(\"ProductBuy_Quantity\")[0];",
+                "let buyTotalPriceObject = runtimeScene.getObjects(\"ProductBuy_TotalPrice\")[0];",
+                "",
+                "let userIdVariable = runtimeScene.getGame().getVariables().get(\"UserId\")._str; //유저이메일값임 이건. 유저 아이디값 필요.",
+                "let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                "",
+                "let totalPrice = 0;",
+                "",
+                "let orderList = {",
+                "  buyerId : 7, //수정필요",
+                "  sellerId : currentOwnerIdVariable,",
+                "  state : 0,",
+                "  totalPrice : 0,",
+                "  productListId : [",
+                "  ",
+                "  ],",
+                "  productAmountList:[",
+                "    ",
+                "  ]",
+                "}",
+                "",
+                "for(let i=0;  i < product_buy.length; i++){",
+                "  buyNameObject.setString(buyNameObject.getString() + product_buy[i].name + \"\\n\\n\");",
+                "  buyQuantityObject.setString(buyQuantityObject.getString() + product_buy[i].quantity + \"개\\n\\n\");",
+                "  let price = product_buy[i].price * product_buy[i].quantity;",
+                "  buyPriceObject.setString(buyPriceObject.getString() + price.toLocaleString() + \"원\\n\\n\");",
+                "  ",
+                "  totalPrice += price;",
+                "",
+                "  orderList.productListId.push(product_buy[i].id); // 상품 id를 추가, 상품 id가 id 프로퍼티에 있다고 가정",
+                "  orderList.productAmountList.push(product_buy[i].quantity);",
+                "}",
+                "",
+                "let totalPriceString = totalPrice.toLocaleString();",
+                "buyTotalPriceObject.setString(\"총 \" + totalPriceString + \"원\");",
+                "",
+                "let totalPriceVariable = runtimeScene.getVariables().get(\"totalPrice\");",
+                "totalPriceVariable.setNumber(totalPrice);",
+                "",
+                "orderList.totalPrice = totalPrice;",
+                "let orderListString = JSON.stringify(orderList);",
+                "runtimeScene.getVariables().get(\"orderList\").setString(orderListString);",
+                "",
+                "//배송지 설정",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "let addressObject = runtimeScene.getObjects(\"ProductBuy_Address\")[0];",
+                "",
+                "var userInfoRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/users/info\", userInfoRequest)",
+                "  .then((res) => res.json())",
+                "  .then((data) => {",
+                "    addressObject.setString(data.address);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Buy_PurchaseButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup buy product alert\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Buy_Address"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Buy_BackButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product list(ver.buyer)\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BuyPopup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "구매자 - 구매 경고창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BuyAlert_PurchaseButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup deposit\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BuyPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BuyAlertPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "let orderListString = runtimeScene.getVariables().get(\"orderList\").getAsString();",
+                "let orderList = JSON.parse(orderListString);",
+                "console.log('test', orderList);",
+                "",
+                "//주문 호출 보내기",
+                "var orderRegisterRequest = {",
+                "  method: \"POST\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "  body: JSON.stringify(orderList),",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/orders/register\", orderRegisterRequest)",
+                "  .then((res) => res.text())",
+                "  .then((data) => {",
+                "    console.log(data);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.error(\"Error fetching data:\", error);",
+                "  });",
+                "",
+                "let productsString = runtimeScene.getVariables().get(\"product_buy\").getAsString();",
+                "let products = JSON.parse(productsString);",
+                "let totalPriceVariable = runtimeScene.getVariables().get(\"totalPrice\").getAsNumber();",
+                "let depositInfoObject = runtimeScene.getObjects(\"ProductDeposit_Info\")[0];",
+                "",
+                "let depositInfo = products[0].storeId.owner.bank + \"\\n\\n\" + products[0].storeId.owner.account + \"\\n\\n\" + products[0].storeId.owner.name + \"\\n\\n\" + totalPriceVariable.toLocaleString() + \"원\";",
+                "depositInfoObject.setString(depositInfo);",
+                "",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BuyAlert_CancelButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Buy_Address",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BuyAlertPopup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "구매자 - 입금 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Deposit_OkButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "DepositPopup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "공통 - 상품 상세정보 창",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_DetailButton1",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product info\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "let products = JSON.parse(productsString);",
+                "",
+                "let detailNameObject = runtimeScene.getObjects(\"ProductDetail_Name\")[0];",
+                "let detailPriceObject = runtimeScene.getObjects(\"ProductDetail_Price\")[0];",
+                "let detailInfoObject = runtimeScene.getObjects(\"ProductDetail_Info\")[0];",
+                "",
+                "detailNameObject.setString(products[0].name);",
+                "detailPriceObject.setString(products[0].price.toLocaleString() + \"원\");",
+                "detailInfoObject.setString(products[0].info);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_DetailButton2",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product info\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "let products = JSON.parse(productsString);",
+                "",
+                "let detailNameObject = runtimeScene.getObjects(\"ProductDetail_Name\")[0];",
+                "let detailPriceObject = runtimeScene.getObjects(\"ProductDetail_Price\")[0];",
+                "let detailInfoObject = runtimeScene.getObjects(\"ProductDetail_Info\")[0];",
+                "",
+                "detailNameObject.setString(products[1].name);",
+                "detailPriceObject.setString(products[1].price.toLocaleString() + \"원\");",
+                "detailInfoObject.setString(products[1].info);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_DetailButton3",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product info\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "let products = JSON.parse(productsString);",
+                "",
+                "let detailNameObject = runtimeScene.getObjects(\"ProductDetail_Name\")[0];",
+                "let detailPriceObject = runtimeScene.getObjects(\"ProductDetail_Price\")[0];",
+                "let detailInfoObject = runtimeScene.getObjects(\"ProductDetail_Info\")[0];",
+                "",
+                "detailNameObject.setString(products[2].name);",
+                "detailPriceObject.setString(products[2].price.toLocaleString() + \"원\");",
+                "detailInfoObject.setString(products[2].info);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_DetailButton4",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product info\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductListPopup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                "let products = JSON.parse(productsString);",
+                "",
+                "let detailNameObject = runtimeScene.getObjects(\"ProductDetail_Name\")[0];",
+                "let detailPriceObject = runtimeScene.getObjects(\"ProductDetail_Price\")[0];",
+                "let detailInfoObject = runtimeScene.getObjects(\"ProductDetail_Info\")[0];",
+                "",
+                "detailNameObject.setString(products[3].name);",
+                "detailPriceObject.setString(products[3].price.toLocaleString() + \"원\");",
+                "detailInfoObject.setString(products[3].info);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductInfo_BackButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProductInfoPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productListCheck",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "productFilter",
+                "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "BuyerSellerStatus",
+                    "=",
+                    "\"seller\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup product list(ver.seller)\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "BuyerSellerStatus",
+                    "=",
+                    "\"buyer\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup product list(ver.buyer)\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -52419,19 +56202,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ProductList_Product",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [],
           "events": [
             {
@@ -53069,11 +56840,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -58051,11 +61817,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ]
     },
@@ -58203,32 +61964,6 @@
                 "CustomSuccess",
                 "=",
                 "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Square scene\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "Custom_BackButton",
-                ""
               ]
             }
           ],
@@ -76791,13 +80526,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 62,
+          "height": 60,
           "layer": "Popup Layer",
           "name": "DohEmoteMidPopup",
           "persistentUuid": "5873cebf-cf33-48d0-a720-e276829a1c16",
-          "width": 59,
-          "x": 219,
-          "y": 108,
+          "width": 60,
+          "x": 214,
+          "y": 105,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -76811,8 +80546,8 @@
           "name": "ProductList_Title",
           "persistentUuid": "587e6785-f58d-4692-bb13-2fc924625d0a",
           "width": 0,
-          "x": 290,
-          "y": 109,
+          "x": 278,
+          "y": 110,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -76826,7 +80561,7 @@
           "name": "ProductList_RegisterButton",
           "persistentUuid": "3e84b777-dba5-495f-b088-3b7f024fd00d",
           "width": 147,
-          "x": 905,
+          "x": 890,
           "y": 554,
           "zOrder": 30,
           "numberProperties": [],
@@ -76841,7 +80576,7 @@
           "name": "ProductList_CancelButton",
           "persistentUuid": "0670e85a-9d20-41fc-9181-8da92d50fc8b",
           "width": 141,
-          "x": 745,
+          "x": 730,
           "y": 555,
           "zOrder": 30,
           "numberProperties": [],
@@ -76851,14 +80586,299 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 101,
+          "height": 65,
           "layer": "Popup Layer",
-          "name": "ProductList_Product",
-          "persistentUuid": "f1912416-1e2e-4fda-a31d-9fbb7b717fd6",
-          "width": 93,
-          "x": 276,
-          "y": 213,
-          "zOrder": 30,
+          "name": "ProductList_Name",
+          "persistentUuid": "07906f51-55bb-4224-86ae-7b7730c55f0c",
+          "width": 147,
+          "x": 395,
+          "y": 220,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "04d3a116-0e98-4ed3-9be8-542159deabf7",
+          "width": 0,
+          "x": 399,
+          "y": 291,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton1",
+          "persistentUuid": "672a782c-e7d1-405b-a76b-7339e64dcd66",
+          "width": 44,
+          "x": 556,
+          "y": 219,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image2",
+          "persistentUuid": "b806ffd9-95e1-4322-92a4-306aeb5426ff",
+          "width": 110,
+          "x": 684,
+          "y": 216,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image1",
+          "persistentUuid": "316168a1-5597-4b49-908e-c1b0e36507cb",
+          "width": 110,
+          "x": 269,
+          "y": 216,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "5e210ef9-f7ca-4ac1-8b41-5e20fe609798",
+          "width": 0,
+          "x": 814,
+          "y": 298,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "81f2199d-ebf8-4795-8599-e9be0d2640ff",
+          "width": 147,
+          "x": 810,
+          "y": 220,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton2",
+          "persistentUuid": "a58a64bd-f27d-4262-9160-26fcb6f68fd7",
+          "width": 44,
+          "x": 972,
+          "y": 219,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "ee7cd6a7-4d50-4c2f-94bc-5bd5d7aa634c",
+          "width": 147,
+          "x": 395,
+          "y": 371,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "07bd4776-2315-4fd2-8f62-d4fb03b286c2",
+          "width": 0,
+          "x": 399,
+          "y": 442,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "d59de109-914f-4ba4-baa0-d3904fc8c32d",
+          "width": 0,
+          "x": 814,
+          "y": 449,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "d6ec6385-8364-45b2-9e75-dc5c2bb3b2ce",
+          "width": 147,
+          "x": 810,
+          "y": 374,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton3",
+          "persistentUuid": "9580b767-7103-44f1-bd75-c1e78f898af9",
+          "width": 44,
+          "x": 556,
+          "y": 370,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 13,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "f93926b3-289a-485c-b636-3604c4b0478d",
+          "width": 13,
+          "x": 1356,
+          "y": 613,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 13,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "c4d64a3d-7353-45d0-93dd-04468f719f41",
+          "width": 13,
+          "x": 1307,
+          "y": 641,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 13,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "26abfad6-4ca4-4b5f-a9bb-6a295a56ee0b",
+          "width": 13,
+          "x": 1342,
+          "y": 661,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 13,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "fc08f246-aa04-441f-ab00-7c195a15a5a6",
+          "width": 13,
+          "x": 1314,
+          "y": 705,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image3",
+          "persistentUuid": "5b7fc07f-58fe-4ba9-8c9f-06b42012ce52",
+          "width": 110,
+          "x": 684,
+          "y": 367,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image3",
+          "persistentUuid": "62a310e9-bce6-4f4d-ba0b-d67ebcf5f383",
+          "width": 110,
+          "x": 269,
+          "y": 367,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton4",
+          "persistentUuid": "45f5fe28-8096-4499-b770-677017c0ff4b",
+          "width": 44,
+          "x": 972,
+          "y": 370,
+          "zOrder": 54,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -76874,7 +80894,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4335774304702378,
+        "zoomFactor": 0.6244537826599996,
         "windowMask": false
       }
     },
@@ -76885,14 +80905,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 577,
+          "height": 543,
           "layer": "Popup Layer",
           "locked": true,
           "name": "WhiteBackgroundPopup",
           "persistentUuid": "b1d79bca-8e6e-4f90-b9dd-1f11f1864913",
-          "width": 1061,
-          "x": 117,
-          "y": 82,
+          "width": 888,
+          "x": 202,
+          "y": 94,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -76901,14 +80921,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 94,
+          "height": 80,
           "layer": "Popup Layer",
           "locked": true,
           "name": "BlueTitlePopup",
           "persistentUuid": "c3b382c3-4882-4c5b-a56c-5641dc52b7d3",
-          "width": 1061,
-          "x": 117,
-          "y": 82,
+          "width": 888,
+          "x": 202,
+          "y": 94,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -76917,14 +80937,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 82,
+          "height": 60,
           "layer": "Popup Layer",
           "locked": true,
           "name": "DohEmoteMidPopup",
           "persistentUuid": "87616d02-1db9-4799-80a8-b0d975af9f0d",
-          "width": 80,
-          "x": 152,
-          "y": 93,
+          "width": 60,
+          "x": 219,
+          "y": 107,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -76933,14 +80953,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 68,
+          "height": 51,
           "layer": "Popup Layer",
           "locked": true,
           "name": "ProductList_CancelButton",
           "persistentUuid": "0e209029-e67b-413f-bc8c-7e86d868a2a7",
-          "width": 176,
-          "x": 755,
-          "y": 565,
+          "width": 141,
+          "x": 745,
+          "y": 555,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -76951,12 +80971,59 @@
           "customSize": true,
           "height": 57,
           "layer": "Popup Layer",
+          "locked": true,
           "name": "ProductList_Title",
           "persistentUuid": "bea7ce24-1e9e-494e-ab9e-73da7083948a",
           "width": 291,
-          "x": 241,
-          "y": 103,
+          "x": 288,
+          "y": 110,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 51,
+          "layer": "Popup Layer",
+          "locked": true,
+          "name": "ProductList_BuyButton",
+          "persistentUuid": "ade5bbd2-3fa1-4994-8c74-7d624121ef16",
+          "width": 141,
+          "x": 905,
+          "y": 555,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 681,
+          "layer": "Popup Layer",
+          "name": "Product",
+          "persistentUuid": "c492b42c-5c1b-4282-a290-1763f7d2e62f",
+          "width": 333,
+          "x": -643,
+          "y": -342,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 59,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "81a4638a-0f23-4007-b160-64e26169727c",
+          "width": 147,
+          "x": 401,
+          "y": 221,
+          "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -76966,12 +81033,12 @@
           "customSize": false,
           "height": 0,
           "layer": "Popup Layer",
-          "name": "ProductList_BuyButton",
-          "persistentUuid": "ade5bbd2-3fa1-4994-8c74-7d624121ef16",
+          "name": "ProductList_Price",
+          "persistentUuid": "913905e8-6d80-49ed-9b13-f1691b5de7cf",
           "width": 0,
-          "x": 955,
-          "y": 566,
-          "zOrder": 13,
+          "x": 405,
+          "y": 292,
+          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -76979,14 +81046,29 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 738,
+          "height": 33,
           "layer": "Popup Layer",
-          "name": "Product",
-          "persistentUuid": "c492b42c-5c1b-4282-a290-1763f7d2e62f",
-          "width": 96,
-          "x": -406,
-          "y": -399,
-          "zOrder": 14,
+          "name": "ProductList_DetailButton1",
+          "persistentUuid": "37147e3e-2bfa-4eb0-b283-50e411395f54",
+          "width": 44,
+          "x": 562,
+          "y": 220,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "fa359666-670f-4044-9e72-ee0a2212c47d",
+          "width": 0,
+          "x": 560,
+          "y": 292,
+          "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -76994,14 +81076,359 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 105,
+          "height": 110,
           "layer": "Popup Layer",
-          "name": "ProductList_Product",
-          "persistentUuid": "7bb846eb-f9a3-4063-a256-0406d3281294",
-          "width": 93,
-          "x": 194,
-          "y": 207,
-          "zOrder": 15,
+          "name": "ProductList_Image2",
+          "persistentUuid": "45f5d303-6c4d-4730-8240-616727cca713",
+          "width": 110,
+          "x": 690,
+          "y": 216,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image1",
+          "persistentUuid": "7ef1076c-77f9-415a-a0be-6b74b4b95063",
+          "width": 110,
+          "x": 275,
+          "y": 217,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "f5693637-e624-4ef8-b8ca-4d08d2b1fabf",
+          "width": 0,
+          "x": 828,
+          "y": 299,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 67,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "349f40f9-c2ad-4594-aa66-bdc47a86a56e",
+          "width": 150,
+          "x": 823,
+          "y": 224,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "61497415-1d78-4702-8335-af44f5a90d4b",
+          "width": 0,
+          "x": 977,
+          "y": 292,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton2",
+          "persistentUuid": "c084435a-9249-4a61-ae29-5532c55d2534",
+          "width": 44,
+          "x": 978,
+          "y": 220,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "08b4a5f2-ef97-4f37-a199-b2517d30caa6",
+          "width": 147,
+          "x": 401,
+          "y": 372,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "4445b861-ea34-43cf-88b2-e637dce7f780",
+          "width": 0,
+          "x": 405,
+          "y": 443,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "6192da86-0806-45b3-8b7b-e6a3152005c8",
+          "width": 0,
+          "x": 560,
+          "y": 443,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Price",
+          "persistentUuid": "c57677ca-fb2e-4a22-a5c5-c2bdb14fc9ad",
+          "width": 0,
+          "x": 828,
+          "y": 450,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 67,
+          "layer": "Popup Layer",
+          "name": "ProductList_Name",
+          "persistentUuid": "28f6673a-e22d-4140-8e9f-15c9ed9c7edc",
+          "width": 150,
+          "x": 823,
+          "y": 375,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductList_Quantity",
+          "persistentUuid": "4382e0c8-9aeb-49fd-97af-49887eb22065",
+          "width": 0,
+          "x": 977,
+          "y": 443,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton3",
+          "persistentUuid": "31916eda-cd17-48b4-a79b-59d79eabc66a",
+          "width": 44,
+          "x": 562,
+          "y": 371,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "Popup Layer",
+          "name": "ProductList_DetailButton4",
+          "persistentUuid": "1c99cf7d-a7d5-4a36-94ea-c2697ea8013d",
+          "width": 44,
+          "x": 978,
+          "y": 371,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Plus1",
+          "persistentUuid": "fc4c059d-8459-4a2f-be5d-9e6e094d5c7f",
+          "width": 27,
+          "x": 580,
+          "y": 292,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Minus1",
+          "persistentUuid": "0eb3f146-379f-4204-bc49-e1c39ab40def",
+          "width": 27,
+          "x": 523,
+          "y": 292,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Plus2",
+          "persistentUuid": "bb2e48af-6cc7-4fdf-ac6f-6fa6de847085",
+          "width": 27,
+          "x": 998,
+          "y": 292,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Minus2",
+          "persistentUuid": "ebab6376-a234-40be-8ec8-d2e09061e677",
+          "width": 27,
+          "x": 941,
+          "y": 292,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Plus3",
+          "persistentUuid": "5547dac7-98d9-4c58-a01a-d5e01d849bdd",
+          "width": 27,
+          "x": 580,
+          "y": 443,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Minus3",
+          "persistentUuid": "a919d8cb-a794-4fa0-8297-ac7185479f0b",
+          "width": 27,
+          "x": 523,
+          "y": 443,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Plus4",
+          "persistentUuid": "dd6c0b24-332e-4e45-bb49-26f46f02bb20",
+          "width": 27,
+          "x": 998,
+          "y": 443,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 27,
+          "layer": "Popup Layer",
+          "name": "ProductList_Minus4",
+          "persistentUuid": "ad3aa6d3-207d-4af5-9f1f-d8cf2bad742c",
+          "width": 27,
+          "x": 941,
+          "y": 443,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image3",
+          "persistentUuid": "0fd7ac89-08ac-4b09-b69a-55b16d05ae71",
+          "width": 110,
+          "x": 275,
+          "y": 368,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 110,
+          "layer": "Popup Layer",
+          "name": "ProductList_Image4",
+          "persistentUuid": "40de41fb-e21b-4e8a-811e-016af09ee751",
+          "width": 110,
+          "x": 690,
+          "y": 368,
+          "zOrder": 60,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -77017,7 +81444,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4057518905943824,
+        "zoomFactor": 0.5653158055126312,
         "windowMask": false
       }
     },
@@ -77062,8 +81489,8 @@
           "layer": "Popup Layer",
           "name": "DohEmoteMidPopup",
           "persistentUuid": "87616d02-1db9-4799-80a8-b0d975af9f0d",
-          "width": 76,
-          "x": 244,
+          "width": 68,
+          "x": 252,
           "y": 101,
           "zOrder": 4,
           "numberProperties": [],
@@ -77078,8 +81505,8 @@
           "name": "ProductRegister_CancelButton",
           "persistentUuid": "e0c4ac49-c5a9-4574-a5e0-e5b08c3ab5bc",
           "width": 132,
-          "x": 742,
-          "y": 613,
+          "x": 735,
+          "y": 594,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -77107,9 +81534,9 @@
           "layer": "Popup Layer",
           "name": "ProductRegister_ProductName",
           "persistentUuid": "d5998293-6416-48a1-9008-24182e988e96",
-          "width": 188,
+          "width": 185,
           "x": 346,
-          "y": 391,
+          "y": 380,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -77123,8 +81550,8 @@
           "name": "ProductRegister_ProductPrice",
           "persistentUuid": "bb4e46e3-7536-498b-8735-2c1e25d5d3c2",
           "width": 185,
-          "x": 347,
-          "y": 456,
+          "x": 346,
+          "y": 445,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -77148,13 +81575,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 30,
+          "height": 38,
           "layer": "Popup Layer",
           "name": "ProductRegister_ProductQuantity",
           "persistentUuid": "08446427-27cb-449a-a5a5-12d9531c5d22",
-          "width": 190,
-          "x": 344,
-          "y": 521,
+          "width": 185,
+          "x": 346,
+          "y": 510,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -77169,7 +81596,7 @@
           "persistentUuid": "266f4dde-86b1-4e37-930e-27f5f8c12873",
           "width": 386,
           "x": 611,
-          "y": 391,
+          "y": 380,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -77183,8 +81610,8 @@
           "name": "ProductRegister_FinishButton",
           "persistentUuid": "368015d1-3ec1-4be9-859d-b6708606efbf",
           "width": 130,
-          "x": 887,
-          "y": 613,
+          "x": 880,
+          "y": 594,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -77395,15 +81822,75 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 62,
           "layer": "Popup Layer",
           "name": "ProductInfo_BackButton",
           "persistentUuid": "e003ff0c-4f36-4d3b-9d3e-93fe90c09014",
-          "width": 0,
-          "x": 934,
-          "y": 537,
+          "width": 153,
+          "x": 976,
+          "y": 535,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductDetail_Name",
+          "persistentUuid": "c876e6d6-acc7-4408-a364-93ed3b50c788",
+          "width": 0,
+          "x": 500,
+          "y": 208,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductDetail_Price",
+          "persistentUuid": "0f479863-d197-4551-86f4-28bcf9cf2c1e",
+          "width": 0,
+          "x": 1001,
+          "y": 208,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 189,
+          "layer": "Popup Layer",
+          "name": "ProductDetail_Info",
+          "persistentUuid": "dcfe1848-0b00-4308-b79e-a283f2175495",
+          "width": 605,
+          "x": 499,
+          "y": 290,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 276,
+          "layer": "Popup Layer",
+          "name": "ProductInfo_Image",
+          "persistentUuid": "3f32e0b6-b937-4f05-a8c3-d4ed336bf22c",
+          "width": 276,
+          "x": 177,
+          "y": 206,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -77465,9 +81952,114 @@
           "name": "Buy_Title",
           "persistentUuid": "f80a14f3-6b69-489a-b23f-08a246bfc8c0",
           "width": 0,
-          "x": 348,
-          "y": 99,
+          "x": 395,
+          "y": 98,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 55,
+          "layer": "Popup Layer",
+          "name": "Buy_BackButton",
+          "persistentUuid": "b5c976e3-df8b-400e-8c95-4c2b677bcb17",
+          "width": 121,
+          "x": 689,
+          "y": 548,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 55,
+          "layer": "Popup Layer",
+          "name": "Buy_PurchaseButton",
+          "persistentUuid": "4d954b94-ae1e-406a-a40e-ef0a5c5bdeb5",
+          "width": 121,
+          "x": 834,
+          "y": 548,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "Popup Layer",
+          "name": "DohEmoteMidPopup",
+          "persistentUuid": "0baf70cf-ad32-47bf-8226-0ed205e7c41f",
+          "width": 70,
+          "x": 314,
+          "y": 93,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 176,
+          "layer": "Popup Layer",
+          "name": "ProductBuy_Name",
+          "persistentUuid": "c50da3af-1a81-4496-a31d-b34c127463ed",
+          "width": 294,
+          "x": 340,
+          "y": 197,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 176,
+          "layer": "Popup Layer",
+          "name": "ProductBuy_Quantity",
+          "persistentUuid": "2f267f0a-c2df-4ca9-9da9-e7f2ff45b094",
+          "width": 91,
+          "x": 667,
+          "y": 197,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 176,
+          "layer": "Popup Layer",
+          "name": "ProductBuy_Price",
+          "persistentUuid": "0891a032-2516-4b95-88fc-13180586564e",
+          "width": 129,
+          "x": 814,
+          "y": 197,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Popup Layer",
+          "name": "ProductBuy_TotalPrice",
+          "persistentUuid": "9583a11e-68f8-4177-938b-73673bb744e4",
+          "width": 187,
+          "x": 764,
+          "y": 412,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -77477,12 +82069,12 @@
           "customSize": false,
           "height": 0,
           "layer": "Popup Layer",
-          "name": "Buy_Address",
-          "persistentUuid": "a329e36d-0108-4161-8aa4-1ce852b1af70",
+          "name": "ProductBuy_AdressLine",
+          "persistentUuid": "51e00c96-8ebb-4081-8656-717d58b4b0b2",
           "width": 0,
-          "x": 367,
-          "y": 428,
-          "zOrder": 5,
+          "x": 340,
+          "y": 412,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -77490,29 +82082,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 61,
+          "height": 72,
           "layer": "Popup Layer",
-          "name": "Buy_BackButton",
-          "persistentUuid": "b5c976e3-df8b-400e-8c95-4c2b677bcb17",
-          "width": 147,
-          "x": 659,
-          "y": 548,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 62,
-          "layer": "Popup Layer",
-          "name": "Buy_PurchaseButton",
-          "persistentUuid": "4d954b94-ae1e-406a-a40e-ef0a5c5bdeb5",
-          "width": 149,
-          "x": 834,
-          "y": 548,
-          "zOrder": 5,
+          "name": "ProductBuy_Address",
+          "persistentUuid": "ab4223b6-b3b3-44eb-a553-97e6a7829493",
+          "width": 356,
+          "x": 340,
+          "y": 465,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -77648,7 +82225,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 83,
+          "height": 64,
           "layer": "Popup Layer",
           "name": "BlueTitlePopup",
           "persistentUuid": "4e555f46-dc2b-4179-ab6b-8cc4c5698971",
@@ -77663,13 +82240,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 62,
+          "height": 50,
           "layer": "Popup Layer",
           "name": "Deposit_OkButton",
           "persistentUuid": "59217986-a5f1-43a2-af7e-8a161273b053",
-          "width": 136,
-          "x": 808,
-          "y": 502,
+          "width": 111,
+          "x": 836,
+          "y": 507,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -77683,9 +82260,69 @@
           "name": "Deposit_Title",
           "persistentUuid": "656a5487-8c70-44fc-a24e-5ff304c3609e",
           "width": 0,
-          "x": 395,
-          "y": 137,
+          "x": 446,
+          "y": 133,
           "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 55,
+          "layer": "Popup Layer",
+          "name": "DohEmoteMidPopup",
+          "persistentUuid": "170c161f-64b5-44b7-b2e4-be36758b627a",
+          "width": 55,
+          "x": 379,
+          "y": 128,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductDeposit_Message",
+          "persistentUuid": "e5f275b6-bac2-484e-81f9-0018aa1bb8dc",
+          "width": 0,
+          "x": 407,
+          "y": 223,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductDeposit_Line",
+          "persistentUuid": "102d43de-3dc0-4d66-876a-cb3414f4e4e6",
+          "width": 0,
+          "x": 512,
+          "y": 323,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 161,
+          "layer": "Popup Layer",
+          "name": "ProductDeposit_Info",
+          "persistentUuid": "38a55836-c025-4886-a3bf-d15f340c2154",
+          "width": 249,
+          "x": 673,
+          "y": 323,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []

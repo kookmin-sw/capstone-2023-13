@@ -573,7 +573,7 @@ gdjs.Character_32custom_32sceneCode.GDBlueBarObjects1= [];
 gdjs.Character_32custom_32sceneCode.GDBlueBarObjects2= [];
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x7eb420 = function(runtimeScene) {
+gdjs.Character_32custom_32sceneCode.userFunc0x776c60 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -624,12 +624,12 @@ gdjs.Character_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x7eb420(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0x776c60(runtimeScene);
 
 }
 
 
-};gdjs.Character_32custom_32sceneCode.userFunc0x17c2c60 = function(runtimeScene) {
+};gdjs.Character_32custom_32sceneCode.userFunc0x7701e8 = function(runtimeScene) {
 "use strict";
 const userBody = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const userEye = runtimeScene.getGame().getVariables().get("UserEye")._str;
@@ -740,7 +740,7 @@ gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x17c2c60(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0x7701e8(runtimeScene);
 
 }
 
@@ -7834,27 +7834,6 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Custom_BackButton"), gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1.length;i<l;++i) {
-    if ( gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1[k] = gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
-}}
-
-}
-
-
-{
-
 
 
 }
@@ -8228,16 +8207,6 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.Character_32custom_32sceneCode.eventsList5(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
@@ -9579,16 +9548,6 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.Character_32custom_32sceneCode.eventsList57(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
