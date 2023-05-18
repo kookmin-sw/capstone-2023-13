@@ -35240,6 +35240,206 @@
           "name": "popup2_storeinfo"
         }
       ]
+    },
+    {
+      "name": "HairGroup",
+      "objects": [
+        {
+          "name": "hair1"
+        },
+        {
+          "name": "hair2"
+        },
+        {
+          "name": "hair3"
+        },
+        {
+          "name": "hair4"
+        },
+        {
+          "name": "hair5"
+        },
+        {
+          "name": "hair6"
+        },
+        {
+          "name": "hair19"
+        },
+        {
+          "name": "hair18"
+        },
+        {
+          "name": "hair17"
+        },
+        {
+          "name": "hair20"
+        },
+        {
+          "name": "hair21"
+        },
+        {
+          "name": "hair22"
+        },
+        {
+          "name": "hair16"
+        },
+        {
+          "name": "hair23"
+        },
+        {
+          "name": "hair15"
+        },
+        {
+          "name": "hair25"
+        },
+        {
+          "name": "hair14"
+        },
+        {
+          "name": "hair24"
+        },
+        {
+          "name": "hair7"
+        },
+        {
+          "name": "hair8"
+        },
+        {
+          "name": "hair9"
+        },
+        {
+          "name": "hair10"
+        },
+        {
+          "name": "hair11"
+        },
+        {
+          "name": "hair12"
+        },
+        {
+          "name": "hair13"
+        },
+        {
+          "name": "hair26"
+        },
+        {
+          "name": "hair27"
+        },
+        {
+          "name": "hair29"
+        },
+        {
+          "name": "hair28"
+        },
+        {
+          "name": "hair30"
+        },
+        {
+          "name": "hair31"
+        },
+        {
+          "name": "hair32"
+        }
+      ]
+    },
+    {
+      "name": "EyeGroup",
+      "objects": [
+        {
+          "name": "eye2"
+        },
+        {
+          "name": "eye1"
+        },
+        {
+          "name": "eye3"
+        },
+        {
+          "name": "eye4"
+        },
+        {
+          "name": "eye5"
+        },
+        {
+          "name": "eye6"
+        }
+      ]
+    },
+    {
+      "name": "OutfitGroup",
+      "objects": [
+        {
+          "name": "outfit2"
+        },
+        {
+          "name": "outfit1"
+        },
+        {
+          "name": "outfit3"
+        },
+        {
+          "name": "outfit4"
+        },
+        {
+          "name": "outfit5"
+        },
+        {
+          "name": "outfit6"
+        },
+        {
+          "name": "outfit7"
+        },
+        {
+          "name": "outfit9"
+        },
+        {
+          "name": "outfit8"
+        },
+        {
+          "name": "outfit10"
+        }
+      ]
+    },
+    {
+      "name": "SignGroup",
+      "objects": [
+        {
+          "name": "Sign12"
+        },
+        {
+          "name": "Sign11"
+        },
+        {
+          "name": "Sign10"
+        },
+        {
+          "name": "Sign9"
+        },
+        {
+          "name": "Sign8"
+        },
+        {
+          "name": "Sign7"
+        },
+        {
+          "name": "Sign6"
+        },
+        {
+          "name": "Sign5"
+        },
+        {
+          "name": "Sign4"
+        },
+        {
+          "name": "Sign3"
+        },
+        {
+          "name": "Sign2"
+        },
+        {
+          "name": "Sign1"
+        }
+      ]
     }
   ],
   "variables": [
@@ -38855,47 +39055,6 @@
             },
             {
               "name": "popup3_delete_button"
-            }
-          ]
-        },
-        {
-          "name": "SIgnGroup",
-          "objects": [
-            {
-              "name": "Sign12"
-            },
-            {
-              "name": "Sign11"
-            },
-            {
-              "name": "Sign10"
-            },
-            {
-              "name": "Sign9"
-            },
-            {
-              "name": "Sign8"
-            },
-            {
-              "name": "Sign7"
-            },
-            {
-              "name": "Sign6"
-            },
-            {
-              "name": "Sign5"
-            },
-            {
-              "name": "Sign4"
-            },
-            {
-              "name": "Sign3"
-            },
-            {
-              "name": "Sign2"
-            },
-            {
-              "name": "Sign1"
             }
           ]
         }
@@ -46047,7 +46206,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "Player move event"
+          "target": "character collision event"
         },
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -51501,7 +51660,7 @@
                 "        }, ",
                 "        X : 480, ",
                 "        Y : 300, ",
-                "        Z : 10,",
+                "        Z : 2,",
                 "    };",
                 "",
                 "    setTimeout(() => {",
@@ -63337,6 +63496,42 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HairGroup",
+                "WallSide",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EyeGroup",
+                "WallSide",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "WallSide",
+                "",
+                "",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -63346,6 +63541,36 @@
               },
               "parameters": [
                 "UserGroup",
+                "WallSide",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "WallSide",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "WallSide",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
                 "WallSide",
                 ""
               ]
@@ -63366,6 +63591,42 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HairGroup",
+                "DecoTileGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EyeGroup",
+                "DecoTileGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "DecoTileGroup",
+                "",
+                "",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -63375,6 +63636,36 @@
               },
               "parameters": [
                 "UserGroup",
+                "DecoTileGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "DecoTileGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "DecoTileGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
                 "DecoTileGroup",
                 ""
               ]
@@ -63390,6 +63681,232 @@
               },
               "parameters": [
                 "UserGroup",
+                "DecoWallGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HairGroup",
+                "DecoWallGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EyeGroup",
+                "DecoWallGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "DecoWallGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "DecoWallGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "DecoWallGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "DecoWallGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "DecoWallGroup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "WallGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HairGroup",
+                "WallGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EyeGroup",
+                "WallGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "WallGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "WallGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "WallGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "WallGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "WallGroup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "SaleTableGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HairGroup",
+                "SaleTableGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "SaleTableGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EyeGroup",
                 "SaleTableGroup",
                 "",
                 "",
@@ -63404,6 +63921,36 @@
               },
               "parameters": [
                 "UserGroup",
+                "SaleTableGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "SaleTableGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "SaleTableGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
                 "SaleTableGroup",
                 ""
               ]
@@ -63424,6 +63971,42 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EyeGroup",
+                "CollisionGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "HairGroup",
+                "CollisionGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "CollisionGroup",
+                "",
+                "",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -63433,6 +64016,36 @@
               },
               "parameters": [
                 "UserGroup",
+                "CollisionGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "CollisionGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "CollisionGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
                 "CollisionGroup",
                 ""
               ]
@@ -63448,7 +64061,7 @@
               },
               "parameters": [
                 "UserGroup",
-                "SIgnGroup",
+                "SignGroup",
                 "",
                 "",
                 ""
@@ -63462,7 +64075,37 @@
               },
               "parameters": [
                 "UserGroup",
-                "CollisionGroup",
+                "SignGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "HairGroup",
+                "SignGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EyeGroup",
+                "SignGroup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "OutfitGroup",
+                "SignGroup",
                 ""
               ]
             }
@@ -63841,7 +64484,6 @@
           "comment2": ""
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -66412,6 +67054,32 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "StoreId",
+                "!=",
+                "GlobalVariableString(UserId)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup3_delete_button",
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -67125,9 +67793,11 @@
                 "    if (response.ok) {",
                 "      const data = await response.text();",
                 "      console.log(data);",
-                "      runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum-1).setNumber(0);",
-                "      const object = objects[0]; // 첫 번째 객체 인스턴스 가져오기",
-                "      runtimeScene.markObjectForDeletion(object); // 객체 삭제 표시",
+                "      if (data === \"삭제 완료\") {",
+                "        runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum-1).setNumber(0);",
+                "        const object = objects[0]; // 첫 번째 객체 인스턴스 가져오기",
+                "        runtimeScene.markObjectForDeletion(object); // 객체 삭제 표시",
+                "      }",
                 "    } else {",
                 "      console.error(\"Request failed with status:\", response.status);",
                 "    }",
