@@ -639,94 +639,11 @@ gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46G
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door2": gdjs.Store_32custom_32sceneCode.GDDoor2Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor3Objects1Objects = Hashtable.newFrom({"Door3": gdjs.Store_32custom_32sceneCode.GDDoor3Objects1});
-gdjs.Store_32custom_32sceneCode.userFunc0x7db998 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x193b3b8 = function(runtimeScene) {
 "use strict";
-// global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-console.log("유저 토큰 테스트 :", userToken);
-
-
-// Store의 x,y,z 값 가져오기
-// const objectName = "Add_store_test";
-// const objects = runtimeScene.getObjects(objectName);
-
-// let x, y, z;
-
-// if (objects.length > 0) {
-//   const object = objects[0]; // 첫 번째 객체 인스턴스를 가져옵니다.
-
-//   // 객체의 X, Y 좌표를 가져옵니다.
-//   x = object.getX();
-//   y = object.getY();
-
-//   // 객체의 Z 순서 (레이어 순서)를 가져옵니다.
-//   z = object.getZOrder();
-
-//   console.log(`X: ${x}, Y: ${y}, Z: ${z}`);
-// }
-
-
-var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
 
-console.log("상점 등록 여부:", runtimeScene.getGame().getVariables().get("IsStoreAdded")._str);
-const storeName = runtimeScene.getGame().getVariables().get("StoreName")._str;
-const storePeriod = runtimeScene.getGame().getVariables().get("StorePeriod")._str;
-const storeInfo = runtimeScene.getGame().getVariables().get("StoreInfo")._str;
-
-console.log("스토어 이름 : ", storeName);
-console.log("스토어 기간 : ", storePeriod);
-console.log("스토어 정보 : ", storeInfo);
-
-// 스토어 등록 호출 보내기
-var addStoreRequest = {
-  method: "POST",
-  headers: {
-    'Authorization': `${userToken}`,
-    'Accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  },
-  body: JSON.stringify({
-    name : storeName,
-    period : storePeriod,
-    info : storeInfo,
-    x : 0,
-    y : 0,
-    z : 1,
-    signName : "Sign" + signNum.toString(),
-  }),
-}
-
-async function postAddStore(addStoreRequest) {
-  try {
-    const response = await fetch("http://43.201.210.173:8080/stores/register", addStoreRequest);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      runtimeScene.getGame().getVariables().get("StoreSign").getChild(signNum).setNumber(1);
-      runtimeScene.getGame().getVariables().get("IsStoreAdded").setString(1);
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-}
-
-postAddStore(addStoreRequest);
-
-
-
-
-};
-gdjs.Store_32custom_32sceneCode.userFunc0x7dba28 = function(runtimeScene) {
-"use strict";
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
-
-// 스토어 ID 확인
 var checkStoreIdRequest = {
   method: "GET",
   headers: {
@@ -741,12 +658,14 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    console.log(response);
     if (response.ok) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getVariables().get("StoreId").setString(data.id);
       var storeId = runtimeScene.getVariables().get("StoreId")._str;
       console.log("스토어 아이디 : ", storeId);
+      runtimeScene.getVariables().get("IsStoreIdAdded").setNumber(1);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -757,11 +676,23 @@ async function getStoreId(checkStoreIdRequest) {
 
 getStoreId(checkStoreIdRequest);
 };
-gdjs.Store_32custom_32sceneCode.userFunc0x7dbc98 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32custom_32sceneCode.userFunc0x193b3b8(runtimeScene);
+
+}
+
+
+};gdjs.Store_32custom_32sceneCode.userFunc0x193bf80 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
 var tableList = [];
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var storeId = runtimeScene.getVariables().get("StoreId")._str;
 
 // 골라진 타일 인스턴스 정보 가져오기
 for (let i = 1; i < 14; i++) {
@@ -798,6 +729,7 @@ for (let i = 1; i < 13; i++) {
         console.log(wall);
     }
 }
+
 
 // 골라진 문 인스턴스 정보 가져오기
 for (let i = 1; i < 4; i++) {
@@ -836,6 +768,7 @@ for (let i = 1; i < 31; i++) {
                 height : o.getHeight(),
                 layer : o.getLayer()
             }
+            deco = JSON.stringify(deco);
             decoList.push(deco);
             j += 1;
         }
@@ -862,47 +795,71 @@ for (let i = 1; i < 13; i++) {
                 height : o.getHeight(),
                 layer : o.getLayer()
             }
+            table = JSON.stringify(table);
             tableList.push(table);
             j += 1;
         }
     }
 }
 console.log(tableList);
+
+tile = JSON.stringify(tile);
+wall = JSON.stringify(wall);
+door = JSON.stringify(door);
+
+console.log("커마 스토어 아이디 : ", storeId);
+var storeHttp = "storecustom"
+
+// 스토어 등록 호출 보내기
+var addStoreRequest = {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+  body: JSON.stringify({
+    storeId : storeId,
+    tile : tile,
+    wall : wall,
+    door : door,
+    decoList : decoList,
+    tableList : tableList,
+  }),
+}
+
+var c = 0;
+
+if (c !== 1) {
+    fetch("http://43.201.210.173:8080/" + storeHttp + "izings/register", addStoreRequest)
+    .then((res) => res.text())
+    .then((data) => {
+        console.log("커마 등록 API 호출 : ", data);
+        runtimeScene.getVariables().get("StoreCustomSuccess").setNumber(1);
+        console.log(runtimeScene.getVariables().get("StoreCustomSuccess")._value);
+    })
+    .catch((error) => {
+        console.log("Error fetching data:", error);
+    });
+}
+
+c = 1;
+
+runtimeScene.getGame().getVariables().get("IsStoreAdded").setNumber(0);
 };
-gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x7db998(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x193bf80(runtimeScene);
 
 }
 
 
-{
-
-
-gdjs.Store_32custom_32sceneCode.userFunc0x7dba28(runtimeScene);
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Store_32custom_32sceneCode.userFunc0x7dbc98(runtimeScene);
-
-}
-
-
-};gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -7472,6 +7429,28 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDoor2Objects1.length ;i <
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32custom_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("BlueButtonWithShadow"), gdjs.Store_32custom_32sceneCode.GDBlueButtonWithShadowObjects1);
 
 let isConditionTrue_0 = false;
@@ -7499,7 +7478,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32custom_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
@@ -8044,7 +8023,7 @@ gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects2.length = 0;
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects1.length = 0;
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects2.length = 0;
 
-gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);
+gdjs.Store_32custom_32sceneCode.eventsList2(runtimeScene);
 
 return;
 
