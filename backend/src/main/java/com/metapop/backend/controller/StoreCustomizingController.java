@@ -22,7 +22,7 @@ public class StoreCustomizingController {
     @Operation(summary = "", description = "상점 커스터마이징 등록 API")
     @PostMapping("/register")
     public ResponseEntity<String> registration(@RequestBody StoreCustomizingSaveDTO storeCustomizingSaveDTO) {
-        return ResponseEntity.ok(storeCustomizingService.registration(storeCustomizingSaveDTO));
+        return storeCustomizingService.registration(storeCustomizingSaveDTO);
     }
 
     @Operation(summary = "", description = "상점 커스터마이징 정보 조회 API")

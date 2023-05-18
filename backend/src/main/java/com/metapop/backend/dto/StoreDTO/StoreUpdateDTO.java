@@ -9,8 +9,5 @@ public class StoreUpdateDTO {
     private String name;
     private LocalDate period;
     private String info;
-    private Float x;
-    private Float y;
-    private Float z;
     private String signName;
 }

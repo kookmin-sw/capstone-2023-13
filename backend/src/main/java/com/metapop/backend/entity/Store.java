@@ -30,26 +30,14 @@ public class Store {
     private String info;
 
     @Column(nullable = false)
-    private Float x;
-
-    @Column(nullable = false)
-    private Float y;
-
-    @Column(nullable = false)
-    private Float z;
-
-    @Column(nullable = false)
     private String signName;
 
     @Builder
-    public Store(User user, String name, LocalDate period, String info, Float x,  Float y,  Float z, String signName){
+    public Store(User user, String name, LocalDate period, String info, String signName){
         this.owner = user;
         this.name = name;
         this.period = period;
         this.info = info;
-        this.x = x;
-        this.y = y;
-        this.z = z;
         this.signName = signName;
     }
 
@@ -57,9 +45,6 @@ public class Store {
         this.name = storeUpdateDTO.getName();
         this.period = storeUpdateDTO.getPeriod();
         this.info = storeUpdateDTO.getInfo();
-        this.x = storeUpdateDTO.getX();
-        this.y = storeUpdateDTO.getY();
-        this.z = storeUpdateDTO.getZ();
         this.signName = storeUpdateDTO.getSignName();
     }
 }
