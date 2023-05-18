@@ -8,6 +8,7 @@ import com.metapop.backend.entity.StoreCustomizing;
 import com.metapop.backend.repository.StoreCustomizingRepository;
 import com.metapop.backend.repository.StoreRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -21,10 +22,16 @@ public class StoreCustomizingService {
     private final StoreCustomizingRepository storeCustomizingRepository;
 
 
-    public String registration(StoreCustomizingSaveDTO storeCustomizingSaveDTO){
+    public ResponseEntity<String> registration(StoreCustomizingSaveDTO storeCustomizingSaveDTO){
         Store store = storeRepository.findById(storeCustomizingSaveDTO.getStoreId()).orElseThrow();
-        storeCustomizingRepository.save(storeCustomizingSaveDTO.toEntity(store));
-        return "상점 커스터마이징 등록 완료";
+        StoreCustomizing Exist = storeCustomizingRepository.findByStoreId(store);
+        if(Exist != null) {
+            return ResponseEntity.status(400).body("상점 커스터마이징이 존재합니다.");
+        }
+        else {
+            storeCustomizingRepository.save(storeCustomizingSaveDTO.toEntity(store));
+            return ResponseEntity.ok("상점 커스터마이징 등록 완료");
+        }
     }
 
     public StoreCustomizing info(Long store_id) {
