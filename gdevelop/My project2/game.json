@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -42394,6 +42394,58 @@
                 "-440"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "",
+                "// 스토어 ID 확인",
+                "var storeAllIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "}",
+                "",
+                "async function getStoreAllId(storeAllIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info\", storeAllIdRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      let i = 0;",
+                "      while(true) {",
+                "        var n = data[i].signName;",
+                "        if (n !== \"String\") {",
+                "          n = n.slice(4);",
+                "          n = Number(n);",
+                "          n--;",
+                "          runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(n).setNumber(1);",
+                "          //console.log(\"채워져 있는 표지판 : \", n);",
+                "        }",
+                "        i++;",
+                "      }",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getStoreAllId(storeAllIdRequest);",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
           ]
         },
         {
@@ -52094,7 +52146,7 @@
                 "            }",
                 "            else if (e.dir == \"del\") {",
                 "                console.log(e);",
-                "                findDeleteUser(e);",
+                "                deleteUser(e);",
                 "            }",
                 "            break;",
                 "        case \"chat\":",
@@ -63430,6 +63482,77 @@
           "conditions": [
             {
               "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value;",
+                "",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "}",
+                "",
+                "async function getStoreId(checkStoreIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                "    console.log(response);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(\"Get호출 : \", data);",
+                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
+                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
+                "      console.log(\"스토어 아이디 : \", storeId);",
+                "      runtimeScene.getVariables().get(\"IsStoreIdAdded\").setNumber(1);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getStoreId(checkStoreIdRequest);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "스토어 커스터마이징 정보 저장",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
@@ -63468,155 +63591,27 @@
               ]
             }
           ],
-          "actions": [],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "// global 변수에 저장되어있는 토큰 가져오기",
-                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
-                "console.log(\"유저 토큰 테스트 :\", userToken);",
-                "",
-                "",
-                "// Store의 x,y,z 값 가져오기",
-                "// const objectName = \"Add_store_test\";",
-                "// const objects = runtimeScene.getObjects(objectName);",
-                "",
-                "// let x, y, z;",
-                "",
-                "// if (objects.length > 0) {",
-                "//   const object = objects[0]; // 첫 번째 객체 인스턴스를 가져옵니다.",
-                "",
-                "//   // 객체의 X, Y 좌표를 가져옵니다.",
-                "//   x = object.getX();",
-                "//   y = object.getY();",
-                "",
-                "//   // 객체의 Z 순서 (레이어 순서)를 가져옵니다.",
-                "//   z = object.getZOrder();",
-                "",
-                "//   console.log(`X: ${x}, Y: ${y}, Z: ${z}`);",
-                "// }",
-                "",
-                "",
-                "var isStoreAdded = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str;",
-                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value;",
-                "",
-                "console.log(\"상점 등록 여부:\", runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str);",
-                "const storeName = runtimeScene.getGame().getVariables().get(\"StoreName\")._str;",
-                "const storePeriod = runtimeScene.getGame().getVariables().get(\"StorePeriod\")._str;",
-                "const storeInfo = runtimeScene.getGame().getVariables().get(\"StoreInfo\")._str;",
-                "",
-                "console.log(\"스토어 이름 : \", storeName);",
-                "console.log(\"스토어 기간 : \", storePeriod);",
-                "console.log(\"스토어 정보 : \", storeInfo);",
-                "",
-                "// 스토어 등록 호출 보내기",
-                "var addStoreRequest = {",
-                "  method: \"POST\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'Accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  },",
-                "  body: JSON.stringify({",
-                "    name : storeName,",
-                "    period : storePeriod,",
-                "    info : storeInfo,",
-                "    x : 0,",
-                "    y : 0,",
-                "    z : 1,",
-                "    signName : \"Sign\" + signNum.toString(),",
-                "  }),",
-                "}",
-                "",
-                "async function postAddStore(addStoreRequest) {",
-                "  try {",
-                "    const response = await fetch(\"http://43.201.210.173:8080/stores/register\", addStoreRequest);",
-                "    if (response.ok) {",
-                "      const data = await response.json();",
-                "      console.log(data);",
-                "      runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum).setNumber(1);",
-                "      runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setString(1);",
-                "    } else {",
-                "      console.error(\"Request failed with status:\", response.status);",
-                "    }",
-                "  } catch (error) {",
-                "    console.error(\"An error occurred:\", error);",
-                "  }",
-                "}",
-                "",
-                "postAddStore(addStoreRequest);",
-                "",
-                "",
-                "",
-                ""
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": true
-            },
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
-                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
-                "",
-                "// 스토어 ID 확인",
-                "var checkStoreIdRequest = {",
-                "  method: \"GET\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'Accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  },",
-                "}",
-                "",
-                "async function getStoreId(checkStoreIdRequest) {",
-                "  try {",
-                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
-                "    if (response.ok) {",
-                "      const data = await response.json();",
-                "      console.log(\"Get호출 : \", data);",
-                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
-                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
-                "      console.log(\"스토어 아이디 : \", storeId);",
-                "    } else {",
-                "      console.error(\"Request failed with status:\", response.status);",
-                "    }",
-                "  } catch (error) {",
-                "    console.error(\"An error occurred:\", error);",
-                "  }",
-                "}",
-                "",
-                "getStoreId(checkStoreIdRequest);"
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": true
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
+              "type": {
+                "value": "Scene"
               },
-              "comment": "스토어 커스터마이징 정보 저장",
-              "comment2": ""
-            },
+              "parameters": [
+                "",
+                "\"Square scene\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
                 "var tile, wall, door, deco, table;",
                 "var decoList = [];",
                 "var tableList = [];",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
                 "",
                 "// 골라진 타일 인스턴스 정보 가져오기",
                 "for (let i = 1; i < 14; i++) {",
@@ -63653,6 +63648,7 @@
                 "        console.log(wall);",
                 "    }",
                 "}",
+                "",
                 "",
                 "// 골라진 문 인스턴스 정보 가져오기",
                 "for (let i = 1; i < 4; i++) {",
@@ -63691,6 +63687,7 @@
                 "                height : o.getHeight(),",
                 "                layer : o.getLayer()",
                 "            }",
+                "            deco = JSON.stringify(deco);",
                 "            decoList.push(deco);",
                 "            j += 1;",
                 "        }",
@@ -63717,12 +63714,59 @@
                 "                height : o.getHeight(),",
                 "                layer : o.getLayer()",
                 "            }",
+                "            table = JSON.stringify(table);",
                 "            tableList.push(table);",
                 "            j += 1;",
                 "        }",
                 "    }",
                 "}",
-                "console.log(tableList);"
+                "console.log(tableList);",
+                "",
+                "tile = JSON.stringify(tile);",
+                "wall = JSON.stringify(wall);",
+                "door = JSON.stringify(door);",
+                "",
+                "console.log(\"커마 스토어 아이디 : \", storeId);",
+                "var storeHttp = \"storecustom\"",
+                "",
+                "// 스토어 등록 호출 보내기",
+                "var addStoreRequest = {",
+                "  method: \"POST\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "  body: JSON.stringify({",
+                "    storeId : storeId,",
+                "    tile : tile,",
+                "    wall : wall,",
+                "    door : door,",
+                "    decoList : decoList,",
+                "    tableList : tableList,",
+                "  }),",
+                "}",
+                "",
+                "var c = 0;",
+                "",
+                "if (c !== 1) {",
+                "    fetch(\"http://43.201.210.173:8080/\" + storeHttp + \"izings/register\", addStoreRequest)",
+                "    .then((res) => res.text())",
+                "    .then((data) => {",
+                "        console.log(\"커마 등록 API 호출 : \", data);",
+                "        runtimeScene.getVariables().get(\"StoreCustomSuccess\").setNumber(1);",
+                "        console.log(runtimeScene.getVariables().get(\"StoreCustomSuccess\")._value);",
+                "    })",
+                "    .catch((error) => {",
+                "        console.log(\"Error fetching data:\", error);",
+                "    });",
+                "}",
+                "",
+                "c = 1;",
+                "",
+                "runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setNumber(0);"
               ],
               "parameterObjects": "",
               "useStrict": true,
@@ -63764,29 +63808,6 @@
       "name": "Sign interaction event",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "",
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": false
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -63815,32 +63836,6 @@
           ],
           "actions": [],
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "CurrentOwnerId",
-                    "!=",
-                    "GlobalVariableString(UserId)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "popup3_delete_button",
-                    ""
-                  ]
-                }
-              ]
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -65118,6 +65113,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -65146,47 +65142,16 @@
                 "value": "Cache"
               },
               "parameters": [
-                "popup2_input_store_name"
+                "Popup2"
               ]
             },
             {
               "type": {
-                "value": "Cache"
+                "value": "Delete"
               },
               "parameters": [
-                "popup2_input_store_info"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_period_year"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_period_month"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "popup2_input_period_day"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "TextInput"
+                "TextInput",
+                ""
               ]
             }
           ],
@@ -65194,24 +65159,68 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const storeName = runtimeScene.getObjects(\"popup2_input_store_name\")[0];",
-                "const inputStoreName = storeName.getString();",
+                "const stoName = runtimeScene.getObjects(\"popup2_input_store_name\")[0];",
+                "const inputStoreName = stoName.getString();",
                 "",
-                "const storePeriodYear = runtimeScene.getObjects(\"popup2_input_period_year\")[0];",
-                "const inputStorePeriodYear = storePeriodYear.getString();",
+                "const stoPeriodYear = runtimeScene.getObjects(\"popup2_input_period_year\")[0];",
+                "const inputStorePeriodYear = stoPeriodYear.getString();",
                 "",
-                "const storePeriodMonth = runtimeScene.getObjects(\"popup2_input_period_month\")[0];",
-                "const inputStorePeriodMonth = storePeriodMonth.getString();",
+                "const stoPeriodMonth = runtimeScene.getObjects(\"popup2_input_period_month\")[0];",
+                "const inputStorePeriodMonth = stoPeriodMonth.getString();",
                 "",
-                "const storePeriodDay = runtimeScene.getObjects(\"popup2_input_period_day\")[0];",
-                "const inputStorePeriodDay = storePeriodDay.getString();",
+                "const stoPeriodDay = runtimeScene.getObjects(\"popup2_input_period_day\")[0];",
+                "const inputStorePeriodDay = stoPeriodDay.getString();",
                 "",
-                "const storeInfo = runtimeScene.getObjects(\"popup2_input_store_info\")[0];",
-                "const inputStoreInfo = storeInfo.getString();",
+                "const stoInfo = runtimeScene.getObjects(\"popup2_input_store_info\")[0];",
+                "const inputStoreInfo = stoInfo.getString();",
                 "",
-                "runtimeScene.getGame().getVariables().get(\"StoreName\").setString(inputStoreName);",
-                "runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
-                "runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(inputStoreInfo);",
+                "// global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "console.log(\"유저 토큰 테스트 :\", userToken);",
+                "",
+                "var isStoreAdded = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value;",
+                "console.log(\"상점 등록 여부:\", runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str);",
+                "",
+                "const storeName = inputStoreName;",
+                "const storePeriod = inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay;",
+                "const storeInfo = inputStoreInfo;",
+                "",
+                "console.log(\"스토어 이름 : \", storeName);",
+                "console.log(\"스토어 기간 : \", storePeriod);",
+                "console.log(\"스토어 정보 : \", storeInfo);",
+                "",
+                "// 스토어 등록 호출 보내기",
+                "var addStoreRequest = {",
+                "  method: \"POST\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "  body: JSON.stringify({",
+                "    name : storeName,",
+                "    period : storePeriod,",
+                "    info : storeInfo,",
+                "    x : 0,",
+                "    y : 0,",
+                "    z : 0,",
+                "    signName : \"Sign\" + signNum.toString(),",
+                "  }),",
+                "}",
+                "fetch(\"http://43.201.210.173:8080/stores/register\", addStoreRequest)",
+                "  .then((res) => res.text())",
+                "  .then((data) => {",
+                "    console.log(\"호출 : \", data);",
+                "    runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum-1).setNumber(1);",
+                "    runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setNumber(1);",
+                "    console.log(runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._value);",
+                "  })",
+                "  .catch((error) => {",
+                "    console.log(\"Error fetching data:\", error);",
+                "  });",
                 "",
                 "const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
                 "const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
@@ -65256,10 +65265,26 @@
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Popup2",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -65527,7 +65552,41 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                "",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "}",
+                "",
                 "async function getStoreId(checkStoreIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(\"Get호출 : \", data);",
+                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
+                "      runtimeScene.getVariables().get(\"\bCurrentOwnerId\").setString(data.owner.email);",
+                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
+                "      var ownerId = runtimeScene.getVariables().get(\"\bCurrentOwnerId\")._str;",
+                "      console.log(\"스토어 아이디 : \", storeId);",
+                "      console.log(\"스토어 판매자 : \", ownerId);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "async function getStoreCustomId(checkStoreIdRequest) {",
                 "  try {",
                 "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                 "    if (response.ok) {",
@@ -65591,7 +65650,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -65617,6 +65676,51 @@
                 "Popup3",
                 ""
               ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                "",
+                "// 스토어 ID 확인",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "}",
+                "",
+                "async function getStoreId(checkStoreIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(response);",
+                "      console.log(\"Get호출 : \", data.id);",
+                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
+                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
+                "      console.log(\"스토어 아이디 : \", storeId);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getStoreId(checkStoreIdRequest);",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -65655,6 +65759,15 @@
                 "",
                 "\"Popup store delete\"",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup3",
                 ""
               ]
             }
@@ -65701,9 +65814,9 @@
                 "  try {",
                 "    const response = await fetch(\"http://43.201.210.173:8080/stores/remove\", deleteStoreRequest);",
                 "    if (response.ok) {",
-                "      const data = await response.json();",
+                "      const data = await response.text();",
                 "      console.log(data);",
-                "      runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum).setNumber(1);",
+                "      runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum-1).setNumber(0);",
                 "      const object = objects[0]; // 첫 번째 객체 인스턴스 가져오기",
                 "      runtimeScene.markObjectForDeletion(object); // 객체 삭제 표시",
                 "    } else {",
@@ -87290,7 +87403,7 @@
           "angle": 0,
           "customSize": true,
           "height": 411,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "WhiteBackgroundPopup",
           "persistentUuid": "5a6ee4ba-4a89-42bd-814f-6dd9c969598d",
           "width": 681,
@@ -87305,7 +87418,7 @@
           "angle": 0,
           "customSize": true,
           "height": 58,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "BlueTitlePopup",
           "persistentUuid": "3a5dd91f-2e64-45fb-b39f-b6175db98886",
           "width": 681,
@@ -87320,7 +87433,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "popup_store_delete_inner_text",
           "persistentUuid": "5a715d98-7e74-4e50-be22-c96baeab935d",
           "width": 0,
@@ -87335,7 +87448,7 @@
           "angle": 0,
           "customSize": true,
           "height": 49,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "popup_store_delete_ok_btn",
           "persistentUuid": "ee3f4fab-de4a-431a-b7ac-315fe0262fe8",
           "width": 136,
@@ -87350,7 +87463,7 @@
           "angle": 0,
           "customSize": true,
           "height": 49,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "popup_store_delete_cancel_btn",
           "persistentUuid": "50c7cdb5-3ad1-4920-a542-4762a6344654",
           "width": 135,
@@ -87384,7 +87497,7 @@
           "angle": 0,
           "customSize": true,
           "height": 411,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "WhiteBackgroundPopup",
           "persistentUuid": "5a6ee4ba-4a89-42bd-814f-6dd9c969598d",
           "width": 681,
@@ -87399,7 +87512,7 @@
           "angle": 0,
           "customSize": true,
           "height": 58,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "BlueTitlePopup",
           "persistentUuid": "3a5dd91f-2e64-45fb-b39f-b6175db98886",
           "width": 681,
@@ -87414,7 +87527,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "popup_store_delete_complete_inner_text",
           "persistentUuid": "4b044fe0-1725-45cb-b71e-f51be554bdb9",
           "width": 0,
@@ -87429,7 +87542,7 @@
           "angle": 0,
           "customSize": true,
           "height": 46,
-          "layer": "",
+          "layer": "Popup Layer",
           "name": "popup_store_delete_complete_ok_btn",
           "persistentUuid": "5f478b6d-08ec-49cc-a805-2a51960ddfb1",
           "width": 128,
