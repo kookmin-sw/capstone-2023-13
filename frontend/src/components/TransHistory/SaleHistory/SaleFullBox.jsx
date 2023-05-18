@@ -36,10 +36,10 @@ function SaleFullBox({onPage, onClose}) {
             }
           );
     
-          // 상품 이름을 상세 정보에서 가져옵니다.
-          // 이 부분은 실제 응답의 구조에 따라 수정해야 합니다.
+          
           const productName = productDetailResponse.data.name;
           const storeName = productDetailResponse.data.storeId.name;
+          const repImg = productDetailResponse.data.imgList[0]; 
 
           const date = new Date(item.orderDate);
           const year = date.getFullYear();
@@ -49,14 +49,29 @@ function SaleFullBox({onPage, onClose}) {
           const weekday = weekdays[date.getDay()]; 
 
           const formattedDate = `${year}.${month}.${day} (${weekday})`;
-    
+          const totalAmount = item.productAmountList.reduce((acc, cur) => acc + cur, 0);
+
+          let stateText;
+          switch (item.state) {
+            case 0:
+              stateText = '입금확인';
+              break;
+            case 1:
+              stateText = '배송중';
+              break;
+            case 2:
+              stateText = '거래완료';
+              break;
+          }
+
           return {
             id: item.id,
             rep_product: productName,
             store: storeName,
-            num: item.productList.length,
+            num: totalAmount,
             date: formattedDate,
-            state: item.state === 0 ? '배송중' : '배송완료',
+            state: stateText,
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
           };
         })
       );
@@ -89,8 +104,8 @@ function SaleFullBox({onPage, onClose}) {
         <div className="listBox">
         {orders.map((order) => (
             <div className="listLine" key={order.id} onClick={() => detailClick(order.id)}>
-              <div className="listImg">
-                <img src="../../assets/img/smile.png" alt="임시이미지"></img>
+              <div className="listImg-Div">
+                <img className="listImg" src={order.image} alt="대표 상품 이미지"></img>
               </div>
               <div className="listInfo">
                 <div className="orderNum">{order.store}</div>

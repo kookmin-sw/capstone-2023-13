@@ -48,9 +48,16 @@
     height: 140px;
     border-bottom: 1px solid gray;
 }
-.listImg{
+.listImg-Div{
     background-color: #8398D1;
     float:left;
+    width: 140px;
+    height: 140px;
+    border-radius:10px;
+}
+.listImg{
+    /* background-color: #8398D1; */
+    /* float:left; */
     width: 140px;
     height: 140px;
     border-radius:10px;
