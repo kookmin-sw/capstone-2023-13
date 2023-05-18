@@ -71,7 +71,7 @@ function SaleFullBox({onPage, onClose}) {
             num: totalAmount,
             date: formattedDate,
             state: stateText,
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
+            image: repImg
           };
         })
       );
