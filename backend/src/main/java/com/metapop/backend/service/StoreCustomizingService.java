@@ -1,7 +1,7 @@
 package com.metapop.backend.service;
 
 import com.metapop.backend.dto.StoreCustomizingDTO.StoreCustomizingSaveDTO;
-import com.metapop.backend.entity.Product;
+import com.metapop.backend.dto.StoreCustomizingDTO.StoreCustomizingUpdateDTO;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.StoreCustomizing;
 import com.metapop.backend.repository.StoreCustomizingRepository;
@@ -14,7 +14,7 @@ import javax.transaction.Transactional;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class StoreCustomzingService {
+public class StoreCustomizingService {
 
     private final StoreRepository storeRepository;
     private final StoreCustomizingRepository storeCustomizingRepository;
@@ -29,5 +29,13 @@ public class StoreCustomzingService {
     public StoreCustomizing info(Long store_id) {
         Store store = storeRepository.findById(store_id).orElseThrow();
         return storeCustomizingRepository.findByStoreId(store);
+    }
+
+    public StoreCustomizing update(Long store_id, StoreCustomizingUpdateDTO storeCustomizingUpdateDTO) {
+        Store store = storeRepository.findById(store_id).orElseThrow();
+        System.out.println(store);
+        StoreCustomizing storeCustomizing = storeCustomizingRepository.findByStoreId(store);
+        storeCustomizing.update(storeCustomizingUpdateDTO);
+        return storeCustomizing;
     }
 }

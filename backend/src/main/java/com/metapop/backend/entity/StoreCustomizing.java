@@ -1,5 +1,6 @@
 package com.metapop.backend.entity;
 
+import com.metapop.backend.dto.StoreCustomizingDTO.StoreCustomizingUpdateDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -48,5 +49,13 @@ public class StoreCustomizing {
         this.door = door;
         this.decoList = decoList;
         this.tableList = tableList;
+    }
+
+    public void update(StoreCustomizingUpdateDTO storeCustomizingUpdateDTO) {
+        this.tile = storeCustomizingUpdateDTO.getTile();
+        this.wall = storeCustomizingUpdateDTO.getWall();
+        this.door = storeCustomizingUpdateDTO.getDoor();
+        this.decoList = storeCustomizingUpdateDTO.getDecoList();
+        this.tableList = storeCustomizingUpdateDTO.getTableList();
     }
 }
