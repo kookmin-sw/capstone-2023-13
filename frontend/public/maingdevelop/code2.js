@@ -773,6 +773,42 @@ gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects3= [];
 gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects1= [];
 gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects2= [];
 gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects3= [];
+gdjs.Store_32sceneCode.GDProductDetail_95NameObjects1= [];
+gdjs.Store_32sceneCode.GDProductDetail_95NameObjects2= [];
+gdjs.Store_32sceneCode.GDProductDetail_95NameObjects3= [];
+gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects1= [];
+gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects2= [];
+gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects3= [];
+gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects1= [];
+gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects2= [];
+gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects3= [];
+gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1= [];
+gdjs.Store_32sceneCode.GDProductBuy_95NameObjects2= [];
+gdjs.Store_32sceneCode.GDProductBuy_95NameObjects3= [];
+gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1= [];
+gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects2= [];
+gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects3= [];
+gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1= [];
+gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects2= [];
+gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects3= [];
+gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1= [];
+gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects2= [];
+gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects3= [];
+gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1= [];
+gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects2= [];
+gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects3= [];
+gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1= [];
+gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects2= [];
+gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects3= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects1= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects2= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects3= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects1= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects2= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects3= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects1= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects2= [];
+gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects3= [];
 gdjs.Store_32sceneCode.GDBuyAlert_95WhiteObjects1= [];
 gdjs.Store_32sceneCode.GDBuyAlert_95WhiteObjects2= [];
 gdjs.Store_32sceneCode.GDBuyAlert_95WhiteObjects3= [];
@@ -836,19 +872,103 @@ gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects3= [];
 gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1= [];
 gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects2= [];
 gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects3= [];
-gdjs.Store_32sceneCode.GDProductList_95ProductObjects1= [];
-gdjs.Store_32sceneCode.GDProductList_95ProductObjects2= [];
-gdjs.Store_32sceneCode.GDProductList_95ProductObjects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Image1Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Image1Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Image1Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Image2Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Image2Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Image2Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Image3Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Image3Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Image3Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Image4Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Image4Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Image4Objects3= [];
+gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1= [];
+gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects2= [];
+gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects3= [];
+gdjs.Store_32sceneCode.GDProductList_95NameObjects1= [];
+gdjs.Store_32sceneCode.GDProductList_95NameObjects2= [];
+gdjs.Store_32sceneCode.GDProductList_95NameObjects3= [];
+gdjs.Store_32sceneCode.GDProductList_95PriceObjects1= [];
+gdjs.Store_32sceneCode.GDProductList_95PriceObjects2= [];
+gdjs.Store_32sceneCode.GDProductList_95PriceObjects3= [];
+gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1= [];
+gdjs.Store_32sceneCode.GDProductList_95QuantityObjects2= [];
+gdjs.Store_32sceneCode.GDProductList_95QuantityObjects3= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects3= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2= [];
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3= [];
 
 
-gdjs.Store_32sceneCode.userFunc0xd7ad08 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x1715130 = function(runtimeScene) {
+"use strict";
+//Seller Buyer 구분
+let userIdVariable = runtimeScene.getGame().getVariables().get("UserId");
+let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get("CurrentOwnerId");
+
+let buyerSellerVariable = runtimeScene.getGame().getVariables().get("BuyerSellerStatus");
+
+if(currentOwnerIdVariable._str === userIdVariable._str){
+    console.log("판매자");
+    buyerSellerVariable.setString("seller");
+}
+else{
+    console.log("구매자");
+    buyerSellerVariable.setString("seller");
+}
+};
+gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x1715130(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x10eeeb8 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
 
 runtimeScene.user_id = runtimeScene.getGame().getVariables().get("UserId")._str;
 runtimeScene.nickname = runtimeScene.getGame().getVariables().get("UserNickname")._str;
-runtimeScene.channel_id = "Store1";
+runtimeScene.channel_id = runtimeScene.getGame().getVariables().get("StoreId")._str;
 
 runtimeScene.ws.onopen = function(event) {
 
@@ -1298,17 +1418,17 @@ function findUser(ob, find_id) {
 }
 
 };
-gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xd7ad08(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x10eeeb8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xce7258 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x17133b0 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1340,7 +1460,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0x15b66b0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x1714c80 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -1412,63 +1532,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0xed80d0 = function(runtimeScene) {
-"use strict";
-var logintoken = localStorage.getItem('login-token');
-
-if(logintoken){
-  runtimeScene.getGame().getVariables().get("userToken").setString(logintoken);
-}
-
-
-// console.log("token : ", runtimeScene.getGame().getVariables().get("userToken")._str);
-
-//global 변수에 저장되어있는 토큰 가져오기
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-
-// console.log("receive token event:", userToken);
-
-//유저 정보 확인
-var userInfoRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  }
-}
-
-async function getUserInfo(userInfoRequest) {
-  try {
-    const response = await fetch("http://43.201.210.173:8080/users/info", userInfoRequest);
-    if (response.ok) {
-      const data = await response.json();
-      runtimeScene.getGame().getVariables().get("UserId").setString(data.email);
-      runtimeScene.getGame().getVariables().get("UserNickname").setString(data.nickname);
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-}
-
-getUserInfo(userInfoRequest);
-
-};
-gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-gdjs.Store_32sceneCode.userFunc0xed80d0(runtimeScene);
-
-}
-
-
-};gdjs.Store_32sceneCode.userFunc0xfbfa98 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x1719720 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -1519,97 +1583,173 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xfbfa98(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1719720(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
-gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x15dd2f0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1714b60 = function(runtimeScene) {
 "use strict";
-// 상품 데이터의 더미 배열입니다.
-let products = [
-  {
-    name: "Product 1",
-    price: 10,
-    amount: 5,
-    info: "This is Product 1"
-  },
-  {
-    name: "Product 2",
-    price: 20,
-    amount: 10,
-    info: "This is Product 2"
-  },
-  // 필요한 만큼 더 추가하세요.
-];
-// console.log('Runtime Scene:', runtimeScene);
-// console.log('길이:', products.length);
-for(let i = 0; i < products.length; i++) {
-  let product = products[i];
+// // 상품 데이터의 더미 배열입니다.
 
-  // 각 상품에 대한 텍스트 객체를 생성합니다.
-  let textObject = new gdjs.TextRuntimeObject(runtimeScene, {
-    characterSize:20,
-    name: "ProductText" + i,
-    effects:{},
-    variables: {},
-    behaviors: {},
-    color:{r:0, g:0, b:0},
-    string: "Name: " + product.name + ", Price: " + product.price + ", Amount: " + product.amount, // 적절한 레이어 이름으로 변경해 주세요.
-    fontFamily:"Arial",
-    fontStyle:{
-      bold:false,
-      italic:false,
-      underline:false
-    },
-    alignment: "left"
-  });
-  //console.log("확인");
-  // 생성한 텍스트 객체를 씬에 추가합니다.
-  runtimeScene.addObject(textObject);
-  textObject.setX(100)
-  textObject.setY(400 + i * 50)
-  textObject.setZOrder(40)
-  textObject.setLayer("Popup Layer")
-  textObject.hide(true);
-}
-// let product=[{
-//   name: "Product 1",
-//     price: 10,
-//     amount: 5,
-//     info: "This is Product 1"
-// }]
-
-// let i = 1;
-// let textObject = new gdjs.TextRuntimeObject(runtimeScene, {
-//     characterSize:20,
-//     name: "ProductText" + i,
-//     effects:{},
-//     variables: {},
-//     behaviors: {},
-//     color:{r:0, g:0, b:0},
-//     string: "Name: " + product[0].name + ", Price: " + product[0].price + ", Amount: " + product[0].amount,  
-//     fontFamily:"Arial",
-//     fontStyle:{
-//       bold:false,
-//       italic:false,
-//       underline:false
+// let products = [
+//   {
+//     "id": 5,
+//     "storeId": {
+//       "id": 9,
+//       "owner": {
+//         "id": 8,
+//         "email": "cy@cy.com",
+//         "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
+//         "name": "채소",
+//         "nickname": "채",
+//         "bank": "기업은행",
+//         "account": "123",
+//         "address": "서울",
+//         "enabled": false,
+//         "authorities": null,
+//         "username": "cy@cy.com",
+//         "accountNonExpired": false,
+//         "accountNonLocked": false,
+//         "credentialsNonExpired": false
+//       },
+//       "name": "야채가게",
+//       "period": "2024-05-17",
+//       "info": "싱싱",
+//       "x": 0,
+//       "y": 0,
+//       "z": 0,
+//       "signName": "채채소"
 //     },
-//     alignment: "left",
-//     // width: 0,
-//     // height: 0,
-//     // wordWrap: false,
-//     // opacity: 255,
-//     // visible: true
-// });
-// console.log("wwwwpwwpwp")
-// runtimeScene.addObject(textObject);
-// textObject.setX(100)
-// textObject.setY(400)
-// textObject.setZOrder(40)
-// textObject.setLayer("Popup Layer")
+//     "name": "샤넬파프리카",
+//     "price": 1000,
+//     "amount": 6,
+//     "info": "맛있는 파프리카 빨강 초록",
+//     "imgList": [
+//       "string"
+//     ]
+//   },
+//   {
+//     "id": 6,
+//     "storeId": {
+//       "id": 9,
+//       "owner": {
+//         "id": 8,
+//         "email": "cy@cy.com",
+//         "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
+//         "name": "채소",
+//         "nickname": "채",
+//         "bank": "기업은행",
+//         "account": "123",
+//         "address": "서울",
+//         "enabled": false,
+//         "authorities": null,
+//         "username": "cy@cy.com",
+//         "accountNonExpired": false,
+//         "accountNonLocked": false,
+//         "credentialsNonExpired": false
+//       },
+//       "name": "야채가게",
+//       "period": "2024-05-17",
+//       "info": "싱싱",
+//       "x": 0,
+//       "y": 0,
+//       "z": 0,
+//       "signName": "채채소"
+//     },
+//     "name": "보석초콜릿",
+//     "price": 5000,
+//     "amount": 15,
+//     "info": "구찌로 만든 초콜릿",
+//     "imgList": [
+//       "string"
+//     ]
+//   }
+// ];
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+let currentStoreIdVariable = runtimeScene.getGame().getVariables().get("CurrentStoreId")._str;
+let products = [];
+
+
+// 스토어 ID 확인
+var productListRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+
+async function getProductList(productListRequest) {
+  try {
+    const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);
+    if (response.ok) {
+      const data = await response.json();
+      return data;
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getProductList(productListRequest).then(data => {
+  products = data; // 함수가 반환한 값을 products에 할당
+
+
+  let availableProducts = products.filter(product => product.amount !== 0);
+  availableProducts.forEach(product => {
+    product.quantity = 0;
+  });
+  // products 배열을 JSON 문자열로 변환
+  let productsString = JSON.stringify(availableProducts);
+  runtimeScene.getVariables().get("products").setString(productsString);
+
+  for(let i=0;  i < availableProducts.length; i++){
+    let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
+    let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
+    let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
+
+    listNameObject.setString(availableProducts[i].name);
+    let priceString = availableProducts[i].price.toLocaleString();
+    listPriceObject.setString(priceString + "원");
+    listQuantityObject.setString(0);
+  }
+  let productNumVariable = runtimeScene.getVariables().get("productNum");
+  let productFilterVariable = runtimeScene.getVariables().get("productFilter");
+
+  productNumVariable.setNumber(availableProducts.length);
+  productFilterVariable.setBoolean(true);
+});
+
+
+  // let availableProducts = products.filter(product => product.amount !== 0);
+  // availableProducts.forEach(product => {
+  //   product.quantity = 0;
+  // });
+  // // products 배열을 JSON 문자열로 변환
+  // let productsString = JSON.stringify(availableProducts);
+  // runtimeScene.getVariables().get("products").setString(productsString);
+
+  // for(let i=0;  i < availableProducts.length; i++){
+  //   let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
+  //   let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
+  //   let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
+
+  //   listNameObject.setString(availableProducts[i].name);
+  //   let priceString = availableProducts[i].price.toLocaleString();
+  //   listPriceObject.setString(priceString + "원");
+  //   listQuantityObject.setString(0);
+  // }
+  // let productNumVariable = runtimeScene.getVariables().get("productNum");
+  // let productFilterVariable = runtimeScene.getVariables().get("productFilter");
+
+  // productNumVariable.setNumber(availableProducts.length);
+  // productFilterVariable.setBoolean(true);
 
 
 };
@@ -1618,14 +1758,353 @@ gdjs.Store_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x15dd2f0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1714b60(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("productNum")) == 0;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2);
+{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("productNum")) == 1;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2);
+{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("productNum")) == 2;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2);
+{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("productNum")) == 3;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c12e8 = function(runtimeScene) {
+"use strict";
+var logintoken = localStorage.getItem('login-token');
+
+if(logintoken){
+  runtimeScene.getGame().getVariables().get("userToken").setString(logintoken);
+}
+
+
+// console.log("token : ", runtimeScene.getGame().getVariables().get("userToken")._str);
+
+//global 변수에 저장되어있는 토큰 가져오기
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+
+// console.log("receive token event:", userToken);
+
+//유저 정보 확인
+var userInfoRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+
+async function getUserInfo(userInfoRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/users/info", userInfoRequest);
+    if (response.ok) {
+      const data = await response.json();
+      runtimeScene.getGame().getVariables().get("UserId").setString(data.email);
+      runtimeScene.getGame().getVariables().get("UserNickname").setString(data.nickname);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getUserInfo(userInfoRequest);
+
+};
+gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c12e8(runtimeScene);
 
 }
 
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0xcf8428 = function(runtimeScene) {
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
+gdjs.Store_32sceneCode.userFunc0x16fd6a8 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+let buy_status = products.some(product => product.amount !== 0);
+
+let product_buy = products.filter(product => product.quantity !== 0);
+// products 배열을 JSON 문자열로 변환
+let buyString = JSON.stringify(product_buy);
+// 변환된 JSON 문자열을 Scene 변수에 저장
+
+};
+gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x16fd6a8(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x1711fe8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+
+
+// 스토어 ID 확인
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+// fetch("http://43.201.210.173:8080/stores/info/detail", checkStoreIdRequest)
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data.id);
+//     runtimeScene.getGame().getVariables().get("storeId").setString(data.id);
+//     console.log(runtimeScene.getGame().getVariables().get("storeId")._str);
+//     // console.log("스토어 아이디 : ", storeId);
+//   })
+//   .catch((error) => {
+//     console.error("Error fetching data:", error);
+//   });
+
+
+async function getStoreId(checkStoreIdRequest){
+  try{
+    const response = await fetch("http://43.201.210.173:8080/stores/info/detail", checkStoreIdRequest);
+    if(response.ok){
+      const data = await response.json();
+      console.log(data.id);
+      runtimeScene.getGame().getVariables().get("storeId").setString(data.id);
+    }
+    else{
+      console.error("Request failed with status: ", response.status);
+    }
+  } catch(error){
+    console.error("An error occured: ", error);
+  }
+}
+
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Store_32sceneCode.userFunc0x19cba30 = function(runtimeScene) {
 "use strict";
 const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
 const inputProductName = productName.getString();
@@ -1650,8 +2129,6 @@ console.log("상품정보:", inputProductInfo);
 // // global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 console.log("유저 토큰 : ", userToken);
-
-
 
 
 // 스토어 ID 확인
@@ -1720,108 +2197,501 @@ fetch("http://43.201.210.173:8080/products/register", addProductRequest)
 
 
 };
-gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xcf8428(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1711fe8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xd7abd0 = function(runtimeScene) {
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x19cba30(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14bfa88 = function(runtimeScene) {
 "use strict";
-const userAddress = runtimeScene.getObjects("Buy_Address")[0];
-const inputUserAddress = userAddress.getString();
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+let buyStatusVariable = runtimeScene.getVariables().get("buyStatus");
+let buy_status = products.some(product => product.quantity !== 0);
+console.log('boolen check : ', buy_status)
+buyStatusVariable.setBoolean(buy_status);
 
-//console.log("배송지:", inputUserAddress);
+};
+gdjs.Store_32sceneCode.eventsList8 = function(runtimeScene) {
 
-// global 변수에 저장되어있는 토큰 가져오기
-var userToken = runtimeScene.getVariables().get("userToken")._str;
-
-
-// // 스토어 등록 호출 보내기
-// fetch("http://43.201.210.173:9000/stores/register", {
-//   method: "POST",
-//   headers: {
-//     'Authorization': `${userToken}`,
-//     "Content-Type": "application/json",
-//   },
-//   body: JSON.stringify({
-//     userId : 4,
-//     name : inputStoreName,
-//     period : inputStorePeriodYear+"-"+inputStorePeriodMonth+"-"+inputStorePeriodDay,
-//     info : inputStoreInfo,
-//   }),
-// })
-//   .then((response) => console.log(response))
+{
 
 
+gdjs.Store_32sceneCode.userFunc0x14bfa88(runtimeScene);
 
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14bf738 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+if(products[0].quantity < products[0].amount){
+    products[0].quantity += 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[0];
+    productQuantityObject.setString(products[0].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+
+
+};
+gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14bf738(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14bfd38 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+if(products[0].quantity != 0){
+    products[0].quantity -= 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[0];
+    productQuantityObject.setString(products[0].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+
+};
+gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14bfd38(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14bf340 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+
+if(products[1].quantity < products[1].amount){
+    products[1].quantity += 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[1];
+    productQuantityObject.setString(products[1].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+};
+gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14bf340(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c28b8 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+if(products[1].quantity != 0){
+    products[1].quantity -= 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[1];
+    productQuantityObject.setString(products[1].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+
+};
+gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c28b8(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c2ca0 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+
+if(products[2].quantity < products[2].amount){
+    products[2].quantity += 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[2];
+    productQuantityObject.setString(products[2].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+};
+gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c2ca0(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c3668 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+if(products[2].quantity != 0){
+    products[2].quantity -= 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[2];
+    productQuantityObject.setString(products[2].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+
+};
+gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c3668(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c3300 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+
+if(products[3].quantity < products[3].amount){
+    products[3].quantity += 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[3];
+    productQuantityObject.setString(products[3].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+
+};
+gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c3300(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c1f70 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+// JSON 문자열을 배열로 변환
+let products = JSON.parse(productsString);
+if(products[3].quantity != 0){
+    products[3].quantity -= 1;
+
+    let productQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[3];
+    productQuantityObject.setString(products[3].quantity);
+
+    let updatedProductsString = JSON.stringify(products);
+    // Scene 변수에 업데이트된 products JSON 문자열 저장
+    runtimeScene.getVariables().get("products").setString(updatedProductsString);
+}
+
+};
+gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c1f70(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c3190 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+console.log(productsString);
+let products = JSON.parse(productsString);
+
+let product_buy = products.filter(product => product.quantity !== 0);
+let buyString = JSON.stringify(product_buy);
+runtimeScene.getVariables().get("product_buy").setString(buyString);
+
+let buyNameObject = runtimeScene.getObjects("ProductBuy_Name")[0];
+let buyPriceObject = runtimeScene.getObjects("ProductBuy_Price")[0];
+let buyQuantityObject = runtimeScene.getObjects("ProductBuy_Quantity")[0];
+let buyTotalPriceObject = runtimeScene.getObjects("ProductBuy_TotalPrice")[0];
+
+let userIdVariable = runtimeScene.getGame().getVariables().get("UserId")._str; //유저이메일값임 이건. 유저 아이디값 필요.
+let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+
+let totalPrice = 0;
+
+let orderList = {
+  buyerId : 7, //수정필요
+  sellerId : currentOwnerIdVariable,
+  state : 0,
+  totalPrice : 0,
+  productListId : [
+  
+  ],
+  productAmountList:[
+    
+  ]
+}
+
+for(let i=0;  i < product_buy.length; i++){
+  buyNameObject.setString(buyNameObject.getString() + product_buy[i].name + "\n\n");
+  buyQuantityObject.setString(buyQuantityObject.getString() + product_buy[i].quantity + "개\n\n");
+  let price = product_buy[i].price * product_buy[i].quantity;
+  buyPriceObject.setString(buyPriceObject.getString() + price.toLocaleString() + "원\n\n");
+  
+  totalPrice += price;
+
+  orderList.productListId.push(product_buy[i].id); // 상품 id를 추가, 상품 id가 id 프로퍼티에 있다고 가정
+  orderList.productAmountList.push(product_buy[i].quantity);
+}
+
+let totalPriceString = totalPrice.toLocaleString();
+buyTotalPriceObject.setString("총 " + totalPriceString + "원");
+
+let totalPriceVariable = runtimeScene.getVariables().get("totalPrice");
+totalPriceVariable.setNumber(totalPrice);
+
+orderList.totalPrice = totalPrice;
+let orderListString = JSON.stringify(orderList);
+runtimeScene.getVariables().get("orderList").setString(orderListString);
+
+//배송지 설정
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+let addressObject = runtimeScene.getObjects("ProductBuy_Address")[0];
+
+var userInfoRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+fetch("http://43.201.210.173:8080/users/info", userInfoRequest)
+  .then((res) => res.json())
+  .then((data) => {
+    addressObject.setString(data.address);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+};
+gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c3190(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14c42d0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+let orderListString = runtimeScene.getVariables().get("orderList").getAsString();
+let orderList = JSON.parse(orderListString);
+console.log('test', orderList);
+
+//주문 호출 보내기
+var orderRegisterRequest = {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+  body: JSON.stringify(orderList),
+}
+fetch("http://43.201.210.173:8080/orders/register", orderRegisterRequest)
+  .then((res) => res.text())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+let productsString = runtimeScene.getVariables().get("product_buy").getAsString();
+let products = JSON.parse(productsString);
+let totalPriceVariable = runtimeScene.getVariables().get("totalPrice").getAsNumber();
+let depositInfoObject = runtimeScene.getObjects("ProductDeposit_Info")[0];
+
+let depositInfo = products[0].storeId.owner.bank + "\n\n" + products[0].storeId.owner.account + "\n\n" + products[0].storeId.owner.name + "\n\n" + totalPriceVariable.toLocaleString() + "원";
+depositInfoObject.setString(depositInfo);
 
 
 
 };
-gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xd7abd0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x14c42d0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595ProductObjects1Objects = Hashtable.newFrom({"ProductList_Product": gdjs.Store_32sceneCode.GDProductList_95ProductObjects1});
-gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xe73390 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+
+let detailNameObject = runtimeScene.getObjects("ProductDetail_Name")[0];
+let detailPriceObject = runtimeScene.getObjects("ProductDetail_Price")[0];
+let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
+
+detailNameObject.setString(products[0].name);
+detailPriceObject.setString(products[0].price.toLocaleString() + "원");
+detailInfoObject.setString(products[0].info);
+};
+gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
 
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
-gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
-/* Reuse gdjs.Store_32sceneCode.GDProductList_95ProductObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
-gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product info", 0, 0);
-}{for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95TitleObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95TitleObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95ProductObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95ProductObjects1[i].deleteFromScene(runtimeScene);
-}
-}}
+gdjs.Store_32sceneCode.userFunc0xe73390(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x14c1a30 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+
+let detailNameObject = runtimeScene.getObjects("ProductDetail_Name")[0];
+let detailPriceObject = runtimeScene.getObjects("ProductDetail_Price")[0];
+let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
+
+detailNameObject.setString(products[1].name);
+detailPriceObject.setString(products[1].price.toLocaleString() + "원");
+detailInfoObject.setString(products[1].info);
+};
+gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x14c1a30(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0xe68e38 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+
+let detailNameObject = runtimeScene.getObjects("ProductDetail_Name")[0];
+let detailPriceObject = runtimeScene.getObjects("ProductDetail_Price")[0];
+let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
+
+detailNameObject.setString(products[2].name);
+detailPriceObject.setString(products[2].price.toLocaleString() + "원");
+detailInfoObject.setString(products[2].info);
+};
+gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0xe68e38(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0xe68b10 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+
+let detailNameObject = runtimeScene.getObjects("ProductDetail_Name")[0];
+let detailPriceObject = runtimeScene.getObjects("ProductDetail_Price")[0];
+let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
+
+detailNameObject.setString(products[3].name);
+detailPriceObject.setString(products[3].price.toLocaleString() + "원");
+detailInfoObject.setString(products[3].info);
+};
+gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0xe68b10(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
 
 {
 
@@ -1851,7 +2721,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Store_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Store_32sceneCode.userFunc0x7f72a8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x17155e0 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1884,91 +2754,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Store_32sceneCode.eventsList8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x7f72a8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x17155e0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-
-}
-
+};gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -1988,7 +2784,6 @@ gdjs.Store_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xce7258(runtimeScene);
 
 }
 
@@ -1996,7 +2791,59 @@ gdjs.Store_32sceneCode.userFunc0xce7258(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x15b66b0(runtimeScene);
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
 
 }
 
@@ -2026,6 +2873,7 @@ gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
+gdjs.Store_32sceneCode.userFunc0x17133b0(runtimeScene);
 
 }
 
@@ -2033,12 +2881,7 @@ gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(8).setString("seller");
-}}
+gdjs.Store_32sceneCode.userFunc0x1714c80(runtimeScene);
 
 }
 
@@ -2067,6 +2910,96 @@ gdjs.Store_32sceneCode.eventsList2(runtimeScene);} //End of subevents
 
 {
 
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+if (isConditionTrue_0) {
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), false);
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+if (isConditionTrue_0) {
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), false);
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("detailName").setString("");
+}{runtimeScene.getScene().getVariables().get("detailPrice").setString("");
+}{runtimeScene.getScene().getVariables().get("detailInfo").setString("");
+}{runtimeScene.getScene().getVariables().get("productNum").setNumber(0);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), false);
+}{runtimeScene.getScene().getVariables().get("products").setString("");
+}{runtimeScene.getScene().getVariables().get("products_buy").setString("");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("buyStatus"), false);
+}{runtimeScene.getScene().getVariables().get("orderList").setString("");
+}{runtimeScene.getScene().getVariables().get("totalPrice").setNumber(0);
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList5(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("GreyTable"), gdjs.Store_32sceneCode.GDGreyTableObjects1);
 gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects1);
@@ -2086,10 +3019,9 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGam
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
-}
-{ //Subevents
-gdjs.Store_32sceneCode.eventsList3(runtimeScene);} //End of subevents
-}
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
 
 }
 
@@ -2115,6 +3047,8 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGam
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }}
 
 }
@@ -2146,7 +3080,25 @@ gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode
 gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Product"), gdjs.Store_32sceneCode.GDProductList_95ProductObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
 /* Reuse gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
@@ -2172,10 +3124,67 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95ProductObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95ProductObjects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
 }
-}}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList6(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2199,7 +3208,25 @@ gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode
 gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
 /* Reuse gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Product"), gdjs.Store_32sceneCode.GDProductList_95ProductObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
@@ -2224,8 +3251,62 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95ProductObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95ProductObjects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
 }
 }}
 
@@ -2302,9 +3383,12 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.lengt
 for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
 }
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -2557,15 +3641,240 @@ for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjec
 }
 gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length = k;
 if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList8(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList9(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("buyStatus"), true);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
-/* Reuse gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Product"), gdjs.Store_32sceneCode.GDProductList_95ProductObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup buy product", 0, 0);
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("buyStatus"), false);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup buy product", 0, 0);
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
 }
@@ -2587,17 +3896,67 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95ProductObjects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95ProductObjects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
 }
-}}
-
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
 }
-
-
-{
-
-
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2647,8 +4006,17 @@ gdjs.copyArray(runtimeScene.getObjects("Buy_Address"), gdjs.Store_32sceneCode.GD
 /* Reuse gdjs.Store_32sceneCode.GDBuy_95BackButtonObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("Buy_PurchaseButton"), gdjs.Store_32sceneCode.GDBuy_95PurchaseButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Buy_Title"), gdjs.Store_32sceneCode.GDBuy_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Address"), gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_AdressLine"), gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Name"), gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Price"), gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Quantity"), gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_TotalPrice"), gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
 }
@@ -2666,6 +4034,27 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDBuy_95TitleObjects1.length ;i < le
 }
 for(var i = 0, len = gdjs.Store_32sceneCode.GDBuy_95AddressObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBuy_95AddressObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1[i].deleteFromScene(runtimeScene);
 }
 }}
 
@@ -2703,6 +4092,13 @@ gdjs.copyArray(runtimeScene.getObjects("Buy_Address"), gdjs.Store_32sceneCode.GD
 gdjs.copyArray(runtimeScene.getObjects("Buy_BackButton"), gdjs.Store_32sceneCode.GDBuy_95BackButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Buy_PurchaseButton"), gdjs.Store_32sceneCode.GDBuy_95PurchaseButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Buy_Title"), gdjs.Store_32sceneCode.GDBuy_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Address"), gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_AdressLine"), gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Name"), gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Price"), gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_Quantity"), gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductBuy_TotalPrice"), gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1);
 gdjs.copyArray(runtimeScene.getObjects("TransparentBackground"), gdjs.Store_32sceneCode.GDTransparentBackgroundObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup deposit", 0, 0);
@@ -2724,6 +4120,27 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDBuy_95TitleObjects1.length ;i < le
 for(var i = 0, len = gdjs.Store_32sceneCode.GDBuy_95AddressObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBuy_95AddressObjects1[i].deleteFromScene(runtimeScene);
 }
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1[i].deleteFromScene(runtimeScene);
+}
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDBuyAlert_95PurchaseButtonObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBuyAlert_95PurchaseButtonObjects1[i].deleteFromScene(runtimeScene);
 }
@@ -2741,7 +4158,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDTransparentBackgroundObjects1.leng
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -2816,6 +4233,10 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
 /* Reuse gdjs.Store_32sceneCode.GDDeposit_95OkButtonObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("Deposit_Title"), gdjs.Store_32sceneCode.GDDeposit_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductDeposit_Info"), gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductDeposit_Line"), gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductDeposit_Message"), gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
@@ -2828,6 +4249,18 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDDeposit_95TitleObjects1.length ;i 
 }
 for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
 }
 }}
 
@@ -2843,15 +4276,511 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.lengt
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Product"), gdjs.Store_32sceneCode.GDProductList_95ProductObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595ProductObjects1Objects, runtimeScene, true, false);
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length = k;
 if (isConditionTrue_0) {
-
+gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
+/* Reuse gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product info", 0, 0);
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95TitleObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95TitleObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}
 { //Subevents
-gdjs.Store_32sceneCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
+/* Reuse gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product info", 0, 0);
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95TitleObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95TitleObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+/* Reuse gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product info", 0, 0);
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95TitleObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95TitleObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[k] = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_BuyButton"), gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_CancelButton"), gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton1"), gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton2"), gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton3"), gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1);
+/* Reuse gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Name"), gdjs.Store_32sceneCode.GDProductList_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus1"), gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus2"), gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus3"), gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Price"), gdjs.Store_32sceneCode.GDProductList_95PriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Quantity"), gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_RegisterButton"), gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Title"), gdjs.Store_32sceneCode.GDProductList_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product info", 0, 0);
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95CancelButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95TitleObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95TitleObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95RegisterButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 }
@@ -2874,7 +4803,11 @@ gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductDetail_Info"), gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductDetail_Name"), gdjs.Store_32sceneCode.GDProductDetail_95NameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductDetail_Price"), gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects1);
 /* Reuse gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Title"), gdjs.Store_32sceneCode.GDProductInfo_95TitleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
 {for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects1.length ;i < len;++i) {
@@ -2892,9 +4825,23 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.lengt
 for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
 }
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductDetail_95NameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductDetail_95NameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].deleteFromScene(runtimeScene);
+}
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
@@ -2919,7 +4866,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
@@ -3704,6 +5651,42 @@ gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects3.length = 0;
 gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects1.length = 0;
 gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects2.length = 0;
 gdjs.Store_32sceneCode.GDProductInfo_95BackButtonObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95NameObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95NameObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95NameObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95InfoObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductDetail_95PriceObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95NameObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95NameObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95NameObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95QuantityObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95PriceObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95TotalPriceObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95AdressLineObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductBuy_95AddressObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95MessageObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95LineObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductDeposit_95InfoObjects3.length = 0;
 gdjs.Store_32sceneCode.GDBuyAlert_95WhiteObjects1.length = 0;
 gdjs.Store_32sceneCode.GDBuyAlert_95WhiteObjects2.length = 0;
 gdjs.Store_32sceneCode.GDBuyAlert_95WhiteObjects3.length = 0;
@@ -3767,11 +5750,68 @@ gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects3.length = 0;
 gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length = 0;
 gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects2.length = 0;
 gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects3.length = 0;
-gdjs.Store_32sceneCode.GDProductList_95ProductObjects1.length = 0;
-gdjs.Store_32sceneCode.GDProductList_95ProductObjects2.length = 0;
-gdjs.Store_32sceneCode.GDProductList_95ProductObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image1Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image2Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image3Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image4Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Image4Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95NameObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95NameObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95NameObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95PriceObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95PriceObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95PriceObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95QuantityObjects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95QuantityObjects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95QuantityObjects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton2Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton3Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus1Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus1Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus2Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus2Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus3Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus3Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Plus4Objects3.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length = 0;
+gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3.length = 0;
 
-gdjs.Store_32sceneCode.eventsList9(runtimeScene);
+gdjs.Store_32sceneCode.eventsList25(runtimeScene);
 
 return;
 

@@ -6,6 +6,7 @@ import MainPage from './pages/MainPage/MainPage';
 import FindPassword from "./pages/FindPassword/FindPassword";
 import EnterPassword from './components/EnterPassword/EnterPassword';
 import Logout from './components/Logout/Logout';
+import UploadImages from './pages/UploadImages/UploadImages';
 
 
 // import './App.css'
@@ -23,6 +24,7 @@ function App() {
           <Route path='/' element={<StartPage />} />
           <Route path='/enterpassword' element={<EnterPassword />} />
           <Route path='/main' element={<MainPage/>} />
+          <Route path='/uploadimages' element={<UploadImages />} />
           {/* <Route path='/orderinfo' element={<OrderInfo/>} /> */}
           {/* <Route path='/findpassword' element={<FindPassword />} /> */}
         </Routes>
