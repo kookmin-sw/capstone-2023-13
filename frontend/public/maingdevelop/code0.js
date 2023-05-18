@@ -573,7 +573,7 @@ gdjs.Character_32custom_32sceneCode.GDBlueBarObjects1= [];
 gdjs.Character_32custom_32sceneCode.GDBlueBarObjects2= [];
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x1711fe8 = function(runtimeScene) {
+gdjs.Character_32custom_32sceneCode.userFunc0x123e4e0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -624,12 +624,12 @@ gdjs.Character_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x1711fe8(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0x123e4e0(runtimeScene);
 
 }
 
 
-};gdjs.Character_32custom_32sceneCode.userFunc0x1715838 = function(runtimeScene) {
+};gdjs.Character_32custom_32sceneCode.userFunc0x123f9e8 = function(runtimeScene) {
 "use strict";
 const userBody = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const userEye = runtimeScene.getGame().getVariables().get("UserEye")._str;
@@ -740,7 +740,7 @@ gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x1715838(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0x123f9e8(runtimeScene);
 
 }
 
@@ -7825,6 +7825,27 @@ gdjs.Character_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subeven
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("CustomSuccess")) == 1;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Custom_BackButton"), gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1[k] = gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Character_32custom_32sceneCode.GDCustom_95BackButtonObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
 }}

@@ -639,7 +639,7 @@ gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46G
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door2": gdjs.Store_32custom_32sceneCode.GDDoor2Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor3Objects1Objects = Hashtable.newFrom({"Door3": gdjs.Store_32custom_32sceneCode.GDDoor3Objects1});
-gdjs.Store_32custom_32sceneCode.userFunc0xe74550 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x7db998 = function(runtimeScene) {
 "use strict";
 // global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
@@ -721,7 +721,7 @@ postAddStore(addStoreRequest);
 
 
 };
-gdjs.Store_32custom_32sceneCode.userFunc0xe677e8 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x7dba28 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -757,7 +757,7 @@ async function getStoreId(checkStoreIdRequest) {
 
 getStoreId(checkStoreIdRequest);
 };
-gdjs.Store_32custom_32sceneCode.userFunc0xe67998 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x7dbc98 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
@@ -874,7 +874,7 @@ gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xe74550(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x7db998(runtimeScene);
 
 }
 
@@ -882,7 +882,7 @@ gdjs.Store_32custom_32sceneCode.userFunc0xe74550(runtimeScene);
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xe677e8(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x7dba28(runtimeScene);
 
 }
 
@@ -897,7 +897,7 @@ gdjs.Store_32custom_32sceneCode.userFunc0xe677e8(runtimeScene);
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xe67998(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x7dbc98(runtimeScene);
 
 }
 

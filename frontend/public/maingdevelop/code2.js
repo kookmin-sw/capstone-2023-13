@@ -934,7 +934,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2= [];
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3= [];
 
 
-gdjs.Store_32sceneCode.userFunc0x1715130 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x123ddd8 = function(runtimeScene) {
 "use strict";
 //Seller Buyer 구분
 let userIdVariable = runtimeScene.getGame().getVariables().get("UserId");
@@ -956,12 +956,12 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1715130(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123ddd8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x10eeeb8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x123d928 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1423,12 +1423,12 @@ gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x10eeeb8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123d928(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x17133b0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x123a3a0 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1460,7 +1460,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0x1714c80 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x123cfc8 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -1532,7 +1532,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0x1719720 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x123b3b0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -1583,122 +1583,149 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1719720(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123b3b0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1714b60 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x123c658 = function(runtimeScene) {
 "use strict";
 // // 상품 데이터의 더미 배열입니다.
 
-// let products = [
-//   {
-//     "id": 5,
-//     "storeId": {
-//       "id": 9,
-//       "owner": {
-//         "id": 8,
-//         "email": "cy@cy.com",
-//         "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
-//         "name": "채소",
-//         "nickname": "채",
-//         "bank": "기업은행",
-//         "account": "123",
-//         "address": "서울",
-//         "enabled": false,
-//         "authorities": null,
-//         "username": "cy@cy.com",
-//         "accountNonExpired": false,
-//         "accountNonLocked": false,
-//         "credentialsNonExpired": false
-//       },
-//       "name": "야채가게",
-//       "period": "2024-05-17",
-//       "info": "싱싱",
-//       "x": 0,
-//       "y": 0,
-//       "z": 0,
-//       "signName": "채채소"
-//     },
-//     "name": "샤넬파프리카",
-//     "price": 1000,
-//     "amount": 6,
-//     "info": "맛있는 파프리카 빨강 초록",
-//     "imgList": [
-//       "string"
-//     ]
-//   },
-//   {
-//     "id": 6,
-//     "storeId": {
-//       "id": 9,
-//       "owner": {
-//         "id": 8,
-//         "email": "cy@cy.com",
-//         "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
-//         "name": "채소",
-//         "nickname": "채",
-//         "bank": "기업은행",
-//         "account": "123",
-//         "address": "서울",
-//         "enabled": false,
-//         "authorities": null,
-//         "username": "cy@cy.com",
-//         "accountNonExpired": false,
-//         "accountNonLocked": false,
-//         "credentialsNonExpired": false
-//       },
-//       "name": "야채가게",
-//       "period": "2024-05-17",
-//       "info": "싱싱",
-//       "x": 0,
-//       "y": 0,
-//       "z": 0,
-//       "signName": "채채소"
-//     },
-//     "name": "보석초콜릿",
-//     "price": 5000,
-//     "amount": 15,
-//     "info": "구찌로 만든 초콜릿",
-//     "imgList": [
-//       "string"
-//     ]
+let products = [
+  {
+    "id": 5,
+    "storeId": {
+      "id": 9,
+      "owner": {
+        "id": 8,
+        "email": "cy@cy.com",
+        "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
+        "name": "채소",
+        "nickname": "채",
+        "bank": "기업은행",
+        "account": "123",
+        "address": "서울",
+        "enabled": false,
+        "authorities": null,
+        "username": "cy@cy.com",
+        "accountNonExpired": false,
+        "accountNonLocked": false,
+        "credentialsNonExpired": false
+      },
+      "name": "야채가게",
+      "period": "2024-05-17",
+      "info": "싱싱",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "signName": "채채소"
+    },
+    "name": "샤넬파프리카",
+    "price": 1000,
+    "amount": 6,
+    "info": "맛있는 파프리카 빨강 초록",
+    "imgList": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
+    ]
+  },
+  {
+    "id": 6,
+    "storeId": {
+      "id": 9,
+      "owner": {
+        "id": 8,
+        "email": "cy@cy.com",
+        "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
+        "name": "채소",
+        "nickname": "채",
+        "bank": "기업은행",
+        "account": "123",
+        "address": "서울",
+        "enabled": false,
+        "authorities": null,
+        "username": "cy@cy.com",
+        "accountNonExpired": false,
+        "accountNonLocked": false,
+        "credentialsNonExpired": false
+      },
+      "name": "야채가게",
+      "period": "2024-05-17",
+      "info": "싱싱",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "signName": "채채소"
+    },
+    "name": "보석초콜릿",
+    "price": 5000,
+    "amount": 15,
+    "info": "구찌로 만든 초콜릿",
+    "imgList": [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
+    ]
+  }
+];
+// var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+// let currentStoreIdVariable = runtimeScene.getGame().getVariables().get("CurrentStoreId")._str;
+// let products = [];
+
+
+// // 스토어 ID 확인
+// var productListRequest = {
+//   method: "GET",
+//   headers: {
+//     'Authorization': `${userToken}`,
+//     'accept': 'application/json',
+//     "Content-Type": "application/json",
+//     "Access-Control-Allow-Origin": "*",
+//     "Access-Control-Allow-Headers": "*",
 //   }
-// ];
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-let currentStoreIdVariable = runtimeScene.getGame().getVariables().get("CurrentStoreId")._str;
-let products = [];
+// }
+
+// async function getProductList(productListRequest) {
+//   try {
+//     const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);
+//     if (response.ok) {
+//       const data = await response.json();
+//       return data;
+//     } else {
+//       console.error("Request failed with status:", response.status);
+//     }
+//   } catch (error) {
+//     console.error("An error occurred:", error);
+//   }
+// }
+
+// getProductList(productListRequest).then(data => {
+//   products = data; // 함수가 반환한 값을 products에 할당
 
 
-// 스토어 ID 확인
-var productListRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  }
-}
+//   let availableProducts = products.filter(product => product.amount !== 0);
+//   availableProducts.forEach(product => {
+//     product.quantity = 0;
+//   });
+//   // products 배열을 JSON 문자열로 변환
+//   let productsString = JSON.stringify(availableProducts);
+//   runtimeScene.getVariables().get("products").setString(productsString);
 
-async function getProductList(productListRequest) {
-  try {
-    const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);
-    if (response.ok) {
-      const data = await response.json();
-      return data;
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-}
+//   for(let i=0;  i < availableProducts.length; i++){
+//     let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
+//     let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
+//     let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
+    
 
-getProductList(productListRequest).then(data => {
-  products = data; // 함수가 반환한 값을 products에 할당
+//     listNameObject.setString(availableProducts[i].name);
+//     let priceString = availableProducts[i].price.toLocaleString();
+//     listPriceObject.setString(priceString + "원");
+//     listQuantityObject.setString(0);
+//   }
+//   let productNumVariable = runtimeScene.getVariables().get("productNum");
+//   let productFilterVariable = runtimeScene.getVariables().get("productFilter");
+
+//   productNumVariable.setNumber(availableProducts.length);
+//   productFilterVariable.setBoolean(true);
+// });
 
 
   let availableProducts = products.filter(product => product.amount !== 0);
@@ -1724,32 +1751,6 @@ getProductList(productListRequest).then(data => {
 
   productNumVariable.setNumber(availableProducts.length);
   productFilterVariable.setBoolean(true);
-});
-
-
-  // let availableProducts = products.filter(product => product.amount !== 0);
-  // availableProducts.forEach(product => {
-  //   product.quantity = 0;
-  // });
-  // // products 배열을 JSON 문자열로 변환
-  // let productsString = JSON.stringify(availableProducts);
-  // runtimeScene.getVariables().get("products").setString(productsString);
-
-  // for(let i=0;  i < availableProducts.length; i++){
-  //   let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
-  //   let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
-  //   let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
-
-  //   listNameObject.setString(availableProducts[i].name);
-  //   let priceString = availableProducts[i].price.toLocaleString();
-  //   listPriceObject.setString(priceString + "원");
-  //   listQuantityObject.setString(0);
-  // }
-  // let productNumVariable = runtimeScene.getVariables().get("productNum");
-  // let productFilterVariable = runtimeScene.getVariables().get("productFilter");
-
-  // productNumVariable.setNumber(availableProducts.length);
-  // productFilterVariable.setBoolean(true);
 
 
 };
@@ -1758,12 +1759,220 @@ gdjs.Store_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1714b60(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123c658(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x123d220 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+runtimeScene.getGame().getVariables().get("ProductList_Image1").setString(products[0].imgList[0]);
+
+
+};
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects = Hashtable.newFrom({"ProductList_Image1": gdjs.Store_32sceneCode.GDProductList_95Image1Objects2});
+gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x123d220(runtimeScene);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setHeight(110);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x123f1b0 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+runtimeScene.getGame().getVariables().get("ProductList_Image1").setString(products[0].imgList[0]);
+runtimeScene.getGame().getVariables().get("ProductList_Image2").setString(products[1].imgList[0]);
+
+
+};
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects = Hashtable.newFrom({"ProductList_Image1": gdjs.Store_32sceneCode.GDProductList_95Image1Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects = Hashtable.newFrom({"ProductList_Image2": gdjs.Store_32sceneCode.GDProductList_95Image2Objects2});
+gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x123f1b0(runtimeScene);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setHeight(110);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setHeight(110);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x1239b90 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+runtimeScene.getGame().getVariables().get("ProductList_Image1").setString(products[0].imgList[0]);
+runtimeScene.getGame().getVariables().get("ProductList_Image2").setString(products[1].imgList[0]);
+runtimeScene.getGame().getVariables().get("ProductList_Image3").setString(products[2].imgList[0]);
+
+
+};
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects = Hashtable.newFrom({"ProductList_Image1": gdjs.Store_32sceneCode.GDProductList_95Image1Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects = Hashtable.newFrom({"ProductList_Image2": gdjs.Store_32sceneCode.GDProductList_95Image2Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects2Objects = Hashtable.newFrom({"ProductList_Image3": gdjs.Store_32sceneCode.GDProductList_95Image3Objects2});
+gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x1239b90(runtimeScene);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects2);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setHeight(110);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setHeight(110);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects2[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects2[i].setHeight(110);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x123ef58 = function(runtimeScene) {
+"use strict";
+let productsString = runtimeScene.getVariables().get("products").getAsString();
+let products = JSON.parse(productsString);
+runtimeScene.getGame().getVariables().get("ProductList_Image1").setString(products[0].imgList[0]);
+runtimeScene.getGame().getVariables().get("ProductList_Image2").setString(products[1].imgList[0]);
+runtimeScene.getGame().getVariables().get("ProductList_Image3").setString(products[2].imgList[0]);
+runtimeScene.getGame().getVariables().get("ProductList_Image4").setString(products[3].imgList[0]);
+
+
+};
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects1Objects = Hashtable.newFrom({"ProductList_Image1": gdjs.Store_32sceneCode.GDProductList_95Image1Objects1});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects1Objects = Hashtable.newFrom({"ProductList_Image2": gdjs.Store_32sceneCode.GDProductList_95Image2Objects1});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects1Objects = Hashtable.newFrom({"ProductList_Image3": gdjs.Store_32sceneCode.GDProductList_95Image3Objects1});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image4Objects1Objects = Hashtable.newFrom({"ProductList_Image4": gdjs.Store_32sceneCode.GDProductList_95Image4Objects1});
+gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x123ef58(runtimeScene);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].setHeight(110);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].setHeight(110);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].setHeight(110);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image4Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].setWidth(110);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].setHeight(110);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -1895,7 +2104,10 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2[i].deleteFromScene(runtimeScene);
 }
-}}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1939,7 +2151,10 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2[i].deleteFromScene(runtimeScene);
 }
-}}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList5(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1951,28 +2166,46 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("productNum")) == 3;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1);
-gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1);
-{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_DetailButton4"), gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Plus4"), gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2);
+{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Image4Objects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95DetailButton4Objects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Plus4Objects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2[i].deleteFromScene(runtimeScene);
 }
-}}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList6(runtimeScene);} //End of subevents
+}
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c12e8 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("productNum")) == 4;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x14492c0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2018,12 +2251,12 @@ async function getUserInfo(userInfoRequest) {
 getUserInfo(userInfoRequest);
 
 };
-gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c12e8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x14492c0(runtimeScene);
 
 }
 
@@ -2032,190 +2265,7 @@ gdjs.Store_32sceneCode.userFunc0x14c12e8(runtimeScene);
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x16fd6a8 = function(runtimeScene) {
-"use strict";
-let productsString = runtimeScene.getVariables().get("products").getAsString();
-console.log(productsString);
-// JSON 문자열을 배열로 변환
-let products = JSON.parse(productsString);
-let buy_status = products.some(product => product.amount !== 0);
-
-let product_buy = products.filter(product => product.quantity !== 0);
-// products 배열을 JSON 문자열로 변환
-let buyString = JSON.stringify(product_buy);
-// 변환된 JSON 문자열을 Scene 변수에 저장
-
-};
-gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
-
-{
-
-
-gdjs.Store_32sceneCode.userFunc0x16fd6a8(runtimeScene);
-
-}
-
-
-};gdjs.Store_32sceneCode.userFunc0x1711fe8 = function(runtimeScene) {
-"use strict";
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-
-
-// 스토어 ID 확인
-var checkStoreIdRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  }
-}
-// fetch("http://43.201.210.173:8080/stores/info/detail", checkStoreIdRequest)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data.id);
-//     runtimeScene.getGame().getVariables().get("storeId").setString(data.id);
-//     console.log(runtimeScene.getGame().getVariables().get("storeId")._str);
-//     // console.log("스토어 아이디 : ", storeId);
-//   })
-//   .catch((error) => {
-//     console.error("Error fetching data:", error);
-//   });
-
-
-async function getStoreId(checkStoreIdRequest){
-  try{
-    const response = await fetch("http://43.201.210.173:8080/stores/info/detail", checkStoreIdRequest);
-    if(response.ok){
-      const data = await response.json();
-      console.log(data.id);
-      runtimeScene.getGame().getVariables().get("storeId").setString(data.id);
-    }
-    else{
-      console.error("Request failed with status: ", response.status);
-    }
-  } catch(error){
-    console.error("An error occured: ", error);
-  }
-}
-
-
-getStoreId(checkStoreIdRequest);
-};
-gdjs.Store_32sceneCode.userFunc0x19cba30 = function(runtimeScene) {
-"use strict";
-const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
-const inputProductName = productName.getString();
-
-const productPrice = runtimeScene.getObjects("ProductRegister_ProductPrice")[0];
-const inputProductPrice = productPrice.getString();
-
-const productQuantity = runtimeScene.getObjects("ProductRegister_ProductQuantity")[0];
-const inputProductQuantity = productQuantity.getString();
-
-const productInfo = runtimeScene.getObjects("ProductRegister_ProductInfo")[0];
-const inputProductInfo = productInfo.getString();
-
-console.log("상품명:", inputProductName);
-console.log("상품가격:", inputProductPrice);
-console.log("상품수량:", inputProductQuantity);
-console.log("상품정보:", inputProductInfo);
-
-
-
-
-// // global 변수에 저장되어있는 토큰 가져오기
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-console.log("유저 토큰 : ", userToken);
-
-
-// 스토어 ID 확인
-var checkStoreIdRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  }
-}
-fetch("http://43.201.210.173:8080/stores/info", checkStoreIdRequest)
-  .then((res) => res.json())
-  .then((data) => {
-    // console.log(data.id);
-    runtimeScene.getGame().getVariables().get("storeId").setString(data.id);
-    var storeId = runtimeScene.getGame().getVariables().get("storeId")._str;
-    console.log("스토어 아이디 : ", storeId);
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
-
-
-
-
-// 상품 등록 호출 보내기
-var addProductRequest = {
-  method: "POST",
-  headers: {
-    'Authorization': `${userToken}`,
-    'Accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  },
-  body: JSON.stringify({
-    storeId : runtimeScene.getGame().getVariables().get("storeId")._str,
-    // storeId : 4,
-    name : inputProductName,
-    price : inputProductPrice,
-    amount : inputProductQuantity,
-    info : inputProductInfo,
-  }),
-}
-fetch("http://43.201.210.173:8080/products/register", addProductRequest)
-  .then((res) => res.text())
-  .then((data) => {
-    console.log(data);
-    console.log("store id :", runtimeScene.getVariables().get("storeId")._str);
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
-
-
-
-
-
-
-
-
-
-
-
-};
-gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
-
-{
-
-
-gdjs.Store_32sceneCode.userFunc0x1711fe8(runtimeScene);
-
-}
-
-
-{
-
-
-gdjs.Store_32sceneCode.userFunc0x19cba30(runtimeScene);
-
-}
-
-
-};gdjs.Store_32sceneCode.userFunc0x14bfa88 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x1160328 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2225,17 +2275,17 @@ console.log('boolen check : ', buy_status)
 buyStatusVariable.setBoolean(buy_status);
 
 };
-gdjs.Store_32sceneCode.eventsList8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14bfa88(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1160328(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14bf738 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x115d8e0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2254,17 +2304,17 @@ if(products[0].quantity < products[0].amount){
 
 
 };
-gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14bf738(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x115d8e0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14bfd38 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xa80650 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2282,17 +2332,17 @@ if(products[0].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14bfd38(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xa80650(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14bf340 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd44280 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2310,17 +2360,17 @@ if(products[1].quantity < products[1].amount){
     runtimeScene.getVariables().get("products").setString(updatedProductsString);
 }
 };
-gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14bf340(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd44280(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c28b8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x737d68 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2338,17 +2388,17 @@ if(products[1].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c28b8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x737d68(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c2ca0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x738de0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2366,17 +2416,17 @@ if(products[2].quantity < products[2].amount){
     runtimeScene.getVariables().get("products").setString(updatedProductsString);
 }
 };
-gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c2ca0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x738de0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c3668 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xf764f8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2394,17 +2444,17 @@ if(products[2].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c3668(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xf764f8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c3300 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xa25cf0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2423,17 +2473,17 @@ if(products[3].quantity < products[3].amount){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c3300(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xa25cf0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c1f70 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xc93920 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2451,17 +2501,17 @@ if(products[3].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c1f70(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xc93920(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c3190 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x110dc28 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2540,17 +2590,17 @@ fetch("http://43.201.210.173:8080/users/info", userInfoRequest)
   });
 
 };
-gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c3190(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x110dc28(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c42d0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x9013a0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 let orderListString = runtimeScene.getVariables().get("orderList").getAsString();
@@ -2589,17 +2639,17 @@ depositInfoObject.setString(depositInfo);
 
 
 };
-gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c42d0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x9013a0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xe73390 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x110d8a8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2611,18 +2661,38 @@ let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
 detailNameObject.setString(products[0].name);
 detailPriceObject.setString(products[0].price.toLocaleString() + "원");
 detailInfoObject.setString(products[0].info);
+runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[0].imgList[0]);
 };
-gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
+gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xe73390(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x110d8a8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14c1a30 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setHeight(276);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x1159f88 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2634,18 +2704,38 @@ let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
 detailNameObject.setString(products[1].name);
 detailPriceObject.setString(products[1].price.toLocaleString() + "원");
 detailInfoObject.setString(products[1].info);
+runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[1].imgList[0]);
 };
-gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
+gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14c1a30(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1159f88(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xe68e38 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setHeight(276);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x7674c0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2657,18 +2747,38 @@ let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
 detailNameObject.setString(products[2].name);
 detailPriceObject.setString(products[2].price.toLocaleString() + "원");
 detailInfoObject.setString(products[2].info);
+runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[2].imgList[0]);
 };
-gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
+gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xe68e38(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x7674c0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xe68b10 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setHeight(276);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x115a1d8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2680,18 +2790,38 @@ let detailInfoObject = runtimeScene.getObjects("ProductDetail_Info")[0];
 detailNameObject.setString(products[3].name);
 detailPriceObject.setString(products[3].price.toLocaleString() + "원");
 detailInfoObject.setString(products[3].info);
+runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[3].imgList[0]);
 };
-gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
+gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xe68b10(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x115a1d8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setHeight(276);
+}
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -2721,7 +2851,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Store_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Store_32sceneCode.userFunc0x17155e0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x123e030 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -2754,17 +2884,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList26 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x17155e0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123e030(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.eventsList27 = function(runtimeScene) {
 
 {
 
@@ -2873,7 +3003,7 @@ gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x17133b0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123a3a0(runtimeScene);
 
 }
 
@@ -2881,7 +3011,7 @@ gdjs.Store_32sceneCode.userFunc0x17133b0(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1714c80(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x123cfc8(runtimeScene);
 
 }
 
@@ -2948,7 +3078,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), false);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
@@ -2992,7 +3122,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList9(runtimeScene);} //End of subevents
 }
 
 }
@@ -3181,10 +3311,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1[i].deleteFromScene(runtimeScene);
 }
-}
-{ //Subevents
-gdjs.Store_32sceneCode.eventsList6(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -3386,10 +3513,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i <
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
-}
-{ //Subevents
-gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -3643,7 +3767,7 @@ gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
 }
 
 }
@@ -3666,7 +3790,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList9(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
 }
 
 }
@@ -3689,7 +3813,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
@@ -3712,7 +3836,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -3735,7 +3859,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
 }
 
 }
@@ -3758,7 +3882,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
@@ -3781,7 +3905,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
@@ -3804,7 +3928,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
@@ -3827,7 +3951,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -3955,7 +4079,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -4158,7 +4282,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDTransparentBackgroundObjects1.leng
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 }
@@ -4396,7 +4520,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
 }
 
 }
@@ -4524,7 +4648,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 }
@@ -4652,7 +4776,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
@@ -4780,7 +4904,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
@@ -4841,7 +4965,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList25(runtimeScene);} //End of subevents
 }
 
 }
@@ -4866,7 +4990,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -5811,7 +5935,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = 0;
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length = 0;
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3.length = 0;
 
-gdjs.Store_32sceneCode.eventsList25(runtimeScene);
+gdjs.Store_32sceneCode.eventsList27(runtimeScene);
 
 return;
 

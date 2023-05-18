@@ -35423,6 +35423,36 @@
       "name": "imageurl",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "ProductList_Image1",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "ProductList_Image2",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "ProductList_Image3",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "ProductList_Image4",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "ProductDetail_Image",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -35939,6 +35969,21 @@
           "x": 24,
           "y": -4,
           "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 69,
+          "layer": "",
+          "name": "Custom_BackButton",
+          "persistentUuid": "b867d6b1-65e5-46ae-b257-c40283c0eb36",
+          "width": 141,
+          "x": 869,
+          "y": 605,
+          "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -53754,113 +53799,140 @@
               "inlineCode": [
                 "// // 상품 데이터의 더미 배열입니다.",
                 "",
-                "// let products = [",
-                "//   {",
-                "//     \"id\": 5,",
-                "//     \"storeId\": {",
-                "//       \"id\": 9,",
-                "//       \"owner\": {",
-                "//         \"id\": 8,",
-                "//         \"email\": \"cy@cy.com\",",
-                "//         \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
-                "//         \"name\": \"채소\",",
-                "//         \"nickname\": \"채\",",
-                "//         \"bank\": \"기업은행\",",
-                "//         \"account\": \"123\",",
-                "//         \"address\": \"서울\",",
-                "//         \"enabled\": false,",
-                "//         \"authorities\": null,",
-                "//         \"username\": \"cy@cy.com\",",
-                "//         \"accountNonExpired\": false,",
-                "//         \"accountNonLocked\": false,",
-                "//         \"credentialsNonExpired\": false",
-                "//       },",
-                "//       \"name\": \"야채가게\",",
-                "//       \"period\": \"2024-05-17\",",
-                "//       \"info\": \"싱싱\",",
-                "//       \"x\": 0,",
-                "//       \"y\": 0,",
-                "//       \"z\": 0,",
-                "//       \"signName\": \"채채소\"",
-                "//     },",
-                "//     \"name\": \"샤넬파프리카\",",
-                "//     \"price\": 1000,",
-                "//     \"amount\": 6,",
-                "//     \"info\": \"맛있는 파프리카 빨강 초록\",",
-                "//     \"imgList\": [",
-                "//       \"string\"",
-                "//     ]",
-                "//   },",
-                "//   {",
-                "//     \"id\": 6,",
-                "//     \"storeId\": {",
-                "//       \"id\": 9,",
-                "//       \"owner\": {",
-                "//         \"id\": 8,",
-                "//         \"email\": \"cy@cy.com\",",
-                "//         \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
-                "//         \"name\": \"채소\",",
-                "//         \"nickname\": \"채\",",
-                "//         \"bank\": \"기업은행\",",
-                "//         \"account\": \"123\",",
-                "//         \"address\": \"서울\",",
-                "//         \"enabled\": false,",
-                "//         \"authorities\": null,",
-                "//         \"username\": \"cy@cy.com\",",
-                "//         \"accountNonExpired\": false,",
-                "//         \"accountNonLocked\": false,",
-                "//         \"credentialsNonExpired\": false",
-                "//       },",
-                "//       \"name\": \"야채가게\",",
-                "//       \"period\": \"2024-05-17\",",
-                "//       \"info\": \"싱싱\",",
-                "//       \"x\": 0,",
-                "//       \"y\": 0,",
-                "//       \"z\": 0,",
-                "//       \"signName\": \"채채소\"",
-                "//     },",
-                "//     \"name\": \"보석초콜릿\",",
-                "//     \"price\": 5000,",
-                "//     \"amount\": 15,",
-                "//     \"info\": \"구찌로 만든 초콜릿\",",
-                "//     \"imgList\": [",
-                "//       \"string\"",
-                "//     ]",
+                "let products = [",
+                "  {",
+                "    \"id\": 5,",
+                "    \"storeId\": {",
+                "      \"id\": 9,",
+                "      \"owner\": {",
+                "        \"id\": 8,",
+                "        \"email\": \"cy@cy.com\",",
+                "        \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
+                "        \"name\": \"채소\",",
+                "        \"nickname\": \"채\",",
+                "        \"bank\": \"기업은행\",",
+                "        \"account\": \"123\",",
+                "        \"address\": \"서울\",",
+                "        \"enabled\": false,",
+                "        \"authorities\": null,",
+                "        \"username\": \"cy@cy.com\",",
+                "        \"accountNonExpired\": false,",
+                "        \"accountNonLocked\": false,",
+                "        \"credentialsNonExpired\": false",
+                "      },",
+                "      \"name\": \"야채가게\",",
+                "      \"period\": \"2024-05-17\",",
+                "      \"info\": \"싱싱\",",
+                "      \"x\": 0,",
+                "      \"y\": 0,",
+                "      \"z\": 0,",
+                "      \"signName\": \"채채소\"",
+                "    },",
+                "    \"name\": \"샤넬파프리카\",",
+                "    \"price\": 1000,",
+                "    \"amount\": 6,",
+                "    \"info\": \"맛있는 파프리카 빨강 초록\",",
+                "    \"imgList\": [",
+                "      \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU\"",
+                "    ]",
+                "  },",
+                "  {",
+                "    \"id\": 6,",
+                "    \"storeId\": {",
+                "      \"id\": 9,",
+                "      \"owner\": {",
+                "        \"id\": 8,",
+                "        \"email\": \"cy@cy.com\",",
+                "        \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
+                "        \"name\": \"채소\",",
+                "        \"nickname\": \"채\",",
+                "        \"bank\": \"기업은행\",",
+                "        \"account\": \"123\",",
+                "        \"address\": \"서울\",",
+                "        \"enabled\": false,",
+                "        \"authorities\": null,",
+                "        \"username\": \"cy@cy.com\",",
+                "        \"accountNonExpired\": false,",
+                "        \"accountNonLocked\": false,",
+                "        \"credentialsNonExpired\": false",
+                "      },",
+                "      \"name\": \"야채가게\",",
+                "      \"period\": \"2024-05-17\",",
+                "      \"info\": \"싱싱\",",
+                "      \"x\": 0,",
+                "      \"y\": 0,",
+                "      \"z\": 0,",
+                "      \"signName\": \"채채소\"",
+                "    },",
+                "    \"name\": \"보석초콜릿\",",
+                "    \"price\": 5000,",
+                "    \"amount\": 15,",
+                "    \"info\": \"구찌로 만든 초콜릿\",",
+                "    \"imgList\": [",
+                "     \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU\"",
+                "    ]",
+                "  }",
+                "];",
+                "// var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "// let currentStoreIdVariable = runtimeScene.getGame().getVariables().get(\"CurrentStoreId\")._str;",
+                "// let products = [];",
+                "",
+                "",
+                "// // 스토어 ID 확인",
+                "// var productListRequest = {",
+                "//   method: \"GET\",",
+                "//   headers: {",
+                "//     'Authorization': `${userToken}`,",
+                "//     'accept': 'application/json',",
+                "//     \"Content-Type\": \"application/json\",",
+                "//     \"Access-Control-Allow-Origin\": \"*\",",
+                "//     \"Access-Control-Allow-Headers\": \"*\",",
                 "//   }",
-                "// ];",
-                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
-                "let currentStoreIdVariable = runtimeScene.getGame().getVariables().get(\"CurrentStoreId\")._str;",
-                "let products = [];",
+                "// }",
+                "",
+                "// async function getProductList(productListRequest) {",
+                "//   try {",
+                "//     const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);",
+                "//     if (response.ok) {",
+                "//       const data = await response.json();",
+                "//       return data;",
+                "//     } else {",
+                "//       console.error(\"Request failed with status:\", response.status);",
+                "//     }",
+                "//   } catch (error) {",
+                "//     console.error(\"An error occurred:\", error);",
+                "//   }",
+                "// }",
+                "",
+                "// getProductList(productListRequest).then(data => {",
+                "//   products = data; // 함수가 반환한 값을 products에 할당",
                 "",
                 "",
-                "// 스토어 ID 확인",
-                "var productListRequest = {",
-                "  method: \"GET\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  }",
-                "}",
+                "//   let availableProducts = products.filter(product => product.amount !== 0);",
+                "//   availableProducts.forEach(product => {",
+                "//     product.quantity = 0;",
+                "//   });",
+                "//   // products 배열을 JSON 문자열로 변환",
+                "//   let productsString = JSON.stringify(availableProducts);",
+                "//   runtimeScene.getVariables().get(\"products\").setString(productsString);",
                 "",
-                "async function getProductList(productListRequest) {",
-                "  try {",
-                "    const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);",
-                "    if (response.ok) {",
-                "      const data = await response.json();",
-                "      return data;",
-                "    } else {",
-                "      console.error(\"Request failed with status:\", response.status);",
-                "    }",
-                "  } catch (error) {",
-                "    console.error(\"An error occurred:\", error);",
-                "  }",
-                "}",
+                "//   for(let i=0;  i < availableProducts.length; i++){",
+                "//     let listNameObject = runtimeScene.getObjects(\"ProductList_Name\")[i];",
+                "//     let listPriceObject = runtimeScene.getObjects(\"ProductList_Price\")[i];",
+                "//     let listQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[i];",
+                "    ",
                 "",
-                "getProductList(productListRequest).then(data => {",
-                "  products = data; // 함수가 반환한 값을 products에 할당",
+                "//     listNameObject.setString(availableProducts[i].name);",
+                "//     let priceString = availableProducts[i].price.toLocaleString();",
+                "//     listPriceObject.setString(priceString + \"원\");",
+                "//     listQuantityObject.setString(0);",
+                "//   }",
+                "//   let productNumVariable = runtimeScene.getVariables().get(\"productNum\");",
+                "//   let productFilterVariable = runtimeScene.getVariables().get(\"productFilter\");",
+                "",
+                "//   productNumVariable.setNumber(availableProducts.length);",
+                "//   productFilterVariable.setBoolean(true);",
+                "// });",
                 "",
                 "",
                 "  let availableProducts = products.filter(product => product.amount !== 0);",
@@ -53886,32 +53958,6 @@
                 "",
                 "  productNumVariable.setNumber(availableProducts.length);",
                 "  productFilterVariable.setBoolean(true);",
-                "});",
-                "",
-                "",
-                "  // let availableProducts = products.filter(product => product.amount !== 0);",
-                "  // availableProducts.forEach(product => {",
-                "  //   product.quantity = 0;",
-                "  // });",
-                "  // // products 배열을 JSON 문자열로 변환",
-                "  // let productsString = JSON.stringify(availableProducts);",
-                "  // runtimeScene.getVariables().get(\"products\").setString(productsString);",
-                "",
-                "  // for(let i=0;  i < availableProducts.length; i++){",
-                "  //   let listNameObject = runtimeScene.getObjects(\"ProductList_Name\")[i];",
-                "  //   let listPriceObject = runtimeScene.getObjects(\"ProductList_Price\")[i];",
-                "  //   let listQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[i];",
-                "",
-                "  //   listNameObject.setString(availableProducts[i].name);",
-                "  //   let priceString = availableProducts[i].price.toLocaleString();",
-                "  //   listPriceObject.setString(priceString + \"원\");",
-                "  //   listQuantityObject.setString(0);",
-                "  // }",
-                "  // let productNumVariable = runtimeScene.getVariables().get(\"productNum\");",
-                "  // let productFilterVariable = runtimeScene.getVariables().get(\"productFilter\");",
-                "",
-                "  // productNumVariable.setNumber(availableProducts.length);",
-                "  // productFilterVariable.setBoolean(true);",
                 "",
                 ""
               ],
@@ -54041,6 +54087,59 @@
                     ""
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                    "let products = JSON.parse(productsString);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image1\").setString(products[0].imgList[0]);",
+                    "",
+                    ""
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image1)",
+                        "ProductList_Image1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -54076,6 +54175,92 @@
                     ""
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                    "let products = JSON.parse(productsString);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image1\").setString(products[0].imgList[0]);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image2\").setString(products[1].imgList[0]);",
+                    "",
+                    ""
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image1)",
+                        "ProductList_Image1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image2)",
+                        "ProductList_Image2",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image2",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image2",
+                        "=",
+                        "110"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -54100,6 +54285,293 @@
                   "parameters": [
                     "ProductBox4",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                    "let products = JSON.parse(productsString);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image1\").setString(products[0].imgList[0]);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image2\").setString(products[1].imgList[0]);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image3\").setString(products[2].imgList[0]);",
+                    "",
+                    ""
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image1)",
+                        "ProductList_Image1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image2)",
+                        "ProductList_Image2",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image2",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image2",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image3)",
+                        "ProductList_Image3",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image3",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image3",
+                        "=",
+                        "110"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "productNum",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
+                    "let products = JSON.parse(productsString);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image1\").setString(products[0].imgList[0]);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image2\").setString(products[1].imgList[0]);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image3\").setString(products[2].imgList[0]);",
+                    "runtimeScene.getGame().getVariables().get(\"ProductList_Image4\").setString(products[3].imgList[0]);",
+                    "",
+                    ""
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image1)",
+                        "ProductList_Image1",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image1",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image2)",
+                        "ProductList_Image2",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image2",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image2",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image3)",
+                        "ProductList_Image3",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image3",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image3",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "GlobalVariableString(ProductList_Image3)",
+                        "ProductList_Image4",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "ProductList_Image4",
+                        "=",
+                        "110"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeHeight"
+                      },
+                      "parameters": [
+                        "ProductList_Image4",
+                        "=",
+                        "110"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -54406,27 +54878,6 @@
                 "ProductListPopup",
                 ""
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
-                "console.log(productsString);",
-                "// JSON 문자열을 배열로 변환",
-                "let products = JSON.parse(productsString);",
-                "let buy_status = products.some(product => product.amount !== 0);",
-                "",
-                "let product_buy = products.filter(product => product.quantity !== 0);",
-                "// products 배열을 JSON 문자열로 변환",
-                "let buyString = JSON.stringify(product_buy);",
-                "// 변환된 JSON 문자열을 Scene 변수에 저장",
-                ""
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": false
             }
           ]
         },
@@ -55587,11 +56038,50 @@
                 "",
                 "detailNameObject.setString(products[0].name);",
                 "detailPriceObject.setString(products[0].price.toLocaleString() + \"원\");",
-                "detailInfoObject.setString(products[0].info);"
+                "detailInfoObject.setString(products[0].info);",
+                "runtimeScene.getGame().getVariables().get(\"ProductDetail_Image\").setString(products[0].imgList[0]);"
               ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LoadImageFromURL::LoadURLIntoSprite"
+                  },
+                  "parameters": [
+                    "",
+                    "GlobalVariableString(ProductDetail_Image)",
+                    "ProductInfo_Image",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -55643,11 +56133,50 @@
                 "",
                 "detailNameObject.setString(products[1].name);",
                 "detailPriceObject.setString(products[1].price.toLocaleString() + \"원\");",
-                "detailInfoObject.setString(products[1].info);"
+                "detailInfoObject.setString(products[1].info);",
+                "runtimeScene.getGame().getVariables().get(\"ProductDetail_Image\").setString(products[1].imgList[0]);"
               ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LoadImageFromURL::LoadURLIntoSprite"
+                  },
+                  "parameters": [
+                    "",
+                    "GlobalVariableString(ProductDetail_Image)",
+                    "ProductInfo_Image",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -55699,11 +56228,50 @@
                 "",
                 "detailNameObject.setString(products[2].name);",
                 "detailPriceObject.setString(products[2].price.toLocaleString() + \"원\");",
-                "detailInfoObject.setString(products[2].info);"
+                "detailInfoObject.setString(products[2].info);",
+                "runtimeScene.getGame().getVariables().get(\"ProductDetail_Image\").setString(products[2].imgList[0]);"
               ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LoadImageFromURL::LoadURLIntoSprite"
+                  },
+                  "parameters": [
+                    "",
+                    "GlobalVariableString(ProductDetail_Image)",
+                    "ProductInfo_Image",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -55755,11 +56323,50 @@
                 "",
                 "detailNameObject.setString(products[3].name);",
                 "detailPriceObject.setString(products[3].price.toLocaleString() + \"원\");",
-                "detailInfoObject.setString(products[3].info);"
+                "detailInfoObject.setString(products[3].info);",
+                "runtimeScene.getGame().getVariables().get(\"ProductDetail_Image\").setString(products[3].imgList[0]);"
               ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LoadImageFromURL::LoadURLIntoSprite"
+                  },
+                  "parameters": [
+                    "",
+                    "GlobalVariableString(ProductDetail_Image)",
+                    "ProductInfo_Image",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "ProductInfo_Image",
+                    "=",
+                    "276"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -62617,6 +63224,32 @@
                 "CustomSuccess",
                 "=",
                 "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Square scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Custom_BackButton",
+                ""
               ]
             }
           ],

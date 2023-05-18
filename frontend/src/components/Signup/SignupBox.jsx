@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'react-toastify/dist/ReactToastify.minimal.css';
 
 function SignupBox({ onPage }) {
-  const notify = () => toast("이미 존재하는 이메일입니다.", {
+  const notify = () => toast("회원가입이 완료되었습니다.\n로그인을 해주세요.", {
     transition:Slide
   });
   const finishClick = () => {
@@ -188,9 +188,10 @@ function SignupBox({ onPage }) {
       account: account,
       address: address
     });
+    notify();
     console.log(response.data);
-    console.log('success');
-    onPage('custom');
+    // console.log('success');
+    setTimeout(() => onPage('login'), 2000); // 2000ms = 2초
   } catch (error) {
     console.log(error);
       // if (error.response.status === 400) { // 400: Conflict (이미 등록된 이메일)
