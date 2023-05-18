@@ -12,4 +12,5 @@ public class StoreUpdateDTO {
     private Float x;
     private Float y;
     private Float z;
+    private String signName;
 }

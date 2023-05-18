@@ -68,4 +68,5 @@ class Message:
                 disconnet_user.append(user)
         for user in disconnet_user:
             del app['websockets'][channel][user]
+            app['logging'].disconnect_logging(user, user, channel)
     

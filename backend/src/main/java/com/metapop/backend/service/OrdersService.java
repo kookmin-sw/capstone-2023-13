@@ -23,15 +23,16 @@ public class OrdersService {
     private final ProductRepository productRepository;
 
     public ResponseEntity<String> registration(OrdersSaveDTO ordersSaveDTO) {
+        Integer idx = 0;
         for (Long productId: ordersSaveDTO.getProductListId()) {
-            Optional<Product> Opproduct = productRepository.findById(productId);
-            Product product = Opproduct.orElseThrow();
+            Product product = productRepository.findById(productId).orElseThrow();
             if(product.getAmount() == 0) {
                     return ResponseEntity.status(400).body("주문 할 양이 없습니다.");
             }
             else {
-                product.setAmount(product.getAmount() - 1);
+                product.setAmount(product.getAmount() - ordersSaveDTO.getProductAmountList().get(idx));
             }
+            idx = idx + 1;
         }
         ordersRepository.save(ordersSaveDTO.toEntity());
         return ResponseEntity.ok("주문 저장 완료");
