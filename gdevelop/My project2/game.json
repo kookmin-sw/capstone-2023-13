@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -35417,6 +35417,12 @@
       "name": "SignNum",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "imageurl",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -45932,12 +45938,12 @@
                 "}",
                 "else{",
                 "    console.log(\"구매자\");",
-                "    buyerSellerVariable.setString(\"buyer\");",
+                "    buyerSellerVariable.setString(\"seller\");",
                 "}"
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         },
@@ -54513,106 +54519,6 @@
                 "productFilter",
                 "True"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "const productName = runtimeScene.getObjects(\"ProductRegister_ProductName\")[0];",
-                "const inputProductName = productName.getString();",
-                "",
-                "const productPrice = runtimeScene.getObjects(\"ProductRegister_ProductPrice\")[0];",
-                "const inputProductPrice = productPrice.getString();",
-                "",
-                "const productQuantity = runtimeScene.getObjects(\"ProductRegister_ProductQuantity\")[0];",
-                "const inputProductQuantity = productQuantity.getString();",
-                "",
-                "const productInfo = runtimeScene.getObjects(\"ProductRegister_ProductInfo\")[0];",
-                "const inputProductInfo = productInfo.getString();",
-                "",
-                "console.log(\"상품명:\", inputProductName);",
-                "console.log(\"상품가격:\", inputProductPrice);",
-                "console.log(\"상품수량:\", inputProductQuantity);",
-                "console.log(\"상품정보:\", inputProductInfo);",
-                "",
-                "",
-                "",
-                "",
-                "// // global 변수에 저장되어있는 토큰 가져오기",
-                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
-                "console.log(\"유저 토큰 : \", userToken);",
-                "",
-                "",
-                "// 스토어 ID 확인",
-                "var checkStoreIdRequest = {",
-                "  method: \"GET\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  }",
-                "}",
-                "fetch(\"http://43.201.210.173:8080/stores/info\", checkStoreIdRequest)",
-                "  .then((res) => res.json())",
-                "  .then((data) => {",
-                "    // console.log(data.id);",
-                "    runtimeScene.getGame().getVariables().get(\"storeId\").setString(data.id);",
-                "    var storeId = runtimeScene.getGame().getVariables().get(\"storeId\")._str;",
-                "    console.log(\"스토어 아이디 : \", storeId);",
-                "  })",
-                "  .catch((error) => {",
-                "    console.error(\"Error fetching data:\", error);",
-                "  });",
-                "",
-                "",
-                "",
-                "",
-                "// 상품 등록 호출 보내기",
-                "var addProductRequest = {",
-                "  method: \"POST\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'Accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  },",
-                "  body: JSON.stringify({",
-                "    storeId : runtimeScene.getGame().getVariables().get(\"storeId\")._str,",
-                "    // storeId : 4,",
-                "    name : inputProductName,",
-                "    price : inputProductPrice,",
-                "    amount : inputProductQuantity,",
-                "    info : inputProductInfo,",
-                "  }),",
-                "}",
-                "fetch(\"http://43.201.210.173:8080/products/register\", addProductRequest)",
-                "  .then((res) => res.text())",
-                "  .then((data) => {",
-                "    console.log(data);",
-                "    console.log(\"store id :\", runtimeScene.getVariables().get(\"storeId\")._str);",
-                "  })",
-                "  .catch((error) => {",
-                "    console.error(\"Error fetching data:\", error);",
-                "  });",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": true
             }
           ]
         },
@@ -63240,10 +63146,7 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "",
-                ""
-              ],
+              "inlineCode": "",
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
@@ -65366,6 +65269,136 @@
               "parameters": [
                 "popup_store_delete_complete_inner_text",
                 ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Store scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Display image",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "imageTrue",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductRegister_ImageButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "imageTrue",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "imageTrue",
+                "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "window.open('http://localhost:5173/uploadimages', '_blank');",
+                "",
+                "",
+                "console.log(localStorage.getItem(\"image-url\"));",
+                "var imageUrl = JSON.parse(localStorage.getItem(\"image-url\"));",
+                "console.log(\"이미지 url: \", imageUrl);",
+                "",
+                "// 가져온 url 배열 값을 Global variable에 string으로 저장",
+                "if(imageUrl){",
+                "  runtimeScene.getGame().getVariables().get(\"imageurl\").setString(imageUrl);",
+                "}",
+                "",
+                "",
+                "// Global variable에 저장된 string 값을 다시 array로 불러옴",
+                "var imageUrlToArray = runtimeScene.getGame().getVariables().get(\"imageurl\")._str;",
+                "// console.log(\"saved as: \", imageUrlToArray);",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "LoadImageFromURL::LoadURLIntoSprite"
+              },
+              "parameters": [
+                "",
+                "GlobalVariableString(imageurl)",
+                "ProductRegister_Image_Sprite",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "ProductRegister_Image_Sprite",
+                "=",
+                "120"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeHeight"
+              },
+              "parameters": [
+                "ProductRegister_Image_Sprite",
+                "=",
+                "120"
               ]
             }
           ]
