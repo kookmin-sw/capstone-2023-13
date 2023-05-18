@@ -2,6 +2,7 @@ package com.metapop.backend.service;
 
 import com.metapop.backend.dto.StoreCustomizingDTO.StoreCustomizingSaveDTO;
 import com.metapop.backend.dto.StoreCustomizingDTO.StoreCustomizingUpdateDTO;
+import com.metapop.backend.entity.Product;
 import com.metapop.backend.entity.Store;
 import com.metapop.backend.entity.StoreCustomizing;
 import com.metapop.backend.repository.StoreCustomizingRepository;
@@ -33,9 +34,15 @@ public class StoreCustomizingService {
 
     public StoreCustomizing update(Long store_id, StoreCustomizingUpdateDTO storeCustomizingUpdateDTO) {
         Store store = storeRepository.findById(store_id).orElseThrow();
-        System.out.println(store);
         StoreCustomizing storeCustomizing = storeCustomizingRepository.findByStoreId(store);
         storeCustomizing.update(storeCustomizingUpdateDTO);
         return storeCustomizing;
+    }
+
+    public String delete(Long store_id) {
+        Store store = storeRepository.findById(store_id).orElseThrow();
+        StoreCustomizing storeCustomizing = storeCustomizingRepository.findByStoreId(store);
+        storeCustomizingRepository.delete(storeCustomizing);
+        return "삭제 완료";
     }
 }

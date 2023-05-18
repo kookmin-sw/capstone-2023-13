@@ -36,4 +36,10 @@ public class StoreCustomizingController {
     public StoreCustomizing update(@PathVariable Long store_id, @RequestBody StoreCustomizingUpdateDTO storeCustomizingUpdateDTO) {
         return storeCustomizingService.update(store_id, storeCustomizingUpdateDTO);
     }
+
+    @Operation(summary = "", description = "상점 커스터마이징 삭제 API")
+    @DeleteMapping("/remove/{store_id}")
+    public String remove(@PathVariable Long store_id) {
+        return storeCustomizingService.delete(store_id);
+    }
 }
