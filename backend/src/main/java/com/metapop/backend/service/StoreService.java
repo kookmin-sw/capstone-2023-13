@@ -64,11 +64,15 @@ public class StoreService {
         }
         else{
             List<Product> products = productRepository.findByStoreId(store);
-            for (Product product: products) {
-                productRepository.delete(product);
+            if (products != null) {
+                for (Product product: products) {
+                    productRepository.delete(product);
+                }
             }
             StoreCustomizing storeCustomizing = storeCustomizingRepository.findByStoreId(store);
-            storeCustomizingRepository.delete(storeCustomizing);
+            if (storeCustomizing != null) {
+                storeCustomizingRepository.delete(storeCustomizing);
+            }
             storeRepository.delete(store);
             return "삭제 완료";
         }
