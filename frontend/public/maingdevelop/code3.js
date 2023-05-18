@@ -639,7 +639,7 @@ gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46G
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door2": gdjs.Store_32custom_32sceneCode.GDDoor2Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor3Objects1Objects = Hashtable.newFrom({"Door3": gdjs.Store_32custom_32sceneCode.GDDoor3Objects1});
-gdjs.Store_32custom_32sceneCode.userFunc0x193b3b8 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x18e9f08 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
@@ -681,12 +681,12 @@ gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x193b3b8(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x18e9f08(runtimeScene);
 
 }
 
 
-};gdjs.Store_32custom_32sceneCode.userFunc0x193bf80 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.userFunc0x18e8f30 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
@@ -807,7 +807,6 @@ tile = JSON.stringify(tile);
 wall = JSON.stringify(wall);
 door = JSON.stringify(door);
 
-console.log("커마 스토어 아이디 : ", storeId);
 var storeHttp = "storecustom"
 
 // 스토어 등록 호출 보내기
@@ -836,9 +835,7 @@ if (c !== 1) {
     fetch("http://43.201.210.173:8080/" + storeHttp + "izings/register", addStoreRequest)
     .then((res) => res.text())
     .then((data) => {
-        console.log("커마 등록 API 호출 : ", data);
         runtimeScene.getVariables().get("StoreCustomSuccess").setNumber(1);
-        console.log(runtimeScene.getVariables().get("StoreCustomSuccess")._value);
     })
     .catch((error) => {
         console.log("Error fetching data:", error);
@@ -854,7 +851,7 @@ gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x193bf80(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x18e8f30(runtimeScene);
 
 }
 
@@ -7476,7 +7473,8 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 }
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
+}
 { //Subevents
 gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 }

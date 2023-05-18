@@ -988,7 +988,7 @@ gdjs.Square_32sceneCode.GDSign1Objects2= [];
 gdjs.Square_32sceneCode.GDSign1Objects3= [];
 
 
-gdjs.Square_32sceneCode.userFunc0xae9730 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xa5be18 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1460,12 +1460,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xae9730(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xa5be18(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xc90758 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xa60850 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1497,7 +1497,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0xfa5600 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xa5ab10 = function(runtimeScene) {
 "use strict";
 // const channel = "Square1";
 
@@ -1573,53 +1573,1205 @@ runtimeScene.ws.send(JSON.stringify(update))
 };
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1});
+gdjs.Square_32sceneCode.userFunc0xa5ce50 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
 gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa5ce50(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
+gdjs.Square_32sceneCode.userFunc0xa601a0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa601a0(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
+gdjs.Square_32sceneCode.userFunc0xb2a2c0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xb2a2c0(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
+gdjs.Square_32sceneCode.userFunc0xa5f218 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa5f218(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
+gdjs.Square_32sceneCode.userFunc0xa5b7b0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa5b7b0(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
+gdjs.Square_32sceneCode.userFunc0xb9c1e8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xb9c1e8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
+gdjs.Square_32sceneCode.userFunc0xf89330 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xf89330(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
+gdjs.Square_32sceneCode.userFunc0xa5d7f8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList8 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa5d7f8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
+gdjs.Square_32sceneCode.userFunc0xa5a4a8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList9 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa5a4a8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
+gdjs.Square_32sceneCode.userFunc0x111f338 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x111f338(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
+gdjs.Square_32sceneCode.userFunc0xa09738 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList11 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa09738(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects2});
+gdjs.Square_32sceneCode.userFunc0x1691098 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList12 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x1691098(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
+gdjs.Square_32sceneCode.userFunc0x138a900 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList13 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x138a900(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
+gdjs.Square_32sceneCode.userFunc0x16920c0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList14 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x16920c0(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
+gdjs.Square_32sceneCode.userFunc0xa07e88 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList15 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa07e88(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
+gdjs.Square_32sceneCode.userFunc0x1691198 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList16 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x1691198(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
+gdjs.Square_32sceneCode.userFunc0x16922d8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList17 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x16922d8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
+gdjs.Square_32sceneCode.userFunc0x1691718 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList18 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x1691718(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
+gdjs.Square_32sceneCode.userFunc0x16923a0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList19 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x16923a0(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
+gdjs.Square_32sceneCode.userFunc0xa065a8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList20 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa065a8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
+gdjs.Square_32sceneCode.userFunc0xb33fc8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList21 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xb33fc8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
+gdjs.Square_32sceneCode.userFunc0xa075c8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList22 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa075c8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
+gdjs.Square_32sceneCode.userFunc0xa04770 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList23 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0xa04770(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1});
+gdjs.Square_32sceneCode.userFunc0x18eaff8 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Square_32sceneCode.eventsList24 = function(runtimeScene) {
+
+{
+
+
+gdjs.Square_32sceneCode.userFunc0x18eaff8(runtimeScene);
+
+}
+
+
+};gdjs.Square_32sceneCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -1639,7 +2791,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(1);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList1(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1662,7 +2818,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(2);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList2(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1685,7 +2845,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(3);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList3(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1708,7 +2872,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(4);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1731,7 +2899,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(5);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList5(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1754,7 +2926,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(6);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList6(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1777,7 +2953,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(7);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList7(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1800,7 +2980,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(8);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList8(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1823,7 +3007,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(9);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList9(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1846,7 +3034,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(10);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1869,7 +3061,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(11);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1892,7 +3088,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(12);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList12(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1915,7 +3115,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(1);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList13(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1938,7 +3142,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(2);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList14(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1961,7 +3169,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(3);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList15(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -1984,7 +3196,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(4);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList16(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2007,7 +3223,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(5);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList17(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2030,7 +3250,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(6);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList18(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2053,7 +3277,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(7);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList19(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2076,7 +3304,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(8);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList20(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2099,7 +3331,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(9);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList21(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2122,7 +3358,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(10);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList22(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2145,7 +3385,11 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(11);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList23(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2168,12 +3412,16 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sce
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(12);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList24(runtimeScene);} //End of subevents
+}
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x18ed7d8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x18e47f0 = function(runtimeScene) {
 "use strict";
 const stoName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = stoName.getString();
@@ -2220,9 +3468,6 @@ var addStoreRequest = {
     name : storeName,
     period : storePeriod,
     info : storeInfo,
-    x : 0,
-    y : 0,
-    z : 0,
     signName : "Sign" + signNum.toString(),
   }),
 }
@@ -2278,83 +3523,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList26 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x18ed7d8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x18e47f0(runtimeScene);
 
 }
 
 
-{
-
-
-let isConditionTrue_0 = false;
-{
-/* Reuse gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95input_95betweenObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95input_95period_95dayObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95input_95period_95monthObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95input_95period_95yearObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95input_95store_95nameObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95periodObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1 */
-/* Reuse gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1 */
-{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95store_95nameObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95input_95store_95nameObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95period_95yearObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95input_95period_95yearObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95period_95monthObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95input_95period_95monthObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95period_95dayObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95input_95period_95dayObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95betweenObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95input_95betweenObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95periodObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95periodObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1.length ;i < len;++i) {
-    gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1[i].deleteFromScene(runtimeScene);
-}
-}}
-
-}
-
-
-};gdjs.Square_32sceneCode.userFunc0x18ee6c8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x18ea378 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2393,54 +3572,18 @@ async function getStoreId(checkStoreIdRequest) {
 getStoreId(checkStoreIdRequest);
 
 };
-gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList27 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x18ee6c8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x18ea378(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xd317e8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x18e46d0 = function(runtimeScene) {
 "use strict";
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
-
-var checkStoreIdRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'Accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  },
-}
-
-async function getStoreId(checkStoreIdRequest) {
-  try {
-    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
-    if (response.ok) {
-      const data = await response.text();
-      console.log("Get호출 : ", data);
-      runtimeScene.getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getVariables().get("CurrentOwnerId").setString(data.owner.email);
-      var storeId = runtimeScene.getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-}
-
-getStoreId(checkStoreIdRequest);
-
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
 const Eye = runtimeScene.getGame().getVariables().get("UserEye")._str;
@@ -2481,70 +3624,22 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList28 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd317e8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x18e46d0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x193e940 = function(runtimeScene) {
-"use strict";
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
-
-// 스토어 ID 확인
-var checkStoreIdRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'Accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  },
-}
-
-async function getStoreId(checkStoreIdRequest) {
-  try {
-    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(response);
-      console.log("Get호출 : ", data.id);
-      runtimeScene.getVariables().get("StoreId").setString(data.id);
-      var storeId = runtimeScene.getVariables().get("StoreId")._str;
-      console.log("스토어 아이디 : ", storeId);
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-}
-
-getStoreId(checkStoreIdRequest);
-
-};
-gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-gdjs.Square_32sceneCode.userFunc0x193e940(runtimeScene);
-
-}
-
-
-};gdjs.Square_32sceneCode.userFunc0x1940940 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xb30308 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
-
+var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
 
 const objectName = "House2"; // 삭제할 객체의 이름
 const objects = runtimeScene.getObjects(objectName);
@@ -2577,17 +3672,42 @@ async function deleteStore(deleteStoreRequest) {
   }
 }
 
+var deleteStoreCustomRequest = {
+  method: "DELETE",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  }
+}
+var storeHttp = "storecustom"
+async function deleteStoreCustom(deleteStoreCustomRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/" + storeHttp + "izings/remove/" + storeId, deleteStoreCustomRequest);
+    if (response.ok) {
+      const data = await response.text();
+      console.log(data);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+deleteStoreCustom(deleteStoreCustomRequest);
 deleteStore(deleteStoreRequest);
 
 
-
 };
-gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList29 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1940940(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xb30308(runtimeScene);
 
 }
 
@@ -2666,7 +3786,7 @@ gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWallSideObjects1O
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWallSideObjects1Objects = Hashtable.newFrom({"WallSide": gdjs.Square_32sceneCode.GDWallSideObjects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0xf8ad90 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x186e818 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -2708,17 +3828,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList30 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xf8ad90(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x186e818(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x181e840 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xa5a1b0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 
@@ -2763,17 +3883,17 @@ getStoreAllId(storeAllIdRequest);
 
 
 };
-gdjs.Square_32sceneCode.eventsList8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList31 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x181e840(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xa5a1b0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.eventsList9 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -2800,7 +3920,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xc90758(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xa60850(runtimeScene);
 
 }
 
@@ -2808,7 +3928,7 @@ gdjs.Square_32sceneCode.userFunc0xc90758(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xfa5600(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xa5ab10(runtimeScene);
 
 }
 
@@ -2816,6 +3936,19 @@ gdjs.Square_32sceneCode.userFunc0xfa5600(runtimeScene);
 {
 
 
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("clicked").setNumber(0);
+}}
 
 }
 
@@ -2834,9 +3967,13 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "q");
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clicked")) != 1;
+}
+if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Square_32sceneCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList25(runtimeScene);} //End of subevents
 }
 
 }
@@ -2925,6 +4062,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1.leng
 for(var i = 0, len = gdjs.Square_32sceneCode.GDTransparentBackgroundObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDTransparentBackgroundObjects1[i].deleteFromScene(runtimeScene);
 }
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(0);
 }}
 
 }
@@ -2946,7 +4084,6 @@ for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1.l
 gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1);
-gdjs.copyArray(runtimeScene.getObjects("TextInput"), gdjs.Square_32sceneCode.GDTextInputObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup2_cancel_btn"), gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup2_inner_text"), gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1);
@@ -2960,8 +4097,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_name"), gdjs.Square_3
 gdjs.copyArray(runtimeScene.getObjects("popup2_period"), gdjs.Square_32sceneCode.GDpopup2_95periodObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup2_storeinfo"), gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup2_storename"), gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store custom scene", false);
-}{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1.length ;i < len;++i) {
+{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1[i].hide();
 }
 for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1.length ;i < len;++i) {
@@ -3003,13 +4139,83 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95periodObjects1.length ;i
 for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1[i].hide();
 }
+}
+{ //Subevents
+gdjs.Square_32sceneCode.eventsList26(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) == 1;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("TextInput"), gdjs.Square_32sceneCode.GDTextInputObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_cancel_btn"), gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_inner_text"), gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_input_between"), gdjs.Square_32sceneCode.GDpopup2_95input_95betweenObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_input_period_day"), gdjs.Square_32sceneCode.GDpopup2_95input_95period_95dayObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_input_period_month"), gdjs.Square_32sceneCode.GDpopup2_95input_95period_95monthObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_input_period_year"), gdjs.Square_32sceneCode.GDpopup2_95input_95period_95yearObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_info"), gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_name"), gdjs.Square_32sceneCode.GDpopup2_95input_95store_95nameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_ok_btn"), gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_period"), gdjs.Square_32sceneCode.GDpopup2_95periodObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_storeinfo"), gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup2_storename"), gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1);
+{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95inner_95textObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95ok_95btnObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95cancel_95btnObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95store_95nameObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95input_95store_95nameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95period_95yearObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95input_95period_95yearObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95period_95monthObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95input_95period_95monthObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95period_95dayObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95input_95period_95dayObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95betweenObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95input_95betweenObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95storenameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95periodObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95periodObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1[i].deleteFromScene(runtimeScene);
+}
 }{for(var i = 0, len = gdjs.Square_32sceneCode.GDTextInputObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDTextInputObjects1[i].deleteFromScene(runtimeScene);
 }
-}
-{ //Subevents
-gdjs.Square_32sceneCode.eventsList2(runtimeScene);} //End of subevents
-}
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store custom scene", false);
+}}
 
 }
 
@@ -3052,7 +4258,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_name"), gdjs.Square_3
 }
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -3209,6 +4415,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95periodObjects1.length ;i
 for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup2_95storeinfoObjects1[i].deleteFromScene(runtimeScene);
 }
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(0);
 }}
 
 }
@@ -3275,7 +4482,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", false);
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -3332,10 +4539,8 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1.length ;i 
 for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[i].deleteFromScene(runtimeScene);
 }
-}
-{ //Subevents
-gdjs.Square_32sceneCode.eventsList5(runtimeScene);} //End of subevents
-}
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(0);
+}}
 
 }
 
@@ -3421,7 +4626,7 @@ gdjs.Square_32sceneCode.GDpopup_95store_95delete_95ok_95btnObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Square_32sceneCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -3462,6 +4667,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup_store_delete_ok_btn"), gdjs.Square
 }{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup_95store_95delete_95inner_95textObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup_95store_95delete_95inner_95textObjects1[i].deleteFromScene(runtimeScene);
 }
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(0);
 }}
 
 }
@@ -3498,6 +4704,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup_store_delete_complete_inner_text")
 }{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup_95store_95delete_95complete_95inner_95textObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup_95store_95delete_95complete_95inner_95textObjects1[i].deleteFromScene(runtimeScene);
 }
+}{runtimeScene.getScene().getVariables().get("clicked").setNumber(0);
 }}
 
 }
@@ -3822,7 +5029,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", true);
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -3838,7 +5045,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Square scene layer", -(560), -(440));
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList31(runtimeScene);} //End of subevents
 }
 
 }
@@ -4858,7 +6065,7 @@ gdjs.Square_32sceneCode.GDSign1Objects1.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects2.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects3.length = 0;
 
-gdjs.Square_32sceneCode.eventsList9(runtimeScene);
+gdjs.Square_32sceneCode.eventsList32(runtimeScene);
 
 return;
 
