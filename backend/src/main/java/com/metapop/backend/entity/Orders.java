@@ -21,11 +21,13 @@ public class Orders {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private Long buyerId;
+    @ManyToOne
+    @JoinColumn(name = "buyer_id", nullable = false)
+    private User buyerId;
 
-    @Column(nullable = false)
-    private Long sellerId;
+    @ManyToOne
+    @JoinColumn(name = "seller_id", nullable = false)
+    private User sellerId;
 
     @Column(nullable = false)
     private LocalDateTime orderDate;
@@ -50,9 +52,9 @@ public class Orders {
     }
 
     @Builder
-    public Orders(Long buyerId, Long sellerId, Long state, Long totalPrice, List<Long> productList, List<Long> productAmountList) {
-        this.buyerId = buyerId;
-        this.sellerId = sellerId;
+    public Orders(User buyer, User seller, Long state, Long totalPrice, List<Long> productList, List<Long> productAmountList) {
+        this.buyerId = buyer;
+        this.sellerId = seller;
         this.state = state;
         this.totalPrice = totalPrice;
         this.productList = productList;
@@ -60,8 +62,6 @@ public class Orders {
     }
 
     public void update(OrdersUpdateDTO ordersUpdateDTO) {
-        this.buyerId = ordersUpdateDTO.getBuyerId();
-        this.sellerId = ordersUpdateDTO.getSellerId();
         this.state = ordersUpdateDTO.getState();
         this.totalPrice = ordersUpdateDTO.getTotalPrice();
         this.productList = ordersUpdateDTO.getProductListId();

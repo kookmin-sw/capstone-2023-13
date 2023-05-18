@@ -48,7 +48,7 @@ public class OrdersController {
     public List<Orders> sellList(@RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return ordersService.sellList(user.getId());
+        return ordersService.sellList(user);
     }
 
     @Operation(summary = "", description = "내 구매 주문 전체 정보 조회 API")
@@ -56,7 +56,7 @@ public class OrdersController {
     public List<Orders> buyList(@RequestHeader("Authorization") String jwtToken) {
         Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
         User user = userRepository.findByEmail(claims.getSubject());
-        return ordersService.buyList(user.getId());
+        return ordersService.buyList(user);
     }
 
     @Operation(summary = "", description = "주문 정보 수정 API")
