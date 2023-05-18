@@ -809,6 +809,9 @@ gdjs.Square_32sceneCode.GDpopup2_951_95ok_95btnObjects3= [];
 gdjs.Square_32sceneCode.GDpopup2_951_95cancel_95btnObjects1= [];
 gdjs.Square_32sceneCode.GDpopup2_951_95cancel_95btnObjects2= [];
 gdjs.Square_32sceneCode.GDpopup2_951_95cancel_95btnObjects3= [];
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1= [];
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects2= [];
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects3= [];
 gdjs.Square_32sceneCode.GDpopup2_951_95white_95backgroundObjects1= [];
 gdjs.Square_32sceneCode.GDpopup2_951_95white_95backgroundObjects2= [];
 gdjs.Square_32sceneCode.GDpopup2_951_95white_95backgroundObjects3= [];
@@ -985,7 +988,7 @@ gdjs.Square_32sceneCode.GDSign1Objects2= [];
 gdjs.Square_32sceneCode.GDSign1Objects3= [];
 
 
-gdjs.Square_32sceneCode.userFunc0x15fa378 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xec9180 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1457,12 +1460,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x15fa378(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xec9180(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xa7dce0 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x861668 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1494,7 +1497,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0x759d70 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1464e28 = function(runtimeScene) {
 "use strict";
 // const channel = "Square1";
 
@@ -1568,323 +1571,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign11Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign10Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign9Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign8Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign7Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign6Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign5Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign4Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign1Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1, "Sign11": gdjs.Square_32sceneCode.GDSign11Objects1, "Sign10": gdjs.Square_32sceneCode.GDSign10Objects1, "Sign9": gdjs.Square_32sceneCode.GDSign9Objects1, "Sign8": gdjs.Square_32sceneCode.GDSign8Objects1, "Sign7": gdjs.Square_32sceneCode.GDSign7Objects1, "Sign6": gdjs.Square_32sceneCode.GDSign6Objects1, "Sign5": gdjs.Square_32sceneCode.GDSign5Objects1, "Sign4": gdjs.Square_32sceneCode.GDSign4Objects1, "Sign3": gdjs.Square_32sceneCode.GDSign3Objects1, "Sign2": gdjs.Square_32sceneCode.GDSign2Objects1, "Sign1": gdjs.Square_32sceneCode.GDSign1Objects1});
-gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(0)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(1)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(2)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(3)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(4)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(5)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(6)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(7)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(8)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(9)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(10)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(11)) == 0;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(0)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(1)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(2)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(3)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(4)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(5)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(6)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(7)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(8)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(9)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(10)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(11)) == 1;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
-}}
-
-}
-
-
-};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
@@ -1906,9 +1593,33 @@ gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2Obje
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1});
-gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
+gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects2});
+gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -1920,9 +1631,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(0)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(1);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -1938,9 +1654,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(1)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(2);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -1956,9 +1677,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(2)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(3);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -1974,9 +1700,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(3)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(4);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -1992,9 +1723,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(4)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(5);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2010,9 +1746,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(5)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(6);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2028,9 +1769,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(6)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(7);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2046,9 +1792,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(7)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(8);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2064,9 +1815,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(8)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(9);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2082,9 +1838,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(9)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(10);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2100,9 +1861,14 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(10)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(11);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
@@ -2110,23 +1876,320 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Sign12"), gdjs.Square_32sceneCode.GDSign12Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sign12"), gdjs.Square_32sceneCode.GDSign12Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(11)) == 0;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects, false, runtimeScene, false);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(12);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }}
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xb46b98 = function(runtimeScene) {
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign1"), gdjs.Square_32sceneCode.GDSign1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(0)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(1);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign2"), gdjs.Square_32sceneCode.GDSign2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(1)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(2);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign3"), gdjs.Square_32sceneCode.GDSign3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(2)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(3);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign4"), gdjs.Square_32sceneCode.GDSign4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(3)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(4);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign5"), gdjs.Square_32sceneCode.GDSign5Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(4)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(5);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign6"), gdjs.Square_32sceneCode.GDSign6Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(5)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(6);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign7"), gdjs.Square_32sceneCode.GDSign7Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(6)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(7);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign8"), gdjs.Square_32sceneCode.GDSign8Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(7)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(8);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign9"), gdjs.Square_32sceneCode.GDSign9Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(8)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(9);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign10"), gdjs.Square_32sceneCode.GDSign10Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(9)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(10);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign11"), gdjs.Square_32sceneCode.GDSign11Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(10)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(11);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Sign12"), gdjs.Square_32sceneCode.GDSign12Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(11)) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(12);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(13)) != gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(9));
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("popup3_delete_button"), gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1);
+{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+};gdjs.Square_32sceneCode.userFunc0x12e1838 = function(runtimeScene) {
 "use strict";
 const storeName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = storeName.getString();
@@ -2187,17 +2250,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xb46b98(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x12e1838(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x18b2eb8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x166eb10 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2236,17 +2299,17 @@ async function getStoreId(checkStoreIdRequest) {
 getStoreId(checkStoreIdRequest);
 
 };
-gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x18b2eb8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x166eb10(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xa62878 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x15a4e80 = function(runtimeScene) {
 "use strict";
 async function getStoreId(checkStoreIdRequest) {
   try {
@@ -2255,8 +2318,11 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getVariables().get("StoreId").setString(data.id);
+      runtimeScene.getVariables().get("CurrentOwnerId").setString(data.owner.email);
       var storeId = runtimeScene.getVariables().get("StoreId")._str;
+      var ownerId = runtimeScene.getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
+      console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2307,19 +2373,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xa62878(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x15a4e80(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
-gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595delete_9595storeObjects1Objects = Hashtable.newFrom({"WideSideRectangleWood_delete_store": gdjs.Square_32sceneCode.GDWideSideRectangleWood_95delete_95storeObjects1});
-gdjs.Square_32sceneCode.userFunc0x1315330 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x12e0df0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
@@ -2362,12 +2426,12 @@ deleteStore(deleteStoreRequest);
 
 
 };
-gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1315330(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x12e0df0(runtimeScene);
 
 }
 
@@ -2446,7 +2510,7 @@ gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWallSideObjects1O
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWallSideObjects1Objects = Hashtable.newFrom({"WallSide": gdjs.Square_32sceneCode.GDWallSideObjects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0xebca78 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1083628 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -2488,17 +2552,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xebca78(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1083628(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.eventsList8 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -2525,7 +2589,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xa7dce0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x861668(runtimeScene);
 
 }
 
@@ -2533,7 +2597,7 @@ gdjs.Square_32sceneCode.userFunc0xa7dce0(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x759d70(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1464e28(runtimeScene);
 
 }
 
@@ -2547,56 +2611,21 @@ gdjs.Square_32sceneCode.userFunc0x759d70(runtimeScene);
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Sign1"), gdjs.Square_32sceneCode.GDSign1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign10"), gdjs.Square_32sceneCode.GDSign10Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign11"), gdjs.Square_32sceneCode.GDSign11Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign12"), gdjs.Square_32sceneCode.GDSign12Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign2"), gdjs.Square_32sceneCode.GDSign2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign3"), gdjs.Square_32sceneCode.GDSign3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign4"), gdjs.Square_32sceneCode.GDSign4Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign5"), gdjs.Square_32sceneCode.GDSign5Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign6"), gdjs.Square_32sceneCode.GDSign6Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign7"), gdjs.Square_32sceneCode.GDSign7Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign8"), gdjs.Square_32sceneCode.GDSign8Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Sign9"), gdjs.Square_32sceneCode.GDSign9Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects1);
+
+
+}
+
+
+{
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign11Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign10Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign9Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign8Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign7Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign6Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign5Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign4Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign1Objects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "q");
-}
 if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.Square_32sceneCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "q");
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Square_32sceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
@@ -2732,7 +2761,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_name"), gdjs.Square_3
 }
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
@@ -2776,7 +2805,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_name"), gdjs.Square_3
 }
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -2962,6 +2991,7 @@ gdjs.Square_32sceneCode.GDpopup3_95ok_95btnObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup3_cancel_btn"), gdjs.Square_32sceneCode.GDpopup3_95cancel_95btnObjects1);
+gdjs.copyArray(runtimeScene.getObjects("popup3_delete_button"), gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup3_nickname"), gdjs.Square_32sceneCode.GDpopup3_95nicknameObjects1);
 /* Reuse gdjs.Square_32sceneCode.GDpopup3_95ok_95btnObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("popup3_period_text"), gdjs.Square_32sceneCode.GDpopup3_95period_95textObjects1);
@@ -2992,10 +3022,13 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95ok_95btnObjects1.length 
 for(var i = 0, len = gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
 }
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[i].deleteFromScene(runtimeScene);
+}
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", false);
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
@@ -3018,6 +3051,7 @@ gdjs.Square_32sceneCode.GDpopup3_95cancel_95btnObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1);
 /* Reuse gdjs.Square_32sceneCode.GDpopup3_95cancel_95btnObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("popup3_delete_button"), gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup3_nickname"), gdjs.Square_32sceneCode.GDpopup3_95nicknameObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup3_ok_btn"), gdjs.Square_32sceneCode.GDpopup3_95ok_95btnObjects1);
 gdjs.copyArray(runtimeScene.getObjects("popup3_period_text"), gdjs.Square_32sceneCode.GDpopup3_95period_95textObjects1);
@@ -3048,6 +3082,9 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95ok_95btnObjects1.length 
 for(var i = 0, len = gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
 }
+for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length ;i < len;++i) {
+    gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[i].deleteFromScene(runtimeScene);
+}
 }}
 
 }
@@ -3055,19 +3092,25 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1.length ;i 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("WideSideRectangleWood_delete_store"), gdjs.Square_32sceneCode.GDWideSideRectangleWood_95delete_95storeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Square_32sceneCode.GDbody1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Square_32sceneCode.GDbody2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Square_32sceneCode.GDbody3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4Objects1);
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("popup3_delete_button"), gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWideSideRectangleWood_9595delete_9595storeObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "q");
+for (var i = 0, k = 0, l = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length;i<l;++i) {
+    if ( gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[k] = gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1[i];
+        ++k;
+    }
 }
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup store delete", 0, 0);
 }}
@@ -3092,7 +3135,7 @@ gdjs.Square_32sceneCode.GDpopup_95store_95delete_95ok_95btnObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Square_32sceneCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -3493,7 +3536,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", true);
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -4348,6 +4391,9 @@ gdjs.Square_32sceneCode.GDpopup2_951_95ok_95btnObjects3.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_951_95cancel_95btnObjects1.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_951_95cancel_95btnObjects2.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_951_95cancel_95btnObjects3.length = 0;
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects1.length = 0;
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects2.length = 0;
+gdjs.Square_32sceneCode.GDpopup3_95delete_95buttonObjects3.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_951_95white_95backgroundObjects1.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_951_95white_95backgroundObjects2.length = 0;
 gdjs.Square_32sceneCode.GDpopup2_951_95white_95backgroundObjects3.length = 0;
@@ -4523,7 +4569,7 @@ gdjs.Square_32sceneCode.GDSign1Objects1.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects2.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects3.length = 0;
 
-gdjs.Square_32sceneCode.eventsList8(runtimeScene);
+gdjs.Square_32sceneCode.eventsList7(runtimeScene);
 
 return;
 
