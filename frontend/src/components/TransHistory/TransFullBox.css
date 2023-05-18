@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     background-color: #8398D1;
-    height: 120px;
+    height: 100px;
     /* margin-top: 30px; */
     /* margin-top: 10px;
     margin-left: 10px; */
@@ -18,7 +18,7 @@
     margin-right:15px;
     margin-left:40px;
     width:130px;
-    height: 130px;
+    height: 110px;
     background-image: url('@/images/icons/meta-icon.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -33,7 +33,7 @@
 .listBox{
     overflow:auto;
     width: 80%;
-    height:600px;
+    height:400px;
     /* background-color: rgb(200, 200, 200); */
     text-align: center;
     margin:auto;
