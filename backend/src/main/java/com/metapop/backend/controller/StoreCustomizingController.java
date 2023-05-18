@@ -1,6 +1,7 @@
 package com.metapop.backend.controller;
 
 import com.metapop.backend.dto.StoreCustomizingDTO.StoreCustomizingSaveDTO;
+import com.metapop.backend.entity.StoreCustomizing;
 import com.metapop.backend.service.StoreCustomzingService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -17,9 +18,15 @@ public class StoreCustomizingController {
     @Autowired
     private StoreCustomzingService storeCustomzingService;
 
-    @Operation(summary = "", description = "유저 커스터마이징 등록 API")
+    @Operation(summary = "", description = "상점 커스터마이징 등록 API")
     @PostMapping("/register")
     public ResponseEntity<String> registration(@RequestBody StoreCustomizingSaveDTO storeCustomizingSaveDTO) {
         return ResponseEntity.ok(storeCustomzingService.registration(storeCustomizingSaveDTO));
+    }
+
+    @Operation(summary = "", description = "상점 커스터마이징 정보 조회 API")
+    @GetMapping("/info/{store_id}")
+    public StoreCustomizing info(@PathVariable Long store_id) {
+        return storeCustomzingService.info(store_id);
     }
 }
