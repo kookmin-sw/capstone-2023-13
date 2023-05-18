@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\User\\Desktop\\4-1학기\\캡스톤\\메타팝 클론\\2\\capstone-2023-13\\frontend\\public\\maingdevelop",
+    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -10580,6 +10580,19 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/44aceaa249d2ecb8bfe3eb7bedcb17aac44c0f5f13f9f58d85427a5afa7e92f0_CarterOne-Regular.ttf",
           "name": "CarterOne-Regular.ttf"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sign.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sign.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Desert/Objects/e4efa3a998ec733e40b41bb0f90a07a1f9b68ce13d4d72d1371be8068bdda724_Sign.png",
+          "name": "Sign.png"
         }
       }
     ],
@@ -35180,6 +35193,53 @@
           "name": "WallSide"
         }
       ]
+    },
+    {
+      "name": "Popup2",
+      "objects": [
+        {
+          "name": "popup2_inner_text"
+        },
+        {
+          "name": "popup2_ok_btn"
+        },
+        {
+          "name": "popup2_cancel_btn"
+        },
+        {
+          "name": "popup2_input_store_name"
+        },
+        {
+          "name": "popup2_input_period_year"
+        },
+        {
+          "name": "popup2_input_period_month"
+        },
+        {
+          "name": "popup2_input_period_day"
+        },
+        {
+          "name": "popup2_input_between"
+        },
+        {
+          "name": "popup2_input_store_info"
+        },
+        {
+          "name": "WhiteBackgroundPopup"
+        },
+        {
+          "name": "BlueTitlePopup"
+        },
+        {
+          "name": "popup2_storename"
+        },
+        {
+          "name": "popup2_period"
+        },
+        {
+          "name": "popup2_storeinfo"
+        }
+      ]
     }
   ],
   "variables": [
@@ -35227,7 +35287,7 @@
     },
     {
       "folded": true,
-      "name": "storeId",
+      "name": "StoreId",
       "type": "string",
       "value": ""
     },
@@ -35266,6 +35326,98 @@
       "name": "CurrentOwnerId",
       "type": "string",
       "value": "8"
+    },
+    {
+      "folded": true,
+      "name": "UserX",
+      "type": "string",
+      "value": "-1000"
+    },
+    {
+      "folded": true,
+      "name": "UserY",
+      "type": "string",
+      "value": "-1000"
+    },
+    {
+      "folded": true,
+      "name": "StoreSign",
+      "type": "array",
+      "children": [
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        },
+        {
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "StoreName",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "StorePeriod",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "StoreInfo",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "SignNum",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -38580,7 +38732,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210202,
+        "zoomFactor": 0.39251611754882454,
         "windowMask": false
       },
       "objectsGroups": [
@@ -38601,53 +38753,6 @@
             },
             {
               "name": "TransparentBackground"
-            }
-          ]
-        },
-        {
-          "name": "Popup2",
-          "objects": [
-            {
-              "name": "popup2_inner_text"
-            },
-            {
-              "name": "popup2_ok_btn"
-            },
-            {
-              "name": "popup2_cancel_btn"
-            },
-            {
-              "name": "popup2_input_store_name"
-            },
-            {
-              "name": "popup2_input_period_year"
-            },
-            {
-              "name": "popup2_input_period_month"
-            },
-            {
-              "name": "popup2_input_period_day"
-            },
-            {
-              "name": "popup2_input_between"
-            },
-            {
-              "name": "popup2_input_store_info"
-            },
-            {
-              "name": "WhiteBackgroundPopup"
-            },
-            {
-              "name": "BlueTitlePopup"
-            },
-            {
-              "name": "popup2_storename"
-            },
-            {
-              "name": "popup2_period"
-            },
-            {
-              "name": "popup2_storeinfo"
             }
           ]
         },
@@ -38697,6 +38802,47 @@
             },
             {
               "name": "BlueTitlePopup"
+            }
+          ]
+        },
+        {
+          "name": "SIgnGroup",
+          "objects": [
+            {
+              "name": "Sign12"
+            },
+            {
+              "name": "Sign11"
+            },
+            {
+              "name": "Sign10"
+            },
+            {
+              "name": "Sign9"
+            },
+            {
+              "name": "Sign8"
+            },
+            {
+              "name": "Sign7"
+            },
+            {
+              "name": "Sign6"
+            },
+            {
+              "name": "Sign5"
+            },
+            {
+              "name": "Sign4"
+            },
+            {
+              "name": "Sign3"
+            },
+            {
+              "name": "Sign2"
+            },
+            {
+              "name": "Sign1"
             }
           ]
         }
@@ -40025,7 +40171,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "완료",
+              "string": "다음",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
               "characterSize": 25,
@@ -41048,7 +41194,7 @@
             "placeholder": "스토어에 관한 설명을 입력해주세요.",
             "fontResourceName": "",
             "fontSize": 20,
-            "inputType": "text",
+            "inputType": "text area",
             "textColor": "0;0;0",
             "fillColor": "255;255;255",
             "fillOpacity": 255,
@@ -41504,6 +41650,498 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign12",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign11",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign10",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign9",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign8",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign7",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign6",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign5",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "b91f1d1fac1990a1f75bc2bac9355d8149ecf558486183ac484be93c3a080d76",
+          "name": "Sign1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sign.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -41519,7 +42157,14 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "Store add go event"
+          "target": "Sign interaction event"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "character collision event"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -41562,14 +42207,23 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
+                "const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "",
+                "const o = runtimeScene.getObjects(\"body\" + Body).find((o) => o.user_id === runtimeScene.user_id);",
+                "",
+                "const preX = o.getX();",
+                "const preY = o.getY();",
+                "",
+                "runtimeScene.getGame().getVariables().get(\"UserX\").setNumber(preX);",
+                "runtimeScene.getGame().getVariables().get(\"UserY\").setNumber(preY);",
+                "",
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
                 "        var update;",
                 "        console.log('Disconnecting WebSocket...');",
-                "        const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
-                "        const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
-                "        const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
-                "        const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
                 "        update = { ",
                 "            type : \"action\",",
                 "            custom : {",
@@ -41579,7 +42233,7 @@
                 "                outfit : Outfit,",
                 "            },",
                 "            dir : \"del\", ",
-                "            X: 0, ",
+                "            X: 0,",
                 "            Y: 0, ",
                 "            Z: 0",
                 "        }",
@@ -41618,7 +42272,7 @@
               },
               "parameters": [
                 "",
-                "\"Square scene\"",
+                "\"Square scene layer\"",
                 "-560",
                 "-440"
               ]
@@ -46311,6 +46965,24 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TextInput",
+                ""
+              ]
             }
           ]
         },
@@ -50641,7 +51313,7 @@
                 "",
                 "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
                 "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
-                "runtimeScene.channel_id = \"Store1\";",
+                "runtimeScene.channel_id = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                 "",
                 "runtimeScene.ws.onopen = function(event) {",
                 "",
@@ -51237,6 +51909,8 @@
               "inlineCode": [
                 "const url = runtimeScene.getGame().getVariables().get(\"WebSocketUrl\")._str;",
                 "runtimeScene.ws = new WebSocket(url);",
+                "var preX = runtimeScene.getGame().getVariables().get(\"UserX\")._value;",
+                "var preY = runtimeScene.getGame().getVariables().get(\"UserY\")._value;",
                 "",
                 "runtimeScene.user_id = runtimeScene.getGame().getVariables().get(\"UserId\")._str;",
                 "runtimeScene.nickname = runtimeScene.getGame().getVariables().get(\"UserNickname\")._str;",
@@ -51248,7 +51922,15 @@
                 "    const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
                 "    const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str",
                 "    const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
-                "",
+                "    var x, y;",
+                "    if (preX !== -1000 && preY !== -1000) {",
+                "        x = preX;",
+                "        y = preY;",
+                "    }",
+                "    else {",
+                "        x = 480;",
+                "        y = 300;",
+                "    }",
                 "    const data = { ",
                 "        user_id : runtimeScene.user_id, ",
                 "        nickname: runtimeScene.nickname, ",
@@ -51259,9 +51941,9 @@
                 "            hair : Hair,",
                 "            outfit : Outfit,",
                 "        }, ",
-                "        X : 480, ",
-                "        Y : 300, ",
-                "        Z : 10,",
+                "        X : x, ",
+                "        Y : y, ",
+                "        Z : 2,",
                 "    };",
                 "",
                 "    setTimeout(() => {",
@@ -54757,7 +55439,6 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "",
                 "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                 "let orderListString = runtimeScene.getVariables().get(\"orderList\").getAsString();",
                 "let orderList = JSON.parse(orderListString);",
@@ -61983,6 +62664,158 @@
       ]
     },
     {
+      "associatedLayout": "Square scene",
+      "lastChangeTimeStamp": 0,
+      "name": "character collision event",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "WallSide",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "WallSide",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "DecoTileGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "DecoTileGroup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "SaleTableGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "SaleTableGroup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "CollisionGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "CollisionGroup",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "SIgnGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "UserGroup",
+                "CollisionGroup",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "associatedLayout": "Store custom scene",
       "lastChangeTimeStamp": 0,
       "name": "Store custom server",
@@ -62032,6 +62865,147 @@
           ],
           "actions": [],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// global 변수에 저장되어있는 토큰 가져오기",
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "console.log(\"유저 토큰 테스트 :\", userToken);",
+                "",
+                "",
+                "// Store의 x,y,z 값 가져오기",
+                "// const objectName = \"Add_store_test\";",
+                "// const objects = runtimeScene.getObjects(objectName);",
+                "",
+                "// let x, y, z;",
+                "",
+                "// if (objects.length > 0) {",
+                "//   const object = objects[0]; // 첫 번째 객체 인스턴스를 가져옵니다.",
+                "",
+                "//   // 객체의 X, Y 좌표를 가져옵니다.",
+                "//   x = object.getX();",
+                "//   y = object.getY();",
+                "",
+                "//   // 객체의 Z 순서 (레이어 순서)를 가져옵니다.",
+                "//   z = object.getZOrder();",
+                "",
+                "//   console.log(`X: ${x}, Y: ${y}, Z: ${z}`);",
+                "// }",
+                "",
+                "",
+                "var isStoreAdded = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value;",
+                "",
+                "console.log(\"상점 등록 여부:\", runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str);",
+                "const storeName = runtimeScene.getGame().getVariables().get(\"StoreName\")._str;",
+                "const storePeriod = runtimeScene.getGame().getVariables().get(\"StorePeriod\")._str;",
+                "const storeInfo = runtimeScene.getGame().getVariables().get(\"StoreInfo\")._str;",
+                "",
+                "console.log(\"스토어 이름 : \", storeName);",
+                "console.log(\"스토어 기간 : \", storePeriod);",
+                "console.log(\"스토어 정보 : \", storeInfo);",
+                "",
+                "// 스토어 등록 호출 보내기",
+                "var addStoreRequest = {",
+                "  method: \"POST\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "  body: JSON.stringify({",
+                "    name : storeName,",
+                "    period : storePeriod,",
+                "    info : storeInfo,",
+                "    x : 0,",
+                "    y : 0,",
+                "    z : 1,",
+                "    signName : \"Sign\" + signNum.toString(),",
+                "  }),",
+                "}",
+                "",
+                "async function postAddStore(addStoreRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/register\", addStoreRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(data);",
+                "      runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum).setNumber(1);",
+                "      runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setString(1);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "postAddStore(addStoreRequest);",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                "",
+                "// 스토어 ID 확인",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "}",
+                "",
+                "async function getStoreId(checkStoreIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(\"Get호출 : \", data);",
+                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
+                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
+                "      console.log(\"스토어 아이디 : \", storeId);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getStoreId(checkStoreIdRequest);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "스토어 커스터마이징 정보 저장",
+              "comment2": ""
+            },
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
@@ -62172,6 +63146,1953 @@
               "parameters": [
                 "",
                 "\"Square scene\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Square scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Sign interaction event",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "SIgnGroup",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[0]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[1]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[2]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[3]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[4]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[5]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[6]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[7]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[8]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[9]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[10]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[11]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer1\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[0]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[1]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[2]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[3]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[4]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[5]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[6]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[7]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[8]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[9]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[10]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "StoreSign[11]",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer3\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "\b상호작용한 표지판 번호 저장",
+          "comment2": ""
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign1",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign2",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign3",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign4",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "4"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign5",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign6",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "6"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign7",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "7"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign8",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "8"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign9",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "9"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign10",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "10"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign11",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "11"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UserGroup",
+                    "Sign12",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "SignNum",
+                    "=",
+                    "12"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "등록되지 않은 상점 상호작용",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup1_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup layer2\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup1_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Store custom scene\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_store_name"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_store_info"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_year"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_month"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_day"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TextInput"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const storeName = runtimeScene.getObjects(\"popup2_input_store_name\")[0];",
+                "const inputStoreName = storeName.getString();",
+                "",
+                "const storePeriodYear = runtimeScene.getObjects(\"popup2_input_period_year\")[0];",
+                "const inputStorePeriodYear = storePeriodYear.getString();",
+                "",
+                "const storePeriodMonth = runtimeScene.getObjects(\"popup2_input_period_month\")[0];",
+                "const inputStorePeriodMonth = storePeriodMonth.getString();",
+                "",
+                "const storePeriodDay = runtimeScene.getObjects(\"popup2_input_period_day\")[0];",
+                "const inputStorePeriodDay = storePeriodDay.getString();",
+                "",
+                "const storeInfo = runtimeScene.getObjects(\"popup2_input_store_info\")[0];",
+                "const inputStoreInfo = storeInfo.getString();",
+                "",
+                "runtimeScene.getGame().getVariables().get(\"StoreName\").setString(inputStoreName);",
+                "runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(inputStorePeriodYear+\"-\"+inputStorePeriodMonth+\"-\"+inputStorePeriodDay);",
+                "runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(inputStoreInfo);",
+                "",
+                "const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "",
+                "const o = runtimeScene.getObjects(\"body\" + Body).find((o) => o.user_id === runtimeScene.user_id);",
+                "",
+                "const preX = o.getX();",
+                "const preY = o.getY();",
+                "",
+                "runtimeScene.getGame().getVariables().get(\"UserX\").setNumber(preX);",
+                "runtimeScene.getGame().getVariables().get(\"UserY\").setNumber(preY);",
+                "",
+                "function disconnectWebSocket(runtimeScene) {",
+                "    if (runtimeScene.ws) {",
+                "        var update;",
+                "        console.log('Disconnecting WebSocket...');",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0,",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
+                "        runtimeScene.ws.close();",
+                "    } ",
+                "    else {",
+                "        console.log('WebSocket is not connected.');",
+                "    }",
+                "}",
+                "",
+                "disconnectWebSocket(runtimeScene);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup layer2-1\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_store_name"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_year"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_month"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_period_day"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup2_input_store_info"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                "",
+                "// 스토어 ID 확인",
+                "var checkStoreIdRequest = {",
+                "  method: \"GET\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'Accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  },",
+                "}",
+                "",
+                "async function getStoreId(checkStoreIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                "    console.log(response);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(response);",
+                "      console.log(\"Get호출 : \", data);",
+                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
+                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
+                "      console.log(\"스토어 아이디 : \", storeId);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getStoreId(checkStoreIdRequest);",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_1_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup21",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_store_name",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_period_year",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_period_month",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_period_day",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "popup2_input_store_info",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup2_1_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup21",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup2",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "등록된 상점 상호작용",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup3_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Store scene\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "async function getStoreId(checkStoreIdRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(\"Get호출 : \", data);",
+                "      runtimeScene.getVariables().get(\"StoreId\").setString(data.id);",
+                "      var storeId = runtimeScene.getVariables().get(\"StoreId\")._str;",
+                "      console.log(\"스토어 아이디 : \", storeId);",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "getStoreId(checkStoreIdRequest);",
+                "",
+                "const Body = runtimeScene.getGame().getVariables().get(\"UserBody\")._str;",
+                "const Hair = runtimeScene.getGame().getVariables().get(\"UserHair\")._str;",
+                "const Eye = runtimeScene.getGame().getVariables().get(\"UserEye\")._str;",
+                "const Outfit = runtimeScene.getGame().getVariables().get(\"UserOutfit\")._str;",
+                "",
+                "const o = runtimeScene.getObjects(\"body\" + Body).find((o) => o.user_id === runtimeScene.user_id);",
+                "",
+                "const preX = o.getX();",
+                "const preY = o.getY();",
+                "",
+                "runtimeScene.getGame().getVariables().get(\"UserX\").setNumber(preX);",
+                "runtimeScene.getGame().getVariables().get(\"UserY\").setNumber(preY);",
+                "",
+                "function disconnectWebSocket(runtimeScene) {",
+                "    if (runtimeScene.ws) {",
+                "        var update;",
+                "        console.log('Disconnecting WebSocket...');",
+                "        update = { ",
+                "            type : \"action\",",
+                "            custom : {",
+                "                hair : Hair,",
+                "                body : Body,",
+                "                eye : Eye,",
+                "                outfit : Outfit,",
+                "            },",
+                "            dir : \"del\", ",
+                "            X: 0,",
+                "            Y: 0, ",
+                "            Z: 0",
+                "        }",
+                "        runtimeScene.ws.send(JSON.stringify(update));",
+                "        runtimeScene.ws.close();",
+                "    } ",
+                "    else {",
+                "        console.log('WebSocket is not connected.');",
+                "    }",
+                "}",
+                "",
+                "disconnectWebSocket(runtimeScene);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup3_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Popup3",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "UserGroup",
+                "WideSideRectangleWood_delete_store",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup store delete\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup_store_delete_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
+                "var isStoreAdded = runtimeScene.getGame().getVariables().get(\"IsStoreAdded\")._str;",
+                "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value;",
+                "",
+                "",
+                "const objectName = \"House2\"; // 삭제할 객체의 이름",
+                "const objects = runtimeScene.getObjects(objectName);",
+                "",
+                "var deleteStoreRequest = {",
+                "  method: \"DELETE\",",
+                "  headers: {",
+                "    'Authorization': `${userToken}`,",
+                "    'accept': 'application/json',",
+                "    \"Content-Type\": \"application/json\",",
+                "    \"Access-Control-Allow-Origin\": \"*\",",
+                "    \"Access-Control-Allow-Headers\": \"*\",",
+                "  }",
+                "}",
+                "",
+                "async function deleteStore(deleteStoreRequest) {",
+                "  try {",
+                "    const response = await fetch(\"http://43.201.210.173:8080/stores/remove\", deleteStoreRequest);",
+                "    if (response.ok) {",
+                "      const data = await response.json();",
+                "      console.log(data);",
+                "      runtimeScene.getGame().getVariables().get(\"StoreSign\").getChild(signNum).setNumber(1);",
+                "      const object = objects[0]; // 첫 번째 객체 인스턴스 가져오기",
+                "      runtimeScene.markObjectForDeletion(object); // 객체 삭제 표시",
+                "    } else {",
+                "      console.error(\"Request failed with status:\", response.status);",
+                "    }",
+                "  } catch (error) {",
+                "    console.error(\"An error occurred:\", error);",
+                "  }",
+                "}",
+                "",
+                "deleteStore(deleteStoreRequest);",
+                "",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "WhiteBackgroundPopup",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BlueTitlePopup",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "popup_store_delete_ok_btn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "popup_store_delete_cancel_btn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "popup_store_delete_inner_text",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup store delete complete\"",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup_store_delete_cancel_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_cancel_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_inner_text",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "popup_store_delete_complete_ok_btn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_complete_ok_btn",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "WhiteBackgroundPopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BlueTitlePopup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "popup_store_delete_complete_inner_text",
                 ""
               ]
             }
@@ -74008,7 +76929,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.25504554733543416,
+        "zoomFactor": 0.3553434558816991,
         "windowMask": false
       }
     },
@@ -74337,7 +77258,7 @@
     },
     {
       "associatedLayout": "Square scene",
-      "name": "Square scene",
+      "name": "Square scene layer",
       "instances": [
         {
           "angle": 0,
@@ -80473,6 +83394,186 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign1",
+          "persistentUuid": "3c3a1dc4-13cb-4534-9e03-0b2d63a74842",
+          "width": 0,
+          "x": -496,
+          "y": 123,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign2",
+          "persistentUuid": "96908e46-9ece-4352-a272-d719f2208a59",
+          "width": 0,
+          "x": -48,
+          "y": 123,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign3",
+          "persistentUuid": "60b7b4b4-72bf-47f9-8464-3c4c6bf74e48",
+          "width": 0,
+          "x": -48,
+          "y": -164,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign4",
+          "persistentUuid": "3199d20b-5078-4413-8db4-b34497ddd0ba",
+          "width": 0,
+          "x": 944,
+          "y": -164,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign5",
+          "persistentUuid": "b41365f2-d75c-4743-92fd-2546bc61c0bc",
+          "width": 0,
+          "x": 944,
+          "y": 123,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign6",
+          "persistentUuid": "ea26897a-aec5-4f0f-8b2f-e5d3d7389cda",
+          "width": 0,
+          "x": 1392,
+          "y": 123,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign7",
+          "persistentUuid": "2aaa0648-14d8-458d-a33a-7f2528684700",
+          "width": 0,
+          "x": -144,
+          "y": 552,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign8",
+          "persistentUuid": "0f1a6131-3511-43c8-be2e-f1e76ae11902",
+          "width": 0,
+          "x": 304,
+          "y": 552,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign9",
+          "persistentUuid": "e392fe45-fd54-4d0b-b415-4c539598b1c1",
+          "width": 0,
+          "x": 304,
+          "y": 840,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign10",
+          "persistentUuid": "951e3aa3-fe52-4979-a224-2f62b7561996",
+          "width": 0,
+          "x": 944,
+          "y": 552,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign11",
+          "persistentUuid": "10a27de7-1a01-4d69-be17-b94c900ce5cb",
+          "width": 0,
+          "x": 1392,
+          "y": 553,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Sign12",
+          "persistentUuid": "89d030d1-d08d-4611-b434-cb901289522f",
+          "width": 0,
+          "x": 944,
+          "y": 840,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -80485,7 +83586,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.22336005893811484,
+        "zoomFactor": 0.4481978045410381,
         "windowMask": false
       }
     },
