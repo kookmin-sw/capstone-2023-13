@@ -68,12 +68,19 @@ export const MetaIcon = styled.img.attrs({
 `;
 
 export const AboutOrder = styled.div`
+    width: 1200px;
+    margin-top: 50px;
+    /* margin-left: 150px; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+`;
+
+export const AboutOrderInnerDiv = styled.div`
+    width: 950px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 54px;
-    margin-left: 127px;
-    margin-bottom: 72px;
 `;
 
 export const OrderNo = styled.div`
@@ -83,31 +90,29 @@ export const OrderNo = styled.div`
 
     > span {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 22px;
     }
 `;
 
 export const CancelOrderBtn = styled.button`
-    width: 155px;
-    height: 141px;
-    left: 1373px;
-    top: 264px;
+    width: 120px;
+    height: 120px;
 
     background: #FFFFFF;
     border: 3px solid #775EEE;
     border-radius: 20px;
+    padding: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    margin-right: 150px;
     cursor: pointer;
 
     > span {
         font-weight: 600;
-        font-size: 36px;
+        font-size: 30px;
         line-height: 44px;
         text-align: center;
 
@@ -124,10 +129,14 @@ export const ItemBox = styled.div`
 `;
 
 export const PurchasedItemList = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    width: 1158px;
+    grid-row-gap: 30px;
+    grid-column-gap: 190px;
+    padding: 0 74px 0 74px;
+    justify-content: space-around;
+    width: 950px;
     /* margin-left: 128px; */
 `;
 
@@ -137,11 +146,11 @@ export const PurchasedItem = styled.div`
     justify-content: center;
 `;
 
-export const ProductImg = styled.img.attrs({
-    src: productimg,
-})`
-    width: 149px;
-    height: 149px;
+export const ProductImg = styled.img.attrs(props => ({
+    src: props.src,
+}))`
+    width: 100px;
+    height: 100px;
 `;
 
 export const ProductInfo = styled.div`
@@ -149,12 +158,12 @@ export const ProductInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin-left: 27px;
-    margin-right: 50px;
+    margin-right: 10px;
 `;
 
 export const ProductName = styled.div`
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
 `;
 
 export const ProductPriceAndNumber = styled.div`
@@ -166,17 +175,17 @@ export const ProductPriceAndNumber = styled.div`
 
 export const ProductPrice = styled.div`
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
 `;
 
 export const NumOfProduct = styled.div`
     font-weight: 500;
-    font-size: 28px;
+    font-size: 25px;
     margin-left: 21px;
 `;
 
 export const HrLine = styled.div`
-    width: 1158px;
+    width: 950px;
     height: 0px;
     border: 1px solid #000000;
     margin-top: 23px;
@@ -184,8 +193,8 @@ export const HrLine = styled.div`
 `;
 
 export const BackBtn = styled.button`
-    width: 195px;
-    height: 73px;
+    width: 170px;
+    height: 60px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -193,8 +202,8 @@ export const BackBtn = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 63px;
-    margin-left: 873px;
+    /* margin-top: 50px; */
+    /* margin-left: 873px; */
     margin-right: 26px;
     
     cursor: pointer;
@@ -202,7 +211,7 @@ export const BackBtn = styled.button`
     > span {
         font-style: normal;
         font-weight: 600;
-        font-size: 32px;
+        font-size: 25px;
         color: #141060;
     }
 `;
@@ -210,12 +219,17 @@ export const BackBtn = styled.button`
 export const BackAndCloseBtn = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
 `;
 
 export const CloseBtn = styled.button`
-    width: 195px;
-    height: 73px;
+    width: 170px;
+    height: 60px;
     background: #141060;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -223,14 +237,20 @@ export const CloseBtn = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 63px;
+    /* margin-top: 63px; */
     
     cursor: pointer;
 
     > span {
         font-style: normal;
         font-weight: 600;
-        font-size: 32px;
+        font-size: 25px;
         color: #FFFFFF;
     }
 `;
+
+
+
+
+
+

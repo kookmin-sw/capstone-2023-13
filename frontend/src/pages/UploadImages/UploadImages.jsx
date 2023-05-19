@@ -9,6 +9,9 @@ function UploadImages() {
         setSelectedImages(e.target.files);
     }
 
+    localStorage.setItem('uploadState', 0);
+
+
     const uploadImages = async (e) => {
         e.preventDefault();
         const formData = new FormData();
@@ -26,6 +29,7 @@ function UploadImages() {
             console.log(res.data);
             if(res.data){
                 localStorage.setItem('image-url', JSON.stringify(res.data));
+                localStorage.setItem('uploadState', 1);
             }
             // console.log(localStorage.getItem('image-url'));
             console.log(JSON.parse(localStorage.getItem("image-url")));
@@ -42,7 +46,7 @@ function UploadImages() {
     return (
         <form onSubmit={uploadImages}>
             <input type="file" multiple onChange={handleImageChange} />
-            <button type="submit">Upload</button>
+            <button type="submit" >Upload</button>
         </form>
     );
 }
