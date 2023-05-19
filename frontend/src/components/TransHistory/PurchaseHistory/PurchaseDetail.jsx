@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import * as styled from './styles';
 
-const PurchaseDetail = ({ onPage, onClose }) => {
+const PurchaseDetail = ({ onPage, orderId, onClose }) => {
     const [buyerid, setbuyerid] = useState("");
     const [sellerid, setsellerid] = useState("");
     const [storename, setstorename] = useState("");
@@ -21,7 +21,7 @@ const PurchaseDetail = ({ onPage, onClose }) => {
         onClose("true")
     }
     function backClick(){ //이전버튼 클릭 시
-        onPage("full")
+        onPage("full", 0)
     }
     const PurchasedItem = () => {
         return (
@@ -47,7 +47,7 @@ const PurchaseDetail = ({ onPage, onClose }) => {
 
 
     useEffect(() => {
-        const orders_id = 5;
+        const orders_id = orderId;
         let token = localStorage.getItem('login-token');
 
         const fetchData = async () => {
@@ -181,16 +181,16 @@ const PurchaseDetail = ({ onPage, onClose }) => {
         <div>
             <styled.HeaderBox>
                 <styled.MetaIcon />
-                <span>주문 정보</span>
+                <span>구매 상세</span>
             </styled.HeaderBox>
             <styled.AboutOrder>
                 <styled.AboutOrderInnerDiv>
                     <styled.OrderNo>
-                        <span>스토어 이름 : {storename}</span>
-                        <span>주문 날짜 : {orderdate}</span>
-                        <span>입금 정보 : {accountinfo}</span>
-                        <span>주문 상태 : {deliverstate}</span>
-                        <span>총 주문 금액 : {totalprice}원</span>
+                        <span>⦁ 스토어 이름 : {storename}</span>
+                        <span>⦁ 주문 날짜 : {orderdate}</span>
+                        <span>⦁ 입금 정보 : {accountinfo}</span>
+                        <span>⦁ 주문 상태 : {deliverstate}</span>
+                        <span>⦁ 총 주문 금액 : {totalprice}원</span>
                     </styled.OrderNo>
                     {deliverstatenumber === '0' && (
                         <styled.CancelOrderBtn>

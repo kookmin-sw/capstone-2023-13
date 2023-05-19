@@ -59,7 +59,7 @@ export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
     width: 90px;
-    height: 80px;
+    height: 70px;
 `;
 
 
@@ -106,7 +106,7 @@ export const EmailInputBox = styled.input`
 // export const SendPasswordBtn = styled.button`
 //     width: 100%;
 //     height: 50px;
-//     background: #141060;
+//     background: #775EEE;
 //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 //     border-radius: 5px;    
 //     display: flex;
@@ -128,7 +128,7 @@ cursor: pointer;
 /* width: 180px; */
 width: 380px;
 height: 40px;
-background: #141060;
+background: #775EEE;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border:none;
 border-radius: 10px;
@@ -153,5 +153,5 @@ text-align: center;
 margin-top:20px;
 font-weight: bold;
 background: #ffffff;
-color:#141060;
+color:#775EEE;
 `;

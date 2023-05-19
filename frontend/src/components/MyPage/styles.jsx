@@ -110,7 +110,7 @@ export const ProfileImg = styled.img.attrs({
 export const ChangeImg = styled.div`
     width: 158px;
     height: 44px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     display: flex;
@@ -340,15 +340,15 @@ export const AccountInputBox = styled.input`
 export const ConfirmBtn = styled.button`
     width: 216px;
     height: 50px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;    
+    border-radius: 10px;    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 73px;
     cursor: pointer;
-
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,8 +365,8 @@ export const CloseBtn = styled.button`
     height: 50px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border:1px solid #141060; 
-    border-radius: 5px;    
+    border:2px solid #6F8DDE; 
+    border-radius: 10px;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,9 +376,8 @@ export const CloseBtn = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-
     > span {
-        color: #141060;
+        color: #6F8DDE;
         font-weight: 600;
         font-size: 20px;
     }
@@ -431,7 +430,7 @@ export const ModalText = styled.div`
 export const ModalOkButton = styled.button`
     width: 156px;
     height: 50px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;    
     display: flex;

@@ -4,7 +4,7 @@ import "@components/TransHistory/TransFullBox.css";
 import axios from 'axios';
 // import { useNavigate } from "react-router-dom";
 
-function PurchaseFullBox({onPage, onClose, orderId}) {
+function PurchaseFullBox({onPage, onClose}) {
   // const movePage = useNavigate();
   const [orders, setOrders] = useState([]);
   useEffect(() => {

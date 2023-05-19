@@ -3,7 +3,7 @@ import axios from 'axios';
 import * as styled from './styles';
 import { StartDeliveryBtn, StateButtons } from "../PurchaseHistory/styles";
 
-const SaleDetail = ({ onPage, onClose }) => {
+const SaleDetail = ({ onPage, orderId, onClose }) => {
     const [buyername, setbuyername] = useState("");
     const [buyerid, setbuyerid] = useState("");
     const [sellerid, setsellerid] = useState("");
@@ -21,7 +21,7 @@ const SaleDetail = ({ onPage, onClose }) => {
         onClose("true")
     }
     function backClick(){ //이전버튼 클릭 시
-        onPage("full")
+        onPage("full", 0)
     }
     const PurchasedItem = () => {
         return (
@@ -48,7 +48,7 @@ const SaleDetail = ({ onPage, onClose }) => {
 
 
     useEffect(() => {
-        const orders_id = 5;
+        const orders_id = orderId;
         let token = localStorage.getItem('login-token');
 
         const fetchData = async () => {
@@ -219,27 +219,28 @@ const SaleDetail = ({ onPage, onClose }) => {
         <div>
             <styled.HeaderBox>
                 <styled.MetaIcon />
-                <span>주문 정보</span>
+                <span>판매 상세</span>
             </styled.HeaderBox>
             <styled.AboutOrder>
                 <styled.AboutOrderInnerDiv>
                     <styled.OrderNo>
-                        <span>구매자 이름 : {buyername}</span>
-                        <span>주문 날짜 : {orderdate}</span>
-                        <span>판매 상태 : {deliverstate}</span>
-                        <span>총 주문 금액 : {totalprice}원</span>
+                        <span>⦁ 구매자 이름 : {buyername}</span>
+                        <span>⦁ 주문 날짜 : {orderdate}</span>
+                        <span>⦁ 판매 상태 : {deliverstate}</span>
+                        <span>⦁ 총 주문 금액 : {totalprice}원</span>
                     </styled.OrderNo>
                     <styled.StateButtons>
                         {deliverstate === '입금 확인 전' && (
                             <>
+                            <styled.CancelOrderBtn onClick={() => {DeleteOrder(); }}>
+                                    <span>판매</span>
+                                    <span>취소</span>
+                                </styled.CancelOrderBtn>
                                 <styled.StartDeliveryBtn onClick={() => {setdeliverstate('배송중'); UpdateProductState(); }}>
                                     <span>배송</span>
                                     <span>시작</span>
                                 </styled.StartDeliveryBtn>
-                                <styled.CancelOrderBtn onClick={() => {DeleteOrder(); }}>
-                                    <span>판매</span>
-                                    <span>취소</span>
-                                </styled.CancelOrderBtn>
+                                
                             </>
                         )}
                     </styled.StateButtons>

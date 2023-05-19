@@ -79,14 +79,15 @@ export const ButtonsDiv = styled.div`
 export const ConfirmBtn = styled.button`
     width: 188px;
     height: 52px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;    
+    border-radius: 10px;    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 15px;
     cursor: pointer;
+    border:none;
 
     display: flex;
     align-items: center;
@@ -104,8 +105,8 @@ export const CloseBtn = styled.button`
     height: 52px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border:1px solid #141060; 
-    border-radius: 5px;    
+    border:2px solid #6F8DDE; 
+    border-radius: 10px;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +117,7 @@ export const CloseBtn = styled.button`
     justify-content: center;
 
     > span {
-        color: #141060;
+        color: #6F8DDE;
         font-weight: 600;
         font-size: 20px;
     }

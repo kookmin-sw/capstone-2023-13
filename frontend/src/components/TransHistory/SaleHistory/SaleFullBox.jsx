@@ -76,7 +76,7 @@ function SaleFullBox({onPage, onClose}) {
         })
       );
   
-      console.log("gh",formattedData)
+      console.log(formattedData);
       setOrders(formattedData);
     })
         .catch(function (error) {
