@@ -40,14 +40,18 @@ public class Product {
     @CollectionTable(name = "product_img_list", joinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"))
     private List<String> imgList = new ArrayList<>();
 
+    @Column(nullable = false)
+    private String tableName;
+
     @Builder
-    public Product(Store store, String name, Long price, Long amount, String info, List<String> imgList) {
+    public Product(Store store, String name, Long price, Long amount, String info, List<String> imgList, String tableName) {
         this.storeId = store;
         this.name = name;
         this.price = price;
         this.amount = amount;
         this.info = info;
         this.imgList = imgList;
+        this.tableName = tableName;
     }
 
     public void update(ProductUpdateDTO productUpdateDTO) {
@@ -56,5 +60,6 @@ public class Product {
         this.amount = productUpdateDTO.getAmount();
         this.info = productUpdateDTO.getInfo();
         this.imgList = productUpdateDTO.getImgList();
+        this.tableName = productUpdateDTO.getTableName();
     }
 }

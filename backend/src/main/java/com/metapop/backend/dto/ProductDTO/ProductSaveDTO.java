@@ -16,6 +16,7 @@ public class ProductSaveDTO {
     private Long amount;
     private String info;
     private List<String> imgList;
+    private String tableName;
 
     public Product toEntity(Store store) {
         return Product.builder()
@@ -25,6 +26,7 @@ public class ProductSaveDTO {
                 .amount(amount)
                 .info(info)
                 .imgList(imgList)
+                .tableName(tableName)
                 .build();
     }
 }
