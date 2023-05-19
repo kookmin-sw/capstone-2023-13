@@ -111,8 +111,8 @@ public class UserService implements UserDetailsService {
         message.setTo(mailDTO.getAddress());
         message.setSubject(mailDTO.getTitle());
         message.setText(mailDTO.getMessage());
-        message.setFrom("metapop13@gmail.com");
-        message.setReplyTo("metapop13@gmail.com");
+        message.setFrom("capstonemetapop@gmail.com");
+        message.setReplyTo("capstonemetapop@gmail.com");
         mailSender.send(message);
     }
 
