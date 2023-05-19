@@ -37,6 +37,16 @@ public class ProductService {
         return productRepository.findById(product_id);
     }
 
+    public Optional<Product> infotablename(Long store_id, String table_name) {
+        Store store = storeRepository.findById(store_id).orElseThrow();
+        List<Product> products = productRepository.findByStoreId(store);
+
+        Optional<Product> optionalProduct = products.stream()
+                .filter(product -> product.getTableName().equals(table_name))
+                .findFirst();
+        return optionalProduct;
+    }
+
     public Product update(Long product_id, ProductUpdateDTO productUpdateDTO) {
         Product product = productRepository.findById(product_id).orElseThrow();
         product.update(productUpdateDTO);

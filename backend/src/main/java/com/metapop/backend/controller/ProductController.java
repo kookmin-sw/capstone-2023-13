@@ -40,6 +40,12 @@ public class ProductController {
         return productService.infodetail(product_id);
     }
 
+    @Operation(summary = "", description = "상품 정보 조회 API")
+    @GetMapping("/info/detail/{store_id}/{table_name}")
+    public Optional<Product> infotablename(@PathVariable Long store_id, @PathVariable String table_name) {
+        return productService.infotablename(store_id, table_name);
+    }
+
     @Operation(summary = "", description = "상품 정보 수정 API")
     @PutMapping("/update/{product_id}")
     public Product update(@PathVariable Long product_id, @RequestBody ProductUpdateDTO productUpdateDTO) {
