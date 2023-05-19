@@ -11,4 +11,5 @@ public class ProductUpdateDTO {
     private Long amount;
     private String info;
     private List<String> imgList;
+    private String tableName;
 }
