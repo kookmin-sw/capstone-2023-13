@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -52009,18 +52009,18 @@
                 "    disconnectWebSocket(runtimeScene);",
                 "};",
                 "",
-                "window.onerror = function(message, source, lineno, colno, error) {",
-                "    // 에러 메시지를 콘솔에 출력합니다.",
-                "    console.error('An error occurred:', message, source, lineno, colno, error);",
+                "// window.onerror = function(message, source, lineno, colno, error) {",
+                "//     // 에러 메시지를 콘솔에 출력합니다.",
+                "//     console.error('An error occurred:', message, source, lineno, colno, error);",
                 "",
-                "    // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.",
-                "    // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');",
+                "//     // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.",
+                "//     // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');",
                 "",
-                "    // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.",
-                "    disconnectWebSocket(runtimeScene);",
-                "    // 에러가 처리되었음을 나타내려면 true를 반환합니다.",
-                "    return true;",
-                "};",
+                "//     // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.",
+                "//     disconnectWebSocket(runtimeScene);",
+                "//     // 에러가 처리되었음을 나타내려면 true를 반환합니다.",
+                "//     return true;",
+                "// };",
                 "",
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
@@ -52582,18 +52582,18 @@
                 "    disconnectWebSocket(runtimeScene);",
                 "};",
                 "",
-                "window.onerror = function(message, source, lineno, colno, error) {",
-                "    // 에러 메시지를 콘솔에 출력합니다.",
-                "    console.error('An error occurred:', message, source, lineno, colno, error);",
+                "// window.onerror = function(message, source, lineno, colno, error) {",
+                "//     // 에러 메시지를 콘솔에 출력합니다.",
+                "//     console.error('An error occurred:', message, source, lineno, colno, error);",
                 "",
-                "    // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.",
-                "    // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');",
+                "//     // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.",
+                "//     // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');",
                 "",
-                "    // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.",
-                "    disconnectWebSocket(runtimeScene);",
-                "    // 에러가 처리되었음을 나타내려면 true를 반환합니다.",
-                "    return true;",
-                "};",
+                "//     // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.",
+                "//     disconnectWebSocket(runtimeScene);",
+                "//     // 에러가 처리되었음을 나타내려면 true를 반환합니다.",
+                "//     return true;",
+                "// };",
                 "",
                 "function disconnectWebSocket(runtimeScene) {",
                 "    if (runtimeScene.ws) {",
@@ -55092,19 +55092,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "LoadImageFromURL::LoadURLIntoImageResource"
-              },
-              "parameters": [
-                "",
-                "\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU\"",
-                "assets/Add_Image.png",
-                ""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
@@ -55116,29 +55104,29 @@
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
-            },
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "var uploadState = localStorage.getItem(\"uploadState\");",
-                "runtimeScene.getVariables().get(\"uploadState\").setValue(uploadState);",
-                "",
-                "",
-                "",
-                "if(uploadState){",
-                "  var imageUrl = JSON.parse(localStorage.getItem(\"image-url\"));",
-                "  localStorage.removeItem('image-url');",
-                "",
-                "  if(imageUrl){",
-                "    runtimeScene.getGame().getVariables().get(\"imageurl\").setString(imageUrl);",
-                "  }",
-                "}"
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": false
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "var uploadState = localStorage.getItem(\"uploadState\");",
+            "runtimeScene.getVariables().get(\"uploadState\").setValue(uploadState);",
+            "",
+            "",
+            "",
+            "if(uploadState){",
+            "  var imageUrl = JSON.parse(localStorage.getItem(\"image-url\"));",
+            "  localStorage.removeItem('image-url');",
+            "",
+            "  if(imageUrl){",
+            "    runtimeScene.getGame().getVariables().get(\"imageurl\").setString(imageUrl);",
+            "  }",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -55237,8 +55225,6 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "",
-                "",
                 "const productName = runtimeScene.getObjects(\"ProductRegister_ProductName\")[0];",
                 "const inputProductName = productName.getString();",
                 "",
@@ -55286,7 +55272,7 @@
                 "  },",
                 "  body: JSON.stringify({",
                 "    // storeId : runtimeScene.getGame().getVariables().get(\"storeId\")._str,",
-                "    storeId : 1,",
+                "    storeId : 8,",
                 "    name : inputProductName,",
                 "    price : inputProductPrice,",
                 "    amount : inputProductQuantity,",
@@ -55294,7 +55280,8 @@
                 "    imgList : [",
                 "      imageUrl",
                 "      // \"https://metapop.s3.ap-northeast-2.amazonaws.com/e249d8d0-1a3a-4a6d-9d18-e9645fad5486.jpeg\"",
-                "    ]",
+                "    ],",
+                "    tableName : \"SalesTable1\"",
                 "  }),",
                 "}",
                 "",

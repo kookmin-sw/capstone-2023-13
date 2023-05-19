@@ -91,6 +91,8 @@ function PurchaseFullBox({onPage, onClose, orderId}) {
     onPage("detail", orderId);
   }
   
+
+  
   return (
     <div>
         <div className="trans-TitleDiv">

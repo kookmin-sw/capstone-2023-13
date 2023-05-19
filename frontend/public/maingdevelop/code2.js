@@ -934,7 +934,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2= [];
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3= [];
 
 
-gdjs.Store_32sceneCode.userFunc0x186e898 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x13f8be8 = function(runtimeScene) {
 "use strict";
 //Seller Buyer 구분
 let userIdVariable = runtimeScene.getGame().getVariables().get("UserId");
@@ -1047,7 +1047,7 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x186e898(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f8be8(runtimeScene);
 
 }
 
@@ -1466,7 +1466,7 @@ gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
-gdjs.Store_32sceneCode.userFunc0x18ec118 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x13f8990 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1843,18 +1843,18 @@ runtimeScene.unloadScene = function() {
     disconnectWebSocket(runtimeScene);
 };
 
-window.onerror = function(message, source, lineno, colno, error) {
-    // 에러 메시지를 콘솔에 출력합니다.
-    console.error('An error occurred:', message, source, lineno, colno, error);
+// window.onerror = function(message, source, lineno, colno, error) {
+//     // 에러 메시지를 콘솔에 출력합니다.
+//     console.error('An error occurred:', message, source, lineno, colno, error);
 
-    // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.
-    // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');
+//     // 사용자에게 에러가 발생했음을 알리는 다이얼로그를 표시합니다.
+//     // alert('게임에서 오류가 발생했습니다. 새로고침하거나 다시 시도해주세요.');
 
-    // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.
-    disconnectWebSocket(runtimeScene);
-    // 에러가 처리되었음을 나타내려면 true를 반환합니다.
-    return true;
-};
+//     // 필요한 경우 서버에 에러 정보를 전송하거나 저장할 수 있습니다.
+//     disconnectWebSocket(runtimeScene);
+//     // 에러가 처리되었음을 나타내려면 true를 반환합니다.
+//     return true;
+// };
 
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -1891,12 +1891,12 @@ gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x18ec118(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f8990(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x19514c0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x13f83a8 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1928,7 +1928,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0xa5f540 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x13f8738 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -2000,7 +2000,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0x8d1ee8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x13f66d8 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2051,12 +2051,12 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x8d1ee8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f66d8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xa719d0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x13f7f40 = function(runtimeScene) {
 "use strict";
 // // 상품 데이터의 더미 배열입니다.
 
@@ -2227,12 +2227,12 @@ gdjs.Store_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xa719d0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f7f40(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xd9cdc0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x13f4dc8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2246,7 +2246,7 @@ gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xd9cdc0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f4dc8(runtimeScene);
 
 }
 
@@ -2269,7 +2269,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x9ca690 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x13f67f8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2285,7 +2285,7 @@ gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x9ca690(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f67f8(runtimeScene);
 
 }
 
@@ -2316,7 +2316,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1ad0998 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x13f53b8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2334,7 +2334,7 @@ gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1ad0998(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f53b8(runtimeScene);
 
 }
 
@@ -2373,7 +2373,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1acc480 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x937fb8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2393,7 +2393,7 @@ gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1acc480(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x937fb8(runtimeScene);
 
 }
 
@@ -2673,7 +2673,7 @@ gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xb37138 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xee67d8 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2724,7 +2724,7 @@ gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xb37138(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xee67d8(runtimeScene);
 
 }
 
@@ -2733,7 +2733,139 @@ gdjs.Store_32sceneCode.userFunc0xb37138(runtimeScene);
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x142faa0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x1284fc0 = function(runtimeScene) {
+"use strict";
+window.open('http://localhost:5173/uploadimages', '_blank');
+
+runtimeScene.getVariables().get("imageTrue").setBoolean(true);
+};
+gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x1284fc0(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x1285108 = function(runtimeScene) {
+"use strict";
+var uploadState = localStorage.getItem("uploadState");
+runtimeScene.getVariables().get("uploadState").setValue(uploadState);
+
+
+
+if(uploadState){
+  var imageUrl = JSON.parse(localStorage.getItem("image-url"));
+  localStorage.removeItem('image-url');
+
+  if(imageUrl){
+    runtimeScene.getGame().getVariables().get("imageurl").setString(imageUrl);
+  }
+}
+};
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductRegister_9595Image_9595SpriteObjects1Objects = Hashtable.newFrom({"ProductRegister_Image_Sprite": gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1});
+gdjs.Store_32sceneCode.userFunc0xee5f78 = function(runtimeScene) {
+"use strict";
+const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
+const inputProductName = productName.getString();
+
+const productPrice = runtimeScene.getObjects("ProductRegister_ProductPrice")[0];
+const inputProductPrice = productPrice.getString();
+
+const productQuantity = runtimeScene.getObjects("ProductRegister_ProductQuantity")[0];
+const inputProductQuantity = productQuantity.getString();
+
+const productInfo = runtimeScene.getObjects("ProductRegister_ProductInfo")[0];
+const inputProductInfo = productInfo.getString();
+
+console.log("상품명:", inputProductName);
+console.log("상품가격:", inputProductPrice);
+console.log("상품수량:", inputProductQuantity);
+console.log("상품정보:", inputProductInfo);
+
+
+
+
+// // global 변수에 저장되어있는 토큰 가져오기
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+console.log("유저 토큰 : ", userToken);
+
+
+
+
+
+
+
+var imageUrl = runtimeScene.getGame().getVariables().get("imageurl")._str;
+console.log("이미지 url:", imageUrl);
+
+runtimeScene.getVariables().get("imageurlclear").setValue(0);
+
+// 상품 등록 호출 보내기
+var addProductRequest = {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+  body: JSON.stringify({
+    // storeId : runtimeScene.getGame().getVariables().get("storeId")._str,
+    storeId : 8,
+    name : inputProductName,
+    price : inputProductPrice,
+    amount : inputProductQuantity,
+    info : inputProductInfo,
+    imgList : [
+      imageUrl
+      // "https://metapop.s3.ap-northeast-2.amazonaws.com/e249d8d0-1a3a-4a6d-9d18-e9645fad5486.jpeg"
+    ],
+    tableName : "SalesTable1"
+  }),
+}
+
+
+async function addNewProduct(addProductRequest){
+  try{
+    const response = await fetch("http://43.201.210.173:8080/products/register", addProductRequest);
+    if(response.ok){
+      const data = await response.text();
+      console.log(data);
+      // runtimeScene.getGame().getVariables().get("MyStoreId").setString(data.id);
+      // console.log("새로운 스토어 아이디 호출 결과 :", runtimeScene.getGame().getVariables().get("MyStoreId")._str); 
+      runtimeScene.getVariables().get("imageurlclear").setValue(1);
+    }
+    else{
+      console.error("Request failed with status: ", response.status);
+    }
+  } catch(error){
+    console.error("An error occured: ", error);
+  }
+}
+
+
+addNewProduct(addProductRequest)
+
+
+
+
+
+};
+gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0xee5f78(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x19c3f00 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2743,17 +2875,17 @@ console.log('boolen check : ', buy_status)
 buyStatusVariable.setBoolean(buy_status);
 
 };
-gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x142faa0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x19c3f00(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1741c28 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1502430 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2772,17 +2904,17 @@ if(products[0].quantity < products[0].amount){
 
 
 };
-gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1741c28(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1502430(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1acdf18 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1501b88 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2800,17 +2932,17 @@ if(products[0].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1acdf18(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1501b88(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x17411e0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x19c15f8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2828,17 +2960,17 @@ if(products[1].quantity < products[1].amount){
     runtimeScene.getVariables().get("products").setString(updatedProductsString);
 }
 };
-gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x17411e0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x19c15f8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x17413d0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x9180e8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2856,17 +2988,17 @@ if(products[1].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x17413d0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x9180e8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x180a458 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x9182e8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2884,17 +3016,17 @@ if(products[2].quantity < products[2].amount){
     runtimeScene.getVariables().get("products").setString(updatedProductsString);
 }
 };
-gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x180a458(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x9182e8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x17407c0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x14a2eb0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2912,17 +3044,17 @@ if(products[2].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x17407c0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x14a2eb0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1740868 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x91bb40 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2941,17 +3073,17 @@ if(products[3].quantity < products[3].amount){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1740868(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x91bb40(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x173f188 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1174e18 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2969,17 +3101,17 @@ if(products[3].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x173f188(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1174e18(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x138dae8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x19c6238 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3058,17 +3190,17 @@ fetch("http://43.201.210.173:8080/users/info", userInfoRequest)
   });
 
 };
-gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x138dae8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x19c6238(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x128ebe0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x19c5e38 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 let orderListString = runtimeScene.getVariables().get("orderList").getAsString();
@@ -3107,17 +3239,17 @@ depositInfoObject.setString(depositInfo);
 
 
 };
-gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x128ebe0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x19c5e38(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1a3f220 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x93b168 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3132,12 +3264,12 @@ detailInfoObject.setString(products[0].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[0].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1a3f220(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x93b168(runtimeScene);
 
 }
 
@@ -3160,7 +3292,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1430bb0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x93d8c8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3175,12 +3307,12 @@ detailInfoObject.setString(products[1].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[1].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1430bb0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x93d8c8(runtimeScene);
 
 }
 
@@ -3203,7 +3335,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x159eb90 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x93c1a8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3218,12 +3350,12 @@ detailInfoObject.setString(products[2].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[2].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x159eb90(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x93c1a8(runtimeScene);
 
 }
 
@@ -3246,7 +3378,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1740e40 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x93a928 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3261,12 +3393,12 @@ detailInfoObject.setString(products[3].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[3].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList26 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1740e40(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x93a928(runtimeScene);
 
 }
 
@@ -3289,7 +3421,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.eventsList27 = function(runtimeScene) {
 
 {
 
@@ -3319,7 +3451,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDDoor1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDDoor3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32sceneCode.GDDoor1Objects1, "Door3": gdjs.Store_32sceneCode.GDDoor3Objects1, "Door2": gdjs.Store_32sceneCode.GDDoor2Objects1});
-gdjs.Store_32sceneCode.userFunc0x196c3c8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x13f92f0 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -3352,17 +3484,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Store_32sceneCode.eventsList26 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList28 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x196c3c8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f92f0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList27 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -5494,7 +5626,7 @@ gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x19514c0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f83a8(runtimeScene);
 
 }
 
@@ -5502,7 +5634,7 @@ gdjs.Store_32sceneCode.userFunc0x19514c0(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xa5f540(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x13f8738(runtimeScene);
 
 }
 
@@ -5940,6 +6072,72 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 
 {
 
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("imageTrue"), false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ImageButton"), gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[k] = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("imageTrue"), false);
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+gdjs.Store_32sceneCode.userFunc0x1285108(runtimeScene);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("uploadState")) == 1;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_Image_Sprite"), gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1);
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(21)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductRegister_9595Image_9595SpriteObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1[i].setWidth(120);
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1[i].setHeight(120);
+}
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("ProductRegister_FinishButton"), gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1);
 
 let isConditionTrue_0 = false;
@@ -5953,10 +6151,28 @@ for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductRegister_95FinishButt
 }
 gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1.length = k;
 if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("imageurlclear")) == 1;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductRegister_CancelButton"), gdjs.Store_32sceneCode.GDProductRegister_95CancelButtonObjects1);
-/* Reuse gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_FinishButton"), gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ImageButton"), gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductRegister_Image_Sprite"), gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ProductInfo"), gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1);
@@ -6001,30 +6217,25 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.lengt
 for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
-}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
-}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
-}}
-
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductNameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductNameObjects1[i].hide();
 }
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ImageButton"), gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length;i<l;++i) {
-    if ( gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[k] = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i];
-        ++k;
-    }
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductPriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductPriceObjects1[i].hide();
 }
-gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.func(runtimeScene, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU", "assets/Add_Image.png", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i].hide();
+}
+}{runtimeScene.getGame().getVariables().getFromIndex(21).setString("");
 }}
 
 }
@@ -6258,7 +6469,7 @@ gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
@@ -6281,7 +6492,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -6304,7 +6515,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
 }
 
 }
@@ -6327,7 +6538,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
@@ -6350,7 +6561,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
@@ -6373,7 +6584,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
@@ -6396,7 +6607,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -6419,7 +6630,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -6442,7 +6653,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 }
@@ -6570,7 +6781,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
 }
 
 }
@@ -6773,7 +6984,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDTransparentBackgroundObjects1.leng
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 }
@@ -7011,7 +7222,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
@@ -7139,7 +7350,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
@@ -7267,7 +7478,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList25(runtimeScene);} //End of subevents
 }
 
 }
@@ -7395,7 +7606,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -7456,7 +7667,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList25(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -7483,7 +7694,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList26(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -8428,7 +8639,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = 0;
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length = 0;
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3.length = 0;
 
-gdjs.Store_32sceneCode.eventsList27(runtimeScene);
+gdjs.Store_32sceneCode.eventsList29(runtimeScene);
 
 return;
 

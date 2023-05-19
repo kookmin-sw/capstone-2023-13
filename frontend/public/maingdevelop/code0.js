@@ -573,7 +573,7 @@ gdjs.Character_32custom_32sceneCode.GDBlueBarObjects1= [];
 gdjs.Character_32custom_32sceneCode.GDBlueBarObjects2= [];
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xf89cb0 = function(runtimeScene) {
+gdjs.Character_32custom_32sceneCode.userFunc0x13f5298 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -624,12 +624,12 @@ gdjs.Character_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xf89cb0(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0x13f5298(runtimeScene);
 
 }
 
 
-};gdjs.Character_32custom_32sceneCode.userFunc0xa5e548 = function(runtimeScene) {
+};gdjs.Character_32custom_32sceneCode.userFunc0x13f99f8 = function(runtimeScene) {
 "use strict";
 const userBody = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const userEye = runtimeScene.getGame().getVariables().get("UserEye")._str;
@@ -740,7 +740,7 @@ gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0xa5e548(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0x13f99f8(runtimeScene);
 
 }
 

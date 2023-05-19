@@ -94,6 +94,39 @@ export const OrderNo = styled.div`
     }
 `;
 
+export const StateButtons = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const StartDeliveryBtn = styled.button`
+    width: 120px;
+    height: 120px;
+
+    background: #FFFFFF;
+    border: 3px solid #775EEE;
+    border-radius: 20px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+
+    cursor: pointer;
+
+    > span {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+
+        color: #775EEE;
+    }
+`;
+
 export const CancelOrderBtn = styled.button`
     width: 120px;
     height: 120px;
@@ -137,6 +170,8 @@ export const PurchasedItemList = styled.div`
     padding: 0 74px 0 74px;
     justify-content: space-around;
     width: 950px;
+    height: 250px;
+    overflow: scroll;
     /* margin-left: 128px; */
 `;
 

@@ -2,18 +2,19 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import * as styled from './styles';
 
-const PurchaseDetail = ({ onPage, onClose, orderId }) => {
+const PurchaseDetail = ({ onPage, onClose }) => {
+    const [buyerid, setbuyerid] = useState("");
+    const [sellerid, setsellerid] = useState("");
     const [storename, setstorename] = useState("");
     const [orderdate, setorderdate] = useState("");
     const [accountinfo, setaccountinfo] = useState("");
     const [totalprice, settotalprice] = useState("");
     const [productlist, setproductlist] = useState([]);
     const [deliverstate, setdeliverstate] = useState("");
+    const [deliverstatenumber, setdeliverstatenumber] = useState("");
     const [productDetails, setProductDetails] = useState([]);
 
 
-
-    // console.log("orderid: ", orderId);
 
     function closeClick() {
         console.log("close")
@@ -46,11 +47,11 @@ const PurchaseDetail = ({ onPage, onClose, orderId }) => {
 
 
     useEffect(() => {
-        const orders_id = 4;
+        const orders_id = 5;
         let token = localStorage.getItem('login-token');
 
         const fetchData = async () => {
-            try {
+            try { 
                 const response = await axios.get(
                     `http://43.201.210.173:8080/orders/info/detail/${orders_id}`,
                     {
@@ -68,6 +69,9 @@ const PurchaseDetail = ({ onPage, onClose, orderId }) => {
                 setaccountinfo(JSON.stringify(response.data.sellerId.bank).replace(/"/g, '') + "   " + JSON.stringify(response.data.sellerId.account).replace(/"/g, ''));
                 settotalprice(JSON.stringify(response.data.totalPrice));
                 setdeliverstate(JSON.stringify(response.data.state));
+                setdeliverstatenumber(JSON.stringify(response.data.state));
+                setbuyerid(JSON.stringify(response.data.buyerId.id));
+                setsellerid(JSON.stringify(response.data.sellerId.id));
 
                 function formatDate(dateString) {
                     const date = new Date(dateString);
@@ -86,8 +90,24 @@ const PurchaseDetail = ({ onPage, onClose, orderId }) => {
                 const dateString = tmpDate;
                 setorderdate(formatDate(dateString));
 
+                switch (response.data.state) {
+                    case 0:
+                        setdeliverstate('입금 확인 전');
+                        break;
+                    case 1:
+                        setdeliverstate('배송중');
+                        break;
+                    case 2:
+                        setdeliverstate('거래완료');
+                        break;
+                }
+
                 let productList = JSON.parse(JSON.stringify(response.data.productList));
                 setproductlist(productList);
+
+                // console.log("product list :", productlist);
+
+                
 
                 Promise.all(productList.map(product => 
                     axios.get(
@@ -121,9 +141,38 @@ const PurchaseDetail = ({ onPage, onClose, orderId }) => {
     }, [])
     
     
-    console.log("product details : ", productDetails);
+    // console.log("product details : ", productDetails);
     // console.log("product details : ", productDetails[0].imgList[0]);
 
+    const UpdateProductState = () => {
+        let token = localStorage.getItem('login-token');
+        const orders_id = 5;
+        const response = axios.put(
+            `http://43.201.210.173:8080/orders/update/${orders_id}`,
+            {
+                "buyerId": buyerid,
+                "sellerId": sellerid,
+                "state": 2,
+                "totalPrice": totalprice,
+                "productListId": productlist
+            },
+            {
+                headers: {
+                    'Authorization': `${token}`,
+                    'accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            }
+        )
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                backClick();
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    }
 
 
     return (
@@ -140,19 +189,29 @@ const PurchaseDetail = ({ onPage, onClose, orderId }) => {
                         <span>스토어 이름 : {storename}</span>
                         <span>주문 날짜 : {orderdate}</span>
                         <span>입금 정보 : {accountinfo}</span>
+                        <span>주문 상태 : {deliverstate}</span>
                         <span>총 주문 금액 : {totalprice}원</span>
                     </styled.OrderNo>
-                    <styled.CancelOrderBtn>
-                        <span>구매</span>
-                        <span>취소</span>
-                    </styled.CancelOrderBtn>
+                    {deliverstatenumber === '0' && (
+                        <styled.CancelOrderBtn>
+                            <span>구매</span>
+                            <span>취소</span>
+                        </styled.CancelOrderBtn>
+                    )}
+                    {deliverstatenumber === '1' && (
+                        <styled.StartDeliveryBtn onClick={() => { UpdateProductState() }}>
+                            <span>거래</span>
+                            <span>완료</span>
+                        </styled.StartDeliveryBtn>
+                    )}
+
                 </styled.AboutOrderInnerDiv>
             </styled.AboutOrder>
             <styled.ItemBox>
                 <styled.PurchasedItemList>
                     {productDetails.map((product) => (
                         <styled.PurchasedItem>
-                            <styled.ProductImg src={product.imageList}/>
+                            <styled.ProductImg src={product.imgList[0]}/>
                             <styled.ProductInfo>
                                 <styled.ProductName>
                                     <span>{product.name}</span>
