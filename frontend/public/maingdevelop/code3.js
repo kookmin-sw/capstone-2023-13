@@ -519,6 +519,7 @@ gdjs.Store_32custom_32sceneCode.GDNewTextObjects2= [];
 
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile1Objects1Objects = Hashtable.newFrom({"Tile1": gdjs.Store_32custom_32sceneCode.GDTile1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDWall1Objects1Objects = Hashtable.newFrom({"Wall1": gdjs.Store_32custom_32sceneCode.GDWall1Objects1});
+gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDOpenItemListButtonObjects1Objects = Hashtable.newFrom({"OpenItemListButton": gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile1Objects1Objects = Hashtable.newFrom({"Tile1": gdjs.Store_32custom_32sceneCode.GDTile1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile2Objects1Objects = Hashtable.newFrom({"Tile2": gdjs.Store_32custom_32sceneCode.GDTile2Objects1});
@@ -962,7 +963,7 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1.leng
 }
 
 
-};gdjs.Store_32custom_32sceneCode.userFunc0x1ae9148 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.userFunc0x20793c8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
@@ -1004,12 +1005,12 @@ gdjs.Store_32custom_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x1ae9148(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x20793c8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32custom_32sceneCode.userFunc0x1ae9618 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.userFunc0x2081358 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
@@ -1151,21 +1152,16 @@ var addStoreRequest = {
     tableList : tableList,
   }),
 }
+fetch("http://43.201.210.173:8080/" + storeHttp + "izings/register", addStoreRequest)
+.then((res) => res.text())
+.then((data) => {
+    runtimeScene.getVariables().get("StoreCustomSuccess").setNumber(1);
+})
+.catch((error) => {
+    console.log("Error fetching data:", error);
+});
 
-var c = 0;
-
-if (c !== 1) {
-    fetch("http://43.201.210.173:8080/" + storeHttp + "izings/register", addStoreRequest)
-    .then((res) => res.text())
-    .then((data) => {
-        runtimeScene.getVariables().get("StoreCustomSuccess").setNumber(1);
-    })
-    .catch((error) => {
-        console.log("Error fetching data:", error);
-    });
-}
-
-c = 1;
+console.log("hi");
 
 runtimeScene.getGame().getVariables().get("IsStoreAdded").setNumber(0);
 };
@@ -1174,7 +1170,7 @@ gdjs.Store_32custom_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x1ae9618(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x2081358(runtimeScene);
 
 }
 
@@ -1202,6 +1198,8 @@ gdjs.copyArray(runtimeScene.getObjects("SalesTable7"), gdjs.Store_32custom_32sce
 gdjs.copyArray(runtimeScene.getObjects("SalesTable8"), gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable9"), gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1);
 gdjs.copyArray(runtimeScene.getObjects("TextInput"), gdjs.Store_32custom_32sceneCode.GDTextInputObjects1);
+gdjs.Store_32custom_32sceneCode.GDDoor1Objects1.length = 0;
+
 gdjs.Store_32custom_32sceneCode.GDTile1Objects1.length = 0;
 
 gdjs.Store_32custom_32sceneCode.GDWall1Objects1.length = 0;
@@ -1262,6 +1260,13 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1.leng
 }
 }{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDWall1Objects1.length ;i < len;++i) {
     gdjs.Store_32custom_32sceneCode.GDWall1Objects1[i].setWidth(1240);
+}
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects, 608, 43, "");
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDoor1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDoor1Objects1[i].setZOrder(4);
+}
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDoor1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDoor1Objects1[i].setSize(64, 80);
 }
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Store custom Item list", 0, 0);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Store custom Item Tile", 0, 0);
@@ -7987,18 +7992,6 @@ for (var i = 0, k = 0, l = gdjs.Store_32custom_32sceneCode.GDBlueButtonWithShado
     }
 }
 gdjs.Store_32custom_32sceneCode.GDBlueButtonWithShadowObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("doorCreated")) == 1;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("tileCreated")) == 1;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("wallCreated")) == 1;
-}
-}
-}
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
 }
