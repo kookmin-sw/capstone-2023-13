@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\User\\Desktop\\4-1학기\\캡스톤\\메타팝 클론\\4\\capstone-2023-13\\frontend\\public\\maingdevelop",
+    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -11440,6 +11440,19 @@
         "name": "assets\\Square\\Square_Tiels\\ME_Singles_Terrains_and_Fences_48x48_Grass_Water_1_22.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Del Key.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Del Key.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Keyboard/Light/1e3d6c296439dbb3e80b0d490f9b7cc17e5dbf2bd3aacebcc06d585b96d5c580_Del Key.png",
+          "name": "Del Key.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -26720,7 +26733,7 @@
           "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets/Store_Internal/Tile/office/Sprite 108.png",
+          "texture": "assets/Store_Internal/Tile/office/Sprite 108_1.png",
           "tiled": false,
           "topMargin": 0,
           "width": 32
@@ -26730,7 +26743,7 @@
           "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets/Store_Internal/Tile/office/Sprite 108.png",
+          "texture": "assets/Store_Internal/Tile/office/Sprite 108_1.png",
           "tiled": false,
           "topMargin": 0,
           "width": 32
@@ -26755,7 +26768,7 @@
           "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets/Store_Internal/Tile/office/Sprite 108.png",
+          "texture": "assets/Store_Internal/Tile/office/Sprite 108_1.png",
           "tiled": false,
           "topMargin": 0,
           "width": 32
@@ -36037,6 +36050,39 @@
       "objects": [
         {
           "name": "WallSide"
+        },
+        {
+          "name": "Square_Things59"
+        },
+        {
+          "name": "Square_Things58"
+        },
+        {
+          "name": "Square_Things65"
+        },
+        {
+          "name": "Square_Things57"
+        },
+        {
+          "name": "Square_Things47"
+        },
+        {
+          "name": "Square_Things48"
+        },
+        {
+          "name": "Square_Things32"
+        },
+        {
+          "name": "Square_Things1"
+        },
+        {
+          "name": "Square_Things2"
+        },
+        {
+          "name": "Square_Things12"
+        },
+        {
+          "name": "Square_Things13"
         }
       ]
     },
@@ -36455,6 +36501,12 @@
     {
       "folded": true,
       "name": "StorePeriod",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "OwnerNickname",
       "type": "string",
       "value": ""
     },
@@ -39922,6 +39974,9 @@
             },
             {
               "name": "popup3_delete_button"
+            },
+            {
+              "name": "popup3_Info"
             }
           ]
         }
@@ -41828,9 +41883,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "샤넬 & 디올 콜라보 스토어",
+          "string": "",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 30,
           "color": {
             "b": 0,
@@ -41850,9 +41905,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "2023.04.20 ~ 2023.05.20",
+          "string": "",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 17,
           "color": {
             "b": 0,
@@ -41872,10 +41927,32 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "판매자 닉네임",
+          "string": "",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 18,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "popup3_Info",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 24,
           "color": {
             "b": 0,
             "g": 0,
@@ -47634,21 +47711,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 100,
-          "layer": "",
-          "name": "GreyTable",
-          "persistentUuid": "d2d5df8c-bbcb-4b8d-8cc6-8818b50db5af",
-          "width": 200,
-          "x": 520,
-          "y": 401,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 37,
           "layer": "UI Layer",
           "name": "TextInput",
@@ -47657,21 +47719,6 @@
           "x": 0,
           "y": 560,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "SalesTable1",
-          "persistentUuid": "259c5f77-0112-4fe5-88a1-3b9296fa299d",
-          "width": 0,
-          "x": 360,
-          "y": 206,
-          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -51801,6 +51848,69 @@
               "width": 32
             }
           }
+        },
+        {
+          "assetStoreId": "12367b2e06a96558cabeee46330e18858618b9ef3787d2d2482606db16a1a8a4",
+          "name": "DelKey",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Del Key.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "오브젝트 삭제 모드",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 187
+          }
         }
       ],
       "events": [
@@ -51884,6 +51994,101 @@
               },
               "parameters": [
                 "TextInput",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Tile1",
+                "0",
+                "96",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Tile1",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::SetSize"
+              },
+              "parameters": [
+                "Tile1",
+                "1280",
+                "624"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Wall1",
+                "20",
+                "27",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Wall1",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::Width"
+              },
+              "parameters": [
+                "Wall1",
+                "=",
+                "1240"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Store custom Item list\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Store custom Item Tile\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "OpenItemListButton",
                 ""
               ]
             }
@@ -52031,6 +52236,15 @@
               },
               "parameters": [
                 "NextButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "DelKey",
                 ""
               ]
             },
@@ -56085,6 +56299,293 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Delete Item"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "DelKey",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "deleteMode",
+                    "=",
+                    "\"1\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "NewText",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "deleteMode",
+                "=",
+                "\"0\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "NewText"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "deleteMode",
+                "=",
+                "\"1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "DecoTileGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "DecoTileGroup",
+                    "="
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "deleteMode",
+                "=",
+                "\"1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "DecoWallGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "DecoWallGroup",
+                    "="
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "deleteMode",
+                "=",
+                "\"1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "SaleTableGroup",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "SaleTableGroup",
+                    "="
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "deleteMode",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "NewText"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Link",
           "include": {
             "includeConfig": 0
@@ -56501,13 +57002,13 @@
                 "    outfit.setY(o.getY())",
                 "    outfit.setZOrder(o.getZOrder()+1)",
                 "",
-                "    if(o.user_id === runtimeScene.user_id){",
-                "        var camX = runtimeScene.getLayer(\"\").getCameraX(o.user_id)",
-                "        var camY = runtimeScene.getLayer(\"\").getCameraY(o.user_id)",
-                "        // console.log(camX, \" \", camY);",
-                "        runtimeScene.getLayer(\"\").setCameraX(lerp(camX,o.getX(),0.8), o.user_id)",
-                "        runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id)",
-                "    }",
+                "    // if(o.user_id === runtimeScene.user_id){",
+                "    //     var camX = runtimeScene.getLayer(\"\").getCameraX(o.user_id)",
+                "    //     var camY = runtimeScene.getLayer(\"\").getCameraY(o.user_id)",
+                "    //     // console.log(camX, \" \", camY);",
+                "    //     runtimeScene.getLayer(\"\").setCameraX(lerp(camX,o.getX(),0.8), o.user_id)",
+                "    //     runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id)",
+                "    // }",
                 "",
                 "}",
                 "",
@@ -56617,10 +57118,10 @@
                 "                eye : Eye,",
                 "                outfit : Outfit,",
                 "            },",
-                "            dir : \"del\", ",
-                "            X: 0, ",
-                "            Y: 0, ",
-                "            Z: 0",
+                "            dir : \"down\", ",
+                "            X: -10000, ",
+                "            Y: -10000, ",
+                "            Z: -10000",
                 "        }",
                 "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
@@ -56693,7 +57194,7 @@
             "    return;",
             "}",
             "",
-            "const movementSpeed = 0.66 * runtimeScene.getTimeManager().getElapsedTime();",
+            "const movementSpeed = 0.44 * runtimeScene.getTimeManager().getElapsedTime();",
             "let id = runtimeScene.user_id;",
             "let x = user.getX();",
             "let y = user.getY();",
@@ -56880,6 +57381,7 @@
                 "        };",
                 "        runtimeScene.ws.send(JSON.stringify(update));",
                 "    }",
+                "    //movement(e);",
                 "}",
                 "",
                 "function refreshUsers(e) {",
@@ -57077,11 +57579,17 @@
                 "    if(o.user_id === runtimeScene.user_id){",
                 "        var camX = runtimeScene.getLayer(\"\").getCameraX(o.user_id)",
                 "        var camY = runtimeScene.getLayer(\"\").getCameraY(o.user_id)",
-                "        // console.log(camX, \" \", camY);",
-                "        runtimeScene.getLayer(\"\").setCameraX(lerp(camX,o.getX(),0.8), o.user_id)",
-                "        runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id)",
+                "        var bodyX = o.getX();",
+                "        var bodyY = o.getY();",
+                "        if (bodyX > -1000 && bodyX < 1034) {",
+                "            runtimeScene.getLayer(\"\").setCameraX(lerp(camX,o.getX(),0.8), o.user_id);",
+                "        }",
+                "        if (bodyY > -1133 && bodyY < 637) {",
+                "            runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id);",
+                "        }",
+                "        console.log(bodyX);",
+                "        console.log(bodyY);",
                 "    }",
-                "",
                 "}",
                 "",
                 "function disconnectWebSocket(runtimeScene) {",
@@ -57190,10 +57698,10 @@
                 "                eye : Eye,",
                 "                outfit : Outfit,",
                 "            },",
-                "            dir : \"del\", ",
-                "            X: 0, ",
-                "            Y: 0, ",
-                "            Z: 0",
+                "            dir : \"down\", ",
+                "            X: -10000, ",
+                "            Y: -10000, ",
+                "            Z: -10000",
                 "        }",
                 "        runtimeScene.ws.send(JSON.stringify(update));",
                 "        runtimeScene.ws.close();",
@@ -57268,7 +57776,7 @@
             "    return;",
             "}",
             "",
-            "const movementSpeed = 0.66 * runtimeScene.getTimeManager().getElapsedTime();",
+            "const movementSpeed = 0.44 * runtimeScene.getTimeManager().getElapsedTime();",
             "let id = runtimeScene.user_id;",
             "let x = user.getX();",
             "let y = user.getY();",
@@ -57280,25 +57788,33 @@
             "",
             "if (input.isKeyPressed(LEFTKEY)) {",
             "    moved = true;",
-            "    x -= movementSpeed;",
+            "    if (x > -1625) {",
+            "        x -= movementSpeed;",
+            "    }",
             "    dir = \"left\";",
             "}",
             "",
             "else if (input.isKeyPressed(RIGHTKEY)) {",
             "    moved = true;",
-            "    x += movementSpeed",
+            "    if (x < 1627) {",
+            "        x += movementSpeed;",
+            "    }",
             "    dir = \"right\";",
             "}",
             "",
             "else if (input.isKeyPressed(UPKEY)) {",
             "    moved = true",
-            "    y -= movementSpeed;",
+            "    if (y > -1197) {",
+            "        y -= movementSpeed;",
+            "    }",
             "    dir = \"up\";",
             "}",
             "",
             "else if (input.isKeyPressed(DOWNKEY)) {",
             "    moved = true;",
-            "    y += movementSpeed;",
+            "    if (y < 835) {",
+            "        y += movementSpeed;",
+            "    }",
             "    dir = \"down\";",
             "}",
             "",
@@ -73669,14 +74185,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -73689,7 +74205,7 @@
                   ],
                   "parameterObjects": "",
                   "useStrict": true,
-                  "eventsSheetExpanded": false
+                  "eventsSheetExpanded": true
                 }
               ]
             },
@@ -73775,14 +74291,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -73881,14 +74397,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -73987,14 +74503,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74093,14 +74609,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74199,14 +74715,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74305,14 +74821,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74411,14 +74927,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74517,14 +75033,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74623,14 +75139,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74729,14 +75245,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74835,14 +75351,14 @@
                     "  try {",
                     "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
                     "    if (response.ok) {",
-                    "      const data = await response.json();",
+                    "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
-                    "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
-                    "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
-                    "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
-                    "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
+                    "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
+                    "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
+                    "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
+                    "      // console.log(\"스토어 아이디 : \", storeId);",
+                    "      // console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -74945,6 +75461,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -74961,7 +75482,7 @@
                   ],
                   "parameterObjects": "",
                   "useStrict": true,
-                  "eventsSheetExpanded": false
+                  "eventsSheetExpanded": true
                 }
               ]
             },
@@ -75051,6 +75572,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75067,7 +75593,7 @@
                   ],
                   "parameterObjects": "",
                   "useStrict": true,
-                  "eventsSheetExpanded": false
+                  "eventsSheetExpanded": true
                 }
               ]
             },
@@ -75157,6 +75683,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75263,6 +75794,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75369,6 +75905,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75475,6 +76016,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75581,6 +76127,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75687,6 +76238,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -75708,7 +76264,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -75793,10 +76348,13 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -75899,6 +76457,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -76005,6 +76568,11 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      console.log(\"스토어 아이디 : \", storeId);",
@@ -76026,7 +76594,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -76111,10 +76678,13 @@
                     "      console.log(\"Get호출 : \", data);",
                     "      runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreName\").setString(data.name);",
+                    "      runtimeScene.getGame().getVariables().get(\"StorePeriod\").setString(data.period);",
+                    "      runtimeScene.getGame().getVariables().get(\"OwnerNickname\").setString(data.owner.nickname);",
+                    "      runtimeScene.getGame().getVariables().get(\"StoreInfo\").setString(data.info);",
+                    "      runtimeScene.getVariables().get(\"getStoreInfo\").setNumber(1);",
                     "      var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
-                    "      console.log(\"스토어 아이디 : \", storeId);",
-                    "      console.log(\"스토어 판매자 : \", ownerId);",
                     "    } else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
@@ -76129,6 +76699,63 @@
                   "useStrict": true,
                   "eventsSheetExpanded": false
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "getStoreInfo",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "popup3_store_name",
+                "=",
+                "GlobalVariableString(StoreName)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "popup3_period_text",
+                "=",
+                "GlobalVariableString(StorePeriod)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "popup3_nickname",
+                "=",
+                "\"판매자 닉네임 : \" + GlobalVariableString(OwnerNickname)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "popup3_Info",
+                "=",
+                "GlobalVariableString(StoreInfo)"
               ]
             }
           ]
@@ -76243,6 +76870,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -77254,6 +77882,213 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "Lim98SE",
+      "category": "Input",
+      "extensionNamespace": "",
+      "fullName": "Cursor object",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWN1cnNvci1kZWZhdWx0LW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAuMDcsMTQuMjdDMTAuNTcsMTQuMDMgMTEuMTYsMTQuMjUgMTEuNCwxNC43NUwxMy43LDE5Ljc0TDE1LjUsMTguODlMMTMuMTksMTMuOTFDMTIuOTUsMTMuNDEgMTMuMTcsMTIuODEgMTMuNjcsMTIuNThMMTMuOTUsMTIuNUwxNi4yNSwxMi4wNUw4LDUuMTJWMTUuOUw5LjgyLDE0LjQzTDEwLjA3LDE0LjI3TTEzLjY0LDIxLjk3QzEzLjE0LDIyLjIxIDEyLjU0LDIyIDEyLjMxLDIxLjVMMTAuMTMsMTYuNzZMNy42MiwxOC43OEM3LjQ1LDE4LjkyIDcuMjQsMTkgNywxOUExLDEgMCAwLDEgNiwxOFYzQTEsMSAwIDAsMSA3LDJDNy4yNCwyIDcuNDcsMi4wOSA3LjY0LDIuMjNMNy42NSwyLjIyTDE5LjE0LDExLjg2QzE5LjU3LDEyLjIyIDE5LjYyLDEyLjg1IDE5LjI3LDEzLjI3QzE5LjEyLDEzLjQ1IDE4LjkxLDEzLjU3IDE4LjcsMTMuNjFMMTUuNTQsMTQuMjNMMTcuNzQsMTguOTZDMTgsMTkuNDYgMTcuNzYsMjAuMDUgMTcuMjYsMjAuMjhMMTMuNjQsMjEuOTdaIiAvPjwvc3ZnPg==",
+      "name": "MouseHelper",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/8f81db7cf269c88bf0b13f816ee501ae786b3f15526d59c9d0005da09c13a18d_cursor-default-outline.svg",
+      "shortDescription": "Turn any object into a cursor.",
+      "version": "2.0.0",
+      "description": [
+        "This extension allows to replace the cursor with an object.",
+        "",
+        "Breaking change of the version 2.0.0:",
+        "- The button behavior has been removed. The button object can be used instead. Some ready to use buttons can be downloaded from the [Buttons pack](https://editor.gdevelop.io/?initial-dialog=asset-store&asset-pack=menu-buttons-menu-buttons) of the asset store."
+      ],
+      "origin": {
+        "identifier": "MouseHelper",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "mouse",
+        "cursor"
+      ],
+      "authorIds": [],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Turn any object into a mouse cursor.",
+          "fullName": "Cursor",
+          "name": "cursor",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "CacheSouris"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "MouseHelper::cursor",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CursorX()",
+                        "=",
+                        "CursorY()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "MouseHelper::cursor",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "CacheSouris"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "MouseHelper::cursor",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onDeActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MontreSouris"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "MouseHelper::cursor",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "",
       "category": "Movement",
@@ -88826,7 +89661,7 @@
           "layer": "Popup Layer",
           "name": "popup3_white_background",
           "persistentUuid": "a5837d32-1682-4b25-92af-feeddc797bba",
-          "width": 694,
+          "width": 700,
           "x": 323,
           "y": 105,
           "zOrder": 32,
@@ -88841,8 +89676,8 @@
           "layer": "Popup Layer",
           "name": "BlueTitlePopup",
           "persistentUuid": "13142494-80fd-4654-8142-8ae92ad1209c",
-          "width": 693,
-          "x": 324,
+          "width": 700,
+          "x": 323,
           "y": 105,
           "zOrder": 33,
           "numberProperties": [],
@@ -88858,7 +89693,7 @@
           "persistentUuid": "8921b96e-798f-4dab-80ec-176eddde4b15",
           "width": 0,
           "x": 366,
-          "y": 127,
+          "y": 125,
           "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
@@ -88866,14 +89701,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 35,
           "layer": "Popup Layer",
           "name": "popup3_store_name",
           "persistentUuid": "a6ee248d-6c95-4c0c-893c-a2b3207f4c13",
-          "width": 0,
-          "x": 520,
-          "y": 196,
+          "width": 700,
+          "x": 323,
+          "y": 194,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -88881,14 +89716,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 40,
           "layer": "Popup Layer",
           "name": "popup3_period_text",
           "persistentUuid": "f3b64499-e5b5-40ff-bfb7-2e8b97b3bf8d",
-          "width": 0,
-          "x": 569,
-          "y": 245,
+          "width": 700,
+          "x": 323,
+          "y": 249,
           "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
@@ -88896,13 +89731,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 40,
           "layer": "Popup Layer",
           "name": "popup3_nickname",
           "persistentUuid": "5f79ae8e-877a-4493-a17e-35604a282f7c",
-          "width": 0,
-          "x": 616,
+          "width": 700,
+          "x": 323,
           "y": 280,
           "zOrder": 37,
           "numberProperties": [],
@@ -88953,6 +89788,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 150,
+          "layer": "Popup Layer",
+          "name": "popup3_Info",
+          "persistentUuid": "8c24acfd-a1de-4f21-b1c4-4d933c8d34b0",
+          "width": 700,
+          "x": 323,
+          "y": 333,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -88965,7 +89815,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988877,
+        "zoomFactor": 0.5117784035210182,
         "windowMask": false
       }
     },
@@ -89334,7 +90184,7 @@
           "name": "popup1_cancel_btn",
           "persistentUuid": "472dd374-444a-43b0-94ad-c3d2c56fa834",
           "width": 163,
-          "x": 478,
+          "x": 473,
           "y": 447,
           "zOrder": 30,
           "numberProperties": [],
@@ -89349,7 +90199,7 @@
           "name": "popup1_ok_btn",
           "persistentUuid": "f07429b8-1bc5-4046-aed6-e8f9b1f01248",
           "width": 165,
-          "x": 676,
+          "x": 671,
           "y": 446,
           "zOrder": 30,
           "numberProperties": [],
@@ -89364,8 +90214,8 @@
           "name": "popup1_inner_text",
           "persistentUuid": "71a36e02-600b-4308-a7e5-c1ede2528b67",
           "width": 0,
-          "x": 340,
-          "y": 235,
+          "x": 392,
+          "y": 243,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -89382,7 +90232,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.26364576737708023,
+        "zoomFactor": 0.4481978045410361,
         "windowMask": false
       }
     },
@@ -108283,7 +109133,7 @@
           "name": "Square_Tile9",
           "persistentUuid": "e94172b9-e2bc-40e4-aea7-e9d29408c321",
           "width": 64,
-          "x": -928,
+          "x": -927,
           "y": -576,
           "zOrder": 1,
           "numberProperties": [],
@@ -108328,7 +109178,7 @@
           "name": "Square_Tile9",
           "persistentUuid": "ce21d757-17f7-4bdb-af00-03b34c835645",
           "width": 64,
-          "x": -928,
+          "x": -927,
           "y": -512,
           "zOrder": 1,
           "numberProperties": [],
@@ -108418,7 +109268,7 @@
           "name": "Square_Tile9",
           "persistentUuid": "a7edc885-5c40-4455-b101-87355e72d14c",
           "width": 64,
-          "x": -928,
+          "x": -927,
           "y": -640,
           "zOrder": 1,
           "numberProperties": [],
@@ -120304,6 +121154,1596 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "9be3da28-f552-4501-a2cc-0df3643473ee",
+          "width": 64,
+          "x": -1088,
+          "y": 480,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "08adc0d6-9394-4e93-9a9a-714ac46b5b9f",
+          "width": 64,
+          "x": -1088,
+          "y": 416,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "fac6a464-3ba6-4b8d-9ce0-eded0b236ee4",
+          "width": 64,
+          "x": -1088,
+          "y": 352,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "c1b30f9f-aecb-4e8a-b77b-22c705f29244",
+          "width": 64,
+          "x": -1088,
+          "y": 288,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "b8355960-9168-4428-b15e-ab9bb60b7a83",
+          "width": 64,
+          "x": -1088,
+          "y": 224,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "0b9b8ef1-fc27-4d83-a224-ea09db6e9bd4",
+          "width": 64,
+          "x": -1088,
+          "y": 160,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "d30ff116-3c3a-4499-b11a-557f32a23952",
+          "width": 64,
+          "x": -1152,
+          "y": 480,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "f29dd85b-62bd-4b26-9248-f5c00ba68842",
+          "width": 64,
+          "x": -1152,
+          "y": 416,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "9ec50c64-5c33-48d5-85b6-483360d71c91",
+          "width": 64,
+          "x": -1152,
+          "y": 352,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "32c3dd38-1e6f-4aa3-a1bb-0df69a8461ef",
+          "width": 64,
+          "x": -1152,
+          "y": 288,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "ca171148-cb34-4ea3-a502-a630537adee2",
+          "width": 64,
+          "x": -1152,
+          "y": 224,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile10",
+          "persistentUuid": "282a06d6-9006-4b3f-b347-2b6f165e089e",
+          "width": 64,
+          "x": -1152,
+          "y": 160,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile6",
+          "persistentUuid": "5d0df220-8a89-43af-ba9c-9455f28936d0",
+          "width": 64,
+          "x": -990,
+          "y": 96,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile6",
+          "persistentUuid": "339b2908-e41b-41c3-b541-e14173f4ffbb",
+          "width": 64,
+          "x": -1054,
+          "y": 96,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile6",
+          "persistentUuid": "cd59ea74-9e12-4e2f-81dd-49ee9ccc8a9b",
+          "width": 64,
+          "x": -1118,
+          "y": 96,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile6",
+          "persistentUuid": "bcbb6676-0962-41fe-8866-5402b1a26357",
+          "width": 64,
+          "x": -1180,
+          "y": 96,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "19bc0613-42f3-416b-9bd6-35afe62776e3",
+          "width": 64,
+          "x": -990,
+          "y": -496,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "7250f649-3770-4f55-a32a-1f62219f0a14",
+          "width": 64,
+          "x": -1055,
+          "y": -496,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "ebd0b275-4a91-4da5-a0a8-e68fedfe0e26",
+          "width": 64,
+          "x": -992,
+          "y": -432,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "48101886-7214-4d46-81bf-701a43a1e4cf",
+          "width": 64,
+          "x": -1057,
+          "y": -432,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "01374728-985d-47a6-914c-99550ca3a2a6",
+          "width": 64,
+          "x": -990,
+          "y": -592,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "f176bb6c-6832-449a-9f7a-2cd4bc36e969",
+          "width": 64,
+          "x": -1053,
+          "y": -592,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "e7b7ddaf-3826-485e-89d3-74fa59365def",
+          "width": 64,
+          "x": -991,
+          "y": -528,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "f416187c-2abe-4f0d-906c-650fefec0d5f",
+          "width": 64,
+          "x": -1055,
+          "y": -528,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "5216e789-37b7-49ec-a642-c7108b97148c",
+          "width": 64,
+          "x": -992,
+          "y": -720,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "4765f1fe-f740-48c8-b6ac-b663a8638c47",
+          "width": 64,
+          "x": -1057,
+          "y": -720,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "9e054db8-fffb-4bfa-bfc0-c3bc95fe7f4c",
+          "width": 64,
+          "x": -991,
+          "y": -656,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "a0fc4851-6439-4482-b5a0-6f764081d1f0",
+          "width": 64,
+          "x": -1055,
+          "y": -656,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "c654d5f0-e19a-4cb3-b24e-fa6e1c3fad31",
+          "width": 64,
+          "x": -992,
+          "y": -848,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "9eb859e6-64de-4cdf-9043-df813c6491eb",
+          "width": 64,
+          "x": -1058,
+          "y": -848,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "ecd84c28-3cba-41d5-a17c-98ab81008342",
+          "width": 64,
+          "x": -992,
+          "y": -784,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "bac4ac4c-3010-4eaa-9d1d-229170eda558",
+          "width": 64,
+          "x": -1058,
+          "y": -784,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things20",
+          "persistentUuid": "cc58b4ea-c01e-483c-841a-e671e8ce65f4",
+          "width": 0,
+          "x": -972,
+          "y": -529,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things22",
+          "persistentUuid": "05b809e3-9a2b-41ea-962e-a195610922e2",
+          "width": 0,
+          "x": -961,
+          "y": -656,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "3433737f-dbac-430f-9579-c2b2c5bbf77d",
+          "width": 64,
+          "x": -987,
+          "y": 33,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "dd5dd4fe-c297-4c6c-80a8-1be0b15726e4",
+          "width": 64,
+          "x": -987,
+          "y": -95,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "8931667e-021f-4f6f-a3e7-214978371dbe",
+          "width": 64,
+          "x": -987,
+          "y": -31,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "e5739de8-1099-4740-b599-be2e5ec162ac",
+          "width": 64,
+          "x": -986,
+          "y": -191,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "6acefaee-55a5-4df8-bd64-f9529789804b",
+          "width": 64,
+          "x": -987,
+          "y": -127,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "4178b9fe-bc28-457e-a0a4-fb636c271e8f",
+          "width": 64,
+          "x": -986,
+          "y": -255,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "1a5ea8f7-906d-4bbe-8138-7a1213696166",
+          "width": 64,
+          "x": -1179,
+          "y": 33,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "a9038de4-3d2a-484f-bb5d-fc479104dd7b",
+          "width": 64,
+          "x": -1115,
+          "y": 33,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "45c17e43-694a-4ef5-8e41-eb731cce35a6",
+          "width": 64,
+          "x": -1051,
+          "y": 33,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "e551a9c0-d7bd-41fb-9ebc-9f939fc6a46b",
+          "width": 64,
+          "x": -1115,
+          "y": -95,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "3a7b2856-25ce-4fb8-b247-f521f4e08709",
+          "width": 64,
+          "x": -1051,
+          "y": -95,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "5e764f72-1889-48e9-9386-13323b2370ab",
+          "width": 64,
+          "x": -1179,
+          "y": -95,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "474304bf-cf68-4d26-9e05-1f9444487019",
+          "width": 64,
+          "x": -1115,
+          "y": -31,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "7433ba66-f074-47bd-998e-36abe112e404",
+          "width": 64,
+          "x": -1051,
+          "y": -31,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "a60d3655-078d-44ed-a4d0-b3a150e91c75",
+          "width": 64,
+          "x": -1179,
+          "y": -31,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "c0e87068-1670-44ba-a364-0c953434fae0",
+          "width": 64,
+          "x": -1114,
+          "y": -191,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "121a3d4b-283a-4c00-af2e-d30fe2966726",
+          "width": 64,
+          "x": -1050,
+          "y": -191,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "61f77c1a-7b7b-42c5-87b8-67efc3f84773",
+          "width": 64,
+          "x": -1178,
+          "y": -191,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "9df2a4aa-1bc7-455b-94ad-8cf0552d60e4",
+          "width": 64,
+          "x": -1115,
+          "y": -127,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "88f737a0-6c5d-475c-a3e0-242b35a37e84",
+          "width": 64,
+          "x": -1051,
+          "y": -127,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "1d405df6-9d2e-4083-a40d-781ecf81d63e",
+          "width": 64,
+          "x": -1179,
+          "y": -127,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "4a870e39-1c6f-478a-aacd-fc26a9bf8733",
+          "width": 64,
+          "x": -1114,
+          "y": -255,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "98796b4c-bf6e-4567-9374-e3d428070787",
+          "width": 64,
+          "x": -1050,
+          "y": -255,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "5d5952b0-d2f3-4dbd-b20f-0f1ceba5e600",
+          "width": 64,
+          "x": -1178,
+          "y": -255,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things20",
+          "persistentUuid": "62c2524b-24ff-4438-b6dd-1c9820329b42",
+          "width": 0,
+          "x": -1094,
+          "y": -128,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things22",
+          "persistentUuid": "29020cb0-ed2d-4c5a-8ed7-7d5f68fe4b55",
+          "width": 0,
+          "x": -1082,
+          "y": -255,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "172c0088-bb95-4b48-8057-66def4726d28",
+          "width": 64,
+          "x": -977,
+          "y": -306,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "3a107684-2136-4947-965b-910a585a4f1b",
+          "width": 64,
+          "x": -977,
+          "y": -242,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "84cccc40-d410-437b-9e19-de453cac0262",
+          "width": 64,
+          "x": -977,
+          "y": -370,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "5f463853-96e3-4785-aea0-7d28fb1875f5",
+          "width": 64,
+          "x": -1040,
+          "y": -354,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "9c9a120d-ce1c-43a6-90b8-256be00f5c17",
+          "width": 64,
+          "x": -1104,
+          "y": -354,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "17fe816d-b094-445c-b76d-a2c75ac77101",
+          "width": 64,
+          "x": -1041,
+          "y": -290,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "8805ceca-12f2-4f10-bf1d-a52b006cc180",
+          "width": 64,
+          "x": -1105,
+          "y": -290,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "b1a299e0-0cef-44a8-9a4f-3cdaae95801b",
+          "width": 64,
+          "x": -1040,
+          "y": -386,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "59f4f847-ddb4-47eb-9032-dbb7c55b6953",
+          "width": 64,
+          "x": -1104,
+          "y": -386,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things20",
+          "persistentUuid": "b753285b-f90a-48c6-acb0-52e4cc799d26",
+          "width": 0,
+          "x": -1019,
+          "y": -387,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "1cd8ca26-fea0-4076-bba7-222b99397ccc",
+          "width": 64,
+          "x": -1049,
+          "y": -397,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "09fd5449-c1de-494b-b49f-63fbc4ec9707",
+          "width": 64,
+          "x": -1049,
+          "y": -333,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "9dbd7a87-f7ae-486d-ac8d-8218c6439250",
+          "width": 64,
+          "x": -1049,
+          "y": -461,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "e8aea2e9-dfa8-4285-aebe-ffd9a693f446",
+          "width": 64,
+          "x": -1115,
+          "y": -317,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "2a3ea52d-84c4-4615-95e1-6a3522559fd8",
+          "width": 64,
+          "x": -1179,
+          "y": -317,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "cf5e2918-9d61-4194-90d1-579d6ce5c929",
+          "width": 64,
+          "x": -1115,
+          "y": -413,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "b559f3aa-ac8b-49c6-984b-ed720902d839",
+          "width": 64,
+          "x": -1179,
+          "y": -413,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "c8483da0-a9d9-48e0-b0ea-98271e2a6360",
+          "width": 64,
+          "x": -1115,
+          "y": -349,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "bc30689a-88d1-4d8a-8241-3b18e661f69f",
+          "width": 64,
+          "x": -1179,
+          "y": -349,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "8379cc0f-83a8-4214-aeed-a6ea3b72676b",
+          "width": 64,
+          "x": -1114,
+          "y": -541,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "579b27e9-3a0a-405d-a62f-7144adc3777e",
+          "width": 64,
+          "x": -1178,
+          "y": -541,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "0cfc5567-cc3d-4eab-9217-139e0e610951",
+          "width": 64,
+          "x": -1115,
+          "y": -477,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "456992c3-5708-4b9b-a29e-5ec679d3e650",
+          "width": 64,
+          "x": -1179,
+          "y": -477,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things20",
+          "persistentUuid": "aa7ba004-d08c-4090-b7c1-e015a3e768df",
+          "width": 0,
+          "x": -1094,
+          "y": -350,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things22",
+          "persistentUuid": "eceacba2-2c6e-4581-96d8-4c00920915c3",
+          "width": 0,
+          "x": -1082,
+          "y": -477,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "6a2df4b3-8672-435e-9954-9c5e11ee16ac",
+          "width": 64,
+          "x": -1055,
+          "y": -687,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "1416a45c-59c9-46f0-8baf-427fb8e34007",
+          "width": 64,
+          "x": -1056,
+          "y": -623,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "79c274e1-9f69-42fe-8116-2711a3da9b7b",
+          "width": 64,
+          "x": -1054,
+          "y": -719,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "ed96fd06-4df5-4806-8bb5-fb0411ee5697",
+          "width": 64,
+          "x": -1103,
+          "y": -577,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "7bbfc9ad-891f-426c-89df-a2ea18388af3",
+          "width": 64,
+          "x": -1114,
+          "y": -604,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "e4af0217-31be-4f72-ad90-287ac7e02ebb",
+          "width": 64,
+          "x": -1178,
+          "y": -604,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "0d28e93d-39f7-44c1-8ce6-9307b2dae38d",
+          "width": 64,
+          "x": -1113,
+          "y": -732,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "22e915d3-9643-4f51-bc75-b901bc95dff5",
+          "width": 64,
+          "x": -1177,
+          "y": -732,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "db0de03b-e419-4418-a9c1-6eed8c541d01",
+          "width": 64,
+          "x": -1114,
+          "y": -668,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "96e7521d-7b40-4f1d-b03c-acf32bbaab1c",
+          "width": 64,
+          "x": -1178,
+          "y": -668,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things22",
+          "persistentUuid": "eb9a7177-2bc7-4eb7-b4c4-470bc7b7dea7",
+          "width": 0,
+          "x": -1081,
+          "y": -668,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "8e6f3443-52cf-4108-b32c-100dbfec2eaa",
+          "width": 64,
+          "x": -1057,
+          "y": -831,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "6b07fe16-a3d4-43e8-85be-265b26682765",
+          "width": 64,
+          "x": -1055,
+          "y": -767,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "eb3ff704-ab07-4747-9a37-c87cce1b10e1",
+          "width": 64,
+          "x": -1058,
+          "y": -895,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "ae8c483b-1887-43c8-bb0c-bc5210bd50cf",
+          "width": 64,
+          "x": -1055,
+          "y": -798,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "77b3741b-5f64-4b0a-85a9-e40d6c13ad80",
+          "width": 64,
+          "x": -1054,
+          "y": -830,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "29441811-d4e1-4783-aa28-67acd966a3df",
+          "width": 64,
+          "x": -1113,
+          "y": -843,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "f7da2cbe-e8c9-4bce-8cf6-ef09ae8899d7",
+          "width": 64,
+          "x": -1177,
+          "y": -843,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "306ce4c0-8e3a-408b-b0ce-8e3144dab318",
+          "width": 64,
+          "x": -1114,
+          "y": -779,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Square_Tile9",
+          "persistentUuid": "95f6fa93-c9e5-468f-aba9-69682aedc356",
+          "width": 64,
+          "x": -1178,
+          "y": -779,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Square_Things22",
+          "persistentUuid": "bbfd10b1-0c39-401a-aa1a-1cde3fe4646b",
+          "width": 0,
+          "x": -1081,
+          "y": -779,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -120316,7 +122756,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2725359896772971,
+        "zoomFactor": 0.29122588669111577,
         "windowMask": false
       }
     },
@@ -123609,6 +126049,21 @@
           ],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI Layer",
+          "name": "NewText",
+          "persistentUuid": "99b2cfa7-3a1c-47db-bbde-5fe86b1f97db",
+          "width": 0,
+          "x": 496,
+          "y": 42,
+          "zOrder": 101,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -123763,6 +126218,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "UI Layer",
+          "name": "DelKey",
+          "persistentUuid": "f10d5441-42ca-46e2-a5f4-09704bb92826",
+          "width": 64,
+          "x": 840,
+          "y": 320,
+          "zOrder": 103,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -123775,7 +126245,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.42997097367655207,
+        "zoomFactor": 0.47495045835991,
         "windowMask": false
       }
     },
