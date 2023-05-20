@@ -3,6 +3,10 @@ import axios from 'axios';
 import * as styled from './styles';
 
 function UploadImages() {
+    const [isModal, setisModal] = useState(false);
+
+
+
     let token = localStorage.getItem('login-token');
     const [selectedImages, setSelectedImages] = useState(null);
 
@@ -45,10 +49,34 @@ function UploadImages() {
         }
     }
 
+    const showModal = () => {
+        setisModal(true);
+    };
+
+
+    const UploadCompleteModal = () => {
+        return(
+            <styled.Modal>
+                <styled.ModalContainer>
+                    <styled.ModalText>
+                        <span>이미지 업로드가 완료되었습니다.</span>
+                        <span>창을 닫고 상품 등록으로 돌아가세요.</span>
+                    </styled.ModalText>
+                    <styled.ModalOkButton onClick={() => {setisModal(false)}}>
+                        <span>확인</span>
+                    </styled.ModalOkButton>
+                </styled.ModalContainer>
+            </styled.Modal>
+        )
+    }
+
+    
+
     return (
         <styled.Form onSubmit={uploadImages}>
+            {isModal && <UploadCompleteModal />}
             <styled.FileInput type="file" multiple onChange={handleImageChange} />
-            <styled.UploadButton type="submit" >Upload</styled.UploadButton>
+            <styled.UploadButton type="submit" onClick={showModal}>Upload</styled.UploadButton>
         </styled.Form>
     );
 }
