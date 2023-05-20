@@ -58,7 +58,7 @@ export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
     width: 90px;
-    height: 80px;
+    height: 70px;
 `;
 
 export const IdDiv = styled.div`
@@ -145,7 +145,7 @@ cursor: pointer;
 /* width: 180px; */
 width: 380px;
 height: 40px;
-background: #141060;
+background:#775EEE;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border:none;
 border-radius: 10px;

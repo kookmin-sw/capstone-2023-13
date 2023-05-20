@@ -46,7 +46,7 @@ export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
     width: 90px;
-    height: 80px;
+    height: 70px;
 `;
 
 export const TitleDiv = styled.div`
@@ -70,11 +70,16 @@ export const PasswordInputDiv = styled.input`
     height: 30px;
 
     background: #FFFFFF;
-    border: 1px solid #70558E;
+    border: 2px solid #597EE1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    border-radius: 10px;
 
     font-size: 20px;
+
+    /* border: none; */
+    &:focus {
+        outline: 1px solid #9a86ff;
+    }
 `;
 
 export const ButtonDiv = styled.div`
@@ -87,9 +92,9 @@ export const SubmitButton = styled.button`
     width: 188px;
     height: 52px;
 
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 90px;
     cursor: pointer;
     border: none;
@@ -109,14 +114,14 @@ export const CloseButton = styled.button`
 
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 90px;
     cursor: pointer;
-    border: none;
+    border: 2px solid #6F8DDE;
     outline: none;
 
     > span {
-        color: #141060;
+        color: #6F8DDE;
         font-weight: 600;
         font-size: 20px;
     }

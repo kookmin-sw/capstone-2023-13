@@ -17,7 +17,7 @@ cursor: pointer;
 /* width: 180px; */
 width: 385px;
 height: 45px;
-background: #141060;
+background: #775EEE;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border:none;
 border-radius: 10px;
@@ -72,7 +72,7 @@ font-weight: bold;
   width: 10px;
 }
 .inputForm::-webkit-scrollbar-thumb {
-  background-color: #141060;
+  background-color: #775EEE;
   border-radius: 10px;
   background-clip: padding-box;
   border: 2px solid transparent;
@@ -96,7 +96,7 @@ font-weight: bold;
   padding-left: 40px;
 }
 .signup-inputBox:focus{
-  outline: 2px solid #70558E;
+  outline: 2px solid #9a86ff;
 }
 /* .emailBox{
   margin: 0;
@@ -123,7 +123,7 @@ font-weight: bold;
   background: white url(@/images/icons/user-line.png) no-repeat scroll 7px 7px;
 }
 .emailBox:focus{
-  outline: 2px solid #70558E;
+  outline: 2px solid #9a86ff;
 }
 .passwordBox{
   background: white url(@/images/icons/lock.png) no-repeat scroll 7px 7px;
@@ -141,7 +141,7 @@ font-weight: bold;
   background: white url(@/images/icons/bank-card-line.png) no-repeat scroll 7px 7px;
 }
 .dupBtn{
-  background: #390F5A;
+  background: #9a86ff;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -152,7 +152,7 @@ font-weight: bold;
   margin-left:10px;
 }
 .dupBtn:disabled{
-  background: #390F5A;
+  background: #848387;
   border:none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -178,7 +178,7 @@ font-weight: bold;
   cursor: pointer;
 }
 .selectBox:focus{
-  outline: 2px solid #70558E;
+  outline: 2px solid #9a86ff;
 }
 .message {
   font-weight: 500;
@@ -199,7 +199,7 @@ font-weight: bold;
   /* border: 1px solid black; */
 }
 .Toastify__toast-body {
-  background-color: rgba(56, 9, 52, 0.5);
+  background-color: #9a86ff;
   color:rgb(255, 255, 255);
   border-radius: 20px;
   height: 30px;
