@@ -81,6 +81,11 @@ export const NameInputBox = styled.input`
     height: 40px;
     padding-left: 10px;
     box-sizing: border-box;
+    border: none;
+    &:focus {
+        outline: 1px solid #9a86ff;
+    }
+    
 `;
 
 export const EmailDiv = styled.div`
@@ -101,6 +106,10 @@ export const EmailInputBox = styled.input`
     height: 40px;
     padding-left: 10px;
     box-sizing: border-box;
+    border: none;
+    &:focus {
+        outline: 1px solid #9a86ff;
+    }
 `;
 
 // export const SendPasswordBtn = styled.button`

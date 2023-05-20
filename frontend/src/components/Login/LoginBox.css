@@ -59,6 +59,9 @@
     right:90px;
     font-size:15px;
 }
+.findDiv:hover{
+    color: #5e4fa8;
+}
 .signupBtn{
     background: #ffffff;
     color:#141060;

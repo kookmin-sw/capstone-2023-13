@@ -119,11 +119,11 @@ const Sidebar = ({ width=280, children }) => {
             <span>내 정보</span>
           </styled.MyInfo>
           <styled.History>
-            <styled.HistoryIcon />
+            <styled.BuyHistoryIcon />
             <span onClick={() => purchaseHistoryClick()}>구매 내역</span>
           </styled.History>
           <styled.History>
-            <styled.HistoryIcon />
+            <styled.SaleHistoryIcon />
             <span onClick={() => saleHistoryClick()}>판매 내역</span>
           </styled.History>
           <styled.Logout>

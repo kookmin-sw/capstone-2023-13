@@ -8,6 +8,7 @@ import myshop from '@/images/icons/myshop.png'
 import schedule from '@/images/icons/schedule.png';
 import profileimg from '@/images/etc/profileimg.png';
 import closebutton from '@/images/etc/closebutton.png';
+import salehistory from '@/images/icons/sellhistory.png';
 
 export const SmileIcon = styled.img.attrs({
     src: smile,
@@ -70,8 +71,16 @@ export const History = styled.div`
     }
 `;
 
-export const HistoryIcon = styled.img.attrs({
+export const BuyHistoryIcon = styled.img.attrs({
     src: history,
+})`
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+`;
+
+export const SaleHistoryIcon = styled.img.attrs({
+    src: salehistory,
 })`
     width: 40px;
     height: 40px;
