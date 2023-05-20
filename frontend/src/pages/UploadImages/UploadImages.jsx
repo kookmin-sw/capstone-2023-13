@@ -35,6 +35,7 @@ function UploadImages() {
             // console.log(localStorage.getItem('image-url'));
             console.log(JSON.parse(localStorage.getItem("image-url")));
 
+
             for(var i=0; i<res.data.length; i++){
                 // console.log(i, " : ",res.data[i]);
                 // console.log(i, ":", localStorage.getItem('image-url')[i]);
