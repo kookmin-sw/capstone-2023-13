@@ -23,7 +23,13 @@
     float: left;
     font-size: 60px;
     font-weight: bolder;
+    /* background: #654ea3;  
+    background: -webkit-linear-gradient(to bottom, #eaafc8, #654ea3);
+    background: linear-gradient(to bottom, #eaafc8, #654ea3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
+
 .googleBtn{
     cursor: pointer;
     position: relative;
@@ -60,7 +66,7 @@
     font-size:15px;
 }
 .findDiv:hover{
-    color: #5e4fa8;
+    color: #9a86ff;
 }
 .signupBtn{
     background: #ffffff;

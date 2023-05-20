@@ -162,9 +162,9 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
     // console.log("product details : ", productDetails);
     // console.log("product details : ", productDetails[0].imgList[0]);
 
-    const UpdateProductState = () => {
+    const UpdateProductStateToDone = () => {
         let token = localStorage.getItem('login-token');
-        const orders_id = 5;
+        const orders_id = orderId;
         const response = axios.put(
             `http://43.201.210.173:8080/orders/update/${orders_id}`,
             {
@@ -174,6 +174,30 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
                 "totalPrice": totalprice,
                 "productListId": productlist
             },
+            {
+                headers: {
+                    'Authorization': `${token}`,
+                    'accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            }
+        )
+            .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                backClick();
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    }
+
+
+    const DeleteOrder = () => {
+        let token = localStorage.getItem('login-token');
+        const orders_id = orderId;
+        const response = axios.delete(
+            `http://43.201.210.173:8080/orders/remove/${orders_id}`,
             {
                 headers: {
                     'Authorization': `${token}`,
@@ -211,13 +235,13 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
                         <span>⦁ 총 주문 금액 : {totalprice}원</span>
                     </styled.OrderNo>
                     {deliverstatenumber === '0' && (
-                        <styled.CancelOrderBtn>
+                        <styled.CancelOrderBtn onClick={() => { DeleteOrder() }}>
                             <span>구매</span>
                             <span>취소</span>
                         </styled.CancelOrderBtn>
                     )}
                     {deliverstatenumber === '1' && (
-                        <styled.StartDeliveryBtn onClick={() => { UpdateProductState() }}>
+                        <styled.StartDeliveryBtn onClick={() => { UpdateProductStateToDone() }}>
                             <span>거래</span>
                             <span>완료</span>
                         </styled.StartDeliveryBtn>

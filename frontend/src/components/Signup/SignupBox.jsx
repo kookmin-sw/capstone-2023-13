@@ -258,8 +258,20 @@ function SignupBox({ onPage }) {
                 <option value="">은행선택</option>
                 <option value="기업은행">기업은행</option>
                 <option value="국민은행">국민은행</option>
-                <option value="우리은행">우리은행</option>
+                <option value="농협은행">농협은행</option>
+                <option value="신한은행">신한은행</option>
+                <option value="기업은행">기업은행</option>
+                <option value="하나은행">하나은행</option>
+                <option value="경남은행">경남은행</option>
+                <option value="부산은행">부산은행</option>
+                <option value="산업은행">산업은행</option>
+                <option value="제일은행">제일은행</option>
+                <option value="신협은행">신협은행</option>
+                <option value="수협은행">수협은행</option>
+                <option value="제주은행">제주은행</option>
+                <option value="카카오뱅크">카카오뱅크</option>
                 <option value="토스뱅크">토스뱅크</option>
+                <option value="케이뱅크">케이뱅크</option>
               </select>
             </div>
             <div className="inputDiv">

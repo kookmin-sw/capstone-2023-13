@@ -54,7 +54,7 @@ function SaleFullBox({onPage, onClose}) {
           let stateText;
           switch (item.state) {
             case 0:
-              stateText = '입금확인';
+              stateText = '입금확인 전';
               break;
             case 1:
               stateText = '배송중';
@@ -77,7 +77,7 @@ function SaleFullBox({onPage, onClose}) {
       );
   
       console.log(formattedData);
-      setOrders(formattedData);
+      setOrders(formattedData.slice().reverse());;
     })
         .catch(function (error) {
             console.log(error);
@@ -110,7 +110,7 @@ function SaleFullBox({onPage, onClose}) {
               <div className="listInfo">
                 <div className="orderNum">{order.store}</div>
                 <div className="productName">
-                  {order.num - 1 > 0 ? `${order.rep_product} 외 ${order.num - 2}개` : order.rep_product}
+                  {order.num - 1 > 0 ? `${order.rep_product} 외 ${order.num - 1}개` : order.rep_product}
                 </div>
                 <div className="transDate">{order.date}</div>
               </div>
