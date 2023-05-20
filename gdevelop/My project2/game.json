@@ -11453,6 +11453,141 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Keyboard/Light/1e3d6c296439dbb3e80b0d490f9b7cc17e5dbf2bd3aacebcc06d585b96d5c580_Del Key.png",
           "name": "Del Key.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_82.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_82",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_83.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_83",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_84.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_84",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_85.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_85",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_86.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_86",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_87.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_87",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_88.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_88",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_89.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_89",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_810.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_810",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_811.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_811",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Square_Square_Things_ME_Singles_Camping_48x48_Sign_812.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_812",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ME_Singles_Villas_48x48_Toy_House_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ME_Singles_Villas_48x48_Toy_House_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/storeExternal.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "storeExternal",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -36083,6 +36218,66 @@
         },
         {
           "name": "Square_Things13"
+        },
+        {
+          "name": "storeExternal"
+        },
+        {
+          "name": "Square_Things9"
+        },
+        {
+          "name": "Square_Things15"
+        },
+        {
+          "name": "Square_Things30"
+        },
+        {
+          "name": "Square_Things39"
+        },
+        {
+          "name": "Square_Things49"
+        },
+        {
+          "name": "Square_Things46"
+        },
+        {
+          "name": "Square_Things33"
+        },
+        {
+          "name": "Square_Things31"
+        },
+        {
+          "name": "Square_Things36"
+        },
+        {
+          "name": "Square_Things26"
+        },
+        {
+          "name": "Square_Things25"
+        },
+        {
+          "name": "Square_Things43"
+        },
+        {
+          "name": "Square_Things60"
+        },
+        {
+          "name": "Square_Things63"
+        },
+        {
+          "name": "Square_Things61"
+        },
+        {
+          "name": "Square_Things64"
+        },
+        {
+          "name": "Square_Things62"
+        },
+        {
+          "name": "Square_Things45"
+        },
+        {
+          "name": "Square_Things44"
         }
       ]
     },
@@ -36557,6 +36752,12 @@
       "name": "ProductDetail_Image",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "Collision",
+      "type": "string",
+      "value": "0"
     }
   ],
   "layouts": [
@@ -42732,16 +42933,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_811",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42773,16 +42975,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_810",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42814,16 +43017,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_89",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42855,16 +43059,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_88",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42896,16 +43101,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_87",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42937,16 +43143,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_86",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -42978,16 +43185,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_812",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -43019,16 +43227,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_85",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -43060,16 +43269,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_84",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -43101,16 +43311,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_83",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -43142,16 +43353,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -43183,16 +43395,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.025,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_8.png",
+                      "image": "assets\\Square\\Square_Things\\ME_Singles_Camping_48x48_Sign_82",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -46992,6 +47205,77 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets\\Square\\Square_Tiels\\ME_Singles_Terrains_and_Fences_48x48_Grass_Fenced_1_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "storeExternal",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ME_Singles_Villas_48x48_Toy_House_5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "1",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -52059,6 +52343,38 @@
                 "Wall1",
                 "=",
                 "1240"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Door1",
+                "608",
+                "43",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Door1",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSize"
+              },
+              "parameters": [
+                "Door1",
+                "64",
+                "80"
               ]
             },
             {
@@ -73794,36 +74110,6 @@
                 "BlueButtonWithShadow",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "doorCreated",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "tileCreated",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "wallCreated",
-                "=",
-                "1"
-              ]
             }
           ],
           "actions": [
@@ -73982,21 +74268,16 @@
                 "    tableList : tableList,",
                 "  }),",
                 "}",
+                "fetch(\"http://43.201.210.173:8080/\" + storeHttp + \"izings/register\", addStoreRequest)",
+                ".then((res) => res.text())",
+                ".then((data) => {",
+                "    runtimeScene.getVariables().get(\"StoreCustomSuccess\").setNumber(1);",
+                "})",
+                ".catch((error) => {",
+                "    console.log(\"Error fetching data:\", error);",
+                "});",
                 "",
-                "var c = 0;",
-                "",
-                "if (c !== 1) {",
-                "    fetch(\"http://43.201.210.173:8080/\" + storeHttp + \"izings/register\", addStoreRequest)",
-                "    .then((res) => res.text())",
-                "    .then((data) => {",
-                "        runtimeScene.getVariables().get(\"StoreCustomSuccess\").setNumber(1);",
-                "    })",
-                "    .catch((error) => {",
-                "        console.log(\"Error fetching data:\", error);",
-                "    });",
-                "}",
-                "",
-                "c = 1;",
+                "console.log(\"hi\");",
                 "",
                 "runtimeScene.getGame().getVariables().get(\"IsStoreAdded\").setNumber(0);"
               ],
@@ -76895,7 +77176,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -77545,33 +77825,6 @@
                 "    console.error(\"An error occurred:\", error);",
                 "  }",
                 "}",
-                "",
-                "var deleteStoreCustomRequest = {",
-                "  method: \"DELETE\",",
-                "  headers: {",
-                "    'Authorization': `${userToken}`,",
-                "    'accept': 'application/json',",
-                "    \"Content-Type\": \"application/json\",",
-                "    \"Access-Control-Allow-Origin\": \"*\",",
-                "    \"Access-Control-Allow-Headers\": \"*\",",
-                "  }",
-                "}",
-                "var storeHttp = \"storecustom\"",
-                "async function deleteStoreCustom(deleteStoreCustomRequest) {",
-                "  try {",
-                "    const response = await fetch(\"http://43.201.210.173:8080/\" + storeHttp + \"izings/remove/\" + storeId, deleteStoreCustomRequest);",
-                "    if (response.ok) {",
-                "      const data = await response.text();",
-                "      console.log(data);",
-                "    } else {",
-                "      console.error(\"Request failed with status:\", response.status);",
-                "    }",
-                "  } catch (error) {",
-                "    console.error(\"An error occurred:\", error);",
-                "  }",
-                "}",
-                "",
-                "deleteStoreCustom(deleteStoreCustomRequest);",
                 "deleteStore(deleteStoreRequest);",
                 "",
                 ""
@@ -90278,13 +90531,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign1",
           "persistentUuid": "3c3a1dc4-13cb-4534-9e03-0b2d63a74842",
-          "width": 55,
-          "x": -194,
-          "y": 8,
+          "width": 48,
+          "x": -196,
+          "y": 38,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90293,13 +90546,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign2",
           "persistentUuid": "96908e46-9ece-4352-a272-d719f2208a59",
-          "width": 55,
-          "x": 271,
-          "y": 9,
+          "width": 48,
+          "x": 270,
+          "y": 38,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90308,13 +90561,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign3",
           "persistentUuid": "60b7b4b4-72bf-47f9-8464-3c4c6bf74e48",
-          "width": 55,
+          "width": 48,
           "x": 270,
-          "y": -317,
+          "y": -334,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90323,13 +90576,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign4",
           "persistentUuid": "3199d20b-5078-4413-8db4-b34497ddd0ba",
-          "width": 55,
+          "width": 48,
           "x": 929,
-          "y": -323,
+          "y": -334,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90338,13 +90591,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign5",
           "persistentUuid": "b41365f2-d75c-4743-92fd-2546bc61c0bc",
-          "width": 55,
-          "x": 942,
-          "y": 2,
+          "width": 48,
+          "x": 929,
+          "y": 38,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90353,13 +90606,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign6",
           "persistentUuid": "ea26897a-aec5-4f0f-8b2f-e5d3d7389cda",
-          "width": 55,
-          "x": 1436,
-          "y": 855,
+          "width": 48,
+          "x": 1428,
+          "y": 1142,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90368,13 +90621,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign7",
           "persistentUuid": "2aaa0648-14d8-458d-a33a-7f2528684700",
-          "width": 55,
-          "x": -179,
-          "y": 517,
+          "width": 48,
+          "x": -174,
+          "y": 791,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90383,13 +90636,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign8",
           "persistentUuid": "0f1a6131-3511-43c8-be2e-f1e76ae11902",
-          "width": 55,
-          "x": 299,
-          "y": 516,
+          "width": 48,
+          "x": 276,
+          "y": 791,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90398,13 +90651,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign9",
           "persistentUuid": "e392fe45-fd54-4d0b-b415-4c539598b1c1",
-          "width": 55,
-          "x": 297,
-          "y": 840,
+          "width": 48,
+          "x": 275,
+          "y": 1142,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90413,13 +90666,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign10",
           "persistentUuid": "951e3aa3-fe52-4979-a224-2f62b7561996",
-          "width": 55,
-          "x": 936,
-          "y": 509,
+          "width": 48,
+          "x": 943,
+          "y": 791,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90428,13 +90681,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign11",
           "persistentUuid": "10a27de7-1a01-4d69-be17-b94c900ce5cb",
-          "width": 55,
-          "x": 1424,
-          "y": 510,
+          "width": 48,
+          "x": 1422,
+          "y": 791,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -90443,13 +90696,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 118,
+          "height": 72,
           "layer": "",
           "name": "Sign12",
           "persistentUuid": "89d030d1-d08d-4611-b434-cb901289522f",
-          "width": 55,
-          "x": 947,
-          "y": 840,
+          "width": 48,
+          "x": 938,
+          "y": 1142,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -115273,9 +115526,9 @@
           "name": "Square_Things5",
           "persistentUuid": "d80cca48-39ea-496f-bb72-4d3e5fd9f09b",
           "width": 0,
-          "x": 224,
-          "y": 1120,
-          "zOrder": 12,
+          "x": 150,
+          "y": 1165,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -115290,7 +115543,7 @@
           "width": 0,
           "x": -224,
           "y": 928,
-          "zOrder": 14,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -115815,7 +116068,7 @@
           "width": 0,
           "x": -45,
           "y": 1158,
-          "zOrder": 48,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -116370,7 +116623,7 @@
           "width": 0,
           "x": 173,
           "y": 664,
-          "zOrder": 54,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -122779,6 +123032,246 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "e9c49e0d-e60f-42f4-aeca-75a4a2a51c65",
+          "width": 0,
+          "x": 137,
+          "y": 548,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "fd936a20-1462-4158-828e-e47f87789dbf",
+          "width": 0,
+          "x": -337,
+          "y": -201,
+          "zOrder": 126,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "e82d0b11-bd28-43ec-a0f2-c3b6dace0976",
+          "width": 0,
+          "x": 137,
+          "y": -201,
+          "zOrder": 126,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "04412ee9-f0fc-4db9-b5e4-fd384afcc7a1",
+          "width": 0,
+          "x": 137,
+          "y": -585,
+          "zOrder": 126,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "8ca8d5bf-644b-41c8-98ab-52d4aa2eafcb",
+          "width": 0,
+          "x": 929,
+          "y": -585,
+          "zOrder": 126,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "986fd127-f5b4-49ba-b68e-af78792a0ff8",
+          "width": 0,
+          "x": 929,
+          "y": -207,
+          "zOrder": 126,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "91c8b105-5c53-402d-9227-015b153409fa",
+          "width": 0,
+          "x": 135,
+          "y": 891,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "5716fb63-c2a9-4072-b35b-33873ef342d0",
+          "width": 0,
+          "x": -312,
+          "y": 548,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "b922da96-bbd5-4e8f-8e05-f8afdb0c8431",
+          "width": 0,
+          "x": 934,
+          "y": 549,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "50e3e020-c8c3-454d-b96a-48db732d6581",
+          "width": 0,
+          "x": 1421,
+          "y": 541,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "92f34b5e-284e-416b-ae23-1ad089551105",
+          "width": 0,
+          "x": 939,
+          "y": 891,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "storeExternal",
+          "persistentUuid": "26633f06-7efa-45b0-8bc0-b02a3098129f",
+          "width": 0,
+          "x": 1424,
+          "y": 891,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -122791,7 +123284,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.29122588669111577,
+        "zoomFactor": 0.2725359896772974,
         "windowMask": false
       }
     },
