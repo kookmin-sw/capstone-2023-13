@@ -934,13 +934,21 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2= [];
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3= [];
 
 
-gdjs.Store_32sceneCode.userFunc0x13f8be8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd16b58 = function(runtimeScene) {
 "use strict";
 //Seller Buyer 구분
+console.log('cc');
 let userIdVariable = runtimeScene.getGame().getVariables().get("UserId");
 let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get("CurrentOwnerId");
 
 let buyerSellerVariable = runtimeScene.getGame().getVariables().get("BuyerSellerStatus");
+
+
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
+var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
+
+console.log('주인장: ', currentOwnerIdVariable._str, "내아이디:", userIdVariable._str, "스토어아이디:", storeId)
 
 if(currentOwnerIdVariable._str === userIdVariable._str){
     console.log("판매자");
@@ -948,12 +956,9 @@ if(currentOwnerIdVariable._str === userIdVariable._str){
 }
 else{
     console.log("구매자");
-    buyerSellerVariable.setString("seller");
+    buyerSellerVariable.setString("buyer");
 }
 
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
-var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
 
 var checkStoreCustomRequest = {
   method: "GET",
@@ -1047,7 +1052,7 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f8be8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd16b58(runtimeScene);
 
 }
 
@@ -1466,12 +1471,12 @@ gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
-gdjs.Store_32sceneCode.userFunc0x13f8990 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd165f8 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
 
-runtimeScene.user_id = runtimeScene.getGame().getVariables().get("UserId")._str;
+runtimeScene.user_id = runtimeScene.getGame().getVariables().get("UserEmail")._str;
 runtimeScene.nickname = runtimeScene.getGame().getVariables().get("UserNickname")._str;
 runtimeScene.channel_id = runtimeScene.getGame().getVariables().get("StoreId")._str;
 
@@ -1891,12 +1896,12 @@ gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f8990(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd165f8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x13f83a8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd18d90 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1928,7 +1933,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0x13f8738 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd18fc0 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -2000,7 +2005,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0x13f66d8 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd19420 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2033,7 +2038,9 @@ async function getUserInfo(userInfoRequest) {
     const response = await fetch("http://43.201.210.173:8080/users/info", userInfoRequest);
     if (response.ok) {
       const data = await response.json();
-      runtimeScene.getGame().getVariables().get("UserId").setString(data.email);
+      runtimeScene.getGame().getVariables().get("UserId").setString(data.id);
+      console.log("유저 id : " ,runtimeScene.getGame().getVariables().get("UserId")._str);
+      runtimeScene.getGame().getVariables().get("UserEmail").setString(data.email);
       runtimeScene.getGame().getVariables().get("UserNickname").setString(data.nickname);
     } else {
       console.error("Request failed with status:", response.status);
@@ -2051,174 +2058,181 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f66d8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd19420(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x13f7f40 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd18b60 = function(runtimeScene) {
 "use strict";
 // // 상품 데이터의 더미 배열입니다.
 
-let products = [
-  {
-    "id": 5,
-    "storeId": {
-      "id": 9,
-      "owner": {
-        "id": 8,
-        "email": "cy@cy.com",
-        "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
-        "name": "채소",
-        "nickname": "채",
-        "bank": "기업은행",
-        "account": "123",
-        "address": "서울",
-        "enabled": false,
-        "authorities": null,
-        "username": "cy@cy.com",
-        "accountNonExpired": false,
-        "accountNonLocked": false,
-        "credentialsNonExpired": false
-      },
-      "name": "야채가게",
-      "period": "2024-05-17",
-      "info": "싱싱",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "signName": "채채소"
-    },
-    "name": "샤넬파프리카",
-    "price": 1000,
-    "amount": 6,
-    "info": "맛있는 파프리카 빨강 초록",
-    "imgList": [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
-    ]
-  },
-  {
-    "id": 6,
-    "storeId": {
-      "id": 9,
-      "owner": {
-        "id": 8,
-        "email": "cy@cy.com",
-        "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
-        "name": "채소",
-        "nickname": "채",
-        "bank": "기업은행",
-        "account": "123",
-        "address": "서울",
-        "enabled": false,
-        "authorities": null,
-        "username": "cy@cy.com",
-        "accountNonExpired": false,
-        "accountNonLocked": false,
-        "credentialsNonExpired": false
-      },
-      "name": "야채가게",
-      "period": "2024-05-17",
-      "info": "싱싱",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "signName": "채채소"
-    },
-    "name": "보석초콜릿",
-    "price": 5000,
-    "amount": 15,
-    "info": "구찌로 만든 초콜릿",
-    "imgList": [
-     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
-    ]
+// let products = [
+//   {
+//     "id": 5,
+//     "storeId": {
+//       "id": 9,
+//       "owner": {
+//         "id": 8,
+//         "email": "cy@cy.com",
+//         "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
+//         "name": "채소",
+//         "nickname": "채",
+//         "bank": "기업은행",
+//         "account": "123",
+//         "address": "서울",
+//         "enabled": false,
+//         "authorities": null,
+//         "username": "cy@cy.com",
+//         "accountNonExpired": false,
+//         "accountNonLocked": false,
+//         "credentialsNonExpired": false
+//       },
+//       "name": "야채가게",
+//       "period": "2024-05-17",
+//       "info": "싱싱",
+//       "x": 0,
+//       "y": 0,
+//       "z": 0,
+//       "signName": "채채소"
+//     },
+//     "name": "샤넬파프리카",
+//     "price": 1000,
+//     "amount": 6,
+//     "info": "맛있는 파프리카 빨강 초록",
+//     "imgList": [
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
+//     ]
+//   },
+//   {
+//     "id": 6,
+//     "storeId": {
+//       "id": 9,
+//       "owner": {
+//         "id": 8,
+//         "email": "cy@cy.com",
+//         "password": "$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG",
+//         "name": "채소",
+//         "nickname": "채",
+//         "bank": "기업은행",
+//         "account": "123",
+//         "address": "서울",
+//         "enabled": false,
+//         "authorities": null,
+//         "username": "cy@cy.com",
+//         "accountNonExpired": false,
+//         "accountNonLocked": false,
+//         "credentialsNonExpired": false
+//       },
+//       "name": "야채가게",
+//       "period": "2024-05-17",
+//       "info": "싱싱",
+//       "x": 0,
+//       "y": 0,
+//       "z": 0,
+//       "signName": "채채소"
+//     },
+//     "name": "보석초콜릿",
+//     "price": 5000,
+//     "amount": 15,
+//     "info": "구찌로 만든 초콜릿",
+//     "imgList": [
+//      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU"
+//     ]
+//   }
+// ];
+
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+let currentStoreIdVariable = runtimeScene.getGame().getVariables().get("StoreId")._str;
+let products = [];
+let tableNameVariable = runtimeScene.getVariables().get("tableName").getAsString();
+
+// 스토어 ID 확인
+var productListRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
   }
-];
-// var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-// let currentStoreIdVariable = runtimeScene.getGame().getVariables().get("CurrentStoreId")._str;
-// let products = [];
-
-
-// // 스토어 ID 확인
-// var productListRequest = {
-//   method: "GET",
-//   headers: {
-//     'Authorization': `${userToken}`,
-//     'accept': 'application/json',
-//     "Content-Type": "application/json",
-//     "Access-Control-Allow-Origin": "*",
-//     "Access-Control-Allow-Headers": "*",
-//   }
-// }
-
-// async function getProductList(productListRequest) {
-//   try {
-//     const response = await fetch(`http://43.201.210.173:8080/products/info/${currentStoreIdVariable}`, productListRequest);
-//     if (response.ok) {
-//       const data = await response.json();
-//       return data;
-//     } else {
-//       console.error("Request failed with status:", response.status);
-//     }
-//   } catch (error) {
-//     console.error("An error occurred:", error);
-//   }
-// }
-
-// getProductList(productListRequest).then(data => {
-//   products = data; // 함수가 반환한 값을 products에 할당
-
-
-//   let availableProducts = products.filter(product => product.amount !== 0);
-//   availableProducts.forEach(product => {
-//     product.quantity = 0;
-//   });
-//   // products 배열을 JSON 문자열로 변환
-//   let productsString = JSON.stringify(availableProducts);
-//   runtimeScene.getVariables().get("products").setString(productsString);
-
-//   for(let i=0;  i < availableProducts.length; i++){
-//     let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
-//     let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
-//     let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
-    
-
-//     listNameObject.setString(availableProducts[i].name);
-//     let priceString = availableProducts[i].price.toLocaleString();
-//     listPriceObject.setString(priceString + "원");
-//     listQuantityObject.setString(0);
-//   }
-//   let productNumVariable = runtimeScene.getVariables().get("productNum");
-//   let productFilterVariable = runtimeScene.getVariables().get("productFilter");
-
-//   productNumVariable.setNumber(availableProducts.length);
-//   productFilterVariable.setBoolean(true);
-// });
-
-
-  let availableProducts = products.filter(product => product.amount !== 0);
-  availableProducts.forEach(product => {
-    product.quantity = 0;
-  });
-  // products 배열을 JSON 문자열로 변환
-  let productsString = JSON.stringify(availableProducts);
-  runtimeScene.getVariables().get("products").setString(productsString);
-
-  for(let i=0;  i < availableProducts.length; i++){
-    let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
-    let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
-    let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
-
-    listNameObject.setString(availableProducts[i].name);
-    let priceString = availableProducts[i].price.toLocaleString();
-    listPriceObject.setString(priceString + "원");
-    listQuantityObject.setString(0);
+}
+console.log('store:',currentStoreIdVariable)
+async function getProductList(productListRequest) {
+  try {
+    const response = await fetch(`http://43.201.210.173:8080/products/info/detail/${currentStoreIdVariable}/${tableNameVariable}`, productListRequest);
+    if (response.ok) {
+      const data = await response.json();
+      return data;
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
   }
+}
+
+getProductList(productListRequest).then(data => {
   let productNumVariable = runtimeScene.getVariables().get("productNum");
   let productFilterVariable = runtimeScene.getVariables().get("productFilter");
+  console.log("확인",data);
+  if(data != null){
+    products = data; // 함수가 반환한 값을 products에 할당
 
-  productNumVariable.setNumber(availableProducts.length);
-  productFilterVariable.setBoolean(true);
+    let availableProducts = products.filter(product => product.amount !== 0);
+    availableProducts.forEach(product => {
+      product.quantity = 0;
+    });
+    // products 배열을 JSON 문자열로 변환
+    let productsString = JSON.stringify(availableProducts);
+    runtimeScene.getVariables().get("products").setString(productsString);
+
+    for(let i=0;  i < availableProducts.length; i++){
+      let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
+      let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
+      let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
+    
+      listNameObject.setString(availableProducts[i].name);
+      let priceString = availableProducts[i].price.toLocaleString();
+      listPriceObject.setString(priceString + "원");
+      listQuantityObject.setString(0);
+    }
+
+    productNumVariable.setNumber(availableProducts.length);
+    productFilterVariable.setBoolean(true);
+  }else{
+    productNumVariable.setNumber(0);
+    productFilterVariable.setBoolean(true);
+  }
+
+});
+
+
+  // let availableProducts = products.filter(product => product.amount !== 0);
+  // availableProducts.forEach(product => {
+  //   product.quantity = 0;
+  // });
+  // // products 배열을 JSON 문자열로 변환
+  // let productsString = JSON.stringify(availableProducts);
+  // runtimeScene.getVariables().get("products").setString(productsString);
+
+  // for(let i=0;  i < availableProducts.length; i++){
+  //   let listNameObject = runtimeScene.getObjects("ProductList_Name")[i];
+  //   let listPriceObject = runtimeScene.getObjects("ProductList_Price")[i];
+  //   let listQuantityObject = runtimeScene.getObjects("ProductList_Quantity")[i];
+
+  //   listNameObject.setString(availableProducts[i].name);
+  //   let priceString = availableProducts[i].price.toLocaleString();
+  //   listPriceObject.setString(priceString + "원");
+  //   listQuantityObject.setString(0);
+  // }
+  // let productNumVariable = runtimeScene.getVariables().get("productNum");
+  // let productFilterVariable = runtimeScene.getVariables().get("productFilter");
+  // let talbeNameVariable = runtimeScene.getVariables().get("tableName");
+  // console.log('test', talbeNameVariable);
+  // productNumVariable.setNumber(availableProducts.length);
+  // productFilterVariable.setBoolean(true);
 
 
 };
@@ -2227,12 +2241,12 @@ gdjs.Store_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f7f40(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd18b60(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x13f4dc8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd18700 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2246,7 +2260,7 @@ gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f4dc8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd18700(runtimeScene);
 
 }
 
@@ -2257,7 +2271,7 @@ gdjs.Store_32sceneCode.userFunc0x13f4dc8(runtimeScene);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setWidth(110);
 }
@@ -2269,7 +2283,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x13f67f8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd184d0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2285,7 +2299,7 @@ gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f67f8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd184d0(runtimeScene);
 
 }
 
@@ -2297,14 +2311,14 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setWidth(110);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setHeight(110);
 }
-}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setWidth(110);
 }
@@ -2316,7 +2330,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x13f53b8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd16a38 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2334,7 +2348,7 @@ gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f53b8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd16a38(runtimeScene);
 
 }
 
@@ -2347,21 +2361,21 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32sceneCode.GDProductList_95Image1Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects2);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setWidth(110);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects2[i].setHeight(110);
 }
-}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setWidth(110);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].setHeight(110);
 }
-}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(25)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects2Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image3Objects2[i].setWidth(110);
 }
@@ -2373,7 +2387,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x937fb8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xd17d10 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2393,7 +2407,7 @@ gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x937fb8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd17d10(runtimeScene);
 
 }
 
@@ -2407,28 +2421,28 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32scene
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects1);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects1);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(22)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image1Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].setWidth(110);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image1Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image1Objects1[i].setHeight(110);
 }
-}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image2Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].setWidth(110);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image2Objects1[i].setHeight(110);
 }
-}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(25)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image3Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].setWidth(110);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image3Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image3Objects1[i].setHeight(110);
 }
-}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(24)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image4Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(25)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductList_9595Image4Objects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image4Objects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image4Objects1[i].setWidth(110);
 }
@@ -2457,6 +2471,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32scene
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32sceneCode.GDProductList_95Image2Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32sceneCode.GDProductList_95Image3Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Image4"), gdjs.Store_32sceneCode.GDProductList_95Image4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus1"), gdjs.Store_32sceneCode.GDProductList_95Minus1Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus2"), gdjs.Store_32sceneCode.GDProductList_95Minus2Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus3"), gdjs.Store_32sceneCode.GDProductList_95Minus3Objects2);
 gdjs.copyArray(runtimeScene.getObjects("ProductList_Minus4"), gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2);
@@ -2473,8 +2488,8 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95DetailButton1Objects
 for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Plus1Objects2[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2.length ;i < len;++i) {
-    gdjs.Store_32sceneCode.GDProductList_95Plus2Objects2[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus1Objects2.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductList_95Minus1Objects2[i].deleteFromScene(runtimeScene);
 }
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Image2Objects2.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductList_95Image2Objects2[i].deleteFromScene(runtimeScene);
@@ -2673,7 +2688,7 @@ gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xee67d8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x16ae1d0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2706,7 +2721,9 @@ async function getUserInfo(userInfoRequest) {
     const response = await fetch("http://43.201.210.173:8080/users/info", userInfoRequest);
     if (response.ok) {
       const data = await response.json();
-      runtimeScene.getGame().getVariables().get("UserId").setString(data.email);
+      runtimeScene.getGame().getVariables().get("UserId").setString(data.id);
+      console.log("유저 id : " ,runtimeScene.getGame().getVariables().get("UserId")._str);
+      runtimeScene.getGame().getVariables().get("UserEmail").setString(data.email);
       runtimeScene.getGame().getVariables().get("UserNickname").setString(data.nickname);
     } else {
       console.error("Request failed with status:", response.status);
@@ -2724,32 +2741,630 @@ gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xee67d8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x16ae1d0(runtimeScene);
+
+}
+
+
+};gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable1Objects2Objects = Hashtable.newFrom({"SalesTable1": gdjs.Store_32sceneCode.GDSalesTable1Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable2Objects2Objects = Hashtable.newFrom({"SalesTable2": gdjs.Store_32sceneCode.GDSalesTable2Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable3Objects2Objects = Hashtable.newFrom({"SalesTable3": gdjs.Store_32sceneCode.GDSalesTable3Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable4Objects2Objects = Hashtable.newFrom({"SalesTable4": gdjs.Store_32sceneCode.GDSalesTable4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable5Objects2Objects = Hashtable.newFrom({"SalesTable5": gdjs.Store_32sceneCode.GDSalesTable5Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable6Objects2Objects = Hashtable.newFrom({"SalesTable6": gdjs.Store_32sceneCode.GDSalesTable6Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable7Objects2Objects = Hashtable.newFrom({"SalesTable7": gdjs.Store_32sceneCode.GDSalesTable7Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable8Objects2Objects = Hashtable.newFrom({"SalesTable8": gdjs.Store_32sceneCode.GDSalesTable8Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable9Objects2Objects = Hashtable.newFrom({"SalesTable9": gdjs.Store_32sceneCode.GDSalesTable9Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable10Objects2Objects = Hashtable.newFrom({"SalesTable10": gdjs.Store_32sceneCode.GDSalesTable10Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable11Objects2Objects = Hashtable.newFrom({"SalesTable11": gdjs.Store_32sceneCode.GDSalesTable11Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable12Objects1Objects = Hashtable.newFrom({"SalesTable12": gdjs.Store_32sceneCode.GDSalesTable12Objects1});
+gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable1"), gdjs.Store_32sceneCode.GDSalesTable1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable1Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable1");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable2"), gdjs.Store_32sceneCode.GDSalesTable2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable2Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable2");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable3"), gdjs.Store_32sceneCode.GDSalesTable3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable3Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable3");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable4"), gdjs.Store_32sceneCode.GDSalesTable4Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable4Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable4");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable5"), gdjs.Store_32sceneCode.GDSalesTable5Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable5Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable5");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable6"), gdjs.Store_32sceneCode.GDSalesTable6Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable6Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable6");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable7"), gdjs.Store_32sceneCode.GDSalesTable7Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable7Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable7");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable8"), gdjs.Store_32sceneCode.GDSalesTable8Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable8Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable8");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable9"), gdjs.Store_32sceneCode.GDSalesTable9Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable9Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable9");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable10"), gdjs.Store_32sceneCode.GDSalesTable10Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable10Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable10");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable11"), gdjs.Store_32sceneCode.GDSalesTable11Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects2);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable11Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable11");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable12"), gdjs.Store_32sceneCode.GDSalesTable12Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable12Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable12");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
 
 }
 
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable1Objects2Objects = Hashtable.newFrom({"SalesTable1": gdjs.Store_32sceneCode.GDSalesTable1Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable2Objects2Objects = Hashtable.newFrom({"SalesTable2": gdjs.Store_32sceneCode.GDSalesTable2Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable3Objects2Objects = Hashtable.newFrom({"SalesTable3": gdjs.Store_32sceneCode.GDSalesTable3Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable4Objects2Objects = Hashtable.newFrom({"SalesTable4": gdjs.Store_32sceneCode.GDSalesTable4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable5Objects2Objects = Hashtable.newFrom({"SalesTable5": gdjs.Store_32sceneCode.GDSalesTable5Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable6Objects2Objects = Hashtable.newFrom({"SalesTable6": gdjs.Store_32sceneCode.GDSalesTable6Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable7Objects2Objects = Hashtable.newFrom({"SalesTable7": gdjs.Store_32sceneCode.GDSalesTable7Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable8Objects2Objects = Hashtable.newFrom({"SalesTable8": gdjs.Store_32sceneCode.GDSalesTable8Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable9Objects2Objects = Hashtable.newFrom({"SalesTable9": gdjs.Store_32sceneCode.GDSalesTable9Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable10Objects2Objects = Hashtable.newFrom({"SalesTable10": gdjs.Store_32sceneCode.GDSalesTable10Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects2, "body2": gdjs.Store_32sceneCode.GDbody2Objects2, "body3": gdjs.Store_32sceneCode.GDbody3Objects2, "body4": gdjs.Store_32sceneCode.GDbody4Objects2});
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable11Objects2Objects = Hashtable.newFrom({"SalesTable11": gdjs.Store_32sceneCode.GDSalesTable11Objects2});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
-gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects = Hashtable.newFrom({"GreyTable": gdjs.Store_32sceneCode.GDGreyTableObjects1});
-gdjs.Store_32sceneCode.userFunc0x1284fc0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable12Objects1Objects = Hashtable.newFrom({"SalesTable12": gdjs.Store_32sceneCode.GDSalesTable12Objects1});
+gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable1"), gdjs.Store_32sceneCode.GDSalesTable1Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable1Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable1");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable2"), gdjs.Store_32sceneCode.GDSalesTable2Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable2Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable2");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable3"), gdjs.Store_32sceneCode.GDSalesTable3Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable3Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable3");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable4"), gdjs.Store_32sceneCode.GDSalesTable4Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable4Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable4");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable5"), gdjs.Store_32sceneCode.GDSalesTable5Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable5Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable5");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable6"), gdjs.Store_32sceneCode.GDSalesTable6Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable6Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable6");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable7"), gdjs.Store_32sceneCode.GDSalesTable7Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable7Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable7");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable8"), gdjs.Store_32sceneCode.GDSalesTable8Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable8Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable8");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable9"), gdjs.Store_32sceneCode.GDSalesTable9Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable9Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable9");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable10"), gdjs.Store_32sceneCode.GDSalesTable10Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable10Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable10");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable11"), gdjs.Store_32sceneCode.GDSalesTable11Objects2);
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody1Objects1, gdjs.Store_32sceneCode.GDbody1Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody2Objects1, gdjs.Store_32sceneCode.GDbody2Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody3Objects1, gdjs.Store_32sceneCode.GDbody3Objects2);
+
+gdjs.copyArray(gdjs.Store_32sceneCode.GDbody4Objects1, gdjs.Store_32sceneCode.GDbody4Objects2);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects2Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable11Objects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable11");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable12"), gdjs.Store_32sceneCode.GDSalesTable12Objects1);
+/* Reuse gdjs.Store_32sceneCode.GDbody1Objects1 */
+/* Reuse gdjs.Store_32sceneCode.GDbody2Objects1 */
+/* Reuse gdjs.Store_32sceneCode.GDbody3Objects1 */
+/* Reuse gdjs.Store_32sceneCode.GDbody4Objects1 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDSalesTable12Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+}{runtimeScene.getScene().getVariables().get("tableName").setString("SalesTable12");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
+}}
+
+}
+
+
+};gdjs.Store_32sceneCode.userFunc0x91ddc8 = function(runtimeScene) {
 "use strict";
 window.open('http://localhost:5173/uploadimages', '_blank');
 
 runtimeScene.getVariables().get("imageTrue").setBoolean(true);
 };
-gdjs.Store_32sceneCode.eventsList10 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1284fc0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x91ddc8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1285108 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x91df10 = function(runtimeScene) {
 "use strict";
 var uploadState = localStorage.getItem("uploadState");
 runtimeScene.getVariables().get("uploadState").setValue(uploadState);
@@ -2766,7 +3381,7 @@ if(uploadState){
 }
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductRegister_9595Image_9595SpriteObjects1Objects = Hashtable.newFrom({"ProductRegister_Image_Sprite": gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1});
-gdjs.Store_32sceneCode.userFunc0xee5f78 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0x91e3c0 = function(runtimeScene) {
 "use strict";
 const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
 const inputProductName = productName.getString();
@@ -2786,17 +3401,12 @@ console.log("상품수량:", inputProductQuantity);
 console.log("상품정보:", inputProductInfo);
 
 
-
-
 // // global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 console.log("유저 토큰 : ", userToken);
 
-
-
-
-
-
+let tableNameVariable = runtimeScene.getVariables().get("tableName").getAsString();
+let storeIdVariable = runtimeScene.getGame().getVariables().get("StoreId")._str;
 
 var imageUrl = runtimeScene.getGame().getVariables().get("imageurl")._str;
 console.log("이미지 url:", imageUrl);
@@ -2814,17 +3424,15 @@ var addProductRequest = {
     "Access-Control-Allow-Headers": "*",
   },
   body: JSON.stringify({
-    // storeId : runtimeScene.getGame().getVariables().get("storeId")._str,
-    storeId : 8,
+    storeId : storeIdVariable,
     name : inputProductName,
     price : inputProductPrice,
     amount : inputProductQuantity,
     info : inputProductInfo,
     imgList : [
       imageUrl
-      // "https://metapop.s3.ap-northeast-2.amazonaws.com/e249d8d0-1a3a-4a6d-9d18-e9645fad5486.jpeg"
     ],
-    tableName : "SalesTable1"
+    tableName : tableNameVariable
   }),
 }
 
@@ -2847,25 +3455,19 @@ async function addNewProduct(addProductRequest){
   }
 }
 
-
 addNewProduct(addProductRequest)
-
-
-
-
-
 };
-gdjs.Store_32sceneCode.eventsList11 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xee5f78(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x91e3c0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x19c3f00 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x168b120 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2875,17 +3477,17 @@ console.log('boolen check : ', buy_status)
 buyStatusVariable.setBoolean(buy_status);
 
 };
-gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x19c3f00(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x168b120(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1502430 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x17cd388 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2904,17 +3506,17 @@ if(products[0].quantity < products[0].amount){
 
 
 };
-gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1502430(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x17cd388(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1501b88 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x12aef38 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2932,17 +3534,17 @@ if(products[0].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1501b88(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x12aef38(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x19c15f8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x7eb360 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2960,17 +3562,17 @@ if(products[1].quantity < products[1].amount){
     runtimeScene.getVariables().get("products").setString(updatedProductsString);
 }
 };
-gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x19c15f8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x7eb360(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x9180e8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x91ede8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -2988,17 +3590,17 @@ if(products[1].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x9180e8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x91ede8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x9182e8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x91f070 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3016,17 +3618,17 @@ if(products[2].quantity < products[2].amount){
     runtimeScene.getVariables().get("products").setString(updatedProductsString);
 }
 };
-gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x9182e8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x91f070(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x14a2eb0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1333390 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3044,17 +3646,17 @@ if(products[2].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x14a2eb0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1333390(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x91bb40 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1284fe8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3073,17 +3675,17 @@ if(products[3].quantity < products[3].amount){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x91bb40(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1284fe8(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1174e18 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1249a18 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3101,17 +3703,17 @@ if(products[3].quantity != 0){
 }
 
 };
-gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1174e18(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1249a18(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x19c6238 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1334620 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3126,13 +3728,13 @@ let buyPriceObject = runtimeScene.getObjects("ProductBuy_Price")[0];
 let buyQuantityObject = runtimeScene.getObjects("ProductBuy_Quantity")[0];
 let buyTotalPriceObject = runtimeScene.getObjects("ProductBuy_TotalPrice")[0];
 
-let userIdVariable = runtimeScene.getGame().getVariables().get("UserId")._str; //유저이메일값임 이건. 유저 아이디값 필요.
+let userIdVariable = runtimeScene.getGame().getVariables().get("UserId")._str; 
 let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
 
 let totalPrice = 0;
 
 let orderList = {
-  buyerId : 7, //수정필요
+  buyerId : userIdVariable, 
   sellerId : currentOwnerIdVariable,
   state : 0,
   totalPrice : 0,
@@ -3190,17 +3792,17 @@ fetch("http://43.201.210.173:8080/users/info", userInfoRequest)
   });
 
 };
-gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x19c6238(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1334620(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x19c5e38 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x124a960 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 let orderListString = runtimeScene.getVariables().get("orderList").getAsString();
@@ -3239,17 +3841,17 @@ depositInfoObject.setString(depositInfo);
 
 
 };
-gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x19c5e38(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x124a960(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x93b168 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x1248698 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3264,12 +3866,12 @@ detailInfoObject.setString(products[0].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[0].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x93b168(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x1248698(runtimeScene);
 
 }
 
@@ -3280,7 +3882,7 @@ gdjs.Store_32sceneCode.userFunc0x93b168(runtimeScene);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
 }
@@ -3292,7 +3894,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x93d8c8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x12ae8c0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3307,12 +3909,12 @@ detailInfoObject.setString(products[1].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[1].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList26 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x93d8c8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x12ae8c0(runtimeScene);
 
 }
 
@@ -3323,7 +3925,7 @@ gdjs.Store_32sceneCode.userFunc0x93d8c8(runtimeScene);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
 }
@@ -3335,7 +3937,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x93c1a8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x947138 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3350,12 +3952,12 @@ detailInfoObject.setString(products[2].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[2].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList27 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x93c1a8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x947138(runtimeScene);
 
 }
 
@@ -3366,7 +3968,7 @@ gdjs.Store_32sceneCode.userFunc0x93c1a8(runtimeScene);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
 }
@@ -3378,7 +3980,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x93a928 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0x17ce608 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3393,12 +3995,12 @@ detailInfoObject.setString(products[3].info);
 runtimeScene.getGame().getVariables().get("ProductDetail_Image").setString(products[3].imgList[0]);
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects = Hashtable.newFrom({"ProductInfo_Image": gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1});
-gdjs.Store_32sceneCode.eventsList26 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList28 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x93a928(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x17ce608(runtimeScene);
 
 }
 
@@ -3409,7 +4011,7 @@ gdjs.Store_32sceneCode.userFunc0x93a928(runtimeScene);
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(26)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductInfo_9595ImageObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1[i].setWidth(276);
 }
@@ -3421,7 +4023,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.eventsList27 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -3451,7 +4053,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDDoor1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDDoor3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32sceneCode.GDDoor1Objects1, "Door3": gdjs.Store_32sceneCode.GDDoor3Objects1, "Door2": gdjs.Store_32sceneCode.GDDoor2Objects1});
-gdjs.Store_32sceneCode.userFunc0x13f92f0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xd18930 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -3484,17 +4086,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Store_32sceneCode.eventsList28 = function(runtimeScene) {
+gdjs.Store_32sceneCode.eventsList30 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f92f0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd18930(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.eventsList29 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.eventsList31 = function(runtimeScene) {
 
 {
 
@@ -5626,7 +6228,7 @@ gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f83a8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd18d90(runtimeScene);
 
 }
 
@@ -5634,7 +6236,7 @@ gdjs.Store_32sceneCode.userFunc0x13f83a8(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x13f8738(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xd18fc0(runtimeScene);
 
 }
 
@@ -5753,28 +6355,19 @@ gdjs.Store_32sceneCode.eventsList9(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("GreyTable"), gdjs.Store_32sceneCode.GDGreyTableObjects1);
-gdjs.copyArray(runtimeScene.getObjects("body1"), gdjs.Store_32sceneCode.GDbody1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body2"), gdjs.Store_32sceneCode.GDbody2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body3"), gdjs.Store_32sceneCode.GDbody3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Store_32sceneCode.GDbody4Objects1);
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects, gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDGreyTableObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "q");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(8)) == "seller";
 }
-}
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
-}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
-}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
-}}
+
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -5799,10 +6392,13 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGam
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.buyer)", 0, 0);
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
-}}
+}
+{ //Subevents
+gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -6102,7 +6698,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getSc
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
@@ -6111,7 +6707,7 @@ gdjs.Store_32sceneCode.eventsList10(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1285108(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0x91df10(runtimeScene);
 
 }
 
@@ -6124,7 +6720,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("uploadState")) == 1;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("ProductRegister_Image_Sprite"), gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1);
-{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(21)), gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductRegister_9595Image_9595SpriteObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoSprite.func(runtimeScene, "GlobalVariableString(imageurl)", gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductRegister_9595Image_9595SpriteObjects1Objects, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1[i].setWidth(120);
 }
@@ -6151,12 +6747,60 @@ for (var i = 0, k = 0, l = gdjs.Store_32sceneCode.GDProductRegister_95FinishButt
 }
 gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
+gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("DohEmoteMidPopup"), gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_CancelButton"), gdjs.Store_32sceneCode.GDProductRegister_95CancelButtonObjects1);
+/* Reuse gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ImageButton"), gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_Image_Sprite"), gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ProductInfo"), gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ProductName"), gdjs.Store_32sceneCode.GDProductRegister_95ProductNameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ProductPrice"), gdjs.Store_32sceneCode.GDProductRegister_95ProductPriceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_ProductQuantity"), gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ProductRegister_Title"), gdjs.Store_32sceneCode.GDProductRegister_95TitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WhiteBackgroundPopup"), gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1);
+{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95FinishButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95CancelButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95CancelButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95TitleObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95TitleObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductNameObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductNameObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductPriceObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductPriceObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductQuantityObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ProductInfoObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDDohEmoteMidPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDWhiteBackgroundPopupObjects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i < len;++i) {
+    gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1[i].deleteFromScene(runtimeScene);
+}
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup product list(ver.seller)", 0, 0);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productListCheck"), true);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -6235,7 +6879,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDBlueTitlePopupObjects1.length ;i <
 }{for(var i = 0, len = gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1.length ;i < len;++i) {
     gdjs.Store_32sceneCode.GDProductRegister_95ImageButtonObjects1[i].hide();
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(21).setString("");
+}{runtimeScene.getGame().getVariables().getFromIndex(22).setString("");
 }}
 
 }
@@ -6469,7 +7113,7 @@ gdjs.Store_32sceneCode.GDProductList_95BuyButtonObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
 }
 
 }
@@ -6492,7 +7136,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus1Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList13(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
@@ -6515,7 +7159,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus1Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
@@ -6538,7 +7182,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus2Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
@@ -6561,7 +7205,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus2Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -6584,7 +7228,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus3Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -6607,7 +7251,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus3Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 }
@@ -6630,7 +7274,7 @@ gdjs.Store_32sceneCode.GDProductList_95Plus4Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList19(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
 }
 
 }
@@ -6653,7 +7297,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32sceneCode.eventsList20(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 }
@@ -6781,7 +7425,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList21(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
@@ -6984,7 +7628,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDTransparentBackgroundObjects1.leng
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList22(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
@@ -7222,7 +7866,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList23(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList25(runtimeScene);} //End of subevents
 }
 
 }
@@ -7350,7 +7994,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList24(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -7478,7 +8122,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList25(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -7606,7 +8250,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.lengt
 }
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList26(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -7667,7 +8311,7 @@ for(var i = 0, len = gdjs.Store_32sceneCode.GDProductInfo_95ImageObjects1.length
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("productFilter"), true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList27(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -7694,7 +8338,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", true);
 }
 { //Subevents
-gdjs.Store_32sceneCode.eventsList28(runtimeScene);} //End of subevents
+gdjs.Store_32sceneCode.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -8639,7 +9283,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects1.length = 0;
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2.length = 0;
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3.length = 0;
 
-gdjs.Store_32sceneCode.eventsList29(runtimeScene);
+gdjs.Store_32sceneCode.eventsList31(runtimeScene);
 
 return;
 

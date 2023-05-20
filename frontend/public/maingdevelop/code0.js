@@ -573,7 +573,7 @@ gdjs.Character_32custom_32sceneCode.GDBlueBarObjects1= [];
 gdjs.Character_32custom_32sceneCode.GDBlueBarObjects2= [];
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x13f5298 = function(runtimeScene) {
+gdjs.Character_32custom_32sceneCode.userFunc0xd1d1c0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -606,7 +606,9 @@ async function getUserInfo(userInfoRequest) {
     const response = await fetch("http://43.201.210.173:8080/users/info", userInfoRequest);
     if (response.ok) {
       const data = await response.json();
-      runtimeScene.getGame().getVariables().get("UserId").setString(data.email);
+      runtimeScene.getGame().getVariables().get("UserId").setString(data.id);
+      console.log("유저 id : " ,runtimeScene.getGame().getVariables().get("UserId")._str);
+      runtimeScene.getGame().getVariables().get("UserEmail").setString(data.email);
       runtimeScene.getGame().getVariables().get("UserNickname").setString(data.nickname);
     } else {
       console.error("Request failed with status:", response.status);
@@ -624,12 +626,12 @@ gdjs.Character_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x13f5298(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0xd1d1c0(runtimeScene);
 
 }
 
 
-};gdjs.Character_32custom_32sceneCode.userFunc0x13f99f8 = function(runtimeScene) {
+};gdjs.Character_32custom_32sceneCode.userFunc0xd19880 = function(runtimeScene) {
 "use strict";
 const userBody = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const userEye = runtimeScene.getGame().getVariables().get("UserEye")._str;
@@ -740,7 +742,7 @@ gdjs.Character_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Character_32custom_32sceneCode.userFunc0x13f99f8(runtimeScene);
+gdjs.Character_32custom_32sceneCode.userFunc0xd19880(runtimeScene);
 
 }
 

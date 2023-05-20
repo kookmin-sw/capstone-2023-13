@@ -986,16 +986,298 @@ gdjs.Square_32sceneCode.GDSign2Objects3= [];
 gdjs.Square_32sceneCode.GDSign1Objects1= [];
 gdjs.Square_32sceneCode.GDSign1Objects2= [];
 gdjs.Square_32sceneCode.GDSign1Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95ThingsObjects1= [];
+gdjs.Square_32sceneCode.GDSquare_95ThingsObjects2= [];
+gdjs.Square_32sceneCode.GDSquare_95ThingsObjects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things75Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things75Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things75Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things74Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things74Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things74Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things73Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things73Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things73Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things72Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things72Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things72Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things71Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things71Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things71Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things70Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things70Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things70Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things69Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things69Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things69Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things68Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things68Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things68Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things67Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things67Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things67Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things66Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things66Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things66Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things65Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things65Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things65Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things64Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things64Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things64Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things63Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things63Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things63Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things62Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things62Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things62Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things61Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things61Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things61Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things60Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things60Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things60Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things59Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things59Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things59Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things58Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things58Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things58Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things57Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things57Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things57Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things56Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things56Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things56Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things55Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things55Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things55Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things54Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things54Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things54Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things53Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things53Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things53Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things52Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things52Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things52Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things51Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things51Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things51Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things50Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things50Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things50Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things49Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things49Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things49Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things48Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things48Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things48Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things47Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things47Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things47Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things46Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things46Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things46Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things45Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things45Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things45Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things44Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things44Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things44Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things43Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things43Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things43Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things42Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things42Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things42Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things41Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things41Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things41Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things40Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things40Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things40Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things39Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things39Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things39Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things38Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things38Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things38Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things37Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things37Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things37Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things36Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things36Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things36Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things35Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things35Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things35Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things34Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things34Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things34Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things33Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things33Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things33Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things32Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things32Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things32Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things31Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things31Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things31Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things30Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things30Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things30Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things29Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things29Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things29Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things28Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things28Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things28Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things27Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things27Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things27Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things26Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things26Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things26Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things25Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things25Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things25Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things24Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things24Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things24Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things23Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things23Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things23Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things22Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things22Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things22Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things21Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things21Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things21Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things20Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things20Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things20Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things19Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things19Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things19Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things18Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things18Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things18Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things17Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things17Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things17Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things16Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things16Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things16Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things15Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things15Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things15Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things14Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things14Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things14Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things13Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things13Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things13Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things12Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things12Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things12Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things11Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things11Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things11Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things10Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things10Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things10Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things9Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things9Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things9Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things8Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things8Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things8Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things7Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things7Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things7Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things6Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things6Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things6Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things5Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things5Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things5Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things4Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things4Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things4Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things3Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things3Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things3Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things2Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things2Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things2Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Things1Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Things1Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Things1Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95TileObjects1= [];
+gdjs.Square_32sceneCode.GDSquare_95TileObjects2= [];
+gdjs.Square_32sceneCode.GDSquare_95TileObjects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile17Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile17Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile17Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile16Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile16Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile16Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile15Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile15Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile15Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile14Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile14Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile14Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile13Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile13Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile13Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile12Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile12Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile12Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile11Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile11Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile11Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile10Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile10Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile10Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile9Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile9Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile9Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile8Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile8Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile8Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile7Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile7Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile7Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile6Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile6Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile6Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile5Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile5Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile5Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile4Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile4Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile4Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile3Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile3Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile3Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile2Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile2Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile2Objects3= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile1Objects1= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile1Objects2= [];
+gdjs.Square_32sceneCode.GDSquare_95Tile1Objects3= [];
 
 
-gdjs.Square_32sceneCode.userFunc0x13f8be8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd16b58 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
 var preX = runtimeScene.getGame().getVariables().get("UserX")._value;
 var preY = runtimeScene.getGame().getVariables().get("UserY")._value;
 
-runtimeScene.user_id = runtimeScene.getGame().getVariables().get("UserId")._str;
+runtimeScene.user_id = runtimeScene.getGame().getVariables().get("UserEmail")._str;
 runtimeScene.nickname = runtimeScene.getGame().getVariables().get("UserNickname")._str;
 runtimeScene.channel_id = "Square";
 
@@ -1424,12 +1706,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f8be8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd16b58(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x13f8e40 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xd19650 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1461,7 +1743,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0x13f92f0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd18930 = function(runtimeScene) {
 "use strict";
 // const channel = "Square1";
 
@@ -1537,7 +1819,7 @@ runtimeScene.ws.send(JSON.stringify(update))
 };
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f8990 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd173c8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1560,9 +1842,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1580,14 +1862,14 @@ gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f8990(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd173c8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f8738 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd18fc0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1610,9 +1892,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1630,14 +1912,14 @@ gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f8738(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd18fc0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f7f40 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd18b60 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1660,9 +1942,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1680,14 +1962,14 @@ gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f7f40(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd18b60(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f7e20 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd184d0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1710,9 +1992,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1730,14 +2012,14 @@ gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f7e20(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd184d0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f6fd0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd17d10 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1760,9 +2042,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1780,14 +2062,14 @@ gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f6fd0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd17d10(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f9d88 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd1b238 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1810,9 +2092,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1830,14 +2112,14 @@ gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f9d88(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd1b238(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f41c0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd161d8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1860,9 +2142,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1880,14 +2162,14 @@ gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f41c0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd161d8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f5030 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd1a8c0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1910,9 +2192,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1930,14 +2212,14 @@ gdjs.Square_32sceneCode.eventsList8 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f5030(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd1a8c0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f5150 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd15168 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1960,9 +2242,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -1980,14 +2262,14 @@ gdjs.Square_32sceneCode.eventsList9 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f5150(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd15168(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
-gdjs.Square_32sceneCode.userFunc0x13fb258 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd22ff8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2010,9 +2292,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2030,14 +2312,14 @@ gdjs.Square_32sceneCode.eventsList10 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13fb258(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd22ff8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f48f8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xcf36b0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2060,9 +2342,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2080,14 +2362,14 @@ gdjs.Square_32sceneCode.eventsList11 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f48f8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xcf36b0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects2});
-gdjs.Square_32sceneCode.userFunc0x13fc728 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd1cbb8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2110,9 +2392,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2130,14 +2412,14 @@ gdjs.Square_32sceneCode.eventsList12 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13fc728(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd1cbb8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
-gdjs.Square_32sceneCode.userFunc0x13fb4e0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd182a0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2160,9 +2442,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2180,14 +2462,14 @@ gdjs.Square_32sceneCode.eventsList13 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13fb4e0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd182a0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f8030 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd1fc18 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2210,9 +2492,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2230,14 +2512,14 @@ gdjs.Square_32sceneCode.eventsList14 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f8030(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd1fc18(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
-gdjs.Square_32sceneCode.userFunc0x13d6318 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd236b8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2260,9 +2542,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2280,14 +2562,14 @@ gdjs.Square_32sceneCode.eventsList15 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13d6318(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd236b8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
-gdjs.Square_32sceneCode.userFunc0x13fddc0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd23d58 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2310,9 +2592,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2330,14 +2612,14 @@ gdjs.Square_32sceneCode.eventsList16 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13fddc0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd23d58(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f7798 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd21b98 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2360,9 +2642,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2380,14 +2662,14 @@ gdjs.Square_32sceneCode.eventsList17 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f7798(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd21b98(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
-gdjs.Square_32sceneCode.userFunc0x13cfa78 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x920e38 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2410,9 +2692,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2430,14 +2712,14 @@ gdjs.Square_32sceneCode.eventsList18 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13cfa78(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x920e38(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f91b8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1333568 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2460,9 +2742,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2480,14 +2762,14 @@ gdjs.Square_32sceneCode.eventsList19 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f91b8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1333568(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
-gdjs.Square_32sceneCode.userFunc0x13f3ce0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1334c00 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2510,9 +2792,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2530,14 +2812,14 @@ gdjs.Square_32sceneCode.eventsList20 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f3ce0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1334c00(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
-gdjs.Square_32sceneCode.userFunc0x13facb0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x12851f0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2560,9 +2842,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2580,14 +2862,14 @@ gdjs.Square_32sceneCode.eventsList21 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13facb0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x12851f0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
-gdjs.Square_32sceneCode.userFunc0x1505960 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1649e38 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2610,9 +2892,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2630,14 +2912,14 @@ gdjs.Square_32sceneCode.eventsList22 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1505960(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1649e38(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.userFunc0x937fb8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x168afd8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2660,9 +2942,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2680,14 +2962,14 @@ gdjs.Square_32sceneCode.eventsList23 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x937fb8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x168afd8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1});
-gdjs.Square_32sceneCode.userFunc0x9166b8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x9478e8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2710,9 +2992,9 @@ async function getStoreId(checkStoreIdRequest) {
       const data = await response.json();
       console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
-      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.email);
+      runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
-      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
       console.log("스토어 아이디 : ", storeId);
       console.log("스토어 판매자 : ", ownerId);
     } else {
@@ -2730,7 +3012,7 @@ gdjs.Square_32sceneCode.eventsList24 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x9166b8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x9478e8(runtimeScene);
 
 }
 
@@ -2747,13 +3029,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(0)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(0)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(1);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2774,13 +3056,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(1)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(1)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(2);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2801,13 +3083,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(2)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(2)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(3);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(3);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2828,13 +3110,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(3)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(3)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(4);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(4);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2855,13 +3137,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(4)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(4)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(5);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(5);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2882,13 +3164,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(5)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(5)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(6);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(6);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2909,13 +3191,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(6)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(6)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(7);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(7);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2936,13 +3218,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(7)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(7)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(8);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(8);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2963,13 +3245,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(8)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(8)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(9);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(9);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -2990,13 +3272,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(9)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(9)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(10);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(10);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3017,13 +3299,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(10)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(10)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(11);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(11);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3044,13 +3326,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(11)) == 0;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(11)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(12);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(12);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer1", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3071,13 +3353,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(0)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(0)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(1);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3098,13 +3380,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(1)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(1)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(2);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3125,13 +3407,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(2)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(2)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(3);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(3);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3152,13 +3434,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(3)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(3)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(4);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(4);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3179,13 +3461,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(4)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(4)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(5);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(5);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3206,13 +3488,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(5)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(5)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(6);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(6);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3233,13 +3515,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(6)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(6)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(7);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(7);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3260,13 +3542,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(7)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(7)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(8);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(8);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3287,13 +3569,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(8)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(8)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(9);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(9);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3314,13 +3596,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(9)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(9)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(10);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(10);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3341,13 +3623,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(10)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(10)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(11);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(11);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3368,13 +3650,13 @@ gdjs.copyArray(runtimeScene.getObjects("body4"), gdjs.Square_32sceneCode.GDbody4
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getChild(11)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17).getChild(11)) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects, gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects, false, runtimeScene, false);
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(12);
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(12);
 }{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Popup layer3", 0, 0);
 }{runtimeScene.getScene().getVariables().get("clicked").setNumber(1);
 }
@@ -3385,7 +3667,7 @@ gdjs.Square_32sceneCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xef8cb0 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x7e87a0 = function(runtimeScene) {
 "use strict";
 const stoName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = stoName.getString();
@@ -3492,12 +3774,12 @@ gdjs.Square_32sceneCode.eventsList26 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xef8cb0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x7e87a0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x1812260 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xcc5f28 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -3541,12 +3823,12 @@ gdjs.Square_32sceneCode.eventsList27 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x1812260(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xcc5f28(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xee64d0 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x1628d88 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -3593,12 +3875,12 @@ gdjs.Square_32sceneCode.eventsList28 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xee64d0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1628d88(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x19c3350 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xa33468 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
@@ -3673,7 +3955,7 @@ gdjs.Square_32sceneCode.eventsList29 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x19c3350(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xa33468(runtimeScene);
 
 }
 
@@ -4136,7 +4418,7 @@ gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Obj
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign11Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign10Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign9Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign8Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign7Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign6Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign5Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign4Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign1Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1, "Sign11": gdjs.Square_32sceneCode.GDSign11Objects1, "Sign10": gdjs.Square_32sceneCode.GDSign10Objects1, "Sign9": gdjs.Square_32sceneCode.GDSign9Objects1, "Sign8": gdjs.Square_32sceneCode.GDSign8Objects1, "Sign7": gdjs.Square_32sceneCode.GDSign7Objects1, "Sign6": gdjs.Square_32sceneCode.GDSign6Objects1, "Sign5": gdjs.Square_32sceneCode.GDSign5Objects1, "Sign4": gdjs.Square_32sceneCode.GDSign4Objects1, "Sign3": gdjs.Square_32sceneCode.GDSign3Objects1, "Sign2": gdjs.Square_32sceneCode.GDSign2Objects1, "Sign1": gdjs.Square_32sceneCode.GDSign1Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0x13f5298 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xd1d1c0 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -4183,12 +4465,12 @@ gdjs.Square_32sceneCode.eventsList30 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f5298(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd1d1c0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0x13f9548 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0xd19ab0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 
@@ -4238,7 +4520,7 @@ gdjs.Square_32sceneCode.eventsList31 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f9548(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd19ab0(runtimeScene);
 
 }
 
@@ -4270,7 +4552,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f8e40(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd19650(runtimeScene);
 
 }
 
@@ -4278,7 +4560,7 @@ gdjs.Square_32sceneCode.userFunc0x13f8e40(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0x13f92f0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xd18930(runtimeScene);
 
 }
 
@@ -4518,7 +4800,7 @@ gdjs.Square_32sceneCode.eventsList26(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) == 1;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) == 1;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BlueTitlePopup"), gdjs.Square_32sceneCode.GDBlueTitlePopupObjects1);
 gdjs.copyArray(runtimeScene.getObjects("TextInput"), gdjs.Square_32sceneCode.GDTextInputObjects1);
@@ -8243,6 +8525,288 @@ gdjs.Square_32sceneCode.GDSign2Objects3.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects1.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects2.length = 0;
 gdjs.Square_32sceneCode.GDSign1Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95ThingsObjects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95ThingsObjects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95ThingsObjects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things75Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things75Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things75Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things74Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things74Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things74Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things73Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things73Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things73Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things72Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things72Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things72Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things71Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things71Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things71Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things70Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things70Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things70Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things69Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things69Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things69Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things68Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things68Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things68Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things67Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things67Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things67Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things66Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things66Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things66Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things65Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things65Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things65Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things64Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things64Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things64Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things63Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things63Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things63Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things62Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things62Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things62Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things61Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things61Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things61Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things60Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things60Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things60Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things59Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things59Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things59Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things58Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things58Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things58Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things57Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things57Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things57Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things56Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things56Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things56Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things55Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things55Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things55Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things54Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things54Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things54Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things53Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things53Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things53Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things52Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things52Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things52Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things51Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things51Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things51Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things50Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things50Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things50Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things49Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things49Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things49Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things48Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things48Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things48Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things47Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things47Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things47Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things46Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things46Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things46Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things45Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things45Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things45Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things44Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things44Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things44Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things43Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things43Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things43Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things42Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things42Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things42Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things41Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things41Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things41Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things40Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things40Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things40Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things39Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things39Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things39Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things38Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things38Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things38Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things37Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things37Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things37Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things36Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things36Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things36Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things35Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things35Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things35Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things34Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things34Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things34Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things33Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things33Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things33Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things32Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things32Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things32Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things31Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things31Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things31Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things30Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things30Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things30Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things29Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things29Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things29Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things28Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things28Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things28Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things27Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things27Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things27Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things26Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things26Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things26Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things25Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things25Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things25Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things24Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things24Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things24Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things23Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things23Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things23Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things22Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things22Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things22Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things21Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things21Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things21Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things20Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things20Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things20Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things19Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things19Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things19Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things18Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things18Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things18Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things17Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things17Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things17Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things16Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things16Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things16Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things15Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things15Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things15Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things14Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things14Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things14Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things13Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things13Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things13Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things12Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things11Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things10Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things9Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things8Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things7Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things6Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things5Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things4Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things3Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things2Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Things1Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95TileObjects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95TileObjects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95TileObjects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile17Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile17Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile17Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile16Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile16Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile16Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile15Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile15Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile15Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile14Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile14Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile14Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile13Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile13Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile13Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile12Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile12Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile12Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile11Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile11Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile11Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile10Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile10Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile10Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile9Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile9Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile9Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile8Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile8Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile8Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile7Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile7Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile7Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile6Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile6Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile6Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile5Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile5Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile5Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile4Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile4Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile4Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile3Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile3Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile3Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile2Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile2Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile2Objects3.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile1Objects1.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile1Objects2.length = 0;
+gdjs.Square_32sceneCode.GDSquare_95Tile1Objects3.length = 0;
 
 gdjs.Square_32sceneCode.eventsList32(runtimeScene);
 
