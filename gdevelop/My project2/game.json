@@ -57587,8 +57587,6 @@
                 "        if (bodyY > -1133 && bodyY < 637) {",
                 "            runtimeScene.getLayer(\"\").setCameraY(lerp(camY,o.getY(),0.8), o.user_id);",
                 "        }",
-                "        console.log(bodyX);",
-                "        console.log(bodyY);",
                 "    }",
                 "}",
                 "",
@@ -58974,7 +58972,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ]
         }
@@ -76264,6 +76262,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -76594,6 +76593,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -76768,7 +76768,7 @@
                 "value": "VarGlobalTxt"
               },
               "parameters": [
-                "StoreId",
+                "CurrentOwnerId",
                 "!=",
                 "GlobalVariableString(UserId)"
               ]
@@ -76777,7 +76777,32 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "Cache"
+              },
+              "parameters": [
+                "popup3_delete_button"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentOwnerId",
+                "=",
+                "GlobalVariableString(UserId)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
               },
               "parameters": [
                 "popup3_delete_button",
@@ -77403,6 +77428,16 @@
                 "clicked",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentOwnerId",
+                "=",
+                "\"0\""
               ]
             }
           ]
