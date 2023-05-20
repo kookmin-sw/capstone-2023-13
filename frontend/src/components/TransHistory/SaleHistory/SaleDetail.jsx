@@ -177,7 +177,7 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
 
     const UpdateProductState = () => {
         let token = localStorage.getItem('login-token');
-        const orders_id = 2;
+        const orders_id = orderId;
         const response = axios.put(
             `http://43.201.210.173:8080/orders/update/${orders_id}`,
             {
@@ -207,7 +207,7 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
 
     const DeleteOrder = () => {
         let token = localStorage.getItem('login-token');
-        const orders_id = 1;
+        const orders_id = orderId;
         const response = axios.delete(
             `http://43.201.210.173:8080/orders/remove/${orders_id}`,
             {
