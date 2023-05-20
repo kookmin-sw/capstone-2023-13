@@ -639,11 +639,60 @@ gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46G
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door2": gdjs.Store_32custom_32sceneCode.GDDoor2Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor3Objects1Objects = Hashtable.newFrom({"Door3": gdjs.Store_32custom_32sceneCode.GDDoor3Objects1});
-gdjs.Store_32custom_32sceneCode.userFunc0x11acef8 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.userFunc0x12827c0 = function(runtimeScene) {
+"use strict";
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
+
+var checkStoreIdRequest = {
+  method: "GET",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+}
+
+async function getStoreId(checkStoreIdRequest) {
+  try {
+    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
+    console.log(response);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Get호출 : ", data);
+      runtimeScene.getVariables().get("StoreId").setString(data.id);
+      var storeId = runtimeScene.getVariables().get("StoreId")._str;
+      console.log("스토어 아이디 : ", storeId);
+      runtimeScene.getVariables().get("IsStoreIdAdded").setNumber(1);
+    } else {
+      console.error("Request failed with status:", response.status);
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+}
+
+getStoreId(checkStoreIdRequest);
+};
+gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.Store_32custom_32sceneCode.userFunc0x12827c0(runtimeScene);
+
+}
+
+
+};gdjs.Store_32custom_32sceneCode.userFunc0x1283c98 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
 var tableList = [];
+var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
+var storeId = runtimeScene.getVariables().get("StoreId")._str;
 
 // 골라진 타일 인스턴스 정보 가져오기
 for (let i = 1; i < 14; i++) {
@@ -680,6 +729,7 @@ for (let i = 1; i < 13; i++) {
         console.log(wall);
     }
 }
+
 
 // 골라진 문 인스턴스 정보 가져오기
 for (let i = 1; i < 4; i++) {
@@ -718,6 +768,7 @@ for (let i = 1; i < 31; i++) {
                 height : o.getHeight(),
                 layer : o.getLayer()
             }
+            deco = JSON.stringify(deco);
             decoList.push(deco);
             j += 1;
         }
@@ -744,24 +795,68 @@ for (let i = 1; i < 13; i++) {
                 height : o.getHeight(),
                 layer : o.getLayer()
             }
+            table = JSON.stringify(table);
             tableList.push(table);
             j += 1;
         }
     }
 }
 console.log(tableList);
+
+tile = JSON.stringify(tile);
+wall = JSON.stringify(wall);
+door = JSON.stringify(door);
+
+var storeHttp = "storecustom"
+
+// 스토어 등록 호출 보내기
+var addStoreRequest = {
+  method: "POST",
+  headers: {
+    'Authorization': `${userToken}`,
+    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+  },
+  body: JSON.stringify({
+    storeId : storeId,
+    tile : tile,
+    wall : wall,
+    door : door,
+    decoList : decoList,
+    tableList : tableList,
+  }),
+}
+
+var c = 0;
+
+if (c !== 1) {
+    fetch("http://43.201.210.173:8080/" + storeHttp + "izings/register", addStoreRequest)
+    .then((res) => res.text())
+    .then((data) => {
+        runtimeScene.getVariables().get("StoreCustomSuccess").setNumber(1);
+    })
+    .catch((error) => {
+        console.log("Error fetching data:", error);
+    });
+}
+
+c = 1;
+
+runtimeScene.getGame().getVariables().get("IsStoreAdded").setNumber(0);
 };
-gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x11acef8(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x1283c98(runtimeScene);
 
 }
 
 
-};gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -782,6 +877,7 @@ gdjs.copyArray(runtimeScene.getObjects("SalesTable6"), gdjs.Store_32custom_32sce
 gdjs.copyArray(runtimeScene.getObjects("SalesTable7"), gdjs.Store_32custom_32sceneCode.GDSalesTable7Objects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable8"), gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable9"), gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("TextInput"), gdjs.Store_32custom_32sceneCode.GDTextInputObjects1);
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Store customization", 0, 0);
 }{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1.length ;i < len;++i) {
     gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1[i].returnVariable(gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1[i].getVariables().get("sales")).setString("SaleTable");
@@ -822,6 +918,9 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1.leng
 }{runtimeScene.getScene().getVariables().get("doorCreated").setNumber(0);
 }{runtimeScene.getScene().getVariables().get("tileCreated").setNumber(0);
 }{runtimeScene.getScene().getVariables().get("wallCreated").setNumber(0);
+}{}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDTextInputObjects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDTextInputObjects1[i].deleteFromScene(runtimeScene);
+}
 }}
 
 }
@@ -7327,6 +7426,28 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDoor2Objects1.length ;i <
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32custom_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("BlueButtonWithShadow"), gdjs.Store_32custom_32sceneCode.GDBlueButtonWithShadowObjects1);
 
 let isConditionTrue_0 = false;
@@ -7352,9 +7473,10 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 }
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
+}
 { //Subevents
-gdjs.Store_32custom_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
@@ -7899,7 +8021,7 @@ gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects2.length = 0;
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects1.length = 0;
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects2.length = 0;
 
-gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);
+gdjs.Store_32custom_32sceneCode.eventsList2(runtimeScene);
 
 return;
 
