@@ -511,8 +511,14 @@ gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1= [];
 gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects2= [];
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects1= [];
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects2= [];
+gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1= [];
+gdjs.Store_32custom_32sceneCode.GDDelKeyObjects2= [];
+gdjs.Store_32custom_32sceneCode.GDNewTextObjects1= [];
+gdjs.Store_32custom_32sceneCode.GDNewTextObjects2= [];
 
 
+gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile1Objects1Objects = Hashtable.newFrom({"Tile1": gdjs.Store_32custom_32sceneCode.GDTile1Objects1});
+gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDWall1Objects1Objects = Hashtable.newFrom({"Wall1": gdjs.Store_32custom_32sceneCode.GDWall1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDOpenItemListButtonObjects1Objects = Hashtable.newFrom({"OpenItemListButton": gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile1Objects1Objects = Hashtable.newFrom({"Tile1": gdjs.Store_32custom_32sceneCode.GDTile1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile2Objects1Objects = Hashtable.newFrom({"Tile2": gdjs.Store_32custom_32sceneCode.GDTile2Objects1});
@@ -639,7 +645,324 @@ gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46G
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor1Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32custom_32sceneCode.GDDoor1Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door2": gdjs.Store_32custom_32sceneCode.GDDoor2Objects1});
 gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDoor3Objects1Objects = Hashtable.newFrom({"Door3": gdjs.Store_32custom_32sceneCode.GDDoor3Objects1});
-gdjs.Store_32custom_32sceneCode.userFunc0x16ae2a0 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDelKeyObjects1Objects = Hashtable.newFrom({"DelKey": gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1});
+gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.Store_32custom_32sceneCode.GDNewTextObjects1);
+{runtimeScene.getScene().getVariables().get("deleteMode").setString("1");
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDNewTextObjects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDNewTextObjects1[i].hide(false);
+}
+}}
+
+}
+
+
+};gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco1Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco2Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco3Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco4Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco5Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco6Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco7Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco8Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco9Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco10Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco14Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco15Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco20Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco21Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco22Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco23Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco24Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco25Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco26Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco27Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco30Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco31Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco32Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco33Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco34Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco35Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco36Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco37Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco38Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco39Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco40Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco41Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco42Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco43Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco44Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco45Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco46Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco47Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco49Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco48Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco50Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco51Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco52Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco11Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco12Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco13Objects1Objects = Hashtable.newFrom({"Deco1": gdjs.Store_32custom_32sceneCode.GDDeco1Objects1, "Deco2": gdjs.Store_32custom_32sceneCode.GDDeco2Objects1, "Deco3": gdjs.Store_32custom_32sceneCode.GDDeco3Objects1, "Deco4": gdjs.Store_32custom_32sceneCode.GDDeco4Objects1, "Deco5": gdjs.Store_32custom_32sceneCode.GDDeco5Objects1, "Deco6": gdjs.Store_32custom_32sceneCode.GDDeco6Objects1, "Deco7": gdjs.Store_32custom_32sceneCode.GDDeco7Objects1, "Deco8": gdjs.Store_32custom_32sceneCode.GDDeco8Objects1, "Deco9": gdjs.Store_32custom_32sceneCode.GDDeco9Objects1, "Deco10": gdjs.Store_32custom_32sceneCode.GDDeco10Objects1, "Deco14": gdjs.Store_32custom_32sceneCode.GDDeco14Objects1, "Deco15": gdjs.Store_32custom_32sceneCode.GDDeco15Objects1, "Deco20": gdjs.Store_32custom_32sceneCode.GDDeco20Objects1, "Deco21": gdjs.Store_32custom_32sceneCode.GDDeco21Objects1, "Deco22": gdjs.Store_32custom_32sceneCode.GDDeco22Objects1, "Deco23": gdjs.Store_32custom_32sceneCode.GDDeco23Objects1, "Deco24": gdjs.Store_32custom_32sceneCode.GDDeco24Objects1, "Deco25": gdjs.Store_32custom_32sceneCode.GDDeco25Objects1, "Deco26": gdjs.Store_32custom_32sceneCode.GDDeco26Objects1, "Deco27": gdjs.Store_32custom_32sceneCode.GDDeco27Objects1, "Deco30": gdjs.Store_32custom_32sceneCode.GDDeco30Objects1, "Deco31": gdjs.Store_32custom_32sceneCode.GDDeco31Objects1, "Deco32": gdjs.Store_32custom_32sceneCode.GDDeco32Objects1, "Deco33": gdjs.Store_32custom_32sceneCode.GDDeco33Objects1, "Deco34": gdjs.Store_32custom_32sceneCode.GDDeco34Objects1, "Deco35": gdjs.Store_32custom_32sceneCode.GDDeco35Objects1, "Deco36": gdjs.Store_32custom_32sceneCode.GDDeco36Objects1, "Deco37": gdjs.Store_32custom_32sceneCode.GDDeco37Objects1, "Deco38": gdjs.Store_32custom_32sceneCode.GDDeco38Objects1, "Deco39": gdjs.Store_32custom_32sceneCode.GDDeco39Objects1, "Deco40": gdjs.Store_32custom_32sceneCode.GDDeco40Objects1, "Deco41": gdjs.Store_32custom_32sceneCode.GDDeco41Objects1, "Deco42": gdjs.Store_32custom_32sceneCode.GDDeco42Objects1, "Deco43": gdjs.Store_32custom_32sceneCode.GDDeco43Objects1, "Deco44": gdjs.Store_32custom_32sceneCode.GDDeco44Objects1, "Deco45": gdjs.Store_32custom_32sceneCode.GDDeco45Objects1, "Deco46": gdjs.Store_32custom_32sceneCode.GDDeco46Objects1, "Deco47": gdjs.Store_32custom_32sceneCode.GDDeco47Objects1, "Deco49": gdjs.Store_32custom_32sceneCode.GDDeco49Objects1, "Deco48": gdjs.Store_32custom_32sceneCode.GDDeco48Objects1, "Deco50": gdjs.Store_32custom_32sceneCode.GDDeco50Objects1, "Deco51": gdjs.Store_32custom_32sceneCode.GDDeco51Objects1, "Deco52": gdjs.Store_32custom_32sceneCode.GDDeco52Objects1, "Deco11": gdjs.Store_32custom_32sceneCode.GDDeco11Objects1, "Deco12": gdjs.Store_32custom_32sceneCode.GDDeco12Objects1, "Deco13": gdjs.Store_32custom_32sceneCode.GDDeco13Objects1});
+gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco1Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco10Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco11Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco12Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco13Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco14Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco15Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco2Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco20Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco21Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco22Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco23Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco24Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco25Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco26Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco27Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco3Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco30Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco31Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco32Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco33Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco34Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco35Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco36Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco37Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco38Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco39Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco4Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco40Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco41Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco42Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco43Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco44Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco45Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco46Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco47Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco48Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco49Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco5Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco50Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco51Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco52Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco6Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco7Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco8Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco9Objects1 */
+{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco2Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco3Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco4Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco5Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco5Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco6Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco6Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco7Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco7Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco8Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco8Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco9Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco9Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco10Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco10Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco14Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco14Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco15Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco15Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco20Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco20Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco21Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco21Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco22Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco22Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco23Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco23Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco24Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco24Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco25Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco25Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco26Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco26Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco27Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco27Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco30Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco30Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco31Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco31Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco32Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco32Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco33Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco33Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco34Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco34Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco35Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco35Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco36Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco36Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco37Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco37Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco38Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco38Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco39Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco39Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco40Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco40Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco41Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco41Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco42Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco42Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco43Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco43Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco44Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco44Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco45Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco45Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco46Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco46Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco47Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco47Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco49Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco49Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco48Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco48Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco50Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco50Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco51Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco51Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco52Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco52Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco11Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco11Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco12Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco12Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco13Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco13Objects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+};gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco16Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco17Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco18Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco19Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco28Objects1Objects = Hashtable.newFrom({"Deco16": gdjs.Store_32custom_32sceneCode.GDDeco16Objects1, "Deco17": gdjs.Store_32custom_32sceneCode.GDDeco17Objects1, "Deco18": gdjs.Store_32custom_32sceneCode.GDDeco18Objects1, "Deco19": gdjs.Store_32custom_32sceneCode.GDDeco19Objects1, "Deco28": gdjs.Store_32custom_32sceneCode.GDDeco28Objects1});
+gdjs.Store_32custom_32sceneCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco16Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco17Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco18Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco19Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDDeco28Objects1 */
+{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco16Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco16Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco17Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco17Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco18Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco18Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco19Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco19Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDeco28Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDeco28Objects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+};gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable1Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable2Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable3Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable4Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable5Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable6Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable7Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable8Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable9Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable10Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable11Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable12Objects1Objects = Hashtable.newFrom({"SalesTable1": gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1, "SalesTable2": gdjs.Store_32custom_32sceneCode.GDSalesTable2Objects1, "SalesTable3": gdjs.Store_32custom_32sceneCode.GDSalesTable3Objects1, "SalesTable4": gdjs.Store_32custom_32sceneCode.GDSalesTable4Objects1, "SalesTable5": gdjs.Store_32custom_32sceneCode.GDSalesTable5Objects1, "SalesTable6": gdjs.Store_32custom_32sceneCode.GDSalesTable6Objects1, "SalesTable7": gdjs.Store_32custom_32sceneCode.GDSalesTable7Objects1, "SalesTable8": gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1, "SalesTable9": gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1, "SalesTable10": gdjs.Store_32custom_32sceneCode.GDSalesTable10Objects1, "SalesTable11": gdjs.Store_32custom_32sceneCode.GDSalesTable11Objects1, "SalesTable12": gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1});
+gdjs.Store_32custom_32sceneCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable10Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable11Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable2Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable3Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable4Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable5Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable6Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable7Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1 */
+/* Reuse gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1 */
+{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable2Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable2Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable3Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable3Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable4Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable4Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable5Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable5Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable6Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable6Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable7Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable7Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable10Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable10Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable11Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable11Objects1[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+};gdjs.Store_32custom_32sceneCode.userFunc0x8ad6c0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
@@ -676,17 +999,17 @@ async function getStoreId(checkStoreIdRequest) {
 
 getStoreId(checkStoreIdRequest);
 };
-gdjs.Store_32custom_32sceneCode.eventsList0 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.eventsList4 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0x16ae2a0(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x8ad6c0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32custom_32sceneCode.userFunc0xa80030 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.userFunc0x9622d0 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
@@ -846,17 +1169,17 @@ c = 1;
 
 runtimeScene.getGame().getVariables().get("IsStoreAdded").setNumber(0);
 };
-gdjs.Store_32custom_32sceneCode.eventsList1 = function(runtimeScene) {
+gdjs.Store_32custom_32sceneCode.eventsList5 = function(runtimeScene) {
 
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xa80030(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x9622d0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32custom_32sceneCode.eventsList2 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -865,6 +1188,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("OpenItemListButton"), gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable1"), gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable10"), gdjs.Store_32custom_32sceneCode.GDSalesTable10Objects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable11"), gdjs.Store_32custom_32sceneCode.GDSalesTable11Objects1);
@@ -878,6 +1202,10 @@ gdjs.copyArray(runtimeScene.getObjects("SalesTable7"), gdjs.Store_32custom_32sce
 gdjs.copyArray(runtimeScene.getObjects("SalesTable8"), gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1);
 gdjs.copyArray(runtimeScene.getObjects("SalesTable9"), gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1);
 gdjs.copyArray(runtimeScene.getObjects("TextInput"), gdjs.Store_32custom_32sceneCode.GDTextInputObjects1);
+gdjs.Store_32custom_32sceneCode.GDTile1Objects1.length = 0;
+
+gdjs.Store_32custom_32sceneCode.GDWall1Objects1.length = 0;
+
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Store customization", 0, 0);
 }{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1.length ;i < len;++i) {
     gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1[i].returnVariable(gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1[i].getVariables().get("sales")).setString("SaleTable");
@@ -920,6 +1248,25 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1.leng
 }{runtimeScene.getScene().getVariables().get("wallCreated").setNumber(0);
 }{}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDTextInputObjects1.length ;i < len;++i) {
     gdjs.Store_32custom_32sceneCode.GDTextInputObjects1[i].deleteFromScene(runtimeScene);
+}
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDTile1Objects1Objects, 0, 96, "");
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDTile1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDTile1Objects1[i].setZOrder(2);
+}
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDTile1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDTile1Objects1[i].setSize(1280, 624);
+}
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDWall1Objects1Objects, 20, 27, "");
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDWall1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDWall1Objects1[i].setZOrder(3);
+}
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDWall1Objects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDWall1Objects1[i].setWidth(1240);
+}
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Store custom Item list", 0, 0);
+}{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Store custom Item Tile", 0, 0);
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1[i].deleteFromScene(runtimeScene);
 }
 }}
 
@@ -1029,6 +1376,7 @@ gdjs.copyArray(runtimeScene.getObjects("DecoButton6"), gdjs.Store_32custom_32sce
 gdjs.copyArray(runtimeScene.getObjects("DecoButton7"), gdjs.Store_32custom_32sceneCode.GDDecoButton7Objects1);
 gdjs.copyArray(runtimeScene.getObjects("DecoButton8"), gdjs.Store_32custom_32sceneCode.GDDecoButton8Objects1);
 gdjs.copyArray(runtimeScene.getObjects("DecoButton9"), gdjs.Store_32custom_32sceneCode.GDDecoButton9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("DelKey"), gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DoorButton1"), gdjs.Store_32custom_32sceneCode.GDDoorButton1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("DoorButton2"), gdjs.Store_32custom_32sceneCode.GDDoorButton2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("DoorButton3"), gdjs.Store_32custom_32sceneCode.GDDoorButton3Objects1);
@@ -1405,6 +1753,9 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDWhiteButtonWithShadowObje
 }
 }{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDNextButtonObjects1.length ;i < len;++i) {
     gdjs.Store_32custom_32sceneCode.GDNextButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1[i].deleteFromScene(runtimeScene);
 }
 }{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDOpenItemListButtonObjects1Objects, 1220, 20, "UI Layer");
 }{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1.length ;i < len;++i) {
@@ -7426,6 +7777,182 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDDoor2Objects1.length ;i <
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("DelKey"), gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDelKeyObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32custom_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.Store_32custom_32sceneCode.GDNewTextObjects1);
+{runtimeScene.getScene().getVariables().get("deleteMode").setString("0");
+}{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDNewTextObjects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDNewTextObjects1[i].hide();
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Deco1"), gdjs.Store_32custom_32sceneCode.GDDeco1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco10"), gdjs.Store_32custom_32sceneCode.GDDeco10Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco11"), gdjs.Store_32custom_32sceneCode.GDDeco11Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco12"), gdjs.Store_32custom_32sceneCode.GDDeco12Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco13"), gdjs.Store_32custom_32sceneCode.GDDeco13Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco14"), gdjs.Store_32custom_32sceneCode.GDDeco14Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco15"), gdjs.Store_32custom_32sceneCode.GDDeco15Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco2"), gdjs.Store_32custom_32sceneCode.GDDeco2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco20"), gdjs.Store_32custom_32sceneCode.GDDeco20Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco21"), gdjs.Store_32custom_32sceneCode.GDDeco21Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco22"), gdjs.Store_32custom_32sceneCode.GDDeco22Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco23"), gdjs.Store_32custom_32sceneCode.GDDeco23Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco24"), gdjs.Store_32custom_32sceneCode.GDDeco24Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco25"), gdjs.Store_32custom_32sceneCode.GDDeco25Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco26"), gdjs.Store_32custom_32sceneCode.GDDeco26Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco27"), gdjs.Store_32custom_32sceneCode.GDDeco27Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco3"), gdjs.Store_32custom_32sceneCode.GDDeco3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco30"), gdjs.Store_32custom_32sceneCode.GDDeco30Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco31"), gdjs.Store_32custom_32sceneCode.GDDeco31Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco32"), gdjs.Store_32custom_32sceneCode.GDDeco32Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco33"), gdjs.Store_32custom_32sceneCode.GDDeco33Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco34"), gdjs.Store_32custom_32sceneCode.GDDeco34Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco35"), gdjs.Store_32custom_32sceneCode.GDDeco35Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco36"), gdjs.Store_32custom_32sceneCode.GDDeco36Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco37"), gdjs.Store_32custom_32sceneCode.GDDeco37Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco38"), gdjs.Store_32custom_32sceneCode.GDDeco38Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco39"), gdjs.Store_32custom_32sceneCode.GDDeco39Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco4"), gdjs.Store_32custom_32sceneCode.GDDeco4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco40"), gdjs.Store_32custom_32sceneCode.GDDeco40Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco41"), gdjs.Store_32custom_32sceneCode.GDDeco41Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco42"), gdjs.Store_32custom_32sceneCode.GDDeco42Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco43"), gdjs.Store_32custom_32sceneCode.GDDeco43Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco44"), gdjs.Store_32custom_32sceneCode.GDDeco44Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco45"), gdjs.Store_32custom_32sceneCode.GDDeco45Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco46"), gdjs.Store_32custom_32sceneCode.GDDeco46Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco47"), gdjs.Store_32custom_32sceneCode.GDDeco47Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco48"), gdjs.Store_32custom_32sceneCode.GDDeco48Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco49"), gdjs.Store_32custom_32sceneCode.GDDeco49Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco5"), gdjs.Store_32custom_32sceneCode.GDDeco5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco50"), gdjs.Store_32custom_32sceneCode.GDDeco50Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco51"), gdjs.Store_32custom_32sceneCode.GDDeco51Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco52"), gdjs.Store_32custom_32sceneCode.GDDeco52Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco6"), gdjs.Store_32custom_32sceneCode.GDDeco6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco7"), gdjs.Store_32custom_32sceneCode.GDDeco7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco8"), gdjs.Store_32custom_32sceneCode.GDDeco8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco9"), gdjs.Store_32custom_32sceneCode.GDDeco9Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("deleteMode")) == "1";
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco1Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco2Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco3Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco4Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco5Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco6Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco7Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco8Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco9Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco10Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco14Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco15Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco20Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco21Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco22Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco23Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco24Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco25Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco26Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco27Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco30Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco31Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco32Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco33Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco34Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco35Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco36Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco37Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco38Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco39Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco40Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco41Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco42Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco43Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco44Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco45Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco46Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco47Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco49Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco48Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco50Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco51Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco52Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco11Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco12Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco13Objects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Deco16"), gdjs.Store_32custom_32sceneCode.GDDeco16Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco17"), gdjs.Store_32custom_32sceneCode.GDDeco17Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco18"), gdjs.Store_32custom_32sceneCode.GDDeco18Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco19"), gdjs.Store_32custom_32sceneCode.GDDeco19Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Deco28"), gdjs.Store_32custom_32sceneCode.GDDeco28Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("deleteMode")) == "1";
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco16Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco17Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco18Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco19Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDDeco28Objects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32custom_32sceneCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SalesTable1"), gdjs.Store_32custom_32sceneCode.GDSalesTable1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable10"), gdjs.Store_32custom_32sceneCode.GDSalesTable10Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable11"), gdjs.Store_32custom_32sceneCode.GDSalesTable11Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable12"), gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable2"), gdjs.Store_32custom_32sceneCode.GDSalesTable2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable3"), gdjs.Store_32custom_32sceneCode.GDSalesTable3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable4"), gdjs.Store_32custom_32sceneCode.GDSalesTable4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable5"), gdjs.Store_32custom_32sceneCode.GDSalesTable5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable6"), gdjs.Store_32custom_32sceneCode.GDSalesTable6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable7"), gdjs.Store_32custom_32sceneCode.GDSalesTable7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable8"), gdjs.Store_32custom_32sceneCode.GDSalesTable8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("SalesTable9"), gdjs.Store_32custom_32sceneCode.GDSalesTable9Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("deleteMode")) == "1";
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Store_32custom_32sceneCode.mapOfGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable1Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable2Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable3Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable4Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable5Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable6Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable7Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable8Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable9Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable10Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable11Objects1ObjectsGDgdjs_46Store_9532custom_9532sceneCode_46GDSalesTable12Objects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Store_32custom_32sceneCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("deleteMode")) == "0";
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.Store_32custom_32sceneCode.GDNewTextObjects1);
+{for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDNewTextObjects1.length ;i < len;++i) {
+    gdjs.Store_32custom_32sceneCode.GDNewTextObjects1[i].hide();
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
@@ -7433,7 +7960,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Store_32custom_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.Store_32custom_32sceneCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
@@ -7476,7 +8003,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Square scene", false);
 }
 { //Subevents
-gdjs.Store_32custom_32sceneCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.Store_32custom_32sceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -8020,8 +8547,12 @@ gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects1.length = 0;
 gdjs.Store_32custom_32sceneCode.GDOpenItemListButtonObjects2.length = 0;
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects1.length = 0;
 gdjs.Store_32custom_32sceneCode.GDNextButtonObjects2.length = 0;
+gdjs.Store_32custom_32sceneCode.GDDelKeyObjects1.length = 0;
+gdjs.Store_32custom_32sceneCode.GDDelKeyObjects2.length = 0;
+gdjs.Store_32custom_32sceneCode.GDNewTextObjects1.length = 0;
+gdjs.Store_32custom_32sceneCode.GDNewTextObjects2.length = 0;
 
-gdjs.Store_32custom_32sceneCode.eventsList2(runtimeScene);
+gdjs.Store_32custom_32sceneCode.eventsList6(runtimeScene);
 
 return;
 
