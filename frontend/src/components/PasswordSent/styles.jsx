@@ -95,7 +95,7 @@ export const TextDiv = styled.div`
 export const SendPasswordBtn = styled.button`
     width: 100%;
     height: 50px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;    
     display: flex;

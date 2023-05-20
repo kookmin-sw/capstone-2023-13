@@ -6,17 +6,20 @@ import SaleDetail from "./SaleDetail";
 
 function SaleHistory({onPopup}) {
   const [page_state, setPage] = useState("full");
+  const [currentOrderId, setCurrentOrderId] = useState(null);
+
   let content;
   // function closeClick(){
   //   onPopup("close");
   // }
   
-  const handlePage = (page) => {
+  const handlePage = (page, orderId) => {
     if (page === "full"){
       setPage("full");
     } 
     else if (page === "detail"){
       setPage("detail");
+      setCurrentOrderId(orderId);
     }
   }
   const closePage = (close) => {
@@ -29,7 +32,7 @@ function SaleHistory({onPopup}) {
     content = <SaleFullBox onPage={handlePage} onClose={closePage}/>
   }
   else if (page_state === "detail"){
-    content = <SaleDetail onPage={handlePage} onClose={closePage}/>
+    content = <SaleDetail onPage={handlePage} onClose={closePage} orderId={currentOrderId}/>
   }
   return (
     // <div className="trans-Background">

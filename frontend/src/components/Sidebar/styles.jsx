@@ -34,7 +34,7 @@ export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
     width: 70px;
-    height: 65px;
+    height: 55px;
 `;
 
 export const MyInfo = styled.div`
@@ -43,7 +43,7 @@ export const MyInfo = styled.div`
     justify-content: flex-start;
     margin-left: 40px;
     margin-top: 50px;
-
+    cursor: pointer;
     > span {
         font-size: 20px;
         font-weight: 600;
@@ -64,7 +64,7 @@ export const History = styled.div`
     justify-content: flex-start;
     margin-left: 40px;
     margin-top: 30px;
-
+    cursor: pointer;
     > span {
         font-size: 20px;
         font-weight: 600;
@@ -88,6 +88,7 @@ export const SaleHistoryIcon = styled.img.attrs({
 `;
 
 export const MyShop = styled.div`
+cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -130,6 +131,7 @@ export const ScheduleIcon = styled.img.attrs({
 `;
 
 export const Logout = styled.div`
+cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-start;

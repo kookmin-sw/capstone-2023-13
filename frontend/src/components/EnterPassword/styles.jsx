@@ -64,7 +64,7 @@ export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
     width: 90px;
-    height: 80px;
+    height: 70px;
 `;
 
 export const PasswordInputDiv = styled.div`
@@ -85,19 +85,20 @@ export const PasswordInputBox = styled.input`
     height: 52px;
     padding-left: 10px;
     box-sizing: border-box;
+    border: 2px solid #6F8DDE;
 `;
 
 export const ConfirmBtn = styled.button`
     width: 188px;
     height: 52px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;    
+    border-radius: 10px;    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 90px;
-
+    border:none;
     display: flex;
     align-items: center;
     justify-content: center;

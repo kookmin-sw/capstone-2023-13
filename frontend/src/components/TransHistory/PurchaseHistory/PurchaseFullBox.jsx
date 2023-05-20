@@ -4,7 +4,7 @@ import "@components/TransHistory/TransFullBox.css";
 import axios from 'axios';
 // import { useNavigate } from "react-router-dom";
 
-function PurchaseFullBox({onPage, onClose, orderId}) {
+function PurchaseFullBox({onPage, onClose}) {
   // const movePage = useNavigate();
   const [orders, setOrders] = useState([]);
   useEffect(() => {
@@ -111,7 +111,7 @@ function PurchaseFullBox({onPage, onClose, orderId}) {
               <div className="listInfo">
                 <div className="orderNum">{order.store}</div>
                 <div className="productName">
-                  {order.num - 1 > 0 ? `${order.rep_product} 외 ${order.num - 1}개` : order.rep_product}
+                  {order.num - 2 > 0 ? `${order.rep_product} 외 ${order.num - 2}개` : order.rep_product}
                 </div>
                 <div className="transDate">{order.date}</div>
               </div>

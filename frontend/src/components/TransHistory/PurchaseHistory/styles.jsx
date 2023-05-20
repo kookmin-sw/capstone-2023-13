@@ -44,14 +44,14 @@ export const FindWhiteBox = styled.div`
 
 export const HeaderBox = styled.div`
     width: 100%;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     background: #8398D1;
     border-radius: 15px 15px 0px 0px;
 
     > span {
-        font-size: 48px;
+        font-size: 40px;
         margin-left: 10px;
         font-weight: bolder;
         margin-top: 5px;
@@ -61,8 +61,8 @@ export const HeaderBox = styled.div`
 export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
-    width: 128px;
-    height: 97px;
+    width: 100px;
+    height: 80px;
     margin-left: 41px;
     margin-bottom: 10px;
 `;
@@ -74,6 +74,7 @@ export const AboutOrder = styled.div`
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    cursor:default;
 `;
 
 export const AboutOrderInnerDiv = styled.div`
@@ -106,7 +107,7 @@ export const StartDeliveryBtn = styled.button`
     height: 120px;
 
     background: #FFFFFF;
-    border: 3px solid #775EEE;
+    border: 3px solid #5E80DB;
     border-radius: 20px;
     padding: 0;
 
@@ -124,7 +125,7 @@ export const StartDeliveryBtn = styled.button`
         line-height: 44px;
         text-align: center;
 
-        color: #775EEE;
+        color: #5E80DB;
     }
 `;
 
@@ -133,7 +134,7 @@ export const CancelOrderBtn = styled.button`
     height: 120px;
 
     background: #FFFFFF;
-    border: 3px solid #775EEE;
+    border: 3px solid #5E80DB;
     border-radius: 20px;
     padding: 0;
 
@@ -150,7 +151,7 @@ export const CancelOrderBtn = styled.button`
         line-height: 44px;
         text-align: center;
 
-        color: #775EEE;
+        color: #5E80DB;
     }
 `;
 
@@ -172,9 +173,45 @@ export const PurchasedItemList = styled.div`
     justify-content: space-around;
     width: 950px;
     height: 250px;
-    overflow: scroll;
+    overflow: auto;
     /* margin-left: 128px; */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius:5px;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #6F8DDE;
+        border-radius:5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        
+    }
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #6F8DDE #f1f1f1; 
 `;
+// .listBox::-webkit-scrollbar {
+//     width: 10px;
+//     height:20px;
+// }
+// .listBox::-webkit-scrollbar-thumb {
+//     height:20px;
+//     background-color: #6F8DDE;
+//     border-radius: 10px;
+//     background-clip: padding-box;
+//     border: 2px solid transparent;
+// }
+// .listBox::-webkit-scrollbar-track {
+//     /* background-color: grey; */
+//     border-radius: 10px;
+//     box-shadow: inset 0px 0px 5px white;
+// }
 
 export const PurchasedItem = styled.div`
     display: flex;
@@ -195,6 +232,7 @@ export const ProductInfo = styled.div`
     align-items: flex-start;
     margin-left: 27px;
     margin-right: 10px;
+    cursor:default;
 `;
 
 export const ProductName = styled.div`
@@ -241,14 +279,14 @@ export const BackBtn = styled.button`
     /* margin-top: 50px; */
     /* margin-left: 873px; */
     margin-right: 26px;
-    
+    border:2px solid #6F8DDE;
     cursor: pointer;
 
     > span {
         font-style: normal;
         font-weight: 600;
         font-size: 25px;
-        color: #141060;
+        color: #6F8DDE;
     }
 `;
 
@@ -260,16 +298,16 @@ export const BackAndCloseBtn = styled.div`
     margin-top: 40px;
     position: absolute;
     right: 0px;
-    bottom: 50px;
+    bottom: 30px;
 `;
 
 export const CloseBtn = styled.button`
     width: 170px;
     height: 60px;
-    background: #141060;
+    background: #6F8DDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-
+    border:none;
     display: flex;
     align-items: center;
     justify-content: center;
