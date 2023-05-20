@@ -10,6 +10,7 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
     const [accountinfo, setaccountinfo] = useState("");
     const [totalprice, settotalprice] = useState("");
     const [productlist, setproductlist] = useState([]);
+    const [productamountlist, setproductamountlist] = useState([]);
     const [deliverstate, setdeliverstate] = useState("");
     const [deliverstatenumber, setdeliverstatenumber] = useState("");
     const [productDetails, setProductDetails] = useState([]);
@@ -64,7 +65,7 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
                 );
 
                 let orderData = JSON.stringify(response.data);
-                console.log(orderData);
+                // console.log(orderData);
                 let tmpDate = (JSON.stringify(response.data.orderDate).replace(/"/g, ''));
                 setaccountinfo(JSON.stringify(response.data.sellerId.bank).replace(/"/g, '') + "   " + JSON.stringify(response.data.sellerId.account).replace(/"/g, ''));
                 settotalprice(JSON.stringify(response.data.totalPrice));
@@ -102,6 +103,11 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
                         break;
                 }
 
+
+                let productamount = JSON.parse(JSON.stringify(response.data.productAmountList));
+                setproductamountlist(productamount); 
+                // console.log("배열로 바꾼 productamount:", productamount);
+
                 let productList = JSON.parse(JSON.stringify(response.data.productList));
                 setproductlist(productList);
 
@@ -122,12 +128,24 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
                             }
                         }
                     )
-                )).then(responseArray => {
-                    responseArray.forEach(response2 => {
-                        setstorename(JSON.stringify(response2.data.storeId.name).replace(/"/g, ''));
-                        // console.log(JSON.stringify(response2.data));
-                        setProductDetails(oldArray => [...oldArray, response2.data]);
-                    })
+                ))
+                .then(responseArray => {
+                    // responseArray.forEach((response2, index) => {
+                    //     let productWithAmount = response2.data; // Get product data
+                    //     productWithAmount.amount2 = productamountlist[index]; // Add amount property to the product
+                    //     setProductDetails(oldArray => [...oldArray, productWithAmount]);
+                    // })
+                    let updatedProductDetails = [];
+
+                    responseArray.forEach((response2, index) => {
+                        let productWithAmount = response2.data; // Get product data
+                        productWithAmount.amount2 = productamountlist[index]; // Add amount property to the product
+
+                        updatedProductDetails.push(productWithAmount); // Add the updated product detail to the array
+                    });
+
+                    // Set the state with the updated product details array
+                    setProductDetails(updatedProductDetails);
                 }).catch(error => {
                     console.log(error);
                 });
@@ -138,7 +156,7 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
         }
 
         fetchData();
-    }, [])
+    }, [productamountlist])
     
     
     // console.log("product details : ", productDetails);
@@ -221,7 +239,7 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
                                         <span>{product.price}원</span>
                                     </styled.ProductPrice>
                                     <styled.NumOfProduct>
-                                        <span>수량 : {product.amount}개</span>
+                                        <span>수량 : {product.amount2}개</span>
                                     </styled.NumOfProduct>
                                 </styled.ProductPriceAndNumber>
                             </styled.ProductInfo>

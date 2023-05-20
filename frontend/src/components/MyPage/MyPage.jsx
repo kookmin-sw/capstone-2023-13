@@ -136,6 +136,12 @@ const MyPage = ({onPopup}) => {
                         <styled.MetaIcon />
                         <span>내 정보</span>
                     </styled.TitleDiv>
+                    <styled.CloseBtn onClick={closeClick}>
+                        <span>닫기</span>
+                    </styled.CloseBtn>
+                    <styled.ConfirmBtn onClick={() => { changeMyInfo(); }} >
+                        <span>회원 정보 수정</span>
+                    </styled.ConfirmBtn>
                 </styled.LeftDiv>
                 <styled.MiddleDiv>
                     <styled.PasswordInfo>
@@ -175,14 +181,14 @@ const MyPage = ({onPopup}) => {
                         <styled.AccountInputBox value={account} onChange={(e) => setaccount(e.target.value)} />
                     </styled.AccountInfo>
                 </styled.MiddleDiv>
-                <styled.RightDiv>
+                {/* <styled.RightDiv>
                     <styled.CloseBtn onClick={closeClick}>
                         <span>닫기</span>
                     </styled.CloseBtn>
                     <styled.ConfirmBtn onClick={() => {changeMyInfo();}} >
                         <span>회원 정보 수정</span>
                     </styled.ConfirmBtn>
-                </styled.RightDiv>
+                </styled.RightDiv> */}
             </styled.FindWhiteBox>
         </styled.Container>
         // </div>

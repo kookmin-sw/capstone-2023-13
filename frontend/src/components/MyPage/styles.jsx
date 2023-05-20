@@ -29,7 +29,7 @@ export const Backgroud = styled.img.attrs({
 
 export const FindWhiteBox = styled.div`
     margin :0px auto;
-    width: 1294px;
+    width: 900px;
     height: 930px;
     background: rgba(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -370,6 +370,7 @@ export const CloseBtn = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 580px;
     margin-bottom: 13px;
     cursor: pointer;
 

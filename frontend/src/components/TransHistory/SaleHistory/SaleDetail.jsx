@@ -23,27 +23,27 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
     function backClick(){ //이전버튼 클릭 시
         onPage("full", 0)
     }
-    const PurchasedItem = () => {
-        return (
-            <styled.PurchasedItem>
-                <styled.ProductImg />
-                <styled.ProductInfo>
-                    <styled.ProductName>
-                        <span>판매한 상품 이름</span>
-                    </styled.ProductName>
-                    <styled.ProductPriceAndNumber>
-                        <styled.ProductPrice>
-                            <span>30,000원</span>
-                        </styled.ProductPrice>
-                        <styled.NumOfProduct>
-                            <span>수량 : 3개</span>
-                        </styled.NumOfProduct>
-                    </styled.ProductPriceAndNumber>
-                </styled.ProductInfo>
-            </styled.PurchasedItem>
-        )
+    // const PurchasedItem = () => {
+    //     return (
+    //         <styled.PurchasedItem>
+    //             <styled.ProductImg />
+    //             <styled.ProductInfo>
+    //                 <styled.ProductName>
+    //                     <span>판매한 상품 이름</span>
+    //                 </styled.ProductName>
+    //                 <styled.ProductPriceAndNumber>
+    //                     <styled.ProductPrice>
+    //                         <span>30,000원</span>
+    //                     </styled.ProductPrice>
+    //                     <styled.NumOfProduct>
+    //                         <span>수량 : 3개</span>
+    //                     </styled.NumOfProduct>
+    //                 </styled.ProductPriceAndNumber>
+    //             </styled.ProductInfo>
+    //         </styled.PurchasedItem>
+    //     )
 
-    }
+    // }
 
 
 
@@ -105,9 +105,11 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                         break;
                 }
 
-                console.log(JSON.stringify(response.data.productAmountList));
+                // console.log(JSON.stringify(response.data.productAmountList));
                 let productamount = JSON.parse(JSON.stringify(response.data.productAmountList));
-                setproductamountlist(oldArray => [...oldArray, productamount]); 
+                // console.log("배열로 바꾼 productamount:", productamount);
+                setproductamountlist(productamount); 
+                // console.log("state에 저장한 productamountlist:", productamountlist);
                 
 
                 let productList = JSON.parse(JSON.stringify(response.data.productList));
@@ -133,15 +135,24 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                             }
                         }
                     )
-                )).then(responseArray => {
-                    responseArray.forEach((response2) => {
-                        // console.log("11111", JSON.stringify(response2.data));
-                        // console.log("imgimgimg",responseArray);
-                        // let productWithAmount = response2.data; // Get product data
-                        // productWithAmount.amount = productAmountlist[index]; // Add amount property to the product
-                        // setProductDetails(oldArray => [...oldArray, productWithAmount]);
-                        setProductDetails(oldArray => [...oldArray, response2.data]);
-                    })
+                ))
+                .then(responseArray => {
+                    // responseArray.forEach((response2, index) => {
+                    //     let productWithAmount = response2.data; // Get product data
+                    //     productWithAmount.amount2 = productamountlist[index]; // Add amount property to the product
+                    //     setProductDetails(oldArray => [...oldArray, productWithAmount]);
+                    // })
+                    let updatedProductDetails = [];
+
+                    responseArray.forEach((response2, index) => {
+                        let productWithAmount = response2.data; // Get product data
+                        productWithAmount.amount2 = productamountlist[index]; // Add amount property to the product
+
+                        updatedProductDetails.push(productWithAmount); // Add the updated product detail to the array
+                    });
+
+                    // Set the state with the updated product details array
+                    setProductDetails(updatedProductDetails);
                 }).catch(error => {
                     console.log(error);
                 });
@@ -152,10 +163,15 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
         }
 
         fetchData();
-    }, [])
-    
+    }, [productamountlist]);
 
-    console.log("productlist:: ",productlist)
+    // useEffect(() => {
+    //     // new useEffect for monitoring productDetails
+    //     console.log("Updated product details:", productDetails);
+    // }, [productDetails]);
+
+
+    // console.log("productlist:: ",productlist)
     // console.log("product details:", productDetails);
 
 
@@ -255,13 +271,13 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                             <styled.ProductInfo>
                                 <styled.ProductName>
                                     <span>{product.name}</span>
-                                </styled.ProductName>
+                                </styled.ProductName> 
                                 <styled.ProductPriceAndNumber>
                                     <styled.ProductPrice>
                                         <span>{product.price}원</span>
                                     </styled.ProductPrice>
                                     <styled.NumOfProduct>
-                                        <span>수량 : {product.amount}개</span>
+                                        <span>수량 : {product.amount2}개</span>
                                     </styled.NumOfProduct>
                                 </styled.ProductPriceAndNumber>
                             </styled.ProductInfo>

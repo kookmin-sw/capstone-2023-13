@@ -75,6 +75,11 @@ export const PasswordInputDiv = styled.input`
     border-radius: 10px;
 
     font-size: 20px;
+
+    /* border: none; */
+    &:focus {
+        outline: 1px solid #9a86ff;
+    }
 `;
 
 export const ButtonDiv = styled.div`

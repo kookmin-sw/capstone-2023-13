@@ -69,7 +69,7 @@ export const MetaIcon = styled.img.attrs({
 
 export const AboutOrder = styled.div`
     width: 1200px;
-    margin-top: 50px;
+    margin-top: 30px;
     /* margin-left: 150px; */
     display: flex;
     justify-content: center;
@@ -92,6 +92,7 @@ export const OrderNo = styled.div`
     > span {
         font-weight: 500;
         font-size: 22px;
+        line-height: 150%;
     }
 `;
 

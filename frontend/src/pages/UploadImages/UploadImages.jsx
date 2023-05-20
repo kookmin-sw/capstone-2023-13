@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import * as styled from './styles';
 
 function UploadImages() {
     let token = localStorage.getItem('login-token');
@@ -44,10 +45,10 @@ function UploadImages() {
     }
 
     return (
-        <form onSubmit={uploadImages}>
-            <input type="file" multiple onChange={handleImageChange} />
-            <button type="submit" >Upload</button>
-        </form>
+        <styled.Form onSubmit={uploadImages}>
+            <styled.FileInput type="file" multiple onChange={handleImageChange} />
+            <styled.UploadButton type="submit" >Upload</styled.UploadButton>
+        </styled.Form>
     );
 }
 

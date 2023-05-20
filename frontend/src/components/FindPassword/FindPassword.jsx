@@ -11,7 +11,7 @@ const FindPassword = ({ onPage }) => {
 
 
     const passwordSentClick = () => {
-        onPage("passwordsent")
+        onPage("passwordsent", { name, email })
     }
     const backClick = () => {
         onPage("login")
@@ -34,7 +34,7 @@ const FindPassword = ({ onPage }) => {
         )
             .then(function (response) {
                 console.log(JSON.stringify(response.data));
-                backClick();
+                // backClick();
             })
             .catch(function (error) {
                 console.log(error);
@@ -47,7 +47,7 @@ const FindPassword = ({ onPage }) => {
     return (
         <div className="findWhiteBox"
             style={{
-                height: "400px",
+                // height: "400px",
                 // boxSizing: "border-box",
                 padding: "30px",
                 paddingLeft: "70px",

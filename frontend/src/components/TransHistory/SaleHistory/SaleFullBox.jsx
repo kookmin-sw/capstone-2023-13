@@ -110,7 +110,7 @@ function SaleFullBox({onPage, onClose}) {
               <div className="listInfo">
                 <div className="orderNum">{order.store}</div>
                 <div className="productName">
-                  {order.num - 1 > 0 ? `${order.rep_product} 외 ${order.num - 1}개` : order.rep_product}
+                  {order.num - 1 > 0 ? `${order.rep_product} 외 ${order.num - 2}개` : order.rep_product}
                 </div>
                 <div className="transDate">{order.date}</div>
               </div>
