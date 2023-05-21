@@ -61941,9 +61941,12 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "window.open('http://localhost:5173/uploadimages', '_blank');",
+                "// window.open('http://localhost:5173/uploadimages', '_blank');",
+                "window.open('http://52.79.164.196/uploadimages', '_blank');",
                 "",
-                "runtimeScene.getVariables().get(\"imageTrue\").setBoolean(true);"
+                "runtimeScene.getVariables().get(\"imageTrue\").setBoolean(true);",
+                "",
+                ""
               ],
               "parameterObjects": "",
               "useStrict": true,
