@@ -25,7 +25,7 @@ const PasswordSent = ({onPage, name, email}) => {
             <styled.HrLine />
             <styled.TextDiv>
                 <span>임시 비밀번호가 고객님의 메일로 전송되었습니다.</span> 
-                <span>Meta-PoP을 이용해주셔서 감사합니다.</span>
+                <span>MetaPop을 이용해주셔서 감사합니다.</span>
                 {/* <span>{name} 회원님,</span>
                 <span>임시 비밀번호를 {email} 으로 보내드렸습니다.</span> */}
             </styled.TextDiv>

@@ -41,8 +41,8 @@ const FindPassword = ({ onPage }) => {
             });
     }
 
-    console.log(name);
-    console.log(email);
+    // console.log(name);
+    // console.log(email);
 
     return (
         <div className="findWhiteBox"
