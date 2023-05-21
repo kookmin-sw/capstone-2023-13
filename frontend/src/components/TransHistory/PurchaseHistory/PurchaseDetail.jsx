@@ -146,6 +146,7 @@ const PurchaseDetail = ({ onPage, orderId, onClose }) => {
 
                     // Set the state with the updated product details array
                     setProductDetails(updatedProductDetails);
+                    setstorename(productDetails[0].storeId.name);
                 }).catch(error => {
                     console.log(error);
                 });
