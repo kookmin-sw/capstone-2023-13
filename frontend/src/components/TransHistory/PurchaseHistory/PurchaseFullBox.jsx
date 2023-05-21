@@ -36,47 +36,54 @@ function PurchaseFullBox({onPage, onClose}) {
             }
           );
 
-          const productName = productDetailResponse.data.name;
-          const storeName = productDetailResponse.data.storeId.name;
-          const repImg = productDetailResponse.data.imgList[0]; 
+          
+          if(productDetailResponse.data === null){
+            return null;
+          }else{
+            const productName = productDetailResponse.data.name;
+            const storeName = productDetailResponse.data.storeId.name;
+            const repImg = productDetailResponse.data.imgList[0]; 
 
-          const date = new Date(item.orderDate);
-          const year = date.getFullYear();
-          const month = String(date.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 1을 더해주어야 합니다.
-          const day = String(date.getDate()).padStart(2, '0');
-          const weekdays = ["일", "월", "화", "수", "목", "금", "토"];
-          const weekday = weekdays[date.getDay()]; 
+            const date = new Date(item.orderDate);
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 1을 더해주어야 합니다.
+            const day = String(date.getDate()).padStart(2, '0');
+            const weekdays = ["일", "월", "화", "수", "목", "금", "토"];
+            const weekday = weekdays[date.getDay()]; 
 
-          const formattedDate = `${year}.${month}.${day} (${weekday})`;
-          const totalAmount = item.productAmountList.reduce((acc, cur) => acc + cur, 0);
+            const formattedDate = `${year}.${month}.${day} (${weekday})`;
+            const totalAmount = item.productAmountList.reduce((acc, cur) => acc + cur, 0);
 
-          let stateText;
-          switch (item.state) {
-            case 0:
-              stateText = '입금확인 전';
-              break;
-            case 1:
-              stateText = '배송중';
-              break;
-            case 2:
-              stateText = '거래완료';
-              break;
+            let stateText;
+            switch (item.state) {
+              case 0:
+                stateText = '입금확인 전';
+                break;
+              case 1:
+                stateText = '배송중';
+                break;
+              case 2:
+                stateText = '거래완료';
+                break;
+            }
+
+            return {
+              id: item.id,
+              rep_product: productName,
+              store: storeName,
+              num: totalAmount,
+              date: formattedDate,
+              state: stateText,
+              image: repImg
+            };
           }
-
-          return {
-            id: item.id,
-            rep_product: productName,
-            store: storeName,
-            num: totalAmount,
-            date: formattedDate,
-            state: stateText,
-            image: repImg
-          };
         })
       );
   
-      console.log("gh",formattedData)
-      setOrders(formattedData.slice().reverse());;
+      const filteredData = formattedData.filter(item => item !== null);
+
+      console.log("gh",filteredData)
+      setOrders(filteredData.slice().reverse());
     })
         .catch(function (error) {
             console.log(error);
