@@ -72,11 +72,11 @@ function LoginBox({ onPage }) {
 
       <div className="inputDiv">
         <div className="labelDiv">이메일 주소</div>
-        <input className="inputBox" type="email" value={email} onChange={onEmailHandler} />
+        <input className="login-inputBox" type="email" value={email} onChange={onEmailHandler} />
       </div>
       <div className="inputDiv">
         <div className="labelDiv">비밀번호</div>
-        <input className="inputBox" type="password" value={password} onChange={onPasswordHandler} />
+        <input className="login-inputBox" type="password" value={password} onChange={onPasswordHandler} />
         {loginError && (
           <div style={{ color: "red", marginTop: "5px", textAlign: "left", marginLeft: "90px"}}>
             비밀번호가 틀렸습니다.
@@ -89,8 +89,8 @@ function LoginBox({ onPage }) {
         <a className="findDiv" onClick={findClick}>비밀번호 찾기</a>
       </div>
 
-      <button className="blueBtn" onClick={isLogin}>로그인</button>
-      <button className="whiteBtn" onClick={signupClick}>회원가입</button>
+      <button className="login-blueBtn" onClick={isLogin}>로그인</button>
+      <button className="login-whiteBtn" onClick={signupClick}>회원가입</button>
 
 
       {/* <div className="hrLine">or</div>
