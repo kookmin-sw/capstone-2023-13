@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choihyeoktae/Desktop/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -40123,6 +40123,9 @@
             },
             {
               "name": "TransparentBackground"
+            },
+            {
+              "name": "popup1_ok_exist_btn"
             }
           ]
         },
@@ -41132,7 +41135,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?",
+          "string": "",
           "font": "",
           "textAlignment": "center",
           "characterSize": 35,
@@ -41189,6 +41192,70 @@
         {
           "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
           "name": "popup1_ok_btn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "확인",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 30,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "popup1_ok_exist_btn",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
@@ -58021,7 +58088,7 @@
                 "",
                 "function createChat(e) {",
                 "    const newTextObjects = new gdjs.TextRuntimeObject(runtimeScene, {",
-                "        characterSize: 28,",
+                "        characterSize: 24,",
                 "        name: \"newTextObjects\",",
                 "        effects: {},",
                 "        behaviors: {},",
@@ -74399,6 +74466,16 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "alreadyExist",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -74505,6 +74582,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -74519,17 +74597,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -74611,6 +74698,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -74625,17 +74713,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -74717,6 +74814,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -74731,17 +74829,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -74823,6 +74930,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -74837,17 +74945,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -74929,6 +75046,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -74943,17 +75061,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75035,6 +75162,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75049,17 +75177,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75141,6 +75278,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75155,17 +75293,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75247,6 +75394,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75261,17 +75409,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75353,6 +75510,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75367,17 +75525,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75459,6 +75626,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75473,17 +75641,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75565,6 +75742,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75579,17 +75757,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -75606,7 +75793,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -75671,6 +75857,7 @@
                   "inlineCode": [
                     "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                     "var signNum = runtimeScene.getGame().getVariables().get(\"SignNum\")._value.toString();",
+                    "var registerText = runtimeScene.getObjects(\"popup1_inner_text\")[0];",
                     "",
                     "var checkStoreIdRequest = {",
                     "  method: \"GET\",",
@@ -75685,17 +75872,26 @@
                     "",
                     "async function getStoreId(checkStoreIdRequest) {",
                     "  try {",
-                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/info/sign/Sign\"+signNum, checkStoreIdRequest);",
+                    "    const response = await fetch(\"http://43.201.210.173:8080/stores/exist\", checkStoreIdRequest);",
+                    "    console.log(response);",
                     "    if (response.ok) {",
                     "      const data = await response.text();",
                     "      console.log(\"Get호출 : \", data);",
+                    "      if (data == \"등록 가능\") {",
+                    "        registerText.setString(\"아직 등록되어있지 않은 스토어입니다. \\n등록을 진행하시겠습니까?\");",
+                    "        registerText.setX(385);",
+                    "      }",
                     "      // runtimeScene.getGame().getVariables().get(\"StoreId\").setString(data.id);",
                     "      // runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\").setString(data.owner.id);",
                     "      // var storeId = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                     "      // var ownerId = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\")._str;",
                     "      // console.log(\"스토어 아이디 : \", storeId);",
                     "      // console.log(\"스토어 판매자 : \", ownerId);",
-                    "    } else {",
+                    "    } else if (response.status === 400) {",
+                    "      registerText.setString(\"이미 등록된 스토어가 있습니다.\");",
+                    "      runtimeScene.getVariables().get(\"alreadyExist\").setNumber(1);",
+                    "    } ",
+                    "    else {",
                     "      console.error(\"Request failed with status:\", response.status);",
                     "    }",
                     "  } catch (error) {",
@@ -77073,7 +77269,7 @@
               "parameters": [
                 "popup3_period_text",
                 "=",
-                "GlobalVariableString(StorePeriod)"
+                "\"운영 기한은 \" + GlobalVariableString(StorePeriod) + \" 까지입니다.\""
               ]
             },
             {
@@ -77174,24 +77370,114 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-              },
-              "parameters": [
-                "",
-                "\"Popup layer2\"",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "alreadyExist",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Popup layer2\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Popup1",
+                    ""
+                  ]
+                }
               ]
             },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "alreadyExist",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Popup1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "alreadyExist",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "clicked",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "alreadyExist",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "Popup1",
+                "popup1_cancel_btn",
                 ""
               ]
             }
@@ -90559,7 +90845,7 @@
           "name": "popup1_inner_text",
           "persistentUuid": "71a36e02-600b-4308-a7e5-c1ede2528b67",
           "width": 0,
-          "x": 392,
+          "x": 457,
           "y": 243,
           "zOrder": 30,
           "numberProperties": [],
