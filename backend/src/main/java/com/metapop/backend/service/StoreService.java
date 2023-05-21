@@ -10,6 +10,7 @@ import com.metapop.backend.repository.ProductRepository;
 import com.metapop.backend.repository.StoreCustomizingRepository;
 import com.metapop.backend.repository.StoreRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -50,7 +51,15 @@ public class StoreService {
         return store;
     }
 
-
+    public ResponseEntity<String> existstore(User user) {
+        Store Exist = storeRepository.findByOwner(user);
+        if(Exist != null) {
+            return ResponseEntity.status(400).body("등록 불가");
+        }
+        else{
+            return  ResponseEntity.ok("등록 가능");
+        }
+    }
     public String update(User user, StoreUpdateDTO storeUpdateDTO) {
         Store store = storeRepository.findByOwner(user);
         store.update(storeUpdateDTO);
