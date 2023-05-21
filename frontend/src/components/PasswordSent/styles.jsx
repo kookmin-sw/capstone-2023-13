@@ -59,7 +59,7 @@ export const MetaIcon = styled.img.attrs({
     src: metaicon,
 })`
     width: 90px;
-    height: 80px;
+    height: 70px;
 `;
 
 export const HrLine = styled.div`
@@ -102,8 +102,9 @@ export const SendPasswordBtn = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 70px;
     cursor: pointer;
+    border:none;
 
     > span {
         color: white;

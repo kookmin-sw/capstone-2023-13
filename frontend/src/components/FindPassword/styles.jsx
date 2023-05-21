@@ -28,7 +28,7 @@ export const Backgroud = styled.img.attrs({
 
 export const FindWhiteBox = styled.div`
     margin :0px auto;
-    width: 550px;
+    width: 540px;
     height: 400px;
     left: 130px;
     top: 130px;
@@ -68,7 +68,7 @@ export const NameDiv = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
 `;
 
 export const NameInputBox = styled.input`
@@ -135,15 +135,15 @@ export const SendPasswordBtn = styled.button`
 /* margin-right:85px; */
 cursor: pointer;
 /* width: 180px; */
-width: 380px;
-height: 40px;
+width: 400px;
+height: 45px;
 background: #775EEE;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border:none;
 border-radius: 10px;
 color:white;
 text-align: center;
-margin-top:170px;
+margin-top:70px;
 font-weight: bold;
 `;
 export const BackBtn = styled.button`
@@ -153,8 +153,8 @@ export const BackBtn = styled.button`
 /* margin-right:85px; */
 cursor: pointer;
 /* width: 180px; */
-width: 380px;
-height: 40px;
+width: 400px;
+height: 45px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border:none;
 border-radius: 10px;

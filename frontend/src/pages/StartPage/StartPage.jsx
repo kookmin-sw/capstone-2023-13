@@ -59,8 +59,8 @@ function StartPage() {
   //   transition: 'transform 1s ease, width 1s, height 1s',
   // }
   const boxSlide = {
-    // height: page_state === "find" ? '800px' : 'none',
-    // transition: 'transform 1s ease, width 1s',
+    height: page_state === "find" || page_state === "passwordsent" ? '600px' : '800px',
+    transition: 'transform 1s ease, width 1s, height 1s',
   }
 
   return (

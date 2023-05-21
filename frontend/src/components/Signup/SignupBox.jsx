@@ -278,9 +278,9 @@ function SignupBox({ onPage }) {
               <input className="signup-inputBox accountBox" placeholder="계좌" type="text" value={account} onChange={(e) => setAccount(e.target.value)}></input>
             </div>
         </div>
-        <button className="finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isNickname && isAddress && isBank && isAccount && isDup)}>가입하기</button>
+        <button className="signup-finishBtn" onClick={finishClick} disabled={!(isEmail && isPassword && isName && isNickname && isAddress && isBank && isAccount && isDup)}>가입하기</button>
         {/* <button className="finishBtn" onClick={finishClick} disabled={true}>완료</button> */}
-        <button className="whiteBtn" onClick={backClick}>뒤로</button>
+        <button className="signup-whiteBtn" onClick={backClick}>뒤로</button>
     </div>
   );
 }

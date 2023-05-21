@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/Users/choeboseog/src/capstone-2023-13/frontend/public/maingdevelop",
+    "latestCompilationDirectory": "C:\\Users\\User\\Desktop\\4-1학기\\캡스톤\\메타팝 클론\\6\\capstone-2023-13\\frontend\\public\\maingdevelop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -42132,7 +42132,7 @@
           "string": "스토어 정보",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 25,
           "color": {
             "b": 0,
             "g": 0,
@@ -47915,6 +47915,23 @@
           ]
         },
         {
+          "name": "NoRegisterPopup",
+          "objects": [
+            {
+              "name": "ProductNoRegisterAlert_CloseButton"
+            },
+            {
+              "name": "ProductNoRegisterAlert_Title"
+            },
+            {
+              "name": "TransparentBackground"
+            },
+            {
+              "name": "ProductRegisterAlert_White"
+            }
+          ]
+        },
+        {
           "name": "ProductListPopup",
           "objects": [
             {
@@ -47994,6 +48011,9 @@
             },
             {
               "name": "ProductList_Minus4"
+            },
+            {
+              "name": "ProductList_Amount"
             }
           ]
         },
@@ -48751,6 +48771,70 @@
         {
           "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
           "name": "ProductRegisterAlert_CloseButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 32,
+            "TopPadding": 32,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": true,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "확인",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 30,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Blue Button With Shadow_Pressed.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+          "name": "ProductNoRegisterAlert_CloseButton",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
@@ -49724,6 +49808,28 @@
           "assetStoreId": "",
           "bold": true,
           "italic": false,
+          "name": "ProductNoRegisterAlert_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "상품등록은 테이블 당 \n최대 4개까지 가능합니다.",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
           "name": "Deposit_Title",
           "smoothed": true,
           "tags": "",
@@ -50340,8 +50446,30 @@
           "behaviors": [],
           "string": "",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 22,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ProductList_Amount",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 15,
           "color": {
             "b": 0,
             "g": 0,
@@ -51148,7 +51276,6 @@
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
                 "//Seller Buyer 구분",
-                "console.log('cc');",
                 "let userIdVariable = runtimeScene.getGame().getVariables().get(\"UserId\");",
                 "let currentOwnerIdVariable = runtimeScene.getGame().getVariables().get(\"CurrentOwnerId\");",
                 "",
@@ -59509,83 +59636,6 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "// // 상품 데이터의 더미 배열입니다.",
-                "",
-                "// let products = [",
-                "//   {",
-                "//     \"id\": 5,",
-                "//     \"storeId\": {",
-                "//       \"id\": 9,",
-                "//       \"owner\": {",
-                "//         \"id\": 8,",
-                "//         \"email\": \"cy@cy.com\",",
-                "//         \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
-                "//         \"name\": \"채소\",",
-                "//         \"nickname\": \"채\",",
-                "//         \"bank\": \"기업은행\",",
-                "//         \"account\": \"123\",",
-                "//         \"address\": \"서울\",",
-                "//         \"enabled\": false,",
-                "//         \"authorities\": null,",
-                "//         \"username\": \"cy@cy.com\",",
-                "//         \"accountNonExpired\": false,",
-                "//         \"accountNonLocked\": false,",
-                "//         \"credentialsNonExpired\": false",
-                "//       },",
-                "//       \"name\": \"야채가게\",",
-                "//       \"period\": \"2024-05-17\",",
-                "//       \"info\": \"싱싱\",",
-                "//       \"x\": 0,",
-                "//       \"y\": 0,",
-                "//       \"z\": 0,",
-                "//       \"signName\": \"채채소\"",
-                "//     },",
-                "//     \"name\": \"샤넬파프리카\",",
-                "//     \"price\": 1000,",
-                "//     \"amount\": 6,",
-                "//     \"info\": \"맛있는 파프리카 빨강 초록\",",
-                "//     \"imgList\": [",
-                "//       \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU\"",
-                "//     ]",
-                "//   },",
-                "//   {",
-                "//     \"id\": 6,",
-                "//     \"storeId\": {",
-                "//       \"id\": 9,",
-                "//       \"owner\": {",
-                "//         \"id\": 8,",
-                "//         \"email\": \"cy@cy.com\",",
-                "//         \"password\": \"$2a$10$G5NE4wxSie0Mqv7T3Hn54eyb9VH7MWLEIQ0v5Wp5Vw7wzMv9DdkYG\",",
-                "//         \"name\": \"채소\",",
-                "//         \"nickname\": \"채\",",
-                "//         \"bank\": \"기업은행\",",
-                "//         \"account\": \"123\",",
-                "//         \"address\": \"서울\",",
-                "//         \"enabled\": false,",
-                "//         \"authorities\": null,",
-                "//         \"username\": \"cy@cy.com\",",
-                "//         \"accountNonExpired\": false,",
-                "//         \"accountNonLocked\": false,",
-                "//         \"credentialsNonExpired\": false",
-                "//       },",
-                "//       \"name\": \"야채가게\",",
-                "//       \"period\": \"2024-05-17\",",
-                "//       \"info\": \"싱싱\",",
-                "//       \"x\": 0,",
-                "//       \"y\": 0,",
-                "//       \"z\": 0,",
-                "//       \"signName\": \"채채소\"",
-                "//     },",
-                "//     \"name\": \"보석초콜릿\",",
-                "//     \"price\": 5000,",
-                "//     \"amount\": 15,",
-                "//     \"info\": \"구찌로 만든 초콜릿\",",
-                "//     \"imgList\": [",
-                "//      \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQRUDn7z8a1ymKXACOJ2KVdODf8_-eRXPRA&usqp=CAU\"",
-                "//     ]",
-                "//   }",
-                "// ];",
-                "",
                 "var userToken = runtimeScene.getGame().getVariables().get(\"userToken\")._str;",
                 "let currentStoreIdVariable = runtimeScene.getGame().getVariables().get(\"StoreId\")._str;",
                 "let products = [];",
@@ -59603,19 +59653,6 @@
                 "  }",
                 "}",
                 "console.log('store:',currentStoreIdVariable)",
-                "// async function getProductList(productListRequest) {",
-                "//   try {",
-                "//     const response = await fetch(`http://43.201.210.173:8080/products/info/detail/${currentStoreIdVariable}/${tableNameVariable}`, productListRequest);",
-                "//     if (response.ok) {",
-                "//       var data = await response.json();",
-                "//       return data;",
-                "//     } else {",
-                "//       console.error(\"Request failed with status:\", response.status);",
-                "//     }",
-                "//   } catch (error) {",
-                "//     console.error(\"An error occurred:\", error);",
-                "//   }",
-                "// }",
                 "async function getProductList(productListRequest) {",
                 "  try {",
                 "    const response = await fetch(`http://43.201.210.173:8080/products/info/detail/${currentStoreIdVariable}/${tableNameVariable}`, productListRequest);",
@@ -59651,11 +59688,13 @@
                 "    for(let i=0;  i < availableProducts.length; i++){",
                 "      let listNameObject = runtimeScene.getObjects(\"ProductList_Name\")[i];",
                 "      let listPriceObject = runtimeScene.getObjects(\"ProductList_Price\")[i];",
+                "      let listAmountObject = runtimeScene.getObjects(\"ProductList_Amount\")[i];",
                 "      let listQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[i];",
                 "    ",
                 "      listNameObject.setString(availableProducts[i].name);",
                 "      let priceString = availableProducts[i].price.toLocaleString();",
                 "      listPriceObject.setString(priceString + \"원\");",
+                "      listAmountObject.setString(\"잔여 수량 : \" + availableProducts[i].amount + \"개\");",
                 "      listQuantityObject.setString(0);",
                 "    }",
                 "",
@@ -59669,33 +59708,6 @@
                 "  }",
                 "",
                 "});",
-                "",
-                "",
-                "  // let availableProducts = products.filter(product => product.amount !== 0);",
-                "  // availableProducts.forEach(product => {",
-                "  //   product.quantity = 0;",
-                "  // });",
-                "  // // products 배열을 JSON 문자열로 변환",
-                "  // let productsString = JSON.stringify(availableProducts);",
-                "  // runtimeScene.getVariables().get(\"products\").setString(productsString);",
-                "",
-                "  // for(let i=0;  i < availableProducts.length; i++){",
-                "  //   let listNameObject = runtimeScene.getObjects(\"ProductList_Name\")[i];",
-                "  //   let listPriceObject = runtimeScene.getObjects(\"ProductList_Price\")[i];",
-                "  //   let listQuantityObject = runtimeScene.getObjects(\"ProductList_Quantity\")[i];",
-                "",
-                "  //   listNameObject.setString(availableProducts[i].name);",
-                "  //   let priceString = availableProducts[i].price.toLocaleString();",
-                "  //   listPriceObject.setString(priceString + \"원\");",
-                "  //   listQuantityObject.setString(0);",
-                "  // }",
-                "  // let productNumVariable = runtimeScene.getVariables().get(\"productNum\");",
-                "  // let productFilterVariable = runtimeScene.getVariables().get(\"productFilter\");",
-                "  // let talbeNameVariable = runtimeScene.getVariables().get(\"tableName\");",
-                "  // console.log('test', talbeNameVariable);",
-                "  // productNumVariable.setNumber(availableProducts.length);",
-                "  // productFilterVariable.setBoolean(true);",
-                "",
                 ""
               ],
               "parameterObjects": "",
@@ -61904,6 +61916,16 @@
                 "ProductList_RegisterButton",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "productNum",
+                "!=",
+                "4"
+              ]
             }
           ],
           "actions": [
@@ -61924,6 +61946,68 @@
                 "",
                 "\"Popup product register\"",
                 "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductList_RegisterButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "productNum",
+                "=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Popup product no register alert\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ProductNoRegisterAlert_CloseButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "NoRegisterPopup",
                 ""
               ]
             }
@@ -62531,6 +62615,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62572,6 +62657,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62612,6 +62698,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62652,6 +62739,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62692,6 +62780,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62732,6 +62821,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62772,6 +62862,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62813,6 +62904,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -63183,7 +63275,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
             }
           ]
         },
@@ -63271,6 +63363,7 @@
           "comment": "공통 - 상품 상세정보 창"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -63366,6 +63459,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -63461,6 +63555,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -63556,6 +63651,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -90322,8 +90418,8 @@
           "name": "popup3_title_text",
           "persistentUuid": "8921b96e-798f-4dab-80ec-176eddde4b15",
           "width": 0,
-          "x": 366,
-          "y": 125,
+          "x": 349,
+          "y": 122,
           "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
@@ -90445,7 +90541,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210182,
+        "zoomFactor": 0.8700232859857303,
         "windowMask": false
       }
     },
@@ -123626,7 +123722,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2725359896772974,
+        "zoomFactor": 0.27253598967729764,
         "windowMask": false
       }
     },
@@ -124023,6 +124119,66 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "6d117556-fbc4-479e-8481-b9769fa3d1a4",
+          "width": 109,
+          "x": 495,
+          "y": 297,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "0b31f72b-59b9-440f-b9e7-e702e70e78f3",
+          "width": 109,
+          "x": 910,
+          "y": 303,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "7efaa5f3-8ed9-4071-b481-ef7521bed32f",
+          "width": 109,
+          "x": 495,
+          "y": 448,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "9a05ccc7-a41a-4a25-b10f-6607d5ad9aa5",
+          "width": 109,
+          "x": 910,
+          "y": 454,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -124201,13 +124357,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 24,
           "layer": "Popup Layer",
           "name": "ProductList_Quantity",
           "persistentUuid": "fa359666-670f-4044-9e72-ee0a2212c47d",
-          "width": 0,
-          "x": 560,
+          "width": 28,
+          "x": 551,
           "y": 292,
           "zOrder": 38,
           "numberProperties": [],
@@ -124276,13 +124432,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 24,
           "layer": "Popup Layer",
           "name": "ProductList_Quantity",
           "persistentUuid": "61497415-1d78-4702-8335-af44f5a90d4b",
-          "width": 0,
-          "x": 977,
+          "width": 28,
+          "x": 968,
           "y": 292,
           "zOrder": 38,
           "numberProperties": [],
@@ -124336,13 +124492,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 24,
           "layer": "Popup Layer",
           "name": "ProductList_Quantity",
           "persistentUuid": "6192da86-0806-45b3-8b7b-e6a3152005c8",
-          "width": 0,
-          "x": 560,
+          "width": 28,
+          "x": 551,
           "y": 443,
           "zOrder": 38,
           "numberProperties": [],
@@ -124381,13 +124537,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 24,
           "layer": "Popup Layer",
           "name": "ProductList_Quantity",
           "persistentUuid": "4382e0c8-9aeb-49fd-97af-49887eb22065",
-          "width": 0,
-          "x": 977,
+          "width": 28,
+          "x": 968,
           "y": 443,
           "zOrder": 38,
           "numberProperties": [],
@@ -124570,6 +124726,66 @@
           "x": 690,
           "y": 368,
           "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "2551ec09-6f08-41a1-935c-88a39b0e76eb",
+          "width": 123,
+          "x": 484,
+          "y": 264,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "40b13ad8-b6c0-4d48-b8d8-ddc9aa4d14b7",
+          "width": 123,
+          "x": 901,
+          "y": 264,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "a7778c0d-beb2-4a4e-99d8-1e279f50da91",
+          "width": 123,
+          "x": 484,
+          "y": 415,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 17,
+          "layer": "Popup Layer",
+          "name": "ProductList_Amount",
+          "persistentUuid": "099651e3-a14a-4384-ae1f-81868ec7581f",
+          "width": 123,
+          "x": 901,
+          "y": 415,
+          "zOrder": 62,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -124884,6 +125100,85 @@
     },
     {
       "associatedLayout": "Store scene",
+      "name": "Popup product no register alert",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1616,
+          "layer": "Popup Layer",
+          "name": "TransparentBackground",
+          "persistentUuid": "861d1bce-c14e-44d5-a1b0-c6e1350571b7",
+          "width": 2116,
+          "x": -417,
+          "y": -412,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 333,
+          "layer": "Popup Layer",
+          "name": "ProductRegisterAlert_White",
+          "persistentUuid": "d382fc0d-5b93-4ff5-b86f-f44f2881ce16",
+          "width": 631,
+          "x": 310,
+          "y": 182,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductNoRegisterAlert_CloseButton",
+          "persistentUuid": "8f4efcee-d811-4ef5-8991-050c4d36ed60",
+          "width": 0,
+          "x": 529,
+          "y": 393,
+          "zOrder": 63,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Popup Layer",
+          "name": "ProductNoRegisterAlert_Title",
+          "persistentUuid": "665546c7-899b-401f-84a5-1b91e49d542a",
+          "width": 0,
+          "x": 464,
+          "y": 262,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.3797121001947935,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Store scene",
       "name": "Popup product register alert",
       "instances": [
         {
@@ -124895,7 +125190,7 @@
           "persistentUuid": "40162fab-8867-4876-8071-5240c346a880",
           "width": 0,
           "x": 364,
-          "y": 238,
+          "y": 258,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -124972,7 +125267,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.1830573495556004,
+        "zoomFactor": 0.41943397827590645,
         "windowMask": false
       }
     },
