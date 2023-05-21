@@ -69,6 +69,7 @@ function LoginBox({ onPage }) {
         <div className="TitleText">MetaPop</div>
       </div>
 
+
       <div className="inputDiv">
         <div className="labelDiv">이메일 주소</div>
         <input className="inputBox" type="email" value={email} onChange={onEmailHandler} />
@@ -92,11 +93,11 @@ function LoginBox({ onPage }) {
       <button className="whiteBtn" onClick={signupClick}>회원가입</button>
 
 
-      <div className="hrLine">or</div>
+      {/* <div className="hrLine">or</div>
       <button className="googleBtn">
         <div className="googleLogo"></div>
         구글로 로그인하기
-      </button>
+      </button> */}
     </div>
   );
 }
