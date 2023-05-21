@@ -11,6 +11,7 @@ import io.jsonwebtoken.Jwts;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -55,6 +56,14 @@ public class StoreController {
     @GetMapping("/info/sign/{sign_name}")
     public Store infosign(@PathVariable String sign_name) {
         return storeService.infosign(sign_name);
+    }
+
+    @Operation(summary = "", description = "표지만 이름 상점 정보 조회 API")
+    @GetMapping("/exist")
+    public ResponseEntity<String> existstore(@RequestHeader("Authorization") String jwtToken) {
+        Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(jwtToken).getBody();
+        User user = userRepository.findByEmail(claims.getSubject());
+        return storeService.existstore(user);
     }
 
     @Operation(summary = "", description = "상점 수정 API")
