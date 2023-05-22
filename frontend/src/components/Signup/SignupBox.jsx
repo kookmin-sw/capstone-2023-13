@@ -256,7 +256,7 @@ function SignupBox({ onPage }) {
               {/* <input className="signup-inputBox" type="text" value={bank} onChange={(e) => setBank(e.target.value)}></input> */}
               <select className="selectBox" name="bank" onChange={onChangeBank}>
                 <option value="">은행선택</option>
-                <option value="기업은행">기업은행</option>
+                <option value="기업은행">우리은행</option>
                 <option value="국민은행">국민은행</option>
                 <option value="농협은행">농협은행</option>
                 <option value="신한은행">신한은행</option>
