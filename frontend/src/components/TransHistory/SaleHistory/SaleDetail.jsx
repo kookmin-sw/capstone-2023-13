@@ -14,6 +14,7 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
     const [deliverstate, setdeliverstate] = useState("");
     const [deliverstatenumber, setdeliverstatenumber] = useState("");
     const [productDetails, setProductDetails] = useState([]);
+    const [buyeraddress, setbuyeraddress] = useState("");
 
 
     function closeClick() {
@@ -70,9 +71,11 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                 setbuyername(JSON.stringify(response.data.buyerId.name));
                 setbuyerid(JSON.stringify(response.data.buyerId.id));
                 setsellerid(JSON.stringify(response.data.sellerId.id));
+                setbuyeraddress(JSON.stringify(response.data.buyerId.address).replace(/"/g, ''));
                 setdeliverstatenumber(JSON.stringify(response.data.state));
 
                 // console.log("test:", JSON.stringify(response.data));
+                console.log("address: ", buyeraddress);
                 
 
 
@@ -137,11 +140,6 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                     )
                 ))
                 .then(responseArray => {
-                    // responseArray.forEach((response2, index) => {
-                    //     let productWithAmount = response2.data; // Get product data
-                    //     productWithAmount.amount2 = productamountlist[index]; // Add amount property to the product
-                    //     setProductDetails(oldArray => [...oldArray, productWithAmount]);
-                    // })
                     let updatedProductDetails = [];
 
                     responseArray.forEach((response2, index) => {
@@ -156,6 +154,8 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                 }).catch(error => {
                     console.log(error);
                 });
+
+
 
             } catch (error) {
                 console.log(error);
@@ -244,6 +244,7 @@ const SaleDetail = ({ onPage, orderId, onClose }) => {
                         <span>⦁ 주문 날짜 : {orderdate}</span>
                         <span>⦁ 판매 상태 : {deliverstate}</span>
                         <span>⦁ 총 주문 금액 : {totalprice}원</span>
+                        <span>⦁ 구매자 주소 : {buyeraddress}</span>
                     </styled.OrderNo>
                     <styled.StateButtons>
                         {deliverstate === '입금 확인 전' && (
