@@ -76,7 +76,7 @@ function UploadImages() {
         <styled.Form onSubmit={uploadImages}>
             {isModal && <UploadCompleteModal />}
             <styled.FileInput type="file" multiple onChange={handleImageChange} />
-            <styled.UploadButton type="submit" onClick={showModal}>Upload</styled.UploadButton>
+            <styled.UploadButton type="submit" onClick={showModal}>이미지 업로드</styled.UploadButton>
         </styled.Form>
     );
 }
