@@ -73,41 +73,36 @@
 
 <table>
     <tr align="center">
-        <td style="min-width: 150px;">
+        <td style="min-width: 160px;">
             <a href="https://github.com/YEONOC">
-              <br />
               <b>최보석</b>
             </a>
             <br/>
               XXXX1698
         </td>
-        <td style="min-width: 150px;">
+        <td style="min-width: 160px;">
             <a href="https://github.com/KangJuSeong">
-              <br />
               <b>강주성</b>
             </a>
             <br/>
               XXXX1569
         </td>
-        <td style="min-width: 150px;">
+        <td style="min-width: 160px;">
             <a href="https://github.com/htchoi1006">
-              <br />
               <b>최혁태</b>
             </a> 
             <br/>
               XXXX1702
         </td>
-        <td style="min-width: 150px;">
+        <td style="min-width: 160px;">
             <a href="https://github.com/okpyo12">
-              <br />
               <b>표상우</b>
             </a> 
             <br/>
               XXXX1704
         </td>
-                <td style="min-width: 150px;">
+                <td style="min-width: 160px;">
             <a href="https://github.com/muy5310">
-              <br />
               <b>박채연</b>
             </a> 
             <br/>
