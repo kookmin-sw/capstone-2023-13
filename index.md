@@ -1,11 +1,13 @@
 # 👾 MetaPop 
-> 2023 KookminUniv SW 캡스톤 디자인 13조   
+> 2023 KookminUniv SW 캡스톤 디자인 13조    
+>  https://kookmin-sw.github.io/capstone-2023-13/   
 
 🍭 **메타버스 팝업스토어, 메타팝 : www.metapop.link** 
 
 <img src="https://github.com/kookmin-sw/capstone-2023-13/assets/55119885/ea3c0b3d-4f1d-4ea3-aac2-0bb4c756d5c6" width="230" height="230">   
 
 </br>
+
 
 ## 📔 목차  
   * [🏡 프로젝트 소개](#-프로젝트-소개)
