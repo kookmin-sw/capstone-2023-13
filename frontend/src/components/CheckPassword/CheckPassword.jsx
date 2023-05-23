@@ -39,7 +39,7 @@ function CheckPassword({onPopup, onPasswordCheckSuccess}) {
                 let userData = new Array();
                 userData = JSON.stringify(response.data);
                 setemail(JSON.stringify(response.data.email).replace(/"/g, ''));
-                console.log(email);
+                // console.log(email);
             })
             .catch(function (error) {
                 console.log(error);

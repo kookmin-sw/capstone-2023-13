@@ -28,7 +28,7 @@ function LoginBox({ onPage }) {
         "email": email,
         "password": password
       });
-      console.log(response.data);
+      // console.log(response.data);
       console.log('login success');
       if (response.data) {
         localStorage.setItem('login-token', response.data);
