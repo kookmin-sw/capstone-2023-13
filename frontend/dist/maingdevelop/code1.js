@@ -1279,7 +1279,7 @@ gdjs.Square_32sceneCode.GDstoreExternalObjects2= [];
 gdjs.Square_32sceneCode.GDstoreExternalObjects3= [];
 
 
-gdjs.Square_32sceneCode.userFunc0xd09c10 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2126ef0 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1349,9 +1349,6 @@ runtimeScene.ws.onmessage = function (event) {
             else if (e.dir === "left") {
                 leftMovement(e);
             }
-            else if (e.dir == "del") {
-                console.log(e);
-            }
             break;
         case "chat":
             manageChat(e);
@@ -1414,7 +1411,6 @@ function createUser(e) {
     user.setWidth(46);
     user.user_id = e.user_id;
     user.nickname = e.nickname;
-    console.log(user);
 
     var eye;
     eye = runtimeScene.createObject("eye" + Eye);
@@ -1720,12 +1716,12 @@ gdjs.Square_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd09c10(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2126ef0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xd09e68 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x2143908 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1757,7 +1753,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Square_32sceneCode.userFunc0xd0a318 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x21421c0 = function(runtimeScene) {
 "use strict";
 // const channel = "Square1";
 
@@ -1841,7 +1837,7 @@ runtimeScene.ws.send(JSON.stringify(update))
 };
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
-gdjs.Square_32sceneCode.userFunc0xd06c50 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x214d658 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1861,10 +1857,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -1894,14 +1889,14 @@ gdjs.Square_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd06c50(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x214d658(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
-gdjs.Square_32sceneCode.userFunc0xd06d88 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2116b68 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1921,10 +1916,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -1954,14 +1948,14 @@ gdjs.Square_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd06d88(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2116b68(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
-gdjs.Square_32sceneCode.userFunc0xd08a78 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x211c038 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -1981,10 +1975,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2014,14 +2007,14 @@ gdjs.Square_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd08a78(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x211c038(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
-gdjs.Square_32sceneCode.userFunc0xd08528 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2111ca8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2041,10 +2034,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2074,14 +2066,14 @@ gdjs.Square_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd08528(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2111ca8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
-gdjs.Square_32sceneCode.userFunc0xd077a8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2149568 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2101,10 +2093,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2134,14 +2125,14 @@ gdjs.Square_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd077a8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2149568(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
-gdjs.Square_32sceneCode.userFunc0xd0b140 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x214c860 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2161,10 +2152,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2194,14 +2184,14 @@ gdjs.Square_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0b140(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x214c860(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
-gdjs.Square_32sceneCode.userFunc0xcf1d08 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2108658 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2221,10 +2211,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2254,14 +2243,14 @@ gdjs.Square_32sceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xcf1d08(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2108658(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
-gdjs.Square_32sceneCode.userFunc0xd0b008 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xdeee38 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2281,10 +2270,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2314,14 +2302,14 @@ gdjs.Square_32sceneCode.eventsList8 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0b008(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xdeee38(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
-gdjs.Square_32sceneCode.userFunc0xd05260 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1eab510 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2341,10 +2329,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2374,14 +2361,14 @@ gdjs.Square_32sceneCode.eventsList9 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd05260(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1eab510(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
-gdjs.Square_32sceneCode.userFunc0xd060d0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x7e7e58 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2401,10 +2388,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2434,14 +2420,14 @@ gdjs.Square_32sceneCode.eventsList10 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd060d0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x7e7e58(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.userFunc0xd05e68 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x21296e0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2461,10 +2447,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2494,14 +2479,14 @@ gdjs.Square_32sceneCode.eventsList11 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd05e68(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x21296e0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects2Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects2});
-gdjs.Square_32sceneCode.userFunc0xd05998 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2133dd8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2521,10 +2506,9 @@ var checkStoreIdRequest = {
 async function getStoreId(checkStoreIdRequest) {
   try {
     const response = await fetch("http://43.201.210.173:8080/stores/exist", checkStoreIdRequest);
-    console.log(response);
     if (response.ok) {
       const data = await response.text();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       if (data == "등록 가능") {
         registerText.setString("아직 등록되어있지 않은 스토어입니다. \n등록을 진행하시겠습니까?");
         registerText.setX(385);
@@ -2554,14 +2538,14 @@ gdjs.Square_32sceneCode.eventsList12 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd05998(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2133dd8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign1Objects2Objects = Hashtable.newFrom({"Sign1": gdjs.Square_32sceneCode.GDSign1Objects2});
-gdjs.Square_32sceneCode.userFunc0xd0e620 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2168e20 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2582,7 +2566,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2592,8 +2576,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2609,14 +2593,14 @@ gdjs.Square_32sceneCode.eventsList13 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0e620(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2168e20(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign2Objects2Objects = Hashtable.newFrom({"Sign2": gdjs.Square_32sceneCode.GDSign2Objects2});
-gdjs.Square_32sceneCode.userFunc0xd0ccd8 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xe69d00 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2637,7 +2621,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2647,8 +2631,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2664,14 +2648,14 @@ gdjs.Square_32sceneCode.eventsList14 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0ccd8(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xe69d00(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign3Objects2Objects = Hashtable.newFrom({"Sign3": gdjs.Square_32sceneCode.GDSign3Objects2});
-gdjs.Square_32sceneCode.userFunc0xd17728 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xe69bc8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2692,7 +2676,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2702,8 +2686,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2719,14 +2703,14 @@ gdjs.Square_32sceneCode.eventsList15 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd17728(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xe69bc8(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign4Objects2Objects = Hashtable.newFrom({"Sign4": gdjs.Square_32sceneCode.GDSign4Objects2});
-gdjs.Square_32sceneCode.userFunc0xd17c08 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x212ba70 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2747,7 +2731,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2757,8 +2741,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2774,14 +2758,14 @@ gdjs.Square_32sceneCode.eventsList16 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd17c08(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x212ba70(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign5Objects2Objects = Hashtable.newFrom({"Sign5": gdjs.Square_32sceneCode.GDSign5Objects2});
-gdjs.Square_32sceneCode.userFunc0xd17e78 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x2061f00 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2802,7 +2786,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2812,8 +2796,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2829,14 +2813,14 @@ gdjs.Square_32sceneCode.eventsList17 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd17e78(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2061f00(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign6Objects2Objects = Hashtable.newFrom({"Sign6": gdjs.Square_32sceneCode.GDSign6Objects2});
-gdjs.Square_32sceneCode.userFunc0xd17860 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1ad4600 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2857,7 +2841,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2867,8 +2851,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2884,14 +2868,14 @@ gdjs.Square_32sceneCode.eventsList18 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd17860(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1ad4600(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign7Objects2Objects = Hashtable.newFrom({"Sign7": gdjs.Square_32sceneCode.GDSign7Objects2});
-gdjs.Square_32sceneCode.userFunc0xd175f0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x118a0a0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2912,7 +2896,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2922,8 +2906,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2939,14 +2923,14 @@ gdjs.Square_32sceneCode.eventsList19 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd175f0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x118a0a0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign8Objects2Objects = Hashtable.newFrom({"Sign8": gdjs.Square_32sceneCode.GDSign8Objects2});
-gdjs.Square_32sceneCode.userFunc0xd17fb0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xe05210 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -2967,7 +2951,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -2977,8 +2961,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -2994,14 +2978,14 @@ gdjs.Square_32sceneCode.eventsList20 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd17fb0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xe05210(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign9Objects2Objects = Hashtable.newFrom({"Sign9": gdjs.Square_32sceneCode.GDSign9Objects2});
-gdjs.Square_32sceneCode.userFunc0xd082f0 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1a774f0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -3022,7 +3006,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -3032,6 +3016,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -3047,14 +3033,14 @@ gdjs.Square_32sceneCode.eventsList21 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd082f0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1a774f0(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign10Objects2Objects = Hashtable.newFrom({"Sign10": gdjs.Square_32sceneCode.GDSign10Objects2});
-gdjs.Square_32sceneCode.userFunc0xd09760 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1a78038 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -3075,7 +3061,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -3085,8 +3071,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -3102,14 +3088,14 @@ gdjs.Square_32sceneCode.eventsList22 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd09760(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1a78038(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects2ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects2Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects2, "body2": gdjs.Square_32sceneCode.GDbody2Objects2, "body3": gdjs.Square_32sceneCode.GDbody3Objects2, "body4": gdjs.Square_32sceneCode.GDbody4Objects2});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign11Objects2Objects = Hashtable.newFrom({"Sign11": gdjs.Square_32sceneCode.GDSign11Objects2});
-gdjs.Square_32sceneCode.userFunc0xd08e00 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0xe06288 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -3130,7 +3116,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -3140,8 +3126,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
-      console.log("스토어 아이디 : ", storeId);
-      console.log("스토어 판매자 : ", ownerId);
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -3157,14 +3143,14 @@ gdjs.Square_32sceneCode.eventsList23 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd08e00(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0xe06288(runtimeScene);
 
 }
 
 
 };gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1});
-gdjs.Square_32sceneCode.userFunc0xd08958 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x1181ce8 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
@@ -3185,7 +3171,7 @@ async function getStoreId(checkStoreIdRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
     if (response.ok) {
       const data = await response.json();
-      console.log("Get호출 : ", data);
+      //console.log("Get호출 : ", data);
       runtimeScene.getGame().getVariables().get("StoreId").setString(data.id);
       runtimeScene.getGame().getVariables().get("CurrentOwnerId").setString(data.owner.id);
       runtimeScene.getGame().getVariables().get("StoreName").setString(data.name);
@@ -3195,6 +3181,8 @@ async function getStoreId(checkStoreIdRequest) {
       runtimeScene.getVariables().get("getStoreInfo").setNumber(1);
       var storeId = runtimeScene.getGame().getVariables().get("StoreId")._str;
       var ownerId = runtimeScene.getGame().getVariables().get("CurrentOwnerId")._str;
+      //console.log("스토어 아이디 : ", storeId);
+      //console.log("스토어 판매자 : ", ownerId);
     } else {
       console.error("Request failed with status:", response.status);
     }
@@ -3210,7 +3198,7 @@ gdjs.Square_32sceneCode.eventsList24 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd08958(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1181ce8(runtimeScene);
 
 }
 
@@ -3943,7 +3931,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup1_95ok_95exist_95btnObjects1
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xd07f80 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x1a78f98 = function(runtimeScene) {
 "use strict";
 const stoName = runtimeScene.getObjects("popup2_input_store_name")[0];
 const inputStoreName = stoName.getString();
@@ -3962,19 +3950,19 @@ const inputStoreInfo = stoInfo.getString();
 
 // global 변수에 저장되어있는 토큰 가져오기
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-console.log("유저 토큰 테스트 :", userToken);
+//console.log("유저 토큰 테스트 :", userToken);
 
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
-console.log("상점 등록 여부:", runtimeScene.getGame().getVariables().get("IsStoreAdded")._str);
+//console.log("상점 등록 여부:", runtimeScene.getGame().getVariables().get("IsStoreAdded")._str);
 
 const storeName = inputStoreName;
 const storePeriod = inputStorePeriodYear+"-"+inputStorePeriodMonth+"-"+inputStorePeriodDay;
 const storeInfo = inputStoreInfo;
 
-console.log("스토어 이름 : ", storeName);
-console.log("스토어 기간 : ", storePeriod);
-console.log("스토어 정보 : ", storeInfo);
+// console.log("스토어 이름 : ", storeName);
+// console.log("스토어 기간 : ", storePeriod);
+// console.log("스토어 정보 : ", storeInfo);
 
 // 스토어 등록 호출 보내기
 var addStoreRequest = {
@@ -3996,10 +3984,10 @@ var addStoreRequest = {
 fetch("http://43.201.210.173:8080/stores/register", addStoreRequest)
   .then((res) => res.text())
   .then((data) => {
-    console.log("호출 : ", data);
+    // console.log("호출 : ", data);
     runtimeScene.getGame().getVariables().get("StoreSign").getChild(signNum-1).setNumber(1);
     runtimeScene.getGame().getVariables().get("IsStoreAdded").setNumber(1);
-    console.log(runtimeScene.getGame().getVariables().get("IsStoreAdded")._value);
+    // console.log(runtimeScene.getGame().getVariables().get("IsStoreAdded")._value);
   })
   .catch((error) => {
     console.log("Error fetching data:", error);
@@ -4050,61 +4038,12 @@ gdjs.Square_32sceneCode.eventsList27 = function(runtimeScene) {
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd07f80(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1a78f98(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xd06458 = function(runtimeScene) {
-"use strict";
-var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
-var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value.toString();
-
-// 스토어 ID 확인
-var checkStoreIdRequest = {
-  method: "GET",
-  headers: {
-    'Authorization': `${userToken}`,
-    'Accept': 'application/json',
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "*",
-  },
-}
-
-async function getStoreId(checkStoreIdRequest) {
-  try {
-    const response = await fetch("http://43.201.210.173:8080/stores/info/sign/Sign"+signNum, checkStoreIdRequest);
-    console.log(response);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(response);
-      console.log("Get호출 : ", data);
-      runtimeScene.getVariables().get("StoreId").setString(data.id);
-      var storeId = runtimeScene.getVariables().get("StoreId")._str;
-      console.log("스토어 아이디 : ", storeId);
-    } else {
-      console.error("Request failed with status:", response.status);
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-}
-
-getStoreId(checkStoreIdRequest);
-
-};
-gdjs.Square_32sceneCode.eventsList28 = function(runtimeScene) {
-
-{
-
-
-gdjs.Square_32sceneCode.userFunc0xd06458(runtimeScene);
-
-}
-
-
-};gdjs.Square_32sceneCode.userFunc0xd068e0 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x1a75ec0 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -4146,17 +4085,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList29 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList28 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd068e0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1a75ec0(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xd066b0 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x1a77f58 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var isStoreAdded = runtimeScene.getGame().getVariables().get("IsStoreAdded")._str;
@@ -4182,7 +4121,7 @@ async function deleteStore(deleteStoreRequest) {
     const response = await fetch("http://43.201.210.173:8080/stores/remove", deleteStoreRequest);
     if (response.ok) {
       const data = await response.text();
-      console.log(data);
+      //console.log(data);
       if (data === "삭제 완료") {
         runtimeScene.getGame().getVariables().get("StoreSign").getChild(signNum-1).setNumber(0);
         // const object = objects[0]; // 첫 번째 객체 인스턴스 가져오기
@@ -4199,12 +4138,12 @@ deleteStore(deleteStoreRequest);
 
 
 };
-gdjs.Square_32sceneCode.eventsList30 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList29 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd066b0(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x1a77f58(runtimeScene);
 
 }
 
@@ -4667,7 +4606,7 @@ gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1Obj
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDSign12Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign11Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign10Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign9Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign8Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign7Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign6Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign5Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign4Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDSign1Objects1Objects = Hashtable.newFrom({"Sign12": gdjs.Square_32sceneCode.GDSign12Objects1, "Sign11": gdjs.Square_32sceneCode.GDSign11Objects1, "Sign10": gdjs.Square_32sceneCode.GDSign10Objects1, "Sign9": gdjs.Square_32sceneCode.GDSign9Objects1, "Sign8": gdjs.Square_32sceneCode.GDSign8Objects1, "Sign7": gdjs.Square_32sceneCode.GDSign7Objects1, "Sign6": gdjs.Square_32sceneCode.GDSign6Objects1, "Sign5": gdjs.Square_32sceneCode.GDSign5Objects1, "Sign4": gdjs.Square_32sceneCode.GDSign4Objects1, "Sign3": gdjs.Square_32sceneCode.GDSign3Objects1, "Sign2": gdjs.Square_32sceneCode.GDSign2Objects1, "Sign1": gdjs.Square_32sceneCode.GDSign1Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Square_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Square_32sceneCode.GDbody1Objects1, "body2": gdjs.Square_32sceneCode.GDbody2Objects1, "body3": gdjs.Square_32sceneCode.GDbody3Objects1, "body4": gdjs.Square_32sceneCode.GDbody4Objects1});
 gdjs.Square_32sceneCode.mapOfGDgdjs_46Square_9532sceneCode_46GDWhiteDoorObjects1Objects = Hashtable.newFrom({"WhiteDoor": gdjs.Square_32sceneCode.GDWhiteDoorObjects1});
-gdjs.Square_32sceneCode.userFunc0xd0aa20 = function(runtimeScene) {
+gdjs.Square_32sceneCode.userFunc0x212bb90 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -4709,17 +4648,17 @@ function disconnectWebSocket(runtimeScene) {
 
 disconnectWebSocket(runtimeScene);
 };
-gdjs.Square_32sceneCode.eventsList31 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList30 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0aa20(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x212bb90(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.userFunc0xd0bf28 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.userFunc0x2122f80 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 
@@ -4764,17 +4703,17 @@ getStoreAllId(storeAllIdRequest);
 
 
 };
-gdjs.Square_32sceneCode.eventsList32 = function(runtimeScene) {
+gdjs.Square_32sceneCode.eventsList31 = function(runtimeScene) {
 
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0bf28(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2122f80(runtimeScene);
 
 }
 
 
-};gdjs.Square_32sceneCode.eventsList33 = function(runtimeScene) {
+};gdjs.Square_32sceneCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -4801,7 +4740,7 @@ gdjs.Square_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd09e68(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x2143908(runtimeScene);
 
 }
 
@@ -4809,7 +4748,7 @@ gdjs.Square_32sceneCode.userFunc0xd09e68(runtimeScene);
 {
 
 
-gdjs.Square_32sceneCode.userFunc0xd0a318(runtimeScene);
+gdjs.Square_32sceneCode.userFunc0x21421c0(runtimeScene);
 
 }
 
@@ -5200,10 +5139,7 @@ gdjs.copyArray(runtimeScene.getObjects("popup2_input_store_name"), gdjs.Square_3
 }{for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1.length ;i < len;++i) {
     gdjs.Square_32sceneCode.GDpopup2_95input_95store_95infoObjects1[i].hide();
 }
-}
-{ //Subevents
-gdjs.Square_32sceneCode.eventsList28(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -5430,7 +5366,7 @@ for(var i = 0, len = gdjs.Square_32sceneCode.GDpopup3_95InfoObjects1.length ;i <
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", false);
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList29(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -5583,7 +5519,7 @@ gdjs.Square_32sceneCode.GDpopup_95store_95delete_95ok_95btnObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Square_32sceneCode.eventsList30(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -7861,7 +7797,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Store scene", true);
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList31(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -7877,7 +7813,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "Square scene layer", -(560), -(440));
 }
 { //Subevents
-gdjs.Square_32sceneCode.eventsList32(runtimeScene);} //End of subevents
+gdjs.Square_32sceneCode.eventsList31(runtimeScene);} //End of subevents
 }
 
 }
@@ -9188,7 +9124,7 @@ gdjs.Square_32sceneCode.GDstoreExternalObjects1.length = 0;
 gdjs.Square_32sceneCode.GDstoreExternalObjects2.length = 0;
 gdjs.Square_32sceneCode.GDstoreExternalObjects3.length = 0;
 
-gdjs.Square_32sceneCode.eventsList33(runtimeScene);
+gdjs.Square_32sceneCode.eventsList32(runtimeScene);
 
 return;
 
