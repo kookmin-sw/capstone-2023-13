@@ -949,7 +949,7 @@ gdjs.Store_32sceneCode.GDProductList_95Minus4Objects2= [];
 gdjs.Store_32sceneCode.GDProductList_95Minus4Objects3= [];
 
 
-gdjs.Store_32sceneCode.userFunc0x2126ef0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xce3310 = function(runtimeScene) {
 "use strict";
 //Seller Buyer 구분
 let userIdVariable = runtimeScene.getGame().getVariables().get("UserId");
@@ -1066,7 +1066,7 @@ gdjs.Store_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2126ef0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce3310(runtimeScene);
 
 }
 
@@ -1485,7 +1485,7 @@ gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
 gdjs.Store_32sceneCode.mapOf = Hashtable.newFrom({});
-gdjs.Store_32sceneCode.userFunc0x2030580 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xce7940 = function(runtimeScene) {
 "use strict";
 const url = runtimeScene.getGame().getVariables().get("WebSocketUrl")._str;
 runtimeScene.ws = new WebSocket(url);
@@ -1544,6 +1544,9 @@ runtimeScene.ws.onmessage = function (event) {
             }
             else if (e.dir === "left") {
                 leftMovement(e);
+            }
+            else if (e.dir == "del") {
+                console.log(e);
             }
             break;
         case "chat":
@@ -1907,12 +1910,12 @@ gdjs.Store_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2030580(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce7940(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xabef00 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcde000 = function(runtimeScene) {
 "use strict";
 // 메시지 전송 함수
 function sendMessage(message) {
@@ -1944,7 +1947,7 @@ if (isEnterPressed) {
   myText.setString("");
 }
 };
-gdjs.Store_32sceneCode.userFunc0x2102f30 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xce2f98 = function(runtimeScene) {
 "use strict";
 const Body = runtimeScene.getGame().getVariables().get("UserBody")._str;
 const Hair = runtimeScene.getGame().getVariables().get("UserHair")._str;
@@ -2016,7 +2019,7 @@ update = {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.Store_32sceneCode.userFunc0x2113d38 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xce0c00 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2069,12 +2072,12 @@ gdjs.Store_32sceneCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2113d38(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce0c00(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x2143668 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce67e0 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 let currentStoreIdVariable = runtimeScene.getGame().getVariables().get("StoreId")._str;
@@ -2155,12 +2158,12 @@ gdjs.Store_32sceneCode.eventsList3 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2143668(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce67e0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x2134998 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce23e0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2174,7 +2177,7 @@ gdjs.Store_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2134998(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce23e0(runtimeScene);
 
 }
 
@@ -2197,7 +2200,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image1"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x929268 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce2050 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2213,7 +2216,7 @@ gdjs.Store_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x929268(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce2050(runtimeScene);
 
 }
 
@@ -2244,7 +2247,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image2"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xe08b68 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce3da8 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2262,7 +2265,7 @@ gdjs.Store_32sceneCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xe08b68(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce3da8(runtimeScene);
 
 }
 
@@ -2301,7 +2304,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductList_Image3"), gdjs.Store_32scene
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x2064430 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce1ba0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -2321,7 +2324,7 @@ gdjs.Store_32sceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2064430(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce1ba0(runtimeScene);
 
 }
 
@@ -2602,7 +2605,7 @@ gdjs.Store_32sceneCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x2121b60 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce72b0 = function(runtimeScene) {
 "use strict";
 var logintoken = localStorage.getItem('login-token');
 
@@ -2655,7 +2658,7 @@ gdjs.Store_32sceneCode.eventsList9 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2121b60(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce72b0(runtimeScene);
 
 }
 
@@ -3216,7 +3219,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x117fec8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcede50 = function(runtimeScene) {
 "use strict";
 window.open('http://www.metapop.link/uploadimages', '_blank');
 
@@ -3229,12 +3232,12 @@ gdjs.Store_32sceneCode.eventsList12 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x117fec8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcede50(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1182098 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcea190 = function(runtimeScene) {
 "use strict";
 var uploadState = localStorage.getItem("uploadState");
 runtimeScene.getVariables().get("uploadState").setValue(uploadState);
@@ -3253,7 +3256,7 @@ if(uploadState){
 }
 };
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDProductRegister_9595Image_9595SpriteObjects1Objects = Hashtable.newFrom({"ProductRegister_Image_Sprite": gdjs.Store_32sceneCode.GDProductRegister_95Image_95SpriteObjects1});
-gdjs.Store_32sceneCode.userFunc0x1180118 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xcebdb0 = function(runtimeScene) {
 "use strict";
 const productName = runtimeScene.getObjects("ProductRegister_ProductName")[0];
 const inputProductName = productName.getString();
@@ -3339,12 +3342,12 @@ gdjs.Store_32sceneCode.eventsList13 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1180118(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcebdb0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x117e530 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcea070 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3359,12 +3362,12 @@ gdjs.Store_32sceneCode.eventsList14 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x117e530(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcea070(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1189420 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xceb4b0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3388,12 +3391,12 @@ gdjs.Store_32sceneCode.eventsList15 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1189420(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xceb4b0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1189610 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xceb030 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3416,12 +3419,12 @@ gdjs.Store_32sceneCode.eventsList16 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1189610(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xceb030(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1189ad8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcea3d0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3444,12 +3447,12 @@ gdjs.Store_32sceneCode.eventsList17 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1189ad8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcea3d0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x117bf20 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xced790 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3472,12 +3475,12 @@ gdjs.Store_32sceneCode.eventsList18 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x117bf20(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xced790(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x117c140 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcea2b0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3500,12 +3503,12 @@ gdjs.Store_32sceneCode.eventsList19 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x117c140(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcea2b0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1180f70 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcea970 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3528,12 +3531,12 @@ gdjs.Store_32sceneCode.eventsList20 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1180f70(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcea970(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1180ae0 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcea730 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3557,12 +3560,12 @@ gdjs.Store_32sceneCode.eventsList21 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1180ae0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcea730(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x11815d8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcebff0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3585,12 +3588,12 @@ gdjs.Store_32sceneCode.eventsList22 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x11815d8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcebff0(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x1183b80 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcedc10 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 console.log(productsString);
@@ -3674,12 +3677,12 @@ gdjs.Store_32sceneCode.eventsList23 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1183b80(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcedc10(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x118d7f8 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xcecb10 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 let orderListString = runtimeScene.getVariables().get("orderList").getAsString();
@@ -3723,12 +3726,12 @@ gdjs.Store_32sceneCode.eventsList24 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x118d7f8(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcecb10(runtimeScene);
 
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x118cb50 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xceb390 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3748,7 +3751,7 @@ gdjs.Store_32sceneCode.eventsList25 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x118cb50(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xceb390(runtimeScene);
 
 }
 
@@ -3771,7 +3774,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0x118c288 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xceaf10 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3791,7 +3794,7 @@ gdjs.Store_32sceneCode.eventsList26 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x118c288(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xceaf10(runtimeScene);
 
 }
 
@@ -3814,7 +3817,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xbfc218 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xce3448 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3834,7 +3837,7 @@ gdjs.Store_32sceneCode.eventsList27 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xbfc218(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce3448(runtimeScene);
 
 }
 
@@ -3857,7 +3860,7 @@ gdjs.copyArray(runtimeScene.getObjects("ProductInfo_Image"), gdjs.Store_32sceneC
 }
 
 
-};gdjs.Store_32sceneCode.userFunc0xbfe328 = function(runtimeScene) {
+};gdjs.Store_32sceneCode.userFunc0xced2d0 = function(runtimeScene) {
 "use strict";
 let productsString = runtimeScene.getVariables().get("products").getAsString();
 let products = JSON.parse(productsString);
@@ -3877,7 +3880,7 @@ gdjs.Store_32sceneCode.eventsList28 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xbfe328(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xced2d0(runtimeScene);
 
 }
 
@@ -3930,7 +3933,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDbody1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody2Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDbody4Objects1Objects = Hashtable.newFrom({"body1": gdjs.Store_32sceneCode.GDbody1Objects1, "body2": gdjs.Store_32sceneCode.GDbody2Objects1, "body3": gdjs.Store_32sceneCode.GDbody3Objects1, "body4": gdjs.Store_32sceneCode.GDbody4Objects1});
 gdjs.Store_32sceneCode.mapOfGDgdjs_46Store_9532sceneCode_46GDDoor1Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDDoor3Objects1ObjectsGDgdjs_46Store_9532sceneCode_46GDDoor2Objects1Objects = Hashtable.newFrom({"Door1": gdjs.Store_32sceneCode.GDDoor1Objects1, "Door3": gdjs.Store_32sceneCode.GDDoor3Objects1, "Door2": gdjs.Store_32sceneCode.GDDoor2Objects1});
-gdjs.Store_32sceneCode.userFunc0x21421c0 = function(runtimeScene) {
+gdjs.Store_32sceneCode.userFunc0xce3568 = function(runtimeScene) {
 "use strict";
 function disconnectWebSocket(runtimeScene) {
     if (runtimeScene.ws) {
@@ -3968,7 +3971,7 @@ gdjs.Store_32sceneCode.eventsList30 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x21421c0(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce3568(runtimeScene);
 
 }
 
@@ -6105,7 +6108,7 @@ gdjs.Store_32sceneCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0xabef00(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcde000(runtimeScene);
 
 }
 
@@ -6113,7 +6116,7 @@ gdjs.Store_32sceneCode.userFunc0xabef00(runtimeScene);
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x2102f30(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xce2f98(runtimeScene);
 
 }
 
@@ -6645,7 +6648,7 @@ gdjs.Store_32sceneCode.eventsList12(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Store_32sceneCode.userFunc0x1182098(runtimeScene);
+gdjs.Store_32sceneCode.userFunc0xcea190(runtimeScene);
 
 }
 
