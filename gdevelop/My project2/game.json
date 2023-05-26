@@ -60494,9 +60494,11 @@
                 "      listAmountObject.setString(\"잔여 수량 : \" + availableProducts[i].amount + \"개\");",
                 "      listQuantityObject.setString(0);",
                 "    }",
-                "",
+                "    if (runtimeScene.getVariables().get(\"products\")._str !== undefined) {",
+                "      runtimeScene.getVariables().get(\"Image\").setNumber(1);",
+                "    }",
                 "    productNumVariable.setNumber(availableProducts.length);",
-                "    console.log(\"num variable: \", productNumVariable);",
+                "    // console.log(\"num variable: \", productNumVariable);",
                 "    productFilterVariable.setBoolean(true);",
                 "    productFilterVariable.setBoolean(true);",
                 "  }else{",
@@ -60523,6 +60525,16 @@
               "parameters": [
                 "productFilter",
                 "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Image",
+                "=",
+                "1"
               ]
             }
           ],
@@ -60641,7 +60653,7 @@
                     "let productsString = runtimeScene.getVariables().get(\"products\").getAsString();",
                     "let products = JSON.parse(productsString);",
                     "runtimeScene.getGame().getVariables().get(\"ProductList_Image1\").setString(products[0].imgList[0]);",
-                    "",
+                    "//console.log(runtimeScene.getGame().getVariables().get(\"ProductList_Image1\")._str);",
                     ""
                   ],
                   "parameterObjects": "",
@@ -60650,7 +60662,18 @@
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "productNum",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
@@ -61245,6 +61268,7 @@
           "target": "Receive token event"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -61968,6 +61992,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
