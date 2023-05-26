@@ -985,7 +985,7 @@ for(var i = 0, len = gdjs.Store_32custom_32sceneCode.GDSalesTable12Objects1.leng
 }
 
 
-};gdjs.Store_32custom_32sceneCode.userFunc0xf8b6b8 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.userFunc0x1d49e40 = function(runtimeScene) {
 "use strict";
 var userToken = runtimeScene.getGame().getVariables().get("userToken")._str;
 var signNum = runtimeScene.getGame().getVariables().get("SignNum")._value;
@@ -1027,12 +1027,12 @@ gdjs.Store_32custom_32sceneCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xf8b6b8(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x1d49e40(runtimeScene);
 
 }
 
 
-};gdjs.Store_32custom_32sceneCode.userFunc0xf8c0d8 = function(runtimeScene) {
+};gdjs.Store_32custom_32sceneCode.userFunc0x1d4a980 = function(runtimeScene) {
 "use strict";
 var tile, wall, door, deco, table;
 var decoList = [];
@@ -1192,7 +1192,7 @@ gdjs.Store_32custom_32sceneCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.Store_32custom_32sceneCode.userFunc0xf8c0d8(runtimeScene);
+gdjs.Store_32custom_32sceneCode.userFunc0x1d4a980(runtimeScene);
 
 }
 

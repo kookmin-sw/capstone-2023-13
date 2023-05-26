@@ -60406,6 +60406,7 @@
           "comment": "상품리스트의 상품 보여주기"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -60516,6 +60517,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62857,6 +62859,16 @@
                 "ProductListPopup",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Image",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -62888,6 +62900,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -62999,6 +63012,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -63405,6 +63419,7 @@
           "comment": "구매자 - 상품리스트 창"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
